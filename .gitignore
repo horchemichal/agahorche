@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.env
+*.bak
+*.bak-*
+tsconfig.tsbuildinfo
+storage/
+.env.*
+.env~
+!.env.example

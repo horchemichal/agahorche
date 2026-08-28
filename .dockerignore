@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+*.tar.gz
+
+# Sekrety nie mają czego szukać w obrazie: aplikacja dostaje je z docker-compose
+# przy starcie kontenera. Dodatkowo build bez .env nie może już wciągnąć do
+# statycznego HTML-a danych z nieistniejącego już Supabase (sierpień 2026).
+.env
+.env.*
+!.env.example
+
+# Lokalne kopie robocze i wolumeny
+*.bak
+*.bak-*
+storage

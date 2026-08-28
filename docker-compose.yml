@@ -1,0 +1,49 @@
+services:
+  agahorche:
+    build: .
+    container_name: agahorche
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_SITE_URL=https://agahorche.pl
+      - AUTH_SECRET=${AUTH_SECRET}
+      - CLIENT_AUTH_SECRET=${CLIENT_AUTH_SECRET}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@agahorche-postgres:5432/${POSTGRES_DB}
+      - REVALIDATE_SECRET=${REVALIDATE_SECRET}
+      - ADMIN_AUTH_PROVIDER=${ADMIN_AUTH_PROVIDER}
+      - MEDIA_STORAGE_PROVIDER=${MEDIA_STORAGE_PROVIDER}
+    volumes:
+      - agahorche_media_data:/app/storage/media
+    networks:
+      - n8n_default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.agahorche.rule=Host(`agahorche.pl`) || Host(`www.agahorche.pl`)"
+      - "traefik.http.routers.agahorche.entrypoints=websecure"
+      - "traefik.http.routers.agahorche.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.agahorche.loadbalancer.server.port=3000"
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: agahorche-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - agahorche_pg_data:/var/lib/postgresql/data
+    networks:
+      - n8n_default
+
+networks:
+  n8n_default:
+    external: true
+
+volumes:
+  agahorche_pg_data:
+  agahorche_media_data:

@@ -1,0 +1,377 @@
+import type { Recipe } from "@/types/diet";
+import { THERMOMIX_MODELS } from "@/types/diet";
+
+/**
+ * Recipe registry backing the two live example plans (keto-1500,
+ * wegetarianska-1500 — see ./categories.ts). Illustrative content, not
+ * Aga's verified recipes — see the big disclaimer at the top of
+ * types/diet.ts before touching calorie/macro numbers here.
+ *
+ * `cookidooUrl: null` everywhere — no real Cookidoo link is confirmed yet
+ * (spec §12/§23: "Jeżeli URL nie jest znany: [COOKIDOO_URL]"). CookidooButton
+ * renders a "wkrótce" state for `null` rather than a fabricated link.
+ *
+ * `compatibleModels` defaults to all four models — these are simple
+ * blend/steam/roast recipes with no step that's TM7-exclusive, so "works on
+ * everything" is a reasonable engineering default, not a specific claim.
+ * Narrow it per-recipe once Aga confirms otherwise.
+ */
+export const RECIPES: Record<string, Recipe> = {
+  // --- KETO, dzień 1 ---
+  "keto-d1-sniadanie": {
+    id: "keto-d1-sniadanie",
+    name: "Jajecznica z awokado i szczypiorkiem",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 380,
+    proteinG: 22,
+    fatG: 32,
+    carbsG: 5,
+    keto: true,
+  },
+  "keto-d1-sniadanie-alt": {
+    id: "keto-d1-sniadanie-alt",
+    name: "Omlet z serem i szynką",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 360,
+    proteinG: 26,
+    fatG: 28,
+    carbsG: 4,
+    keto: true,
+  },
+  "keto-d1-drugie-sniadanie": {
+    id: "keto-d1-drugie-sniadanie",
+    name: "Koktajl keto z masłem orzechowym",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 220,
+    proteinG: 6,
+    fatG: 20,
+    carbsG: 4,
+    keto: true,
+  },
+  "keto-d1-drugie-sniadanie-alt": {
+    id: "keto-d1-drugie-sniadanie-alt",
+    name: "Jogurt kokosowy z orzechami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 230,
+    proteinG: 5,
+    fatG: 21,
+    carbsG: 5,
+    keto: true,
+  },
+  "keto-d1-obiad": {
+    id: "keto-d1-obiad",
+    name: "Kurczak pieczony z cukinią i serem feta",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 420,
+    proteinG: 34,
+    fatG: 27,
+    carbsG: 5,
+    keto: true,
+  },
+  "keto-d1-obiad-alt": {
+    id: "keto-d1-obiad-alt",
+    name: "Schab pieczony z kalafiorem",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 430,
+    proteinG: 36,
+    fatG: 26,
+    carbsG: 6,
+    keto: true,
+  },
+  "keto-d1-podwieczorek": {
+    id: "keto-d1-podwieczorek",
+    name: "Chipsy z sera parmezan",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 150,
+    proteinG: 11,
+    fatG: 11,
+    carbsG: 1,
+    keto: true,
+  },
+  "keto-d1-podwieczorek-alt": {
+    id: "keto-d1-podwieczorek-alt",
+    name: "Oliwki i ser feta",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 160,
+    proteinG: 8,
+    fatG: 14,
+    carbsG: 2,
+    keto: true,
+  },
+  "keto-d1-kolacja": {
+    id: "keto-d1-kolacja",
+    name: "Łosoś z pieca z brokułem na maśle",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 330,
+    proteinG: 24,
+    fatG: 24,
+    carbsG: 5,
+    keto: true,
+  },
+  "keto-d1-kolacja-alt": {
+    id: "keto-d1-kolacja-alt",
+    name: "Dorsz z masłem ziołowym i szpinakiem",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 320,
+    proteinG: 27,
+    fatG: 21,
+    carbsG: 4,
+    keto: true,
+  },
+
+  // --- WEGETARIAŃSKA, dzień 1 ---
+  "wege-d1-sniadanie": {
+    id: "wege-d1-sniadanie",
+    name: "Owsianka z jabłkiem i cynamonem",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 320,
+    proteinG: 10,
+    fatG: 8,
+    carbsG: 52,
+    vegetarian: true,
+  },
+  "wege-d1-sniadanie-alt": {
+    id: "wege-d1-sniadanie-alt",
+    name: "Jogurt naturalny z granolą i owocami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 310,
+    proteinG: 11,
+    fatG: 9,
+    carbsG: 46,
+    vegetarian: true,
+  },
+  "wege-d1-drugie-sniadanie": {
+    id: "wege-d1-drugie-sniadanie",
+    name: "Koktajl jogurtowo-bananowy z orzechami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 220,
+    proteinG: 9,
+    fatG: 9,
+    carbsG: 26,
+    vegetarian: true,
+  },
+  "wege-d1-drugie-sniadanie-alt": {
+    id: "wege-d1-drugie-sniadanie-alt",
+    name: "Smoothie szpinakowo-owocowe",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 210,
+    proteinG: 7,
+    fatG: 5,
+    carbsG: 36,
+    vegetarian: true,
+  },
+  "wege-d1-obiad": {
+    id: "wege-d1-obiad",
+    name: "Krem z brokułów z serem cheddar i grzankami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 420,
+    proteinG: 16,
+    fatG: 18,
+    carbsG: 48,
+    vegetarian: true,
+  },
+  "wege-d1-obiad-alt": {
+    id: "wege-d1-obiad-alt",
+    name: "Zupa pomidorowa z ryżem i bazylią",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 400,
+    proteinG: 12,
+    fatG: 14,
+    carbsG: 55,
+    vegetarian: true,
+  },
+  "wege-d1-podwieczorek": {
+    id: "wege-d1-podwieczorek",
+    name: "Pudding chia z malinami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 210,
+    proteinG: 6,
+    fatG: 10,
+    carbsG: 24,
+    vegetarian: true,
+  },
+  "wege-d1-podwieczorek-alt": {
+    id: "wege-d1-podwieczorek-alt",
+    name: "Jogurt grecki z miodem i orzechami",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 220,
+    proteinG: 10,
+    fatG: 11,
+    carbsG: 20,
+    vegetarian: true,
+  },
+  "wege-d1-kolacja": {
+    id: "wege-d1-kolacja",
+    name: "Makaron pełnoziarnisty z pomidorami i mozzarellą",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 330,
+    proteinG: 14,
+    fatG: 12,
+    carbsG: 42,
+    vegetarian: true,
+  },
+  "wege-d1-kolacja-alt": {
+    id: "wege-d1-kolacja-alt",
+    name: "Kasza gryczana z warzywami i fetą",
+    cookidooUrl: null,
+    compatibleModels: THERMOMIX_MODELS,
+    calories: 340,
+    proteinG: 15,
+    fatG: 13,
+    carbsG: 40,
+    vegetarian: true,
+  },
+
+  // --- KETO, dni 2-7 (ETAP 8 — pełny tydzień w Strefie Klienta) ---
+  "keto-d2-sniadanie": { id: "keto-d2-sniadanie", name: "Roladki z szynki z serkiem śmietankowym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 330, proteinG: 24, fatG: 26, carbsG: 3, keto: true },
+  "keto-d2-drugie-sniadanie": { id: "keto-d2-drugie-sniadanie", name: "Kulki kokosowe bez cukru", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 200, proteinG: 4, fatG: 18, carbsG: 3, keto: true },
+  "keto-d2-obiad": { id: "keto-d2-obiad", name: "Udka z kurczaka pieczone z kalafiorem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 440, proteinG: 35, fatG: 29, carbsG: 5, keto: true },
+  "keto-d2-podwieczorek": { id: "keto-d2-podwieczorek", name: "Ser wiejski z rzodkiewką i szczypiorkiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 140, proteinG: 15, fatG: 8, carbsG: 3, keto: true },
+  "keto-d2-kolacja": { id: "keto-d2-kolacja", name: "Krewetki z masłem czosnkowym i cukinią", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 310, proteinG: 26, fatG: 21, carbsG: 4, keto: true },
+
+  "keto-d3-sniadanie": { id: "keto-d3-sniadanie", name: "Frittata z boczkiem i papryką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 370, proteinG: 25, fatG: 28, carbsG: 4, keto: true },
+  "keto-d3-drugie-sniadanie": { id: "keto-d3-drugie-sniadanie", name: "Awokado z jajkiem na twardo", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 280, proteinG: 12, fatG: 24, carbsG: 4, keto: true },
+  "keto-d3-obiad": { id: "keto-d3-obiad", name: "Żeberka pieczone z surówką z kapusty", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 460, proteinG: 32, fatG: 33, carbsG: 5, keto: true },
+  "keto-d3-podwieczorek": { id: "keto-d3-podwieczorek", name: "Migdały i ser cheddar", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 180, proteinG: 9, fatG: 16, carbsG: 3, keto: true },
+  "keto-d3-kolacja": { id: "keto-d3-kolacja", name: "Filet z indyka w boczku ze szparagami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 330, proteinG: 30, fatG: 20, carbsG: 3, keto: true },
+
+  "keto-d4-sniadanie": { id: "keto-d4-sniadanie", name: "Jogurt grecki z nasionami chia i orzechami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 300, proteinG: 15, fatG: 24, carbsG: 6, keto: true },
+  "keto-d4-drugie-sniadanie": { id: "keto-d4-drugie-sniadanie", name: "Pasta jajeczna z majonezem na ogórku", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 240, proteinG: 11, fatG: 20, carbsG: 3, keto: true },
+  "keto-d4-obiad": { id: "keto-d4-obiad", name: "Gulasz wołowy z papryką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 420, proteinG: 33, fatG: 27, carbsG: 6, keto: true },
+  "keto-d4-podwieczorek": { id: "keto-d4-podwieczorek", name: "Oliwki i kawałki sera", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 150, proteinG: 8, fatG: 13, carbsG: 2, keto: true },
+  "keto-d4-kolacja": { id: "keto-d4-kolacja", name: "Pstrąg pieczony z masłem cytrynowym i brokułem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 320, proteinG: 27, fatG: 21, carbsG: 4, keto: true },
+
+  "keto-d5-sniadanie": { id: "keto-d5-sniadanie", name: "Omlet ze szpinakiem i fetą", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 24, fatG: 27, carbsG: 4, keto: true },
+  "keto-d5-drugie-sniadanie": { id: "keto-d5-drugie-sniadanie", name: "Koktajl z awokado i migdałów", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 230, proteinG: 5, fatG: 21, carbsG: 4, keto: true },
+  "keto-d5-obiad": { id: "keto-d5-obiad", name: "Schab w sosie musztardowym z fasolką szparagową", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 430, proteinG: 35, fatG: 27, carbsG: 5, keto: true },
+  "keto-d5-podwieczorek": { id: "keto-d5-podwieczorek", name: "Pieczone chipsy z cukinii", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 130, proteinG: 4, fatG: 10, carbsG: 5, keto: true },
+  "keto-d5-kolacja": { id: "keto-d5-kolacja", name: "Dorsz w maśle ziołowym z puree z kalafiora", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 310, proteinG: 26, fatG: 20, carbsG: 5, keto: true },
+
+  "keto-d6-sniadanie": { id: "keto-d6-sniadanie", name: "Sałatka jajeczna z awokado i szynką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 360, proteinG: 22, fatG: 29, carbsG: 4, keto: true },
+  "keto-d6-drugie-sniadanie": { id: "keto-d6-drugie-sniadanie", name: "Mozzarella z pomidorkami koktajlowymi", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 190, proteinG: 12, fatG: 15, carbsG: 4, keto: true },
+  "keto-d6-obiad": { id: "keto-d6-obiad", name: "Kurczak w curry na mleku kokosowym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 440, proteinG: 34, fatG: 30, carbsG: 5, keto: true },
+  "keto-d6-podwieczorek": { id: "keto-d6-podwieczorek", name: "Jajka faszerowane pastą tuńczykową", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 170, proteinG: 14, fatG: 12, carbsG: 2, keto: true },
+  "keto-d6-kolacja": { id: "keto-d6-kolacja", name: "Wołowina duszona z cukinią", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 29, fatG: 22, carbsG: 4, keto: true },
+
+  "keto-d7-sniadanie": { id: "keto-d7-sniadanie", name: "Zapiekanka jajeczna z boczkiem i szpinakiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 380, proteinG: 26, fatG: 29, carbsG: 3, keto: true },
+  "keto-d7-drugie-sniadanie": { id: "keto-d7-drugie-sniadanie", name: "Masło orzechowe z selerem naciowym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 210, proteinG: 7, fatG: 18, carbsG: 4, keto: true },
+  "keto-d7-obiad": { id: "keto-d7-obiad", name: "Łopatka wieprzowa pieczona z kapustą kiszoną", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 450, proteinG: 34, fatG: 31, carbsG: 5, keto: true },
+  "keto-d7-podwieczorek": { id: "keto-d7-podwieczorek", name: "Ser żółty w plastrach z oliwkami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 160, proteinG: 10, fatG: 13, carbsG: 1, keto: true },
+  "keto-d7-kolacja": { id: "keto-d7-kolacja", name: "Krewetki curry z cukinią", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 300, proteinG: 25, fatG: 19, carbsG: 4, keto: true },
+
+  // --- WEGETARIAŃSKA, dni 2-7 (ETAP 8) ---
+  "wege-d2-sniadanie": { id: "wege-d2-sniadanie", name: "Placki owsiane z jabłkiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 10, fatG: 9, carbsG: 54, vegetarian: true },
+  "wege-d2-drugie-sniadanie": { id: "wege-d2-drugie-sniadanie", name: "Koktajl bananowo-szpinakowy", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 230, proteinG: 7, fatG: 5, carbsG: 40, vegetarian: true },
+  "wege-d2-obiad": { id: "wege-d2-obiad", name: "Curry z ciecierzycą i ryżem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 450, proteinG: 15, fatG: 14, carbsG: 62, vegetarian: true },
+  "wege-d2-podwieczorek": { id: "wege-d2-podwieczorek", name: "Jogurt naturalny z orzechami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 220, proteinG: 9, fatG: 12, carbsG: 20, vegetarian: true },
+  "wege-d2-kolacja": { id: "wege-d2-kolacja", name: "Sałatka grecka z fetą i pieczywem pełnoziarnistym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 13, fatG: 16, carbsG: 36, vegetarian: true },
+
+  "wege-d3-sniadanie": { id: "wege-d3-sniadanie", name: "Tosty z awokado i jajkiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 360, proteinG: 15, fatG: 18, carbsG: 36, vegetarian: true },
+  "wege-d3-drugie-sniadanie": { id: "wege-d3-drugie-sniadanie", name: "Domowy batonik owsiany", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 210, proteinG: 5, fatG: 7, carbsG: 32, vegetarian: true },
+  "wege-d3-obiad": { id: "wege-d3-obiad", name: "Zupa krem z soczewicy z grzankami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 400, proteinG: 18, fatG: 10, carbsG: 58, vegetarian: true },
+  "wege-d3-podwieczorek": { id: "wege-d3-podwieczorek", name: "Twarożek z rzodkiewką na chlebku", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 230, proteinG: 14, fatG: 8, carbsG: 26, vegetarian: true },
+  "wege-d3-kolacja": { id: "wege-d3-kolacja", name: "Risotto z pieczarkami i parmezanem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 360, proteinG: 12, fatG: 13, carbsG: 48, vegetarian: true },
+
+  "wege-d4-sniadanie": { id: "wege-d4-sniadanie", name: "Jaglanka na mleku z owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 330, proteinG: 9, fatG: 7, carbsG: 56, vegetarian: true },
+  "wege-d4-drugie-sniadanie": { id: "wege-d4-drugie-sniadanie", name: "Hummus z warzywami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 240, proteinG: 8, fatG: 12, carbsG: 24, vegetarian: true },
+  "wege-d4-obiad": { id: "wege-d4-obiad", name: "Kotlety sojowe z ziemniakami i surówką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 430, proteinG: 20, fatG: 16, carbsG: 52, vegetarian: true },
+  "wege-d4-podwieczorek": { id: "wege-d4-podwieczorek", name: "Sałatka owocowa", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 180, proteinG: 2, fatG: 1, carbsG: 42, vegetarian: true },
+  "wege-d4-kolacja": { id: "wege-d4-kolacja", name: "Pierogi z serem i cebulką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 400, proteinG: 14, fatG: 14, carbsG: 54, vegetarian: true },
+
+  "wege-d5-sniadanie": { id: "wege-d5-sniadanie", name: "Naleśniki z twarogiem i owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 370, proteinG: 16, fatG: 12, carbsG: 48, vegetarian: true },
+  "wege-d5-drugie-sniadanie": { id: "wege-d5-drugie-sniadanie", name: "Koktajl jogurtowo-owocowy", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 210, proteinG: 8, fatG: 5, carbsG: 34, vegetarian: true },
+  "wege-d5-obiad": { id: "wege-d5-obiad", name: "Gulasz warzywny z kaszą gryczaną", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 410, proteinG: 14, fatG: 10, carbsG: 64, vegetarian: true },
+  "wege-d5-podwieczorek": { id: "wege-d5-podwieczorek", name: "Pieczone chipsy z jarmużu", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 140, proteinG: 4, fatG: 7, carbsG: 16, vegetarian: true },
+  "wege-d5-kolacja": { id: "wege-d5-kolacja", name: "Zapiekanka z cukinii i sera", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 16, fatG: 20, carbsG: 28, vegetarian: true },
+
+  "wege-d6-sniadanie": { id: "wege-d6-sniadanie", name: "Owsianka z kakao i bananem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 11, fatG: 9, carbsG: 56, vegetarian: true },
+  "wege-d6-drugie-sniadanie": { id: "wege-d6-drugie-sniadanie", name: "Kanapka z hummusem i papryką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 250, proteinG: 9, fatG: 9, carbsG: 32, vegetarian: true },
+  "wege-d6-obiad": { id: "wege-d6-obiad", name: "Curry warzywne z tofu", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 420, proteinG: 18, fatG: 16, carbsG: 48, vegetarian: true },
+  "wege-d6-podwieczorek": { id: "wege-d6-podwieczorek", name: "Jogurt grecki z miodem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 220, proteinG: 11, fatG: 10, carbsG: 22, vegetarian: true },
+  "wege-d6-kolacja": { id: "wege-d6-kolacja", name: "Sałatka z komosy ryżowej, fetą i pomidorami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 360, proteinG: 14, fatG: 15, carbsG: 40, vegetarian: true },
+
+  "wege-d7-sniadanie": { id: "wege-d7-sniadanie", name: "Jajecznica na maśle z pomidorem i pieczywem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 18, fatG: 18, carbsG: 28, vegetarian: true },
+  "wege-d7-drugie-sniadanie": { id: "wege-d7-drugie-sniadanie", name: "Smoothie z jarmużu i ananasa", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 200, proteinG: 4, fatG: 2, carbsG: 44, vegetarian: true },
+  "wege-d7-obiad": { id: "wege-d7-obiad", name: "Makaron z pesto i suszonymi pomidorami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 440, proteinG: 14, fatG: 18, carbsG: 56, vegetarian: true },
+  "wege-d7-podwieczorek": { id: "wege-d7-podwieczorek", name: "Orzechy i suszone morele", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 210, proteinG: 5, fatG: 14, carbsG: 18, vegetarian: true },
+  "wege-d7-kolacja": { id: "wege-d7-kolacja", name: "Krem z dyni z pestkami dyni", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 320, proteinG: 9, fatG: 12, carbsG: 44, vegetarian: true },
+
+  // --- ODCHUDZAJĄCA, dzień 1 (ETAP 9) ---
+  "odchudz-d1-sniadanie": { id: "odchudz-d1-sniadanie", name: "Owsianka na wodzie z jagodami i cynamonem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 320, proteinG: 12, fatG: 6, carbsG: 54 },
+  "odchudz-d1-sniadanie-alt": { id: "odchudz-d1-sniadanie-alt", name: "Jogurt naturalny z otrębami i truskawkami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 300, proteinG: 14, fatG: 7, carbsG: 44 },
+  "odchudz-d1-obiad": { id: "odchudz-d1-obiad", name: "Pierś z kurczaka grillowana z warzywami i kaszą bulgur", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 620, proteinG: 42, fatG: 18, carbsG: 68 },
+  "odchudz-d1-obiad-alt": { id: "odchudz-d1-obiad-alt", name: "Dorsz pieczony z ziemniakami i surówką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 600, proteinG: 38, fatG: 16, carbsG: 70 },
+  "odchudz-d1-kolacja": { id: "odchudz-d1-kolacja", name: "Sałatka z tuńczykiem, jajkiem i mixem sałat", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 560, proteinG: 34, fatG: 30, carbsG: 28 },
+  "odchudz-d1-kolacja-alt": { id: "odchudz-d1-kolacja-alt", name: "Twarożek z rzodkiewką i pomidorem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 540, proteinG: 32, fatG: 26, carbsG: 32 },
+
+  // --- NISKI IG, dzień 1 (ETAP 9) ---
+  "nig-d1-sniadanie": { id: "nig-d1-sniadanie", name: "Płatki górskie na mleku roślinnym z orzechami i cynamonem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 11, fatG: 14, carbsG: 42 },
+  "nig-d1-sniadanie-alt": { id: "nig-d1-sniadanie-alt", name: "Jogurt naturalny z siemieniem lnianym i jagodami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 330, proteinG: 14, fatG: 12, carbsG: 40 },
+  "nig-d1-obiad": { id: "nig-d1-obiad", name: "Kasza gryczana z pieczoną piersią z indyka i brokułem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 610, proteinG: 40, fatG: 20, carbsG: 58 },
+  "nig-d1-obiad-alt": { id: "nig-d1-obiad-alt", name: "Filet z kurczaka z soczewicą i warzywami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 600, proteinG: 42, fatG: 16, carbsG: 60 },
+  "nig-d1-kolacja": { id: "nig-d1-kolacja", name: "Sałatka z ciecierzycą, fetą i pomidorami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 550, proteinG: 22, fatG: 28, carbsG: 48 },
+  "nig-d1-kolacja-alt": { id: "nig-d1-kolacja-alt", name: "Hummus z warzywami i pieczywem pełnoziarnistym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 540, proteinG: 18, fatG: 22, carbsG: 58 },
+
+  // --- HASHIMOTO, dzień 1 (ETAP 9) ---
+  "hashi-d1-sniadanie": { id: "hashi-d1-sniadanie", name: "Jajecznica na maśle klarowanym z pieczywem żytnim i pomidorem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 380, proteinG: 20, fatG: 22, carbsG: 28 },
+  "hashi-d1-sniadanie-alt": { id: "hashi-d1-sniadanie-alt", name: "Owsianka na mleku z orzechami i bananem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 370, proteinG: 12, fatG: 14, carbsG: 48 },
+  "hashi-d1-obiad": { id: "hashi-d1-obiad", name: "Pieczony łosoś z ziemniakami i surówką z marchwi", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 620, proteinG: 38, fatG: 30, carbsG: 48 },
+  "hashi-d1-obiad-alt": { id: "hashi-d1-obiad-alt", name: "Indyk pieczony z batatami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 610, proteinG: 40, fatG: 20, carbsG: 58 },
+  "hashi-d1-kolacja": { id: "hashi-d1-kolacja", name: "Kurczak duszony z warzywami i ryżem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 500, proteinG: 34, fatG: 16, carbsG: 54 },
+  "hashi-d1-kolacja-alt": { id: "hashi-d1-kolacja-alt", name: "Zupa krem z dyni z pestkami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 520, proteinG: 14, fatG: 22, carbsG: 62 },
+
+  // --- Z ZAMIENNIKAMI, dzień 1 (ETAP 9) ---
+  "zamien-d1-sniadanie": { id: "zamien-d1-sniadanie", name: "Kanapki z pastą jajeczną i szczypiorkiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 360, proteinG: 16, fatG: 18, carbsG: 34 },
+  "zamien-d1-sniadanie-alt": { id: "zamien-d1-sniadanie-alt", name: "Owsianka z owocami sezonowymi", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 10, fatG: 8, carbsG: 58 },
+  "zamien-d1-obiad": { id: "zamien-d1-obiad", name: "Spaghetti bolognese z indykiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 640, proteinG: 36, fatG: 22, carbsG: 68 },
+  "zamien-d1-obiad-alt": { id: "zamien-d1-obiad-alt", name: "Chili con carne z fasolą", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 630, proteinG: 38, fatG: 20, carbsG: 64 },
+  "zamien-d1-kolacja": { id: "zamien-d1-kolacja", name: "Sałatka cezar z kurczakiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 500, proteinG: 32, fatG: 24, carbsG: 30 },
+  "zamien-d1-kolacja-alt": { id: "zamien-d1-kolacja-alt", name: "Wrapy pełnoziarniste z kurczakiem i warzywami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 510, proteinG: 30, fatG: 22, carbsG: 44 },
+
+  // --- BEZGLUTENOWA, dzień 1 (ETAP 9) — patrz uwaga o `glutenFree` w types/diet.ts ---
+  "bezglut-d1-sniadanie": { id: "bezglut-d1-sniadanie", name: "Jajecznica z warzywami i plackami ryżowymi", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 18, fatG: 20, carbsG: 24 },
+  "bezglut-d1-sniadanie-alt": { id: "bezglut-d1-sniadanie-alt", name: "Jogurt naturalny z płatkami gryczanymi i owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 340, proteinG: 14, fatG: 10, carbsG: 50 },
+  "bezglut-d1-obiad": { id: "bezglut-d1-obiad", name: "Kurczak pieczony z ryżem i warzywami na parze", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 620, proteinG: 40, fatG: 18, carbsG: 66 },
+  "bezglut-d1-obiad-alt": { id: "bezglut-d1-obiad-alt", name: "Łosoś pieczony z ziemniakami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 610, proteinG: 36, fatG: 28, carbsG: 54 },
+  "bezglut-d1-kolacja": { id: "bezglut-d1-kolacja", name: "Sałatka z komosą ryżową, fetą i pomidorami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 530, proteinG: 20, fatG: 26, carbsG: 48 },
+  "bezglut-d1-kolacja-alt": { id: "bezglut-d1-kolacja-alt", name: "Zupa krem z warzyw z prażonymi pestkami dyni", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 520, proteinG: 12, fatG: 24, carbsG: 56 },
+
+  // --- DLA DZIECI, dzień 1 (ETAP 9) — porcje rodzinne, bez sztywnych norm kalorycznych ---
+  "dzieci-d1-sniadanie": { id: "dzieci-d1-sniadanie", name: "Owsianka z bananem i miodem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 280, proteinG: 8, fatG: 6, carbsG: 48, childFriendly: true },
+  "dzieci-d1-sniadanie-alt": { id: "dzieci-d1-sniadanie-alt", name: "Jajecznica z pomidorem i grzankami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 260, proteinG: 14, fatG: 14, carbsG: 20, childFriendly: true },
+  "dzieci-d1-obiad": { id: "dzieci-d1-obiad", name: "Klopsiki drobiowe w sosie pomidorowym z ryżem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 420, proteinG: 26, fatG: 14, carbsG: 48, childFriendly: true },
+  "dzieci-d1-obiad-alt": { id: "dzieci-d1-obiad-alt", name: "Pulpeciki z indyka z puree ziemniaczanym", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 400, proteinG: 24, fatG: 12, carbsG: 50, childFriendly: true },
+  "dzieci-d1-kolacja": { id: "dzieci-d1-kolacja", name: "Naleśniki z serem i owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 350, proteinG: 14, fatG: 12, carbsG: 46, childFriendly: true },
+  "dzieci-d1-kolacja-alt": { id: "dzieci-d1-kolacja-alt", name: "Kanapki z serem i ogórkiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 320, proteinG: 12, fatG: 10, carbsG: 44, childFriendly: true },
+
+  // --- KOBIETY KARMIĄCE, dzień 1 (ETAP 9) — zbilansowane, sycące, bez nastawienia na odchudzanie ---
+  "karm-d1-sniadanie": { id: "karm-d1-sniadanie", name: "Owsianka na mleku z orzechami, siemieniem lnianym i owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 420, proteinG: 14, fatG: 16, carbsG: 58 },
+  "karm-d1-sniadanie-alt": { id: "karm-d1-sniadanie-alt", name: "Jogurt grecki z granolą i owocami", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 400, proteinG: 16, fatG: 14, carbsG: 52 },
+  "karm-d1-obiad": { id: "karm-d1-obiad", name: "Gulasz wołowy z kaszą gryczaną i surówką", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 620, proteinG: 36, fatG: 24, carbsG: 58 },
+  "karm-d1-obiad-alt": { id: "karm-d1-obiad-alt", name: "Łosoś pieczony z ryżem i brokułem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 600, proteinG: 38, fatG: 22, carbsG: 54 },
+  "karm-d1-kolacja": { id: "karm-d1-kolacja", name: "Omlet z warzywami i serem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 460, proteinG: 26, fatG: 30, carbsG: 20 },
+  "karm-d1-kolacja-alt": { id: "karm-d1-kolacja-alt", name: "Kanapki z pastą z awokado, jajkiem i wędzonym łososiem", cookidooUrl: null, compatibleModels: THERMOMIX_MODELS, calories: 440, proteinG: 24, fatG: 26, carbsG: 28 },
+};
+
+export function getRecipe(id: string): Recipe | undefined {
+  return RECIPES[id];
+}

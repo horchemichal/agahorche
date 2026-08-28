@@ -1,0 +1,45 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { requireAdmin } from "@/lib/auth/require-admin";
+import { getAgaClubChallengeRepository } from "@/lib/database/repositories/aga-club-challenge-repository";
+import { PanelHeader } from "@/components/admin/panel-states";
+import { Card, Badge } from "@/components/ui/card";
+import { ButtonLink } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: "30 dni z Agą — Aga Admin",
+  robots: { index: false, follow: false },
+};
+
+export default async function AdminChallengePage() {
+  await requireAdmin();
+  const days = await getAgaClubChallengeRepository().listDays();
+
+  return (
+    <>
+      <PanelHeader
+        title="30 dni z Agą"
+        description="Treść wyzwania — zadanie, porada i wideo na każdy dzień. Dzień jest widoczny publicznie dopiero po oznaczeniu jako opublikowany."
+        action={
+          <ButtonLink href="/admin/aga-club" variant="ghost">
+            ← Aga Club
+          </ButtonLink>
+        }
+      />
+
+      <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
+        {days.map((d) => (
+          <Card key={d.day} className="!p-4">
+            <Link href={`/admin/aga-club/wyzwanie/${d.day}`} className="block">
+              <div className="mb-1.5 flex items-center justify-between">
+                <span className="font-medium text-neutral-900">Dzień {d.day}</span>
+                {d.active ? <Badge>opublikowany</Badge> : <Badge tone="neutral">szkic</Badge>}
+              </div>
+              <p className="truncate text-sm text-muted">{d.task || "— brak treści —"}</p>
+            </Link>
+          </Card>
+        ))}
+      </div>
+    </>
+  );
+}
