@@ -5,14 +5,22 @@ import { BOCHNIA } from "./bochnia";
 import { BRZESKO } from "./brzesko";
 import { CHELMEK } from "./chelmek";
 import { CHRZANOW } from "./chrzanow";
+import { DOBRA } from "./dobra";
 import { DRWINIA } from "./drwinia";
+import { JODLOWNIK } from "./jodlownik";
+import { KAMIENICA } from "./kamienica";
 import { LAPANOW } from "./lapanow";
+import { LASKOWA } from "./laskowa";
 import { LIBIAZ } from "./libiaz";
 import { LIPNICA_MUROWANA } from "./lipnica-murowana";
+import { LUKOWICA } from "./lukowica";
+import { MSZANA_DOLNA } from "./mszana-dolna";
 import { OSWIECIM } from "./oswiecim";
 import { RZEZAWA } from "./rzezawa";
+import { SLOPNICE } from "./slopnice";
 import { TRZCIANA } from "./trzciana";
 import { TRZEBINIA } from "./trzebinia";
+import { TYMBARK } from "./tymbark";
 import { ZEGOCINA } from "./zegocina";
 import { KRZESZOWICE } from "./krzeszowice";
 import { MICHALOWICE } from "./michalowice";
@@ -45,14 +53,22 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BRZESKO,
   CHELMEK,
   CHRZANOW,
+  DOBRA,
   DRWINIA,
+  JODLOWNIK,
+  KAMIENICA,
   LAPANOW,
+  LASKOWA,
   LIBIAZ,
   LIPNICA_MUROWANA,
+  LUKOWICA,
+  MSZANA_DOLNA,
   OSWIECIM,
   RZEZAWA,
+  SLOPNICE,
   TRZCIANA,
   TRZEBINIA,
+  TYMBARK,
   ZEGOCINA,
   KRZESZOWICE,
   MICHALOWICE,

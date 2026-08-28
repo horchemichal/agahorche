@@ -326,4 +326,74 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["chrzanow", "trzebinia", "krzeszowice"],
     largerCitySlug: "chrzanow",
   }),
+  // Korytarz Bochnia-Limanowa i pierscien wokol Limanowej. Osiem gmin
+  // powiatu limanowskiego, ktore domykaja droge z pierscienia bochenskiego
+  // az po Gorce. To najmlodszy demograficznie kawalek calej bazy: powiat
+  // limanowski jest drugim najmlodszym powiatem w Polsce, wiec strony sa
+  // pisane pod rodziny z dziecmi, a nie pod gospodarstwa jednoosobowe.
+  // Kazda gmina ma inna os: Jodlownik klasztor i kolacz z serem, Tymbark
+  // prace na miejscu, Dobra przelecz i las, Laskowa suske sechlonska,
+  // Slopnice najwiecej dzieci, Lukowica sady i kierunek na Nowy Sacz,
+  // Mszana Dolna kuchnie zagorzanska, Kamienica koniec drogi.
+  // UWAGA: gmina wiejska Limanowa NIE ma tu wlasnego wpisu - kanibalizowalaby
+  // /thermomix/limanowa. Jej wsie obsluguje strona miasta.
+  miastoAgi({
+    name: "Jodłownik",
+    slug: "jodlownik",
+    population: 8_800,
+    neighborSlugs: ["dobra", "tymbark", "zegocina"],
+    largerCitySlug: "limanowa",
+  }),
+  miastoAgi({
+    name: "Tymbark",
+    slug: "tymbark",
+    population: 6_400,
+    neighborSlugs: ["limanowa", "dobra", "slopnice", "jodlownik"],
+    largerCitySlug: "limanowa",
+  }),
+  miastoAgi({
+    name: "Dobra",
+    slug: "dobra",
+    population: 10_100,
+    neighborSlugs: ["tymbark", "jodlownik", "mszana-dolna", "slopnice"],
+    largerCitySlug: "limanowa",
+  }),
+  miastoAgi({
+    name: "Laskowa",
+    slug: "laskowa",
+    population: 8_200,
+    neighborSlugs: ["limanowa", "zegocina", "lipnica-murowana"],
+    largerCitySlug: "limanowa",
+  }),
+  miastoAgi({
+    name: "Słopnice",
+    slug: "slopnice",
+    population: 7_000,
+    neighborSlugs: ["limanowa", "tymbark", "dobra", "kamienica"],
+    largerCitySlug: "limanowa",
+  }),
+  miastoAgi({
+    name: "Łukowica",
+    slug: "lukowica",
+    population: 10_200,
+    neighborSlugs: ["limanowa", "nowy-sacz", "laskowa"],
+    largerCitySlug: "nowy-sacz",
+  }),
+  // Populacja to miasto (7 817) plus odrebna gmina wiejska (17 652) - strona
+  // obsluguje obie jednostki, bo dla klientki to jedno miejsce na mapie.
+  miastoAgi({
+    name: "Mszana Dolna",
+    slug: "mszana-dolna",
+    population: 25_500,
+    neighborSlugs: ["dobra", "kamienica", "limanowa"],
+    largerCitySlug: "limanowa",
+  }),
+  // Po wydzieleniu gminy Szczawa 1.01.2025: 4 solectwa, ok. 5 988 osob.
+  miastoAgi({
+    name: "Kamienica",
+    slug: "kamienica",
+    population: 6_000,
+    neighborSlugs: ["mszana-dolna", "slopnice", "lukowica"],
+    largerCitySlug: "limanowa",
+  }),
 ];
