@@ -61,6 +61,38 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/wojewodztwa", priority: 0.6, changeFrequency: "weekly" },
 ];
 
+/**
+ * `updatedAt` przychodzi z repozytoriów jako surowy string z Postgresa
+ * ("2026-08-25 15:51:41.548993+00"), a nie jako ISO 8601. Next wstawia go
+ * do <lastmod> dosłownie, przez co Google Search Console raportowało
+ * "Nieprawidłowa data" dla 43 z 96 adresów (28.08.2026) — spacja zamiast "T"
+ * i offset "+00" zamiast "+00:00".
+ *
+ * Normalizujemy tu, a nie w repozytoriach, bo `updatedAt: string` jest
+ * publiczną częścią typów i panel admina wyświetla te wartości jako tekst.
+ * Data nieparsowalna wraca jako `fallback` — lepiej podać datę budowania
+ * niż wysłać Google'owi śmieć.
+ */
+function toSitemapDate(value: unknown, fallback: Date): Date {
+  if (value instanceof Date) {
+    return Number.isNaN(value.getTime()) ? fallback : value;
+  }
+  if (typeof value !== "string") return fallback;
+
+  const trimmed = value.trim();
+  if (!trimmed) return fallback;
+
+  // "2026-08-25 15:51:41…" → "2026-08-25T15:51:41…"
+  let normalized = trimmed.replace(/^(\d{4}-\d{2}-\d{2}) /, "$1T");
+  // "…+00" → "…+00:00" (tylko gdy jest część czasowa, żeby nie zepsuć "2026-08-25")
+  if (normalized.includes("T")) {
+    normalized = normalized.replace(/([+-]\d{2})$/, "$1:00");
+  }
+
+  const parsed = new Date(normalized);
+  return Number.isNaN(parsed.getTime()) ? fallback : parsed;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const settings = await getSeoSettingsRepository().get();
   if (!settings.sitemapEnabled) return [];
@@ -82,7 +114,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const locationEntries: MetadataRoute.Sitemap = indexableLocations.map((location) => ({
     url: `${SITE.url}${location.urlPath}`,
-    lastModified: location.updatedAt,
+    lastModified: toSitemapDate(location.updatedAt, now),
     changeFrequency: "monthly",
     priority: location.tier === "A" ? 0.7 : location.tier === "B" ? 0.55 : 0.4,
   }));
@@ -105,7 +137,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((p) => p.indexable)
     .map((post) => ({
       url: `${SITE.url}/blog/${post.slug}`,
-      lastModified: post.updatedAt,
+      lastModified: toSitemapDate(post.updatedAt, now),
       changeFrequency: "monthly",
       priority: 0.5,
     }));
@@ -114,7 +146,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((p) => p.status === "published" && p.indexable)
     .map((page) => ({
       url: `${SITE.url}/${page.slug}`,
-      lastModified: page.updatedAt,
+      lastModified: toSitemapDate(page.updatedAt, now),
       changeFrequency: "monthly",
       priority: 0.4,
     }));
