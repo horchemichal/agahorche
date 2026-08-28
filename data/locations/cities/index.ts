@@ -1,13 +1,18 @@
 import type { CityContent } from "../city-content";
 
+import { ALWERNIA } from "./alwernia";
 import { BOCHNIA } from "./bochnia";
 import { BRZESKO } from "./brzesko";
+import { CHELMEK } from "./chelmek";
 import { CHRZANOW } from "./chrzanow";
 import { DRWINIA } from "./drwinia";
 import { LAPANOW } from "./lapanow";
+import { LIBIAZ } from "./libiaz";
 import { LIPNICA_MUROWANA } from "./lipnica-murowana";
+import { OSWIECIM } from "./oswiecim";
 import { RZEZAWA } from "./rzezawa";
 import { TRZCIANA } from "./trzciana";
+import { TRZEBINIA } from "./trzebinia";
 import { ZEGOCINA } from "./zegocina";
 import { KRZESZOWICE } from "./krzeszowice";
 import { MICHALOWICE } from "./michalowice";
@@ -35,14 +40,19 @@ import { ZAKLICZYN } from "./zakliczyn";
  * decydują dane lokalizacji (`seoPriority`), a nie ta tablica.
  */
 export const MIASTA_DOPISANE: CityContent[] = [
+  ALWERNIA,
   BOCHNIA,
   BRZESKO,
+  CHELMEK,
   CHRZANOW,
   DRWINIA,
   LAPANOW,
+  LIBIAZ,
   LIPNICA_MUROWANA,
+  OSWIECIM,
   RZEZAWA,
   TRZCIANA,
+  TRZEBINIA,
   ZEGOCINA,
   KRZESZOWICE,
   MICHALOWICE,
