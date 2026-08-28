@@ -38,6 +38,12 @@ import { PROSZOWICE } from "./proszowice";
 import { TARNOW } from "./tarnow";
 import { WOJNICZ } from "./wojnicz";
 import { ZAKLICZYN } from "./zakliczyn";
+import { OLKUSZ } from "./olkusz";
+import { WOLBROM } from "./wolbrom";
+import { KLUCZE } from "./klucze";
+import { BUKOWNO } from "./bukowno";
+import { BOLESLAW } from "./boleslaw";
+import { TRZYCIAZ } from "./trzyciaz";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -86,4 +92,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TARNOW,
   WOJNICZ,
   ZAKLICZYN,
+  OLKUSZ,
+  WOLBROM,
+  KLUCZE,
+  BUKOWNO,
+  BOLESLAW,
+  TRZYCIAZ,
 ];

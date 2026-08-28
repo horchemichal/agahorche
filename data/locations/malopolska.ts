@@ -396,4 +396,55 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["mszana-dolna", "slopnice", "lukowica"],
     largerCitySlug: "limanowa",
   }),
+  // ---------------------------------------------------------------------
+  // FALA OLKUSKA (28.08.2026) - caly powiat olkuski, 6 gmin.
+  // Ludnosc: GUS BDL, stan 31.12.2025. Sumy gminne zgadzaja sie z suma
+  // powiatowa (103 887) w dwoch niezaleznych zrodlach.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Olkusz",
+    slug: "olkusz",
+    population: 44_782,
+    neighborSlugs: ["boleslaw", "bukowno", "klucze", "wolbrom", "trzyciaz"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Wolbrom",
+    slug: "wolbrom",
+    population: 21_566,
+    neighborSlugs: ["olkusz", "klucze", "trzyciaz"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Klucze",
+    slug: "klucze",
+    population: 14_206,
+    neighborSlugs: ["olkusz", "boleslaw", "wolbrom"],
+    largerCitySlug: "olkusz",
+  }),
+  // Gmina MIEJSKA, bez solectw. Prawa miejskie od 1962 r.
+  miastoAgi({
+    name: "Bukowno",
+    slug: "bukowno",
+    population: 9_104,
+    neighborSlugs: ["olkusz", "boleslaw", "trzebinia"],
+    largerCitySlug: "olkusz",
+  }),
+  // UWAGA: w Malopolsce sa DWIE gminy Boleslaw. Ta jest w powiecie
+  // olkuskim (7 353) i dostaje goly slug. Ta w powiecie dabrowskim
+  // (2 614) dostanie slug "boleslaw-dabrowski".
+  miastoAgi({
+    name: "Bolesław",
+    slug: "boleslaw",
+    population: 7_353,
+    neighborSlugs: ["olkusz", "bukowno", "klucze"],
+    largerCitySlug: "olkusz",
+  }),
+  miastoAgi({
+    name: "Trzyciąż",
+    slug: "trzyciaz",
+    population: 6_876,
+    neighborSlugs: ["olkusz", "wolbrom"],
+    largerCitySlug: "krakow",
+  }),
 ];

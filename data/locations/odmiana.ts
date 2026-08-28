@@ -93,6 +93,15 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   zegocina: { msc: "Żegocinie", dop: "Żegociny" },
   "lipnica-murowana": { msc: "Lipnicy Murowanej", dop: "Lipnicy Murowanej" },
 
+
+  // Fala olkuska
+  olkusz: { msc: "Olkuszu", dop: "Olkusza" },
+  wolbrom: { msc: "Wolbromiu", dop: "Wolbromia" },
+  klucze: { msc: "Kluczach", dop: "Klucz" },
+  bukowno: { msc: "Bukownie", dop: "Bukowna" },
+  boleslaw: { msc: "Bolesławiu", dop: "Bolesławia" },
+  trzyciaz: { msc: "Trzyciążu", dop: "Trzyciąża" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
