@@ -63,6 +63,14 @@ import { STRYSZAWA } from "./stryszawa";
 import { ZEMBRZYCE } from "./zembrzyce";
 import { BUDZOW } from "./budzow";
 import { BYSTRA_SIDZINA } from "./bystra-sidzina";
+import { MIECHOW } from "./miechow";
+import { CHARSZNICA } from "./charsznica";
+import { RACLAWICE } from "./raclawice";
+import { KSIAZ_WIELKI } from "./ksiaz-wielki";
+import { KOZLOW } from "./kozlow";
+import { GOLCZA } from "./golcza";
+import { SLABOSZOW } from "./slaboszow";
+import { SLOMNIKI } from "./slomniki";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -137,4 +145,13 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZEMBRZYCE,
   BUDZOW,
   BYSTRA_SIDZINA,
+  // Fala miechowska — caly powiat miechowski + Slomniki (pow. krakowski)
+  MIECHOW,
+  CHARSZNICA,
+  RACLAWICE,
+  KSIAZ_WIELKI,
+  KOZLOW,
+  GOLCZA,
+  SLABOSZOW,
+  SLOMNIKI,
 ];
