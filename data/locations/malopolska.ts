@@ -725,4 +725,62 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["poronin", "zakopane", "bukowina-tatrzanska"],
     largerCitySlug: "zakopane",
   }),
+  // -------------------------------------------------------------------
+  // FALA BRZESKA - domkniecie powiatu brzeskiego (6 gmin).
+  //   Czchow - miasto, ktore stracilo prawa miejskie w 1928 i odzyskalo
+  //            je w 2000; fasola z ChNP Doliny Dunajca,
+  //   Debno - gmina sypialnia (saldo dojazdow -886), zamek ZAMKNIETY do 2028,
+  //   Gnojnik - kukielka uszewska, jedyny wpis na Liste Produktow
+  //            Tradycyjnych w calym powiecie,
+  //   Iwkowa - 185 z 677 suszarni obszaru suski sechlonskiej,
+  //   Borzecin - las i grzyby, najwieksza wies powiatu, Mrozek,
+  //   Szczurowa - najwieksza powierzchniowo i najrzadziej zaludniona
+  //            gmina powiatu, 21 solectw, powodz 2010.
+  //
+  // UWAGA: suska sechlonska NIE jest z Czchowa ani z Gnojnika - obszar
+  // ChOG to Laskowa, Iwkowa, Lososina Dolna i Zegocina. Fasola "Piekny
+  // Jas z Doliny Dunajca" obejmuje z tego powiatu TYLKO Czchow.
+  // -------------------------------------------------------------------
+  miastoAgi({
+    name: "Dębno",
+    slug: "debno",
+    population: 14_498,
+    neighborSlugs: ["brzesko", "borzecin", "czchow", "gnojnik", "wojnicz"],
+    largerCitySlug: "brzesko",
+  }),
+  miastoAgi({
+    name: "Czchów",
+    slug: "czchow",
+    population: 9_699,
+    neighborSlugs: ["iwkowa", "gnojnik", "lipnica-murowana", "zakliczyn", "debno"],
+    largerCitySlug: "brzesko",
+  }),
+  miastoAgi({
+    name: "Szczurowa",
+    slug: "szczurowa",
+    population: 9_080,
+    neighborSlugs: ["brzesko", "borzecin", "rzezawa", "drwinia", "bochnia"],
+    largerCitySlug: "brzesko",
+  }),
+  miastoAgi({
+    name: "Borzęcin",
+    slug: "borzecin",
+    population: 8_117,
+    neighborSlugs: ["brzesko", "debno", "szczurowa", "wojnicz"],
+    largerCitySlug: "brzesko",
+  }),
+  miastoAgi({
+    name: "Gnojnik",
+    slug: "gnojnik",
+    population: 8_099,
+    neighborSlugs: ["brzesko", "czchow", "debno", "nowy-wisnicz", "lipnica-murowana"],
+    largerCitySlug: "brzesko",
+  }),
+  miastoAgi({
+    name: "Iwkowa",
+    slug: "iwkowa",
+    population: 6_650,
+    neighborSlugs: ["czchow", "lipnica-murowana", "laskowa", "zegocina"],
+    largerCitySlug: "brzesko",
+  }),
 ];

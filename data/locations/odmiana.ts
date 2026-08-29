@@ -156,6 +156,14 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   },
   "bialy-dunajec": { msc: "Białym Dunajcu", dop: "Białego Dunajca" },
 
+  // Fala brzeska — reszta powiatu brzeskiego
+  czchow: { msc: "Czchowie", dop: "Czchowa" },
+  debno: { msc: "Dębnie", dop: "Dębna" },
+  gnojnik: { msc: "Gnojniku", dop: "Gnojnika" },
+  iwkowa: { msc: "Iwkowej", dop: "Iwkowej" },
+  borzecin: { msc: "Borzęcinie", dop: "Borzęcina" },
+  szczurowa: { msc: "Szczurowej", dop: "Szczurowej" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
