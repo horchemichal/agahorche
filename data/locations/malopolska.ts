@@ -483,4 +483,55 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["andrychow", "wadowice"],
     largerCitySlug: "wadowice",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA WADOWICKA cz. 2 — powiat wadowicki domkniety, 10/10 gmin.
+  // UWAGA: w Malopolsce sa DWIE gminy Spytkowice. Ta jest w powiecie
+  // wadowickim (ok. 10 tys., nad Wisla) i dostaje goly slug. Ta
+  // w powiecie nowotarskim (4 703, Podhale) dostanie slug
+  // "spytkowice-nowotarskie" przy fali nowotarskiej — i WTEDY trzeba
+  // dopisac na obu stronach zdanie odsylajace do tej drugiej.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Brzeźnica",
+    slug: "brzeznica",
+    population: 10_876,
+    neighborSlugs: ["spytkowice", "tomice", "skawina", "wadowice"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Spytkowice",
+    slug: "spytkowice",
+    population: 9_953,
+    neighborSlugs: ["tomice", "brzeznica", "alwernia"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Tomice",
+    slug: "tomice",
+    population: 8_303,
+    neighborSlugs: ["wadowice", "spytkowice", "brzeznica", "wieprz"],
+    largerCitySlug: "wadowice",
+  }),
+  miastoAgi({
+    name: "Stryszów",
+    slug: "stryszow",
+    population: 6_776,
+    neighborSlugs: ["mucharz", "kalwaria-zebrzydowska", "lanckorona", "wadowice"],
+    largerCitySlug: "wadowice",
+  }),
+  miastoAgi({
+    name: "Lanckorona",
+    slug: "lanckorona",
+    population: 6_251,
+    neighborSlugs: ["kalwaria-zebrzydowska", "stryszow", "skawina"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Mucharz",
+    slug: "mucharz",
+    population: 4_175,
+    neighborSlugs: ["stryszow", "wadowice"],
+    largerCitySlug: "wadowice",
+  }),
 ];

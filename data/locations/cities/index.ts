@@ -48,6 +48,12 @@ import { WADOWICE } from "./wadowice";
 import { ANDRYCHOW } from "./andrychow";
 import { KALWARIA_ZEBRZYDOWSKA } from "./kalwaria-zebrzydowska";
 import { WIEPRZ } from "./wieprz";
+import { TOMICE } from "./tomice";
+import { BRZEZNICA } from "./brzeznica";
+import { SPYTKOWICE } from "./spytkowice";
+import { LANCKORONA } from "./lanckorona";
+import { STRYSZOW } from "./stryszow";
+import { MUCHARZ } from "./mucharz";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -106,4 +112,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ANDRYCHOW,
   KALWARIA_ZEBRZYDOWSKA,
   WIEPRZ,
+  TOMICE,
+  BRZEZNICA,
+  SPYTKOWICE,
+  LANCKORONA,
+  STRYSZOW,
+  MUCHARZ,
 ];

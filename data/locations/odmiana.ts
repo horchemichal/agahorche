@@ -111,6 +111,14 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   },
   wieprz: { msc: "Wieprzu", dop: "Wieprza" },
 
+  // Fala wadowicka cz. 2
+  tomice: { msc: "Tomicach", dop: "Tomic" },
+  brzeznica: { msc: "Brzeźnicy", dop: "Brzeźnicy" },
+  spytkowice: { msc: "Spytkowicach", dop: "Spytkowic" },
+  lanckorona: { msc: "Lanckoronie", dop: "Lanckorony" },
+  stryszow: { msc: "Stryszowie", dop: "Stryszowa" },
+  mucharz: { msc: "Mucharzu", dop: "Mucharza" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
