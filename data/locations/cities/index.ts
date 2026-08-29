@@ -82,6 +82,13 @@ import { GNOJNIK } from "./gnojnik";
 import { IWKOWA } from "./iwkowa";
 import { BORZECIN } from "./borzecin";
 import { SZCZUROWA } from "./szczurowa";
+import { SULKOWICE } from "./sulkowice";
+import { SIEPRAW } from "./siepraw";
+import { PCIM } from "./pcim";
+import { RACIECHOWICE } from "./raciechowice";
+import { TOKARNIA } from "./tokarnia";
+import { WISNIOWA } from "./wisniowa";
+import { LUBIEN } from "./lubien";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -178,4 +185,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   IWKOWA,
   BORZECIN,
   SZCZUROWA,
+  // Fala myslenicka — domkniecie powiatu myslenickiego
+  SULKOWICE,
+  SIEPRAW,
+  PCIM,
+  RACIECHOWICE,
+  TOKARNIA,
+  WISNIOWA,
+  LUBIEN,
 ];

@@ -164,6 +164,15 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   borzecin: { msc: "Borzęcinie", dop: "Borzęcina" },
   szczurowa: { msc: "Szczurowej", dop: "Szczurowej" },
 
+  // Fala myslenicka — reszta powiatu myslenickiego
+  sulkowice: { msc: "Sułkowicach", dop: "Sułkowic" },
+  siepraw: { msc: "Sieprawiu", dop: "Sieprawia" },
+  pcim: { msc: "Pcimiu", dop: "Pcimia" },
+  raciechowice: { msc: "Raciechowicach", dop: "Raciechowic" },
+  tokarnia: { msc: "Tokarni", dop: "Tokarni" },
+  wisniowa: { msc: "Wiśniowej", dop: "Wiśniowej" },
+  lubien: { msc: "Lubniu", dop: "Lubnia" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
