@@ -71,6 +71,11 @@ import { KOZLOW } from "./kozlow";
 import { GOLCZA } from "./golcza";
 import { SLABOSZOW } from "./slaboszow";
 import { SLOMNIKI } from "./slomniki";
+import { ZAKOPANE } from "./zakopane";
+import { KOSCIELISKO } from "./koscielisko";
+import { PORONIN } from "./poronin";
+import { BUKOWINA_TATRZANSKA } from "./bukowina-tatrzanska";
+import { BIALY_DUNAJEC } from "./bialy-dunajec";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -154,4 +159,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GOLCZA,
   SLABOSZOW,
   SLOMNIKI,
+  // Fala tatrzanska — caly powiat tatrzanski
+  ZAKOPANE,
+  KOSCIELISKO,
+  PORONIN,
+  BUKOWINA_TATRZANSKA,
+  BIALY_DUNAJEC,
 ];
