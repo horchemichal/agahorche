@@ -608,4 +608,71 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["jordanow-gmina", "jordanow", "zawoja"],
     largerCitySlug: "jordanow",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA MIECHOWSKA — caly powiat miechowski (7 gmin) plus SLOMNIKI.
+  //
+  // UWAGA: SLOMNIKI NALEZA DO POWIATU KRAKOWSKIEGO, nie miechowskiego.
+  // Trafily tu, bo granicza z gmina Miechow i maja unijne ChOG na czosnek.
+  // Nie mylic ze SLABOSZOWEM, ktory jest w powiecie miechowskim.
+  //
+  // UWAGA NA KOZLOW: Kozlowow jest w Polsce kilka. Ten jest miechowski.
+  // UWAGA NA KSIAZ WIELKI: to NIE zamek Ksiaz w Walbrzychu.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Miechów",
+    slug: "miechow",
+    population: 18_640,
+    neighborSlugs: ["charsznica", "raclawice", "ksiaz-wielki", "golcza", "slaboszow"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Słomniki",
+    slug: "slomniki",
+    population: 13_671,
+    neighborSlugs: ["miechow", "golcza", "krakow"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Charsznica",
+    slug: "charsznica",
+    population: 7_038,
+    neighborSlugs: ["miechow", "kozlow", "ksiaz-wielki", "golcza"],
+    largerCitySlug: "miechow",
+  }),
+  miastoAgi({
+    name: "Gołcza",
+    slug: "golcza",
+    population: 5_907,
+    neighborSlugs: ["miechow", "slomniki", "charsznica", "trzyciaz"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Książ Wielki",
+    slug: "ksiaz-wielki",
+    population: 5_019,
+    neighborSlugs: ["miechow", "charsznica", "kozlow", "slaboszow"],
+    largerCitySlug: "miechow",
+  }),
+  miastoAgi({
+    name: "Kozłów",
+    slug: "kozlow",
+    population: 4_403,
+    neighborSlugs: ["charsznica", "ksiaz-wielki", "miechow"],
+    largerCitySlug: "miechow",
+  }),
+  miastoAgi({
+    name: "Słaboszów",
+    slug: "slaboszow",
+    population: 3_293,
+    neighborSlugs: ["miechow", "raclawice", "ksiaz-wielki"],
+    largerCitySlug: "miechow",
+  }),
+  miastoAgi({
+    name: "Racławice",
+    slug: "raclawice",
+    population: 2_426,
+    neighborSlugs: ["miechow", "slaboszow", "charsznica"],
+    largerCitySlug: "miechow",
+  }),
 ];

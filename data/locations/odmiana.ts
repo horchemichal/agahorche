@@ -136,6 +136,16 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
     dop: "gminy Bystra-Sidzina",
   },
 
+  // Fala miechowska
+  miechow: { msc: "Miechowie", dop: "Miechowa" },
+  charsznica: { msc: "Charsznicy", dop: "Charsznicy" },
+  raclawice: { msc: "Racławicach", dop: "Racławic" },
+  "ksiaz-wielki": { msc: "Książu Wielkim", dop: "Książa Wielkiego" },
+  kozlow: { msc: "Kozłowie", dop: "Kozłowa" },
+  golcza: { msc: "Gołczy", dop: "Gołczy" },
+  slaboszow: { msc: "Słaboszowie", dop: "Słaboszowa" },
+  slomniki: { msc: "Słomnikach", dop: "Słomnik" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
