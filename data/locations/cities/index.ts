@@ -76,6 +76,12 @@ import { KOSCIELISKO } from "./koscielisko";
 import { PORONIN } from "./poronin";
 import { BUKOWINA_TATRZANSKA } from "./bukowina-tatrzanska";
 import { BIALY_DUNAJEC } from "./bialy-dunajec";
+import { CZCHOW } from "./czchow";
+import { DEBNO } from "./debno";
+import { GNOJNIK } from "./gnojnik";
+import { IWKOWA } from "./iwkowa";
+import { BORZECIN } from "./borzecin";
+import { SZCZUROWA } from "./szczurowa";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -165,4 +171,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PORONIN,
   BUKOWINA_TATRZANSKA,
   BIALY_DUNAJEC,
+  // Fala brzeska - domkniecie powiatu brzeskiego
+  CZCHOW,
+  DEBNO,
+  GNOJNIK,
+  IWKOWA,
+  BORZECIN,
+  SZCZUROWA,
 ];
