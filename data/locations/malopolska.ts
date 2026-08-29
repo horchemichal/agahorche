@@ -888,4 +888,47 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["raclawice", "miechow", "palecznica", "proszowice", "slomniki"],
     largerCitySlug: "proszowice",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA NOWOTARSKA cz. 1 — piec gmin powiatu nowotarskiego.
+  // Osie rozlaczne: Jablonka = Orawa jako region; Lipnica Wielka =
+  // granica przez wies i Piotr Borowy; Szaflary = geotermia;
+  // Ochotnica Dolna = ksiazka kucharska KGW i dlugosc doliny;
+  // Czorsztyn = wies zbudowana od nowa.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Jabłonka",
+    slug: "jablonka",
+    population: 19_195,
+    neighborSlugs: ["lipnica-wielka", "zawoja"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Szaflary",
+    slug: "szaflary",
+    population: 11_336,
+    neighborSlugs: ["bialy-dunajec", "poronin", "zakopane"],
+    largerCitySlug: "zakopane",
+  }),
+  miastoAgi({
+    name: "Ochotnica Dolna",
+    slug: "ochotnica-dolna",
+    population: 8_499,
+    neighborSlugs: ["czorsztyn"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Czorsztyn",
+    slug: "czorsztyn",
+    population: 7_645,
+    neighborSlugs: ["ochotnica-dolna"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Lipnica Wielka",
+    slug: "lipnica-wielka",
+    population: 6_056,
+    neighborSlugs: ["jablonka", "zawoja"],
+    largerCitySlug: "jablonka",
+  }),
 ];

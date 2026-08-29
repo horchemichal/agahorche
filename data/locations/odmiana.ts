@@ -185,6 +185,19 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   palecznica: { msc: "Pałecznicy", dop: "Pałecznicy" },
   radziemice: { msc: "Radziemicach", dop: "Radziemic" },
 
+  // Fala nowotarska cz.1
+  czorsztyn: { msc: "Czorsztynie", dop: "Czorsztyna" },
+  szaflary: { msc: "Szaflarach", dop: "Szaflar" },
+  "ochotnica-dolna": {
+    msc: "Ochotnicy Dolnej",
+    dop: "Ochotnicy Dolnej",
+  },
+  jablonka: { msc: "Jabłonce", dop: "Jabłonki" },
+  "lipnica-wielka": {
+    msc: "Lipnicy Wielkiej",
+    dop: "Lipnicy Wielkiej",
+  },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
