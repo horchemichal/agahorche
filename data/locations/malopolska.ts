@@ -447,4 +447,40 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["olkusz", "wolbrom"],
     largerCitySlug: "krakow",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA WADOWICKA — powiat wadowicki
+  // Pierwsze cztery z dziesieciu gmin. Pozostale szesc (Lanckorona,
+  // Stryszow, Spytkowice, Tomice, Brzeznica, Mucharz) czeka na research.
+  // UWAGA: miasto Andrychow (ok. 18 tys.) jest LICZNIEJSZE niz miasto
+  // Wadowice (ok. 17 tys.), mimo ze stolica powiatu sa Wadowice.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Andrychów",
+    slug: "andrychow",
+    population: 41_840,
+    neighborSlugs: ["wadowice", "wieprz", "kalwaria-zebrzydowska"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Wadowice",
+    slug: "wadowice",
+    population: 36_327,
+    neighborSlugs: ["andrychow", "wieprz", "kalwaria-zebrzydowska"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Kalwaria Zebrzydowska",
+    slug: "kalwaria-zebrzydowska",
+    population: 19_825,
+    neighborSlugs: ["wadowice", "andrychow", "skawina"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Wieprz",
+    slug: "wieprz",
+    population: 12_797,
+    neighborSlugs: ["andrychow", "wadowice"],
+    largerCitySlug: "wadowice",
+  }),
 ];

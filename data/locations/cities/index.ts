@@ -44,6 +44,10 @@ import { KLUCZE } from "./klucze";
 import { BUKOWNO } from "./bukowno";
 import { BOLESLAW } from "./boleslaw";
 import { TRZYCIAZ } from "./trzyciaz";
+import { WADOWICE } from "./wadowice";
+import { ANDRYCHOW } from "./andrychow";
+import { KALWARIA_ZEBRZYDOWSKA } from "./kalwaria-zebrzydowska";
+import { WIEPRZ } from "./wieprz";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -98,4 +102,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BUKOWNO,
   BOLESLAW,
   TRZYCIAZ,
+  WADOWICE,
+  ANDRYCHOW,
+  KALWARIA_ZEBRZYDOWSKA,
+  WIEPRZ,
 ];

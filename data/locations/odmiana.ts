@@ -102,6 +102,15 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   boleslaw: { msc: "Bolesławiu", dop: "Bolesławia" },
   trzyciaz: { msc: "Trzyciążu", dop: "Trzyciąża" },
 
+  // Fala wadowicka
+  wadowice: { msc: "Wadowicach", dop: "Wadowic" },
+  andrychow: { msc: "Andrychowie", dop: "Andrychowa" },
+  "kalwaria-zebrzydowska": {
+    msc: "Kalwarii Zebrzydowskiej",
+    dop: "Kalwarii Zebrzydowskiej",
+  },
+  wieprz: { msc: "Wieprzu", dop: "Wieprza" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
