@@ -76,6 +76,11 @@ import { KOSCIELISKO } from "./koscielisko";
 import { PORONIN } from "./poronin";
 import { BUKOWINA_TATRZANSKA } from "./bukowina-tatrzanska";
 import { BIALY_DUNAJEC } from "./bialy-dunajec";
+import { CZORSZTYN } from "./czorsztyn";
+import { SZAFLARY } from "./szaflary";
+import { OCHOTNICA_DOLNA } from "./ochotnica-dolna";
+import { JABLONKA } from "./jablonka";
+import { LIPNICA_WIELKA } from "./lipnica-wielka";
 import { CZCHOW } from "./czchow";
 import { DEBNO } from "./debno";
 import { GNOJNIK } from "./gnojnik";
@@ -211,4 +216,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   NOWE_BRZESKO,
   PALECZNICA,
   RADZIEMICE,
+  // Fala nowotarska cz.1
+  JABLONKA,
+  SZAFLARY,
+  OCHOTNICA_DOLNA,
+  CZORSZTYN,
+  LIPNICA_WIELKA,
 ];
