@@ -534,4 +534,78 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["stryszow", "wadowice"],
     largerCitySlug: "wadowice",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA SUSKA — caly powiat suski, wszystkie 9 gmin.
+  //
+  // UWAGA NA DWA JORDANOWY: `jordanow` to gmina MIEJSKA (ok. 5,4 tys.),
+  // `jordanow-gmina` to osobna gmina WIEJSKA (ponad 11 tys., piec solectw),
+  // ktorej urzad miesci sie w tym samym miescie. Nie ma wsi Jordanow.
+  //
+  // UWAGA NA BYSTRA: chodzi o Bystra Podhalanska w powiecie suskim,
+  // NIE o Bystra kolo Bielska-Bialej (gmina Wilkowice, slaskie).
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Sucha Beskidzka",
+    slug: "sucha-beskidzka",
+    population: 8_801,
+    neighborSlugs: ["zembrzyce", "stryszawa", "makow-podhalanski", "budzow"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Maków Podhalański",
+    slug: "makow-podhalanski",
+    population: 15_693,
+    neighborSlugs: ["sucha-beskidzka", "zawoja", "budzow", "stryszawa"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Jordanów",
+    slug: "jordanow",
+    population: 5_389,
+    neighborSlugs: ["jordanow-gmina", "bystra-sidzina", "makow-podhalanski"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Gmina Jordanów",
+    slug: "jordanow-gmina",
+    population: 11_186,
+    neighborSlugs: ["jordanow", "bystra-sidzina", "makow-podhalanski"],
+    largerCitySlug: "jordanow",
+  }),
+  miastoAgi({
+    name: "Zawoja",
+    slug: "zawoja",
+    population: 8_774,
+    neighborSlugs: ["makow-podhalanski", "stryszawa", "bystra-sidzina"],
+    largerCitySlug: "makow-podhalanski",
+  }),
+  miastoAgi({
+    name: "Stryszawa",
+    slug: "stryszawa",
+    population: 11_940,
+    neighborSlugs: ["sucha-beskidzka", "zembrzyce", "zawoja"],
+    largerCitySlug: "sucha-beskidzka",
+  }),
+  miastoAgi({
+    name: "Zembrzyce",
+    slug: "zembrzyce",
+    population: 5_412,
+    neighborSlugs: ["sucha-beskidzka", "mucharz", "stryszow", "budzow"],
+    largerCitySlug: "sucha-beskidzka",
+  }),
+  miastoAgi({
+    name: "Budzów",
+    slug: "budzow",
+    population: 8_834,
+    neighborSlugs: ["zembrzyce", "sucha-beskidzka", "makow-podhalanski"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Bystra-Sidzina",
+    slug: "bystra-sidzina",
+    population: 6_811,
+    neighborSlugs: ["jordanow-gmina", "jordanow", "zawoja"],
+    largerCitySlug: "jordanow",
+  }),
 ];

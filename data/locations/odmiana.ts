@@ -119,6 +119,23 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   stryszow: { msc: "Stryszowie", dop: "Stryszowa" },
   mucharz: { msc: "Mucharzu", dop: "Mucharza" },
 
+  // Fala suska
+  "sucha-beskidzka": { msc: "Suchej Beskidzkiej", dop: "Suchej Beskidzkiej" },
+  "makow-podhalanski": {
+    msc: "Makowie Podhalańskim",
+    dop: "Makowa Podhalańskiego",
+  },
+  jordanow: { msc: "Jordanowie", dop: "Jordanowa" },
+  "jordanow-gmina": { msc: "gminie Jordanów", dop: "gminy Jordanów" },
+  zawoja: { msc: "Zawoi", dop: "Zawoi" },
+  stryszawa: { msc: "Stryszawie", dop: "Stryszawy" },
+  zembrzyce: { msc: "Zembrzycach", dop: "Zembrzyc" },
+  budzow: { msc: "Budzowie", dop: "Budzowa" },
+  "bystra-sidzina": {
+    msc: "gminie Bystra-Sidzina",
+    dop: "gminy Bystra-Sidzina",
+  },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };
