@@ -146,6 +146,16 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   slaboszow: { msc: "Słaboszowie", dop: "Słaboszowa" },
   slomniki: { msc: "Słomnikach", dop: "Słomnik" },
 
+  // Fala tatrzanska
+  zakopane: { msc: "Zakopanem", dop: "Zakopanego" },
+  koscielisko: { msc: "Kościelisku", dop: "Kościeliska" },
+  poronin: { msc: "Poroninie", dop: "Poronina" },
+  "bukowina-tatrzanska": {
+    msc: "Bukowinie Tatrzańskiej",
+    dop: "Bukowiny Tatrzańskiej",
+  },
+  "bialy-dunajec": { msc: "Białym Dunajcu", dop: "Białego Dunajca" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };

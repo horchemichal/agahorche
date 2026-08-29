@@ -675,4 +675,54 @@ export const MALOPOLSKA_AGI: Location[] = [
     neighborSlugs: ["miechow", "slaboszow", "charsznica"],
     largerCitySlug: "miechow",
   }),
+
+  // ---------------------------------------------------------------------
+  // FALA TATRZANSKA — caly powiat tatrzanski (5 gmin).
+  //
+  // OSIE ROZLACZNE, bo to najgestszy klaster podobienstwa w projekcie:
+  //   Zakopane — miasto bez miejsca na zabudowe i na mieszkania,
+  //   Koscielisko — doliny i jaskinie,
+  //   Poronin — muzeum urzadzone w zlym domu,
+  //   Bukowina Tatrzanska — folklor jako konkurs, termy jako spolka,
+  //   Bialy Dunajec — pstrag w herbie.
+  //
+  // UWAGA: Chocholow i Termy Chocholowskie to gmina CZARNY DUNAJEC
+  // (pow. nowotarski), ale Dolina Chocholowska jest w Koscielisku.
+  // Morskie Oko i Lysa Polana leza w gminie Bukowina Tatrzanska.
+  // ---------------------------------------------------------------------
+  miastoAgi({
+    name: "Zakopane",
+    slug: "zakopane",
+    population: 25_100,
+    neighborSlugs: ["koscielisko", "poronin", "bukowina-tatrzanska", "bialy-dunajec"],
+    largerCitySlug: "krakow",
+  }),
+  miastoAgi({
+    name: "Bukowina Tatrzańska",
+    slug: "bukowina-tatrzanska",
+    population: 13_568,
+    neighborSlugs: ["poronin", "bialy-dunajec", "zakopane"],
+    largerCitySlug: "zakopane",
+  }),
+  miastoAgi({
+    name: "Poronin",
+    slug: "poronin",
+    population: 11_784,
+    neighborSlugs: ["bialy-dunajec", "zakopane", "bukowina-tatrzanska", "koscielisko"],
+    largerCitySlug: "zakopane",
+  }),
+  miastoAgi({
+    name: "Kościelisko",
+    slug: "koscielisko",
+    population: 9_095,
+    neighborSlugs: ["zakopane", "poronin"],
+    largerCitySlug: "zakopane",
+  }),
+  miastoAgi({
+    name: "Biały Dunajec",
+    slug: "bialy-dunajec",
+    population: 6_828,
+    neighborSlugs: ["poronin", "zakopane", "bukowina-tatrzanska"],
+    largerCitySlug: "zakopane",
+  }),
 ];
