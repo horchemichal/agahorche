@@ -173,6 +173,18 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   wisniowa: { msc: "Wiśniowej", dop: "Wiśniowej" },
   lubien: { msc: "Lubniu", dop: "Lubnia" },
 
+  // Fala domykajaca luki — Klaj, Biskupice, Babice, Niedzwiedz
+  klaj: { msc: "Kłaju", dop: "Kłaja" },
+  biskupice: { msc: "Biskupicach", dop: "Biskupic" },
+  babice: { msc: "Babicach", dop: "Babic" },
+  niedzwiedz: { msc: "Niedźwiedziu", dop: "Niedźwiedzia" },
+
+  // Fala proszowicka — reszta powiatu proszowickiego
+  koszyce: { msc: "Koszycach", dop: "Koszyc" },
+  "nowe-brzesko": { msc: "Nowym Brzesku", dop: "Nowego Brzeska" },
+  palecznica: { msc: "Pałecznicy", dop: "Pałecznicy" },
+  radziemice: { msc: "Radziemicach", dop: "Radziemic" },
+
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
 };

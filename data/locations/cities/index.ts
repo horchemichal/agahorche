@@ -89,6 +89,14 @@ import { RACIECHOWICE } from "./raciechowice";
 import { TOKARNIA } from "./tokarnia";
 import { WISNIOWA } from "./wisniowa";
 import { LUBIEN } from "./lubien";
+import { KLAJ } from "./klaj";
+import { BISKUPICE } from "./biskupice";
+import { BABICE } from "./babice";
+import { NIEDZWIEDZ } from "./niedzwiedz";
+import { KOSZYCE } from "./koszyce";
+import { NOWE_BRZESKO } from "./nowe-brzesko";
+import { PALECZNICA } from "./palecznica";
+import { RADZIEMICE } from "./radziemice";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -193,4 +201,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TOKARNIA,
   WISNIOWA,
   LUBIEN,
+  // Fala domykajaca luki — Klaj, Biskupice, Babice, Niedzwiedz
+  KLAJ,
+  BISKUPICE,
+  BABICE,
+  NIEDZWIEDZ,
+  // Fala proszowicka — domkniecie powiatu proszowickiego
+  KOSZYCE,
+  NOWE_BRZESKO,
+  PALECZNICA,
+  RADZIEMICE,
 ];
