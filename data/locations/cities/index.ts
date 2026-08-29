@@ -54,6 +54,15 @@ import { SPYTKOWICE } from "./spytkowice";
 import { LANCKORONA } from "./lanckorona";
 import { STRYSZOW } from "./stryszow";
 import { MUCHARZ } from "./mucharz";
+import { SUCHA_BESKIDZKA } from "./sucha-beskidzka";
+import { MAKOW_PODHALANSKI } from "./makow-podhalanski";
+import { JORDANOW } from "./jordanow";
+import { JORDANOW_GMINA } from "./jordanow-gmina";
+import { ZAWOJA } from "./zawoja";
+import { STRYSZAWA } from "./stryszawa";
+import { ZEMBRZYCE } from "./zembrzyce";
+import { BUDZOW } from "./budzow";
+import { BYSTRA_SIDZINA } from "./bystra-sidzina";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -118,4 +127,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LANCKORONA,
   STRYSZOW,
   MUCHARZ,
+  // Fala suska — caly powiat suski
+  SUCHA_BESKIDZKA,
+  MAKOW_PODHALANSKI,
+  JORDANOW,
+  JORDANOW_GMINA,
+  ZAWOJA,
+  STRYSZAWA,
+  ZEMBRZYCE,
+  BUDZOW,
+  BYSTRA_SIDZINA,
 ];
