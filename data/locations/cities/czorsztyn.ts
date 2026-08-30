@@ -238,7 +238,7 @@ export const CZORSZTYN: CityContent = {
     "Jeśli mieszkasz w Sromowcach i bliżej Ci przez granicę na Słowację niż do Nowego Targu, to nic nie szkodzi — dla umówienia prezentacji nie ma to znaczenia. Przyjeżdżam tak samo.",
   ],
   nearbyTowns: [
-    "Krościenko nad Dunajcem",
+    "Krościenko",
     "Szczawnica",
     "Łapsze Niżne",
     "Nowy Targ",

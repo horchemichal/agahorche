@@ -235,7 +235,7 @@ export const OCHOTNICA_DOLNA: CityContent = {
     "Jeśli mieszkasz w Tylmanowej, bliżej Ci bywa w stronę Łącka i Nowego Sącza niż do Nowego Targu — dolina otwiera się w tamtą stronę. Dla umówienia prezentacji nie ma to żadnego znaczenia.",
   ],
   nearbyTowns: [
-    "Krościenko nad Dunajcem",
+    "Krościenko",
     "Czorsztyn",
     "Nowy Targ",
     "Szczawnica",

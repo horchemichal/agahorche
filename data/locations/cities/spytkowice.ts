@@ -171,6 +171,10 @@ export const SPYTKOWICE: CityContent = {
       links: [
         { href: "/prezentacja", label: "Umów prezentację przez formularz" },
         { href: "/kontakt", label: "Kontakt" },
+        {
+          href: "/thermomix/spytkowice-nowotarskie",
+          label: "Szukasz Spytkowic na Podhalu? Tu jest ich strona",
+        },
       ],
     },
     sekcjaTm7(),

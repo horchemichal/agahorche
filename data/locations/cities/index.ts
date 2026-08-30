@@ -79,6 +79,15 @@ import { BIALY_DUNAJEC } from "./bialy-dunajec";
 import { CZORSZTYN } from "./czorsztyn";
 import { SZAFLARY } from "./szaflary";
 import { OCHOTNICA_DOLNA } from "./ochotnica-dolna";
+import { NOWY_TARG } from "./nowy-targ";
+import { NOWY_TARG_GMINA } from "./nowy-targ-gmina";
+import { RABA_WYZNA } from "./raba-wyzna";
+import { RABKA_ZDROJ } from "./rabka-zdroj";
+import { SZCZAWNICA } from "./szczawnica";
+import { KROSCIENKO } from "./kroscienko";
+import { CZARNY_DUNAJEC } from "./czarny-dunajec";
+import { LAPSZE_NIZNE } from "./lapsze-nizne";
+import { SPYTKOWICE_NOWOTARSKIE } from "./spytkowice-nowotarskie";
 import { JABLONKA } from "./jablonka";
 import { LIPNICA_WIELKA } from "./lipnica-wielka";
 import { CZCHOW } from "./czchow";
@@ -217,6 +226,15 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PALECZNICA,
   RADZIEMICE,
   // Fala nowotarska cz.1
+  NOWY_TARG,
+  NOWY_TARG_GMINA,
+  RABA_WYZNA,
+  RABKA_ZDROJ,
+  SZCZAWNICA,
+  KROSCIENKO,
+  CZARNY_DUNAJEC,
+  LAPSZE_NIZNE,
+  SPYTKOWICE_NOWOTARSKIE,
   JABLONKA,
   SZAFLARY,
   OCHOTNICA_DOLNA,
