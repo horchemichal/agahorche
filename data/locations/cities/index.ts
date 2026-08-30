@@ -79,6 +79,22 @@ import { BIALY_DUNAJEC } from "./bialy-dunajec";
 import { CZORSZTYN } from "./czorsztyn";
 import { SZAFLARY } from "./szaflary";
 import { OCHOTNICA_DOLNA } from "./ochotnica-dolna";
+import { STARY_SACZ } from "./stary-sacz";
+import { PODEGRODZIE } from "./podegrodzie";
+import { LACKO } from "./lacko";
+import { CHELMIEC } from "./chelmiec";
+import { KRYNICA_ZDROJ } from "./krynica-zdroj";
+import { MUSZYNA } from "./muszyna";
+import { PIWNICZNA_ZDROJ } from "./piwniczna-zdroj";
+import { RYTRO } from "./rytro";
+import { GRYBOW } from "./grybow";
+import { GRYBOW_GMINA } from "./grybow-gmina";
+import { KAMIONKA_WIELKA } from "./kamionka-wielka";
+import { KORZENNA } from "./korzenna";
+import { NAWOJOWA } from "./nawojowa";
+import { LABOWA } from "./labowa";
+import { GRODEK_NAD_DUNAJCEM } from "./grodek-nad-dunajcem";
+import { LOSOSINA_DOLNA } from "./lososina-dolna";
 import { NOWY_TARG } from "./nowy-targ";
 import { NOWY_TARG_GMINA } from "./nowy-targ-gmina";
 import { RABA_WYZNA } from "./raba-wyzna";
@@ -226,6 +242,22 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PALECZNICA,
   RADZIEMICE,
   // Fala nowotarska cz.1
+  STARY_SACZ,
+  PODEGRODZIE,
+  LACKO,
+  CHELMIEC,
+  KRYNICA_ZDROJ,
+  MUSZYNA,
+  PIWNICZNA_ZDROJ,
+  RYTRO,
+  GRYBOW,
+  GRYBOW_GMINA,
+  KAMIONKA_WIELKA,
+  KORZENNA,
+  NAWOJOWA,
+  LABOWA,
+  GRODEK_NAD_DUNAJCEM,
+  LOSOSINA_DOLNA,
   NOWY_TARG,
   NOWY_TARG_GMINA,
   RABA_WYZNA,
