@@ -79,6 +79,23 @@ import { BIALY_DUNAJEC } from "./bialy-dunajec";
 import { CZORSZTYN } from "./czorsztyn";
 import { SZAFLARY } from "./szaflary";
 import { OCHOTNICA_DOLNA } from "./ochotnica-dolna";
+import { GORLICE } from "./gorlice";
+import { GORLICE_GMINA } from "./gorlice-gmina";
+import { BIECZ } from "./biecz";
+import { BOBOWA } from "./bobowa";
+import { USCIE_GORLICKIE } from "./uscie-gorlickie";
+import { LIPINKI } from "./lipinki";
+import { LUZNA } from "./luzna";
+import { MOSZCZENICA } from "./moszczenica";
+import { ROPA } from "./ropa";
+import { SEKOWA } from "./sekowa";
+import { DABROWA_TARNOWSKA } from "./dabrowa-tarnowska";
+import { SZCZUCIN } from "./szczucin";
+import { OLESNO } from "./olesno";
+import { RADGOSZCZ } from "./radgoszcz";
+import { GREBOSZOW } from "./greboszow";
+import { MEDRZECHOW } from "./medrzechow";
+import { BOLESLAW_DABROWSKI } from "./boleslaw-dabrowski";
 import { STARY_SACZ } from "./stary-sacz";
 import { PODEGRODZIE } from "./podegrodzie";
 import { LACKO } from "./lacko";
@@ -242,6 +259,23 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PALECZNICA,
   RADZIEMICE,
   // Fala nowotarska cz.1
+  GORLICE,
+  GORLICE_GMINA,
+  BIECZ,
+  BOBOWA,
+  USCIE_GORLICKIE,
+  LIPINKI,
+  LUZNA,
+  MOSZCZENICA,
+  ROPA,
+  SEKOWA,
+  DABROWA_TARNOWSKA,
+  SZCZUCIN,
+  OLESNO,
+  RADGOSZCZ,
+  GREBOSZOW,
+  MEDRZECHOW,
+  BOLESLAW_DABROWSKI,
   STARY_SACZ,
   PODEGRODZIE,
   LACKO,

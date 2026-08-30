@@ -179,6 +179,10 @@ export const BOLESLAW: CityContent = {
       links: [
         { href: "/prezentacja", label: "Umów prezentację przez formularz" },
         { href: "/kontakt", label: "Kontakt" },
+        {
+          href: "/thermomix/boleslaw-dabrowski",
+          label: "Szukasz Bolesławia pod Dąbrową Tarnowską? Tu jest jego strona",
+        },
       ],
     },
     sekcjaTm7(),
