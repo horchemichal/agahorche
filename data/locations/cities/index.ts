@@ -89,6 +89,15 @@ import { LUZNA } from "./luzna";
 import { MOSZCZENICA } from "./moszczenica";
 import { ROPA } from "./ropa";
 import { SEKOWA } from "./sekowa";
+import { SULOSZOWA } from "./suloszowa";
+import { SKALA } from "./skala";
+import { JERZMANOWICE_PRZEGINIA } from "./jerzmanowice-przeginia";
+import { WIELKA_WIES } from "./wielka-wies";
+import { LISZKI } from "./liszki";
+import { CZERNICHOW } from "./czernichow";
+import { IWANOWICE } from "./iwanowice";
+import { KOCMYRZOW_LUBORZYCA } from "./kocmyrzow-luborzyca";
+import { IGOLOMIA_WAWRZENCZYCE } from "./igolomia-wawrzenczyce";
 import { DABROWA_TARNOWSKA } from "./dabrowa-tarnowska";
 import { SZCZUCIN } from "./szczucin";
 import { OLESNO } from "./olesno";
@@ -269,6 +278,15 @@ export const MIASTA_DOPISANE: CityContent[] = [
   MOSZCZENICA,
   ROPA,
   SEKOWA,
+  SULOSZOWA,
+  SKALA,
+  JERZMANOWICE_PRZEGINIA,
+  WIELKA_WIES,
+  LISZKI,
+  CZERNICHOW,
+  IWANOWICE,
+  KOCMYRZOW_LUBORZYCA,
+  IGOLOMIA_WAWRZENCZYCE,
   DABROWA_TARNOWSKA,
   SZCZUCIN,
   OLESNO,
