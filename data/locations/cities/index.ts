@@ -98,6 +98,20 @@ import { CZERNICHOW } from "./czernichow";
 import { IWANOWICE } from "./iwanowice";
 import { KOCMYRZOW_LUBORZYCA } from "./kocmyrzow-luborzyca";
 import { IGOLOMIA_WAWRZENCZYCE } from "./igolomia-wawrzenczyce";
+import { TUCHOW } from "./tuchow";
+import { ZABNO } from "./zabno";
+import { CIEZKOWICE } from "./ciezkowice";
+import { WIERZCHOSLAWICE } from "./wierzchoslawice";
+import { RADLOW } from "./radlow";
+import { WIETRZYCHOWICE } from "./wietrzychowice";
+import { RYGLICE } from "./ryglice";
+import { GROMNIK } from "./gromnik";
+import { RZEPIENNIK_STRZYZEWSKI } from "./rzepiennik-strzyzewski";
+import { SZERZYNY } from "./szerzyny";
+import { TARNOW_GMINA } from "./tarnow-gmina";
+import { LISIA_GORA } from "./lisia-gora";
+import { SKRZYSZOW } from "./skrzyszow";
+import { PLESNA } from "./plesna";
 import { DABROWA_TARNOWSKA } from "./dabrowa-tarnowska";
 import { SZCZUCIN } from "./szczucin";
 import { OLESNO } from "./olesno";
@@ -287,6 +301,20 @@ export const MIASTA_DOPISANE: CityContent[] = [
   IWANOWICE,
   KOCMYRZOW_LUBORZYCA,
   IGOLOMIA_WAWRZENCZYCE,
+  TUCHOW,
+  ZABNO,
+  CIEZKOWICE,
+  WIERZCHOSLAWICE,
+  RADLOW,
+  WIETRZYCHOWICE,
+  RYGLICE,
+  GROMNIK,
+  RZEPIENNIK_STRZYZEWSKI,
+  SZERZYNY,
+  TARNOW_GMINA,
+  LISIA_GORA,
+  SKRZYSZOW,
+  PLESNA,
   DABROWA_TARNOWSKA,
   SZCZUCIN,
   OLESNO,
