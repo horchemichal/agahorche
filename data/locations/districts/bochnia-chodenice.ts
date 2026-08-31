@@ -81,7 +81,7 @@ export const BOCHNIA_CHODENICE: DistrictContent = {
   h1: "Thermomix Chodenice — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Chodenice Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix w Chodenicach i na Trynitatis w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Chodenicka, Karosek, Lipie, Solidarności. Aga, tel. 517 185 691.",
+    "Thermomix w Chodenicach i na Trynitatis w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Chodenicka, Karosek, Lipie, Solidarności. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod adresy w całych Chodenicach i na Trynitatis: Chodenicka, Karosek, Lipie, Solidarności, Wąwóz i dalej, aż po pętlę autobusu. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni. Prezentacja jest bezpłatna.",
