@@ -117,7 +117,7 @@ export const WIERZCHOSLAWICE: CityContent = {
   h1: "Thermomix Wierzchosławice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Wierzchosławice — prezentacja",
   seoDescription:
-    "Thermomix w gminie Wierzchosławice: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich jedenastu sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Wierzchosławice: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich 11 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Wierzchosławice — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Wierzchosławice. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
