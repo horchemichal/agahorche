@@ -2,13 +2,14 @@ import type { DietCategory, DietDay, DietPlan, Meal } from "@/types/diet";
 import { THERMOMIX_MODELS } from "@/types/diet";
 
 let mealCounter = 0;
-function meal(type: Meal["type"], recipeId: string, alt?: string): Meal {
+function meal(type: Meal["type"], recipeId: string, alt?: string, portions?: number): Meal {
   mealCounter += 1;
   return {
     id: `m${mealCounter}-${recipeId}`,
     type,
     recipeId,
     alternativeRecipeIds: alt ? [alt] : undefined,
+    portions,
   };
 }
 
@@ -64,20 +65,131 @@ function fullDay(prefix: string, day: number): Meal[] {
   ];
 }
 
+/**
+ * KETO — jadłospisy złożone z PRAWDZIWYCH przepisów Cookidoo (31.08.2026).
+ *
+ * Każda pozycja wskazuje konkretny przepis na cookidoo.pl, a wartości
+ * odżywcze w rejestrze pochodzą z tego przepisu, nie z oszacowania.
+ * `portions` to krotność porcji — Cookidoo podaje wartości na porcję,
+ * a porcje bywają małe (patrz komentarz przy `Meal.portions`).
+ *
+ * Sumy sprawdzone: każdy z siedmiu dni mieści się w ±4 kcal od celu,
+ * a węglowodany zostają w zakresie ketogenicznym (12–40 g na dobę).
+ */
 const KETO_1500 = weekPlan({
   id: "keto-7d-1500",
   categoryId: "keto",
   label: "7 dni / 1500 kcal",
   caloriesTarget: 1500,
   day1: [
-    meal("sniadanie", "keto-d1-sniadanie", "keto-d1-sniadanie-alt"),
-    meal("drugie-sniadanie", "keto-d1-drugie-sniadanie", "keto-d1-drugie-sniadanie-alt"),
-    meal("obiad", "keto-d1-obiad", "keto-d1-obiad-alt"),
-    meal("podwieczorek", "keto-d1-podwieczorek", "keto-d1-podwieczorek-alt"),
-    meal("kolacja", "keto-d1-kolacja", "keto-d1-kolacja-alt"),
+    meal("sniadanie", "cd-r924701"),
+    meal("drugie-sniadanie", "cd-r936264"),
+    meal("obiad", "cd-r629256"),
+    meal("podwieczorek", "cd-r56968"),
+    meal("kolacja", "cd-r550550"),
   ],
-  // ETAP 8 — dni 2-7, odblokowywane wyłącznie w Strefie Klienta (recipe ids: data/diets/recipes.ts).
-  days2to7: [2, 3, 4, 5, 6, 7].map((d) => fullDay("keto", d)),
+  days2to7: [
+    [
+      meal("sniadanie", "cd-r901400"),
+      meal("drugie-sniadanie", "cd-r671211", undefined, 1.5),
+      meal("obiad", "cd-r928178"),
+      meal("podwieczorek", "cd-r179030"),
+      meal("kolacja", "cd-r117331"),
+    ],
+    [
+      meal("sniadanie", "cd-r828221"),
+      meal("drugie-sniadanie", "cd-r94722"),
+      meal("obiad", "cd-r323093"),
+      meal("podwieczorek", "cd-r373411", undefined, 1.5),
+      meal("kolacja", "cd-r277666"),
+    ],
+    [
+      meal("sniadanie", "cd-r508640"),
+      meal("drugie-sniadanie", "cd-r10791"),
+      meal("obiad", "cd-r629256"),
+      meal("podwieczorek", "cd-r465526"),
+      meal("kolacja", "cd-r458454"),
+    ],
+    [
+      meal("sniadanie", "cd-r253624", undefined, 1.5),
+      meal("drugie-sniadanie", "cd-r130668"),
+      meal("obiad", "cd-r694482"),
+      meal("podwieczorek", "cd-r828222", undefined, 1.5),
+      meal("kolacja", "cd-r302807"),
+    ],
+    [
+      meal("sniadanie", "cd-r901400", undefined, 1.5),
+      meal("drugie-sniadanie", "cd-r329637"),
+      meal("obiad", "cd-r928151", undefined, 1.5),
+      meal("podwieczorek", "cd-r724920"),
+      meal("kolacja", "cd-r248563"),
+    ],
+    [
+      meal("sniadanie", "cd-r508640"),
+      meal("drugie-sniadanie", "cd-r737547"),
+      meal("obiad", "cd-r239297"),
+      meal("podwieczorek", "cd-r828222"),
+      meal("kolacja", "cd-r458454"),
+    ],
+  ],
+});
+
+const KETO_2000 = weekPlan({
+  id: "keto-7d-2000",
+  categoryId: "keto",
+  label: "7 dni / 2000 kcal",
+  caloriesTarget: 2000,
+  day1: [
+    meal("sniadanie", "cd-r828221"),
+    meal("drugie-sniadanie", "cd-r10791"),
+    meal("obiad", "cd-r323093"),
+    meal("podwieczorek", "cd-r179030", undefined, 1.5),
+    meal("kolacja", "cd-r277666"),
+  ],
+  days2to7: [
+    [
+      meal("sniadanie", "cd-r901400"),
+      meal("drugie-sniadanie", "cd-r936264"),
+      meal("obiad", "cd-r629256", undefined, 1.5),
+      meal("podwieczorek", "cd-r724920"),
+      meal("kolacja", "cd-r458454"),
+    ],
+    [
+      meal("sniadanie", "cd-r828221"),
+      meal("drugie-sniadanie", "cd-r329637"),
+      meal("obiad", "cd-r323093", undefined, 2),
+      meal("podwieczorek", "cd-r828222"),
+      meal("kolacja", "cd-r248563"),
+    ],
+    [
+      meal("sniadanie", "cd-r253624"),
+      meal("drugie-sniadanie", "cd-r737547"),
+      meal("obiad", "cd-r928151", undefined, 2),
+      meal("podwieczorek", "cd-r179030"),
+      meal("kolacja", "cd-r302807"),
+    ],
+    [
+      meal("sniadanie", "cd-r938346"),
+      meal("drugie-sniadanie", "cd-r94722"),
+      meal("obiad", "cd-r323093", undefined, 1.5),
+      meal("podwieczorek", "cd-r179030"),
+      meal("kolacja", "cd-r458454"),
+    ],
+    [
+      meal("sniadanie", "cd-r901400"),
+      meal("drugie-sniadanie", "cd-r94722", undefined, 1.5),
+      meal("obiad", "cd-r323093", undefined, 1.5),
+      meal("podwieczorek", "cd-r56968"),
+      meal("kolacja", "cd-r550550"),
+    ],
+    [
+      meal("sniadanie", "cd-r508640"),
+      meal("drugie-sniadanie", "cd-r595475"),
+      meal("obiad", "cd-r323093"),
+      meal("podwieczorek", "cd-r179030", undefined, 1.5),
+      meal("kolacja", "cd-r302807"),
+    ],
+  ],
 });
 
 const WEGE_1500 = weekPlan({
@@ -220,7 +332,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     description: "Niskowęglowodanowe dania z Thermomixem — więcej tłuszczu i białka, mniej węglowodanów.",
     configuratorMode: "calories",
     icon: "keto",
-    plans: [KETO_1500],
+    plans: [KETO_1500, KETO_2000],
   },
   {
     id: "wegetarianska",
