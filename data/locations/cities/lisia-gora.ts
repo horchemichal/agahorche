@@ -122,7 +122,7 @@ export const LISIA_GORA: CityContent = {
   h1: "Thermomix Lisia Góra – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Lisia Góra — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Lisia Góra: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich jedenastu sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Lisia Góra: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich 11 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Lisia Góra — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Lisia Góra. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
