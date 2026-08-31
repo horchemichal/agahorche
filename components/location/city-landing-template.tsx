@@ -451,12 +451,14 @@ export async function CityLandingTemplate({
             // zostaje zwykłym tekstem — nie tworzymy pustych linków tylko po
             // to, żeby lista wyglądała jednolicie.
             //
-            // Dopasowanie po nazwie, a jesli nie trafi - po liscie osiedli.
-            // Nazwy nie zawsze sa identyczne: strona "Debniki i Ruczaj"
-            // obsluguje pozycje "Debniki" ORAZ "Ruczaj" z listy obok. Bez
-            // tego drugiego kroku obie zostawaly martwym tekstem.
+            // Dopasowanie po nazwie, a jesli nie trafi - po aliasach, a na
+            // koncu po liscie osiedli. Nazwy nie zawsze sa identyczne: strona
+            // "Debniki i Ruczaj" obsluguje pozycje "Debniki" ORAZ "Ruczaj"
+            // z listy obok. "Ruczaj" lapie sie przez osiedla, "Debniki" - nie
+            // (w osiedlach stoi "Stare Debniki"), wiec potrzebne sa aliasy.
             const page =
               districtPages.find((d) => d.nazwa === district) ??
+              districtPages.find((d) => (d.aliasy ?? []).includes(district)) ??
               districtPages.find((d) => d.osiedla.includes(district));
             return (
               <li
