@@ -86,7 +86,7 @@ export const BOCHNIA_SW_JANA_MUROWIANKA: DistrictContent = {
   h1: "Thermomix Św. Jana-Murowianka — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Murowianka Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix na Murowiance i przy św. Jana w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Brzeźnicka, Floris, Krasińskiego, Osiki. Aga, tel. 517 185 691.",
+    "Thermomix na Murowiance i przy św. Jana w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Brzeźnicka, Floris, Krasińskiego, Osiki. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod adresy przy świętego Jana, Murowiance, Brzeźnickiej, Floris, Krasińskiego i Osiki. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni — w bloku z lat siedemdziesiątych tak samo jak w mieszkaniu oddanym trzy lata temu. Prezentacja jest bezpłatna.",
