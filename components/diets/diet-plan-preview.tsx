@@ -47,11 +47,13 @@ export function DietPlanPreview({ plan, forceUnlocked = false }: { plan: DietPla
       (acc, m) => {
         const recipeId = altMealIds.has(m.id) && m.alternativeRecipeIds?.[0] ? m.alternativeRecipeIds[0] : m.recipeId;
         const recipe = getRecipe(recipeId);
+        // Krotność porcji — patrz komentarz przy `Meal.portions` w types/diet.ts.
+        const n = m.portions ?? 1;
         return {
-          calories: acc.calories + (recipe?.calories ?? 0),
-          protein: acc.protein + (recipe?.proteinG ?? 0),
-          fat: acc.fat + (recipe?.fatG ?? 0),
-          carbs: acc.carbs + (recipe?.carbsG ?? 0),
+          calories: acc.calories + (recipe?.calories ?? 0) * n,
+          protein: acc.protein + (recipe?.proteinG ?? 0) * n,
+          fat: acc.fat + (recipe?.fatG ?? 0) * n,
+          carbs: acc.carbs + (recipe?.carbsG ?? 0) * n,
         };
       },
       { calories: 0, protein: 0, fat: 0, carbs: 0 },
@@ -83,19 +85,19 @@ export function DietPlanPreview({ plan, forceUnlocked = false }: { plan: DietPla
         {!isLocked && hasContent && (
           <div className="mt-5 grid grid-cols-4 gap-2 text-center">
             <div className="rounded-lg border border-border bg-neutral-0 p-2.5">
-              <p className="font-display text-lg text-neutral-900">{totals.calories}</p>
+              <p className="font-display text-lg text-neutral-900">{Math.round(totals.calories)}</p>
               <p className="text-[0.65rem] text-muted">kcal</p>
             </div>
             <div className="rounded-lg border border-border bg-neutral-0 p-2.5">
-              <p className="font-display text-lg text-neutral-900">{totals.protein} g</p>
+              <p className="font-display text-lg text-neutral-900">{Math.round(totals.protein)} g</p>
               <p className="text-[0.65rem] text-muted">białko</p>
             </div>
             <div className="rounded-lg border border-border bg-neutral-0 p-2.5">
-              <p className="font-display text-lg text-neutral-900">{totals.fat} g</p>
+              <p className="font-display text-lg text-neutral-900">{Math.round(totals.fat)} g</p>
               <p className="text-[0.65rem] text-muted">tłuszcze</p>
             </div>
             <div className="rounded-lg border border-border bg-neutral-0 p-2.5">
-              <p className="font-display text-lg text-neutral-900">{totals.carbs} g</p>
+              <p className="font-display text-lg text-neutral-900">{Math.round(totals.carbs)} g</p>
               <p className="text-[0.65rem] text-muted">węglowodany</p>
             </div>
           </div>

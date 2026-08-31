@@ -41,7 +41,7 @@ export function MealCard({
           </button>
         )}
       </div>
-      <RecipeCard recipe={recipe} compact />
+      <RecipeCard recipe={recipe} compact portions={meal.portions ?? 1} />
     </div>
   );
 }
