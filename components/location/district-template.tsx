@@ -9,6 +9,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { LeadForm } from "@/components/lead/lead-form";
 import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { webPageSchema } from "@/lib/seo/schema";
+import { getDistrictsForCity } from "@/data/locations/districts";
 import { SITE } from "@/lib/utils";
 
 /**
@@ -32,6 +33,25 @@ import { SITE } from "@/lib/utils";
  * ale jest jeden, na dole, a nie trzy jak na stronie miasta.
  */
 export function DistrictTemplate({ content }: { content: DistrictContent }) {
+  /**
+   * Sąsiednie dzielnice tego samego miasta.
+   *
+   * Do audytu z 31 sierpnia 2026 każda strona dzielnicy była liściem: jedyne
+   * wyjście prowadziło w górę, na stronę miasta, a jedyne wejście szło z tej
+   * samej strony miasta. Trzydzieści jeden stron nie przekazywało sobie nic
+   * i każda wisiała na jednym linku przychodzącym.
+   *
+   * Ten blok robi z nich siatkę. Nie jest to wypełniacz: człowiek, który
+   * trafił na Prądnik Biały, a mieszka na Azorach przy granicy z Krowodrzą,
+   * ma jedno kliknięcie do właściwej strony zamiast powrotu do spisu.
+   *
+   * Świadomie BEZ opisów przy linkach — to ma być spis, a nie druga treść
+   * do napisania w osiemnastu wariantach.
+   */
+  const sasiednie = getDistrictsForCity(content.miasto.slug).filter(
+    (d) => d.slug !== content.slug,
+  );
+
   return (
     <>
       <JsonLdScript
@@ -161,6 +181,33 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
           </div>
         </div>
       </Section>
+
+      {sasiednie.length > 0 && (
+        <Section>
+          <div className="max-w-3xl">
+            <Heading as="h2" size="md">
+              Pozostałe dzielnice — {content.miasto.nazwa}
+            </Heading>
+            <p className="mt-5 text-base leading-relaxed text-neutral-700">
+              Dojeżdżam do każdej z nich na tych samych zasadach. Jeśli mieszkasz
+              na granicy dwóch dzielnic, wybierz tę, w której faktycznie jest
+              Twój adres — opis kuchni i dojazdu będzie wtedy trafniejszy.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              {sasiednie.map((d) => (
+                <li key={d.slug}>
+                  <Link
+                    href={d.urlPath}
+                    className="inline-block rounded-full border border-neutral-300 bg-neutral-0 px-3.5 py-1.5 text-sm text-brand-700 transition-colors hover:border-brand-500 hover:text-brand-800"
+                  >
+                    {d.nazwa}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Section>
+      )}
 
       <FaqSection items={content.faq} title={`Thermomix ${content.nazwa} — pytania mieszkańców`} />
 
