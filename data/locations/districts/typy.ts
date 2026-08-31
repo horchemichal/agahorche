@@ -79,6 +79,25 @@ export interface DistrictContent {
    */
   osiedla: string[];
 
+  /**
+   * Dodatkowe nazwy, pod którymi ta strona ma być rozpoznawana przy
+   * linkowaniu z listy dzielnic na stronie miasta — NIE renderowane nigdzie
+   * na stronie.
+   *
+   * Powód istnienia tego pola: lista `districts[]` na stronie miasta trzyma
+   * nazwy jednostek administracyjnych, a nagłówek strony bywa szerszy.
+   * Strona „Dębniki i Ruczaj” obsługuje dwie pozycje z tej listy — „Ruczaj”
+   * łapał się przez `osiedla`, ale samo „Dębniki” nie łapało się przez nic:
+   * `nazwa` to „Dębniki i Ruczaj”, a w `osiedla` stoi „Stare Dębniki”.
+   * Efekt: największa dzielnica Krakowa wisiała na stronie miasta jako
+   * martwy tekst, bez linku do własnej strony.
+   *
+   * Wpisywanie „Dębniki” do `osiedla` załatwiłoby dopasowanie, ale zaśmieca
+   * czytelnikowi listę osiedli nazwą dzielnicy stojącą obok „Starych
+   * Dębnik”. Dlatego osobne pole: jedno zadanie, zero skutków ubocznych.
+   */
+  aliasy?: string[];
+
   /** 3–4 sekcje. Każda musi mieć treść prawdziwą tylko dla tej dzielnicy. */
   sections: DistrictSection[];
 
