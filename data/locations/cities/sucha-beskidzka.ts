@@ -90,7 +90,7 @@ import {
 export const SUCHA_BESKIDZKA: CityContent = {
   slug: "sucha-beskidzka",
   h1: "Thermomix Sucha Beskidzka – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix Sucha Beskidzka — prezentacja i cena",
+  seoTitle: "Przedstawiciel Thermomix Sucha Beskidzka — prezentacja",
   seoDescription:
     "Thermomix w Suchej Beskidzkiej: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Sucha Beskidzka — zobacz TM7 na żywo u siebie w kuchni",
