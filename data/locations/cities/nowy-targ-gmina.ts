@@ -83,7 +83,7 @@ import {
 export const NOWY_TARG_GMINA: CityContent = {
   slug: "nowy-targ-gmina",
   h1: "Thermomix gmina Nowy Targ – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix gmina Nowy Targ — prezentacja i cena",
+  seoTitle: "Przedstawiciel Thermomix gmina Nowy Targ — cena",
   seoDescription:
     "Thermomix w gminie wiejskiej Nowy Targ: bezpłatna prezentacja TM7 u Ciebie w kuchni — Ludźmierz, Waksmund, Łopuszna, Krempachy. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix gmina Nowy Targ — zobacz TM7 u siebie w kuchni",
