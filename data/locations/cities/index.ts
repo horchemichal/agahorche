@@ -112,6 +112,18 @@ import { TARNOW_GMINA } from "./tarnow-gmina";
 import { LISIA_GORA } from "./lisia-gora";
 import { SKRZYSZOW } from "./skrzyszow";
 import { PLESNA } from "./plesna";
+import { OSWIECIM_GMINA } from "./oswiecim-gmina";
+import { KETY } from "./kety";
+import { BRZESZCZE } from "./brzeszcze";
+import { ZATOR } from "./zator";
+import { OSIEK } from "./osiek";
+import { POLANKA_WIELKA } from "./polanka-wielka";
+import { PRZECISZOW } from "./przeciszow";
+import { KONIUSZA } from "./koniusza";
+import { LIMANOWA_GMINA } from "./limanowa-gmina";
+import { MSZANA_DOLNA_GMINA } from "./mszana-dolna-gmina";
+import { SZCZAWA } from "./szczawa";
+import { BOCHNIA_GMINA } from "./bochnia-gmina";
 import { DABROWA_TARNOWSKA } from "./dabrowa-tarnowska";
 import { SZCZUCIN } from "./szczucin";
 import { OLESNO } from "./olesno";
@@ -315,6 +327,18 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LISIA_GORA,
   SKRZYSZOW,
   PLESNA,
+  OSWIECIM_GMINA,
+  KETY,
+  BRZESZCZE,
+  ZATOR,
+  OSIEK,
+  POLANKA_WIELKA,
+  PRZECISZOW,
+  KONIUSZA,
+  LIMANOWA_GMINA,
+  MSZANA_DOLNA_GMINA,
+  SZCZAWA,
+  BOCHNIA_GMINA,
   DABROWA_TARNOWSKA,
   SZCZUCIN,
   OLESNO,
