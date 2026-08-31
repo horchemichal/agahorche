@@ -89,7 +89,7 @@ export const BOCHNIA_PROSZOWSKIE: DistrictContent = {
   h1: "Thermomix osiedle Proszowskie — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Proszowskie Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix na osiedlu Proszowskim w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Proszowska, Partyzantów, Łany, Na Kąty, Wygoda. Aga, tel. 517 185 691.",
+    "Thermomix na osiedlu Proszowskim w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Proszowska, Partyzantów, Łany, Na Kąty, Wygoda. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod adresy na całym Proszowskiem: Proszowska, Partyzantów, Łany, Na Kąty, Na Buczków, Hutnicza i dalej. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni — chętnie z tego, co przyniosłaś w czwartek z targu. Prezentacja jest bezpłatna.",
