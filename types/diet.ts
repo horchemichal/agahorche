@@ -75,6 +75,24 @@ export interface Meal {
   recipeId: string;
   /** "Zamień danie" (spec §16) — ids into the same recipe registry. */
   alternativeRecipeIds?: string[];
+
+  /**
+   * Ile porcji przepisu składa się na ten posiłek. Domyślnie 1.
+   *
+   * DLACZEGO TO ISTNIEJE. Cookidoo podaje wartości odżywcze NA PORCJĘ,
+   * a porcje bywają małe — „Jajecznica na parze" to 169 kcal, „Zupa krem
+   * z cukinii" 96 kcal. Pięć takich pozycji wygląda jak sensowny jadłospis,
+   * ale daje ~830 kcal, nie 1500. Dopóki wartości były wymyślone, problem
+   * był niewidoczny: liczby dobierano tak, żeby suma się zgadzała.
+   *
+   * Krotność porcji jest drugim regulatorem obok wyboru dania i pozwala
+   * trafić w cel kaloryczny bez zmyślania. Tak działają prawdziwe
+   * jadłospisy — półtorej porcji zupy to normalna rzecz.
+   *
+   * Wartości odżywcze mnożymy przez tę liczbę wszędzie, gdzie się je
+   * sumuje albo pokazuje.
+   */
+  portions?: number;
 }
 
 export interface DietDay {
