@@ -103,7 +103,7 @@ export const OSWIECIM_GMINA: CityContent = {
   h1: "Thermomix gmina Oświęcim – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix gmina Oświęcim — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie wiejskiej Oświęcim: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich czternastu sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie wiejskiej Oświęcim: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich 14 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix gmina Oświęcim — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie wiejskiej Oświęcim. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
