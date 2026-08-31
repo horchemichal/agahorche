@@ -127,7 +127,7 @@ export const LIMANOWA_GMINA: CityContent = {
   h1: "Thermomix gmina Limanowa – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix gmina Limanowa — prezentacja",
   seoDescription:
-    "Thermomix w gminie wiejskiej Limanowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie wiejskiej Limanowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix gmina Limanowa — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie wiejskiej Limanowa. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
