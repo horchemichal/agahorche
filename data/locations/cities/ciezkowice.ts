@@ -97,7 +97,7 @@ export const CIEZKOWICE: CityContent = {
   h1: "Thermomix Ciężkowice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Ciężkowice — prezentacja i cena",
   seoDescription:
-    "Thermomix w Ciężkowicach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Ciężkowicach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich wsi bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Ciężkowice — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Ciężkowicach i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
