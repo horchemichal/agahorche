@@ -109,7 +109,7 @@ export const RACIECHOWICE: CityContent = {
   h1: "Thermomix Raciechowice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Raciechowice — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Raciechowice: bezpłatna prezentacja TM7 u Ciebie w kuchni — Raciechowice, Czasław, Gruszów, Krzesławice, Zegartowice. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Raciechowice: bezpłatna prezentacja TM7 u Ciebie w kuchni — Raciechowice, Czasław, Gruszów, Krzesławice, Zegartowice. Tel. 517 185 691.",
   ogTitle: "Thermomix Raciechowice — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Raciechowice. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
