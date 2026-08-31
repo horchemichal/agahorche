@@ -26,6 +26,10 @@ export const KRAKOW_DEBNIKI: DistrictContent = {
   slug: "krakow-debniki",
   urlPath: "/thermomix/krakow/debniki",
   nazwa: "Dębniki i Ruczaj",
+  // Lista dzielnic na stronie Krakowa ma osobne pozycje „Dębniki” i „Ruczaj”.
+  // „Ruczaj” trafia tu przez `osiedla`; „Dębniki” nie trafiało przez nic i
+  // zostawało martwym tekstem. Patrz komentarz przy `aliasy` w typy.ts.
+  aliasy: ["Dębniki"],
   miejscownik: "Dębnikach i na Ruczaju",
   miasto: { nazwa: "Kraków", slug: "krakow", urlPath: "/thermomix/krakow" },
 
