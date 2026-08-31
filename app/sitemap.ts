@@ -23,6 +23,23 @@ import { getSeoSettingsRepository } from "@/lib/database/repositories/seo-settin
  */
 export const dynamic = "force-dynamic";
 
+/**
+ * Data ostatniej zmiany treści pisanej ręcznie — dla tras statycznych
+ * i stron dzielnic, które nie mają własnego `updatedAt` w bazie.
+ *
+ * DLACZEGO STAŁA, A NIE `new Date()`. Sitemapa jest `force-dynamic`, więc
+ * `new Date()` dawało w `<lastmod>` moment odpytania: przy każdym crawlu
+ * siedemdziesiąt kilka adresów deklarowało „zmienione przed chwilą”, choć
+ * nie zmieniło się od tygodni. Google traktuje `lastmod` jako sygnał
+ * zaufany dopóki jest wiarygodny — a witryna, na której wszystko zawsze
+ * jest świeże, uczy go, że `lastmod` można tu ignorować. Traciły na tym
+ * także strony miast, które mają w bazie prawdziwe `updatedAt`.
+ *
+ * KOSZT: trzeba tę datę podbić, kiedy zmienia się treść stron statycznych
+ * albo dzielnic. Lepsze to niż sygnał, który kłamie przy każdym crawlu.
+ */
+const TRESC_ZAKTUALIZOWANA = new Date("2026-08-31T00:00:00Z");
+
 const STATIC_ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/thermomix", priority: 0.9, changeFrequency: "weekly" },
@@ -107,7 +124,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
     url: `${SITE.url}${route.path}`,
-    lastModified: now,
+    lastModified: TRESC_ZAKTUALIZOWANA,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
@@ -128,7 +145,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
    */
   const districtEntries: MetadataRoute.Sitemap = DISTRICT_CONTENT.map((district) => ({
     url: `${SITE.url}${district.urlPath}`,
-    lastModified: now,
+    lastModified: TRESC_ZAKTUALIZOWANA,
     changeFrequency: "monthly",
     priority: 0.5,
   }));
