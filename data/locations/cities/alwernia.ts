@@ -106,7 +106,7 @@ export const ALWERNIA: CityContent = {
   h1: "Thermomix Alwernia – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Alwernia — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Alwernia: bezpłatna prezentacja TM7 u Ciebie w kuchni — Regulice, Kwaczała, Poręba Żegoty, Grojec, Brodła i pozostałe sołectwa. Tel. 517 185 691.",
+    "Thermomix w gminie Alwernia: bezpłatna prezentacja TM7 u Ciebie w kuchni — Regulice, Kwaczała, Poręba Żegoty, Brodła i reszta gminy. Tel. 517 185 691.",
   ogTitle: "Thermomix Alwernia — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Alwerni i we wszystkich sołectwach gminy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
