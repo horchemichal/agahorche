@@ -83,7 +83,7 @@ export const KROSCIENKO: CityContent = {
   h1: "Thermomix Krościenko nad Dunajcem – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Krościenko nad Dunajcem — cena",
   seoDescription:
-    "Thermomix w Krościenku nad Dunajcem: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Krościenku nad Dunajcem: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Krościenko nad Dunajcem — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Krościenku nad Dunajcem. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
