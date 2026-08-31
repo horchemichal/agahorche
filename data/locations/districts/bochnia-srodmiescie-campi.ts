@@ -71,7 +71,7 @@ export const BOCHNIA_SRODMIESCIE_CAMPI: DistrictContent = {
   h1: "Thermomix Śródmieście-Campi — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Śródmieście Bochnia — prezentacja w centrum",
   seoDescription:
-    "Thermomix w Śródmieściu i na Campi w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Rynek, Solna, Kazimierza Wielkiego, Krakowska. Aga, tel. 517 185 691.",
+    "Thermomix w Śródmieściu i na Campi w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Rynek, Solna, Kazimierza Wielkiego, Krakowska. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod adresy w całym Śródmieściu: Rynek, Solna, Sutoris, Kazimierza Wielkiego, Krakowska, Campi i okoliczne uliczki. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni. Prezentacja jest bezpłatna, a parkowanie w strefie to mój problem, nie Twój.",
