@@ -119,7 +119,7 @@ export const RADZIEMICE: CityContent = {
   h1: "Thermomix Radziemice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Radziemice — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Radziemice: bezpłatna prezentacja TM7 u Ciebie w kuchni — Radziemice, Łętkowice, Obrażejowice, Wrocimowice, Zielenice. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Radziemice: bezpłatna prezentacja TM7 u Ciebie w kuchni — Radziemice, Łętkowice, Obrażejowice, Wrocimowice, Zielenice. Tel. 517 185 691.",
   ogTitle: "Thermomix Radziemice — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Radziemice. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
