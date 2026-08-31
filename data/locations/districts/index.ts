@@ -32,6 +32,25 @@ import { KRAKOW_LAGIEWNIKI_BOREK_FALECKI } from "./lagiewniki-borek-falecki";
 import { KRAKOW_SWOSZOWICE } from "./swoszowice";
 import { KRAKOW_WZGORZA_KRZESLAWICKIE } from "./wzgorza-krzeslawickie";
 
+
+// Bochnia — 13 z 14 osiedli. Karolina-Krzeczowska świadomie bez strony:
+// trzy ulice, a materiał to w całości drogi, rondo i strefa przemysłowa.
+// Nie dało się z tego napisać trzech akapitów o mieszkaniu i kuchni,
+// więc zgodnie z zasadą z `typy.ts` strona nie powstała.
+import { BOCHNIA_SRODMIESCIE_CAMPI } from "./bochnia-srodmiescie-campi";
+import { BOCHNIA_NIEPODLEGLOSCI } from "./bochnia-niepodleglosci";
+import { BOCHNIA_SLONECZNE } from "./bochnia-sloneczne";
+import { BOCHNIA_KRZECZKOW_LYCHOW } from "./bochnia-krzeczkow-lychow";
+import { BOCHNIA_UZBORNIA } from "./bochnia-uzbornia";
+import { BOCHNIA_WINDAKIEWICZA } from "./bochnia-windakiewicza";
+import { BOCHNIA_PROSZOWSKIE } from "./bochnia-proszowskie";
+import { BOCHNIA_SW_JANA_MUROWIANKA } from "./bochnia-sw-jana-murowianka";
+import { BOCHNIA_CHODENICE } from "./bochnia-chodenice";
+import { BOCHNIA_KUROW } from "./bochnia-kurow";
+import { BOCHNIA_KOLANOW } from "./bochnia-kolanow";
+import { BOCHNIA_SMYKOW } from "./bochnia-smykow";
+import { BOCHNIA_DOLUSZYCE } from "./bochnia-doluszyce";
+
 export type { DistrictContent, DistrictSection } from "./typy";
 
 const DISTRICT_CONTENT: DistrictContent[] = [
@@ -53,6 +72,20 @@ const DISTRICT_CONTENT: DistrictContent[] = [
   KRAKOW_LAGIEWNIKI_BOREK_FALECKI,
   KRAKOW_SWOSZOWICE,
   KRAKOW_WZGORZA_KRZESLAWICKIE,
+
+  BOCHNIA_SRODMIESCIE_CAMPI,
+  BOCHNIA_NIEPODLEGLOSCI,
+  BOCHNIA_SLONECZNE,
+  BOCHNIA_KRZECZKOW_LYCHOW,
+  BOCHNIA_UZBORNIA,
+  BOCHNIA_WINDAKIEWICZA,
+  BOCHNIA_PROSZOWSKIE,
+  BOCHNIA_SW_JANA_MUROWIANKA,
+  BOCHNIA_CHODENICE,
+  BOCHNIA_KUROW,
+  BOCHNIA_KOLANOW,
+  BOCHNIA_SMYKOW,
+  BOCHNIA_DOLUSZYCE,
 ];
 
 /** Treść dzielnicy po slugu (`krakow-nowa-huta`) albo `undefined`. */
