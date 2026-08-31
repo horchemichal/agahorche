@@ -132,7 +132,7 @@ export const PLESNA: CityContent = {
   h1: "Thermomix Pleśna – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Pleśna — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Pleśna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich jedenastu sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Pleśna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich jedenastu sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Pleśna — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Pleśna. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
