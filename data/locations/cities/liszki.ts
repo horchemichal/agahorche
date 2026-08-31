@@ -110,7 +110,7 @@ export const LISZKI: CityContent = {
   h1: "Thermomix Liszki – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Liszki — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Liszki: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich czternastu sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Liszki: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich czternastu sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Liszki — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Liszki. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
