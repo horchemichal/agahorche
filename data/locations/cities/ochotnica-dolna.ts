@@ -102,7 +102,7 @@ import {
 export const OCHOTNICA_DOLNA: CityContent = {
   slug: "ochotnica-dolna",
   h1: "Thermomix Ochotnica Dolna – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix Ochotnica Dolna — prezentacja i cena",
+  seoTitle: "Przedstawiciel Thermomix Ochotnica Dolna — cena",
   seoDescription:
     "Thermomix w gminie Ochotnica Dolna: bezpłatna prezentacja TM7 u Ciebie w kuchni — Ochotnica Dolna, Górna, Tylmanowa. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ochotnica Dolna — zobacz TM7 u siebie w kuchni",
