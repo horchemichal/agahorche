@@ -79,7 +79,7 @@ export const BOCHNIA_KOLANOW: DistrictContent = {
   h1: "Thermomix Kolanów — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Kolanów Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix na Kolanowie w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Kolanowska, Krakowskie Przedmieście, Czerwieniec, Nowy Świat. Aga, tel. 517 185 691.",
+    "Thermomix na Kolanowie w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Kolanowska, Krakowskie Przedmieście, Czerwieniec, Nowy Świat. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod adresy na całym Kolanowie: Kolanowska, Krakowskie Przedmieście, Czerwieniec, Nowy Świat, Wyspiańskiego, Armii Krajowej i dalej pod las. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni. Prezentacja jest bezpłatna.",
