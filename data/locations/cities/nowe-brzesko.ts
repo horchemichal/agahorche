@@ -104,7 +104,7 @@ export const NOWE_BRZESKO: CityContent = {
   h1: "Thermomix Nowe Brzesko – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Nowe Brzesko — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Nowe Brzesko (pow. proszowicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Nowe Brzesko, Hebdów, Gruszów, Pławowice. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Nowe Brzesko (pow. proszowicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Nowe Brzesko, Hebdów, Gruszów, Pławowice. Tel. 517 185 691.",
   ogTitle: "Thermomix Nowe Brzesko — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Nowe Brzesko. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
