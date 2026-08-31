@@ -51,6 +51,18 @@ export interface DistrictContent {
   nazwa: string;
   /** Miejscownik do zdań „w Nowej Hucie”. */
   miejscownik: string;
+  /**
+   * Przyimek przed miejscownikiem. Domyślnie „w” — i dla wszystkich
+   * dzielnic Krakowa to wystarcza („w Nowej Hucie”, „w Swoszowicach”).
+   *
+   * W Bochni nie wystarcza. Osiedla o nazwach przymiotnikowych i te
+   * leżące na wzniesieniach biorą po polsku „na”, nie „w”: mówi się
+   * „na Słonecznym”, „na Uzborni”, „na Murowiance”, a nie „w Słonecznym”.
+   * Wymuszanie wszędzie „w” dałoby na trzynastu stronach zdania, które
+   * native speaker wyłapuje w pół sekundy — a to jest dokładnie ten
+   * rodzaj drobiazgu, po którym widać, że tekst pisał ktoś z zewnątrz.
+   */
+  przyimek?: "w" | "na";
   /** Miasto nadrzędne — dokąd prowadzi link w górę. */
   miasto: { nazwa: string; slug: string; urlPath: string };
 
