@@ -106,7 +106,7 @@ export const KOSZYCE: CityContent = {
   h1: "Thermomix Koszyce – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Koszyce — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Koszyce (pow. proszowicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Koszyce, Książnice Wielkie, Przemyków, Filipowice. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Koszyce (pow. proszowicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Koszyce, Książnice Wielkie, Przemyków. Tel. 517 185 691.",
   ogTitle: "Thermomix Koszyce — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Koszyce. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
