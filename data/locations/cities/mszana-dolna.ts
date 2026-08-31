@@ -124,7 +124,7 @@ export const MSZANA_DOLNA: CityContent = {
   h1: "Thermomix Mszana Dolna – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Mszana Dolna — prezentacja i cena",
   seoDescription:
-    "Thermomix w Mszanie Dolnej: bezpłatna prezentacja TM7 u Ciebie w kuchni — miasto oraz Kasinka Mała, Kasina Wielka, Mszana Górna i pozostałe sołectwa. Tel. 517 185 691.",
+    "Thermomix w Mszanie Dolnej: bezpłatna prezentacja TM7 u Ciebie w kuchni — miasto oraz Kasinka Mała, Kasina Wielka i reszta okolicy. Tel. 517 185 691.",
   ogTitle: "Thermomix Mszana Dolna — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Mszanie Dolnej i w całej gminie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
