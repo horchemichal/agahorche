@@ -94,7 +94,7 @@ import {
 export const PIWNICZNA_ZDROJ: CityContent = {
   slug: "piwniczna-zdroj",
   h1: "Thermomix Piwniczna-Zdrój – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix Piwniczna-Zdrój — cena i prezentacja",
+  seoTitle: "Przedstawiciel Thermomix Piwniczna-Zdrój — cena",
   seoDescription:
     "Thermomix w Piwnicznej-Zdroju: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta i sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Piwniczna-Zdrój — zobacz TM7 u siebie w kuchni",
