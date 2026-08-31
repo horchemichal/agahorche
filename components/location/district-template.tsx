@@ -119,7 +119,7 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
       <Section>
         <div className="max-w-3xl">
           <Heading as="h2" size="md">
-            Gdzie w {content.miejscownik} dojeżdżam
+            Gdzie {content.przyimek ?? "w"} {content.miejscownik} dojeżdżam
           </Heading>
           <p className="mt-5 text-base leading-relaxed text-neutral-700">
             Do wszystkich osiedli i wszystkich adresów w dzielnicy — bez dopłaty za dojazd. Poniżej nazwy, których
@@ -146,7 +146,8 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
             Cena, raty i aktualna promocja
           </Heading>
           <p className="mt-5 text-base leading-relaxed text-neutral-700">
-            Cenę Thermomixa ustala Vorwerk i jest identyczna w całej Polsce — {content.miejscownik} zapłacisz tyle
+            Cenę Thermomixa ustala Vorwerk i jest identyczna w całej Polsce — {content.przyimek ?? "w"}{" "}
+            {content.miejscownik} zapłacisz tyle
             samo, co w każdym innym miejscu. Aktualną kwotę, obowiązującą promocję i kalkulator rat trzymam w jednym
             miejscu, na stronie {content.miasto.nazwa}, żeby nigdzie nie było wersji nieaktualnej.
           </p>
