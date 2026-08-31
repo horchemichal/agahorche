@@ -93,7 +93,7 @@ export const TUCHOW: CityContent = {
   h1: "Thermomix Tuchów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Tuchów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Tuchowie i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Tuchowie i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Tuchów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Tuchowie i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
