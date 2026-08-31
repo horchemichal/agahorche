@@ -95,7 +95,7 @@ export const BOCHNIA_GMINA: CityContent = {
   h1: "Thermomix gmina Bochnia – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix gmina Bochnia — prezentacja",
   seoDescription:
-    "Thermomix w gminie wiejskiej Bochnia: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich trzydziestu jeden sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie wiejskiej Bochnia: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich 31 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix gmina Bochnia — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie wiejskiej Bochnia. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
