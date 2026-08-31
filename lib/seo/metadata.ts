@@ -9,6 +9,26 @@ const TITLE_SUFFIX = ` | ${SITE.name}`;
 const MAX_TITLE_LENGTH = 60;
 
 /**
+ * Obrazek pokazywany w podglądzie linku (Facebook, Messenger, WhatsApp,
+ * LinkedIn, iMessage) na każdej stronie, która nie poda własnego.
+ *
+ * DLACZEGO TO MUSI BYĆ TUTAJ, a nie w ustawieniach globalnych z panelu.
+ * Next scala metadane płytko: strona, która ustawi własne `openGraph`,
+ * NADPISUJE cały obiekt rodzica — razem z `images`. `buildMetadata()`
+ * ustawia `openGraph` zawsze, więc globalny obrazek z /admin/seo nigdy nie
+ * docierał na podstrony. Audyt z 31 sierpnia 2026 znalazł 63 adresy bez
+ * `og:image`, w tym stronę główną i wszystkie dzielnice: wklejony gdzieś
+ * link pokazywał sam tekst.
+ *
+ * Strony miast podają własny `ogImage` (zdjęcie z `heroPhoto`) i to się nie
+ * zmienia — ta stała jest wyłącznie fallbackiem.
+ *
+ * 1200×630 to rozmiar, którego trzymają się wszystkie te serwisy. JPG,
+ * a nie WebP: część scraperów nadal nie renderuje WebP w podglądzie.
+ */
+const OG_DOMYSLNY = "/og-agahorche.jpg";
+
+/**
  * Single source of truth for `generateMetadata()` across every route
  * (spec §10). Every page builds a `SeoInput` from its own data (static copy
  * or the location/blog engines) and hands it to this function instead of
@@ -56,7 +76,7 @@ export function buildMetadata(input: SeoInput): Metadata {
       siteName: SITE.name,
       locale: SITE.defaultLocale,
       type: input.ogType ?? "website",
-      images: input.ogImage ? [{ url: absoluteUrl(input.ogImage) }] : undefined,
+      images: [{ url: absoluteUrl(input.ogImage ?? OG_DOMYSLNY) }],
       ...(input.ogType === "article"
         ? {
             publishedTime: input.publishedAt,
@@ -68,7 +88,7 @@ export function buildMetadata(input: SeoInput): Metadata {
       card: "summary_large_image",
       title: input.ogTitle ?? input.title,
       description: input.ogDescription ?? input.description,
-      images: input.ogImage ? [absoluteUrl(input.ogImage)] : undefined,
+      images: [absoluteUrl(input.ogImage ?? OG_DOMYSLNY)],
     },
   };
 }
