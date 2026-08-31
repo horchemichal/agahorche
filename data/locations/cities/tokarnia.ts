@@ -137,7 +137,7 @@ export const TOKARNIA: CityContent = {
   h1: "Thermomix Tokarnia – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Tokarnia — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Tokarnia (pow. myślenicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Tokarnia, Krzczonów, Skomielna Czarna, Bogdanówka. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Tokarnia (pow. myślenicki): bezpłatna prezentacja TM7 u Ciebie w kuchni — Tokarnia, Krzczonów, Bogdanówka. Tel. 517 185 691.",
   ogTitle: "Thermomix Tokarnia — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Tokarnia. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
