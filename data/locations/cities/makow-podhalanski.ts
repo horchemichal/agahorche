@@ -90,7 +90,7 @@ import {
 export const MAKOW_PODHALANSKI: CityContent = {
   slug: "makow-podhalanski",
   h1: "Thermomix Maków Podhalański – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix Maków Podhalański — prezentacja i cena",
+  seoTitle: "Przedstawiciel Thermomix Maków Podhalański — prezentacja",
   seoDescription:
     "Thermomix w gminie Maków Podhalański: bezpłatna prezentacja TM7 u Ciebie w kuchni — Maków, Białka, Juszczyn, Grzechynia. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Maków Podhalański — zobacz TM7 na żywo u siebie w kuchni",
