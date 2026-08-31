@@ -70,7 +70,7 @@ export const TRZEBINIA: CityContent = {
   h1: "Thermomix Trzebinia – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Trzebinia — prezentacja i cena",
   seoDescription:
-    "Thermomix w Trzebini: bezpłatna prezentacja TM7 u Ciebie w kuchni — Centrum, Siersza, Gaj, Młoszowa, Dulowa, Psary i pozostałe osiedla oraz sołectwa. Tel. 517 185 691.",
+    "Thermomix w Trzebini: bezpłatna prezentacja TM7 u Ciebie w kuchni — Centrum, Siersza, Gaj, Młoszowa, Dulowa i reszta gminy. Tel. 517 185 691.",
   ogTitle: "Thermomix Trzebinia — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Trzebini i w całej gminie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
