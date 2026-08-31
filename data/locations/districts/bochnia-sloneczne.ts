@@ -72,7 +72,7 @@ export const BOCHNIA_SLONECZNE: DistrictContent = {
   h1: "Thermomix osiedle Słoneczne — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Słoneczne Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix na osiedlu Słonecznym w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — św. Leonarda, Poniatowskiego, Pod Lipką, Kolejowa. Aga, tel. 517 185 691.",
+    "Thermomix na osiedlu Słonecznym w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — św. Leonarda, Poniatowskiego, Pod Lipką, Kolejowa. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod bloki przy świętego Leonarda, Poniatowskiego, Pod Lipką i Kolejowej. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni — także w tej najmniejszej, bo takich jest tu najwięcej. Prezentacja jest bezpłatna.",
