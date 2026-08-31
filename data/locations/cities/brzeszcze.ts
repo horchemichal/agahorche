@@ -107,7 +107,7 @@ export const BRZESZCZE: CityContent = {
   h1: "Thermomix Brzeszcze – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Brzeszcze — prezentacja i cena",
   seoDescription:
-    "Thermomix w Brzeszczach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Brzeszczach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Brzeszcze — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Brzeszczach i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
