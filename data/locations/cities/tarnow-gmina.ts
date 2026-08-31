@@ -131,7 +131,7 @@ export const TARNOW_GMINA: CityContent = {
   h1: "Thermomix gmina Tarnów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix gmina Tarnów — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie wiejskiej Tarnów: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie wiejskiej Tarnów: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix gmina Tarnów — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie wiejskiej Tarnów. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
