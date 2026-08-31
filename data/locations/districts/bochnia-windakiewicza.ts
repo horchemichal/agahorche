@@ -75,7 +75,7 @@ export const BOCHNIA_WINDAKIEWICZA: DistrictContent = {
   h1: "Thermomix osiedle Windakiewicza — prezentacja u Ciebie w domu",
   seoTitle: "Thermomix Windakiewicza Bochnia — prezentacja na osiedlu",
   seoDescription:
-    "Thermomix na osiedlu Windakiewicza w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Windakiewicza, Legionów Polskich, Zaułek Mollo. Aga, tel. 517 185 691.",
+    "Thermomix na osiedlu Windakiewicza w Bochni: bezpłatna prezentacja TM7 u Ciebie w kuchni — Windakiewicza, Legionów Polskich, Zaułek Mollo. Tel. 517 185 691.",
 
   lead:
     "Dojeżdżam pod wszystkie bloki przy Windakiewicza i Legionów Polskich — to najmniejsze osiedle blokowe w Bochni, więc trasa jest krótka. Przywożę Thermomix TM7 i gotujemy razem u Ciebie w kuchni. Prezentacja jest bezpłatna.",
