@@ -99,7 +99,7 @@ import {
 export const BUKOWINA_TATRZANSKA: CityContent = {
   slug: "bukowina-tatrzanska",
   h1: "Thermomix Bukowina Tatrzańska – prezentacja, zakup i doradztwo",
-  seoTitle: "Przedstawiciel Thermomix Bukowina Tatrzańska — prezentacja i cena",
+  seoTitle: "Przedstawiciel Thermomix Bukowina Tatrzańska — cena",
   seoDescription:
     "Thermomix w gminie Bukowina Tatrzańska: bezpłatna prezentacja TM7 u Ciebie w kuchni — Bukowina, Białka Tatrzańska, Jurgów. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bukowina Tatrzańska — zobacz TM7 u siebie w kuchni",
