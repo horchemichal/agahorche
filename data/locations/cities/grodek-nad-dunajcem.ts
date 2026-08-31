@@ -96,7 +96,7 @@ export const GRODEK_NAD_DUNAJCEM: CityContent = {
   h1: "Thermomix Gródek nad Dunajcem – prezentacja i zakup",
   seoTitle: "Przedstawiciel Thermomix Gródek nad Dunajcem — cena",
   seoDescription:
-    "Thermomix w gminie Gródek nad Dunajcem: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Gródek nad Dunajcem: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Gródek nad Dunajcem — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Gródek nad Dunajcem. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
