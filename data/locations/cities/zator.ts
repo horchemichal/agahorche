@@ -132,7 +132,7 @@ export const ZATOR: CityContent = {
   h1: "Thermomix Zator – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Zator — prezentacja i cena",
   seoDescription:
-    "Thermomix w Zatorze i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Zatorze i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Zator — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Zatorze i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
