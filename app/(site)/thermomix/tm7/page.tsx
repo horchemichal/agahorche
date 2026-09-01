@@ -22,7 +22,7 @@ import { formatPln } from "@/lib/format";
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix TM7 — cena, funkcje, dla kogo",
   description:
-    "Thermomix® TM7 u przedstawicielki z Małopolski: co realnie robi w kuchni, ile kosztuje, jak wygląda zakup na raty 0% i co dostajesz w zestawie.",
+    "Thermomix® TM7 u przedstawicielki z Małopolski: co realnie robi w kuchni, ile kosztuje, jak wygląda zakup na raty 0,6% i co dostajesz w zestawie.",
   path: "/thermomix/tm7",
   keywords: ["thermomix tm7", "thermomix tm7 cena", "thermomix tm7 funkcje", "thermomix małopolska"],
   ogImage: "/zdjecia/thermomix-tm7-varoma.webp",
@@ -158,7 +158,7 @@ export default async function Tm7Page() {
                 przedstawiciela.
               </p>
               <p>
-                Rozłożenie na raty 0% policzysz{" "}
+                Rozłożenie na raty 0,6% policzysz{" "}
                 <Link href="#kalkulator-rat" className="font-medium text-brand-700 underline underline-offset-4">
                   w kalkulatorze poniżej
                 </Link>{" "}
@@ -178,7 +178,7 @@ export default async function Tm7Page() {
                 label: "Cena urządzenia",
                 value: formatPln(oferta?.priceCents) ?? "sprawdź na stronie oferty",
               },
-              { label: "Raty", value: "0%, bez wymaganego wkładu własnego" },
+              { label: "Raty", value: "0,6% miesięcznie, do 36 rat" },
               { label: "Przepisy", value: "Cookidoo — ponad 100 tys., w tym ponad 6 tys. polskich" },
               { label: "Gdzie kupisz", value: "u oficjalnego przedstawiciela Vorwerk" },
               { label: "Prezentacja", value: "bezpłatna, u Ciebie w domu" },
