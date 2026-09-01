@@ -2,7 +2,6 @@
 
 import { useMemo, useState } from "react";
 import type { DietCategory, ThermomixModel } from "@/types/diet";
-import { THERMOMIX_MODELS } from "@/types/diet";
 import { DIET_CATEGORIES, getPublicDietPlan } from "@/data/diets/categories";
 import { CategoryIcon } from "./category-icon";
 import { DietSummary, type ConfiguratorSelection } from "./diet-summary";
@@ -78,7 +77,12 @@ export function DietConfigurator({
   const [mealsPerDay, setMealsPerDay] = useState(4);
   const [breastfeedingVariant, setBreastfeedingVariant] = useState(BREASTFEEDING_VARIANTS[0]);
   const [weaningStage, setWeaningStage] = useState(WEANING_STAGES[0]);
-  const [model, setModel] = useState<ThermomixModel>("TM7");
+  /**
+   * Model jest stały. Patrz komentarz przy usuniętym kroku „Wybierz swój
+   * Thermomix" niżej — wszystkie przepisy są pod TM7, więc wybór modelu
+   * niczego nie zmieniał, a potrafił zgubić plan.
+   */
+  const model: ThermomixModel = "TM7";
   // Podgląd jest widoczny OD RAZU, a nie po kliknięciu. Powód jest
   // wyszukiwarkowy: Googlebot indeksuje HTML, który przychodzi z serwera,
   // i nie klika w przyciski. Przy `useState(false)` publiczne strony diet
@@ -313,26 +317,24 @@ export function DietConfigurator({
             </div>
           )}
 
-          <div>
-            <p className="mb-2 text-sm font-medium text-neutral-700">
-              {category.configuratorMode === "calories" ? "4" : category.configuratorMode === "breastfeeding" ? "4" : "3"}. Wybierz swój Thermomix
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {THERMOMIX_MODELS.map((m) => (
-                <button
-                  key={m}
-                  type="button"
-                  onClick={() => setModel(m)}
-                  className={cn(
-                    "h-9 rounded-md border px-4 text-sm font-medium transition-colors",
-                    model === m ? "border-brand-600 bg-brand-600 text-neutral-0" : "border-neutral-300 text-neutral-700 hover:border-brand-400",
-                  )}
-                >
-                  {m}
-                </button>
-              ))}
-            </div>
-          </div>
+          {/*
+            1.09.2026 — KROK „Wybierz swój Thermomix" USUNIĘTY (prośba Agi:
+            „niech będzie pod Cookidoo jak jest, ale żeby nie było wariantów
+            pod który Thermomix").
+
+            To był wybór bez konsekwencji, a wyglądał na istotny: wszystkie
+            przepisy w bazie są oznaczone `compatibleModels: ["TM7"]`, więc
+            kliknięcie w TM31, TM5 czy TM6 nie zmieniało ani jednego dania —
+            zmieniało tylko podpis w podsumowaniu. Gorzej: `matchedPlan`
+            filtruje plany po modelu, więc na starszym modelu konfigurator
+            potrafił nie znaleźć nic i pokazać „ten wariant pojawi się
+            wkrótce", choć plan istniał.
+
+            `model` zostaje w stanie ze stałą wartością „TM7”, bo to na nim
+            opiera się dopasowanie planu i podsumowanie wyboru. Gdyby kiedyś
+            doszły przepisy dla starszych modeli, wraca tu lista przycisków,
+            a nie nowa logika.
+          */}
 
           {category.medicalDisclaimer && (
             <p className="mt-6 border-t border-border pt-4 text-xs text-muted">{category.medicalDisclaimer}</p>

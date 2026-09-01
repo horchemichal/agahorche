@@ -44,8 +44,13 @@ export function DietSummary({ selection }: { selection: ConfiguratorSelection })
             <dd className="font-medium text-neutral-900">{value}</dd>
           </div>
         ))}
+        {/*
+          Wiersz „Thermomix" zostaje, ale to już nie jest wybór użytkownika —
+          konfigurator nie pyta o model (patrz komentarz w diet-configurator.tsx,
+          1.09.2026). To informacja: wszystkie przepisy w bazie są pod TM7.
+        */}
         <div className="flex justify-between">
-          <dt className="text-muted">Thermomix</dt>
+          <dt className="text-muted">Przepisy pod</dt>
           <dd className="font-medium text-neutral-900">{selection.model}</dd>
         </div>
       </dl>
