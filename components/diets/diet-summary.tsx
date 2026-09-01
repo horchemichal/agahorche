@@ -4,9 +4,7 @@ export interface ConfiguratorSelection {
   category: DietCategory;
   days?: 7 | 14;
   calories?: 1500 | 2000;
-  childAgeLabel?: string;
   mealsPerDay?: number;
-  breastfeedingVariant?: string;
   weaningStage?: string;
   model: ThermomixModel;
 }
@@ -16,14 +14,13 @@ const MODE_ROWS: Record<ConfiguratorMode, (s: ConfiguratorSelection) => [string,
     ["Liczba dni", s.days ? `${s.days} dni` : "—"],
     ["Kaloryczność", s.calories ? `${s.calories} kcal` : "—"],
   ],
-  children: (s) => [
-    ["Wiek dziecka", s.childAgeLabel ?? "—"],
-    ["Posiłki dziennie", s.mealsPerDay ? String(s.mealsPerDay) : "—"],
-  ],
-  breastfeeding: (s) => [
-    ["Wariant planu", s.breastfeedingVariant ?? "—"],
-    ["Liczba dni", s.days ? `${s.days} dni` : "—"],
-  ],
+  children: (s) => [["Posiłki dziennie", s.mealsPerDay ? String(s.mealsPerDay) : "—"]],
+  /**
+   * 1.09.2026: „Wariant planu" i „Liczba dni" zniknęły razem z przyciskami,
+   * które ich nie zmieniały (patrz components/diets/diet-configurator.tsx).
+   * Kobiety karmiące mają dziś jeden plan siedmiodniowy i tak jest napisane.
+   */
+  breastfeeding: () => [["Długość planu", "7 dni"]],
   weaning: (s) => [["Etap rozszerzania diety", s.weaningStage ?? "—"]],
 };
 

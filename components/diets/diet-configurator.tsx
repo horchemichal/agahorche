@@ -1,17 +1,33 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import type { DietCategory, ThermomixModel } from "@/types/diet";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import type { DietCategory, MealType, ThermomixModel } from "@/types/diet";
+import { MEAL_TYPE_ORDER } from "@/types/diet";
+import { czyNaPulpicie, dodajDoMoichDiet, ZDARZENIE } from "@/lib/diets/moje-diety";
 import { DIET_CATEGORIES, getPublicDietPlan } from "@/data/diets/categories";
 import { CategoryIcon } from "./category-icon";
 import { DietSummary, type ConfiguratorSelection } from "./diet-summary";
 import { DietPlanPreview } from "./diet-plan-preview";
 import { ClientOnlyBadge } from "./client-only-badge";
 import { ButtonLink, Button } from "@/components/ui/button";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-const CHILD_AGE_OPTIONS = ["1–3 lata", "4–6 lat", "7–12 lat"];
-const BREASTFEEDING_VARIANTS = ["Zbilansowany jadłospis", "Wariant rodzinny"];
+/**
+ * 1.09.2026 — USUNIĘTE: `CHILD_AGE_OPTIONS` („1–3 lata / 4–6 lat / 7–12 lat")
+ * i `BREASTFEEDING_VARIANTS` („Zbilansowany jadłospis / Wariant rodzinny").
+ *
+ * Oba były przyciskami bez konsekwencji — dokładnie tak jak wcześniejszy
+ * wybór modelu Thermomixa. `matchedPlan` dla tych kategorii i tak zwracał
+ * jedyny publiczny plan, więc kliknięcie zmieniało wyłącznie podpis
+ * w podsumowaniu. Żeby zrobić je naprawdę, trzeba mieć osobne jadłospisy
+ * dla każdego wieku i wariantu, a te wymagają nowych, sprawdzonych
+ * przepisów Cookidoo — nie wolno ich wymyślić. Do tego czasu lepszy jest
+ * brak wyboru niż wybór, który udaje, że coś robi.
+ *
+ * Liczba posiłków dziennie ZOSTAJE, bo działa naprawdę: filtruje pory
+ * posiłków pokazywane w planie (patrz `poryPosilkow` niżej).
+ */
 const WEANING_STAGES = ["Etap 1 — pierwsze produkty", "Etap 2 — większa różnorodność", "Etap 3 — łączenie produktów", "Etap 4 — więcej posiłków rodzinnych"];
 
 /**
@@ -73,9 +89,7 @@ export function DietConfigurator({
   const [category, setCategory] = useState<DietCategory>(initialCategory);
   const [days, setDays] = useState<7 | 14>(7);
   const [calories, setCalories] = useState<1500 | 2000>(1500);
-  const [childAgeLabel, setChildAgeLabel] = useState(CHILD_AGE_OPTIONS[0]);
-  const [mealsPerDay, setMealsPerDay] = useState(4);
-  const [breastfeedingVariant, setBreastfeedingVariant] = useState(BREASTFEEDING_VARIANTS[0]);
+  const [mealsPerDay, setMealsPerDay] = useState(5);
   const [weaningStage, setWeaningStage] = useState(WEANING_STAGES[0]);
   /**
    * Model jest stały. Patrz komentarz przy usuniętym kroku „Wybierz swój
@@ -90,13 +104,44 @@ export function DietConfigurator({
   // dokładnie tę treść, dla której te strony powstały.
   const [showPreview, setShowPreview] = useState(true);
 
+  /**
+   * Pory posiłków pokazywane w podglądzie. Dotyczy wyłącznie kategorii
+   * „dla dzieci", gdzie wybór 3/4/5 posiłków ma coś realnie zmieniać.
+   * Kolejność bierzemy z MEAL_TYPE_ORDER, ale przycinamy od środka dnia:
+   * przy trzech posiłkach zostają śniadanie, obiad i kolacja — nikt nie
+   * planuje dnia złożonego ze śniadania, drugiego śniadania i obiadu.
+   */
+  const poryPosilkow: MealType[] | undefined = useMemo(() => {
+    if (category.configuratorMode !== "children") return undefined;
+    const bazowe: MealType[] = ["sniadanie", "obiad", "kolacja"];
+    if (mealsPerDay >= 4) bazowe.push("drugie-sniadanie");
+    if (mealsPerDay >= 5) bazowe.push("podwieczorek");
+    return MEAL_TYPE_ORDER.filter((t) => bazowe.includes(t));
+  }, [category.configuratorMode, mealsPerDay]);
+
+  /**
+   * „Dodaj do moich diet" — prośba Agi z 1.09.2026: „jak jest konfigurator
+   * diet, to niech będzie przycisk dodaj do moich diet, żebym mogła dodać
+   * np. 2 diety, bo tego brakuje". Pulpit w Aga Club pozwala usunąć dietę
+   * krzyżykiem; do tej pory nie było żadnej drogi z powrotem poza hurtowym
+   * „przywróć wszystkie", które właśnie zniknęło. Stan trzyma
+   * lib/diets/moje-diety.ts (localStorage), więc przycisk ma sens tylko dla
+   * zalogowanych — i tylko im go pokazujemy.
+   */
+  const [naPulpicie, setNaPulpicie] = useState<boolean | null>(null);
+  const odswiezPulpit = useCallback(() => setNaPulpicie(czyNaPulpicie(category.id)), [category.id]);
+
+  useEffect(() => {
+    odswiezPulpit();
+    window.addEventListener(ZDARZENIE, odswiezPulpit);
+    return () => window.removeEventListener(ZDARZENIE, odswiezPulpit);
+  }, [odswiezPulpit]);
+
   const selection: ConfiguratorSelection = {
     category,
     days,
     calories,
-    childAgeLabel,
     mealsPerDay,
-    breastfeedingVariant,
     weaningStage,
     model,
   };
@@ -218,22 +263,7 @@ export function DietConfigurator({
 
           {category.configuratorMode === "children" && (
             <div className="mb-6">
-              <p className="mb-2 text-sm font-medium text-neutral-700">2. Wiek dziecka i liczba posiłków</p>
-              <div className="mb-3 flex flex-wrap gap-2">
-                {CHILD_AGE_OPTIONS.map((a) => (
-                  <button
-                    key={a}
-                    type="button"
-                    onClick={() => setChildAgeLabel(a)}
-                    className={cn(
-                      "rounded-md border px-3 py-2 text-sm font-medium transition-colors",
-                      childAgeLabel === a ? "border-brand-600 bg-brand-600 text-neutral-0" : "border-neutral-300 text-neutral-700 hover:border-brand-400",
-                    )}
-                  >
-                    {a}
-                  </button>
-                ))}
-              </div>
+              <p className="mb-2 text-sm font-medium text-neutral-700">2. Liczba posiłków dziennie</p>
               <div className="flex flex-wrap gap-2">
                 {[3, 4, 5].map((n) => (
                   <button
@@ -250,50 +280,11 @@ export function DietConfigurator({
                 ))}
               </div>
               <p className="mt-2 text-xs text-muted">
-                Bez sztywnych norm kalorycznych — porcje dopasowujemy do dziecka, nie odwrotnie.
+                Przy trzech posiłkach zostają śniadanie, obiad i kolacja; czwarty dokłada drugie
+                śniadanie, piąty — podwieczorek. Bez sztywnych norm kalorycznych: porcje
+                dopasowujemy do dziecka, nie odwrotnie.
               </p>
             </div>
-          )}
-
-          {category.configuratorMode === "breastfeeding" && (
-            <>
-              <div className="mb-6">
-                <p className="mb-2 text-sm font-medium text-neutral-700">2. Wariant planu</p>
-                <div className="flex flex-wrap gap-2">
-                  {BREASTFEEDING_VARIANTS.map((v) => (
-                    <button
-                      key={v}
-                      type="button"
-                      onClick={() => setBreastfeedingVariant(v)}
-                      className={cn(
-                        "rounded-md border px-3 py-2 text-sm font-medium transition-colors",
-                        breastfeedingVariant === v ? "border-brand-600 bg-brand-600 text-neutral-0" : "border-neutral-300 text-neutral-700 hover:border-brand-400",
-                      )}
-                    >
-                      {v}
-                    </button>
-                  ))}
-                </div>
-              </div>
-              <div className="mb-6">
-                <p className="mb-2 text-sm font-medium text-neutral-700">3. Liczba dni</p>
-                <div className="flex gap-2">
-                  {([7, 14] as const).map((d) => (
-                    <button
-                      key={d}
-                      type="button"
-                      onClick={() => setDays(d)}
-                      className={cn(
-                        "rounded-md border px-4 py-2 text-sm font-medium transition-colors",
-                        days === d ? "border-brand-600 bg-brand-600 text-neutral-0" : "border-neutral-300 text-neutral-700 hover:border-brand-400",
-                      )}
-                    >
-                      {d} dni
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </>
           )}
 
           {category.configuratorMode === "weaning" && (
@@ -356,6 +347,25 @@ export function DietConfigurator({
             </Button>
           )}
 
+          {isLoggedIn && (
+            naPulpicie === false ? (
+              <Button
+                type="button"
+                onClick={() => dodajDoMoichDiet(category.id)}
+                className="justify-center"
+              >
+                Dodaj do moich diet
+              </Button>
+            ) : (
+              <p className="rounded-lg border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-800">
+                Ta dieta jest na Twoim pulpicie.{" "}
+                <Link href="/strefa-klienta" className="font-medium underline underline-offset-2">
+                  Zobacz moje diety
+                </Link>
+              </p>
+            )
+          )}
+
           {/*
             Panel „Jadłospisy są w Aga Club" widzą TYLKO osoby niezalogowane
             (prośba Agi, 1.09.2026). Dla klientki, która już jest w Aga Club,
@@ -396,7 +406,7 @@ export function DietConfigurator({
     {showPreview && (
       <div className="mt-8">
         {matchedPlan ? (
-          <DietPlanPreview plan={matchedPlan} forceUnlocked={isLoggedIn} />
+          <DietPlanPreview plan={matchedPlan} forceUnlocked={isLoggedIn} mealTypes={poryPosilkow} />
         ) : (
           <div className="flex flex-col items-center gap-4 rounded-2xl bg-surface p-8 text-center">
             <ClientOnlyBadge />

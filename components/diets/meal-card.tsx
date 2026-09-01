@@ -9,6 +9,13 @@ import { SwapIcon } from "@/components/marketing/icons";
  * (spec §16, "Zamień danie"). Swap state is lifted to the parent
  * (DietPlanPreview) so the day's macro totals can recalculate — this
  * component is presentational; it just reflects `isAlt`.
+ *
+ * 1.09.2026: nazwa posiłku („Śniadanie", „Obiad") przeniosła się z podpisu
+ * nad kartą do pustego pasku na zdjęcie wewnątrz karty (prośba Agi). Nie
+ * zostawiamy jej w obu miejscach, bo ten sam napis dwa razy pod rząd
+ * wygląda jak błąd. Górny pasek zostaje — mieszka w nim „Zamień danie" —
+ * i ma stałą minimalną wysokość, żeby karty bez zamiennika nie przesuwały
+ * się w siatce względem tych z zamiennikiem.
  */
 export function MealCard({
   meal,
@@ -26,10 +33,7 @@ export function MealCard({
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex items-center justify-between">
-        <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-          {MEAL_TYPE_LABELS[meal.type]}
-        </p>
+      <div className="flex min-h-4 items-center justify-end">
         {altId && onToggleAlt && (
           <button
             type="button"
@@ -41,7 +45,12 @@ export function MealCard({
           </button>
         )}
       </div>
-      <RecipeCard recipe={recipe} compact portions={meal.portions ?? 1} />
+      <RecipeCard
+        recipe={recipe}
+        compact
+        portions={meal.portions ?? 1}
+        placeholderLabel={MEAL_TYPE_LABELS[meal.type]}
+      />
     </div>
   );
 }

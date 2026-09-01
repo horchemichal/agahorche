@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { DietDay, DietPlan } from "@/types/diet";
+import type { DietDay, DietPlan, MealType } from "@/types/diet";
 import { getRecipe } from "@/data/diets/recipes";
 import { DayNavigation } from "./day-navigation";
 import { MealCard } from "./meal-card";
@@ -79,7 +79,32 @@ function Kafelki({ t }: { t: typeof PUSTE }) {
   );
 }
 
-export function DietPlanPreview({ plan, forceUnlocked = false }: { plan: DietPlan; forceUnlocked?: boolean }) {
+/**
+ * `mealTypes` (1.09.2026) — pory posiłków, które mają być pokazane.
+ * Używa tego wyłącznie kategoria „dla dzieci": wybór „3 / 4 / 5 posiłków"
+ * w konfiguratorze ma realnie zmieniać plan, a nie tylko podpis
+ * w podsumowaniu. Filtrujemy na wejściu, więc sumy dnia, widok tygodnia
+ * i lista zakupów liczą się już z przyciętego planu — same z siebie,
+ * bez żadnego dodatkowego warunku niżej.
+ */
+export function DietPlanPreview({
+  plan: planWejsciowy,
+  forceUnlocked = false,
+  mealTypes,
+}: {
+  plan: DietPlan;
+  forceUnlocked?: boolean;
+  mealTypes?: MealType[];
+}) {
+  const plan = useMemo(() => {
+    if (!mealTypes) return planWejsciowy;
+    const zbior = new Set(mealTypes);
+    return {
+      ...planWejsciowy,
+      days: planWejsciowy.days.map((d) => ({ ...d, meals: d.meals.filter((m) => zbior.has(m.type)) })),
+    };
+  }, [planWejsciowy, mealTypes]);
+
   const [activeDay, setActiveDay] = useState(1);
   const [altMealIds, setAltMealIds] = useState<Set<string>>(new Set());
   const [tydzien, setTydzien] = useState(false);
