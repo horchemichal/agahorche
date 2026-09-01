@@ -48,7 +48,16 @@ export default async function ClientDashboardPage() {
       description: c.description,
       icon: c.icon,
       href: `/strefa-klienta/plan/${plan.id}`,
-      etykieta: `Pełny plan — ${plan.durationDays} dni odblokowane`,
+      /**
+       * Rozszerzanie diety niemowląt ma cztery plany etapowe zamiast jednego
+       * wariantu kalorycznego, więc kafelek prowadzi do Etapu 1 i mówi wprost,
+       * ile etapów czeka dalej — inaczej „Pełny plan — 7 dni" sugerowałoby,
+       * że to wszystko, co jest w tej kategorii.
+       */
+      etykieta:
+        c.plans.length > 1 && c.configuratorMode === "weaning"
+          ? `${c.plans.length} etapy po 7 dni`
+          : `Pełny plan — ${plan.durationDays} dni odblokowane`,
     };
   });
 
@@ -104,10 +113,11 @@ export default async function ClientDashboardPage() {
       </Section>
 
       {/*
-        Po przebudowie z 31.08.2026 pełny tydzień ma KAŻDA dieta poza
-        rozszerzaniem diety niemowląt, które świadomie nie dostaje planu
-        (patrz komentarz w data/diets/categories.ts). Sekcja renderuje się
-        więc tylko wtedy, gdy naprawdę jest co w niej pokazać.
+        Od 1.09.2026 pełny tydzień ma KAŻDA kategoria — rozszerzanie diety
+        niemowląt dostało cztery plany etapowe (patrz NIEMOWLETA_ETAP1…4
+        w data/diets/categories.ts), więc `withoutFullPlan` jest dziś puste
+        i ta sekcja po prostu się nie renderuje. Warunek zostaje: jeśli
+        kiedyś dojdzie kategoria bez treści, wróci sama.
       */}
       {withoutFullPlan.length > 0 && (
       <Section tone="surface">
@@ -115,9 +125,8 @@ export default async function ClientDashboardPage() {
           Pozostałe kategorie
         </Heading>
         <p className="mb-6 max-w-xl text-sm text-muted">
-          Te kategorie nie mają gotowego jadłospisu — przy rozszerzaniu diety niemowląt świadomie
-          nie podajemy gotowych ilości ani konsystencji. Strona kategorii i konfigurator działają
-          normalnie.
+          Te kategorie nie mają jeszcze gotowego jadłospisu. Strona kategorii i konfigurator
+          działają normalnie.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {withoutFullPlan.map((category) => (
