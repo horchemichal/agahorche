@@ -1,4 +1,5 @@
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
+import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 import { Section } from "@/components/ui/section";
 import { InstallmentCalculator } from "./installment-calculator";
 
@@ -10,12 +11,17 @@ import { InstallmentCalculator } from "./installment-calculator";
 export async function InstallmentCalculatorSection() {
   const offer = await getOffersRepository().getActiveOffer();
   if (!offer?.priceCents) return null;
+  const finansowanie = await pobierzUstawieniaFinansowania();
 
   return (
     // scroll-mt accounts for the sticky header so the "Raty" nav link
     // (data/nav.ts → /#kalkulator-rat) doesn't land the section under it.
     <Section id="kalkulator-rat" className="scroll-mt-28 pt-0">
-      <InstallmentCalculator initialPriceZl={Math.round(offer.priceCents / 100)} />
+      <InstallmentCalculator
+        initialPriceZl={Math.round(offer.priceCents / 100)}
+        ratyZeroDostepne={finansowanie.ratyZeroDostepne}
+        ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
+      />
     </Section>
   );
 }

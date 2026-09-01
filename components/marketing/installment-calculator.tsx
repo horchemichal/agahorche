@@ -2,7 +2,6 @@
 
 import { useId, useMemo, useState } from "react";
 import { ButtonLink } from "@/components/ui/button";
-import { RATY_ZERO_DOSTEPNE, RATY_ZERO_KOMUNIKAT } from "@/data/finansowanie/dostepnosc";
 import { cn } from "@/lib/utils";
 
 const DOWN_PAYMENT_PRESETS = [0, 500, 1000, 1500, 2000];
@@ -30,7 +29,23 @@ function formatZlPrecise(value: number): string {
  * orientacyjny — this is not a binding loan offer (see disclaimer at the
  * bottom).
  */
-export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: number }) {
+export function InstallmentCalculator({
+  initialPriceZl,
+  ratyZeroDostepne,
+  ratyZeroKomunikat,
+}: {
+  initialPriceZl: number;
+  /**
+   * Czy promocja „raty 0%" obowiązuje. Przychodzi z propsa, a nie ze
+   * stałej w kodzie, bo od 1.09.2026 Aga przełącza to sama
+   * w /admin/ustawienia (patrz financing-settings-repository.ts).
+   * Ten komponent jest kliencki, więc wartość musi mu podać komponent
+   * serwerowy, który go renderuje.
+   */
+  ratyZeroDostepne: boolean;
+  /** Komunikat pokazywany, gdy rat 0% nie ma. Też z panelu. */
+  ratyZeroKomunikat: string;
+}) {
   const [priceZl, setPriceZl] = useState(initialPriceZl);
   const [downPayment, setDownPayment] = useState(1000);
   const [customDownPayment, setCustomDownPayment] = useState(false);
@@ -39,9 +54,9 @@ export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: numb
    * 1.09.2026). Gdy rat 0% nie ma, kalkulator otwiera się na 0,6% — czyli
    * na racie, którą klientka faktycznie dostanie. Kafelek 0% zostaje
    * widoczny i klikalny, ale opisany jako chwilowo niedostępny; patrz
-   * data/finansowanie/dostepnosc.ts.
+   * financing-settings-repository.ts.
    */
-  const [financing, setFinancing] = useState<"raty0" | "raty06">(RATY_ZERO_DOSTEPNE ? "raty0" : "raty06");
+  const [financing, setFinancing] = useState<"raty0" | "raty06">(ratyZeroDostepne ? "raty0" : "raty06");
   const [months0, setMonths0] = useState(36);
   const [months06, setMonths06] = useState(12);
   const priceInputId = useId();
@@ -156,7 +171,7 @@ export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: numb
               >
                 <div className="flex flex-wrap items-center gap-2">
                   <p className="font-display text-base font-semibold text-brand-700">RATY 0%</p>
-                  {!RATY_ZERO_DOSTEPNE && (
+                  {!ratyZeroDostepne && (
                     <span className="rounded-full bg-neutral-200 px-2 py-0.5 text-[0.65rem] font-medium uppercase tracking-wide text-neutral-700">
                       chwilowo niedostępne
                     </span>
@@ -186,9 +201,9 @@ export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: numb
               </button>
             </div>
 
-            {!RATY_ZERO_DOSTEPNE && (
+            {!ratyZeroDostepne && (
               <p className="mt-3 rounded-lg border border-border bg-surface p-3 text-xs leading-relaxed text-neutral-700">
-                {RATY_ZERO_KOMUNIKAT}
+                {ratyZeroKomunikat}
               </p>
             )}
 
