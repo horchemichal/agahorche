@@ -11,7 +11,7 @@ export interface NavItem {
 
 /**
  * Main nav. Zachowuje układ ustalony z Agą (Prezentacja TM7 / Cena / Diety
- * Thermomix / Raty 0,6% / Kontakt), ale od sierpnia 2026 dokłada rozwijane
+ * Thermomix / Raty 0% / Kontakt), ale od sierpnia 2026 dokłada rozwijane
  * menu „Thermomix”. Powód: podstrony /thermomix/tm6, /thermomix/funkcje,
  * /thermomix/dla-rodziny, /thermomix/dla-mamy, /thermomix/dla-poczatkujacych
  * oraz /jak-kupic-thermomix były osieroconymi adresami — istniały i miały
@@ -88,11 +88,11 @@ export const PRIMARY_NAV: NavItem[] = [
     ],
   },
   // Wskazuje na /finansowanie — od sierpnia 2026 to pełna strona „Thermomix
-  // na raty 0,6%” z tym samym kalkulatorem co na stronie głównej (ten sam
+  // na raty 0%” z tym samym kalkulatorem co na stronie głównej (ten sam
   // komponent, ta sama cena z bazy — nie druga kopia wyliczeń) plus FAQ i
   // treść pod frazy „thermomix raty 0”. Kotwica /#kalkulator-rat nie mogła
   // rankować samodzielnie, bo nie jest osobnym adresem.
-  { label: "Raty 0,6%", href: "/finansowanie" },
+  { label: "Raty 0%", href: "/finansowanie" },
   {
     label: "Kontakt",
     href: "/kontakt",
@@ -122,7 +122,7 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
     items: [
       { label: "Cena i promocje", href: "/oferta" },
       { label: "Jak kupić Thermomixa", href: "/jak-kupic-thermomix" },
-      { label: "Raty 0,6%", href: "/finansowanie" },
+      { label: "Raty 0%", href: "/finansowanie" },
       { label: "Akcesoria", href: "/akcesoria" },
     ],
   },
