@@ -34,6 +34,8 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { label: "Strony", href: "/admin/strony", icon: BlogIcon },
   { label: "Blog", href: "/admin/blog", icon: BlogIcon },
   { label: "FAQ", href: "/admin/faq", icon: FaqIcon },
+  // Poradnik (1.09.2026) — osiem działów wiedzy kuchennej w jednym module.
+  { label: "Poradnik", href: "/admin/poradnik", icon: BlogIcon },
   { label: "Media", href: "/admin/media", icon: MediaIcon },
   { label: "SEO", href: "/admin/seo", icon: SeoIcon },
   { label: "Leady", href: "/admin/leady", icon: LeadsIcon },

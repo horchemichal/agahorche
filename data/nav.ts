@@ -80,6 +80,7 @@ export const PRIMARY_NAV: NavItem[] = [
       // od strony jednego posiłku zamiast całego tygodnia.
       { label: "Co ugotować dzisiaj?", href: "/przepisy" },
       { label: "Co mam w lodówce?", href: "/przepisy/co-mam-w-lodowce" },
+      { label: "Poradnik kuchenny", href: "/poradnik" },
       { label: "Keto", href: "/diety/keto" },
       { label: "Wegetariańska", href: "/diety/wegetarianska" },
       { label: "Odchudzająca", href: "/diety/odchudzajaca" },
@@ -157,6 +158,7 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
       { label: "Opinie", href: "/opinie" },
       { label: "FAQ", href: "/faq" },
       { label: "Blog", href: "/blog" },
+      { label: "Poradnik kuchenny", href: "/poradnik" },
       { label: "Kontakt", href: "/kontakt" },
     ],
   },
