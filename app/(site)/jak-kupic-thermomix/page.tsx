@@ -147,7 +147,7 @@ export default async function JakKupicPage() {
                 label: "Cena TM7",
                 value: formatPln(oferta?.priceCents) ?? "sprawdź na stronie oferty",
               },
-              { label: "Płatność", value: "gotówka, przelew, karta, BLIK lub raty 0,6%" },
+              { label: "Płatność", value: "gotówka, przelew, karta, BLIK lub raty 0%" },
               { label: "Wkład własny", value: "niewymagany" },
               { label: "Dostawa", value: "kurierem, zwykle kilka dni roboczych" },
               { label: "Gwarancja", value: "producenta Vorwerk" },
