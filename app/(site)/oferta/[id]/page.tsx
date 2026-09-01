@@ -10,12 +10,7 @@ import { Heading } from "@/components/ui/heading";
 import { Badge } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { ChefHatIcon } from "@/components/marketing/icons";
-
-function withinWindow(startsAt: string | null, endsAt: string | null, now: Date): boolean {
-  if (startsAt && new Date(startsAt) > now) return false;
-  if (endsAt && new Date(endsAt) < now) return false;
-  return true;
-}
+import { ofertaObowiazuje } from "@/lib/offers/window";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -72,7 +67,7 @@ export default async function OfferDetailPage({ params }: Props) {
   const { id } = await params;
   const now = new Date();
   const offer = await getOffersRepository().get(id);
-  if (!offer || !offer.isActive || !withinWindow(offer.startsAt, offer.endsAt, now)) notFound();
+  if (!offer || !offer.isActive || !ofertaObowiazuje(offer.startsAt, offer.endsAt, now)) notFound();
 
   const image = offer.imageMediaId ? await getMediaRepository().get(offer.imageMediaId) : null;
   const price = formatPln(offer.priceCents);
