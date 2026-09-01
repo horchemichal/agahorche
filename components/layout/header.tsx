@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { PRIMARY_NAV } from "@/data/nav";
 import { ButtonLink } from "@/components/ui/button";
 import { cn, SITE } from "@/lib/utils";
@@ -18,7 +18,7 @@ import { MobileNav } from "./mobile-nav";
  * deep to avoid diluting internal-link equity; mobile collapses to a
  * hamburger — see MobileNav.
  */
-export function Header() {
+export function Header({ sesja }: { sesja?: ReactNode }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -46,9 +46,17 @@ export function Header() {
               Napisz do Agi
             </a>
           </div>
-          <div className="flex items-center gap-3">
-            <span className="text-neutral-400">Znajdź mnie w social mediach:</span>
-            <SocialIcons />
+          <div className="flex items-center gap-4">
+            {/*
+              Pasek konta Aga Club — patrz components/layout/client-session-bar.tsx.
+              Wchodzi tu jako gotowy węzeł z layoutu, bo ten komponent jest
+              kliencki, a odczyt sesji dzieje się na serwerze.
+            */}
+            {sesja}
+            <div className="flex items-center gap-3">
+              <span className="text-neutral-400">Znajdź mnie w social mediach:</span>
+              <SocialIcons />
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +134,7 @@ export function Header() {
         </div>
       </div>
 
-      <MobileNav open={open} onClose={() => setOpen(false)} />
+      <MobileNav open={open} onClose={() => setOpen(false)} sesja={sesja} />
     </header>
   );
 }

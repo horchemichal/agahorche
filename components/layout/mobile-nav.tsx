@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { PRIMARY_NAV } from "@/data/nav";
 import { ButtonLink } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -10,7 +11,7 @@ import { cn } from "@/lib/utils";
  * is not an afterthought dropdown — large tap targets, a fixed CTA at the
  * bottom, easy one-thumb reach.
  */
-export function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function MobileNav({ open, onClose, sesja }: { open: boolean; onClose: () => void; sesja?: ReactNode }) {
   return (
     <div
       className={cn(
@@ -53,6 +54,17 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
             Umów bezpłatną prezentację
           </ButtonLink>
         </div>
+
+        {/*
+          Pasek konta Aga Club musi być też tutaj: górna belka nagłówka,
+          w której stoi na desktopie, jest ukryta poniżej `md`, więc na
+          telefonie „Wyloguj się" nie byłoby widać wcale.
+        */}
+        {sesja && (
+          <div className="mt-4 flex items-center justify-between gap-3 rounded-lg bg-neutral-900 px-4 py-3 text-xs text-neutral-0">
+            {sesja}
+          </div>
+        )}
       </nav>
     </div>
   );
