@@ -56,6 +56,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   // thermomix", „co ugotować w 20 minut", więc trafia wysoko, nie na koniec.
   { path: "/przepisy", priority: 0.7, changeFrequency: "weekly" },
   { path: "/przepisy/co-mam-w-lodowce", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/poradnik", priority: 0.65, changeFrequency: "weekly" },
   { path: "/diety/keto", priority: 0.6, changeFrequency: "monthly" },
   { path: "/diety/wegetarianska", priority: 0.6, changeFrequency: "monthly" },
   { path: "/diety/odchudzajaca", priority: 0.45, changeFrequency: "monthly" },
