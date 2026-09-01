@@ -81,7 +81,7 @@ export const MOSZCZENICA: CityContent = {
   h1: "Thermomix Moszczenica – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Moszczenica — cena i prezentacja",
   seoDescription:
-    "Thermomix w gminie Moszczenica pod Gorlicami: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Moszczenica pod Gorlicami: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Moszczenica — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Moszczenica. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

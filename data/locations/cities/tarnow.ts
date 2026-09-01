@@ -34,7 +34,7 @@ export const TARNOW: CityContent = {
   h1: "Thermomix Tarnów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Tarnów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Tarnowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena, raty 0% i pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Tarnowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena, raty 0,6% i pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Tarnów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Tarnowie — od Mościc po Klikową. Gotujemy razem u Ciebie, ratę liczymy na miejscu.",

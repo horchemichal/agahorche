@@ -104,7 +104,7 @@ export const POLANKA_WIELKA: CityContent = {
   h1: "Thermomix Polanka Wielka – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Polanka Wielka — prezentacja",
   seoDescription:
-    "Thermomix w Polance Wielkiej: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat, cała gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Polance Wielkiej: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat, cała gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Polanka Wielka — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Polance Wielkiej. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

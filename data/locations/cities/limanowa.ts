@@ -35,7 +35,7 @@ export const LIMANOWA: CityContent = {
   h1: "Thermomix Limanowa – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Limanowa — prezentacja i cena",
   seoDescription:
-    "Thermomix w Limanowej: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Limanowej: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0,6%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Limanowa — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Limanowej lub okolicy. Bez dopłat za dojazd, bez zobowiązania. Ratę liczymy na miejscu.",

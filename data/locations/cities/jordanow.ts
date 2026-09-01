@@ -76,7 +76,7 @@ export const JORDANOW: CityContent = {
   h1: "Thermomix Jordanów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Jordanów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Jordanowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Jordanowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Jordanów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Jordanowie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

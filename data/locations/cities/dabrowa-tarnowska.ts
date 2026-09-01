@@ -97,7 +97,7 @@ export const DABROWA_TARNOWSKA: CityContent = {
   h1: "Thermomix Dąbrowa Tarnowska – prezentacja i zakup",
   seoTitle: "Przedstawiciel Thermomix Dąbrowa Tarnowska — cena",
   seoDescription:
-    "Thermomix w Dąbrowie Tarnowskiej: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta i sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Dąbrowie Tarnowskiej: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do miasta i sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Dąbrowa Tarnowska — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Dąbrowie Tarnowskiej. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

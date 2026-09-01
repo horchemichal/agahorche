@@ -100,7 +100,7 @@ export const LOSOSINA_DOLNA: CityContent = {
   h1: "Thermomix Łososina Dolna – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Łososina Dolna — cena i prezentacja",
   seoDescription:
-    "Thermomix w gminie Łososina Dolna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Łososina Dolna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Łososina Dolna — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Łososina Dolna. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

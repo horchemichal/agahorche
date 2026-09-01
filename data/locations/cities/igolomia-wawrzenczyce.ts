@@ -113,7 +113,7 @@ export const IGOLOMIA_WAWRZENCZYCE: CityContent = {
   h1: "Thermomix Igołomia-Wawrzeńczyce – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Igołomia-Wawrzeńczyce — prezentacja",
   seoDescription:
-    "Thermomix w gminie Igołomia-Wawrzeńczyce: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Igołomia-Wawrzeńczyce: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Igołomia-Wawrzeńczyce — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Igołomia-Wawrzeńczyce. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

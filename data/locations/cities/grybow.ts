@@ -95,7 +95,7 @@ export const GRYBOW: CityContent = {
   h1: "Thermomix Grybów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Grybów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Grybowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd po całym mieście bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Grybowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd po całym mieście bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Grybów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Grybowie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

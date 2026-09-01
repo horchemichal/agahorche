@@ -83,7 +83,7 @@ export const NOWY_TARG: CityContent = {
   h1: "Thermomix Nowy Targ – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Nowy Targ — prezentacja i cena",
   seoDescription:
-    "Thermomix w Nowym Targu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Nowym Targu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Nowy Targ — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Nowym Targu. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

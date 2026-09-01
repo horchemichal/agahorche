@@ -91,7 +91,7 @@ export const BOLESLAW_DABROWSKI: CityContent = {
   h1: "Thermomix Bolesław (powiat dąbrowski) – prezentacja i zakup",
   seoTitle: "Przedstawiciel Thermomix Bolesław k. Dąbrowy Tarnowskiej",
   seoDescription:
-    "Thermomix w gminie Bolesław w powiecie dąbrowskim: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Bolesław w powiecie dąbrowskim: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bolesław k. Dąbrowy — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Bolesław w powiecie dąbrowskim. Gotujemy razem u Ciebie, dojazd bez dopłat.",

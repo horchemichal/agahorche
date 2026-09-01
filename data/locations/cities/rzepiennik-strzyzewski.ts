@@ -127,7 +127,7 @@ export const RZEPIENNIK_STRZYZEWSKI: CityContent = {
   h1: "Thermomix Rzepiennik Strzyżewski – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Rzepiennik Strzyżewski",
   seoDescription:
-    "Thermomix w gminie Rzepiennik Strzyżewski: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Rzepiennik Strzyżewski: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Rzepiennik Strzyżewski — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Rzepiennik Strzyżewski. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

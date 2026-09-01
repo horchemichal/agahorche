@@ -95,7 +95,7 @@ export const KAMIONKA_WIELKA: CityContent = {
   h1: "Thermomix Kamionka Wielka – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kamionka Wielka — cena",
   seoDescription:
-    "Thermomix w gminie Kamionka Wielka: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Kamionka Wielka: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Kamionka Wielka — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Kamionka Wielka. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

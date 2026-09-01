@@ -104,7 +104,7 @@ export const ZAKOPANE: CityContent = {
   h1: "Thermomix Zakopane – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Zakopane — prezentacja i cena",
   seoDescription:
-    "Thermomix w Zakopanem: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojeżdżam na Olczę, Harendę i Cyrhlę. Aga, tel. 517 185 691.",
+    "Thermomix w Zakopanem: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojeżdżam na Olczę, Harendę i Cyrhlę. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Zakopane — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Zakopanem. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

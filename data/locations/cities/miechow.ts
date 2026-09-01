@@ -95,7 +95,7 @@ export const MIECHOW: CityContent = {
   h1: "Thermomix Miechów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Miechów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Miechowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojeżdżam do całej gminy. Aga, tel. 517 185 691.",
+    "Thermomix w Miechowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojeżdżam do całej gminy. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Miechów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Miechowie i całej gminie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

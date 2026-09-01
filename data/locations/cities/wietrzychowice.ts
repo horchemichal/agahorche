@@ -119,7 +119,7 @@ export const WIETRZYCHOWICE: CityContent = {
   h1: "Thermomix Wietrzychowice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Wietrzychowice — prezentacja",
   seoDescription:
-    "Thermomix w gminie Wietrzychowice: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Wietrzychowice: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Wietrzychowice — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Wietrzychowice. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

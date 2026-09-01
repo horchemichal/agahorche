@@ -82,7 +82,7 @@ export const SZCZAWNICA: CityContent = {
   h1: "Thermomix Szczawnica – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Szczawnica — prezentacja i cena",
   seoDescription:
-    "Thermomix w Szczawnicy: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta, Jaworek i Szlachtowej bez dopłat. Tel. 517 185 691.",
+    "Thermomix w Szczawnicy: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do miasta, Jaworek i Szlachtowej bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Szczawnica — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Szczawnicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

@@ -114,7 +114,7 @@ export const RADLOW: CityContent = {
   h1: "Thermomix Radłów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Radłów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Radłowie i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w Radłowie i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Radłów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Radłowie i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

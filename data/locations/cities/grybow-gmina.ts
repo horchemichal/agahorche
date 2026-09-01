@@ -111,7 +111,7 @@ export const GRYBOW_GMINA: CityContent = {
   h1: "Thermomix gmina Grybów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix gmina Grybów — cena i prezentacja",
   seoDescription:
-    "Thermomix w gminie wiejskiej Grybów: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich 16 sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie wiejskiej Grybów: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich 16 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix gmina Grybów — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie wiejskiej Grybów. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

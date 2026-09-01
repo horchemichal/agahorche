@@ -115,7 +115,7 @@ export const CZERNICHOW: CityContent = {
   h1: "Thermomix Czernichów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Czernichów — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Czernichów pod Krakowem: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Czernichów pod Krakowem: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Czernichów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Czernichów pod Krakowem. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

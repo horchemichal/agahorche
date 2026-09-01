@@ -113,7 +113,7 @@ export const PRZECISZOW: CityContent = {
   h1: "Thermomix Przeciszów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Przeciszów — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Przeciszów: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do Przeciszowa, Piotrowic i Lasu bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Przeciszów: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do Przeciszowa, Piotrowic i Lasu bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Przeciszów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Przeciszów. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

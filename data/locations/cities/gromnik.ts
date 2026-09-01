@@ -122,7 +122,7 @@ export const GROMNIK: CityContent = {
   h1: "Thermomix Gromnik – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Gromnik — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Gromnik: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich siedmiu sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Gromnik: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich siedmiu sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Gromnik — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Gromnik. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

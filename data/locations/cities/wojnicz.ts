@@ -36,7 +36,7 @@ export const WOJNICZ: CityContent = {
   h1: "Thermomix Wojnicz – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Wojnicz — prezentacja i cena",
   seoDescription:
-    "Thermomix w Wojniczu: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Wojniczu: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0,6%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Wojnicz — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Wojniczu lub w którymś z sołectw gminy. Bez dopłat za dojazd, bez zobowiązania.",

@@ -84,7 +84,7 @@ export const KRYNICA_ZDROJ: CityContent = {
   h1: "Thermomix Krynica-Zdrój – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Krynica-Zdrój — prezentacja i cena",
   seoDescription:
-    "Thermomix w Krynicy-Zdroju: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta i sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Krynicy-Zdroju: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do miasta i sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Krynica-Zdrój — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Krynicy-Zdroju. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

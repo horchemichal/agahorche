@@ -81,7 +81,7 @@ export const BOCHNIA: CityContent = {
   h1: "Thermomix Bochnia – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Bochnia — prezentacja i cena",
   seoDescription:
-    "Thermomix w Bochni: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Wszystkie osiedla i gmina wiejska. Cena, raty 0%. Aga, tel. 517 185 691.",
+    "Thermomix w Bochni: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Wszystkie osiedla i gmina wiejska. Cena, raty 0,6%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bochnia — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Bochni lub okolicy. Bez dopłat za dojazd, bez zobowiązania. Ratę liczymy na miejscu.",

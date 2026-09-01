@@ -141,7 +141,7 @@ export const SZERZYNY: CityContent = {
   h1: "Thermomix Szerzyny – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Szerzyny — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Szerzyny: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do Ołpin, Czermnej i reszty sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Szerzyny: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do Ołpin, Czermnej i reszty sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Szerzyny — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Szerzyny. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

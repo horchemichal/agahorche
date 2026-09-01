@@ -105,7 +105,7 @@ export const SPYTKOWICE_NOWOTARSKIE: CityContent = {
   h1: "Thermomix Spytkowice (powiat nowotarski) – prezentacja i zakup",
   seoTitle: "Przedstawiciel Thermomix Spytkowice k. Rabki — cena",
   seoDescription:
-    "Thermomix w Spytkowicach w powiecie nowotarskim: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Spytkowicach w powiecie nowotarskim: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Spytkowice k. Rabki — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Spytkowicach w powiecie nowotarskim. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

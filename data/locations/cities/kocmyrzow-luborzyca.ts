@@ -119,7 +119,7 @@ export const KOCMYRZOW_LUBORZYCA: CityContent = {
   h1: "Thermomix Kocmyrzów-Luborzyca – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kocmyrzów-Luborzyca — prezentacja",
   seoDescription:
-    "Thermomix w gminie Kocmyrzów-Luborzyca: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich 25 sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Kocmyrzów-Luborzyca: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich 25 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Kocmyrzów-Luborzyca — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Kocmyrzów-Luborzyca. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

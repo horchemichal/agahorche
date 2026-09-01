@@ -118,7 +118,7 @@ export const GORLICE: CityContent = {
   h1: "Thermomix Gorlice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Gorlice — prezentacja i cena",
   seoDescription:
-    "Thermomix w Gorlicach: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd po całym mieście bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Gorlicach: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd po całym mieście bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Gorlice — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Gorlicach. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
