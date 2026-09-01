@@ -18,7 +18,7 @@ import {
 } from "@/components/marketing/content-blocks";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { formatPln } from "@/lib/format";
-import { RATY_ZERO_DOSTEPNE } from "@/data/finansowanie/dostepnosc";
+import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix TM7 vs TM6 — porównanie modeli",
@@ -59,6 +59,7 @@ const FAQ = [
 
 export default async function Tm7VsTm6Page() {
   const oferta = await getOffersRepository().getActiveOffer();
+  const finansowanie = await pobierzUstawieniaFinansowania();
 
   return (
     <>
@@ -235,7 +236,7 @@ export default async function Tm7VsTm6Page() {
               {
                 label: "Raty",
                 // Patrz komentarz w app/(site)/thermomix/tm7/page.tsx.
-                value: RATY_ZERO_DOSTEPNE ? "0% — bez wymaganego wkładu własnego" : "0,6% miesięcznie (raty 0% wracają okresowo)",
+                value: finansowanie.ratyZeroDostepne ? "0% — bez wymaganego wkładu własnego" : "0,6% miesięcznie (raty 0% wracają okresowo)",
               },
               { label: "Zakup", value: "wyłącznie u oficjalnego przedstawiciela Vorwerk" },
               { label: "Prezentacja", value: "bezpłatna i niezobowiązująca" },
