@@ -88,8 +88,9 @@ export default async function ClientDashboardPage() {
           Twoje pełne plany
         </Heading>
         <p className="mb-6 max-w-xl text-sm text-muted">
-          Wszystkie dni odblokowane, w wariantach 1500 i 2000 kcal. Diety, których nie używasz,
-          możesz ukryć krzyżykiem — w każdej chwili je przywrócisz.
+          Wszystkie dni odblokowane, w wariantach 7 i 14 dni oraz 1500 i 2000 kcal. Dietę, której
+          nie używasz, usuwasz krzyżykiem; żeby wróciła, otwórz ją w konfiguratorze i kliknij
+          „Dodaj do moich diet".
         </p>
         <ClientDietList pozycje={pozycje} />
       </Section>
