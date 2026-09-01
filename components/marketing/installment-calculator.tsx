@@ -5,9 +5,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const DOWN_PAYMENT_PRESETS = [0, 500, 1000, 1500, 2000];
-const MONTH_OPTIONS = [10, 12, 15, 20, 24];
-const RATY0_MONTH_OPTIONS = [10, 12, 15, 20, 24, 36];
-const FLAT_MONTHLY_RATE = 0.006; // 0,6% miesięcznie — druga opcja finansowania
+const MONTH_OPTIONS = [10, 12, 15, 20, 24, 36];
+const FLAT_MONTHLY_RATE = 0.006; // 0,6% miesięcznie — jedyne dostępne finansowanie
 
 function formatZl(value: number): string {
   return new Intl.NumberFormat("pl-PL", { maximumFractionDigits: 0 }).format(Math.round(value));
@@ -18,41 +17,41 @@ function formatZlPrecise(value: number): string {
 }
 
 /**
- * Interactive financing calculator (mockup section "Kalkulator rat"). All
- * math runs client-side from `initialPriceZl` — the real active-offer
- * price passed in by the server component that renders this, never a
- * second hardcoded number. Two financing modes, each with its own
- * selectable term length: RATY 0% (RRSO 0%, interest-free — Aga confirmed
- * 2026-08-16 the real financing partner offers the same term choices as the
- * 0,6% option plus 36 months, not just a fixed 36) and a flat-rate
- * simulation at 0,6%/mies. for shorter terms. Clearly marked as
- * orientacyjny — this is not a binding loan offer (see disclaimer at the
- * bottom).
+ * Kalkulator rat. Cała matematyka liczy się po stronie klienta z
+ * `initialPriceZl` — z prawdziwej ceny aktywnej oferty, którą podaje
+ * komponent serwerowy, nigdy z drugiej zaszytej liczby.
+ *
+ * 1.09.2026 — JEDEN WARIANT: 0,6% miesięcznie. Wcześniej kalkulator miał
+ * dwa tryby, a domyślnym były RATY 0% z RRSO 0%. Aga potwierdziła, że rat
+ * 0% już nie ma, więc wybór został usunięty, a nie tylko przestawiony:
+ * kalkulator, który dalej pozwala kliknąć nieistniejące 0%, pokazywałby
+ * ratę, której nikt nie dostanie. Zostaje symulacja przy stałej stawce
+ * 0,6% miesięcznie, wprost oznaczona jako orientacyjna — to nie jest
+ * wiążąca oferta kredytowa (patrz zastrzeżenie na dole).
+ *
+ * CZEGO TU NIE MA: RRSO. Przy oprocentowaniu 0,6% miesięcznie RRSO nie
+ * wynosi zera i nie znamy jego wartości — a RRSO to liczba regulowana,
+ * której nie wolno oszacować „na oko". Podaje ją instytucja finansująca
+ * przy umowie.
  */
 export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: number }) {
   const [priceZl, setPriceZl] = useState(initialPriceZl);
   const [downPayment, setDownPayment] = useState(1000);
   const [customDownPayment, setCustomDownPayment] = useState(false);
-  const [financing, setFinancing] = useState<"raty0" | "raty06">("raty0");
-  const [months0, setMonths0] = useState(36);
-  const [months06, setMonths06] = useState(12);
+  const [months, setMonths] = useState(24);
   const priceInputId = useId();
 
   const financedAmount = Math.max(0, priceZl - downPayment);
-  const activeMonths = financing === "raty0" ? months0 : months06;
+  const activeMonths = months;
 
   const { monthlyPayment, totalToRepay } = useMemo(() => {
     if (financedAmount <= 0 || activeMonths <= 0) return { monthlyPayment: 0, totalToRepay: 0 };
-    if (financing === "raty0") {
-      const monthly = financedAmount / activeMonths;
-      return { monthlyPayment: monthly, totalToRepay: financedAmount };
-    }
-    // Simple flat-rate simulation: interest accrues on the financed amount
-    // for the whole term, split evenly across installments.
+    // Stała stawka: odsetki naliczane od kwoty finansowania za cały okres,
+    // rozłożone równo na raty.
     const totalInterest = financedAmount * FLAT_MONTHLY_RATE * activeMonths;
     const total = financedAmount + totalInterest;
     return { monthlyPayment: total / activeMonths, totalToRepay: total };
-  }, [financedAmount, activeMonths, financing]);
+  }, [financedAmount, activeMonths]);
 
   return (
     <div className="rounded-2xl border border-border bg-neutral-0 p-6 shadow-[var(--shadow-card)] md:p-8">
@@ -136,49 +135,24 @@ export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: numb
           </div>
 
           <div>
-            <p className="mb-2 text-sm font-medium text-neutral-700">3. Wybierz finansowanie</p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              <button
-                type="button"
-                onClick={() => setFinancing("raty0")}
-                className={cn(
-                  "rounded-lg border p-4 text-left transition-colors",
-                  financing === "raty0" ? "border-brand-600 bg-brand-50" : "border-neutral-300 hover:border-brand-300",
-                )}
-              >
-                <p className="font-display text-base font-semibold text-brand-700">RATY 0%</p>
-                <p className="mt-1 text-xs text-muted">RRSO 0%</p>
-                <div className="mt-2 flex justify-between text-xs text-neutral-600">
-                  <span>Liczba rat</span>
-                  <span className="font-medium text-neutral-900">do {RATY0_MONTH_OPTIONS[RATY0_MONTH_OPTIONS.length - 1]}</span>
-                </div>
-                <div className="flex justify-between text-xs text-neutral-600">
-                  <span>RRSO</span>
-                  <span className="font-medium text-neutral-900">0%</span>
-                </div>
-              </button>
-
-              <button
-                type="button"
-                onClick={() => setFinancing("raty06")}
-                className={cn(
-                  "rounded-lg border p-4 text-left transition-colors",
-                  financing === "raty06" ? "border-brand-600 bg-brand-50" : "border-neutral-300 hover:border-brand-300",
-                )}
-              >
-                <p className="font-display text-base font-semibold text-neutral-900">RATY 0,6%</p>
-                <p className="mt-1 text-xs text-muted">Oprocentowanie 0,6%</p>
-              </button>
+            <p className="mb-2 text-sm font-medium text-neutral-700">3. Finansowanie</p>
+            <div className="rounded-lg border border-brand-600 bg-brand-50 p-4">
+              <p className="font-display text-base font-semibold text-brand-700">RATY 0,6%</p>
+              <p className="mt-1 text-xs text-muted">Oprocentowanie 0,6% miesięcznie</p>
+              <div className="mt-2 flex justify-between text-xs text-neutral-600">
+                <span>Liczba rat</span>
+                <span className="font-medium text-neutral-900">do {MONTH_OPTIONS[MONTH_OPTIONS.length - 1]}</span>
+              </div>
             </div>
 
             <div className="mt-4">
               <p className="mb-2 text-xs font-medium text-neutral-600">Wybierz liczbę rat</p>
               <div className="flex flex-wrap gap-2">
-                {(financing === "raty0" ? RATY0_MONTH_OPTIONS : MONTH_OPTIONS).map((m) => (
+                {MONTH_OPTIONS.map((m) => (
                   <button
                     key={m}
                     type="button"
-                    onClick={() => (financing === "raty0" ? setMonths0(m) : setMonths06(m))}
+                    onClick={() => setMonths(m)}
                     className={cn(
                       "h-9 w-11 rounded-md border text-sm font-medium transition-colors",
                       activeMonths === m ? "border-brand-600 bg-brand-600 text-neutral-0" : "border-neutral-300 text-neutral-700 hover:border-brand-400",
@@ -219,7 +193,7 @@ export function InstallmentCalculator({ initialPriceZl }: { initialPriceZl: numb
               </div>
               <div className="flex justify-between">
                 <dt className="text-muted">Finansowanie</dt>
-                <dd className="font-medium text-neutral-900">{financing === "raty0" ? `${activeMonths} rat 0%` : `${activeMonths} rat 0,6%`}</dd>
+                <dd className="font-medium text-neutral-900">{activeMonths} rat 0,6%</dd>
               </div>
               <div className="flex justify-between">
                 <dt className="text-muted">Liczba rat</dt>
