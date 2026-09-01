@@ -18,7 +18,7 @@ import {
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { InstallmentCalculator } from "@/components/marketing/installment-calculator";
 import { formatPln } from "@/lib/format";
-import { RATY_ZERO_DOSTEPNE } from "@/data/finansowanie/dostepnosc";
+import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix TM7 — cena, funkcje, dla kogo",
@@ -60,6 +60,7 @@ const FAQ = [
 export default async function Tm7Page() {
   const oferta = await getOffersRepository().getActiveOffer();
   const calculatorPriceZl = oferta?.priceCents ? Math.round(oferta.priceCents / 100) : null;
+  const finansowanie = await pobierzUstawieniaFinansowania();
 
   return (
     <>
@@ -183,8 +184,8 @@ export default async function Tm7Page() {
                 label: "Raty",
                 // Wiersz tabeli to twarde stwierdzenie faktu, więc musi
                 // podążać za realną dostępnością promocji — patrz
-                // data/finansowanie/dostepnosc.ts (prośba Agi, 1.09.2026).
-                value: RATY_ZERO_DOSTEPNE ? "0%, bez wymaganego wkładu własnego" : "0,6% miesięcznie (raty 0% wracają okresowo)",
+                // przełącznik w /admin/ustawienia (prośba Agi, 1.09.2026).
+                value: finansowanie.ratyZeroDostepne ? "0%, bez wymaganego wkładu własnego" : "0,6% miesięcznie (raty 0% wracają okresowo)",
               },
               { label: "Przepisy", value: "Cookidoo — ponad 100 tys., w tym ponad 6 tys. polskich" },
               { label: "Gdzie kupisz", value: "u oficjalnego przedstawiciela Vorwerk" },
@@ -212,7 +213,11 @@ export default async function Tm7Page() {
             Policz sam, zanim zadzwonisz. Kalkulator startuje z aktualnej ceny TM7 — zmień okres
             spłaty albo wkład własny i zobacz, jak zmienia się rata. Wynik jest orientacyjny.
           </Lead>
-          <InstallmentCalculator initialPriceZl={calculatorPriceZl} />
+          <InstallmentCalculator
+            initialPriceZl={calculatorPriceZl}
+            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
+            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
+          />
         </Section>
       )}
 
