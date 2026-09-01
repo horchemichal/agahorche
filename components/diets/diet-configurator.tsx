@@ -39,10 +39,28 @@ const WEANING_STAGES = ["Etap 1 — pierwsze produkty", "Etap 2 — większa ró
  * pokazujemy uczciwy komunikat — nigdy linku prowadzącego do 404.
  *
  * `isLoggedIn` (z `getCurrentClient()`, patrz diet-category-page.tsx /
- * app/(site)/diety/page.tsx) dokłada członkom Aga Club interaktywny podgląd
- * planu. Podgląd renderuje się pełną szerokością pod całą kartą (nie
+ * app/(site)/diety/page.tsx) sterowało kiedyś tym, czy podgląd planu w ogóle
+ * się pokazuje. Podgląd renderuje się pełną szerokością pod całą kartą (nie
  * zagnieżdżony w wąskiej kolumnie), zgodnie z wcześniejszą uwagą Agi, że
  * węższy układ był nieczytelny.
+ *
+ * 1.09.2026 — PODGLĄD JEST PUBLICZNY. Przycisk „Zobacz przykładowy plan"
+ * i sam podgląd stały wcześniej za `isLoggedIn`, przez co niezalogowany gość
+ * nie widział ani jednego dania. To było sprzeczne z tym, co strona sama
+ * o sobie mówi: FAQ w data/diets/faq.ts obiecuje „pierwszy dzień w pełni
+ * widoczny", nagłówek sekcji mówi „Na stronie pokazujemy przykładowe plany",
+ * a dane mają `locked: false` wyłącznie na Dniu 1 — czyli model danych od
+ * początku zakładał, że Dzień 1 jest darmowy. Bramka była pozostałością po
+ * czasach, gdy bezpłatną próbką był PDF.
+ *
+ * Co to oddaje: jeden dzień jednego wariantu. Dni 2–7 nadal pokazują kafel
+ * „Zaloguj się" (patrz `isLocked` w diet-plan-preview.tsx), a pełna baza —
+ * 14 dni, drugi wariant kaloryczny, listy zakupów — zostaje w Aga Club.
+ * Co to daje: publiczne, indeksowalne strony diet mają wreszcie realną treść
+ * z linkami do konkretnych przepisów w Cookidoo, zamiast samej obietnicy.
+ *
+ * `isLoggedIn` zostaje w propsach, bo Strefa Klienta przekazuje je dalej
+ * i przyda się przy różnicowaniu treści, gdy dojdą funkcje tylko dla klientek.
  */
 export function DietConfigurator({
   initialCategorySlug,
@@ -307,11 +325,9 @@ export function DietConfigurator({
             zawartością Aga Club. `pdfHref` zostaje wyliczane, bo trasa
             /api/diety/jadlospis-pdf przyda się wewnątrz Strefy Klienta.
           */}
-          {isLoggedIn && (
-            <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
-              Zobacz przykładowy plan
-            </Button>
-          )}
+          <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
+            Zobacz przykładowy plan
+          </Button>
 
           <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
             <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
@@ -333,7 +349,7 @@ export function DietConfigurator({
       </div>
     </div>
 
-    {isLoggedIn && showPreview && (
+    {showPreview && (
       <div className="mt-8">
         {matchedPlan ? (
           <DietPlanPreview plan={matchedPlan} />
