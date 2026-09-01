@@ -17,7 +17,7 @@ import {
   LocalBand,
 } from "@/components/marketing/content-blocks";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
-import { RATY_ZERO_DOSTEPNE, RATY_ZERO_KOMUNIKAT } from "@/data/finansowanie/dostepnosc";
+import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 import { formatPln } from "@/lib/format";
 
 export const metadata: Metadata = buildMetadata({
@@ -63,6 +63,7 @@ const FAQ = [
 
 export default async function FinansowaniePage() {
   const oferta = await getOffersRepository().getActiveOffer();
+  const finansowanie = await pobierzUstawieniaFinansowania();
   const cena = oferta?.priceCents ? Math.round(oferta.priceCents / 100) : null;
 
   return (
@@ -85,11 +86,11 @@ export default async function FinansowaniePage() {
           w przypisie na dole (prośba Agi, 1.09.2026). Strona nazywa się
           „Raty 0%" i to hasło jest w menu, więc informacja, że akurat nie
           obowiązują, musi trafić do czytelnika zanim zacznie liczyć ratę —
-          inaczej dowie się o tym po fakcie. Treść: data/finansowanie/dostepnosc.ts.
+          inaczej dowie się o tym po fakcie. Treść i przełącznik: /admin/ustawienia.
         */}
-        {!RATY_ZERO_DOSTEPNE && (
+        {!finansowanie.ratyZeroDostepne && (
           <p className="mt-6 max-w-2xl rounded-lg border border-brand-200 bg-brand-50 p-4 text-sm leading-relaxed text-neutral-800">
-            {RATY_ZERO_KOMUNIKAT}
+            {finansowanie.ratyZeroKomunikat}
           </p>
         )}
 
@@ -103,7 +104,11 @@ export default async function FinansowaniePage() {
 
       {cena ? (
         <Section id="kalkulator-rat" className="scroll-mt-28 pt-0">
-          <InstallmentCalculator initialPriceZl={cena} />
+          <InstallmentCalculator
+            initialPriceZl={cena}
+            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
+            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
+          />
         </Section>
       ) : null}
 
@@ -141,7 +146,7 @@ export default async function FinansowaniePage() {
               },
               {
                 label: "Raty 0%",
-                value: RATY_ZERO_DOSTEPNE ? "do 36 miesięcy, RRSO 0%" : "obecnie niedostępne — wracają okresowo",
+                value: finansowanie.ratyZeroDostepne ? "do 36 miesięcy, RRSO 0%" : "obecnie niedostępne — wracają okresowo",
               },
               { label: "Finansowanie teraz", value: "0,6% miesięcznie, do 36 rat" },
               { label: "Wkład własny", value: "niewymagany" },
