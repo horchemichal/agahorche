@@ -10,3 +10,9 @@ export interface PrzepisMeta {
   /** Indeksy w KATEGORIE_COOKIDOO. */
   kategorie: number[];
 }
+
+/**
+ * Składniki przepisów: identyfikator dania → nazwy składników w formie
+ * z Cookidoo, bez gramatur. Patrz data/diets/skladniki.ts.
+ */
+export type SkladnikiPrzepisu = Record<string, string[]>;
