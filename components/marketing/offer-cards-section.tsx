@@ -7,13 +7,8 @@ import { Heading } from "@/components/ui/heading";
 import { Card, Badge } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { ChefHatIcon } from "@/components/marketing/icons";
+import { ofertaObowiazuje } from "@/lib/offers/window";
 
-
-function withinWindow(startsAt: string | null, endsAt: string | null, now: Date): boolean {
-  if (startsAt && new Date(startsAt) > now) return false;
-  if (endsAt && new Date(endsAt) < now) return false;
-  return true;
-}
 
 /**
  * "Aktualna oferta" grid (spec §5/§21 — single source of truth for
@@ -45,7 +40,7 @@ function withinWindow(startsAt: string | null, endsAt: string | null, now: Date)
 export async function OfferCardsSection() {
   const now = new Date();
   const offers = (await getOffersRepository().list())
-    .filter((o) => o.isActive && withinWindow(o.startsAt, o.endsAt, now))
+    .filter((o) => o.isActive && ofertaObowiazuje(o.startsAt, o.endsAt, now))
     .slice(0, 3);
 
   if (offers.length === 0) return null;
