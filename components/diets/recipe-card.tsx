@@ -33,12 +33,15 @@ export function RecipeCard({
   compact = false,
   portions = 1,
   placeholderLabel,
+  dopisek,
 }: {
   recipe: Recipe;
   compact?: boolean;
   portions?: number;
   /** Napis w pasku zdjęcia zamiast czapki — np. „Śniadanie”, „Obiad”. */
   placeholderLabel?: string;
+  /** Linijka pod nazwą dania — wyszukiwarka wpisuje tu czas i wydajność. */
+  dopisek?: string;
 }) {
   const x = (v: number | null | undefined) =>
     v == null ? null : Math.round(v * portions * 10) / 10;
@@ -60,6 +63,7 @@ export function RecipeCard({
       </div>
       <div className="flex flex-1 flex-col gap-2 p-3.5">
         <p className="text-sm font-medium leading-snug text-neutral-900">{recipe.name}</p>
+        {dopisek && <p className="text-xs text-neutral-600">{dopisek}</p>}
         {portions !== 1 && (
           <p className="text-xs font-medium text-brand-700">
             {String(portions).replace(".", ",")} porcji
