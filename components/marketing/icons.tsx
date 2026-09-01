@@ -230,6 +230,15 @@ export function SproutIcon(props: IconProps) {
   );
 }
 
+/** Krzyżyk — używany m.in. do ukrywania kafelków diet w Aga Club. */
+export function CloseIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="m6 6 12 12M18 6 6 18" />
+    </svg>
+  );
+}
+
 export function LinkIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>
