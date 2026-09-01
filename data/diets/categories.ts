@@ -36,6 +36,12 @@ function weekPlan(opts: {
   caloriesTarget: number | null;
   day1: Meal[];
   days2to7?: Meal[][];
+  /** Patrz DietPlan.variantKey — rozróżnia etapy rozszerzania diety niemowląt. */
+  variantKey?: string;
+  /** Patrz DietPlan.hideNutrition — plan niemowlęcy nie pokazuje kcal. */
+  hideNutrition?: boolean;
+  /** Patrz DietPlan.note — zdanie kontekstu nad planem. */
+  note?: string;
 }): DietPlan {
   const days: DietDay[] = [{ dayNumber: 1, meals: opts.day1 }];
   for (let d = 2; d <= 7; d += 1) {
@@ -51,6 +57,9 @@ function weekPlan(opts: {
     visibility: "PUBLIC",
     days,
     isExampleData: true,
+    variantKey: opts.variantKey,
+    hideNutrition: opts.hideNutrition,
+    note: opts.note,
   };
 }
 
@@ -1017,6 +1026,122 @@ const KOBIETY_KARMIACE_PLAN = weekPlan({
   ],
 });
 
+
+/**
+ * ROZSZERZANIE DIETY NIEMOWLĄT — cztery etapy (1.09.2026, prośba Agi).
+ *
+ * OŚ TEJ SEKCJI. Wcześniej kategoria `niemowleta` była jedyną bez planu,
+ * z uzasadnieniem „nie zmyślamy treści niemowlęcej". To uzasadnienie było
+ * słuszne wobec WYMYŚLANIA, ale nie wobec pokazania prawdziwych przepisów:
+ * wszystkie dania poniżej to realne pozycje z Cookidoo, oznaczone tam
+ * „dla dzieci", „BLW" albo wprost wiekiem („od 6. miesiąca życia").
+ * Nic tu nie jest wymyślone — ani nazwa, ani link, ani wartości.
+ *
+ * CZEGO TU NIE MA I DLACZEGO. Nie ma gramatur dla dziecka, nie ma
+ * konsystencji i nie ma kalorii (patrz `hideNutrition`). To są rzeczy,
+ * które ustala rodzic z pediatrą, a nie strona internetowa — i to jest
+ * ta sama ostrożność, co wcześniej, tylko wyrażona przez to, czego
+ * NIE pokazujemy, zamiast przez brak całej kategorii.
+ *
+ * LICZBA POSIŁKÓW ROŚNIE Z ETAPEM: 2 → 3 → 4 → 5. To nie jest kosmetyka.
+ * Pięć posiłków stałych dla sześciomiesięcznego dziecka byłoby złą radą —
+ * na pierwszym etapie mleko nadal jest głównym pokarmem, a łyżeczka
+ * warzywa dodatkiem. Dlatego Etap 1 ma dwa posiłki, a nie pięć.
+ */
+
+const NIEMOWLETA_ETAP1 = weekPlan({
+  id: "niemowleta-etap-1",
+  categoryId: "niemowleta",
+  label: "Etap 1 — pierwsze produkty",
+  caloriesTarget: null,
+  variantKey: "etap-1",
+  hideNutrition: true,
+  note:
+    "Na tym etapie mleko — mamy albo mieszanka — nadal jest głównym pokarmem, a posiłki stałe są dodatkiem. Nowe produkty wprowadza się pojedynczo i obserwuje przez kilka dni. Ile i o jakiej konsystencji — ustalasz z pediatrą; tutaj są pomysły i przepisy, nie zalecenia.",
+  day1: [meal("obiad", "cd-r323226"), meal("podwieczorek", "cd-r325765")],
+  days2to7: [
+    [meal("obiad", "cd-r323220"), meal("podwieczorek", "cd-r325777")],
+    [meal("obiad", "cd-r323219"), meal("podwieczorek", "cd-r325765")],
+    [meal("obiad", "cd-r323218"), meal("podwieczorek", "cd-r173817")],
+    [meal("obiad", "cd-r325781"), meal("podwieczorek", "cd-r325777")],
+    [meal("obiad", "cd-r747107"), meal("podwieczorek", "cd-r325765")],
+    [meal("obiad", "cd-r323223"), meal("podwieczorek", "cd-r173817")],
+  ],
+});
+
+const NIEMOWLETA_ETAP2 = weekPlan({
+  id: "niemowleta-etap-2",
+  categoryId: "niemowleta",
+  label: "Etap 2 — większa różnorodność",
+  caloriesTarget: null,
+  variantKey: "etap-2",
+  hideNutrition: true,
+  note:
+    "Dochodzą kaszki i łączenie dwóch warzyw albo owoców. Mleko wciąż jest ważną częścią dnia. Kolejność i tempo wprowadzania produktów omów z pediatrą.",
+  day1: [meal("sniadanie", "cd-r323214"), meal("obiad", "cd-r747112"), meal("podwieczorek", "cd-r747111")],
+  days2to7: [
+    [meal("sniadanie", "cd-r128302"), meal("obiad", "cd-r323222"), meal("podwieczorek", "cd-r323217")],
+    [meal("sniadanie", "cd-r323213"), meal("obiad", "cd-r323224"), meal("podwieczorek", "cd-r325774")],
+    [meal("sniadanie", "cd-r173821"), meal("obiad", "cd-r323225"), meal("podwieczorek", "cd-r128303")],
+    [meal("sniadanie", "cd-r323214"), meal("obiad", "cd-r323221"), meal("podwieczorek", "cd-r323215")],
+    [meal("sniadanie", "cd-r128302"), meal("obiad", "cd-r128298"), meal("podwieczorek", "cd-r325776")],
+    [meal("sniadanie", "cd-r323213"), meal("obiad", "cd-r173814"), meal("podwieczorek", "cd-r747111")],
+  ],
+});
+
+const NIEMOWLETA_ETAP3 = weekPlan({
+  id: "niemowleta-etap-3",
+  categoryId: "niemowleta",
+  label: "Etap 3 — łączenie produktów",
+  caloriesTarget: null,
+  variantKey: "etap-3",
+  hideNutrition: true,
+  note:
+    "Etap, na którym w posiłkach pojawiają się mięso, ryba i rośliny strączkowe, a dania łączą kilka składników. Produkty potencjalnie alergizujące wprowadzaj według zaleceń pediatry.",
+  day1: [
+    meal("sniadanie", "cd-r173812"),
+    meal("obiad", "cd-r173815"),
+    meal("podwieczorek", "cd-r325773"),
+    meal("kolacja", "cd-r173813"),
+  ],
+  days2to7: [
+    [meal("sniadanie", "cd-r325766"), meal("obiad", "cd-r325848"), meal("podwieczorek", "cd-r323217"), meal("kolacja", "cd-r325767")],
+    [meal("sniadanie", "cd-r323213"), meal("obiad", "cd-r128301"), meal("podwieczorek", "cd-r325772"), meal("kolacja", "cd-r323224")],
+    [meal("sniadanie", "cd-r811349"), meal("obiad", "cd-r325783"), meal("podwieczorek", "cd-r128308"), meal("kolacja", "cd-r325768")],
+    [meal("sniadanie", "cd-r173812"), meal("obiad", "cd-r173819"), meal("podwieczorek", "cd-r325774"), meal("kolacja", "cd-r323225")],
+    [meal("sniadanie", "cd-r325766"), meal("obiad", "cd-r325782"), meal("podwieczorek", "cd-r325776"), meal("kolacja", "cd-r323221")],
+    [meal("sniadanie", "cd-r323214"), meal("obiad", "cd-r325780"), meal("podwieczorek", "cd-r173817"), meal("kolacja", "cd-r128300")],
+  ],
+});
+
+const NIEMOWLETA_ETAP4 = weekPlan({
+  id: "niemowleta-etap-4",
+  categoryId: "niemowleta",
+  label: "Etap 4 — więcej posiłków rodzinnych",
+  caloriesTarget: null,
+  variantKey: "etap-4",
+  hideNutrition: true,
+  note:
+    "Dania w wersji do samodzielnego jedzenia (BLW) i coraz bliższe temu, co je reszta rodziny — bez soli i cukru. Przy każdym posiłku pilnuj wielkości i kształtu kawałków oraz zostań przy dziecku.",
+  day1: [
+    meal("sniadanie", "cd-r811349"),
+    meal("drugie-sniadanie", "cd-r811354"),
+    meal("obiad", "cd-r811352"),
+    meal("podwieczorek", "cd-r811351"),
+    meal("kolacja", "cd-r811344"),
+  ],
+  days2to7: [
+    [meal("sniadanie", "cd-r811351"), meal("drugie-sniadanie", "cd-r811353"), meal("obiad", "cd-r811357"), meal("podwieczorek", "cd-r811354"), meal("kolacja", "cd-r811347")],
+    [meal("sniadanie", "cd-r811349"), meal("drugie-sniadanie", "cd-r325776"), meal("obiad", "cd-r811358"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811348")],
+    [meal("sniadanie", "cd-r173812"), meal("drugie-sniadanie", "cd-r811354"), meal("obiad", "cd-r173818"), meal("podwieczorek", "cd-r811351"), meal("kolacja", "cd-r811344")],
+    [meal("sniadanie", "cd-r325766"), meal("drugie-sniadanie", "cd-r811353"), meal("obiad", "cd-r730342"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811347")],
+    [meal("sniadanie", "cd-r811349"), meal("drugie-sniadanie", "cd-r325773"), meal("obiad", "cd-r173816"), meal("podwieczorek", "cd-r811351"), meal("kolacja", "cd-r811348")],
+    [meal("sniadanie", "cd-r323213"), meal("drugie-sniadanie", "cd-r811354"), meal("obiad", "cd-r811357"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811344")],
+  ],
+});
+
+const NIEMOWLETA_PLANY = [NIEMOWLETA_ETAP1, NIEMOWLETA_ETAP2, NIEMOWLETA_ETAP3, NIEMOWLETA_ETAP4];
+
 export const DIET_CATEGORIES: DietCategory[] = [
   {
     id: "keto",
@@ -1134,7 +1259,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     icon: "sprout",
     medicalDisclaimer:
       "Materiały mają charakter edukacyjny i nie zastępują indywidualnych zaleceń pediatry lub dietetyka. Przed wprowadzeniem nowych produktów do diety dziecka warto skonsultować sposób żywienia ze specjalistą.",
-    plans: [],
+    plans: NIEMOWLETA_PLANY,
   },
 ];
 
@@ -1147,9 +1272,9 @@ export function getDietCategory(slug: string): DietCategory | undefined {
  * Jedno źródło prawdy dla dwóch miejsc: generatora bezpłatnego jadłospisu
  * PDF (lib/diets/jadlospis-pdf.ts) i konfiguratora, który na tej podstawie
  * decyduje, czy w ogóle pokazać przycisk pobierania
- * (components/diets/diet-configurator.tsx). Dzięki temu `niemowleta` —
- * jedyna kategoria bez planu, celowo (patrz komentarz nad
- * ODCHUDZAJACA_1500) — nigdy nie dostanie przycisku prowadzącego do 404.
+ * (components/diets/diet-configurator.tsx). Od 1.09.2026 każda kategoria
+ * ma plan, więc ta funkcja nie odsiewa już nikogo — zostaje jako zabezpieczenie
+ * przed przyciskiem prowadzącym do 404, gdyby doszła kategoria bez treści.
  */
 export function getPublicDietPlan(category: DietCategory): DietPlan | undefined {
   return category.plans.find((p) => p.visibility === "PUBLIC" && p.days.some((d) => d.meals.length > 0));
@@ -1168,11 +1293,12 @@ export function getDietPlan(planId: string): DietPlan | undefined {
 }
 
 /**
- * Categories with at least a Day-1 example plan. Updated in ETAP 9 — every
- * category now has one EXCEPT `niemowleta` (deliberately, see the comment
- * above ODCHUDZAJACA_1500 — infant weaning content isn't invented). `keto`
- * and `wegetarianska` are still the only two with the FULL 7-day content
- * unlocked in Strefa Klienta (ETAP 8, see days2to7 usage above).
+ * Categories with at least a Day-1 example plan. Od 1.09.2026 mają go
+ * WSZYSTKIE — `niemowleta` dostały cztery plany etapowe (patrz
+ * NIEMOWLETA_ETAP1…4). Wcześniej były jedynym wyjątkiem, bo treści
+ * niemowlęcej nie wolno zmyślać; to nadal obowiązuje — dlatego etapy
+ * są zbudowane wyłącznie z prawdziwych przepisów Cookidoo, bez gramatur
+ * i bez kalorii.
  */
 export const LIVE_EXAMPLE_CATEGORY_IDS = [
   "keto",
@@ -1184,4 +1310,5 @@ export const LIVE_EXAMPLE_CATEGORY_IDS = [
   "bezglutenowa",
   "dla-dzieci",
   "kobiety-karmiace",
+  "niemowleta",
 ] as const;
