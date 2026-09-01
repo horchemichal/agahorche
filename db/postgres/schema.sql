@@ -368,3 +368,28 @@ create table if not exists client_users (
 );
 
 create index if not exists client_users_email_idx on client_users (lower(email));
+
+-- ============================================================
+-- USTAWIENIA FINANSOWANIA (1 września 2026)
+-- ============================================================
+-- Jeden wiersz, jak seo_settings. Powstało, bo raty 0% to promocja
+-- Vorwerk, która wraca i znika, a wcześniej ta informacja była wpisana
+-- w kod (data/finansowanie/dostepnosc.ts) — każda zmiana promocji
+-- wymagała wgrania pliku i przebudowania obrazu. Aga przełącza to teraz
+-- sama w /admin/ustawienia.
+--
+-- `raty_zero_dostepne = false` sprawia, że kalkulator otwiera się na
+-- wariancie 0,6%, kafelek 0% dostaje plakietkę „chwilowo niedostępne",
+-- a nad kalkulatorem i na /finansowanie pojawia się komunikat z kolumny
+-- `raty_zero_komunikat`. Hasło „Raty 0%" zostaje w menu i w treściach —
+-- promocja wraca, a to jest fraza, której ludzie szukają.
+
+create table if not exists financing_settings (
+  id text primary key default 'global' check (id = 'global'),
+  raty_zero_dostepne boolean not null default false,
+  raty_zero_komunikat text not null default 'W tej chwili raty 0% nie obowiązują — dostępne jest finansowanie z ratą 0,6% miesięcznie. Promocje 0% wracają okresowo: zajrzyj tu za jakiś czas albo napisz do mnie, a dam znać, kiedy będą.',
+  updated_at timestamptz not null default now(),
+  updated_by text
+);
+
+insert into financing_settings (id) values ('global') on conflict (id) do nothing;
