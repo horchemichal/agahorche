@@ -33,7 +33,7 @@ const FAQ = [
   {
     question: "Czy warto kupić używany TM6?",
     answer:
-      "Może się opłacać, ale bez gwarancji producenta i bez promocji przedstawiciela. Sprawdź numer seryjny, historię serwisu i stan naczynia — najdroższa część to właśnie naczynie z nożem. Przy większej różnicy w cenie policz też ratę 0,6% na nowy TM7; bywa, że wychodzi podobnie.",
+      "Może się opłacać, ale bez gwarancji producenta i bez promocji przedstawiciela. Sprawdź numer seryjny, historię serwisu i stan naczynia — najdroższa część to właśnie naczynie z nożem. Przy większej różnicy w cenie policz też ratę 0% na nowy TM7; bywa, że wychodzi podobnie.",
   },
   {
     question: "Czy TM6 dostaje jeszcze aktualizacje i przepisy?",
@@ -112,7 +112,7 @@ export default function Tm6Page() {
                   "duży ekran dotykowy — więcej kroków przepisu widocznych bez przewijania",
                   "cichsza praca, co widać zwłaszcza wieczorem, gdy dzieci już śpią",
                   "naczynie z zewnętrzną izolacją",
-                  "nowe urządzenie z gwarancją producenta, aktualną promocją i ratami 0,6%",
+                  "nowe urządzenie z gwarancją producenta, aktualną promocją i ratami 0%",
                 ]}
               />
             </div>
@@ -140,7 +140,7 @@ export default function Tm6Page() {
           <p>
             To najlepszy moment, żeby zobaczyć różnicę na własne oczy, a nie w tabelce. Vorwerk
             okresowo prowadzi promocje wymiany starszego modelu na nowy — nie są dostępne cały czas,
-            więc zapytaj mnie, czy akurat obowiązuje. Do tego raty 0,6% miesięcznie, więc
+            więc zapytaj mnie, czy akurat obowiązuje. Do tego raty 0% bez wkładu własnego, więc
             przesiadka nie musi oznaczać jednorazowego wydatku.
           </p>
           <p>
