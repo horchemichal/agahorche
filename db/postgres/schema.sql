@@ -393,3 +393,36 @@ create table if not exists financing_settings (
 );
 
 insert into financing_settings (id) values ('global') on conflict (id) do nothing;
+
+-- ============================================================
+-- PORADNIK (1 września 2026)
+-- ============================================================
+-- Jeden typ treści dla ośmiu działów poradnika Aga Club: czyszczenie
+-- Thermomixa, triki na czas, co można zamrozić, kuchenny SOS, dlaczego
+-- mi nie wyszło, kuchenny słownik, baza podstaw i domowe sposoby.
+--
+-- DLACZEGO JEDNA TABELA, A NIE OSIEM. Z punktu widzenia bazy te działy
+-- niczym się nie różnią — mają tytuł, zdanie wprowadzenia i treść. Osiem
+-- tabel oznaczałoby osiem formularzy w panelu i osiem miejsc do zmiany
+-- przy każdej poprawce. Lista działów jest stała i mieszka w kodzie
+-- (types/poradnik.ts), bo nowy dział to decyzja projektowa, nie wpis.
+--
+-- `wlasne` rozróżnia treść Agi od wgranej wiedzy ogólnej — panel pokazuje
+-- przy tej drugiej znacznik „do przepisania własnymi słowami”.
+
+create table if not exists poradnik_wpisy (
+  id uuid primary key default gen_random_uuid(),
+  dzial text not null,
+  slug text not null unique,
+  tytul text not null,
+  lead text not null default '',
+  tresc text not null default '',
+  przepis_id text,
+  wlasne boolean not null default true,
+  opublikowany boolean not null default true,
+  kolejnosc integer not null default 0,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists poradnik_dzial_idx on poradnik_wpisy (dzial, kolejnosc);
