@@ -14,6 +14,7 @@ import { Photo } from "@/components/marketing/content-blocks";
 import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
 import { cn } from "@/lib/utils";
 import { InstallmentCalculator } from "@/components/marketing/installment-calculator";
+import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { TestimonialsSection } from "./testimonials-section";
 import { LeadForm } from "@/components/lead/lead-form";
@@ -104,6 +105,7 @@ export async function CityLandingTemplate({
   const calculatorPriceZl = offer?.priceCents
     ? Math.round(offer.priceCents / 100)
     : null;
+  const finansowanie = await pobierzUstawieniaFinansowania();
 
   // Dzielnice z własną podstroną — po to, żeby lista dzielnic niżej była
   // realnym linkowaniem w dół, a nie samą wyliczanką nazw.
@@ -342,7 +344,11 @@ export async function CityLandingTemplate({
             z oferty powyżej — zmień okres spłaty albo wkład własny i zobacz,
             jak zmienia się rata.
           </Lead>
-          <InstallmentCalculator initialPriceZl={calculatorPriceZl} />
+          <InstallmentCalculator
+            initialPriceZl={calculatorPriceZl}
+            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
+            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
+          />
         </Section>
       )}
 
