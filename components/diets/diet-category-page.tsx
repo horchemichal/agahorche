@@ -33,7 +33,7 @@ export async function DietCategoryPage({ category }: { category: DietCategory })
       </Section>
       <Section className="pt-6">
         <Badge tone={hasExample ? "brand" : "neutral"}>
-          {hasExample ? "Bezpłatny jadłospis w PDF" : "Konfigurator dostępny — jadłospis wkrótce"}
+          {hasExample ? "Jadłospis dostępny w Aga Club" : "Konfigurator dostępny — jadłospis wkrótce"}
         </Badge>
         <Heading as="h1" size="lg" className="mt-3 max-w-2xl">
           {category.name} z Thermomixem®
@@ -43,24 +43,25 @@ export async function DietCategoryPage({ category }: { category: DietCategory })
           <p className="mt-4 max-w-xl text-sm text-muted">{category.medicalDisclaimer}</p>
         )}
         <div className="mt-8 flex flex-wrap gap-3">
-          {hasExample && (
-            <ButtonLink href={`/api/diety/jadlospis-pdf?dieta=${category.slug}`} download size="lg">
-              Pobierz jadłospis w PDF
-            </ButtonLink>
-          )}
-          <ButtonLink href="/prezentacja" variant={hasExample ? "outline" : "primary"} size="lg">
+          <ButtonLink href="/prezentacja" size="lg">
             Umów bezpłatną prezentację
           </ButtonLink>
           <ButtonLink href="/diety" variant="outline" size="lg">
             Wszystkie diety Thermomix
           </ButtonLink>
         </div>
-        {hasExample && (
-          <p className="mt-3 max-w-xl text-sm text-muted">
-            Jadłospis na jeden dzień — za darmo, bez zakładania konta. Pełne 7-dniowe jadłospisy
-            ze wszystkich diet przekazuję klientkom i klientom, którzy kupili Thermomix u mnie.
-          </p>
-        )}
+        {/*
+          31.08.2026: przycisk „Pobierz jadłospis w PDF" usunięty na prośbę Agi.
+          Jadłospisy przestają być darmową próbką do pobrania — cała baza jest
+          dla uczestniczek i uczestników Aga Club, czyli osób, które kupiły
+          Thermomix u Agi. Trasa /api/diety/jadlospis-pdf zostaje w kodzie,
+          bo przyda się do generowania PDF-ów wewnątrz Strefy Klienta.
+        */}
+        <p className="mt-3 max-w-xl text-sm text-muted">
+          Wszystkie jadłospisy — pełne siedem dni, każda dieta, w wariantach 1500 i 2000 kcal —
+          są dostępne dla uczestniczek i uczestników <strong className="font-medium text-neutral-800">Aga Club</strong>,
+          czyli osób, które kupiły Thermomix u Agi.
+        </p>
       </Section>
 
       <Section tone="surface" id="konfigurator" className="scroll-mt-24">

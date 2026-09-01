@@ -301,41 +301,33 @@ export function DietConfigurator({
         <div className="flex flex-col gap-4">
           <DietSummary selection={selection} />
 
-          <div className="flex flex-col gap-2.5">
-            {pdfHref ? (
-              <>
-                <ButtonLink href={pdfHref} download className="justify-center">
-                  Pobierz jadłospis w PDF
-                </ButtonLink>
-                <p className="text-xs text-muted">
-                  Bezpłatny jadłospis na jeden dzień — {category.name.toLowerCase()}. Pobierasz od
-                  razu, bez zakładania konta.
-                </p>
-              </>
-            ) : (
-              <p className="rounded-lg border border-dashed border-neutral-300 bg-surface p-4 text-sm text-neutral-700">
-                Dla tej diety przygotowuję jadłospis do pobrania — daj mi znać, a wyślę Ci go, gdy
-                tylko będzie gotowy.
-              </p>
-            )}
-            {isLoggedIn && (
-              <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
-                Zobacz przykładowy plan
-              </Button>
-            )}
-          </div>
+          {/*
+            31.08.2026: przycisk „Pobierz jadłospis w PDF" usunięty na prośbę
+            Agi — jadłospisy nie są już darmową próbką do pobrania, tylko
+            zawartością Aga Club. `pdfHref` zostaje wyliczane, bo trasa
+            /api/diety/jadlospis-pdf przyda się wewnątrz Strefy Klienta.
+          */}
+          {isLoggedIn && (
+            <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
+              Zobacz przykładowy plan
+            </Button>
+          )}
 
           <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
-            <p className="text-sm font-semibold text-brand-800">Więcej diet i pełne 7 dni</p>
+            <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
             <p className="text-sm leading-relaxed text-neutral-700">
-              Każda dieta ma tu jeden bezpłatny jadłospis. Pełne 7-dniowe jadłospisy ze wszystkich
-              diet, listy zakupów i gotowe zamienniki dań przekazuję wyłącznie moim klientkom i
-              klientom — osobom, które kupiły Thermomix u mnie, oficjalnej przedstawicielki
-              Thermomix.
+              Wszystkie diety — pełne siedem dni, warianty 1500 i 2000 kcal, listy zakupów
+              i zamienniki dań — są dostępne dla uczestniczek i uczestników Aga Club, czyli osób,
+              które kupiły Thermomix u mnie, oficjalnej przedstawicielki Thermomix.
             </p>
-            <ButtonLink href="/prezentacja" variant="outline" className="justify-center bg-neutral-0">
-              Umów bezpłatną prezentację →
-            </ButtonLink>
+            <div className="flex flex-wrap gap-2">
+              <ButtonLink href="/prezentacja" variant="outline" className="justify-center bg-neutral-0">
+                Umów bezpłatną prezentację →
+              </ButtonLink>
+              <ButtonLink href="/strefa-klienta/logowanie" variant="ghost" className="justify-center">
+                Mam już konto
+              </ButtonLink>
+            </div>
           </div>
         </div>
       </div>
