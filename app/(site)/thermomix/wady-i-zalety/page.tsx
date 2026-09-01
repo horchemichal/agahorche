@@ -110,7 +110,7 @@ export default function WadyIZaletyPage() {
               "Wsparcie po zakupie — pierwsze uruchomienie, Cookidoo i przepisy na start dostajesz ode mnie.",
             ]}
             cons={[
-              "Wysoka cena jednorazowa — nawet rozłożona na raty 0% to konkretna decyzja budżetowa.",
+              "Wysoka cena jednorazowa — nawet rozłożona na raty 0,6% to konkretna decyzja budżetowa.",
               "Cookidoo to abonament: bez niego urządzenie działa, ale tracisz prowadzenie krok po kroku.",
               "Zajmuje stałe miejsce na blacie i z Varomą jest wysoki — warto sprawdzić prześwit pod szafką.",
               "Nie zastąpi piekarnika ani patelni do smażenia na dużej powierzchni.",
