@@ -87,7 +87,7 @@ export const LACKO: CityContent = {
   h1: "Thermomix Łącko – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Łącko — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Łącko: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Łącko: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Łącko — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Łącko. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

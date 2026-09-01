@@ -105,7 +105,7 @@ export const CZARNY_DUNAJEC: CityContent = {
   h1: "Thermomix Czarny Dunajec – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Czarny Dunajec — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Czarny Dunajec: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Czarny Dunajec: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Czarny Dunajec — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Czarny Dunajec. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

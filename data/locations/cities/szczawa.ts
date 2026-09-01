@@ -91,7 +91,7 @@ export const SZCZAWA: CityContent = {
   h1: "Thermomix Szczawa – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Szczawa — prezentacja",
   seoDescription:
-    "Thermomix w Szczawie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd na wszystkie przysiółki bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w Szczawie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd na wszystkie przysiółki bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Szczawa — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Szczawie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

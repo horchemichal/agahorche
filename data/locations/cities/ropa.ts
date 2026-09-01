@@ -98,7 +98,7 @@ export const ROPA: CityContent = {
   h1: "Thermomix Ropa – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Ropa — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Ropa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do Ropy, Łosia i Klimkówki bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Ropa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do Ropy, Łosia i Klimkówki bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ropa — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Ropa. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

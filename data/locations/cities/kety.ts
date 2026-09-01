@@ -116,7 +116,7 @@ export const KETY: CityContent = {
   h1: "Thermomix Kęty – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kęty — prezentacja i cena",
   seoDescription:
-    "Thermomix w Kętach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w Kętach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Kęty — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Kętach i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

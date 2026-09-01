@@ -52,7 +52,7 @@ export const CHRZANOW: CityContent = {
   h1: "Thermomix Chrzanów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Chrzanów — prezentacja i cena",
   seoDescription:
-    "Thermomix w Chrzanowie: bezpłatna prezentacja TM7 u Ciebie w kuchni — wszystkie osiedla, sołectwa i powiat. Cena, raty 0,6%, pomoc po zakupie. Tel. 517 185 691.",
+    "Thermomix w Chrzanowie: bezpłatna prezentacja TM7 u Ciebie w kuchni — wszystkie osiedla, sołectwa i powiat. Cena, raty 0%, pomoc po zakupie. Tel. 517 185 691.",
   ogTitle: "Thermomix Chrzanów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Chrzanowie — od Śródmieścia po Kościelec i sołectwa. Gotujemy razem u Ciebie, ratę liczymy na miejscu.",

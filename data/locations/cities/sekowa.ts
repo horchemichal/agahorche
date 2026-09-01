@@ -109,7 +109,7 @@ export const SEKOWA: CityContent = {
   h1: "Thermomix Sękowa – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Sękowa — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Sękowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Sękowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Sękowa — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Sękowa. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

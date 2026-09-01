@@ -60,7 +60,7 @@ export const MOGILANY: CityContent = {
   h1: "Thermomix Mogilany – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Mogilany — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Mogilany: bezpłatna prezentacja TM7 u Ciebie w kuchni — Libertów, Gaj, Lusina, Włosań, Konary. Cena i raty 0,6%. Tel. 517 185 691.",
+    "Thermomix w gminie Mogilany: bezpłatna prezentacja TM7 u Ciebie w kuchni — Libertów, Gaj, Lusina, Włosań, Konary. Cena i raty 0%. Tel. 517 185 691.",
   ogTitle: "Thermomix Mogilany — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Mogilany. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

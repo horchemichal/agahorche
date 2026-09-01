@@ -113,7 +113,7 @@ export const OSIEK: CityContent = {
   h1: "Thermomix Osiek – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Osiek — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Osiek pod Oświęcimiem: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do Osieka i Głębowic bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Osiek pod Oświęcimiem: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do Osieka i Głębowic bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Osiek — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Osiek. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

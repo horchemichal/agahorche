@@ -92,7 +92,7 @@ export const KORZENNA: CityContent = {
   h1: "Thermomix Korzenna – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Korzenna — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Korzenna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich szesnastu wsi bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Korzenna: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich szesnastu wsi bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Korzenna — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Korzenna. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

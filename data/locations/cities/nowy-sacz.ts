@@ -37,7 +37,7 @@ export const NOWY_SACZ: CityContent = {
   h1: "Thermomix Nowy Sącz – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Nowy Sącz — prezentacja i cena",
   seoDescription:
-    "Thermomix w Nowym Sączu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena, raty 0,6% i pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Nowym Sączu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena, raty 0% i pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Nowy Sącz — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Nowym Sączu i na Sądecczyźnie. Gotujemy razem u Ciebie, ratę liczymy na miejscu.",

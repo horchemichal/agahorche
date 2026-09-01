@@ -96,7 +96,7 @@ export const SULOSZOWA: CityContent = {
   h1: "Thermomix Sułoszowa – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Sułoszowa — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Sułoszowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do Wielmoży i Woli Kalinowskiej bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Sułoszowa: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do Wielmoży i Woli Kalinowskiej bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Sułoszowa — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Sułoszowa. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

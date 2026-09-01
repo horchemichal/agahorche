@@ -84,7 +84,7 @@ export const GREBOSZOW: CityContent = {
   h1: "Thermomix Gręboszów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Gręboszów — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Gręboszów: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Gręboszów: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Gręboszów — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Gręboszów. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

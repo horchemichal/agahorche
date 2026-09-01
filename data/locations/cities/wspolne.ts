@@ -94,10 +94,10 @@ export function sekcjaRaty(): CitySection {
     id: "raty",
     heading: "Thermomix na raty — jak to policzyć",
     paragraphs: [
-      "Dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
+      "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
       "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
     ],
-    links: [{ href: "/finansowanie", label: "Więcej o ratach" }],
+    links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
   };
 }
 
@@ -155,7 +155,7 @@ export function faqWspolne(dopelniacz: string) {
     {
       question: "Czy można kupić Thermomix na raty?",
       answer:
-        "Tak, dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
+        "Tak, dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
     },
     {
       question: "Czy można umówić się po pracy albo w weekend?",

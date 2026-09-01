@@ -119,7 +119,7 @@ export const JERZMANOWICE_PRZEGINIA: CityContent = {
   h1: "Thermomix Jerzmanowice-Przeginia – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Jerzmanowice-Przeginia",
   seoDescription:
-    "Thermomix w gminie Jerzmanowice-Przeginia: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0,6%. Dojazd do wszystkich 8 sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w gminie Jerzmanowice-Przeginia: bezpłatna prezentacja TM7 u Ciebie w kuchni, raty 0%. Dojazd do wszystkich 8 sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Jerzmanowice-Przeginia — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Jerzmanowice-Przeginia. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

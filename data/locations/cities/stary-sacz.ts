@@ -78,7 +78,7 @@ export const STARY_SACZ: CityContent = {
   h1: "Thermomix Stary Sącz – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Stary Sącz — prezentacja i cena",
   seoDescription:
-    "Thermomix w Starym Sączu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do miasta i wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Thermomix w Starym Sączu: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta i wszystkich sołectw bez dopłat. Tel. 517 185 691.",
   ogTitle: "Thermomix Stary Sącz — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Starym Sączu. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

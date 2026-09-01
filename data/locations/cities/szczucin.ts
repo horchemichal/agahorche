@@ -101,7 +101,7 @@ export const SZCZUCIN: CityContent = {
   h1: "Thermomix Szczucin – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Szczucin — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Szczucin: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do miasta i wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Szczucin: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do miasta i wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Szczucin — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Szczucin. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

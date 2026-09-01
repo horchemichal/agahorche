@@ -77,7 +77,7 @@ export const RYTRO: CityContent = {
   h1: "Thermomix Rytro – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Rytro — prezentacja i cena",
   seoDescription:
-    "Thermomix w gminie Rytro: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich miejscowości bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Rytro: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich miejscowości bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Rytro — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Rytro. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",

@@ -111,7 +111,7 @@ export const USCIE_GORLICKIE: CityContent = {
   h1: "Thermomix Uście Gorlickie – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Uście Gorlickie — cena",
   seoDescription:
-    "Thermomix w gminie Uście Gorlickie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojazd do wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
+    "Thermomix w gminie Uście Gorlickie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich wsi bez dopłat. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Uście Gorlickie — zobacz TM7 u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w gminie Uście Gorlickie. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
