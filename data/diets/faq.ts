@@ -17,8 +17,9 @@ export const DIETY_FAQ: FaqItem[] = [
       "Tak, przy wybranych daniach w przykładowym planie znajdziesz opcję „Zamień danie”. Pełny system zamienników posiłków i składników rozwijamy w Strefie Klienta.",
   },
   {
-    question: "Jakie modele Thermomix obsługuje konfigurator?",
-    answer: "TM31, TM5, TM6 i TM7 — wybierasz swój model w kroku 4 konfiguratora.",
+    question: "Pod jaki model Thermomixa są te przepisy?",
+    answer:
+      "Pod TM7. Każdy przepis w jadłospisach prowadzi do konkretnej pozycji w Cookidoo dostępnej na TM7 — dlatego konfigurator nie pyta już o model.",
   },
   {
     question: "Czy przepisy mają linki do Cookidoo?",
