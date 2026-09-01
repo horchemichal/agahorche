@@ -75,6 +75,10 @@ export const PRIMARY_NAV: NavItem[] = [
     label: "Diety Thermomix",
     href: "/diety",
     children: [
+      // Wyszukiwarka „Co ugotować dzisiaj?" (1.09.2026). Trafia do menu diet,
+      // a nie osobnej pozycji w pasku, bo to ta sama baza przepisów widziana
+      // od strony jednego posiłku zamiast całego tygodnia.
+      { label: "Co ugotować dzisiaj?", href: "/przepisy" },
       { label: "Keto", href: "/diety/keto" },
       { label: "Wegetariańska", href: "/diety/wegetarianska" },
       { label: "Odchudzająca", href: "/diety/odchudzajaca" },
