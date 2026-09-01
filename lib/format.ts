@@ -5,6 +5,14 @@ export function formatPln(cents: number | null | undefined): string | null {
     style: "currency",
     currency: "PLN",
     maximumFractionDigits: cents % 100 === 0 ? 0 : 2,
+    /**
+     * `useGrouping: "auto"` (domyślne) pomija separator tysięcy w liczbach
+     * czterocyfrowych, więc cena Thermomixa wychodziła jako „6669 zł".
+     * Na grafikach ofertowych Agi ta sama cena jest zapisana „6 669 zł"
+     * i tak też pisze ją każdy polski cennik — karta oferty pokazywała
+     * więc dwa różne zapisy tej samej kwoty obok siebie.
+     */
+    useGrouping: "always",
   }).format(cents / 100);
 }
 
