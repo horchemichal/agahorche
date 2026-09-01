@@ -17,21 +17,22 @@ import {
   LocalBand,
 } from "@/components/marketing/content-blocks";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
+import { RATY_ZERO_DOSTEPNE, RATY_ZERO_KOMUNIKAT } from "@/data/finansowanie/dostepnosc";
 import { formatPln } from "@/lib/format";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Thermomix na raty 0,6% — kalkulator rat",
+  title: "Thermomix na raty 0% — kalkulator rat",
   description:
-    "Policz ratę Thermomixa TM7 w kalkulatorze: raty 0,6% miesięcznie, do 36 rat. Formalności załatwiamy podczas prezentacji w Małopolsce.",
+    "Policz ratę Thermomixa TM7 w kalkulatorze: raty 0% do 36 miesięcy, bez wymaganego wkładu własnego. Formalności załatwiamy podczas prezentacji w Małopolsce.",
   path: "/finansowanie",
   keywords: ["thermomix raty 0", "thermomix na raty", "kalkulator rat thermomix", "thermomix tm7 raty"],
 });
 
 const FAQ = [
   {
-    question: "Ile kosztuje rozłożenie zakupu na raty?",
+    question: "Czy raty 0% naprawdę nie mają dodatkowych kosztów?",
     answer:
-      "Oprocentowanie wynosi 0,6% miesięcznie, więc rozłożenie zakupu na raty kosztuje więcej niż zapłata z góry — kalkulator powyżej pokazuje zarówno miesięczną ratę, jak i łączną kwotę do spłaty. RRSO i pozostałe warunki podaje instytucja finansująca przy podpisaniu umowy.",
+      "Kiedy promocja 0% obowiązuje — tak: przy RRSO 0% płacisz dokładnie tyle, ile wynosi cena urządzenia, rozłożona na wybraną liczbę miesięcy. W tej chwili raty 0% nie obowiązują; dostępne finansowanie to 0,6% miesięcznie, przy którym rozłożenie zakupu kosztuje więcej niż zapłata z góry — kalkulator pokazuje łączną kwotę do spłaty. Warunki potwierdza instytucja finansująca przy podpisaniu umowy.",
   },
   {
     question: "Czy muszę mieć wkład własny?",
@@ -41,7 +42,7 @@ const FAQ = [
   {
     question: "Na ile rat mogę rozłożyć zakup?",
     answer:
-      "Przy promocji ratalnej najczęściej do 36 miesięcy. Dostępne warianty widzisz w kalkulatorze powyżej i potwierdzam je przy zamówieniu.",
+      "Przy promocji 0% najczęściej do 36 miesięcy. Dostępne warianty widzisz w kalkulatorze powyżej i potwierdzam je przy zamówieniu.",
   },
   {
     question: "Ile trwa decyzja?",
@@ -71,7 +72,7 @@ export default async function FinansowaniePage() {
       </Section>
 
       <Section className="pt-6">
-        <Badge>Raty 0,6%</Badge>
+        <Badge>Raty 0%</Badge>
         <Heading as="h1" size="xl" className="mt-4 max-w-2xl">
           Thermomix na raty — policz swoją ratę
         </Heading>
@@ -79,6 +80,19 @@ export default async function FinansowaniePage() {
           Bez wypełniania formularza i bez podawania danych. Ustaw cenę, wpłatę własną i liczbę rat, a
           zobaczysz kwotę, którą realnie zapłacisz co miesiąc.
         </Lead>
+        {/*
+          Komunikat o dostępności rat 0% stoi TU, nad kalkulatorem, a nie
+          w przypisie na dole (prośba Agi, 1.09.2026). Strona nazywa się
+          „Raty 0%" i to hasło jest w menu, więc informacja, że akurat nie
+          obowiązują, musi trafić do czytelnika zanim zacznie liczyć ratę —
+          inaczej dowie się o tym po fakcie. Treść: data/finansowanie/dostepnosc.ts.
+        */}
+        {!RATY_ZERO_DOSTEPNE && (
+          <p className="mt-6 max-w-2xl rounded-lg border border-brand-200 bg-brand-50 p-4 text-sm leading-relaxed text-neutral-800">
+            {RATY_ZERO_KOMUNIKAT}
+          </p>
+        )}
+
         <div className="mt-7 flex flex-wrap gap-3">
           <ButtonLink href="/prezentacja">Umów prezentację</ButtonLink>
           <ButtonLink href="/oferta" variant="secondary">
@@ -104,7 +118,7 @@ export default async function FinansowaniePage() {
                 items={[
                   "Wkład własny nie jest wymagany — wpłacasz go tylko, jeśli chcesz obniżyć ratę.",
                   "Cena urządzenia jest taka sama w całej Polsce, ustala ją Vorwerk.",
-                  "Promocje (w tym raty 0,6%) dostępne są wyłącznie przy zakupie u przedstawiciela.",
+                  "Promocje (w tym raty 0%) dostępne są wyłącznie przy zakupie u przedstawiciela.",
                   "Formalności załatwiamy na miejscu, podczas spotkania — nie musisz nigdzie jechać.",
                   "Możesz też zapłacić gotówką, przelewem, kartą lub BLIK-iem.",
                 ]}
@@ -125,7 +139,11 @@ export default async function FinansowaniePage() {
                 label: "Cena urządzenia",
                 value: formatPln(oferta?.priceCents) ?? "sprawdź na stronie oferty",
               },
-              { label: "Raty 0,6%", value: "0,6% miesięcznie, do 36 rat" },
+              {
+                label: "Raty 0%",
+                value: RATY_ZERO_DOSTEPNE ? "do 36 miesięcy, RRSO 0%" : "obecnie niedostępne — wracają okresowo",
+              },
+              { label: "Finansowanie teraz", value: "0,6% miesięcznie, do 36 rat" },
               { label: "Wkład własny", value: "niewymagany" },
               { label: "Inne formy płatności", value: "gotówka, przelew, karta, BLIK" },
               { label: "Gdzie podpisujemy", value: "u Ciebie, po prezentacji" },
