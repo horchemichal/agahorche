@@ -113,6 +113,32 @@ export interface DietPlan {
   visibility: PlanVisibility;
   days: DietDay[];
   isExampleData: boolean;
+
+  /**
+   * Klucz wariantu wewnątrz kategorii, gdy kaloryczność nie wystarcza do
+   * rozróżnienia planów. Dziś używa go tylko rozszerzanie diety niemowląt:
+   * cztery etapy („etap-1"…„etap-4") to cztery różne plany tej samej
+   * kategorii, a konfigurator wybiera po tym kluczu zamiast po kcal.
+   */
+  variantKey?: string;
+
+  /**
+   * Ukrywa kafelki kcal/makro i sumy dnia w podglądzie.
+   *
+   * DLACZEGO ISTNIEJE. Przy rozszerzaniu diety niemowląt pokazanie „1120 kcal"
+   * pod dniem czytałoby się jak norma dla dziecka — a nią nie jest. Wartości
+   * z Cookidoo są NA PORCJĘ PRZEPISU i nic nie mówią o tym, ile ma zjeść
+   * konkretne niemowlę; o ilości i konsystencji decyduje rodzic z pediatrą.
+   * Przepisy i ich linki zostają, znika tylko liczba, która udawałaby cel.
+   */
+  hideNutrition?: boolean;
+
+  /**
+   * Zdanie wyświetlane nad planem — kontekst, bez którego sam spis dań
+   * wprowadzałby w błąd (np. że na pierwszym etapie mleko nadal jest głównym
+   * pokarmem, a posiłki stałe są dodatkiem).
+   */
+  note?: string;
 }
 
 export type DietCategoryId =
