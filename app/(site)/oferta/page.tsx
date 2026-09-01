@@ -12,18 +12,13 @@ import { ButtonLink } from "@/components/ui/button";
 import { ChefHatIcon } from "@/components/marketing/icons";
 import type { Offer } from "@/types/offer";
 import type { MediaAsset } from "@/types/media";
+import { ofertaObowiazuje } from "@/lib/offers/window";
 
 export const metadata: Metadata = buildMetadata({
   title: "Oferta",
   description: "Aktualna oferta Thermomix TM7 — ceny, zestawy i możliwości finansowania.",
   path: "/oferta",
 });
-
-function withinWindow(startsAt: string | null, endsAt: string | null, now: Date): boolean {
-  if (startsAt && new Date(startsAt) > now) return false;
-  if (endsAt && new Date(endsAt) < now) return false;
-  return true;
-}
 
 /**
  * Full offer list (spec §5/§21 — single source of truth). Everything here
@@ -42,7 +37,7 @@ async function loadOfferImages(offers: Offer[]): Promise<Map<string, MediaAsset>
 
 export default async function OfertaPage() {
   const now = new Date();
-  const offers = (await getOffersRepository().list()).filter((o) => o.isActive && withinWindow(o.startsAt, o.endsAt, now));
+  const offers = (await getOffersRepository().list()).filter((o) => o.isActive && ofertaObowiazuje(o.startsAt, o.endsAt, now));
   const offerImages = await loadOfferImages(offers);
 
   return (
