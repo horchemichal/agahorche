@@ -1252,7 +1252,9 @@ export const DIET_CATEGORIES: DietCategory[] = [
   {
     id: "niemowleta",
     slug: "niemowleta",
-    name: "Rozszerzanie diety niemowląt z Thermomixem",
+    // Bez „z Thermomixem" w nazwie: szablon strony kategorii dokleja
+    // „ z Thermomixem®" do H1, więc wychodziło „…z Thermomixem z Thermomixem®".
+    name: "Rozszerzanie diety niemowląt",
     shortName: "Rozszerzanie diety niemowląt",
     description: "Pomysły na proste posiłki i przygotowanie produktów odpowiednio do etapu rozszerzania diety.",
     configuratorMode: "weaning",
