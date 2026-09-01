@@ -4,6 +4,7 @@ import { isPostgresConfigured, getPostgresPool, pgInsert, pgUpdate } from "@/lib
 import { MemoryStore } from "@/lib/database/memory-store";
 import { getGlobalSingleton } from "@/lib/database/global-singleton";
 import { SEED_OFFERS } from "@/data/offers/seed";
+import { ofertaObowiazuje } from "@/lib/offers/window";
 
 /**
  * Offers repository (spec §5, §21: "jedno źródło prawdy"). Every public
@@ -21,9 +22,7 @@ export interface OffersRepository {
 }
 
 function withinWindow(offer: Offer, now: Date): boolean {
-  if (offer.startsAt && new Date(offer.startsAt) > now) return false;
-  if (offer.endsAt && new Date(offer.endsAt) < now) return false;
-  return true;
+  return ofertaObowiazuje(offer.startsAt, offer.endsAt, now);
 }
 
 function rowToOffer(row: Record<string, unknown>): Offer {
