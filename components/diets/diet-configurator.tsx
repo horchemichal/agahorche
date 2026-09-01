@@ -34,9 +34,10 @@ const WEANING_STAGES = ["Etap 1 — pierwsze produkty", "Etap 2 — większa ró
  * handlowo układ niż rejestracja przed jakąkolwiek wartością — odwiedzający
  * wychodzi z realnym plikiem i powodem, żeby zadzwonić.
  *
- * `niemowleta` nie ma planu (celowo, patrz data/diets/categories.ts), więc
- * `getPublicDietPlan` zwraca dla niej `undefined` i zamiast przycisku
- * pokazujemy uczciwy komunikat — nigdy linku prowadzącego do 404.
+ * Od 1.09.2026 KAŻDA kategoria ma plan — `niemowleta` dostały cztery,
+ * po jednym na etap rozszerzania diety (patrz NIEMOWLETA_ETAP1…4).
+ * Gałąź „ten wariant pojawi się wkrótce" zostaje na wypadek kategorii
+ * dodanej w przyszłości bez treści.
  *
  * `isLoggedIn` (z `getCurrentClient()`, patrz diet-category-page.tsx /
  * app/(site)/diety/page.tsx) sterowało kiedyś tym, czy podgląd planu w ogóle
@@ -97,6 +98,20 @@ export function DietConfigurator({
   };
 
   const matchedPlan = useMemo(() => {
+    if (category.configuratorMode === "weaning") {
+      /**
+       * Rozszerzanie diety niemowląt ma CZTERY plany — po jednym na etap —
+       * więc wybór z kroku 2 musi realnie zmieniać jadłospis. Wcześniej
+       * kategoria nie miała żadnego planu, więc etap był wyłącznie etykietą
+       * w podsumowaniu. Dopasowanie idzie po `variantKey`
+       * („etap-1"…„etap-4"), bo kaloryczność tu nie istnieje.
+       */
+      const key = `etap-${WEANING_STAGES.indexOf(weaningStage) + 1}`;
+      return (
+        category.plans.find((p) => p.visibility === "PUBLIC" && p.variantKey === key && p.thermomixModels.includes(model)) ??
+        category.plans.find((p) => p.visibility === "PUBLIC" && p.thermomixModels.includes(model))
+      );
+    }
     if (category.configuratorMode !== "calories") {
       // ETAP 9: children/breastfeeding/weaning categories have no calorie
       // dimension in their configurator, so match on the category's one
@@ -108,12 +123,12 @@ export function DietConfigurator({
     return category.plans.find(
       (p) => p.visibility === "PUBLIC" && p.durationDays === days && p.caloriesTarget === calories && p.thermomixModels.includes(model),
     );
-  }, [category, days, calories, model]);
+  }, [category, days, calories, model, weaningStage]);
 
   /**
-   * Link do bezpłatnego PDF-a — `null` dla kategorii bez publicznego planu
-   * (dziś tylko `niemowleta`), żeby nie pokazywać przycisku prowadzącego do
-   * 404 z /api/diety/jadlospis-pdf.
+   * Link do bezpłatnego PDF-a — `null` dla kategorii bez publicznego planu.
+   * Dziś każda kategoria plan ma; warunek zostaje jako zabezpieczenie przed
+   * przyciskiem prowadzącym do 404 z /api/diety/jadlospis-pdf.
    */
   const pdfHref = useMemo(
     () => (getPublicDietPlan(category) ? `/api/diety/jadlospis-pdf?dieta=${category.slug}` : null),
@@ -339,30 +354,47 @@ export function DietConfigurator({
             </Button>
           )}
 
-          <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
-            <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
-            <p className="text-sm leading-relaxed text-neutral-700">
-              Wszystkie diety — pełne siedem dni, warianty 1500 i 2000 kcal, listy zakupów
-              i zamienniki dań — są dostępne dla uczestniczek i uczestników Aga Club, czyli osób,
-              które kupiły Thermomix u mnie, oficjalnej przedstawicielki Thermomix.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <ButtonLink href="/prezentacja" variant="outline" className="justify-center bg-neutral-0">
-                Umów bezpłatną prezentację →
-              </ButtonLink>
-              <ButtonLink href="/strefa-klienta/logowanie" variant="ghost" className="justify-center">
-                Mam już konto
-              </ButtonLink>
+          {/*
+            Panel „Jadłospisy są w Aga Club" widzą TYLKO osoby niezalogowane
+            (prośba Agi, 1.09.2026). Dla klientki, która już jest w Aga Club,
+            zaproszenie do Aga Club i przycisk „Mam już konto" są mylące —
+            wygląda to, jakby czegoś jeszcze nie miała, chociaż właśnie patrzy
+            na swój panel. Konfigurator w Strefie Klienta dostaje `isLoggedIn`
+            ze `strefa-klienta/page.tsx`, więc wystarczy ten jeden warunek.
+          */}
+          {!isLoggedIn && (
+            <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
+              <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
+              <p className="text-sm leading-relaxed text-neutral-700">
+                Wszystkie diety — pełne siedem dni, warianty 1500 i 2000 kcal, listy zakupów
+                i zamienniki dań — są dostępne dla uczestniczek i uczestników Aga Club, czyli osób,
+                które kupiły Thermomix u mnie, oficjalnej przedstawicielki Thermomix.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <ButtonLink href="/prezentacja" variant="outline" className="justify-center bg-neutral-0">
+                  Umów bezpłatną prezentację →
+                </ButtonLink>
+                <ButtonLink href="/strefa-klienta/logowanie" variant="ghost" className="justify-center">
+                  Mam już konto
+                </ButtonLink>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
 
+    {/*
+      `forceUnlocked={isLoggedIn}` — prośba Agi z 1.09.2026: „jestem
+      zalogowany i dalej mam zablokowane kolejne dni". Konfigurator
+      renderował podgląd bez tej flagi, więc klientka Aga Club widziała
+      kłódki na dniach 2–7 i kafel „Zaloguj się", mimo że była zalogowana.
+      Kłódki zostają wyłącznie dla gości.
+    */}
     {showPreview && (
       <div className="mt-8">
         {matchedPlan ? (
-          <DietPlanPreview plan={matchedPlan} />
+          <DietPlanPreview plan={matchedPlan} forceUnlocked={isLoggedIn} />
         ) : (
           <div className="flex flex-col items-center gap-4 rounded-2xl bg-surface p-8 text-center">
             <ClientOnlyBadge />

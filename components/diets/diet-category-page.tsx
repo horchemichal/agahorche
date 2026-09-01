@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { DietCategory } from "@/types/diet";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { Section } from "@/components/ui/section";
@@ -57,11 +58,27 @@ export async function DietCategoryPage({ category }: { category: DietCategory })
           Thermomix u Agi. Trasa /api/diety/jadlospis-pdf zostaje w kodzie,
           bo przyda się do generowania PDF-ów wewnątrz Strefy Klienta.
         */}
-        <p className="mt-3 max-w-xl text-sm text-muted">
-          Wszystkie jadłospisy — pełne siedem dni, każda dieta, w wariantach 1500 i 2000 kcal —
-          są dostępne dla uczestniczek i uczestników <strong className="font-medium text-neutral-800">Aga Club</strong>,
-          czyli osób, które kupiły Thermomix u Agi.
-        </p>
+        {/*
+          1.09.2026 (prośba Agi): zalogowana klientka nie widzi zaproszenia do
+          Aga Club — ona już w nim jest, więc „są dostępne dla uczestniczek
+          Aga Club" brzmiałoby, jakby czegoś jej brakowało. Zamiast tego dostaje
+          skrót do miejsca, w którym leży jej pełny plan.
+        */}
+        {client ? (
+          <p className="mt-3 max-w-xl text-sm text-muted">
+            Pełny plan — siedem dni, oba warianty kaloryczne i lista zakupów — czeka w{" "}
+            <Link href="/strefa-klienta" className="font-medium text-brand-700 underline underline-offset-2">
+              Twojej Strefie Klienta
+            </Link>
+            .
+          </p>
+        ) : (
+          <p className="mt-3 max-w-xl text-sm text-muted">
+            Wszystkie jadłospisy — pełne siedem dni, każda dieta, w wariantach 1500 i 2000 kcal —
+            są dostępne dla uczestniczek i uczestników <strong className="font-medium text-neutral-800">Aga Club</strong>,
+            czyli osób, które kupiły Thermomix u Agi.
+          </p>
+        )}
       </Section>
 
       <Section tone="surface" id="konfigurator" className="scroll-mt-24">
@@ -72,7 +89,10 @@ export async function DietCategoryPage({ category }: { category: DietCategory })
         <DietConfigurator initialCategorySlug={category.slug} isLoggedIn={Boolean(client)} />
       </Section>
 
-      <ClientZoneTeaser />
+      {/* Sekcja „Zaloguj się do Strefy Klienta" jest zaproszeniem dla osób
+          spoza Aga Club — zalogowanej klientce proponowałaby zalogowanie się
+          po raz drugi (prośba Agi, 1.09.2026). */}
+      {!client && <ClientZoneTeaser />}
       <FaqSection items={DIETY_FAQ} />
     </>
   );

@@ -30,6 +30,12 @@ import { CalendarIcon } from "@/components/marketing/icons";
  *    planie w Strefie Klienta oznaczało siedem kliknięć, żeby zobaczyć,
  *    co się w ogóle je w tym tygodniu.
  *
+ * 1.09.2026: `plan.hideNutrition` chowa kafelki kcal i sumy dnia, a
+ * `plan.note` dokłada zdanie kontekstu nad planem. Jedno i drugie powstało
+ * dla rozszerzania diety niemowląt: „1120 kcal" pod dniem czytałoby się jak
+ * norma dla dziecka, a nią nie jest — wartości z Cookidoo są na porcję
+ * przepisu. Przepisy i linki zostają, znika liczba, która udawałaby cel.
+ *
  * 3. BEZ PRZYCISKU „Szukaj w Cookidoo" pod siatką dań. Każde danie ma
  *    teraz własny link do konkretnego przepisu (patrz cookidoo-button.tsx),
  *    więc zbiorczy link do całej platformy był powtórzeniem.
@@ -138,12 +144,18 @@ export function DietPlanPreview({ plan, forceUnlocked = false }: { plan: DietPla
             <div className="mt-4">
               <DayNavigation days={plan.days} activeDay={activeDay} onSelect={setActiveDay} forceUnlocked={forceUnlocked} />
             </div>
-            {!isLocked && hasContent && (
+            {!isLocked && hasContent && !plan.hideNutrition && (
               <div className="mt-5">
                 <Kafelki t={totals} />
               </div>
             )}
           </>
+        )}
+
+        {plan.note && (
+          <p className="mt-5 rounded-lg border border-brand-200 bg-brand-50 p-4 text-sm leading-relaxed text-neutral-700">
+            {plan.note}
+          </p>
         )}
 
         <div className="mt-5">
@@ -160,10 +172,12 @@ export function DietPlanPreview({ plan, forceUnlocked = false }: { plan: DietPla
               <div key={d.dayNumber} className="rounded-2xl border border-border bg-neutral-0 p-5 md:p-6">
                 <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
                   <p className="font-display text-lg text-neutral-900">Dzień {d.dayNumber}</p>
-                  <p className="text-sm text-muted">
-                    {Math.round(t.calories)} kcal · B {Math.round(t.protein)} g · T {Math.round(t.fat)} g · W{" "}
-                    {Math.round(t.carbs)} g
-                  </p>
+                  {!plan.hideNutrition && (
+                    <p className="text-sm text-muted">
+                      {Math.round(t.calories)} kcal · B {Math.round(t.protein)} g · T {Math.round(t.fat)} g · W{" "}
+                      {Math.round(t.carbs)} g
+                    </p>
+                  )}
                 </div>
                 <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
                   {d.meals.map((m) => (
