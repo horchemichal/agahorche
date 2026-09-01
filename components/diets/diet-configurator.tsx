@@ -78,7 +78,12 @@ export function DietConfigurator({
   const [breastfeedingVariant, setBreastfeedingVariant] = useState(BREASTFEEDING_VARIANTS[0]);
   const [weaningStage, setWeaningStage] = useState(WEANING_STAGES[0]);
   const [model, setModel] = useState<ThermomixModel>("TM7");
-  const [showPreview, setShowPreview] = useState(false);
+  // Podgląd jest widoczny OD RAZU, a nie po kliknięciu. Powód jest
+  // wyszukiwarkowy: Googlebot indeksuje HTML, który przychodzi z serwera,
+  // i nie klika w przyciski. Przy `useState(false)` publiczne strony diet
+  // wysyłały do Google zero nazw dań i zero linków do Cookidoo — czyli
+  // dokładnie tę treść, dla której te strony powstały.
+  const [showPreview, setShowPreview] = useState(true);
 
   const selection: ConfiguratorSelection = {
     category,
@@ -117,7 +122,10 @@ export function DietConfigurator({
 
   function selectCategory(next: DietCategory) {
     setCategory(next);
-    setShowPreview(false);
+    // Podgląd zostaje otwarty. Wcześniej zamykał się przy każdej zmianie
+    // diety, bo trzeba go było otwierać przyciskiem; teraz jest domyślnie
+    // widoczny, więc zamykanie oznaczałoby, że kliknięcie w „Vege" zabiera
+    // treść zamiast ją podmieniać. `matchedPlan` i tak przelicza się sam.
   }
 
   return (
@@ -325,9 +333,11 @@ export function DietConfigurator({
             zawartością Aga Club. `pdfHref` zostaje wyliczane, bo trasa
             /api/diety/jadlospis-pdf przyda się wewnątrz Strefy Klienta.
           */}
-          <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
-            Zobacz przykładowy plan
-          </Button>
+          {!showPreview && (
+            <Button type="button" variant="secondary" onClick={() => setShowPreview(true)} className="justify-center">
+              Zobacz przykładowy plan
+            </Button>
+          )}
 
           <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
             <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
