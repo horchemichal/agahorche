@@ -79,6 +79,7 @@ export const PRIMARY_NAV: NavItem[] = [
       // a nie osobnej pozycji w pasku, bo to ta sama baza przepisów widziana
       // od strony jednego posiłku zamiast całego tygodnia.
       { label: "Co ugotować dzisiaj?", href: "/przepisy" },
+      { label: "Co mam w lodówce?", href: "/przepisy/co-mam-w-lodowce" },
       { label: "Keto", href: "/diety/keto" },
       { label: "Wegetariańska", href: "/diety/wegetarianska" },
       { label: "Odchudzająca", href: "/diety/odchudzajaca" },
