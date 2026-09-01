@@ -135,7 +135,7 @@ const KRAKOW: CityContent = {
   h1: "Thermomix Kraków – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kraków — prezentacja i cena",
   seoDescription:
-    "Thermomix w Krakowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0,6%. Dojeżdżam do wszystkich dzielnic. Aga, tel. 517 185 691.",
+    "Thermomix w Krakowie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojeżdżam do wszystkich dzielnic. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kraków — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Krakowie i okolicach. Gotujemy razem u Ciebie, liczymy ratę na miejscu, decyzja należy do Ciebie.",
@@ -238,7 +238,7 @@ const KRAKOW: CityContent = {
       heading: "Ile kosztuje Thermomix TM7?",
       paragraphs: [
         "Cena Thermomixa jest jedna w całej Polsce — ustala ją Vorwerk, nie przedstawiciel. W Krakowie zapłacisz dokładnie tyle samo, co w Warszawie czy w Bochni, i nie ma żadnych „cen lokalnych” ani dopłat za dojazd.",
-        "Aktualną kwotę widzisz w sekcji z ofertą powyżej — pobiera się wprost z mojego panelu, więc nie zdarzy się, że przeczytasz tu cenę sprzed trzech miesięcy. To, co się zmienia i o co naprawdę warto pytać, to promocje: pakiety z akcesoriami, warunki wymiany starego urządzenia i okresowe raty 0,6%.",
+        "Aktualną kwotę widzisz w sekcji z ofertą powyżej — pobiera się wprost z mojego panelu, więc nie zdarzy się, że przeczytasz tu cenę sprzed trzech miesięcy. To, co się zmienia i o co naprawdę warto pytać, to promocje: pakiety z akcesoriami, warunki wymiany starego urządzenia i okresowe raty 0%.",
         "Thermomixa nie kupisz w sklepie RTV/AGD ani w oficjalnej sprzedaży internetowej — wyłącznie u przedstawiciela Vorwerk. Urządzenia z portali ogłoszeniowych to rynek wtórny: bez gwarancji producenta, bez promocji i bez kogoś, kto odbierze telefon, gdy coś przestanie działać.",
       ],
       links: [
@@ -250,10 +250,10 @@ const KRAKOW: CityContent = {
       id: "raty",
       heading: "Czy Thermomix można kupić na raty?",
       paragraphs: [
-        "Tak. Dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Wysokość raty zależy od okresu spłaty i wkładu własnego; policzysz ją sama w kalkulatorze poniżej.",
+        "Tak. Dostępne jest finansowanie ratalne, okresowo z RRSO 0% — wtedy oddajesz dokładnie tyle, ile kosztuje urządzenie, bez dodatkowych kosztów. Wysokość raty zależy od okresu spłaty i wkładu własnego; policzysz ją sama w kalkulatorze poniżej.",
         "Wynik kalkulatora jest orientacyjny. Ostateczne warunki zależą od aktualnej oferty finansowania i decyzji instytucji finansującej — potwierdzam je zawsze przed złożeniem zamówienia, żeby nie było niespodzianek.",
       ],
-      links: [{ href: "/finansowanie", label: "Więcej o ratach" }],
+      links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
     {
       id: "rodzina",
@@ -465,7 +465,7 @@ const KRAKOW: CityContent = {
     {
       question: "Czy można kupić Thermomix na raty?",
       answer:
-        "Tak, dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
+        "Tak, dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
     },
     {
       question: "Ile trwa prezentacja Thermomixa?",
@@ -557,7 +557,7 @@ const WIELICZKA: CityContent = {
   h1: "Thermomix Wieliczka – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Wieliczka — prezentacja i cena",
   seoDescription:
-    "Thermomix w Wieliczce: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0,6%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Wieliczce: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Wieliczka — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Wieliczce lub okolicy. Bez dopłat za dojazd, bez zobowiązania. Ratę liczymy na miejscu.",
@@ -648,10 +648,10 @@ const WIELICZKA: CityContent = {
       id: "raty",
       heading: "Thermomix na raty — jak to policzyć",
       paragraphs: [
-        "Dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
+        "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
         "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji zwykle wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
-      links: [{ href: "/finansowanie", label: "Więcej o ratach" }],
+      links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
     {
       id: "rodzina",
@@ -805,7 +805,7 @@ const WIELICZKA: CityContent = {
     {
       question: "Czy można kupić Thermomix na raty?",
       answer:
-        "Tak, dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
+        "Tak, dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
     },
     {
       question: "Czy pomagasz po zakupie?",
@@ -822,7 +822,7 @@ const NIEPOLOMICE: CityContent = {
   h1: "Thermomix Niepołomice – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Niepołomice — prezentacja i cena",
   seoDescription:
-    "Thermomix w Niepołomicach: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0,6%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Niepołomicach: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Niepołomice — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Niepołomicach lub okolicy. Terminy również poza godzinami 9–17. Bez dopłat i bez zobowiązania.",
@@ -913,10 +913,10 @@ const NIEPOLOMICE: CityContent = {
       id: "raty",
       heading: "Thermomix na raty — jak to policzyć",
       paragraphs: [
-        "Dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
+        "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
         "Policz to przed spotkaniem, bez nikogo nad głową. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
-      links: [{ href: "/finansowanie", label: "Więcej o ratach" }],
+      links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
     {
       id: "rodzina",
@@ -1043,7 +1043,7 @@ const NIEPOLOMICE: CityContent = {
     {
       question: "Czy można kupić Thermomix na raty?",
       answer:
-        "Tak, dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
+        "Tak, dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
     },
     {
       question: "Czy pomagasz po zakupie?",
@@ -1060,7 +1060,7 @@ const SKAWINA: CityContent = {
   h1: "Thermomix Skawina – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Skawina — prezentacja i cena",
   seoDescription:
-    "Thermomix w Skawinie: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0,6%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Thermomix w Skawinie: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Skawina — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Skawinie lub okolicy. Bez dopłat za dojazd, bez zobowiązania. Ratę liczymy na miejscu.",
@@ -1151,10 +1151,10 @@ const SKAWINA: CityContent = {
       id: "raty",
       heading: "Thermomix na raty — jak to policzyć",
       paragraphs: [
-        "Dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
+        "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
         "Warto policzyć to przed spotkaniem, na spokojnie. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
-      links: [{ href: "/finansowanie", label: "Więcej o ratach" }],
+      links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
     {
       id: "rodzina",
@@ -1301,7 +1301,7 @@ const SKAWINA: CityContent = {
     {
       question: "Czy można kupić Thermomix na raty?",
       answer:
-        "Tak, dostępne jest finansowanie ratalne, z ratą 0,6% miesięcznie. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
+        "Tak, dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Ratę policzysz w kalkulatorze na tej stronie; wynik jest orientacyjny, a ostateczne warunki zależą od aktualnej oferty i decyzji instytucji finansującej.",
     },
     {
       question: "Czy pomagasz po zakupie?",
