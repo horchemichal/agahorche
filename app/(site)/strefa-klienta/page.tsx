@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { getCurrentClient } from "@/lib/auth/client-auth";
 import { DIET_CATEGORIES } from "@/data/diets/categories";
 import { CategoryIcon } from "@/components/diets/category-icon";
+import { ClientDietList, type PozycjaDiety } from "@/components/diets/client-diet-list";
+import { DietConfigurator } from "@/components/diets/diet-configurator";
 import { Section } from "@/components/ui/section";
 import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
 import { Badge } from "@/components/ui/card";
@@ -30,6 +32,26 @@ export default async function ClientDashboardPage() {
   const withFullPlan = DIET_CATEGORIES.filter((c) => c.plans.some((p) => p.days.some((d) => d.locked && d.meals.length > 0)));
   const withoutFullPlan = DIET_CATEGORIES.filter((c) => !withFullPlan.includes(c));
 
+  /**
+   * Kafelki diet trafiają do komponentu klienckiego, bo od 31.08.2026 każdy
+   * z nich można ukryć na własnym pulpicie (`ClientDietList`). Sama lista
+   * nadal powstaje po stronie serwera — do przeglądarki idą wyłącznie pola,
+   * które kafelek naprawdę wyświetla.
+   */
+  const pozycje: PozycjaDiety[] = withFullPlan.map((c) => {
+    const plan = c.plans[0];
+    return {
+      id: c.id,
+      slug: c.slug,
+      name: c.name,
+      shortName: c.shortName,
+      description: c.description,
+      icon: c.icon,
+      href: `/strefa-klienta/plan/${plan.id}`,
+      etykieta: `Pełny plan — ${plan.durationDays} dni odblokowane`,
+    };
+  });
+
   return (
     <>
       <Section className="!pb-0">
@@ -40,7 +62,8 @@ export default async function ClientDashboardPage() {
               Cześć, {client.displayName.split(" ")[0]}!
             </Heading>
             <Lead className="mt-3 max-w-xl">
-              Tu znajdziesz pełne, 7-dniowe plany diet, listy zakupów i eksport do PDF.
+              Tu znajdziesz pełne, 7-dniowe jadłospisy wszystkich diet — w wariantach 1500
+              i 2000 kcal, z linkiem do każdego przepisu na Cookidoo i listą zakupów.
             </Lead>
           </div>
           <form action="/strefa-klienta/wyloguj" method="post">
@@ -52,37 +75,49 @@ export default async function ClientDashboardPage() {
       </Section>
 
       <Section tone="surface">
-        <Heading as="h2" size="md" className="mb-6">
+        <Heading as="h2" size="md" className="mb-2">
           Twoje pełne plany
         </Heading>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {withFullPlan.map((category) => {
-            const plan = category.plans[0];
-            return (
-              <Link
-                key={category.id}
-                href={`/strefa-klienta/plan/${plan.id}`}
-                className="flex flex-col gap-3 rounded-2xl border border-border bg-neutral-0 p-5 transition-colors hover:border-brand-400"
-              >
-                <div className="flex items-center gap-2.5">
-                  <CategoryIcon icon={category.icon} width={22} height={22} className="text-brand-600" />
-                  <p className="font-display text-lg text-neutral-900">{category.name}</p>
-                </div>
-                <Badge tone="brand">Pełny plan — {plan.durationDays} dni odblokowane</Badge>
-                <p className="text-sm text-muted">{category.description}</p>
-              </Link>
-            );
-          })}
-        </div>
+        <p className="mb-6 max-w-xl text-sm text-muted">
+          Wszystkie dni odblokowane, w wariantach 1500 i 2000 kcal. Diety, których nie używasz,
+          możesz ukryć krzyżykiem — w każdej chwili je przywrócisz.
+        </p>
+        <ClientDietList pozycje={pozycje} />
       </Section>
 
+      {/*
+        31.08.2026: konfigurator diet trafia też tutaj. Do tej pory żył
+        wyłącznie na stronach publicznych, więc zalogowana klientka musiała
+        wychodzić ze swojego pulpitu, żeby dobrać wariant kaloryczny albo
+        model. `isLoggedIn` odsłania podgląd planu od razu.
+      */}
       <Section>
+        <Eyebrow>Dobierz plan</Eyebrow>
+        <Heading as="h2" size="md" className="mb-2 mt-2">
+          Konfigurator diet
+        </Heading>
+        <p className="mb-8 max-w-xl text-sm text-muted">
+          Wybierz dietę, długość, kaloryczność i swój model Thermomixa — podgląd planu masz od
+          razu, bez wychodzenia ze Strefy Klienta.
+        </p>
+        <DietConfigurator isLoggedIn />
+      </Section>
+
+      {/*
+        Po przebudowie z 31.08.2026 pełny tydzień ma KAŻDA dieta poza
+        rozszerzaniem diety niemowląt, które świadomie nie dostaje planu
+        (patrz komentarz w data/diets/categories.ts). Sekcja renderuje się
+        więc tylko wtedy, gdy naprawdę jest co w niej pokazać.
+      */}
+      {withoutFullPlan.length > 0 && (
+      <Section tone="surface">
         <Heading as="h2" size="md" className="mb-6">
-          Pozostałe diety
+          Pozostałe kategorie
         </Heading>
         <p className="mb-6 max-w-xl text-sm text-muted">
-          Dla tych kategorii pełny 7-dniowy plan jest jeszcze w przygotowaniu — zobacz dostępny
-          przykład Dnia 1 i konfigurator na stronie publicznej.
+          Te kategorie nie mają gotowego jadłospisu — przy rozszerzaniu diety niemowląt świadomie
+          nie podajemy gotowych ilości ani konsystencji. Strona kategorii i konfigurator działają
+          normalnie.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {withoutFullPlan.map((category) => (
@@ -93,6 +128,7 @@ export default async function ClientDashboardPage() {
           ))}
         </div>
       </Section>
+      )}
     </>
   );
 }
