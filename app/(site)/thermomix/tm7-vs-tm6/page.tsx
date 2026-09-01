@@ -52,7 +52,7 @@ const FAQ = [
   {
     question: "Ile kosztuje TM7 i czy da się na raty?",
     answer:
-      "Aktualną cenę i dostępne raty pokazuję na stronie oferty — zmieniają się razem z promocjami Vorwerk. W sierpniu 2026 dostępne są raty 0% bez wymaganego wkładu własnego.",
+      "Aktualną cenę i dostępne raty pokazuję na stronie oferty — zmieniają się razem z promocjami Vorwerk. Od września 2026 oprocentowanie rat wynosi 0,6% miesięcznie.",
   },
 ];
 
@@ -218,7 +218,7 @@ export default async function Tm7VsTm6Page() {
               </Link>
               , a o kosztach — w{" "}
               <Link href="/finansowanie" className="font-medium text-brand-700 underline underline-offset-4">
-                kalkulatorze rat 0%
+                kalkulatorze rat 0,6%
               </Link>
               .
             </p>
@@ -231,7 +231,7 @@ export default async function Tm7VsTm6Page() {
                 label: "Cena urządzenia",
                 value: formatPln(oferta?.priceCents) ?? "sprawdź na stronie oferty",
               },
-              { label: "Raty", value: "0% — bez wymaganego wkładu własnego" },
+              { label: "Raty", value: "0,6% miesięcznie, do 36 rat" },
               { label: "Zakup", value: "wyłącznie u oficjalnego przedstawiciela Vorwerk" },
               { label: "Prezentacja", value: "bezpłatna i niezobowiązująca" },
               { label: "Obszar", value: "Małopolska i cała Polska po ustaleniu terminu" },
