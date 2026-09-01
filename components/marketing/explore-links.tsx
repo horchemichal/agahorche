@@ -25,7 +25,7 @@ const GRUPY: { tytul: string; linki: { href: string; label: string; opis: string
     tytul: "Zanim kupisz",
     linki: [
       { href: "/jak-kupic-thermomix", label: "Jak kupić Thermomixa", opis: "Cztery kroki, dostawa i gwarancja." },
-      { href: "/finansowanie", label: "Raty 0,6%", opis: "Policz ratę od aktualnej ceny." },
+      { href: "/finansowanie", label: "Raty 0%", opis: "Policz ratę od aktualnej ceny." },
       { href: "/akcesoria", label: "Akcesoria", opis: "Co jest w zestawie, a co dokupujesz." },
     ],
   },

@@ -25,7 +25,7 @@ import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
  * zdjecia tylko zdjecie na full szerokosc") — she wanted the overlay layout
  * back, just with the photo full-width (the frame-removal fix below already
  * covers that; it was never tied to which photo layout is active). The old
- * floating "RATY 0,6%"
+ * floating "RATY 0%"
  * badge stays removed — the same installment terms are covered, prominently,
  * in the dedicated installment section further down the homepage (the
  * checklist that used to repeat them under the hero copy was removed
