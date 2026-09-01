@@ -1,17 +1,22 @@
 import type { DietCategory, DietDay, DietPlan, Meal } from "@/types/diet";
 import { THERMOMIX_MODELS } from "@/types/diet";
-
-let mealCounter = 0;
-function meal(type: Meal["type"], recipeId: string, alt?: string, portions?: number): Meal {
-  mealCounter += 1;
-  return {
-    id: `m${mealCounter}-${recipeId}`,
-    type,
-    recipeId,
-    alternativeRecipeIds: alt ? [alt] : undefined,
-    portions,
-  };
-}
+import { meal } from "./meal-factory";
+import {
+  KETO_1500_DNI_8_14,
+  KETO_2000_DNI_8_14,
+  WEGETARIANSKA_1500_DNI_8_14,
+  WEGETARIANSKA_2000_DNI_8_14,
+  ODCHUDZAJACA_1500_DNI_8_14,
+  ODCHUDZAJACA_2000_DNI_8_14,
+  NISKI_IG_1500_DNI_8_14,
+  NISKI_IG_2000_DNI_8_14,
+  HASHIMOTO_1500_DNI_8_14,
+  HASHIMOTO_2000_DNI_8_14,
+  ZAMIENNIKI_1500_DNI_8_14,
+  ZAMIENNIKI_2000_DNI_8_14,
+  BEZGLUTENOWA_1500_DNI_8_14,
+  BEZGLUTENOWA_2000_DNI_8_14,
+} from "./plany-14-dni";
 
 /**
  * Builds a 7-day plan with day 1 fully populated and days 2–7 marked
@@ -60,6 +65,33 @@ function weekPlan(opts: {
     variantKey: opts.variantKey,
     hideNutrition: opts.hideNutrition,
     note: opts.note,
+  };
+}
+
+/**
+ * Wariant dwutygodniowy: dni 1–7 to dokładnie ten sam tydzień co w planie
+ * 7-dniowym, dni 8–14 dokłada data/diets/plany-14-dni.ts.
+ *
+ * DLACZEGO PIERWSZY TYDZIEŃ JEST TEN SAM. Bo to nie jest inna dieta, tylko
+ * ta sama dieta na dłużej. Klientka, która obejrzała siedem dni i wraca po
+ * czternaście, ma dostać znajomy początek i siedem nowych dni, a nie treść
+ * podmienioną pod nią. Przy okazji dzień 1 zostaje odblokowany dokładnie
+ * tak samo, więc podgląd publiczny wygląda identycznie w obu wariantach.
+ *
+ * Obiekty `Meal` są WSPÓŁDZIELONE z planem bazowym, nie kopiowane — to dane
+ * tylko do odczytu, a `Meal.id` musi być unikalny w obrębie dnia (klucz
+ * Reacta i stan „Zamień danie"), nie w obrębie całej aplikacji.
+ */
+function fortnightPlan(base: DietPlan, days8to14: Meal[][]): DietPlan {
+  return {
+    ...base,
+    id: base.id.replace("-7d-", "-14d-"),
+    label: base.label.replace("7 dni", "14 dni"),
+    durationDays: 14,
+    days: [
+      ...base.days,
+      ...days8to14.map((meals, i) => ({ dayNumber: 8 + i, meals, locked: true })),
+    ],
   };
 }
 
@@ -1142,6 +1174,26 @@ const NIEMOWLETA_ETAP4 = weekPlan({
 
 const NIEMOWLETA_PLANY = [NIEMOWLETA_ETAP1, NIEMOWLETA_ETAP2, NIEMOWLETA_ETAP3, NIEMOWLETA_ETAP4];
 
+/**
+ * WARIANTY 14-DNIOWE (1.09.2026). Do tej pory przełącznik „14 dni"
+ * w konfiguratorze nie miał czego dopasować — patrz nagłówek
+ * data/diets/plany-14-dni.ts.
+ */
+const KETO_14D_1500 = fortnightPlan(KETO_1500, KETO_1500_DNI_8_14);
+const KETO_14D_2000 = fortnightPlan(KETO_2000, KETO_2000_DNI_8_14);
+const WEGE_14D_1500 = fortnightPlan(WEGE_1500, WEGETARIANSKA_1500_DNI_8_14);
+const WEGE_14D_2000 = fortnightPlan(WEGE_2000, WEGETARIANSKA_2000_DNI_8_14);
+const ODCHUDZAJACA_14D_1500 = fortnightPlan(ODCHUDZAJACA_1500, ODCHUDZAJACA_1500_DNI_8_14);
+const ODCHUDZAJACA_14D_2000 = fortnightPlan(ODCHUDZAJACA_2000, ODCHUDZAJACA_2000_DNI_8_14);
+const NISKI_IG_14D_1500 = fortnightPlan(NISKI_IG_1500, NISKI_IG_1500_DNI_8_14);
+const NISKI_IG_14D_2000 = fortnightPlan(NISKI_IG_2000, NISKI_IG_2000_DNI_8_14);
+const HASHIMOTO_14D_1500 = fortnightPlan(HASHIMOTO_1500, HASHIMOTO_1500_DNI_8_14);
+const HASHIMOTO_14D_2000 = fortnightPlan(HASHIMOTO_2000, HASHIMOTO_2000_DNI_8_14);
+const ZAMIENNIKI_14D_1500 = fortnightPlan(ZAMIENNIKI_1500, ZAMIENNIKI_1500_DNI_8_14);
+const ZAMIENNIKI_14D_2000 = fortnightPlan(ZAMIENNIKI_2000, ZAMIENNIKI_2000_DNI_8_14);
+const BEZGLUTENOWA_14D_1500 = fortnightPlan(BEZGLUTENOWA_1500, BEZGLUTENOWA_1500_DNI_8_14);
+const BEZGLUTENOWA_14D_2000 = fortnightPlan(BEZGLUTENOWA_2000, BEZGLUTENOWA_2000_DNI_8_14);
+
 export const DIET_CATEGORIES: DietCategory[] = [
   {
     id: "keto",
@@ -1151,7 +1203,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     description: "Niskowęglowodanowe dania z Thermomixem — więcej tłuszczu i białka, mniej węglowodanów.",
     configuratorMode: "calories",
     icon: "keto",
-    plans: [KETO_1500, KETO_2000],
+    plans: [KETO_1500, KETO_2000, KETO_14D_1500, KETO_14D_2000],
   },
   {
     id: "wegetarianska",
@@ -1161,7 +1213,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     description: "Roślinne dania na Thermomixie — pełnowartościowe posiłki bez mięsa i ryb.",
     configuratorMode: "calories",
     icon: "leaf",
-    plans: [WEGE_1500, WEGE_2000],
+    plans: [WEGE_1500, WEGE_2000, WEGE_14D_1500, WEGE_14D_2000],
   },
   {
     id: "odchudzajaca",
@@ -1173,7 +1225,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     icon: "scale",
     medicalDisclaimer:
       "Materiał ma charakter edukacyjny i nie zastępuje indywidualnej konsultacji z lekarzem lub dietetykiem.",
-    plans: [ODCHUDZAJACA_1500, ODCHUDZAJACA_2000],
+    plans: [ODCHUDZAJACA_1500, ODCHUDZAJACA_2000, ODCHUDZAJACA_14D_1500, ODCHUDZAJACA_14D_2000],
   },
   {
     id: "niski-ig",
@@ -1185,7 +1237,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     icon: "lightning",
     medicalDisclaimer:
       "Materiał ma charakter edukacyjny i nie zastępuje indywidualnej konsultacji z lekarzem lub dietetykiem.",
-    plans: [NISKI_IG_1500, NISKI_IG_2000],
+    plans: [NISKI_IG_1500, NISKI_IG_2000, NISKI_IG_14D_1500, NISKI_IG_14D_2000],
   },
   {
     id: "hashimoto",
@@ -1197,7 +1249,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     icon: "check",
     medicalDisclaimer:
       "Materiał ma charakter edukacyjny i nie zastępuje indywidualnej konsultacji z lekarzem lub dietetykiem. Dieta nie zastępuje leczenia.",
-    plans: [HASHIMOTO_1500, HASHIMOTO_2000],
+    plans: [HASHIMOTO_1500, HASHIMOTO_2000, HASHIMOTO_14D_1500, HASHIMOTO_14D_2000],
   },
   {
     id: "zamienniki",
@@ -1207,7 +1259,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     description: "Elastyczny plan z gotowymi zamiennikami dań i składników, dopasowany do Twoich upodobań.",
     configuratorMode: "calories",
     icon: "swap",
-    plans: [ZAMIENNIKI_1500, ZAMIENNIKI_2000],
+    plans: [ZAMIENNIKI_1500, ZAMIENNIKI_2000, ZAMIENNIKI_14D_1500, ZAMIENNIKI_14D_2000],
   },
   {
     id: "bezglutenowa",
@@ -1225,7 +1277,7 @@ export const DIET_CATEGORIES: DietCategory[] = [
     // sugerować certyfikację, której jeszcze nie ma.
     medicalDisclaimer:
       "Przykładowe dania dobrane są pod kątem naturalnie bezglutenowych składników, ale konkretne produkty i ich etykiety nie zostały jeszcze zweryfikowane pod kątem faktycznej zawartości glutenu — przed zakupem zawsze sprawdź etykiety lub skonsultuj się z Agą.",
-    plans: [BEZGLUTENOWA_1500, BEZGLUTENOWA_2000],
+    plans: [BEZGLUTENOWA_1500, BEZGLUTENOWA_2000, BEZGLUTENOWA_14D_1500, BEZGLUTENOWA_14D_2000],
   },
   {
     id: "dla-dzieci",
