@@ -18,6 +18,7 @@ import {
 } from "@/components/marketing/content-blocks";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { formatPln } from "@/lib/format";
+import { RATY_ZERO_DOSTEPNE } from "@/data/finansowanie/dostepnosc";
 
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix TM7 vs TM6 — porównanie modeli",
@@ -52,7 +53,7 @@ const FAQ = [
   {
     question: "Ile kosztuje TM7 i czy da się na raty?",
     answer:
-      "Aktualną cenę i dostępne raty pokazuję na stronie oferty — zmieniają się razem z promocjami Vorwerk. Od września 2026 oprocentowanie rat wynosi 0,6% miesięcznie.",
+      "Aktualną cenę i dostępne raty pokazuję na stronie oferty — zmieniają się razem z promocjami Vorwerk. Raty 0% wracają okresowo; aktualny stan zawsze jest podany na stronie o finansowaniu.",
   },
 ];
 
@@ -218,7 +219,7 @@ export default async function Tm7VsTm6Page() {
               </Link>
               , a o kosztach — w{" "}
               <Link href="/finansowanie" className="font-medium text-brand-700 underline underline-offset-4">
-                kalkulatorze rat 0,6%
+                kalkulatorze rat 0%
               </Link>
               .
             </p>
@@ -231,7 +232,11 @@ export default async function Tm7VsTm6Page() {
                 label: "Cena urządzenia",
                 value: formatPln(oferta?.priceCents) ?? "sprawdź na stronie oferty",
               },
-              { label: "Raty", value: "0,6% miesięcznie, do 36 rat" },
+              {
+                label: "Raty",
+                // Patrz komentarz w app/(site)/thermomix/tm7/page.tsx.
+                value: RATY_ZERO_DOSTEPNE ? "0% — bez wymaganego wkładu własnego" : "0,6% miesięcznie (raty 0% wracają okresowo)",
+              },
               { label: "Zakup", value: "wyłącznie u oficjalnego przedstawiciela Vorwerk" },
               { label: "Prezentacja", value: "bezpłatna i niezobowiązująca" },
               { label: "Obszar", value: "Małopolska i cała Polska po ustaleniu terminu" },
