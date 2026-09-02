@@ -426,3 +426,11 @@ create table if not exists poradnik_wpisy (
 );
 
 create index if not exists poradnik_dzial_idx on poradnik_wpisy (dzial, kolejnosc);
+
+-- 1.09.2026 — wyzwanie „30 dni z Thermomixem" dostało treść startową.
+-- `przepis_id` wiąże dzień z konkretnym przepisem z rejestru (wyzwanie mówi
+-- CO ugotować, przepis na Cookidoo mówi JAK — nie przepisujemy ustawień
+-- urządzenia). `wlasne` odróżnia treść Agi od wgranego planu do przepisania,
+-- tak samo jak w tabeli poradnik_wpisy.
+alter table aga_club_challenge_days add column if not exists przepis_id text;
+alter table aga_club_challenge_days add column if not exists wlasne boolean not null default true;
