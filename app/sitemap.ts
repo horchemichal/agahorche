@@ -78,6 +78,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/kontakt", priority: 0.5, changeFrequency: "yearly" },
   { path: "/faq", priority: 0.5, changeFrequency: "monthly" },
   { path: "/aga-club", priority: 0.7, changeFrequency: "weekly" },
+  { path: "/aga-club/30-dni-z-aga", priority: 0.6, changeFrequency: "monthly" },
   { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
   { path: "/miasta", priority: 0.6, changeFrequency: "weekly" },
   { path: "/wojewodztwa", priority: 0.6, changeFrequency: "weekly" },
