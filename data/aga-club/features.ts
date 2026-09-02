@@ -12,7 +12,9 @@ export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
   mojaLodowka: false,
   trybMama: false,
   planTygodnia: false,
-  trzydziesciDniZAga: false,
+  // 1.09.2026: moduł ma treść (30 dni) i działa — patrz
+  // app/(site)/aga-club/30-dni-z-aga/page.tsx.
+  trzydziesciDniZAga: true,
   agaAi: false,
 };
 
@@ -63,8 +65,10 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
   },
   {
     key: "trzydziesciDniZAga",
-    title: "30 dni z Agą",
-    description: "Codzienne wyzwanie z zadaniami, poradami i odznakami za postępy.",
+    title: "30 dni z Thermomixem",
+    // Opis poprawiony 1.09.2026: wcześniej obiecywał „odznaki za postępy”,
+    // których moduł nie ma i mieć nie będzie. Jest pasek postępu i odhaczanie.
+    description: "Trzydzieści dni, trzydzieści zadań — od pierwszego koktajlu po własny repertuar dań.",
     href: "/aga-club/30-dni-z-aga",
   },
   {
