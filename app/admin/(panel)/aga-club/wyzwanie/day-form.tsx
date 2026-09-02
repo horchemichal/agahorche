@@ -23,7 +23,20 @@ export function DayForm({ day }: { day: AgaClubChallengeDay }) {
 
       <div>
         <Label htmlFor="tip">Porada Agi</Label>
-        <Textarea id="tip" name="tip" defaultValue={day.tip} rows={3} placeholder="Krótka wskazówka od Agi." />
+        <Textarea id="tip" name="tip" defaultValue={day.tip} rows={10} placeholder="Krótka wskazówka od Agi." />
+        <p className="mt-2 text-sm text-muted">
+          Pusta linia zaczyna nowy akapit. Linia od „- ” to punkt listy. Tekst w podwójnych
+          gwiazdkach (**tak**) będzie pogrubiony.
+        </p>
+      </div>
+
+      <div>
+        <Label htmlFor="przepisId">Przepis na ten dzień (opcjonalnie)</Label>
+        <Input id="przepisId" name="przepisId" defaultValue={day.przepisId ?? ""} placeholder="np. cd-r10001" />
+        <p className="mt-2 text-sm text-muted">
+          Identyfikator z bazy przepisów. Pod zadaniem pojawi się wtedy nazwa dania i link
+          do Cookidoo. Zostaw puste, jeśli tego dnia nie ma nic do ugotowania.
+        </p>
       </div>
 
       <div>
@@ -31,7 +44,14 @@ export function DayForm({ day }: { day: AgaClubChallengeDay }) {
         <Input id="videoUrl" name="videoUrl" defaultValue={day.videoUrl ?? ""} placeholder="https://youtube.com/..." />
       </div>
 
-      <Checkbox name="active" defaultChecked={day.active} label="Opublikowany (widoczny w publicznym wyzwaniu)" />
+      <div className="space-y-3">
+        <Checkbox
+          name="wlasne"
+          defaultChecked={day.wlasne}
+          label="To moja treść (odznacz, jeśli to wgrany plan startowy do przepisania)"
+        />
+        <Checkbox name="active" defaultChecked={day.active} label="Opublikowany (widoczny w publicznym wyzwaniu)" />
+      </div>
 
       <FieldError>{state.error ?? undefined}</FieldError>
 

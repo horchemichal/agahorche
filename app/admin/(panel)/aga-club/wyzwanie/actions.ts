@@ -19,6 +19,8 @@ export async function saveChallengeDayAction(_prevState: FormActionState, formDa
     task: formData.get("task"),
     tip: formData.get("tip"),
     videoUrl: formData.get("videoUrl"),
+    przepisId: formData.get("przepisId"),
+    wlasne: formData.get("wlasne") ?? undefined,
     active: formData.get("active") ?? undefined,
   });
 
@@ -33,7 +35,7 @@ export async function saveChallengeDayAction(_prevState: FormActionState, formDa
       entityType: "aga-club-challenge-day",
       entityId: String(day),
       action: "update",
-      summary: `Zaktualizowano dzień ${day} wyzwania „30 dni z Agą”`,
+      summary: `Zaktualizowano dzień ${day} wyzwania „30 dni z Thermomixem”`,
     });
   } catch (error) {
     return { error: error instanceof Error ? error.message : "Nie udało się zapisać dnia." };
@@ -42,5 +44,6 @@ export async function saveChallengeDayAction(_prevState: FormActionState, formDa
   revalidatePath("/admin/aga-club");
   revalidatePath("/admin/aga-club/wyzwanie");
   revalidatePath(`/admin/aga-club/wyzwanie/${day}`);
+  revalidatePath("/aga-club/30-dni-z-aga");
   return { error: null };
 }

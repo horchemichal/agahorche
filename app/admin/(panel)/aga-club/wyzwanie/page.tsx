@@ -7,7 +7,7 @@ import { Card, Badge } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "30 dni z Agą — Aga Admin",
+  title: "30 dni z Thermomixem — Aga Admin",
   robots: { index: false, follow: false },
 };
 
@@ -18,8 +18,8 @@ export default async function AdminChallengePage() {
   return (
     <>
       <PanelHeader
-        title="30 dni z Agą"
-        description="Treść wyzwania — zadanie, porada i wideo na każdy dzień. Dzień jest widoczny publicznie dopiero po oznaczeniu jako opublikowany."
+        title="30 dni z Thermomixem"
+        description="Treść wyzwania — zadanie, porada i przepis na każdy dzień. Dni oznaczone „do przepisania” to wgrany plan startowy: warto zastąpić go własnymi słowami."
         action={
           <ButtonLink href="/admin/aga-club" variant="ghost">
             ← Aga Club
@@ -33,7 +33,10 @@ export default async function AdminChallengePage() {
             <Link href={`/admin/aga-club/wyzwanie/${d.day}`} className="block">
               <div className="mb-1.5 flex items-center justify-between">
                 <span className="font-medium text-neutral-900">Dzień {d.day}</span>
-                {d.active ? <Badge>opublikowany</Badge> : <Badge tone="neutral">szkic</Badge>}
+                <span className="flex gap-1.5">
+                  {!d.wlasne && <Badge tone="neutral">do przepisania</Badge>}
+                  {d.active ? <Badge>opublikowany</Badge> : <Badge tone="neutral">szkic</Badge>}
+                </span>
               </div>
               <p className="truncate text-sm text-muted">{d.task || "— brak treści —"}</p>
             </Link>
