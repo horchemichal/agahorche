@@ -30,6 +30,19 @@ export interface AgaClubChallengeDay {
   task: string;
   tip: string;
   videoUrl: string | null;
+  /**
+   * Identyfikator przepisu z data/diets/recipes.ts, jeśli zadanie dnia
+   * polega na ugotowaniu konkretnej rzeczy (1.09.2026). Dzięki temu
+   * wyzwanie mówi CO zrobić, a przepis na Cookidoo mówi JAK — nie
+   * przepisujemy ustawień urządzenia, których nie mamy jak sprawdzić.
+   */
+  przepisId: string | null;
+  /**
+   * Czy to treść Agi (true), czy wgrany plan startowy do przepisania
+   * własnymi słowami (false). To samo rozróżnienie co w poradniku —
+   * patrz types/poradnik.ts.
+   */
+  wlasne: boolean;
   active: boolean;
   updatedAt: string;
 }
