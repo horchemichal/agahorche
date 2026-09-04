@@ -7,6 +7,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { DIET_CATEGORIES } from "@/data/diets/categories";
 import { DietCategoryCard } from "@/components/diets/diet-category-card";
 import { DietConfigurator } from "@/components/diets/diet-configurator";
+import { ClientDietList } from "@/components/diets/client-diet-list";
+import { pozycjeMoichDiet } from "@/lib/diets/pozycje-pulpitu";
 import { ClientZoneTeaser } from "@/components/diets/client-zone-teaser";
 import { FaqSection } from "@/components/seo/faq-section";
 import { DIETY_FAQ } from "@/data/diets/faq";
@@ -55,8 +57,60 @@ const PLAN_INCLUDES = [
  * ETAP 11: async — the configurator is gated to signed-in Aga Club members
  * (see diet-configurator.tsx), so this resolves the session once here.
  */
+/**
+ * WIDOK DLA ZALOGOWANYCH (prośba Michała, 4.09.2026: „jak mam np. diety to
+ * niech pod paskiem menu będą wymienione moje diety które wybrałem, a pod
+ * tym konfigurator diet i tyle").
+ *
+ * Klientka, która ma już konto, dostawała pod „Dietami" tę samą stronę co
+ * ktoś z ulicy: nagłówek zachęcający do wybrania diety, cztery kafelki
+ * „Dopasowana / Na Twój Thermomix / Jadłospis w PDF", zaproszenie do Strefy
+ * Klienta, do której jest już zalogowana, i CTA na prezentację. Wszystko to
+ * sprzedaje coś, co ona ma. Zostają dwie rzeczy, po które tu wchodzi: jej
+ * diety i konfigurator.
+ *
+ * PUBLICZNA WERSJA STRONY ZOSTAJE NIETKNIĘTA — to ona jest w mapie serwisu
+ * i to ją widzi Google (robot nigdy nie jest zalogowany), więc pozycjonowanie
+ * /diety nie zmienia się o włos.
+ */
+function WidokKlubu() {
+  const pozycje = pozycjeMoichDiet();
+
+  return (
+    <>
+      <Section className="!pb-0">
+        <Eyebrow>Aga Club</Eyebrow>
+        <Heading as="h1" size="lg" className="mt-2">
+          Twoje diety
+        </Heading>
+        <Lead className="mt-3 max-w-xl">
+          Wszystkie dni odblokowane, w wariantach 7 i 14 dni oraz 1500 i 2000 kcal. Dietę, której
+          nie używasz, usuwasz krzyżykiem.
+        </Lead>
+      </Section>
+
+      <Section className="!pt-8">
+        <ClientDietList pozycje={pozycje} />
+      </Section>
+
+      <Section id="konfigurator" tone="surface" className="scroll-mt-24">
+        <Heading as="h2" size="md" className="mb-2">
+          Konfigurator diet
+        </Heading>
+        <p className="mb-8 max-w-xl text-sm text-muted">
+          Dobierz dietę, długość i kaloryczność — podgląd planu masz od razu. Przyciskiem „Dodaj do
+          moich diet” wrzucisz ją na listę powyżej.
+        </p>
+        <DietConfigurator isLoggedIn />
+      </Section>
+    </>
+  );
+}
+
 export default async function DietyHubPage() {
   const client = await getCurrentClient();
+  if (client) return <WidokKlubu />;
+
   return (
     <>
       <Section className="!pb-0">
@@ -106,8 +160,13 @@ export default async function DietyHubPage() {
         </div>
       </Section>
 
+      {/*
+        Zawsze `false`: powyżej stoi `if (client) return <WidokKlubu />`, więc
+        do tej gałęzi trafiają wyłącznie osoby niezalogowane. Konfigurator
+        pokazuje im wtedy panel „Jadłospisy są w Aga Club".
+      */}
       <Section id="konfigurator" className="scroll-mt-24">
-        <DietConfigurator isLoggedIn={Boolean(client)} />
+        <DietConfigurator isLoggedIn={false} />
       </Section>
 
       <Section tone="surface">
