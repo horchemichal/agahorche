@@ -48,7 +48,26 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-neutral-700 pt-6 text-sm text-neutral-400 md:flex-row md:items-center md:justify-between">
-          <p>© {year} Aga Horche. Wszelkie prawa zastrzeżone.</p>
+          <div>
+            <p>© {year} Aga Horche. Wszelkie prawa zastrzeżone.</p>
+            {/*
+              Podpis wykonawcy strony (prośba Michała, 4.09.2026).
+              `rel="noopener"` bez `nofollow` — to zwykły link do własnej
+              agencji, a nie płatne miejsce reklamowe, więc nie ma powodu
+              odcinać mu wartości. Otwiera się w tej samej karcie: to stopka,
+              a nie treść, przy której ktoś chce zostać.
+            */}
+            <p className="mt-1">
+              Potrzebujesz sklep lub stronę www?{" "}
+              <a
+                href="https://agencjaxd.pl"
+                rel="noopener"
+                className="text-neutral-300 underline underline-offset-2 hover:text-neutral-0"
+              >
+                agencjaxd.pl
+              </a>
+            </p>
+          </div>
           <p className="text-xs">
             Thermomix® jest zarejestrowanym znakiem towarowym Vorwerk. Ta strona nie jest oficjalną
             stroną Vorwerk.
