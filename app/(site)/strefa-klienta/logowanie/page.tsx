@@ -39,6 +39,20 @@ export default async function ClientLoginPage({
           </Link>
           , jeśli masz Thermomixa od niej, a nie masz jeszcze dostępu.
         </p>
+        {/*
+          4.09.2026 — dopisane po uwadze Michała, że nie ma jak odzyskać
+          hasła. Samoobsługowego resetu przez e-mail nie ma (wymagałby
+          wysyłki do klientek), więc zamiast martwego linku „nie pamiętam
+          hasła" mówimy wprost, co zrobić: Aga ustawia nowe hasło w panelu
+          i je przekazuje. To ścieżka, która naprawdę działa.
+        */}
+        <p className="mt-2 text-center text-sm text-muted">
+          Nie pamiętasz hasła?{" "}
+          <Link href="/kontakt" className="font-medium text-brand-700 hover:underline">
+            Napisz do Agi
+          </Link>
+          , a ustawi Ci nowe.
+        </p>
       </div>
     </div>
   );
