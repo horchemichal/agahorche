@@ -40,18 +40,29 @@ export default async function ClientLoginPage({
           , jeśli masz Thermomixa od niej, a nie masz jeszcze dostępu.
         </p>
         {/*
-          4.09.2026 — dopisane po uwadze Michała, że nie ma jak odzyskać
-          hasła. Samoobsługowego resetu przez e-mail nie ma (wymagałby
-          wysyłki do klientek), więc zamiast martwego linku „nie pamiętam
-          hasła" mówimy wprost, co zrobić: Aga ustawia nowe hasło w panelu
-          i je przekazuje. To ścieżka, która naprawdę działa.
+          4.09.2026, rano — dopisane po uwadze Michała, że nie ma jak
+          odzyskać hasła. Wtedy odsyłaliśmy do kontaktu, bo samoobsługowego
+          resetu nie dało się zrobić: serwis nie mógł wysłać ani jednego
+          maila (skrzynka Interii odrzucała logowanie z zewnątrz).
+
+          4.09.2026, wieczorem — poczta ruszyła, więc jest prawdziwy reset
+          przez e-mail (patrz lib/auth/reset-hasla.ts). „Napisz do Agi"
+          zostaje jako druga ścieżka: klientka, która zmieniła adres albo
+          nie ma dostępu do skrzynki, mailem sobie nie pomoże.
         */}
         <p className="mt-2 text-center text-sm text-muted">
           Nie pamiętasz hasła?{" "}
+          <Link
+            href="/strefa-klienta/reset-hasla"
+            className="font-medium text-brand-700 hover:underline"
+          >
+            Ustaw nowe
+          </Link>
+          . Nie masz dostępu do swojej skrzynki?{" "}
           <Link href="/kontakt" className="font-medium text-brand-700 hover:underline">
             Napisz do Agi
           </Link>
-          , a ustawi Ci nowe.
+          .
         </p>
       </div>
     </div>
