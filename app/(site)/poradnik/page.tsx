@@ -9,7 +9,7 @@ import { DZIALY_PORADNIKA } from "@/types/poradnik";
 import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repository";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Poradnik kuchenny — triki, słownik i sposoby na kuchenne wpadki",
+  title: "Poradnik kuchenny — triki i kuchenne wpadki",
   description:
     "Co można zamrozić, jak uratować za słoną zupę, dlaczego ciasto nie wyrosło i co znaczy blanszowanie. Praktyczny poradnik dla osób gotujących z Thermomixem.",
   path: "/poradnik",
