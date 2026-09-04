@@ -6,6 +6,7 @@ import { DIET_CATEGORIES } from "@/data/diets/categories";
 import { CategoryIcon } from "@/components/diets/category-icon";
 import { ClientDietList, type PozycjaDiety } from "@/components/diets/client-diet-list";
 import { DietConfigurator } from "@/components/diets/diet-configurator";
+import { MenuKlubu } from "@/components/aga-club/menu-klubu";
 import { Section } from "@/components/ui/section";
 import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
 import { Badge } from "@/components/ui/card";
@@ -81,6 +82,20 @@ export default async function ClientDashboardPage() {
             </Button>
           </form>
         </div>
+      </Section>
+
+      {/*
+        MINI-MENU KLUBU (prośba Michała, 4.09.2026). Stoi zaraz pod
+        powitaniem, PRZED dietami, bo to jest odpowiedź na pytanie „co ja
+        tu właściwie mam". Wcześniej pulpit zaczynał się od diet i klientka
+        nie miała skąd wiedzieć, że dostaje też przepisy, lodówkę, poradnik
+        i wyzwanie — te siedziały wyłącznie w górnym menu serwisu.
+      */}
+      <Section className="!pt-8">
+        <Heading as="h2" size="md" className="mb-4">
+          Co masz w klubie
+        </Heading>
+        <MenuKlubu />
       </Section>
 
       <Section tone="surface">
