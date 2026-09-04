@@ -12,7 +12,7 @@ import { Photo, CheckList, StepsRow, Prose, CtaBand, LocalBand } from "@/compone
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix dla rodziny — obiady bez pilnowania",
   description:
-    "Thermomix w domu z dziećmi: obiad dla czterech osób z jednego naczynia, gotowanie na parze równolegle, plan tygodnia i mniej zmywania. Konkretnie, na przykładach.",
+    "Thermomix w domu z dziećmi: obiad dla czterech osób z jednego naczynia, gotowanie na parze równolegle, plan tygodnia i mniej zmywania. Na przykładach.",
   path: "/thermomix/dla-rodziny",
   keywords: ["thermomix dla rodziny", "obiady dla dzieci thermomix", "gotowanie dla rodziny"],
 });
