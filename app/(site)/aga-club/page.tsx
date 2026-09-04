@@ -10,7 +10,7 @@ import { AGA_CLUB_FEATURES, AGA_CLUB_FEATURE_FLAGS } from "@/data/aga-club/featu
 export const metadata: Metadata = buildMetadata({
   title: "Aga Club — społeczność wokół gotowania z Thermomixem",
   description:
-    "Aga Club: pomysły na obiad, plan tygodnia, wyzwanie 30 dni z Agą i Aga AI — architektura gotowa, funkcje wdrażane etapami.",
+    "Aga Club dla klientów Agi Horche: diety, pomysły na obiad, gotowanie z tego, co jest w lodówce, poradnik kuchenny i wyzwanie 30 dni z Thermomixem.",
   path: "/aga-club",
 });
 
@@ -20,6 +20,11 @@ export const metadata: Metadata = buildMetadata({
  * module ships, gated by AGA_CLUB_FEATURE_FLAGS so nothing here fakes
  * functionality that doesn't exist yet (§34: AI features especially must
  * not be simulated).
+ *
+ * 4.09.2026 — zapowiedzi zniknęły, więc zniknęły też z nagłówka i z opisu
+ * SEO. Lead obiecywał „plan tygodnia i wsparcie AI w kuchni", czyli
+ * dokładnie te dwie rzeczy, których na stronie nie ma. Teraz wymienia to,
+ * co da się kliknąć.
  */
 export default function AgaClubPage() {
   return (
@@ -35,8 +40,16 @@ export default function AgaClubPage() {
         </Heading>
         <Lead className="mt-5 max-w-xl">
           Miejsce, w którym gotowanie z Thermomixem staje się prostsze na co dzień — pomysły na
-          posiłki, plan tygodnia i wsparcie AI w kuchni.
+          obiad, diety, gotowanie z tego, co akurat jest w lodówce, i poradnik na kuchenne
+          pytania.
         </Lead>
+        <div className="mt-6 max-w-xl rounded-2xl border border-brand-100 bg-brand-50/60 p-5">
+          <p className="text-sm font-semibold text-neutral-900">Dla kogo jest Aga Club</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted">
+            Klub jest dostępny dla moich klientów, czyli osób, które kupiły u mnie Thermomix,
+            oraz dla osób, które poleciły mi sprzedaż.
+          </p>
+        </div>
         <div className="mt-8">
           <ButtonLink href="/prezentacja" size="lg">
             Umów bezpłatną prezentację
