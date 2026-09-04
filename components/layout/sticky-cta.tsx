@@ -17,7 +17,14 @@ export function StickyMobileCta() {
   const pathname = usePathname();
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-30 flex gap-2 border-t border-border bg-neutral-0/95 p-3 backdrop-blur lg:hidden">
+    /* `data-chrome="marketing"` — znika w zainstalowanej aplikacji,
+       patrz `.tryb-aplikacji` w app/globals.css. Przyklejone „Zadzwoń /
+       Napisz" to element strony sprzedażowej: w aplikacji klubu zasłania
+       treść i namawia na kontakt kogoś, kto już jest klientką. */
+    <div
+      data-chrome="marketing"
+      className="fixed inset-x-0 bottom-0 z-30 flex gap-2 border-t border-border bg-neutral-0/95 p-3 backdrop-blur lg:hidden"
+    >
       <a
         href={SITE.phoneHref}
         onClick={() => track("click_phone", { path: pathname, placement: "sticky-mobile-call" })}

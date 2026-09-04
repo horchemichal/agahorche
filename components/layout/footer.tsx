@@ -9,7 +9,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-neutral-900 pb-24 pt-14 text-neutral-0 lg:pb-14">
+    <footer
+      data-chrome="marketing"
+      className="border-t border-border bg-neutral-900 pb-24 pt-14 text-neutral-0 lg:pb-14"
+    >
       <Container>
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-6">
           <div className="md:col-span-3 lg:col-span-1">

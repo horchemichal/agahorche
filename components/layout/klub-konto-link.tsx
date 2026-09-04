@@ -44,9 +44,11 @@ export async function KlubKontoLink({ wariant }: { wariant: "desktop" | "mobile"
 
   return (
     <div className="mt-1 border-t border-border pt-1">
-      <Link href="/strefa-klienta" className={klasaLinku}>
-        Mój pulpit
-      </Link>
+      {/*
+        4.09.2026: „Mój pulpit" usunięty na prośbę Michała. Zostaje samo
+        wylogowanie — po to ten blok w menu powstał (prośba Agi: „niech tu
+        w menu aga klub będzie zaloguj/wyloguj").
+      */}
       {/*
         Wylogowanie jest POST-em (app/(site)/strefa-klienta/wyloguj/route.ts),
         więc <form>, a nie link — działa bez JavaScriptu i nie da się go

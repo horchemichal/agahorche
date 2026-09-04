@@ -3,7 +3,7 @@ import { getCurrentClient } from "@/lib/auth/client-auth";
 
 /**
  * OŚ PLIKU
- * Pasek „Zalogowana jako … · Mój pulpit · Wyloguj się" w górnej belce
+ * Pasek „Zalogowana jako … · Wyloguj się" w górnej belce
  * nagłówka, widoczny wyłącznie dla zalogowanych klientek i klientów
  * Aga Club.
  *
@@ -39,9 +39,17 @@ export async function ClientSessionBar() {
 
   return (
     <div className="flex items-center gap-3">
-      <span className="hidden text-neutral-400 lg:inline">Zalogowana jako {imie}</span>
-      <Link href="/strefa-klienta" className="hover:text-brand-300">
-        Mój pulpit
+      {/*
+        4.09.2026 — „Mój pulpit" usunięty stąd na prośbę Michała (razem
+        z dwoma pozostałymi kopiami: w rozwijanym „Aga Club" i w pasku
+        klubu). Prowadził do /strefa-klienta z trzech miejsc naraz.
+
+        Imię ZOSTAJE linkiem do pulpitu: to jedyne dojście do niego z menu,
+        jakie się ostało, a bez żadnego strona nadal by istniała, tylko nie
+        dałoby się na nią wejść inaczej niż wpisując adres.
+      */}
+      <Link href="/strefa-klienta" className="hidden text-neutral-400 hover:text-brand-300 lg:inline">
+        Zalogowana jako {imie}
       </Link>
       {/*
         Wylogowanie jest POST-em (patrz app/(site)/strefa-klienta/wyloguj/route.ts),
