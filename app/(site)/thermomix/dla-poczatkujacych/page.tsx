@@ -12,7 +12,7 @@ import { Photo, StepsRow, Prose, CtaBand, LocalBand } from "@/components/marketi
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix dla początkujących w kuchni",
   description:
-    "Nie umiesz gotować albo tego nie lubisz? Thermomix prowadzi przez przepis krok po kroku. Pięć dań na start, czego się nie da zepsuć i czego naprawdę trzeba się nauczyć.",
+    "Nie umiesz gotować albo tego nie lubisz? Thermomix prowadzi przez przepis krok po kroku. Pięć dań na start i czego naprawdę trzeba się nauczyć.",
   path: "/thermomix/dla-poczatkujacych",
   keywords: ["thermomix dla początkujących", "nie umiem gotować", "thermomix pierwsze kroki"],
 });
