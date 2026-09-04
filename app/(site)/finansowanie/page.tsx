@@ -28,11 +28,27 @@ export const metadata: Metadata = buildMetadata({
   keywords: ["thermomix raty 0", "thermomix na raty", "kalkulator rat thermomix", "thermomix tm7 raty"],
 });
 
-const FAQ = [
+/**
+ * FAQ jest funkcją, a nie stałą, bo pierwsza odpowiedź MUSI reagować na
+ * przełącznik rat 0% z /admin/ustawienia.
+ *
+ * 4.09.2026: promocja 0% wróciła, flaga w bazie została ustawiona na
+ * `true` — i wtedy wyszło, że kalkulator, tabele i komunikat owszem się
+ * przełączyły, ale ta jedna odpowiedź została zapisana na sztywno
+ * i twierdziła dalej „w tej chwili raty 0% nie obowiązują". Strona sama
+ * sobie przeczyła: nagłówek obiecywał 0%, FAQ ich odmawiało.
+ *
+ * Wniosek na przyszłość: każde zdanie o tym, co obowiązuje TERAZ, ma brać
+ * stan z `pobierzUstawieniaFinansowania()`. Zdania o tym, jak działa
+ * finansowanie w ogóle, mogą zostać stałe.
+ */
+function zbudujFaq(ratyZeroDostepne: boolean) {
+  return [
   {
     question: "Czy raty 0% naprawdę nie mają dodatkowych kosztów?",
-    answer:
-      "Kiedy promocja 0% obowiązuje — tak: przy RRSO 0% płacisz dokładnie tyle, ile wynosi cena urządzenia, rozłożona na wybraną liczbę miesięcy. W tej chwili raty 0% nie obowiązują; dostępne finansowanie to 0,6% miesięcznie, przy którym rozłożenie zakupu kosztuje więcej niż zapłata z góry — kalkulator pokazuje łączną kwotę do spłaty. Warunki potwierdza instytucja finansująca przy podpisaniu umowy.",
+    answer: ratyZeroDostepne
+      ? "Tak. Przy RRSO 0% płacisz dokładnie tyle, ile wynosi cena urządzenia, rozłożona na wybraną liczbę miesięcy — bez odsetek i bez prowizji. Kalkulator pokazuje łączną kwotę do spłaty, więc widzisz to sama. Warunki potwierdza instytucja finansująca przy podpisaniu umowy."
+      : "Kiedy promocja 0% obowiązuje — tak: przy RRSO 0% płacisz dokładnie tyle, ile wynosi cena urządzenia, rozłożona na wybraną liczbę miesięcy. W tej chwili raty 0% nie obowiązują; dostępne finansowanie to 0,6% miesięcznie, przy którym rozłożenie zakupu kosztuje więcej niż zapłata z góry — kalkulator pokazuje łączną kwotę do spłaty. Warunki potwierdza instytucja finansująca przy podpisaniu umowy.",
   },
   {
     question: "Czy muszę mieć wkład własny?",
@@ -59,7 +75,8 @@ const FAQ = [
     answer:
       "Kalkulator ma charakter orientacyjny — pokazuje wyliczenie na podstawie aktualnej ceny i wybranego wariantu. Ostateczne warunki zależą od oferty obowiązującej w dniu zakupu i decyzji instytucji finansującej.",
   },
-];
+  ];
+}
 
 export default async function FinansowaniePage() {
   const oferta = await getOffersRepository().getActiveOffer();
@@ -148,7 +165,15 @@ export default async function FinansowaniePage() {
                 label: "Raty 0%",
                 value: finansowanie.ratyZeroDostepne ? "do 36 miesięcy, RRSO 0%" : "obecnie niedostępne — wracają okresowo",
               },
-              { label: "Finansowanie teraz", value: "0,6% miesięcznie, do 36 rat" },
+              {
+                // Wiersz mówi o stanie NA TERAZ, więc musi iść za flagą.
+                // Przy włączonych 0% zdanie „Finansowanie teraz: 0,6%"
+                // przeczyło wierszowi powyżej.
+                label: "Finansowanie teraz",
+                value: finansowanie.ratyZeroDostepne
+                  ? "raty 0%, do 36 rat"
+                  : "0,6% miesięcznie, do 36 rat",
+              },
               { label: "Wkład własny", value: "niewymagany" },
               { label: "Inne formy płatności", value: "gotówka, przelew, karta, BLIK" },
               { label: "Gdzie podpisujemy", value: "u Ciebie, po prezentacji" },
@@ -182,7 +207,7 @@ export default async function FinansowaniePage() {
         </p>
       </Section>
 
-      <FaqSection items={FAQ} title="Raty i płatności — najczęstsze pytania" />
+      <FaqSection items={zbudujFaq(finansowanie.ratyZeroDostepne)} title="Raty i płatności — najczęstsze pytania" />
 
       <LocalBand />
       <CtaBand
