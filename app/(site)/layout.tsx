@@ -1,6 +1,7 @@
 import { Header } from "@/components/layout/header";
 import { ClientSessionBar } from "@/components/layout/client-session-bar";
 import { KlubKontoLink } from "@/components/layout/klub-konto-link";
+import { PasekKlubu } from "@/components/aga-club/pasek-klubu";
 import { Footer } from "@/components/layout/footer";
 import { StickyMobileCta } from "@/components/layout/sticky-cta";
 import { JsonLdScript } from "@/components/seo/json-ld";
@@ -33,6 +34,16 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
         kontoKlubu={<KlubKontoLink wariant="desktop" />}
         kontoKlubuMobile={<KlubKontoLink wariant="mobile" />}
       />
+      {/*
+        Pasek Aga Club stoi TUTAJ, w layoucie, a nie na poszczególnych
+        stronach — i to jest cała odpowiedź na „niech to menu będzie na
+        każdej podstronie aga club". Podstrony klubu leżą w czterech
+        różnych gałęziach tras (/strefa-klienta, /diety, /przepisy,
+        /poradnik, /aga-club), więc wstawianie paska z osobna oznaczałoby
+        kilkanaście miejsc do pamiętania przy każdej nowej stronie. Pasek
+        sam decyduje, czy się pokazać: sesja tutaj, adres w środku.
+      */}
+      <PasekKlubu />
       <main className="flex-1 pb-20 lg:pb-0">{children}</main>
       <Footer />
       <StickyMobileCta />
