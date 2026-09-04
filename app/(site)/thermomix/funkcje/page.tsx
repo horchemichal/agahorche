@@ -12,7 +12,7 @@ import { Photo, Prose, CtaBand, LocalBand } from "@/components/marketing/content
 export const metadata: Metadata = buildMetadata({
   title: "Funkcje Thermomixa TM7 — co potrafi",
   description:
-    "Wszystkie funkcje Thermomixa TM7 opisane przez to, co realnie robią w kuchni: gotowanie, para, wyrabianie ciasta, mielenie, ważenie, otwarte gotowanie i prowadzenie krok po kroku.",
+    "Funkcje Thermomixa TM7 opisane przez to, co realnie robią w kuchni: gotowanie, para, wyrabianie ciasta, mielenie, ważenie i prowadzenie krok po kroku.",
   path: "/thermomix/funkcje",
   keywords: ["funkcje thermomix", "co potrafi thermomix tm7", "thermomix funkcje tm7"],
 });
