@@ -18,7 +18,16 @@ import { MobileNav } from "./mobile-nav";
  * deep to avoid diluting internal-link equity; mobile collapses to a
  * hamburger — see MobileNav.
  */
-export function Header({ sesja }: { sesja?: ReactNode }) {
+export function Header({
+  sesja,
+  kontoKlubu,
+  kontoKlubuMobile,
+}: {
+  sesja?: ReactNode;
+  /** Wejście do konta na dole rozwijanego „Aga Club" — patrz klub-konto-link.tsx. */
+  kontoKlubu?: ReactNode;
+  kontoKlubuMobile?: ReactNode;
+}) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -95,6 +104,8 @@ export function Header({ sesja }: { sesja?: ReactNode }) {
                         {child.label}
                       </Link>
                     ))}
+                    {/* Wejście do konta — tylko pod „Aga Club", patrz klub-konto-link.tsx. */}
+                    {item.href === "/aga-club" && kontoKlubu}
                   </div>
                 )}
               </div>
@@ -134,7 +145,12 @@ export function Header({ sesja }: { sesja?: ReactNode }) {
         </div>
       </div>
 
-      <MobileNav open={open} onClose={() => setOpen(false)} sesja={sesja} />
+      <MobileNav
+        open={open}
+        onClose={() => setOpen(false)}
+        sesja={sesja}
+        kontoKlubu={kontoKlubuMobile}
+      />
     </header>
   );
 }
