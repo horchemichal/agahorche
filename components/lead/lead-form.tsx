@@ -1,10 +1,12 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Label, Input, Textarea, Checkbox, FieldError } from "@/components/ui/form-fields";
 import { Button } from "@/components/ui/button";
 import { track } from "@/lib/analytics/track";
+import { SITE } from "@/lib/utils";
 import type { LeadSource, PresentationPreference } from "@/types/lead";
 
 interface Props {
@@ -129,19 +131,45 @@ export function LeadForm({ source, cityLabel }: Props) {
       </div>
 
       <fieldset className="flex flex-col gap-2">
+        {/*
+          ZGODA RODO (4.09.2026). Do dziś stał tu dosłownie tekst „TODO: pełna
+          treść zgody RODO dostarczona przez Agę" — na żywym formularzu, przy
+          polu, które ma znaczenie prawne.
+
+          Krótko, bo pod checkboxem nikt nie czyta trzech akapitów. Całość
+          obowiązku informacyjnego z art. 13 RODO stoi w /polityka-prywatnosci,
+          do której ten tekst linkuje — samo pole zgody bez dostępnej
+          informacji, kto i po co bierze dane, nie wystarcza.
+
+          Nazwa administratora leci z SITE.legalName, żeby nie było jej
+          w serwisie w dwóch miejscach.
+        */}
         <Checkbox
           name="consentProcessing"
           required
           label={
             <>
               Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu i umówienia
-              prezentacji Thermomix. TODO: pełna treść zgody RODO dostarczona przez Agę.
+              prezentacji Thermomix. Administratorem danych jest {SITE.legalName}. Zgodę mogę
+              wycofać w każdej chwili. Szczegóły w{" "}
+              <Link
+                href="/polityka-prywatnosci"
+                className="font-medium text-brand-700 underline underline-offset-2"
+              >
+                Polityce prywatności
+              </Link>
+              .
             </>
           }
         />
+        {/*
+          Dopisek „nie jest to warunek" nie jest grzecznościowy: zgoda
+          marketingowa nie może warunkować skorzystania z usługi, a formularz
+          musi to mówić wprost.
+        */}
         <Checkbox
           name="consentMarketing"
-          label="Chcę otrzymywać informacje marketingowe od Agi Horche (opcjonalnie)."
+          label="Chcę otrzymywać od Agi Horche informacje o promocjach i nowościach Thermomix (opcjonalnie — nie jest to warunek umówienia prezentacji)."
         />
         <FieldError>{errors.consentProcessing}</FieldError>
       </fieldset>
