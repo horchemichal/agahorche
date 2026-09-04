@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getIndexableLocations, resolveLocation } from "@/lib/locations";
-import { buildLocationIntro } from "@/lib/locations/content";
+import { buildLocationIntro, skrocDoOpisu } from "@/lib/locations/content";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { LocationPageTemplate } from "@/components/location/location-page-template";
 import { CityLandingTemplate } from "@/components/location/city-landing-template";
@@ -98,7 +98,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildMetadata({
     title: `Thermomix ${location.name} – bezpłatna prezentacja z Agą`,
-    description: buildLocationIntro(resolution),
+    description: skrocDoOpisu(buildLocationIntro(resolution)),
     path: location.urlPath,
     robots,
   });
