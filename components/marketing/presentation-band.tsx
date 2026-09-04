@@ -28,7 +28,14 @@ export function PresentationBand() {
                 key={step.title}
                 className={cn("flex flex-col items-center text-center", isLastOdd && "col-span-2 sm:col-span-1")}
               >
-                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-neutral-0/10 sm:h-14 sm:w-14">
+                {/*
+                  4.09.2026, prośba Agi: białe kółka, zielone ikonki.
+                  Wcześniej kółko było białe w 10% krycia, a ikona biała —
+                  czyli jasny kształt na ciemnym tle, ledwo widoczny.
+                  Teraz pełna biel i ikona w brand-700: kontrast 5,2:1 na
+                  bieli, więc cienkie kreski ikony naprawdę widać.
+                */}
+                <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-neutral-0 text-brand-700 sm:h-14 sm:w-14">
                   <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </div>
                 <p className="mb-1 flex items-center gap-1.5 text-xs font-semibold text-brand-200">
