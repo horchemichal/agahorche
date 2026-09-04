@@ -9,7 +9,19 @@ export function cn(...inputs: ClassValue[]) {
 /** Site-wide constants that don't belong to any single domain module. */
 export const SITE = {
   name: "Aga Horche",
-  legalName: "TODO: pełna nazwa działalności Agnieszki Horche",
+  /*
+   * Dane firmy podane przez Michała 4.09.2026 — potrzebne do klauzuli RODO
+   * i polityki prywatności (art. 13 RODO wymaga, żeby administratora dało
+   * się zidentyfikować i żeby dało się z nim skontaktować).
+   *
+   * „Aga Horche" to nazwa, pod którą Aga występuje na stronie i w social
+   * mediach; „Agnieszka Piech XD" to firma, na którą prowadzi działalność.
+   * W polityce prywatności musi stać ta druga — dokument prawny wskazuje
+   * przedsiębiorcę, a nie markę.
+   */
+  legalName: "Agnieszka Piech XD",
+  address: "Olchawa 170, 32-720 Nowy Wiśnicz",
+  nip: "868-195-12-31",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://agahorche.pl",
   defaultLocale: "pl_PL",
   phone: "517 185 691",
