@@ -82,6 +82,13 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/blog", priority: 0.6, changeFrequency: "weekly" },
   { path: "/miasta", priority: 0.6, changeFrequency: "weekly" },
   { path: "/wojewodztwa", priority: 0.6, changeFrequency: "weekly" },
+  /*
+   * Polityka prywatności — niski priorytet, bo to nie jest strona, po którą
+   * ktoś przychodzi z wyszukiwarki. W mapie jest mimo to celowo: Google
+   * traktuje jej obecność jako sygnał wiarygodności serwisu zbierającego
+   * dane, a jej brak przy formularzu kontaktowym bywa odczytywany odwrotnie.
+   */
+  { path: "/polityka-prywatnosci", priority: 0.2, changeFrequency: "yearly" },
 ];
 
 /**

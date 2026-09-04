@@ -221,3 +221,90 @@
     }
   }
 }
+
+/* ============================================================
+   AGA CLUB — CIAŚNIEJSZY RYTM PIONOWY (4.09.2026)
+   ============================================================
+   Prośba Michała: „zmniejsz odstępy w każdej podstronie w aga klub".
+
+   Klasa `.klub-kompakt` siedzi na <main> i dokłada ją layout tylko wtedy,
+   gdy ktoś jest zalogowany (patrz app/(site)/layout.tsx). Dzięki temu jedna
+   reguła obejmuje WSZYSTKIE podstrony klubu naraz, zamiast dwudziestu kilku
+   ręcznych `!py-8` przy poszczególnych sekcjach — a strony publiczne
+   (/diety, /przepisy, /poradnik są też publiczne) zachowują swój luźniejszy,
+   „czytelniczy" rytm.
+
+   Selektor `.klub-kompakt section` ma wyższą swoistość niż klasa `.py-14`
+   z Tailwinda, więc wygrywa bez `!important`. Świadome wyjątki zapisane
+   w kodzie jako `!pt-8` czy `!pb-0` nadal wygrywają z tą regułą, bo mają
+   `!important` — i tak ma zostać.
+   ============================================================ */
+.klub-kompakt section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .klub-kompakt section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* ============================================================
+   TREŚĆ PRAWNA (4.09.2026)
+   ============================================================
+   Styl dla polityki prywatności — jedynej strony w serwisie, która jest
+   długim, ciągłym tekstem z nagłówkami i listami, pisanym wprost w JSX.
+   Reszta długich treści (poradnik, blog) idzie przez własny renderer
+   markdown, więc nie ma tu czego współdzielić.
+   ============================================================ */
+.tresc-prawna h2 {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: var(--color-neutral-900);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tresc-prawna h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-neutral-900);
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tresc-prawna p,
+.tresc-prawna ul {
+  color: var(--color-neutral-700);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.tresc-prawna ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.tresc-prawna li {
+  margin-bottom: 0.375rem;
+}
+
+.tresc-prawna a {
+  color: var(--color-brand-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.tresc-prawna code {
+  font-size: 0.875em;
+  background: var(--color-surface);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.35rem;
+}
+
+.tresc-prawna > :first-child {
+  margin-top: 0;
+}
