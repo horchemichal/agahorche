@@ -2,52 +2,88 @@
 
 import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth/require-admin";
-import { getAgaClubMembersRepository } from "@/lib/database/repositories/aga-club-members-repository";
-import { agaClubMemberFormSchema } from "@/lib/validation/aga-club";
+import { zalozKonto, ustawHaslo, usunKonto, listaKont } from "@/lib/admin/konta-klientow";
 import { recordAuditEvent } from "@/lib/admin/actions-helpers";
-import type { FormActionState } from "@/lib/admin/actions-helpers";
 
-export async function addMemberAction(_prevState: FormActionState, formData: FormData): Promise<FormActionState> {
-  const admin = await requireAdmin();
-
-  const parsed = agaClubMemberFormSchema.safeParse({
-    displayName: formData.get("displayName"),
-    email: formData.get("email"),
-    tier: formData.get("tier") || undefined,
-  });
-
-  if (!parsed.success) {
-    return { error: parsed.error.issues[0]?.message ?? "Formularz zawiera błędy." };
-  }
-
-  try {
-    const member = await getAgaClubMembersRepository().create(parsed.data);
-    await recordAuditEvent({
-      actorEmail: admin.email,
-      entityType: "aga-club-member",
-      entityId: member.id,
-      action: "create",
-      summary: `Dodano członka Aga Club „${member.displayName}”`,
-    });
-  } catch (error) {
-    return { error: error instanceof Error ? error.message : "Nie udało się dodać członka." };
-  }
-
-  revalidatePath("/admin/aga-club");
-  return { error: null };
+/**
+ * OŚ PLIKU
+ * Akcje panelu dla kont Strefy Klienta — patrz lib/admin/konta-klientow.ts,
+ * gdzie opisane jest, dlaczego panel przestał obsługiwać `aga_club_members`
+ * i przeszedł na `client_users`.
+ *
+ * STAN FORMULARZA MA WŁASNY KSZTAŁT, nie `FormActionState` z reszty panelu.
+ * Powód: po udanym dodaniu konta musimy oddać do widoku HASŁO, żeby Aga
+ * mogła je przekazać klientce. `FormActionState` niesie wyłącznie błąd,
+ * więc tutaj by nie wystarczył.
+ *
+ * HASŁO W DZIENNIKU ZDARZEŃ NIE LĄDUJE. `recordAuditEvent` zapisuje sam
+ * fakt („ustawiono nowe hasło"), nigdy jego treść — dziennik czyta się
+ * później i nie jest miejscem na hasła.
+ */
+export interface StanKonta {
+  blad: string | null;
+  /** Hasło do jednorazowego pokazania — po odświeżeniu strony znika. */
+  haslo?: string;
+  /** Do czyjego konta odnosi się `haslo` — żeby widok wiedział, gdzie je pokazać. */
+  dlaEmail?: string;
 }
 
-export async function removeMemberAction(id: string): Promise<void> {
+export const PUSTY_STAN: StanKonta = { blad: null };
+
+export async function dodajKontoAction(_prev: StanKonta, formData: FormData): Promise<StanKonta> {
   const admin = await requireAdmin();
-  const repo = getAgaClubMembersRepository();
-  const member = (await repo.list()).find((m) => m.id === id);
-  await repo.remove(id);
+
+  const displayName = String(formData.get("displayName") ?? "");
+  const email = String(formData.get("email") ?? "");
+  const haslo = String(formData.get("haslo") ?? "");
+
+  const wynik = await zalozKonto({ displayName, email, haslo });
+  if (!wynik.ok) return { blad: wynik.blad };
+
   await recordAuditEvent({
     actorEmail: admin.email,
-    entityType: "aga-club-member",
+    entityType: "client-account",
+    entityId: email.trim().toLowerCase(),
+    action: "create",
+    summary: `Założono konto Strefy Klienta dla „${displayName.trim()}”`,
+  });
+
+  revalidatePath("/admin/aga-club");
+  return { blad: null, haslo: wynik.haslo, dlaEmail: email.trim().toLowerCase() };
+}
+
+export async function ustawHasloAction(_prev: StanKonta, formData: FormData): Promise<StanKonta> {
+  const admin = await requireAdmin();
+
+  const id = String(formData.get("id") ?? "");
+  const haslo = String(formData.get("haslo") ?? "");
+  const email = String(formData.get("email") ?? "");
+
+  const wynik = await ustawHaslo(id, haslo);
+  if (!wynik.ok) return { blad: wynik.blad };
+
+  await recordAuditEvent({
+    actorEmail: admin.email,
+    entityType: "client-account",
+    entityId: id,
+    action: "update",
+    summary: `Ustawiono nowe hasło do Strefy Klienta dla ${email}`,
+  });
+
+  revalidatePath("/admin/aga-club");
+  return { blad: null, haslo: wynik.haslo, dlaEmail: email };
+}
+
+export async function usunKontoAction(id: string): Promise<void> {
+  const admin = await requireAdmin();
+  const konto = (await listaKont()).find((k) => k.id === id);
+  await usunKonto(id);
+  await recordAuditEvent({
+    actorEmail: admin.email,
+    entityType: "client-account",
     entityId: id,
     action: "delete",
-    summary: `Usunięto członka Aga Club „${member?.displayName ?? id}”`,
+    summary: `Usunięto konto Strefy Klienta ${konto?.email ?? id}`,
   });
   revalidatePath("/admin/aga-club");
 }

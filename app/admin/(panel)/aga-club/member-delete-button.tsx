@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { ConfirmButton } from "@/components/admin/confirm-button";
 import { useToast } from "@/components/admin/toast";
-import { removeMemberAction } from "./actions";
+import { usunKontoAction } from "./actions";
 
 export function MemberDeleteButton({ id, displayName }: { id: string; displayName: string }) {
   const router = useRouter();
@@ -12,11 +12,11 @@ export function MemberDeleteButton({ id, displayName }: { id: string; displayNam
   return (
     <ConfirmButton
       label="Usuń"
-      title="Usunąć tego członka?"
-      description={`Członek „${displayName}” zostanie trwale usunięty z Aga Club.`}
+      title="Usunąć to konto?"
+      description={`Konto „${displayName}” zostanie trwale usunięte i ta osoba straci dostęp do Strefy Klienta.`}
       onConfirm={async () => {
-        await removeMemberAction(id);
-        showToast("Członek usunięty.", "success");
+        await usunKontoAction(id);
+        showToast("Konto usunięte.", "success");
         router.refresh();
       }}
     />
