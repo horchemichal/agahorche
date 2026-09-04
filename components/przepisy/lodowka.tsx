@@ -95,7 +95,7 @@ export function CoMamWLodowce({ zalogowany = true }: { zalogowany?: boolean }) {
             if (widoczne.length === 0) return null;
             return (
               <div key={grupa}>
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-brand-600">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-brand-700">
                   {grupa}
                 </p>
                 <div className="flex flex-wrap gap-2">
