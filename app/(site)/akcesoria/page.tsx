@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = buildMetadata({
   title: "Akcesoria do Thermomix TM7 — co warto dokupić",
   description:
-    "Akcesoria do Thermomixa TM7: nakładka krojąca, osłona noża, silikonowa forma do Varomy, Thermomix Sensor, motylek i Varoma. Co jest w zestawie, co warto dokupić i do czego naprawdę się przyda.",
+    "Akcesoria do Thermomixa TM7: nakładka krojąca, osłona noża, forma do Varomy, Sensor i motylek. Co jest w zestawie, co warto dokupić i do czego się przyda.",
   path: "/akcesoria",
   keywords: ["akcesoria thermomix tm7", "nakładka krojąca thermomix", "thermomix sensor", "osłona noża thermomix"],
 });
