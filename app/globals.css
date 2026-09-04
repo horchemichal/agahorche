@@ -308,3 +308,34 @@
 .tresc-prawna > :first-child {
   margin-top: 0;
 }
+
+/* ============================================================
+   TRYB APLIKACJI (4.09.2026)
+   ============================================================
+   Prośba Michała: „nie ma się otwierać strona Aga Klub, tylko ma się
+   otwierać aplikacja Aga Klub".
+
+   `display-mode: standalone` jest prawdziwe wyłącznie wtedy, gdy serwis
+   został uruchomiony z ikony na pulpicie — w zwykłej karcie przeglądarki
+   nic z tego się nie dzieje. Dlatego to jedna reguła CSS, bez ani jednej
+   linijki JavaScriptu i bez ryzyka, że coś zniknie komuś na stronie.
+
+   CO ZNIKA: stopka i przyklejony pasek „Zadzwoń / Napisz". Oba są
+   elementami strony sprzedażowej i w aplikacji klubu nie mają czego szukać
+   — zwłaszcza namawianie na kontakt kogoś, kto już jest klientką.
+
+   CO ZOSTAJE, CHOĆ KUSIŁO, ŻEBY UKRYĆ: górna belka z nagłówkiem. Mieszka
+   w niej wyjście z konta („Wyloguj się") i hamburger z całym menu. Aplikacja
+   bez możliwości wylogowania się byłaby pułapką, a nie uproszczeniem.
+   ============================================================ */
+@media (display-mode: standalone) {
+  [data-chrome="marketing"] {
+    display: none;
+  }
+
+  /* Stopka miała `pb-24`, żeby przyklejony pasek nie zasłaniał treści.
+     Bez paska ten zapas jest pustym miejscem na dole każdego ekranu. */
+  main {
+    padding-bottom: 0;
+  }
+}
