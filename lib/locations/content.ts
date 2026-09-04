@@ -54,6 +54,33 @@ function introWojewodztwa(resolution: LocationResolution): string {
   return `Thermomix ${gdzie}. Agnieszka Horche organizuje bezpłatne prezentacje Thermomix TM7 ${gdzie} — stacjonarnie, u Ciebie w domu, w dogodnym dla Ciebie terminie. Najczęściej pracuje w Małopolsce, w okolicach Bochni, Brzeska i Krakowa.${sasiedzi}`;
 }
 
+/**
+ * Skraca dowolny tekst do długości bezpiecznej dla opisu meta.
+ *
+ * DLACZEGO TO ISTNIEJE. `buildLocationIntro()` powstał jako tekst NA STRONĘ
+ * i doklejał pełną listę sąsiednich miejscowości („Aga dojeżdża również
+ * do…”). Ten sam tekst szedł jednak do `description` w metadanych, przez co
+ * opis strony województwa małopolskiego miał 328 znaków — Google urywa
+ * snippet około 160. Audyt z 31.08.2026 wskazał to jako niezrobione.
+ *
+ * Tniemy na granicy zdania, a gdy to nie wychodzi — na granicy słowa,
+ * nigdy w połowie wyrazu. Tekst na stronie zostaje pełny; skracamy
+ * wyłącznie to, co trafia do <meta name="description">.
+ */
+export function skrocDoOpisu(tekst: string, limit = 158): string {
+  const t = tekst.trim();
+  if (t.length <= limit) return t;
+
+  // Najpierw spróbuj uciąć po ostatnim pełnym zdaniu, które się mieści.
+  const doLimitu = t.slice(0, limit + 1);
+  const kropka = Math.max(doLimitu.lastIndexOf(". "), doLimitu.lastIndexOf("? "), doLimitu.lastIndexOf("! "));
+  if (kropka >= Math.floor(limit * 0.6)) return t.slice(0, kropka + 1);
+
+  // Inaczej — ostatnia spacja przed limitem, z wielokropkiem.
+  const spacja = t.slice(0, limit - 1).lastIndexOf(" ");
+  return `${t.slice(0, spacja > 0 ? spacja : limit - 1).replace(/[\s,;:—-]+$/, "")}…`;
+}
+
 export function buildLocationIntro(resolution: LocationResolution): string {
   const { location, wojewodztwo, neighbors } = resolution;
 
