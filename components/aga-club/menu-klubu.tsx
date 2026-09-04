@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { ChefHatIcon, CartIcon, LeafIcon, CalendarIcon, LightningIcon } from "@/components/marketing/icons";
+import { POZYCJE_KLUBU } from "@/data/aga-club/pozycje-klubu";
 
 /**
  * OŚ PLIKU
- * Mini-menu Aga Club na pulpicie Strefy Klienta — pięć rzeczy, które
- * klientka dostaje po zalogowaniu, w jednym miejscu.
+ * Kafelki „Co masz w klubie" na pulpicie Strefy Klienta — te same rzeczy
+ * co w pasku klubu, ale z jednym zdaniem wyjaśnienia przy każdej.
  *
  * PO CO (prośba Michała, 4.09.2026: „po zalogowaniu niech będzie
  * wyświetlone mini menu w panelu"). Do tej pory pulpit pokazywał wyłącznie
@@ -12,50 +12,21 @@ import { ChefHatIcon, CartIcon, LeafIcon, CalendarIcon, LightningIcon } from "@/
  * osiągalna tylko przez górne menu serwisu, więc po zalogowaniu klientka
  * lądowała na stronie, która nie mówiła jej, co jeszcze dostała.
  *
- * DLACZEGO NIE CZYTAM TEGO Z AGA_CLUB_FEATURES. Tamta lista opisuje
- * kafelki na PUBLICZNEJ stronie klubu i ma inne zadanie: zachęcić kogoś,
- * kto jeszcze nie ma konta. Tutaj mówimy do osoby, która już weszła —
- * krótko i bez sprzedaży. Wspólny plik oszczędziłby pięciu linijek,
- * a związałby ze sobą dwa teksty, które mają się różnić.
+ * DLACZEGO ZOSTAJE, SKORO JEST JUŻ PASEK. Pasek to nawigacja: sześć
+ * skrótów, żadnego wyjaśnienia — dobry, gdy już wiesz, dokąd idziesz.
+ * Pulpit jest miejscem, w którym klientka ląduje zaraz po zalogowaniu
+ * i gdzie pyta „co ja tu właściwie mam". Na to pytanie odpowiada zdanie
+ * pod nazwą, nie skrót w pasku.
+ *
+ * „Mój pulpit" wypada z kafelków: to jest właśnie ta strona.
  */
-const POZYCJE = [
-  {
-    href: "/diety",
-    ikona: LeafIcon,
-    tytul: "Diety",
-    opis: "Pełne jadłospisy 7 i 14 dni z listą zakupów.",
-  },
-  {
-    href: "/przepisy",
-    ikona: ChefHatIcon,
-    tytul: "Co ugotować dzisiaj?",
-    opis: "Powiedz, ile masz czasu — pokażę pasujące dania.",
-  },
-  {
-    href: "/przepisy/co-mam-w-lodowce",
-    ikona: CartIcon,
-    tytul: "Co mam w lodówce?",
-    opis: "Zaznacz produkty, zobacz, co da się z nich zrobić.",
-  },
-  {
-    href: "/poradnik",
-    ikona: LightningIcon,
-    tytul: "Poradnik kuchenny",
-    opis: "Kuchenne pytania i wpadki — krótkie odpowiedzi.",
-  },
-  {
-    href: "/aga-club/30-dni-z-aga",
-    ikona: CalendarIcon,
-    tytul: "30 dni z Thermomixem",
-    opis: "Trzydzieści zadań, po jednym dziennie.",
-  },
-] as const;
-
 export function MenuKlubu() {
+  const pozycje = POZYCJE_KLUBU.filter((p) => p.href !== "/strefa-klienta");
+
   return (
     <nav aria-label="Aga Club — co masz w klubie">
       <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {POZYCJE.map(({ href, ikona: Ikona, tytul, opis }) => (
+        {pozycje.map(({ href, ikona: Ikona, tytul, opis }) => (
           <li key={href}>
             <Link
               href={href}
