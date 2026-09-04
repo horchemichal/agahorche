@@ -5,8 +5,6 @@ import { DISTRICT_CONTENT } from "@/data/locations/districts";
 import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { getPagesRepository } from "@/lib/database/repositories/pages-repository";
 import { getSeoSettingsRepository } from "@/lib/database/repositories/seo-settings-repository";
-import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repository";
-import { DZIALY_PORADNIKA } from "@/types/poradnik";
 
 /**
  * Dynamic sitemap (spec §27, Aga Admin §12). Composed from four sources —
@@ -108,11 +106,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const now = new Date();
 
-  const [indexableLocations, publishedPosts, publishedPages, wpisyPoradnika] = await Promise.all([
+  const [indexableLocations, publishedPosts, publishedPages] = await Promise.all([
     getIndexableLocations(),
     getBlogRepository().listPublished(),
     getPagesRepository().list(),
-    pobierzWpisyPoradnika(),
   ]);
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
@@ -161,40 +158,26 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.4,
     }));
 
-  /**
-   * PORADNIK — 8 działów i wszystkie opublikowane wpisy.
+  /*
+   * PORADNIK POZA SITEMAPĄ (4.09.2026, po południu).
    *
-   * DLACZEGO TO TU DOSZŁO (4.09.2026). W sitemapie stał sam `/poradnik`.
-   * Kontrola na produkcji pokazała 254 adresy, z czego dokładnie JEDEN
-   * z poradnika — a poradnik to w tym momencie 123 opublikowane wpisy
-   * i 8 stron działów. Sto trzydzieści adresów z realną treścią było dla
-   * Google odkrywalne wyłącznie przez linki wewnętrzne.
+   * Rano dołożyłem tu 8 stron działów i 123 wpisy — sitemapa miała
+   * z poradnika dokładnie jeden adres, a treść była dla Google
+   * odkrywalna wyłącznie przez linki wewnętrzne.
    *
-   * Puste działy (czyszczenie, triki na czas — czekają na treść Agi) nie
-   * trafiają do sitemapy: strona działu bez wpisów to obietnica bez
-   * pokrycia i sami byśmy ją zgłaszali do indeksu.
+   * Po południu Aga zdecydowała, że poradnik jest częścią Aga Club
+   * i „dalej niż /poradnik nie można wejść" bez logowania. Strony działów
+   * i wpisów przekierowują teraz gościa na /poradnik — patrz
+   * app/(site)/poradnik/[dzial]/page.tsx.
    *
-   * `lastModified` bierzemy z `updatedAt` wpisu, więc kiedy Aga poprawi
-   * wpis w panelu, sitemapa powie o tym prawdę — inaczej niż stałe daty
-   * przy trasach statycznych.
+   * Adres, który dla Googlebota jest przekierowaniem, nie ma czego szukać
+   * w sitemapie: zgłaszalibyśmy do indeksu 131 stron, których robot i tak
+   * nie przeczyta. Zostaje sam `/poradnik` (w `staticEntries` wyżej) —
+   * ta strona dalej ma treść: wstęp, nazwy działów, opisy i liczby wpisów.
+   *
+   * Gdyby poradnik kiedyś wrócił do publicznego dostępu, wystarczy
+   * przywrócić te dwie listy z historii tego pliku.
    */
-  const wpisyOpublikowane = wpisyPoradnika.filter((w) => w.tresc.trim() !== "");
-
-  const poradnikDzialy: MetadataRoute.Sitemap = DZIALY_PORADNIKA.filter((d) =>
-    wpisyOpublikowane.some((w) => w.dzial === d.slug),
-  ).map((d) => ({
-    url: `${SITE.url}/poradnik/${d.slug}`,
-    lastModified: TRESC_ZAKTUALIZOWANA,
-    changeFrequency: "weekly" as const,
-    priority: 0.5,
-  }));
-
-  const poradnikWpisy: MetadataRoute.Sitemap = wpisyOpublikowane.map((w) => ({
-    url: `${SITE.url}/poradnik/${w.dzial}/${w.slug}`,
-    lastModified: toSitemapDate(w.updatedAt, now),
-    changeFrequency: "monthly" as const,
-    priority: 0.4,
-  }));
 
   return [
     ...staticEntries,
@@ -202,7 +185,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...districtEntries,
     ...blogEntries,
     ...pageEntries,
-    ...poradnikDzialy,
-    ...poradnikWpisy,
   ];
 }
