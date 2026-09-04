@@ -36,3 +36,59 @@ export function absoluteUrl(path: string): string {
   const normalized = path.startsWith("/") ? path : `/${path}`;
   return `${SITE.url}${normalized}`;
 }
+
+/**
+ * NORMALIZACJA DAT Z BAZY — wspólna dla sitemapy i danych strukturalnych.
+ *
+ * Repozytoria zwracają `updatedAt` jako `string`, dokładnie tak, jak wypluwa
+ * go sterownik Postgresa:
+ *
+ *     2026-08-25 15:51:41.548993+00
+ *
+ * To nie jest ISO 8601 — spacja zamiast „T” i offset „+00” zamiast „+00:00”.
+ * W sierpniu 2026 taki string szedł wprost do <lastmod> i Search Console
+ * zaraportowało „Nieprawidłowa data” dla 43 z 96 adresów. Poprawka wylądowała
+ * wtedy w app/sitemap.ts jako funkcja prywatna dla tego jednego pliku.
+ *
+ * 4.09.2026 okazało się, że ta sama surowa wartość leci też do
+ * `datePublished`/`dateModified` w schemacie Article na wpisach bloga —
+ * błąd żył dalej, tylko w innym miejscu. Dlatego normalizacja stoi tutaj,
+ * w module bazowym, i jest wspólna dla wszystkiego, co podaje daty na zewnątrz.
+ *
+ * Dlaczego nie w repozytoriach: `updatedAt: string` jest publiczną częścią
+ * typów, a panel admina wyświetla te wartości jako tekst.
+ */
+/**
+ * Zamienia wartość dowolnego pochodzenia na `Date`, albo `null`, gdy nie da
+ * się jej sensownie odczytać. Nigdy nie rzuca.
+ */
+export function normalizujDate(value: unknown): Date | null {
+  if (value instanceof Date) {
+    return Number.isNaN(value.getTime()) ? null : value;
+  }
+  if (typeof value !== "string") return null;
+
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+
+  // "2026-08-25 15:51:41…" → "2026-08-25T15:51:41…"
+  let normalized = trimmed.replace(/^(\d{4}-\d{2}-\d{2}) /, "$1T");
+  // "…+00" → "…+00:00", ale tylko gdy jest część czasowa — inaczej samo
+  // "2026-08-25" zamieniłoby się w "2026-08-25:00" i przestałoby się parsować.
+  if (normalized.includes("T")) {
+    normalized = normalized.replace(/([+-]\d{2})$/, "$1:00");
+  }
+
+  const parsed = new Date(normalized);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+/**
+ * Data w ISO 8601 do JSON-LD, albo `undefined` — pole, którego nie da się
+ * odczytać, ma zniknąć ze schematu, a nie pojawić się w nim jako śmieć.
+ * Schema.org traktuje brak pola jako brak informacji; nieparsowalną wartość
+ * traktuje jako błąd struktury.
+ */
+export function doIso8601(value: unknown): string | undefined {
+  return normalizujDate(value)?.toISOString();
+}
