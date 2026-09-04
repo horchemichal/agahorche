@@ -4,7 +4,7 @@ import { kontoZTokenu } from "@/lib/auth/reset-hasla";
 import { FormularzNowegoHasla } from "../formularze";
 
 export const metadata: Metadata = {
-  title: "Ustaw nowe hasło — Strefa Klienta | Aga Horche",
+  title: "Ustaw nowe hasło — Strefa Klienta",
   robots: { index: false, follow: false },
 };
 
