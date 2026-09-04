@@ -13,6 +13,8 @@ import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repo
 import { getRecipe } from "@/data/diets/recipes";
 import { PRZEPISY_META } from "@/data/diets/przepisy-meta";
 import { czasSlownie } from "@/lib/przepisy/grupy";
+import { articleSchema, webPageSchema } from "@/lib/seo/schema";
+import { JsonLdScript } from "@/components/seo/json-ld";
 
 interface Props {
   params: Promise<{ dzial: string; slug: string }>;
@@ -59,6 +61,32 @@ export default async function WpisPage({ params }: Props) {
 
   return (
     <>
+      {/*
+        Dane strukturalne wpisu. Do 4.09.2026 wpisy poradnika miały wyłącznie
+        BreadcrumbList (doklejany przez <Breadcrumbs>) — czyli 123 strony
+        z realnym tekstem nie mówiły Google'owi, że są artykułami, kto jest
+        autorem ani kiedy powstały.
+
+        Daty idą z bazy przez `articleSchema`, które normalizuje je do ISO
+        8601 — surowy string z Postgresa nie jest poprawną datą i wywalał
+        już raz sitemapę (patrz lib/seo/daty.ts).
+      */}
+      <JsonLdScript
+        data={[
+          webPageSchema({
+            path: `/poradnik/${d.slug}/${wpis.slug}`,
+            name: wpis.tytul,
+            description: wpis.lead,
+          }),
+          articleSchema({
+            path: `/poradnik/${d.slug}/${wpis.slug}`,
+            title: wpis.tytul,
+            description: wpis.lead,
+            publishedAt: wpis.createdAt,
+            updatedAt: wpis.updatedAt,
+          }),
+        ]}
+      />
       <Section>
         <Breadcrumbs
           items={[
