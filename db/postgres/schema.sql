@@ -370,6 +370,36 @@ create table if not exists client_users (
 create index if not exists client_users_email_idx on client_users (lower(email));
 
 -- ============================================================
+-- RESET HASŁA W STREFIE KLIENTA (4 września 2026)
+-- ============================================================
+-- Powstało, gdy zaczęła działać wysyłka maili. Wcześniej samoobsługowy
+-- reset był niemożliwy: skrzynka Interii odrzucała logowanie z zewnątrz,
+-- więc strona logowania mówiła wprost „napisz do Agi, ustawi Ci nowe".
+--
+-- `token_hash` to sha256 tokena z linku, NIE sam token. Gdyby kiedyś ktoś
+-- zobaczył zawartość tej tabeli (kopia zapasowa, wyciek), mając same
+-- skróty nie ustawi nikomu hasła. Ten sam powód, dla którego w
+-- client_users leży bcrypt, a nie hasło.
+--
+-- `used_at` zamiast kasowania wiersza: zostaje ślad, że z linku
+-- skorzystano i kiedy. Kasowanie zacierałoby różnicę między „użyty"
+-- a „nigdy nie istniał".
+--
+-- on delete cascade — usunięcie konta klientki zabiera ze sobą jej
+-- niewykorzystane linki. Bez tego token przeżyłby konto.
+
+create table if not exists client_password_resets (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references client_users (id) on delete cascade,
+  token_hash text not null unique,
+  expires_at timestamptz not null,
+  used_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists client_password_resets_user_idx on client_password_resets (user_id);
+
+-- ============================================================
 -- USTAWIENIA FINANSOWANIA (1 września 2026)
 -- ============================================================
 -- Jeden wiersz, jak seo_settings. Powstało, bo raty 0% to promocja
