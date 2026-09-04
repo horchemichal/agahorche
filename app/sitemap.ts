@@ -1,11 +1,10 @@
 import type { MetadataRoute } from "next";
-import { SITE } from "@/lib/utils";
+import { SITE, normalizujDate } from "@/lib/utils";
 import { getIndexableLocations } from "@/lib/locations";
 import { DISTRICT_CONTENT } from "@/data/locations/districts";
 import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { getPagesRepository } from "@/lib/database/repositories/pages-repository";
 import { getSeoSettingsRepository } from "@/lib/database/repositories/seo-settings-repository";
-import { normalizujDate } from "@/lib/seo/daty";
 import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repository";
 import { DZIALY_PORADNIKA } from "@/types/poradnik";
 
@@ -94,7 +93,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
  * "Nieprawidłowa data" dla 43 z 96 adresów (28.08.2026) — spacja zamiast "T"
  * i offset "+00" zamiast "+00:00".
  *
- * Sama normalizacja mieszka w lib/seo/daty.ts — od 4.09.2026 dzieli ją
+ * Sama normalizacja mieszka w lib/utils.ts — od 4.09.2026 dzieli ją
  * z schematem Article, w którym ten sam surowy string powodował ten sam
  * błąd. Tutaj zostaje wyłącznie decyzja, co zrobić z datą nieparsowalną:
  * podać datę budowania, a nie wysłać Google'owi śmiecia.
