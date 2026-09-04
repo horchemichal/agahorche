@@ -2,7 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { POZYCJE_KLUBU, czyTrasaKlubu, aktywnaPozycja } from "@/data/aga-club/pozycje-klubu";
+import {
+  POZYCJE_KLUBU,
+  czyTrasaKlubu,
+  aktywnaPozycja,
+} from "@/data/aga-club/pozycje-klubu";
+import { useZainstalowanaAplikacja } from "@/lib/pwa/tryb-aplikacji";
 import { cn } from "@/lib/utils";
 
 /**
@@ -42,6 +47,13 @@ import { cn } from "@/lib/utils";
 export function PasekKlubuNawigacja() {
   const sciezka = usePathname();
 
+  /*
+   * Gdy serwis chodzi już jako zainstalowana aplikacja, z paska znika
+   * „Pobierz aplikację" — namawianie do instalacji kogoś, kto właśnie
+   * korzysta z zainstalowanej aplikacji, wygląda jak usterka.
+   */
+  const jakoAplikacja = useZainstalowanaAplikacja();
+
   // Poza klubem paska nie ma. Zalogowana klientka czytająca np. /o-mnie
   // jest w zwykłej części serwisu i nie potrzebuje tam nawigacji klubu.
   if (!czyTrasaKlubu(sciezka)) return null;
@@ -55,7 +67,9 @@ export function PasekKlubuNawigacja() {
           <li className="px-1 py-1 text-xs font-semibold uppercase tracking-wide text-brand-700 sm:px-2 sm:py-0">
             Aga Club
           </li>
-          {POZYCJE_KLUBU.map(({ href, ikona: Ikona, tytul, krotki }) => {
+          {POZYCJE_KLUBU.filter(
+            (p) => !(p.tylkoWPrzegladarce && jakoAplikacja),
+          ).map(({ href, ikona: Ikona, tytul, krotki }) => {
             const aktywna = biezaca?.href === href;
             return (
               <li key={href}>

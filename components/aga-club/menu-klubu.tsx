@@ -18,15 +18,16 @@ import { POZYCJE_KLUBU } from "@/data/aga-club/pozycje-klubu";
  * i gdzie pyta „co ja tu właściwie mam". Na to pytanie odpowiada zdanie
  * pod nazwą, nie skrót w pasku.
  *
- * „Mój pulpit" wypada z kafelków: to jest właśnie ta strona.
+ * 4.09.2026: zniknął stąd filtr odsiewający „Mój pulpit" — ta pozycja nie
+ * istnieje już w POZYCJE_KLUBU wcale (Michał usunął ją ze wszystkich menu),
+ * więc filtr nie odsiewał niczego. Warunek, który nigdy nie jest prawdziwy,
+ * przy następnym czytaniu tego pliku sugerowałby, że coś tu jest ukrywane.
  */
 export function MenuKlubu() {
-  const pozycje = POZYCJE_KLUBU.filter((p) => p.href !== "/strefa-klienta");
-
   return (
     <nav aria-label="Aga Club — co masz w klubie">
       <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {pozycje.map(({ href, ikona: Ikona, tytul, opis }) => (
+        {POZYCJE_KLUBU.map(({ href, ikona: Ikona, tytul, opis }) => (
           <li key={href}>
             <Link
               href={href}
