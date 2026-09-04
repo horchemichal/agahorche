@@ -1,11 +1,22 @@
 import type { AgaClubFeatureFlags } from "@/types/aga-club";
 
 /**
- * Feature flags for Aga Club (spec §16). Every module described in the
- * spec exists as a routed, designed placeholder (see
- * /components/aga-club) but ships DISABLED — no fake AI responses, no
- * fabricated recipe data — until each is built with real logic in its own
- * scoped task (spec §48: "Zbuduj AI Meal Planner." etc.).
+ * Feature flags for Aga Club (spec §16). Mechanizm istnieje po to, żeby
+ * moduł mógł trafić na produkcję wyłączony, zamiast udawać, że działa
+ * (spec §34: funkcji AI nie wolno symulować).
+ *
+ * 4.09.2026 — na prośbę Agi zniknęły trzy kafelki „Wkrótce": Tryb Mama,
+ * Plan tygodnia i Aga AI. Powód jest prosty: zapowiedź, pod którą nic nie
+ * ma, przez pół roku wygląda tak samo jak zapowiedź, o której zapomniano.
+ * Klub pokazuje teraz tylko to, co da się kliknąć i użyć. Gdy któryś
+ * z tych modułów naprawdę powstanie, wraca tu jako wpis z flagą — razem
+ * ze swoją stroną.
+ *
+ * Usunięte razem z kafelkami:
+ * - /aga-club/plan-tygodnia i /aga-club/aga-ai — puste strony „Wkrótce",
+ *   nigdy nie było ich w mapie strony, więc Google ich nie zna
+ * - /aga-club/tryb-mama — kafelek prowadził pod ten adres, ale strony
+ *   pod nim nigdy nie było; link dawał 404
  */
 export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
   // 4.09.2026: obie funkcje ISTNIEJĄ i działają od 1.09 — tylko pod innymi
@@ -13,12 +24,9 @@ export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
   // jako „Wkrótce", choć wystarczyło wskazać właściwy adres.
   coDzisUgotowac: true,
   mojaLodowka: true,
-  trybMama: false,
-  planTygodnia: false,
   // 1.09.2026: moduł ma treść (30 dni) i działa — patrz
   // app/(site)/aga-club/30-dni-z-aga/page.tsx.
   trzydziesciDniZAga: true,
-  agaAi: false,
 };
 
 export interface AgaClubFeatureCopy {
@@ -64,29 +72,11 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
     href: "/poradnik",
   },
   {
-    key: "trybMama",
-    title: "Tryb Mama",
-    description: "Plan śniadania, obiadu i kolacji dopasowany do rodziny, czasu i budżetu.",
-    href: "/aga-club/tryb-mama",
-  },
-  {
-    key: "planTygodnia",
-    title: "Plan tygodnia",
-    description: "Cały tydzień posiłków i lista zakupów wygenerowana w kilka chwil.",
-    href: "/aga-club/plan-tygodnia",
-  },
-  {
     key: "trzydziesciDniZAga",
     title: "30 dni z Thermomixem",
     // Opis poprawiony 1.09.2026: wcześniej obiecywał „odznaki za postępy”,
     // których moduł nie ma i mieć nie będzie. Jest pasek postępu i odhaczanie.
     description: "Trzydzieści dni, trzydzieści zadań — od pierwszego koktajlu po własny repertuar dań.",
     href: "/aga-club/30-dni-z-aga",
-  },
-  {
-    key: "agaAi",
-    title: "Aga AI",
-    description: "Zadaj pytanie o gotowanie z Thermomixem i dostań odpowiedź od razu.",
-    href: "/aga-club/aga-ai",
   },
 ];
