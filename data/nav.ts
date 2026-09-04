@@ -71,6 +71,15 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Akcesoria", href: "/akcesoria" },
     ],
   },
+  // RATY ZARAZ PO CENIE (prośba Agi, 4.09.2026). Wcześniej „Raty 0%" stały
+  // za „Aga Club", czyli po treściach dla klientek — a to jest pozycja
+  // zakupowa: kto patrzy na cenę, w następnej sekundzie pyta o raty.
+  // Wskazuje na /finansowanie — pełna strona „Thermomix na raty 0%” z tym
+  // samym kalkulatorem co na stronie głównej (ten sam komponent, ta sama
+  // cena z bazy — nie druga kopia wyliczeń) plus FAQ i treść pod frazy
+  // „thermomix raty 0”. Kotwica /#kalkulator-rat nie mogła rankować
+  // samodzielnie, bo nie jest osobnym adresem.
+  { label: "Raty 0%", href: "/finansowanie" },
   {
     label: "Diety Thermomix",
     href: "/diety",
@@ -104,12 +113,6 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "30 dni z Thermomixem", href: "/aga-club/30-dni-z-aga" },
     ],
   },
-  // Wskazuje na /finansowanie — od sierpnia 2026 to pełna strona „Thermomix
-  // na raty 0%” z tym samym kalkulatorem co na stronie głównej (ten sam
-  // komponent, ta sama cena z bazy — nie druga kopia wyliczeń) plus FAQ i
-  // treść pod frazy „thermomix raty 0”. Kotwica /#kalkulator-rat nie mogła
-  // rankować samodzielnie, bo nie jest osobnym adresem.
-  { label: "Raty 0%", href: "/finansowanie" },
   {
     label: "Kontakt",
     href: "/kontakt",
