@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getCurrentClient } from "@/lib/auth/client-auth";
 import { getDietPlan, DIET_CATEGORIES } from "@/data/diets/categories";
 import { DietPlanPreview } from "@/components/diets/diet-plan-preview";
+import { pobierzDzienPlanu } from "@/lib/diets/postep";
 import { Section } from "@/components/ui/section";
 import { Heading, Eyebrow } from "@/components/ui/heading";
 
@@ -25,6 +26,18 @@ export default async function ClientPlanPage({ params }: PageProps<"/strefa-klie
 
   const category = DIET_CATEGORIES.find((c) => c.id === plan.categoryId);
 
+  /*
+   * Dzień, na którym klientka skończyła ostatnim razem (prośba Michała,
+   * 4.09.2026). Czytamy go TUTAJ, na serwerze, a nie w komponencie po
+   * zamontowaniu — inaczej plan mrugnąłby Dniem 1, zanim przeskoczyłby na
+   * piąty. Gdy nic nie zapisano albo zapisany dzień wypadł z planu (np.
+   * ktoś miał 12. dzień planu 14-dniowego, a otwiera wariant 7-dniowy),
+   * zostaje Dzień 1.
+   */
+  const zapisanyDzien = await pobierzDzienPlanu(client.id, plan.id);
+  const poczatkowyDzien =
+    zapisanyDzien && plan.days.some((d) => d.dayNumber === zapisanyDzien) ? zapisanyDzien : 1;
+
   return (
     <>
       <Section className="!pb-0">
@@ -37,7 +50,7 @@ export default async function ClientPlanPage({ params }: PageProps<"/strefa-klie
         </Heading>
       </Section>
       <Section>
-        <DietPlanPreview plan={plan} forceUnlocked />
+        <DietPlanPreview plan={plan} forceUnlocked poczatkowyDzien={poczatkowyDzien} zapamietujDzien />
       </Section>
     </>
   );
