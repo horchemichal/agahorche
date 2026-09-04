@@ -14,7 +14,7 @@ import { Photo, CheckList, Prose, CtaBand, LocalBand } from "@/components/market
 export const metadata: Metadata = buildMetadata({
   title: "O mnie — Aga Horche, przedstawicielka Thermomix",
   description:
-    "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce i mama dwójki dzieci. Jak pracuję, czego możesz się po mnie spodziewać przed zakupem i po nim oraz gdzie prowadzę prezentacje.",
+    "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce. Jak pracuję, czego możesz się spodziewać przed zakupem i po nim, gdzie prowadzę prezentacje.",
   path: "/o-mnie",
   keywords: ["aga horche", "przedstawiciel thermomix małopolska", "przedstawiciel thermomix bochnia"],
   ogImage: "/media/aga-przedstawiciel-thermomix-e08f7154.webp",
