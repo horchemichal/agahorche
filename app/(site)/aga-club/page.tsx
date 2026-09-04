@@ -6,6 +6,8 @@ import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
 import { ButtonLink } from "@/components/ui/button";
 import { FeatureCard } from "@/components/aga-club/feature-card";
 import { AGA_CLUB_FEATURES, AGA_CLUB_FEATURE_FLAGS } from "@/data/aga-club/features";
+import { InstalacjaAplikacji } from "@/components/pwa/instalacja-aplikacji";
+import { getCurrentClient } from "@/lib/auth/client-auth";
 
 export const metadata: Metadata = buildMetadata({
   title: "Aga Club — społeczność wokół gotowania z Thermomixem",
@@ -26,7 +28,9 @@ export const metadata: Metadata = buildMetadata({
  * dokładnie te dwie rzeczy, których na stronie nie ma. Teraz wymienia to,
  * co da się kliknąć.
  */
-export default function AgaClubPage() {
+export default async function AgaClubPage() {
+  const zalogowana = Boolean(await getCurrentClient());
+
   return (
     <>
       <Section className="!pb-0">
@@ -77,6 +81,24 @@ export default function AgaClubPage() {
           osobie wchodzącej na stronę.
         */}
       </Section>
+
+      {/*
+        POBIERANIE APLIKACJI — TYLKO PO ZALOGOWANIU (prośba Michała,
+        4.09.2026: „aplikacja niech będzie do pobrania na stronie aga klub
+        po zalogowaniu").
+
+        Osoba bez konta nie zobaczy tu nic. To celowe: aplikacja otwiera się
+        na Strefie Klienta, więc bez konta prowadziłaby prosto na ekran
+        logowania — instalowanie jej byłoby wtedy zawodem, a nie korzyścią.
+
+        `id="aplikacja"` jest kotwicą dla pozycji „Pobierz aplikację"
+        w pasku klubu (data/aga-club/pozycje-klubu.ts).
+      */}
+      {zalogowana && (
+        <Section id="aplikacja" className="scroll-mt-24">
+          <InstalacjaAplikacji />
+        </Section>
+      )}
     </>
   );
 }
