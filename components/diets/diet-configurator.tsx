@@ -195,7 +195,7 @@ export function DietConfigurator({
   return (
     <>
     <div className="rounded-2xl border border-border bg-neutral-0 p-6 shadow-[var(--shadow-card)] md:p-8">
-      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand-600">Konfigurator diet</p>
+      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand-700">Konfigurator diet</p>
       <h3 className="mb-6 font-display text-xl text-neutral-900 md:text-2xl">Skonfiguruj swoją dietę</h3>
 
       <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr]">
