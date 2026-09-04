@@ -98,8 +98,24 @@ export function MobileNav({
                       </li>
                     ))}
 
-                    {/* Wejście do konta — tylko pod „Aga Club", patrz klub-konto-link.tsx. */}
-                    {item.href === "/aga-club" && kontoKlubu && <li>{kontoKlubu}</li>}
+                    {/*
+                      Wejście do konta — tylko pod „Aga Club", patrz
+                      klub-konto-link.tsx.
+
+                      onClick NA <li>, A NIE NA LINKU. To jest komponent
+                      serwerowy wstawiony w slot, więc nie da się przekazać
+                      mu `onClose` jako propsa. Bez tego menu zostawało
+                      otwarte po kliknięciu i przykrywało stronę, na którą
+                      się właśnie przeszło — wyglądało to dokładnie tak,
+                      jakby link nie działał (zgłoszenie Michała, 4.09.2026:
+                      „na telefonie rozwijam menu i nie mogę kliknąć zaloguj
+                      się"). Zdarzenie łapiemy więc na rodzicu, gdzie już
+                      jesteśmy w komponencie klienckim. Działa i dla linku,
+                      i dla przycisku „Wyloguj się".
+                    */}
+                    {item.href === "/aga-club" && kontoKlubu && (
+                      <li onClick={onClose}>{kontoKlubu}</li>
+                    )}
                   </ul>
                 )}
               </li>
@@ -119,7 +135,10 @@ export function MobileNav({
           telefonie „Wyloguj się" nie byłoby widać wcale.
         */}
         {sesja && (
-          <div className="mt-4 flex items-center justify-between gap-3 rounded-lg bg-neutral-900 px-4 py-3 text-xs text-neutral-0">
+          <div
+            onClick={onClose}
+            className="mt-4 flex items-center justify-between gap-3 rounded-lg bg-neutral-900 px-4 py-3 text-xs text-neutral-0"
+          >
             {sesja}
           </div>
         )}

@@ -72,10 +72,26 @@ export function Header({
 
       <div className="border-b border-border bg-neutral-0/95 backdrop-blur">
         <div className="container-page flex h-16 items-center justify-between md:h-20">
-          <Link href="/" className="leading-tight">
-            <span className="block font-display text-xl font-semibold text-neutral-900">Aga Horche</span>
+          {/*
+            LOGO ZAWSZE WRACA NA GÓRĘ STRONY GŁÓWNEJ (prośba Michała,
+            4.09.2026). Sam <Link href="/"> tego nie robił w jednym
+            przypadku: gdy ktoś JEST już na stronie głównej i przewinął
+            w dół, kliknięcie w logo nie przeładowuje trasy, więc widok
+            zostawał w miejscu. Stąd jawne przewinięcie na górę i zamknięcie
+            menu mobilnego — bo z telefonu w logo klika się właśnie po to,
+            żeby wrócić na początek.
+          */}
+          <Link
+            href="/"
+            onClick={() => {
+              setOpen(false);
+              if (pathname === "/") window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="leading-tight"
+          >
+            <span className="block font-display text-xl font-semibold text-neutral-900">Agnieszka</span>
             <span className="block text-[0.65rem] uppercase tracking-wide text-muted">
-              Oficjalna Przedstawicielka Thermomix®
+              Oficjalny Przedstawiciel Thermomix®
             </span>
           </Link>
 
