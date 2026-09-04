@@ -68,10 +68,21 @@ export function Footer() {
               </a>
             </p>
           </div>
-          <p className="text-xs">
-            Thermomix® jest zarejestrowanym znakiem towarowym Vorwerk. Ta strona nie jest oficjalną
-            stroną Vorwerk.
-          </p>
+          <div className="flex flex-col gap-2 md:items-end">
+            {/*
+              Link do polityki prywatności (4.09.2026). Musi być dostępny
+              z każdej strony: formularz zbiera dane osobowe, a obowiązek
+              informacyjny z art. 13 RODO spełnia się przez treść, do której
+              da się dojść — nie przez samo zaznaczenie checkboxa.
+            */}
+            <Link href="/polityka-prywatnosci" className="text-sm text-neutral-400 hover:text-brand-300">
+              Polityka prywatności
+            </Link>
+            <p className="text-xs">
+              Thermomix® jest zarejestrowanym znakiem towarowym Vorwerk. Ta strona nie jest oficjalną
+              stroną Vorwerk.
+            </p>
+          </div>
         </div>
       </Container>
     </footer>
