@@ -75,12 +75,6 @@ export const PRIMARY_NAV: NavItem[] = [
     label: "Diety Thermomix",
     href: "/diety",
     children: [
-      // Wyszukiwarka „Co ugotować dzisiaj?" (1.09.2026). Trafia do menu diet,
-      // a nie osobnej pozycji w pasku, bo to ta sama baza przepisów widziana
-      // od strony jednego posiłku zamiast całego tygodnia.
-      { label: "Co ugotować dzisiaj?", href: "/przepisy" },
-      { label: "Co mam w lodówce?", href: "/przepisy/co-mam-w-lodowce" },
-      { label: "Poradnik kuchenny", href: "/poradnik" },
       { label: "Keto", href: "/diety/keto" },
       { label: "Wegetariańska", href: "/diety/wegetarianska" },
       { label: "Odchudzająca", href: "/diety/odchudzajaca" },
@@ -91,6 +85,23 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Dla dzieci", href: "/diety/dla-dzieci" },
       { label: "Kobiety karmiące", href: "/diety/kobiety-karmiace" },
       { label: "Rozszerzanie diety niemowląt", href: "/diety/niemowleta" },
+    ],
+  },
+  // AGA CLUB w pasku (4.09.2026). Wcześniej klub istniał tylko jako kafelek
+  // w stopce, a jego trzy działające narzędzia — wyszukiwarka przepisów,
+  // „Co mam w lodówce?" i poradnik — wisiały w menu diet. Z punktu widzenia
+  // klientki to jedna rzecz: to, co dostaje po zakupie. Adresy zostają bez
+  // zmian (/przepisy, /poradnik) — są zaindeksowane i nie ma powodu ich
+  // przenosić tylko po to, żeby pasowały do pozycji w menu.
+  {
+    label: "Aga Club",
+    href: "/aga-club",
+    children: [
+      { label: "Co jest w klubie", href: "/aga-club" },
+      { label: "Co ugotować dzisiaj?", href: "/przepisy" },
+      { label: "Co mam w lodówce?", href: "/przepisy/co-mam-w-lodowce" },
+      { label: "Poradnik kuchenny", href: "/poradnik" },
+      { label: "30 dni z Thermomixem", href: "/aga-club/30-dni-z-aga" },
     ],
   },
   // Wskazuje na /finansowanie — od sierpnia 2026 to pełna strona „Thermomix
