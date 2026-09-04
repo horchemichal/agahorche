@@ -79,7 +79,7 @@ export function InstallmentCalculator({
 
   return (
     <div className="rounded-2xl border border-border bg-neutral-0 p-6 shadow-[var(--shadow-card)] md:p-8">
-      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand-600">Kalkulator rat</p>
+      <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand-700">Kalkulator rat</p>
       <h3 className="mb-6 font-display text-xl text-neutral-900 md:text-2xl">
         Ile zapłacisz za Thermomix® TM7?
       </h3>
