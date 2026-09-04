@@ -5,6 +5,9 @@ import { DISTRICT_CONTENT } from "@/data/locations/districts";
 import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { getPagesRepository } from "@/lib/database/repositories/pages-repository";
 import { getSeoSettingsRepository } from "@/lib/database/repositories/seo-settings-repository";
+import { normalizujDate } from "@/lib/seo/daty";
+import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repository";
+import { DZIALY_PORADNIKA } from "@/types/poradnik";
 
 /**
  * Dynamic sitemap (spec §27, Aga Admin §12). Composed from four sources —
@@ -91,29 +94,13 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
  * "Nieprawidłowa data" dla 43 z 96 adresów (28.08.2026) — spacja zamiast "T"
  * i offset "+00" zamiast "+00:00".
  *
- * Normalizujemy tu, a nie w repozytoriach, bo `updatedAt: string` jest
- * publiczną częścią typów i panel admina wyświetla te wartości jako tekst.
- * Data nieparsowalna wraca jako `fallback` — lepiej podać datę budowania
- * niż wysłać Google'owi śmieć.
+ * Sama normalizacja mieszka w lib/seo/daty.ts — od 4.09.2026 dzieli ją
+ * z schematem Article, w którym ten sam surowy string powodował ten sam
+ * błąd. Tutaj zostaje wyłącznie decyzja, co zrobić z datą nieparsowalną:
+ * podać datę budowania, a nie wysłać Google'owi śmiecia.
  */
 function toSitemapDate(value: unknown, fallback: Date): Date {
-  if (value instanceof Date) {
-    return Number.isNaN(value.getTime()) ? fallback : value;
-  }
-  if (typeof value !== "string") return fallback;
-
-  const trimmed = value.trim();
-  if (!trimmed) return fallback;
-
-  // "2026-08-25 15:51:41…" → "2026-08-25T15:51:41…"
-  let normalized = trimmed.replace(/^(\d{4}-\d{2}-\d{2}) /, "$1T");
-  // "…+00" → "…+00:00" (tylko gdy jest część czasowa, żeby nie zepsuć "2026-08-25")
-  if (normalized.includes("T")) {
-    normalized = normalized.replace(/([+-]\d{2})$/, "$1:00");
-  }
-
-  const parsed = new Date(normalized);
-  return Number.isNaN(parsed.getTime()) ? fallback : parsed;
+  return normalizujDate(value) ?? fallback;
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -122,10 +109,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const now = new Date();
 
-  const [indexableLocations, publishedPosts, publishedPages] = await Promise.all([
+  const [indexableLocations, publishedPosts, publishedPages, wpisyPoradnika] = await Promise.all([
     getIndexableLocations(),
     getBlogRepository().listPublished(),
     getPagesRepository().list(),
+    pobierzWpisyPoradnika(),
   ]);
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
@@ -174,5 +162,48 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.4,
     }));
 
-  return [...staticEntries, ...locationEntries, ...districtEntries, ...blogEntries, ...pageEntries];
+  /**
+   * PORADNIK — 8 działów i wszystkie opublikowane wpisy.
+   *
+   * DLACZEGO TO TU DOSZŁO (4.09.2026). W sitemapie stał sam `/poradnik`.
+   * Kontrola na produkcji pokazała 254 adresy, z czego dokładnie JEDEN
+   * z poradnika — a poradnik to w tym momencie 123 opublikowane wpisy
+   * i 8 stron działów. Sto trzydzieści adresów z realną treścią było dla
+   * Google odkrywalne wyłącznie przez linki wewnętrzne.
+   *
+   * Puste działy (czyszczenie, triki na czas — czekają na treść Agi) nie
+   * trafiają do sitemapy: strona działu bez wpisów to obietnica bez
+   * pokrycia i sami byśmy ją zgłaszali do indeksu.
+   *
+   * `lastModified` bierzemy z `updatedAt` wpisu, więc kiedy Aga poprawi
+   * wpis w panelu, sitemapa powie o tym prawdę — inaczej niż stałe daty
+   * przy trasach statycznych.
+   */
+  const wpisyOpublikowane = wpisyPoradnika.filter((w) => w.tresc.trim() !== "");
+
+  const poradnikDzialy: MetadataRoute.Sitemap = DZIALY_PORADNIKA.filter((d) =>
+    wpisyOpublikowane.some((w) => w.dzial === d.slug),
+  ).map((d) => ({
+    url: `${SITE.url}/poradnik/${d.slug}`,
+    lastModified: TRESC_ZAKTUALIZOWANA,
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
+  }));
+
+  const poradnikWpisy: MetadataRoute.Sitemap = wpisyOpublikowane.map((w) => ({
+    url: `${SITE.url}/poradnik/${w.dzial}/${w.slug}`,
+    lastModified: toSitemapDate(w.updatedAt, now),
+    changeFrequency: "monthly" as const,
+    priority: 0.4,
+  }));
+
+  return [
+    ...staticEntries,
+    ...locationEntries,
+    ...districtEntries,
+    ...blogEntries,
+    ...pageEntries,
+    ...poradnikDzialy,
+    ...poradnikWpisy,
+  ];
 }
