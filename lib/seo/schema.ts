@@ -1,5 +1,4 @@
-import { SITE, absoluteUrl } from "@/lib/utils";
-import { doIso8601 } from "@/lib/seo/daty";
+import { SITE, absoluteUrl, doIso8601 } from "@/lib/utils";
 import type { BreadcrumbItem, FaqItem } from "@/types/seo";
 
 /**
@@ -133,7 +132,7 @@ export function articleSchema(opts: {
     // Daty przechodzą przez normalizację, bo repozytoria oddają surowy
     // string z Postgresa ("2026-08-25 15:51:41.548993+00"), który nie jest
     // ISO 8601. Pole nieparsowalne znika ze schematu zamiast trafić do
-    // niego jako śmieć — patrz lib/seo/daty.ts.
+    // niego jako śmieć — patrz lib/utils.ts.
     ...(doIso8601(opts.publishedAt) ? { datePublished: doIso8601(opts.publishedAt) } : {}),
     ...(doIso8601(opts.updatedAt) ? { dateModified: doIso8601(opts.updatedAt) } : {}),
     author: { "@id": absoluteUrl("/o-mnie/#person") },
