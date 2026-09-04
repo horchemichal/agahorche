@@ -35,13 +35,33 @@ export const metadata: Metadata = buildMetadata({
 export default async function TrzydziesciDniPage() {
   const [dni, client] = await Promise.all([pobierzOpublikowaneDni(), getCurrentClient()]);
 
-  const zPrzepisami: DzienZPrzepisem[] = dni.map((d) => ({
-    ...d,
-    przepis: d.przepisId ? (getRecipe(d.przepisId) ?? null) : null,
-    meta: d.przepisId ? (PRZEPISY_META[d.przepisId] ?? null) : null,
-  }));
+  const zalogowany = Boolean(client);
 
-  const ileZPrzepisem = zPrzepisami.filter((d) => d.przepis).length;
+  /*
+   * TREŚĆ DNI TYLKO DLA ZALOGOWANYCH — I TO NAPRAWDĘ, A NIE TYLKO
+   * WIZUALNIE (4.09.2026).
+   *
+   * Samo ukrycie treści w komponencie nie wystarcza: `dni` to props
+   * komponentu klienckiego, więc React serializuje je do kodu strony
+   * i porada oraz link do Cookidoo dałyby się odczytać ze źródła, mimo
+   * że nie są narysowane. Sprawdzone: przed tą poprawką niezalogowany
+   * gość dostawał w kodzie /aga-club/30-dni-z-aga 18 adresów cookidoo.pl.
+   *
+   * Dlatego gościowi wysyłamy wyłącznie numer dnia i tytuł zadania —
+   * dokładnie to, co i tak widzi na ekranie.
+   */
+  const zPrzepisami: DzienZPrzepisem[] = dni.map((d) =>
+    zalogowany
+      ? {
+          ...d,
+          przepis: d.przepisId ? (getRecipe(d.przepisId) ?? null) : null,
+          meta: d.przepisId ? (PRZEPISY_META[d.przepisId] ?? null) : null,
+        }
+      : { ...d, tip: "", przepisId: null, przepis: null, meta: null },
+  );
+
+  // Liczone z ORYGINALNYCH dni, nie z okrojonych — inaczej gość widziałby zero.
+  const ileZPrzepisem = dni.filter((d) => d.przepisId && getRecipe(d.przepisId)).length;
 
   return (
     <>
@@ -76,7 +96,7 @@ export default async function TrzydziesciDniPage() {
             Wyzwanie jest w przygotowaniu. Zajrzyj tu za kilka dni.
           </p>
         ) : (
-          <Wyzwanie30Dni dni={zPrzepisami} zalogowany={Boolean(client)} />
+          <Wyzwanie30Dni dni={zPrzepisami} zalogowany={zalogowany} />
         )}
       </Section>
 
