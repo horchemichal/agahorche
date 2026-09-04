@@ -115,8 +115,5 @@ export interface ThirtyDaysDay {
 export interface AgaClubFeatureFlags {
   coDzisUgotowac: boolean;
   mojaLodowka: boolean;
-  trybMama: boolean;
-  planTygodnia: boolean;
   trzydziesciDniZAga: boolean;
-  agaAi: boolean;
 }
