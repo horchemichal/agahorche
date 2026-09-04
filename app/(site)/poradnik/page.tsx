@@ -7,6 +7,8 @@ import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
 import { ButtonLink } from "@/components/ui/button";
 import { DZIALY_PORADNIKA } from "@/types/poradnik";
 import { pobierzWpisyPoradnika } from "@/lib/database/repositories/poradnik-repository";
+import { getCurrentClient } from "@/lib/auth/client-auth";
+import { TylkoDlaKlubu } from "@/components/przepisy/tylko-dla-klubu";
 
 export const metadata: Metadata = buildMetadata({
   title: "Poradnik kuchenny — triki i kuchenne wpadki",
@@ -23,9 +25,17 @@ export const metadata: Metadata = buildMetadata({
  * byłby obietnicą bez pokrycia — dwa działy czekają na treść Agi
  * (patrz data/poradnik/seed.ts) i do tego czasu po prostu ich tu nie ma.
  * Pojawią się same, gdy tylko dodasz pierwszy wpis.
+ *
+ * TA STRONA JEST KOŃCEM DROGI DLA GOŚCIA (decyzja Agi, 4.09.2026:
+ * „poradnik też jest tylko dla zalogowanych, więc zmień, żeby dalej niż
+ * tu nie można było wejść"). Niezalogowany widzi nazwy działów, opisy
+ * i liczby wpisów — czyli wie dokładnie, co jest w środku — ale kafelki
+ * nie są linkami. Same działy i wpisy też sprawdzają sesję, żeby nie dało
+ * się ominąć kafelków, wpisując adres ręcznie.
  */
 export default async function PoradnikPage() {
-  const wpisy = await pobierzWpisyPoradnika();
+  const [wpisy, client] = await Promise.all([pobierzWpisyPoradnika(), getCurrentClient()]);
+  const zalogowany = client !== null;
   const licznik = new Map<string, number>();
   for (const w of wpisy) licznik.set(w.dzial, (licznik.get(w.dzial) ?? 0) + 1);
 
@@ -55,20 +65,41 @@ export default async function PoradnikPage() {
           </p>
         ) : (
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {dzialy.map((d) => (
-              <Link
-                key={d.slug}
-                href={`/poradnik/${d.slug}`}
-                className="flex flex-col gap-2 rounded-2xl border border-border bg-neutral-0 p-5 transition-colors hover:border-brand-400"
-              >
-                <p className="font-display text-lg text-neutral-900">{d.nazwa}</p>
-                <p className="text-sm text-muted">{d.opis}</p>
-                <p className="mt-auto pt-2 text-xs font-medium uppercase tracking-wide text-brand-600">
-                  {licznik.get(d.slug)}{" "}
-                  {licznik.get(d.slug) === 1 ? "wpis" : (licznik.get(d.slug) ?? 0) < 5 ? "wpisy" : "wpisów"}
-                </p>
-              </Link>
-            ))}
+            {dzialy.map((d) => {
+              const tresc = (
+                <>
+                  <p className="font-display text-lg text-neutral-900">{d.nazwa}</p>
+                  <p className="text-sm text-muted">{d.opis}</p>
+                  <p className="mt-auto pt-2 text-xs font-medium uppercase tracking-wide text-brand-700">
+                    {licznik.get(d.slug)}{" "}
+                    {licznik.get(d.slug) === 1 ? "wpis" : (licznik.get(d.slug) ?? 0) < 5 ? "wpisy" : "wpisów"}
+                  </p>
+                </>
+              );
+
+              return zalogowany ? (
+                <Link
+                  key={d.slug}
+                  href={`/poradnik/${d.slug}`}
+                  className="flex flex-col gap-2 rounded-2xl border border-border bg-neutral-0 p-5 transition-colors hover:border-brand-400"
+                >
+                  {tresc}
+                </Link>
+              ) : (
+                <div
+                  key={d.slug}
+                  className="flex flex-col gap-2 rounded-2xl border border-border bg-neutral-0 p-5"
+                >
+                  {tresc}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {!zalogowany && dzialy.length > 0 && (
+          <div className="mt-6">
+            <TylkoDlaKlubu coBySie="Wpisy poradnika są w Aga Club" />
           </div>
         )}
       </Section>
