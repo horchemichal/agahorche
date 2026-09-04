@@ -28,11 +28,31 @@ const ADMIN_SESSION_COOKIE_NAME = "aga_admin_session";
 const CLIENT_SESSION_COOKIE_NAME = "aga_client_session";
 const CLIENT_ZONE_PUBLIC_PATHS = ["/strefa-klienta/logowanie", "/strefa-klienta/rejestracja"];
 
+/**
+ * Reset hasła MUSI być dostępny bez sesji — inaczej ta funkcja nie ma
+ * prawa działać. Osoba, która zapomniała hasła, z definicji nie jest
+ * zalogowana, a bez tego wyjątku ten proxy odsyłał ją na stronę
+ * logowania, czyli dokładnie tam, gdzie utknęła (4.09.2026: strona
+ * /strefa-klienta/reset-hasla oddawała 307, zanim ktokolwiek zdążył ją
+ * zobaczyć).
+ *
+ * Prefiks, a nie dokładny adres z listy wyżej, bo strona spod linku
+ * z maila ma token w adresie: /strefa-klienta/reset-hasla/<64 znaki>.
+ * Same strony resetu pilnują się dalej same — token jest sprawdzany
+ * i przy wyświetleniu formularza, i ponownie przy zapisie hasła
+ * (lib/auth/reset-hasla.ts).
+ */
+const CLIENT_ZONE_PUBLIC_PREFIX = "/strefa-klienta/reset-hasla";
+
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (pathname.startsWith("/strefa-klienta")) {
-    if (CLIENT_ZONE_PUBLIC_PATHS.includes(pathname)) {
+    if (
+      CLIENT_ZONE_PUBLIC_PATHS.includes(pathname) ||
+      pathname === CLIENT_ZONE_PUBLIC_PREFIX ||
+      pathname.startsWith(`${CLIENT_ZONE_PUBLIC_PREFIX}/`)
+    ) {
       return NextResponse.next();
     }
 
