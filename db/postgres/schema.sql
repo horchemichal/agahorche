@@ -400,6 +400,28 @@ create table if not exists client_password_resets (
 create index if not exists client_password_resets_user_idx on client_password_resets (user_id);
 
 -- ============================================================
+-- POSTĘP W DIECIE (4 września 2026)
+-- ============================================================
+-- „Na którym dniu diety jestem" — zapamiętane na koncie, żeby plan otwierał
+-- się tam, gdzie klientka skończyła, także po zalogowaniu na innym
+-- urządzeniu. Wcześniej plan zawsze startował od Dnia 1.
+--
+-- Klucz główny na (user_id, plan_id): jeden wiersz na parę konto-plan, więc
+-- keto na 14 dni i dieta dla dzieci pamiętają swój dzień niezależnie,
+-- a zapis to zwykłe `on conflict do update` bez dodatkowej logiki.
+--
+-- To NIE jest to samo co „moje diety" (lista ukrytych kafelków), która
+-- została w localStorage — tamto jest ustawieniem widoku, a to stanem konta.
+
+create table if not exists client_diet_progress (
+  user_id uuid not null references client_users (id) on delete cascade,
+  plan_id text not null,
+  day_number integer not null check (day_number between 1 and 14),
+  updated_at timestamptz not null default now(),
+  primary key (user_id, plan_id)
+);
+
+-- ============================================================
 -- USTAWIENIA FINANSOWANIA (1 września 2026)
 -- ============================================================
 -- Jeden wiersz, jak seo_settings. Powstało, bo raty 0% to promocja
