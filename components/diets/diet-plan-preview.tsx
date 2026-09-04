@@ -91,10 +91,19 @@ export function DietPlanPreview({
   plan: planWejsciowy,
   forceUnlocked = false,
   mealTypes,
+  poczatkowyDzien,
+  zapamietujDzien = false,
 }: {
   plan: DietPlan;
   forceUnlocked?: boolean;
   mealTypes?: MealType[];
+  /**
+   * Dzień, na którym plan ma się otworzyć. Wczytany na serwerze z konta
+   * (lib/diets/postep.ts), więc nie ma mrugnięcia „Dzień 1 → Dzień 5".
+   */
+  poczatkowyDzien?: number;
+  /** Czy zapisywać zmianę dnia na koncie. Włączone tylko w Strefie Klienta. */
+  zapamietujDzien?: boolean;
 }) {
   const plan = useMemo(() => {
     if (!mealTypes) return planWejsciowy;
@@ -105,9 +114,28 @@ export function DietPlanPreview({
     };
   }, [planWejsciowy, mealTypes]);
 
-  const [activeDay, setActiveDay] = useState(1);
+  const [activeDay, setActiveDay] = useState(poczatkowyDzien ?? 1);
   const [altMealIds, setAltMealIds] = useState<Set<string>>(new Set());
   const [tydzien, setTydzien] = useState(false);
+
+  /**
+   * ZAPAMIĘTANIE DNIA (prośba Michała, 4.09.2026). Widok przełącza się od
+   * razu, zapis leci w tle — nikt nie czeka na sieć, żeby zobaczyć Dzień 5.
+   *
+   * Błąd zapisu jest świadomie połykany: najgorsze, co się stanie, to że
+   * plan otworzy się następnym razem na starym dniu. Wyrzucanie z tego
+   * powodu komunikatu o błędzie na pół ekranu byłoby gorsze od samej usterki.
+   */
+  function wybierzDzien(dzien: number) {
+    setActiveDay(dzien);
+    if (!zapamietujDzien) return;
+    void fetch("/api/klub/postep-diety", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ planId: plan.id, dzien }),
+      keepalive: true,
+    }).catch(() => undefined);
+  }
 
   const day = plan.days.find((d) => d.dayNumber === activeDay) ?? plan.days[0];
   const hasContent = Boolean(day?.meals.length);
@@ -167,7 +195,7 @@ export function DietPlanPreview({
         {!tydzien && (
           <>
             <div className="mt-4">
-              <DayNavigation days={plan.days} activeDay={activeDay} onSelect={setActiveDay} forceUnlocked={forceUnlocked} />
+              <DayNavigation days={plan.days} activeDay={activeDay} onSelect={wybierzDzien} forceUnlocked={forceUnlocked} />
             </div>
             {!isLocked && hasContent && !plan.hideNutrition && (
               <div className="mt-5">
