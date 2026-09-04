@@ -3,15 +3,34 @@ import { Eyebrow, Heading, Lead } from "@/components/ui/heading";
 import { ButtonLink } from "@/components/ui/button";
 import { CheckCircleIcon } from "@/components/marketing/icons";
 
+/**
+ * WYŁĄCZNIE RZECZY, KTÓRE ISTNIEJĄ (prośba Michała, 4.09.2026: „usuń Aga AI
+ * i wszystko, czego nie ma"). Lista obiecywała cztery rzeczy, których
+ * w serwisie nie było:
+ *
+ * - „Aga AI" — /api/ai/chat odpowiada 503, funkcji nie ma
+ * - „wymiana posiłków" i „zamienniki" — to ta sama rzecz („Zamień danie"
+ *   w meal-card.tsx) i ani jeden z 1148 posiłków w bazie nie ma ustawionego
+ *   zamiennika, więc przycisk nigdy się nie pokazuje
+ * - „materiały dla klientów" — nie ma w serwisie niczego takiego
+ *
+ * Zniknęło też „więcej diet": zalogowana klientka widzi TE SAME dziesięć
+ * diet co każdy odwiedzający, tylko z odblokowanymi wszystkimi dniami.
+ * Różnica jest realna, ale to nie jest „więcej diet".
+ *
+ * W zamian doszły cztery rzeczy, które klub naprawdę daje, a lista o nich
+ * milczała: przepisy, lodówka, poradnik i wyzwanie 30 dni.
+ */
 const ITEMS = [
-  "więcej diet",
+  "pełne jadłospisy — wszystkie dni odblokowane",
   "7 i 14 dni",
-  "różne warianty kaloryczne",
-  "wymiana posiłków",
-  "zamienniki",
+  "warianty 1500 i 2000 kcal",
   "lista zakupów",
-  "Aga AI",
-  "materiały dla klientów",
+  "przepisy z Cookidoo",
+  "Co ugotować dzisiaj?",
+  "Co mam w lodówce?",
+  "poradnik kuchenny",
+  "30 dni z Thermomixem",
 ];
 
 /**
@@ -41,8 +60,9 @@ export function ClientZoneTeaser() {
             Strefa Klienta Agi
           </Heading>
           <Lead className="mx-auto mb-8">
-            Na stronie pokazujemy przykładowe plany. Klienci Agi otrzymują dostęp do większej
-            bazy diet, wariantów kalorycznych, list zakupów, zamienników i dodatkowych narzędzi.
+            Na stronie pokazujemy przykładowe plany — pierwszy dzień odsłonięty, reszta zamknięta.
+            Klienci Agi mają wszystkie dni każdej diety, warianty 7 i 14 dni, kaloryczności
+            1500 i 2000 kcal, listy zakupów oraz pozostałe narzędzia klubu.
             Konto zakłada Aga — dostają je osoby, które kupiły u niej Thermomixa.
           </Lead>
         </div>

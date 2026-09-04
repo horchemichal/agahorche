@@ -378,8 +378,8 @@ export function DietConfigurator({
             <div className="flex flex-col items-start gap-2 rounded-lg border border-brand-200 bg-brand-50 p-4">
               <p className="text-sm font-semibold text-brand-800">Jadłospisy są w Aga Club</p>
               <p className="text-sm leading-relaxed text-neutral-700">
-                Wszystkie diety — pełne siedem dni, warianty 1500 i 2000 kcal, listy zakupów
-                i zamienniki dań — są dostępne dla uczestniczek i uczestników Aga Club, czyli osób,
+                Wszystkie diety — pełne siedem dni, warianty 1500 i 2000 kcal oraz listy
+                zakupów — są dostępne dla uczestniczek i uczestników Aga Club, czyli osób,
                 które kupiły Thermomix u mnie, oficjalnej przedstawicielki Thermomix.
               </p>
               <div className="flex flex-wrap gap-2">
