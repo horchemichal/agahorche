@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { ClientSessionBar } from "@/components/layout/client-session-bar";
+import { KlubKontoLink } from "@/components/layout/klub-konto-link";
 import { Footer } from "@/components/layout/footer";
 import { StickyMobileCta } from "@/components/layout/sticky-cta";
 import { JsonLdScript } from "@/components/seo/json-ld";
@@ -27,7 +28,11 @@ export const dynamic = "force-dynamic";
 export default function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Header sesja={<ClientSessionBar />} />
+      <Header
+        sesja={<ClientSessionBar />}
+        kontoKlubu={<KlubKontoLink wariant="desktop" />}
+        kontoKlubuMobile={<KlubKontoLink wariant="mobile" />}
+      />
       <main className="flex-1 pb-20 lg:pb-0">{children}</main>
       <Footer />
       <StickyMobileCta />
