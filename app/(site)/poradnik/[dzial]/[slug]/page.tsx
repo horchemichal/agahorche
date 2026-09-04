@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { Section } from "@/components/ui/section";
@@ -15,6 +15,7 @@ import { PRZEPISY_META } from "@/data/diets/przepisy-meta";
 import { czasSlownie } from "@/lib/przepisy/grupy";
 import { articleSchema, webPageSchema } from "@/lib/seo/schema";
 import { JsonLdScript } from "@/components/seo/json-ld";
+import { getCurrentClient } from "@/lib/auth/client-auth";
 
 interface Props {
   params: Promise<{ dzial: string; slug: string }>;
@@ -46,7 +47,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
  * Sąsiednie wpisy z tego samego działu na dole: poradnik czyta się
  * przeskokami, a nie od góry do dołu, więc następny krok ma być pod ręką.
  */
+
+/*
+ * TYLKO DLA ZALOGOWANYCH (decyzja Agi, 4.09.2026: „poradnik też jest tylko
+ * dla zalogowanych, więc zmień, żeby dalej niż tu nie można było wejść").
+ *
+ * Gość zostaje na /poradnik — widzi tam nazwy działów, opisy i liczby
+ * wpisów, więc wie, co jest w środku. Sprawdzenie siedzi TUTAJ, a nie
+ * tylko w kafelkach na /poradnik, bo inaczej wystarczyłoby wpisać adres
+ * ręcznie albo kliknąć stary link z Google.
+ *
+ * Przekierowanie, a nie 404: adres jest poprawny, po prostu wymaga konta.
+ */
 export default async function WpisPage({ params }: Props) {
+  if ((await getCurrentClient()) === null) redirect("/poradnik");
+
   const { dzial, slug } = await params;
   const d = dzialPoradnika(dzial);
   if (!d) notFound();
