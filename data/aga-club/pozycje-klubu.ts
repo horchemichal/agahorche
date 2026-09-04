@@ -5,7 +5,7 @@ import {
   LeafIcon,
   CalendarIcon,
   LightningIcon,
-  BadgeIcon,
+  PobierzAplikacjeIcon,
 } from "@/components/marketing/icons";
 
 /**
@@ -45,17 +45,15 @@ export interface PozycjaKlubu {
    */
   prefiksy: string[];
   dokladnie?: boolean;
+  /**
+   * Pozycja znika, gdy serwis chodzi już jako zainstalowana aplikacja.
+   * Dotyczy „Pobierz aplikację": pokazywanie tego w środku zainstalowanej
+   * aplikacji wygląda jak usterka.
+   */
+  tylkoWPrzegladarce?: boolean;
 }
 
 export const POZYCJE_KLUBU: PozycjaKlubu[] = [
-  {
-    href: "/strefa-klienta",
-    ikona: BadgeIcon,
-    tytul: "Mój pulpit",
-    krotki: "Mój pulpit",
-    opis: "Twoje diety, konfigurator i wszystko, co masz w klubie.",
-    prefiksy: ["/strefa-klienta"],
-  },
   {
     href: "/diety",
     ikona: LeafIcon,
@@ -96,6 +94,27 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     krotki: "30 dni",
     opis: "Trzydzieści zadań, po jednym dziennie.",
     prefiksy: ["/aga-club/30-dni-z-aga"],
+  },
+  /*
+   * „Pobierz aplikację" na samym końcu paska (prośba Michała, 4.09.2026:
+   * „usuń tutaj Mój pulpit, a daj na końcu pobierz aplikację").
+   *
+   * Prowadzi do sekcji instalacji na /aga-club — tam, gdzie Michał chciał
+   * ją mieć („aplikacja niech będzie do pobrania na stronie aga klub po
+   * zalogowaniu"). To jedyna pozycja paska, która nie jest częścią klubu,
+   * tylko sposobem na wygodniejsze dojście do niego — stąd na końcu,
+   * a nie między dietami a poradnikiem.
+   */
+  {
+    href: "/aga-club#aplikacja",
+    ikona: PobierzAplikacjeIcon,
+    tytul: "Pobierz aplikację",
+    krotki: "Aplikacja",
+    opis: "Dodaj Aga Club na ekran główny telefonu.",
+    // Pusta lista: ta pozycja nigdy nie podświetla się jako bieżąca.
+    // Kotwica na innej stronie to nie jest „miejsce, w którym jesteś".
+    prefiksy: [],
+    tylkoWPrzegladarce: true,
   },
 ];
 
