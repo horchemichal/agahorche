@@ -135,7 +135,7 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
                       zamkniety ? "cursor-default" : "cursor-pointer",
                     )}
                   >
-                    <span className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+                    <span className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                       Dzień {d.day}
                     </span>
                     <span
@@ -160,7 +160,7 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
 
                       {d.przepis && (
                         <div className="rounded-xl border border-border bg-surface p-4">
-                          <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+                          <p className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                             Przepis na dziś
                           </p>
                           <p className="mt-1 font-medium text-neutral-900">{d.przepis.name}</p>
