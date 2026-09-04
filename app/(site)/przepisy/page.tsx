@@ -10,7 +10,7 @@ import { wszystkiePrzepisy } from "@/lib/przepisy/grupy";
 export const metadata: Metadata = buildMetadata({
   title: "Co ugotować dzisiaj? Wyszukiwarka przepisów na Thermomix",
   description:
-    "Wybierz, ile masz czasu, dla ilu osób gotujesz i na co masz ochotę — pokażę dania z Thermomixa, które się w to wpisują. Każde z linkiem do przepisu na Cookidoo.",
+    "Wybierz, ile masz czasu, dla ilu osób gotujesz i na co masz ochotę — pokażę dania z Thermomixa, które się w to wpisują. Każde z linkiem do Cookidoo.",
   path: "/przepisy",
 });
 
