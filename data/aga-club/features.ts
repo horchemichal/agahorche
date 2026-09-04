@@ -8,8 +8,11 @@ import type { AgaClubFeatureFlags } from "@/types/aga-club";
  * scoped task (spec §48: "Zbuduj AI Meal Planner." etc.).
  */
 export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
-  coDzisUgotowac: false,
-  mojaLodowka: false,
+  // 4.09.2026: obie funkcje ISTNIEJĄ i działają od 1.09 — tylko pod innymi
+  // adresami (/przepisy i /przepisy/co-mam-w-lodowce). Klub pokazywał je
+  // jako „Wkrótce", choć wystarczyło wskazać właściwy adres.
+  coDzisUgotowac: true,
+  mojaLodowka: true,
   trybMama: false,
   planTygodnia: false,
   // 1.09.2026: moduł ma treść (30 dni) i działa — patrz
@@ -41,15 +44,24 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
   },
   {
     key: "coDzisUgotowac",
-    title: "Co dziś ugotować?",
-    description: "Wpisz, co masz w domu i ile masz czasu — podpowiemy pomysł na danie.",
-    href: "/aga-club/co-dzis-ugotowac",
+    title: "Co ugotować dzisiaj?",
+    description: "Powiedz, ile masz czasu, dla ilu osób gotujesz i na co masz ochotę — pokażę pasujące dania z Cookidoo.",
+    href: "/przepisy",
   },
   {
     key: "mojaLodowka",
-    title: "Moja lodówka",
-    description: "Wskaż produkty, które masz pod ręką, a AI zaproponuje, co z nich przygotować.",
-    href: "/aga-club/moja-lodowka",
+    title: "Co mam w lodówce?",
+    // Opis mówił „a AI zaproponuje". Narzędzie nie używa AI: dopasowuje
+    // zaznaczone produkty do listy składników 252 przepisów. Obiecywanie
+    // AI tam, gdzie jej nie ma, to obietnica, której strona nie dotrzyma.
+    description: "Zaznacz produkty, które masz pod ręką — pokażę dania, które da się z nich zrobić, i czego brakuje.",
+    href: "/przepisy/co-mam-w-lodowce",
+  },
+  {
+    key: null,
+    title: "Poradnik kuchenny",
+    description: "Co można zamrozić, jak uratować za słoną zupę, co znaczy blanszowanie — 123 wpisy na kuchenne pytania.",
+    href: "/poradnik",
   },
   {
     key: "trybMama",
