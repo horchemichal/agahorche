@@ -11,7 +11,6 @@ import {
   SeoIcon,
   LeadsIcon,
   ClubIcon,
-  AiIcon,
   AnalyticsIcon,
   SettingsIcon,
 } from "@/components/admin/icons";
@@ -40,7 +39,14 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { label: "SEO", href: "/admin/seo", icon: SeoIcon },
   { label: "Leady", href: "/admin/leady", icon: LeadsIcon },
   { label: "Aga Club", href: "/admin/aga-club", icon: ClubIcon },
-  { label: "AI", href: "/admin/ai", icon: AiIcon },
+  /*
+   * 4.09.2026 — zakładka „AI" wypadła z panelu (prośba Michała: „usuń Aga AI
+   * i wszystko, czego nie ma"). Prowadziła do strony, która pokazywała dwa
+   * nieczynne endpointy (/api/ai/chat oddaje 503) i listę siedmiu pomysłów
+   * na przyszłość. Aga nie mogła tam nic zrobić ani włączyć — była to
+   * zakładka o funkcji, której nie ma. Same trasy /api/ai/* zostają
+   * w kodzie, ale nic już do nich nie prowadzi.
+   */
   { label: "Analityka", href: "/admin/analityka", icon: AnalyticsIcon },
   { label: "Ustawienia", href: "/admin/ustawienia", icon: SettingsIcon },
 ];
