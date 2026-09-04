@@ -7,6 +7,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { CoMamWLodowce } from "@/components/przepisy/lodowka";
 import { PRODUKTY } from "@/lib/przepisy/produkty";
 import { wszystkiePrzepisy } from "@/lib/przepisy/grupy";
+import { getCurrentClient } from "@/lib/auth/client-auth";
 
 export const metadata: Metadata = buildMetadata({
   title: "Co mam w lodówce? Przepisy z tego, co masz w domu",
@@ -22,13 +23,14 @@ export const metadata: Metadata = buildMetadata({
  * z jajek"). To nie są cztery moduły: to jedno pytanie zadane z czterech
  * stron, więc jedna strona na nie odpowiada.
  *
- * Publiczna z tego samego powodu co /przepisy — prowadzi do jawnych
- * przepisów na Cookidoo, a odpowiada na zapytanie, które ludzie realnie
- * wpisują w wyszukiwarkę.
+ * WYNIKI TYLKO DLA ZALOGOWANYCH (decyzja Agi, 4.09.2026) — tak samo jak
+ * w /przepisy. Zaznaczanie produktów działa i widać, ile dań wychodzi;
+ * lista dań i to, czego brakuje, jest za logowaniem.
  */
-export default function LodowkaPage() {
+export default async function LodowkaPage() {
   const ileProduktow = PRODUKTY.length;
   const ileDan = wszystkiePrzepisy().length;
+  const zalogowany = (await getCurrentClient()) !== null;
 
   return (
     <>
@@ -53,7 +55,7 @@ export default function LodowkaPage() {
       </Section>
 
       <Section tone="surface">
-        <CoMamWLodowce />
+        <CoMamWLodowce zalogowany={zalogowany} />
       </Section>
 
       <Section>
