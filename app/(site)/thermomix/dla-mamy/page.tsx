@@ -12,7 +12,7 @@ import { Photo, CheckList, Prose, CtaBand, LocalBand } from "@/components/market
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix dla mamy — gotowanie z małym dzieckiem",
   description:
-    "Thermomix przy małym dziecku: przeciery i dania na parze, porcjowanie na kilka dni, gotowanie jedną ręką i zawsze ciepły posiłek dla siebie. Bez cudownych obietnic.",
+    "Thermomix przy małym dziecku: przeciery i dania na parze, porcjowanie na kilka dni, gotowanie jedną ręką i ciepły posiłek dla siebie. Bez cudownych obietnic.",
   path: "/thermomix/dla-mamy",
   keywords: ["thermomix dla mamy", "thermomix rozszerzanie diety", "przeciery dla niemowlaka thermomix"],
 });
