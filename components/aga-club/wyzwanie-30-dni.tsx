@@ -16,11 +16,14 @@ import { przelaczDzien, wczytajPostep, wyzerujPostep, ZDARZENIE_POSTEPU } from "
  * OŚ PLIKU
  * „30 dni z Thermomixem" — lista dni z odhaczaniem i rozwijaną treścią.
  *
- * KOGO CO WIDZI. Dzień 1 jest otwarty dla wszystkich — to ta sama zasada
- * co przy dietach: gość widzi jeden pełny dzień i wie, co dostaje. Dni
- * 2–30 pokazują tytuł zadania (żeby było widać plan całego miesiąca), ale
- * treść otwiera się dopiero po zalogowaniu do Aga Club. Ukrycie także
- * tytułów zamieniłoby stronę w pustą obietnicę.
+ * KOGO CO WIDZI. Od 4.09.2026 (decyzja Agi) całe wyzwanie jest za
+ * logowaniem — tak samo jak „Co ugotować dzisiaj?" i „Co mam w lodówce?".
+ * Wcześniej dzień 1 był otwarty jako próbka.
+ *
+ * TYTUŁY ZADAŃ ZOSTAJĄ WIDOCZNE dla wszystkich trzydziestu dni, a treść
+ * otwiera się po zalogowaniu. Ukrycie także tytułów zamieniłoby stronę
+ * w pustą obietnicę: gość nie miałby skąd wiedzieć, co jest w środku,
+ * i nie miałby powodu, żeby chcieć wejść.
  *
  * DLACZEGO WSZYSTKO NA JEDNEJ STRONIE, A NIE /dzien/1…30. Bo wyzwanie
  * czyta się jak listę zadań, a nie jak trzydzieści artykułów: chcesz
@@ -91,7 +94,11 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
       <ol className="flex flex-col gap-2.5">
         {dni.map((d) => {
           const odhaczony = gotowe && zrobione.includes(d.day);
-          const zamkniety = !zalogowany && d.day !== 1;
+          // 4.09.2026 (decyzja Agi): wyzwanie w całości za logowaniem, tak samo
+          // jak „Co ugotować dzisiaj?" i „Co mam w lodówce?". Wcześniej pierwszy
+          // dzień był otwarty jako próbka; teraz zamknięte są wszystkie, a gość
+          // widzi tytuły dni i wie, co jest w środku.
+          const zamkniety = !zalogowany;
           const rozwiniety = otwarty === d.day && !zamkniety;
 
           return (
@@ -189,11 +196,11 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
 
       {!zalogowany && (
         <div className="flex flex-col items-start gap-3 rounded-2xl border border-brand-200 bg-brand-50 p-5 md:p-6">
-          <p className="font-display text-lg text-neutral-900">Pozostałe 29 dni są w Aga Club</p>
+          <p className="font-display text-lg text-neutral-900">Całe wyzwanie jest w Aga Club</p>
           <p className="max-w-2xl text-neutral-700">
-            Aga Club to bezpłatna strefa dla osób, które kupiły Thermomix u Agi — oficjalnej
-            przedstawicielki Thermomix. Czekają w niej pełne jadłospisy, listy zakupów i to
-            wyzwanie w całości.
+            Aga Club jest dostępny dla moich klientów, czyli osób, które kupiły u mnie
+            Thermomix, oraz dla osób, które poleciły mi sprzedaż. Czekają w nim pełne
+            jadłospisy, listy zakupów i to wyzwanie w całości.
           </p>
           <div className="flex flex-wrap gap-2.5">
             <ButtonLink href="/prezentacja">Umów bezpłatną prezentację →</ButtonLink>
