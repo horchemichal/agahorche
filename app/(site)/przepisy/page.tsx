@@ -6,6 +6,7 @@ import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
 import { ButtonLink } from "@/components/ui/button";
 import { WyszukiwarkaPrzepisow } from "@/components/przepisy/wyszukiwarka";
 import { wszystkiePrzepisy } from "@/lib/przepisy/grupy";
+import { getCurrentClient } from "@/lib/auth/client-auth";
 
 export const metadata: Metadata = buildMetadata({
   title: "Co ugotować dzisiaj? Wyszukiwarka przepisów na Thermomix",
@@ -18,19 +19,23 @@ export const metadata: Metadata = buildMetadata({
  * OŚ STRONY
  * „Co ugotować dzisiaj?" — publiczna wyszukiwarka nad bazą przepisów.
  *
- * DLACZEGO PUBLICZNA, A NIE W AGA KLUBIE. Aga wpisała ten moduł na listę
- * pomysłów do klubu, ale on nie ma czego zamykać: prowadzi do przepisów,
- * które i tak są jawne na cookidoo.pl. Zamknięcie go za logowaniem nic nie
- * dodaje klubowiczkom, a odbiera stronie dokładnie to zapytanie, które
- * ludzie wpisują w Google („co ugotować w 20 minut", „szybki obiad
- * thermomix"). Wartością klubu zostają pełne jadłospisy — te są i pozostają
- * za logowaniem.
+ * WYNIKI TYLKO DLA ZALOGOWANYCH (decyzja Agi, 4.09.2026). Strona i samo
+ * narzędzie zostają publiczne — filtry działają, widać liczbę pasujących
+ * dań — ale listy przepisów nie widzi nikt spoza klubu. Nie zamykamy całej
+ * strony za logowaniem świadomie: osoba z Google trafiłaby wtedy na sam
+ * formularz logowania i nie miałaby skąd wiedzieć, co tu jest.
+ *
+ * CZEGO TO KOSZTUJE. Wcześniej ta strona była publiczna, żeby odpowiadać
+ * na zapytania w rodzaju „co ugotować w 20 minut". Karty przepisów znikają
+ * z kodu strony, więc Google przestaje je widzieć — zostaje nagłówek,
+ * wstęp i opis narzędzia. To świadomy wybór Agi, nie przeoczenie.
  *
  * BEZ SZTUCZNEJ INTELIGENCJI I BEZ CEN — świadomie, patrz komentarz
  * w components/przepisy/wyszukiwarka.tsx.
  */
-export default function PrzepisyPage() {
+export default async function PrzepisyPage() {
   const ile = wszystkiePrzepisy().length;
+  const zalogowany = (await getCurrentClient()) !== null;
 
   return (
     <>
@@ -50,7 +55,7 @@ export default function PrzepisyPage() {
       </Section>
 
       <Section tone="surface">
-        <WyszukiwarkaPrzepisow />
+        <WyszukiwarkaPrzepisow zalogowany={zalogowany} />
       </Section>
 
       <Section>
