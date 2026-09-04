@@ -13,7 +13,7 @@ import { PRZEPISY_META } from "@/data/diets/przepisy-meta";
 export const metadata: Metadata = buildMetadata({
   title: "30 dni z Thermomixem — plan dla nowej właścicielki",
   description:
-    "Trzydzieści dni, trzydzieści zadań: od pierwszego koktajlu po własny repertuar dań. Plan dla osób, które właśnie dostały Thermomix i nie chcą, żeby stał na blacie.",
+    "Trzydzieści dni, trzydzieści zadań: od pierwszego koktajlu po własny repertuar dań. Dla osoby, która dostała Thermomix i nie chce, by stał nieużywany.",
   path: "/aga-club/30-dni-z-aga",
 });
 
