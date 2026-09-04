@@ -23,7 +23,7 @@ import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/finan
 export const metadata: Metadata = buildMetadata({
   title: "Thermomix TM7 vs TM6 — porównanie modeli",
   description:
-    "Czym różni się Thermomix TM7 od TM6: ekran, Varoma, otwarte gotowanie, głośność, przepisy. Zdjęcie obu modeli obok siebie i szczera odpowiedź, kiedy przesiadka ma sens.",
+    "Czym różni się Thermomix TM7 od TM6: ekran, Varoma, otwarte gotowanie, głośność, przepisy. Zdjęcie obu modeli i szczera odpowiedź, kiedy przesiadka ma sens.",
   path: "/thermomix/tm7-vs-tm6",
   keywords: ["thermomix tm7 vs tm6", "różnice tm6 tm7", "czy warto zmienić tm6 na tm7"],
   ogImage: "/zdjecia/thermomix-tm7-vs-tm6.webp",
