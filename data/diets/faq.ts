@@ -9,12 +9,19 @@ export const DIETY_FAQ: FaqItem[] = [
   {
     question: "Czym różni się przykładowy plan od pełnej diety w Strefie Klienta?",
     answer:
-      "Na stronie publicznej pokazujemy 1–2 przykładowe plany z pierwszym dniem w pełni widocznym. Pełna baza — więcej wariantów, 14 dni, różne kaloryczności, zamienniki i lista zakupów na cały tydzień — dostępna jest po zostaniu klientką/klientem Agi.",
+      "Na stronie publicznej pokazujemy 1–2 przykładowe plany z pierwszym dniem w pełni widocznym. Pełna baza — wszystkie dni odblokowane, warianty 7 i 14 dni, kaloryczności 1500 i 2000 kcal oraz lista zakupów na cały tydzień — dostępna jest po zostaniu klientką/klientem Agi.",
   },
   {
+    /*
+     * 4.09.2026: poprzednia odpowiedź brzmiała „Tak, przy wybranych daniach
+     * znajdziesz opcję »Zamień danie«". To była nieprawda — ani jeden posiłek
+     * w bazie nie ma przypisanego zamiennika, więc ten przycisk nigdy się nie
+     * pojawiał. Mówimy więc, jak jest, i wskazujemy narzędzie, które naprawdę
+     * działa (/przepisy).
+     */
     question: "Czy mogę zamienić danie w planie?",
     answer:
-      "Tak, przy wybranych daniach w przykładowym planie znajdziesz opcję „Zamień danie”. Pełny system zamienników posiłków i składników rozwijamy w Strefie Klienta.",
+      "Jadłospisy są ułożone na sztywno — nie ma przycisku, który podmienia jedno danie na drugie. Jeśli coś Ci nie pasuje, w Aga Club masz wyszukiwarkę „Co ugotować dzisiaj?”: podajesz czas i ochotę, a dostajesz dania z Cookidoo, którymi możesz zastąpić ten posiłek.",
   },
   {
     question: "Pod jaki model Thermomixa są te przepisy?",

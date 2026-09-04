@@ -1256,7 +1256,18 @@ export const DIET_CATEGORIES: DietCategory[] = [
     slug: "zamienniki",
     name: "Dieta z zamiennikami dań",
     shortName: "Z zamiennikami",
-    description: "Elastyczny plan z gotowymi zamiennikami dań i składników, dopasowany do Twoich upodobań.",
+    /*
+     * 4.09.2026: opis obiecywał „gotowe zamienniki dań i składników". Takiej
+     * funkcji nie ma — żaden posiłek w bazie nie ma przypisanego zamiennika,
+     * więc przycisk „Zamień danie" nigdy się nie pokazuje. Opis mówi teraz,
+     * czym ten plan naprawdę jest: zwykłym jadłospisem bez wykluczeń.
+     *
+     * NAZWA I ADRES ZOSTAJĄ DO DECYZJI AGI. „Dieta z zamiennikami dań"
+     * i /diety/zamienniki też obiecują tę funkcję, ale to strona
+     * zaindeksowana i jest w mapie serwisu — zmiana nazwy albo adresu to
+     * decyzja o SEO, nie poprawka tekstu, więc nie robię jej sam.
+     */
+    description: "Jadłospis bez wykluczeń — zwyczajne, mieszane menu na tydzień lub dwa, jeśli nie potrzebujesz diety pod konkretne wskazanie.",
     configuratorMode: "calories",
     icon: "swap",
     plans: [ZAMIENNIKI_1500, ZAMIENNIKI_2000, ZAMIENNIKI_14D_1500, ZAMIENNIKI_14D_2000],
