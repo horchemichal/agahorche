@@ -14,7 +14,7 @@ import { TargetIcon, ChefHatIcon, CheckCircleIcon, CalendarIcon, CartIcon } from
 import { getCurrentClient } from "@/lib/auth/client-auth";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Diety na Thermomix — konfigurator, przykładowe plany, przepisy",
+  title: "Diety na Thermomix — konfigurator i jadłospisy",
   description:
     "Skonfiguruj dietę dopasowaną do siebie: keto, wegetariańska, bezglutenowa i inne. Z każdej diety pobierzesz bezpłatny jadłospis na jeden dzień w PDF.",
   path: "/diety",
