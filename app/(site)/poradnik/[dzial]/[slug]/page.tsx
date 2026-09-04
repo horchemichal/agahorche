@@ -69,7 +69,7 @@ export default async function WpisPage({ params }: Props) {
 
         Daty idą z bazy przez `articleSchema`, które normalizuje je do ISO
         8601 — surowy string z Postgresa nie jest poprawną datą i wywalał
-        już raz sitemapę (patrz lib/seo/daty.ts).
+        już raz sitemapę (patrz lib/utils.ts).
       */}
       <JsonLdScript
         data={[
