@@ -67,11 +67,15 @@ export default function AgaClubPage() {
             />
           ))}
         </div>
-        <p className="mt-8 text-sm text-muted">
-          Funkcje Aga Club wdrażamy etapami. Architektura (profil, ulubione przepisy, historia,
-          logowanie) jest już przygotowana pod PWA i aplikację mobilną — patrz raport
-          architektury.
-        </p>
+        {/*
+          4.09.2026 — usunięty akapit „Funkcje Aga Club wdrażamy etapami.
+          Architektura… przygotowana pod PWA i aplikację mobilną — patrz
+          raport architektury". Trzy powody: mówił o zapowiedziach, których
+          już nie ma; „patrz raport architektury" odsyłał donikąd, bo nie
+          był linkiem i klientka nie ma dostępu do żadnego raportu; a PWA
+          i aplikacja mobilna to plan techniczny, nie coś, co obiecuje się
+          osobie wchodzącej na stronę.
+        */}
       </Section>
     </>
   );
