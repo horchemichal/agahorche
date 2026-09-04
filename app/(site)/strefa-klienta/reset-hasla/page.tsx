@@ -4,7 +4,7 @@ import { getCurrentClient } from "@/lib/auth/client-auth";
 import { FormularzProsby } from "./formularze";
 
 export const metadata: Metadata = {
-  title: "Nowe hasło — Strefa Klienta | Aga Horche",
+  title: "Nowe hasło — Strefa Klienta",
   robots: { index: false, follow: false },
 };
 
