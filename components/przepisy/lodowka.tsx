@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { czasSlownie } from "@/lib/przepisy/grupy";
 import { dopasujZLodowki, produktyWgGrup } from "@/lib/przepisy/lodowka";
+import { TylkoDlaKlubu } from "@/components/przepisy/tylko-dla-klubu";
 
 /**
  * OŚ PLIKU
@@ -33,7 +34,7 @@ import { dopasujZLodowki, produktyWgGrup } from "@/lib/przepisy/lodowka";
  * na telefonie, a każdy wie, jak nazywa się to, czego szuka.
  */
 
-export function CoMamWLodowce() {
+export function CoMamWLodowce({ zalogowany = true }: { zalogowany?: boolean }) {
   const [wybrane, setWybrane] = useState<string[]>([]);
   const [zPodstawami, setZPodstawami] = useState(true);
   const [ileBrakow, setIleBrakow] = useState(5);
@@ -173,7 +174,10 @@ export function CoMamWLodowce() {
             )}
           </div>
 
-          {wyniki.length === 0 ? (
+          {/* Liczbę dań podaje nagłówek wyżej — kafel jej nie powtarza. */}
+          {!zalogowany ? (
+            <TylkoDlaKlubu coBySie="Lista dań jest w Aga Club" />
+          ) : wyniki.length === 0 ? (
             <p className="rounded-2xl border border-dashed border-neutral-300 bg-surface p-6 text-sm text-neutral-700">
               Zaznacz więcej produktów albo pozwól dokupić jedną rzecz więcej.
             </p>

@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { RecipeCard } from "@/components/diets/recipe-card";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { TylkoDlaKlubu } from "@/components/przepisy/tylko-dla-klubu";
 import {
   GRUPY_DAN,
   PROGI_CZASU,
@@ -44,7 +45,14 @@ import {
 const OSOBY = [2, 4, 6] as const;
 const KROK = 24;
 
-export function WyszukiwarkaPrzepisow({ startowaGrupa }: { startowaGrupa?: string }) {
+export function WyszukiwarkaPrzepisow({
+  startowaGrupa,
+  zalogowany = true,
+}: {
+  startowaGrupa?: string;
+  /** false = filtry działają, ale zamiast listy dań pokazujemy zaproszenie do klubu. */
+  zalogowany?: boolean;
+}) {
   const [doMinut, setDoMinut] = useState<number | null>(null);
   const [odOsob, setOdOsob] = useState<number | null>(null);
   const [grupy, setGrupy] = useState<string[]>(startowaGrupa ? [startowaGrupa] : []);
@@ -172,7 +180,13 @@ export function WyszukiwarkaPrzepisow({ startowaGrupa }: { startowaGrupa?: strin
           <p className="text-sm text-muted">z {wszystkich} dań w bazie</p>
         </div>
 
-        {wyniki.length === 0 ? (
+        {/*
+          Liczbę pasujących dań pokazuje już nagłówek wyżej, więc kafel
+          nie powtarza jej po raz drugi — mówi tylko, gdzie jest lista.
+        */}
+        {!zalogowany ? (
+          <TylkoDlaKlubu coBySie="Lista dań jest w Aga Club" />
+        ) : wyniki.length === 0 ? (
           <p className="rounded-2xl border border-dashed border-neutral-300 bg-surface p-6 text-sm text-neutral-700">
             Poluzuj jeden z warunków — najczęściej pomaga wydłużenie czasu albo odznaczenie
             liczby osób.
