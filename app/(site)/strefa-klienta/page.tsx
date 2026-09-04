@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getCurrentClient } from "@/lib/auth/client-auth";
 import { DIET_CATEGORIES } from "@/data/diets/categories";
 import { CategoryIcon } from "@/components/diets/category-icon";
 import { ClientDietList, type PozycjaDiety } from "@/components/diets/client-diet-list";
+import { pozycjeMoichDiet } from "@/lib/diets/pozycje-pulpitu";
 import { DietConfigurator } from "@/components/diets/diet-configurator";
 import { MenuKlubu } from "@/components/aga-club/menu-klubu";
 import { Section } from "@/components/ui/section";
 import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
-import { Badge } from "@/components/ui/card";
 import { Button, ButtonLink } from "@/components/ui/button";
 
 export const metadata: Metadata = {
@@ -18,11 +17,13 @@ export const metadata: Metadata = {
 };
 
 /**
- * Client dashboard (ETAP 8). Categories with real full-week content
- * (currently keto + wegetariańska, see days2to7 in data/diets/categories.ts)
- * link to the unlocked plan view; the remaining 8 categories link back to
- * their public configurator page with an honest "pełny plan w przygotowaniu"
- * note rather than a broken/empty client-only page.
+ * Pulpit Strefy Klienta (ETAP 8). Kafelki prowadzą do odblokowanego planu
+ * każdej kategorii, która ma realną treść.
+ *
+ * 4.09.2026 — opis poprawiony. Mówił „currently keto + wegetariańska" i „the
+ * remaining 8 categories", co przestało być prawdą 1.09, gdy pełny tydzień
+ * dostała KAŻDA kategoria (patrz `withoutFullPlan` niżej — dziś zawsze puste).
+ * Komentarz opisujący nieistniejący już stan myli bardziej niż jego brak.
  */
 export default async function ClientDashboardPage() {
   const client = await getCurrentClient();
@@ -30,37 +31,17 @@ export default async function ClientDashboardPage() {
     redirect("/strefa-klienta/logowanie");
   }
 
-  const withFullPlan = DIET_CATEGORIES.filter((c) => c.plans.some((p) => p.days.some((d) => d.locked && d.meals.length > 0)));
-  const withoutFullPlan = DIET_CATEGORIES.filter((c) => !withFullPlan.includes(c));
-
   /**
    * Kafelki diet trafiają do komponentu klienckiego, bo od 31.08.2026 każdy
    * z nich można ukryć na własnym pulpicie (`ClientDietList`). Sama lista
    * nadal powstaje po stronie serwera — do przeglądarki idą wyłącznie pola,
    * które kafelek naprawdę wyświetla.
+   *
+   * 4.09.2026: budowanie listy wyprowadzone do lib/diets/pozycje-pulpitu.ts,
+   * bo od dziś czyta ją też /diety po zalogowaniu.
    */
-  const pozycje: PozycjaDiety[] = withFullPlan.map((c) => {
-    const plan = c.plans[0];
-    return {
-      id: c.id,
-      slug: c.slug,
-      name: c.name,
-      shortName: c.shortName,
-      description: c.description,
-      icon: c.icon,
-      href: `/strefa-klienta/plan/${plan.id}`,
-      /**
-       * Rozszerzanie diety niemowląt ma cztery plany etapowe zamiast jednego
-       * wariantu kalorycznego, więc kafelek prowadzi do Etapu 1 i mówi wprost,
-       * ile etapów czeka dalej — inaczej „Pełny plan — 7 dni" sugerowałoby,
-       * że to wszystko, co jest w tej kategorii.
-       */
-      etykieta:
-        c.plans.length > 1 && c.configuratorMode === "weaning"
-          ? `${c.plans.length} etapy po 7 dni`
-          : `Pełny plan — ${plan.durationDays} dni odblokowane`,
-    };
-  });
+  const pozycje: PozycjaDiety[] = pozycjeMoichDiet();
+  const withoutFullPlan = DIET_CATEGORIES.filter((c) => !pozycje.some((p) => p.id === c.id));
 
   return (
     <>
@@ -105,7 +86,7 @@ export default async function ClientDashboardPage() {
         <p className="mb-6 max-w-xl text-sm text-muted">
           Wszystkie dni odblokowane, w wariantach 7 i 14 dni oraz 1500 i 2000 kcal. Dietę, której
           nie używasz, usuwasz krzyżykiem; żeby wróciła, otwórz ją w konfiguratorze i kliknij
-          „Dodaj do moich diet".
+          „Dodaj do moich diet”.
         </p>
         <ClientDietList pozycje={pozycje} />
       </Section>
