@@ -256,3 +256,19 @@ export function LockIcon(props: IconProps) {
     </svg>
   );
 }
+
+/**
+ * Telefon ze strzałką w dół — „Pobierz aplikację" w pasku Aga Club
+ * (4.09.2026). Żadna z dotychczasowych ikon nie pasowała: PhoneIcon to
+ * słuchawka telefoniczna, czyli „zadzwoń", a nie „zainstaluj na telefonie".
+ */
+export function PobierzAplikacjeIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <rect x="6" y="2.5" width="12" height="19" rx="2.5" />
+      <path d="M12 7.5v6" />
+      <path d="M9.5 11.5 12 14l2.5-2.5" />
+      <path d="M10.5 18.5h3" />
+    </svg>
+  );
+}
