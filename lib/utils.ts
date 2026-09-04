@@ -28,7 +28,12 @@ export const SITE = {
     facebook: "https://www.facebook.com/agulabuu" as string | null,
     instagram: "https://www.instagram.com/agahorche_thermomix" as string | null,
     tiktok: "https://www.tiktok.com/@agahorche_thermomix" as string | null,
-    youtube: "https://www.youtube.com/@agahorche" as string | null,
+    // 4.09.2026: adres kanału podany przez Agę (wcześniej @agahorche).
+    // Ten jeden wpis zasila ikonę YouTube wszędzie — w górnej belce,
+    // w stopce i w sekcji „Znajdź mnie w social mediach" — bo komponenty
+    // czytają go stąd (components/layout/social-icons.tsx oraz
+    // components/marketing/social-follow-section.tsx).
+    youtube: "https://www.youtube.com/@thermomixprzedstawiciel" as string | null,
   },
 } as const;
 
