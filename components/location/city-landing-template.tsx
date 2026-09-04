@@ -309,7 +309,7 @@ export async function CityLandingTemplate({
               key={item.label}
               className="rounded-xl border border-border bg-neutral-0 p-4"
             >
-              <dt className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+              <dt className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                 {item.label}
               </dt>
               <dd className="mt-1.5 text-sm leading-relaxed text-neutral-800">
