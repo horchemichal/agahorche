@@ -1,6 +1,7 @@
-import { NextResponse } from "next/server";
+import { NextResponse, after } from "next/server";
 import { getCurrentClient } from "@/lib/auth/client-auth";
 import { pobierzWiadomosci, wyslijWiadomosc, MAX_ZNAKOW } from "@/lib/klub/czat";
+import { powiadomONowejWiadomosci } from "@/lib/klub/powiadomienia";
 import { storeUploadedFile, MediaUploadError } from "@/lib/admin/media-upload";
 
 /**
@@ -78,6 +79,22 @@ export async function POST(request: Request) {
 
   const wynik = await wyslijWiadomosc({ userId: client.id, tresc, obrazUrl, obrazPlik });
   if (!wynik.ok) return NextResponse.json({ ok: false, blad: wynik.blad }, { status: 400 });
+
+  /*
+   * Powiadomienia idą PO odesłaniu odpowiedzi (`after`). Rozsyłka do
+   * kilkudziesięciu urządzeń to kilkadziesiąt żądań HTTP do Google
+   * i Apple — gdyby klientka czekała na nie z wciśniętym „Wyślij",
+   * czat byłby wolniejszy dokładnie o tyle, ilu ma uczestników.
+   * Powiadomienie ma dodawać wartość, a nie spowalniać rozmowę.
+   */
+  after(() =>
+    powiadomONowejWiadomosci({
+      autorId: client.id,
+      autorImie: client.displayName.split(" ")[0],
+      tresc,
+      zeZdjeciem: Boolean(obrazUrl),
+    }),
+  );
 
   return NextResponse.json({ ok: true });
 }
