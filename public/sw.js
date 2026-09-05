@@ -115,3 +115,62 @@ self.addEventListener("fetch", (zdarzenie) => {
   // czyli zwykła sieć i jej własna pamięć podręczna. Nie ma powodu, żeby
   // service worker się w to wtrącał.
 });
+
+/*
+ * POWIADOMIENIA PUSH (5.09.2026)
+ * ------------------------------
+ * Prośba Michała: „aplikacja też będzie na Androida i dziś będzie więcej
+ * użytkowników" — czyli czat ma dawać znać, że ktoś napisał.
+ *
+ * DŁAWIENIE I CISZA NOCNA SIEDZĄ NA SERWERZE (lib/klub/powiadomienia.ts),
+ * a nie tutaj. Tu jest tylko wyświetlenie tego, co przyszło. Gdyby
+ * decydowała o tym przeglądarka, wystarczyłby telefon z przestawionym
+ * zegarem, żeby cisza nocna przestała obowiązywać.
+ *
+ * `tag` jest stały dla całego czatu. Dzięki temu drugie powiadomienie
+ * PODMIENIA pierwsze zamiast układać się w stos — w pasku telefonu wisi
+ * najwyżej jedno „ktoś pisze na czacie", nigdy siedem.
+ */
+
+self.addEventListener("push", (zdarzenie) => {
+  let dane = {};
+  try {
+    dane = zdarzenie.data ? zdarzenie.data.json() : {};
+  } catch {
+    // Gdyby przyszło coś, czego nie umiemy odczytać, lepiej pokazać
+    // ogólne powiadomienie niż nie pokazać nic.
+  }
+
+  const tytul = dane.tytul || "Aga Club";
+  const opcje = {
+    body: dane.tresc || "Nowa wiadomość na czacie klubu",
+    icon: "/ikony/aga-club-192.png",
+    badge: "/ikony/aga-club-192.png",
+    tag: "czat-klubu",
+    data: { adres: dane.adres || "/aga-club/czat" },
+  };
+
+  zdarzenie.waitUntil(self.registration.showNotification(tytul, opcje));
+});
+
+self.addEventListener("notificationclick", (zdarzenie) => {
+  zdarzenie.notification.close();
+  const adres = (zdarzenie.notification.data && zdarzenie.notification.data.adres) || "/aga-club/czat";
+
+  /*
+   * Jeśli aplikacja już gdzieś działa, przechodzimy w NIEJ na czat.
+   * Otwieranie drugiego okna byłoby najgorszym z możliwych wyjść:
+   * klientka kliknęłaby trzy powiadomienia i miała trzy kopie
+   * aplikacji, z których każda odpytuje serwer.
+   */
+  zdarzenie.waitUntil(
+    self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((okna) => {
+      for (const okno of okna) {
+        if (new URL(okno.url).origin === self.location.origin && "navigate" in okno) {
+          return okno.navigate(adres).then((o) => o && o.focus());
+        }
+      }
+      return self.clients.openWindow(adres);
+    }),
+  );
+});
