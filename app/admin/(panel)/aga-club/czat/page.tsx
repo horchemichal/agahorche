@@ -30,6 +30,13 @@ export const metadata: Metadata = {
  * samego czatu, gdzie widać tylko imię. Aga musi wiedzieć, z kim
  * rozmawiać, jeśli trzeba będzie porozmawiać.
  */
+/*
+ * CZAS PO POLSKU, NIE PO SERWEROWEMU. Ta strona renderuje się na
+ * serwerze, a kontener chodzi na UTC — bez wymuszenia strefy Aga
+ * widziałaby godziny o dwie mniejsze niż klientki w czacie
+ * (5.09.2026, 08:02 zamiast 10:02) i przy każdej rozmowie o „tej
+ * wiadomości sprzed chwili" mijałaby się z nimi o dwie godziny.
+ */
 export default async function AdminCzatKlubuPage() {
   await requireAdmin();
   const wiadomosci = await wiadomosciDlaPanelu();
@@ -75,7 +82,7 @@ export default async function AdminCzatKlubuPage() {
                   <span className="font-normal text-muted">· {w.email}</span>
                 </p>
                 <p className="mt-0.5 text-xs text-muted">
-                  {new Date(w.kiedy).toLocaleString("pl-PL")}
+                  {new Date(w.kiedy).toLocaleString("pl-PL", { timeZone: "Europe/Warsaw" })}
                   {w.usunieta && w.usunietaPrzez && <> · usunęła: {w.usunietaPrzez}</>}
                 </p>
 
