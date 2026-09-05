@@ -23,6 +23,11 @@ services:
       - VAPID_SUBJECT=${VAPID_SUBJECT}
     volumes:
       - agahorche_media_data:/app/storage/media
+      # Kopie zapasowe (5.09.2026). TYLKO DO ODCZYTU — aplikacja ma je
+      # wyłącznie udostępniać zalogowanej Adze, nie tworzyć i nie kasować.
+      # Archiwa robi /root/zrob-kopie.sh; zrzut bazy wymaga pg_dump,
+      # który mieszka w kontenerze Postgresa, nie tutaj.
+      - /root/kopie:/app/storage/kopie:ro
     networks:
       - n8n_default
     labels:
