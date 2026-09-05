@@ -2,7 +2,7 @@
 
 import { useActionState, useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { dodajKontoAction, ustawHasloAction, PUSTY_STAN } from "./actions";
+import { dodajKontoAction, ustawHasloAction, type StanKonta } from "./actions";
 import { Input, Label, FieldError } from "@/components/ui/form-fields";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -18,6 +18,13 @@ import { useToast } from "@/components/admin/toast";
  * po odświeżeniu strony nikt go już nie odczyta — także Aga. Stąd wyraźna
  * ramka i przycisk „Kopiuj": to jedyny moment, żeby je przekazać.
  */
+
+/*
+ * Stan początkowy formularzy. Stoi TUTAJ, a nie w ./actions.ts, bo tamten
+ * plik ma „use server" i wolno mu eksportować wyłącznie funkcje async —
+ * stała w nim wywracała całą stronę błędem 500 (patrz komentarz w actions.ts).
+ */
+const PUSTY_STAN: StanKonta = { blad: null };
 
 function PoleHasla({ haslo }: { haslo: string }) {
   const [skopiowane, setSkopiowane] = useState(false);

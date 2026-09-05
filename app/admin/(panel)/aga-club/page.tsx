@@ -83,11 +83,26 @@ export default async function AdminAgaClubPage() {
 
       <Card className="mt-6">
         <h3 className="font-semibold text-neutral-900">Jak działa odzyskiwanie hasła</h3>
+        {/*
+          5.09.2026 — ten akapit mówił: „Nie ma linku »nie pamiętam hasła«,
+          który klientka klika sama — wymagałby wysyłki e-maili do klientek,
+          a tego jeszcze nie ma". To przestało być prawdą 4.09 wieczorem,
+          gdy ruszyła poczta i powstał samodzielny reset przez e-mail
+          (lib/auth/reset-hasla.ts). Instrukcja w panelu, która opisuje
+          nieistniejące ograniczenie, każe Adze robić ręcznie coś, co dzieje
+          się samo.
+        */}
         <p className="mt-2 text-sm leading-relaxed text-muted">
-          Nie ma linku „nie pamiętam hasła", który klientka klika sama — wymagałby wysyłki e-maili do
-          klientek, a tego jeszcze nie ma. Zamiast tego: gdy ktoś zapomni hasła, znajdź go na liście
-          wyżej, kliknij <strong className="text-neutral-900">„Ustaw nowe hasło"</strong> i przekaż mu
-          to, które się pokaże.
+          <strong className="text-neutral-900">Klientka poradzi sobie sama.</strong> Na stronie
+          logowania jest link „Ustaw nowe” — podaje swój adres, dostaje e-mail z linkiem ważnym
+          godzinę i ustawia hasło. Nie musisz nic robić.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
+          Twoja pomoc jest potrzebna tylko wtedy, gdy ktoś{" "}
+          <strong className="text-neutral-900">nie ma dostępu do swojej skrzynki</strong> albo
+          zmienił adres — wtedy mailem sobie nie pomoże. Znajdź go na liście wyżej, kliknij{" "}
+          <strong className="text-neutral-900">„Ustaw nowe hasło”</strong> i przekaż to, które się
+          pokaże.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Hasło widać <strong className="text-neutral-900">tylko raz</strong>, zaraz po ustawieniu.

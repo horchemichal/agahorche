@@ -28,7 +28,21 @@ export interface StanKonta {
   dlaEmail?: string;
 }
 
-export const PUSTY_STAN: StanKonta = { blad: null };
+/*
+ * TU NIE MOŻE STAĆ ŻADNA STAŁA. Do 5.09.2026 leżał tutaj
+ * `export const PUSTY_STAN: StanKonta = { blad: null }` — i to wywracało
+ * CAŁĄ stronę /admin/aga-club błędem 500:
+ *
+ *   Error: A "use server" file can only export async functions, found object.
+ *
+ * Plik z „use server" jest dla Next.js zbiorem akcji serwerowych i wolno mu
+ * eksportować wyłącznie funkcje async. Eksport obiektu wywala moduł już przy
+ * ładowaniu, więc padała nie tylko akcja, ale i sama strona.
+ *
+ * `export interface` i `export type` są bezpieczne — znikają przy kompilacji
+ * i nie ma ich w gotowym pliku. Stała zostaje, więc musi mieszkać gdzie
+ * indziej: przeniesiona do member-form.tsx, czyli tam, gdzie jest używana.
+ */
 
 export async function dodajKontoAction(_prev: StanKonta, formData: FormData): Promise<StanKonta> {
   const admin = await requireAdmin();
