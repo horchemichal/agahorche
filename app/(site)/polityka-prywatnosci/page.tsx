@@ -136,6 +136,34 @@ export default function PolitykaPrywatnosciPage() {
             w postaci skrótu, nie wprost. Po użyciu albo po upływie godziny przestaje działać.
           </p>
 
+          <h3>Czat klubu</h3>
+          <p>
+            W Aga Club jest wspólny czat dla osób z kontem. Zapisujemy to, co sama w nim napiszesz:
+            treść wiadomości, dodane zdjęcia i godzinę wysłania.
+          </p>
+          <p>
+            <strong>To jest rozmowa publiczna w obrębie klubu.</strong> Twoje imię, Twoje słowa
+            i Twoje zdjęcia widzą wszystkie pozostałe osoby, które mają konto — a Aga, jako
+            moderatorka, widzi dodatkowo Twój adres e-mail przy każdej wiadomości. Nie wysyłaj tam
+            niczego, czego nie powiedziałabyś przy obcych: numerów telefonu, adresu, dokumentów,
+            zdjęć innych osób bez ich zgody ani niczego o swoim zdrowiu.
+          </p>
+          <ul>
+            <li>
+              <strong>Po co:</strong> żeby klubowiczki mogły ze sobą rozmawiać — to część usługi
+              klubu.
+            </li>
+            <li>
+              <strong>Podstawa prawna:</strong> wykonanie umowy o świadczenie usługi drogą
+              elektroniczną — art. 6 ust. 1 lit. b RODO.
+            </li>
+            <li>
+              <strong>Jak długo:</strong> <strong>14 dni</strong>. Po tym czasie wiadomość i jej
+              zdjęcie kasują się automatycznie, razem z plikiem na serwerze. Swoją wiadomość możesz
+              usunąć wcześniej sama; Aga może usunąć każdą, jeśli łamie zasady albo czyjeś dobra.
+            </li>
+          </ul>
+
           <h2>Komu Aga przekazuje dane</h2>
           <p>
             Aga nie sprzedaje ani nie udostępnia Twoich danych innym firmom w celach handlowych.
