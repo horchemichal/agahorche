@@ -48,5 +48,11 @@ export const ADMIN_NAV: AdminNavItem[] = [
    * w kodzie, ale nic już do nich nie prowadzi.
    */
   { label: "Analityka", href: "/admin/analityka", icon: AnalyticsIcon },
+  /*
+   * Kopie zapasowe (5.09.2026, prośba Michała). Nisko w menu, bo to nie
+   * jest codzienna praca Agi — ale w panelu, a nie „gdzieś na serwerze",
+   * bo kopia, po którą trzeba prosić informatyka, nie istnieje.
+   */
+  { label: "Kopie zapasowe", href: "/admin/kopie", icon: MediaIcon },
   { label: "Ustawienia", href: "/admin/ustawienia", icon: SettingsIcon },
 ];
