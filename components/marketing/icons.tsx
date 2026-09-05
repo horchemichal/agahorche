@@ -272,3 +272,16 @@ export function PobierzAplikacjeIcon(props: IconProps) {
     </svg>
   );
 }
+
+/**
+ * Dymek rozmowy — czat Aga Club w pasku klubu (5.09.2026).
+ * MessengerIcon jest logo Mety i nie może oznaczać czatu na własnej stronie.
+ */
+export function CzatIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M20.5 12a8 8 0 0 1-11.6 7.1L4 20.5l1.4-4.9A8 8 0 1 1 20.5 12Z" />
+      <path d="M9 11.5h6M9 14.5h4" />
+    </svg>
+  );
+}
