@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { CloseIcon } from "@/components/marketing/icons";
 import { zmniejszObraz } from "@/lib/klub/zmniejsz-obraz";
+import { sprawdzStan, wlacz, wylacz, type StanPowiadomien } from "@/lib/klub/push-przegladarka";
 import { cn } from "@/lib/utils";
 
 /**
@@ -26,6 +27,15 @@ import { cn } from "@/lib/utils";
  * przewinęła w górę, żeby coś przeczytać, a w tym momencie przyjdzie nowa
  * wiadomość — szarpnięcie na dół byłoby wrogie. Wtedy zamiast tego pokazuje
  * się przycisk „Nowe wiadomości".
+ *
+ * O POWIADOMIENIA PYTAMY DOPIERO PO PIERWSZEJ WYSŁANEJ WIADOMOŚCI. To jest
+ * najważniejsza decyzja w całym tym pliku, więc uzasadnienie: okienko
+ * przeglądarki „czy zezwolić na powiadomienia" można pokazać RAZ. Kliknięte
+ * odruchowo „Blokuj" jest nieodwracalne z poziomu strony — trzeba wejść
+ * w ustawienia witryny, czego nikt nie zrobi. Zapytane od razu po wejściu
+ * jest odrzucane, bo klientka nie wie jeszcze, czym jest ten czat. Zapytane
+ * chwilę po tym, jak sama coś napisała, trafia w moment, w którym odpowiedź
+ * jest jej realnie potrzebna.
  */
 
 interface Wiadomosc {
@@ -59,6 +69,9 @@ export function CzatKlubu({ dniZycia }: { dniZycia: number }) {
   const [wysylanie, setWysylanie] = useState(false);
   const [blad, setBlad] = useState<string | null>(null);
   const [saNowe, setSaNowe] = useState(false);
+  const [powiadomienia, setPowiadomienia] = useState<StanPowiadomien>("sprawdzam");
+  const [proponuj, setProponuj] = useState(false);
+  const [zmieniamZgode, setZmieniamZgode] = useState(false);
 
   const przewijane = useRef<HTMLDivElement>(null);
   const wyborPliku = useRef<HTMLInputElement>(null);
@@ -138,6 +151,23 @@ export function CzatKlubu({ dniZycia }: { dniZycia: number }) {
     };
   }, [pobierz]);
 
+  useEffect(() => {
+    let aktualne = true;
+    void sprawdzStan().then((stan) => {
+      if (aktualne) setPowiadomienia(stan);
+    });
+    return () => {
+      aktualne = false;
+    };
+  }, []);
+
+  async function przelaczPowiadomienia(wlaczyc: boolean) {
+    setZmieniamZgode(true);
+    setProponuj(false);
+    setPowiadomienia(wlaczyc ? await wlacz() : await wylacz());
+    setZmieniamZgode(false);
+  }
+
   async function wybierzZdjecie(event: React.ChangeEvent<HTMLInputElement>) {
     const plik = event.target.files?.[0];
     if (!plik) return;
@@ -181,6 +211,9 @@ export function CzatKlubu({ dniZycia }: { dniZycia: number }) {
       usunZdjecie();
       await pobierz();
       naDol();
+      // Napisała — czyli to jej rozmowa. Teraz pytanie o powiadomienia
+      // ma sens (patrz nagłówek pliku).
+      if (powiadomienia === "wylaczone" || powiadomienia === "tylko-apka") setProponuj(true);
     } catch {
       setBlad("Brak połączenia. Spróbuj jeszcze raz.");
     } finally {
@@ -201,6 +234,43 @@ export function CzatKlubu({ dniZycia }: { dniZycia: number }) {
 
   return (
     <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-neutral-0">
+      {proponuj && powiadomienia === "wylaczone" && (
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border bg-brand-50 px-4 py-3">
+          <p className="text-sm leading-relaxed text-neutral-800">
+            Dać znać, gdy ktoś tu napisze? Najwyżej raz na pół godziny i nigdy w nocy.
+          </p>
+          <div className="flex shrink-0 gap-2">
+            <Button
+              type="button"
+              onClick={() => void przelaczPowiadomienia(true)}
+              disabled={zmieniamZgode}
+            >
+              Tak, dawaj znać
+            </Button>
+            <Button type="button" variant="ghost" onClick={() => setProponuj(false)}>
+              Nie teraz
+            </Button>
+          </div>
+        </div>
+      )}
+
+      {proponuj && powiadomienia === "tylko-apka" && (
+        <div className="border-b border-border bg-brand-50 px-4 py-3">
+          <p className="text-sm leading-relaxed text-neutral-800">
+            Chcesz wiedzieć, gdy ktoś tu napisze? Na iPhonie powiadomienia działają dopiero po
+            dodaniu Aga Club do ekranu głównego — udostępnij tę stronę i wybierz „Do ekranu
+            początkowego”.{" "}
+            <button
+              type="button"
+              onClick={() => setProponuj(false)}
+              className="underline underline-offset-2"
+            >
+              Ukryj
+            </button>
+          </p>
+        </div>
+      )}
+
       <div
         ref={przewijane}
         className="relative flex h-[60vh] min-h-80 flex-col gap-3 overflow-y-auto bg-surface p-4"
@@ -333,6 +403,41 @@ export function CzatKlubu({ dniZycia }: { dniZycia: number }) {
           </Button>
         </div>
       </form>
+
+      {/*
+       * Stały przełącznik pod polem wpisywania. Baner wyżej pojawia się raz
+       * i znika; ten wiersz jest zawsze, żeby dało się wyłączyć powiadomienia
+       * w tym samym miejscu, w którym się je włączyło — a nie w ustawieniach
+       * przeglądarki, których nikt nie znajdzie.
+       */}
+      {(powiadomienia === "wlaczone" ||
+        powiadomienia === "wylaczone" ||
+        powiadomienia === "zablokowane") && (
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border px-4 py-2.5">
+          {powiadomienia === "zablokowane" ? (
+            <p className="text-xs leading-relaxed text-muted">
+              Powiadomienia są zablokowane w ustawieniach tej przeglądarki dla agahorche.pl —
+              możesz je tam odblokować.
+            </p>
+          ) : (
+            <>
+              <p className="text-xs text-muted">
+                {powiadomienia === "wlaczone"
+                  ? "Dostajesz znać o nowych wiadomościach na tym urządzeniu."
+                  : "Nie dostajesz znać o nowych wiadomościach."}
+              </p>
+              <button
+                type="button"
+                onClick={() => void przelaczPowiadomienia(powiadomienia !== "wlaczone")}
+                disabled={zmieniamZgode}
+                className="text-xs font-medium text-brand-700 underline underline-offset-2 disabled:opacity-50"
+              >
+                {powiadomienia === "wlaczone" ? "wyłącz powiadomienia" : "włącz powiadomienia"}
+              </button>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }
