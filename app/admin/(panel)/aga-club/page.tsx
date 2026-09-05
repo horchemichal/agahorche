@@ -38,9 +38,14 @@ export default async function AdminAgaClubPage() {
         title="Aga Club"
         description="Konta do Strefy Klienta — kto może się zalogować i zobaczyć zamkniętą część serwisu."
         action={
-          <ButtonLink href="/admin/aga-club/wyzwanie" variant="outline">
-            Wyzwanie 30 dni ({activeDays}/30 opublikowanych)
-          </ButtonLink>
+          <div className="flex flex-wrap gap-2">
+            <ButtonLink href="/admin/aga-club/czat" variant="outline">
+              Czat klubu
+            </ButtonLink>
+            <ButtonLink href="/admin/aga-club/wyzwanie" variant="outline">
+              Wyzwanie 30 dni ({activeDays}/30 opublikowanych)
+            </ButtonLink>
+          </div>
         }
       />
 
