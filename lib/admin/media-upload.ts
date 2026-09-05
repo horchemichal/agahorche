@@ -36,6 +36,20 @@ export const MEDIA_STORAGE_DIR = process.env.MEDIA_STORAGE_DIR || path.join(proc
 const MAX_DIMENSION = 2000;
 const WEBP_QUALITY = 82;
 
+/**
+ * Ustawienia przeróbki obrazu. Domyślnie te co wyżej — czyli dla mediów
+ * serwisu nic się nie zmienia.
+ *
+ * Parametr powstał 5.09.2026 dla czatu Aga Club: zdjęcie potrawy w
+ * rozmowie nie potrzebuje 2000 px (to wymiar pod zdjęcie główne strony
+ * w wersji retina). Klientki oglądają czat na telefonie, często poza domem,
+ * więc każdy kilobajt to ich transfer.
+ */
+export interface OpcjeObrazu {
+  maxWymiar?: number;
+  jakosc?: number;
+}
+
 export class MediaUploadError extends Error {}
 
 export interface StoredFile {
@@ -62,14 +76,20 @@ interface OptimizedImage {
   ext: string;
 }
 
-async function optimizeImage(bytes: Uint8Array, mimeType: string): Promise<OptimizedImage> {
+async function optimizeImage(
+  bytes: Uint8Array,
+  mimeType: string,
+  opcje?: OpcjeObrazu,
+): Promise<OptimizedImage> {
   if (mimeType === "image/svg+xml") {
     return { bytes, mimeType, ext: ".svg" };
   }
+  const wymiar = opcje?.maxWymiar ?? MAX_DIMENSION;
+  const jakosc = opcje?.jakosc ?? WEBP_QUALITY;
   const optimized = await sharp(bytes)
     .rotate() // apply EXIF orientation before stripping metadata
-    .resize({ width: MAX_DIMENSION, height: MAX_DIMENSION, fit: "inside", withoutEnlargement: true })
-    .webp({ quality: WEBP_QUALITY })
+    .resize({ width: wymiar, height: wymiar, fit: "inside", withoutEnlargement: true })
+    .webp({ quality: jakosc })
     .toBuffer();
   return { bytes: optimized, mimeType: "image/webp", ext: ".webp" };
 }
@@ -80,7 +100,7 @@ async function optimizeImage(bytes: Uint8Array, mimeType: string): Promise<Optim
  * kontroli w przeglądarce, a każdy obraz rastrowy przepuszcza przez
  * optimizeImage() zanim trafi na dysk.
  */
-export async function storeUploadedFile(file: File): Promise<StoredFile> {
+export async function storeUploadedFile(file: File, opcje?: OpcjeObrazu): Promise<StoredFile> {
   if (!ALLOWED_MIME_TYPES.has(file.type)) {
     throw new MediaUploadError("Dozwolone są tylko obrazy: JPG, PNG, WebP, AVIF, SVG.");
   }
@@ -97,7 +117,7 @@ export async function storeUploadedFile(file: File): Promise<StoredFile> {
   let mimeType: string;
   let ext: string;
   try {
-    ({ bytes, mimeType, ext } = await optimizeImage(rawBytes, file.type));
+    ({ bytes, mimeType, ext } = await optimizeImage(rawBytes, file.type, opcje));
   } catch {
     // Optimization failed (e.g. an unusual/corrupt file) — store the
     // original rather than blocking the upload outright.
