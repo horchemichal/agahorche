@@ -422,6 +422,42 @@ create table if not exists client_diet_progress (
 );
 
 -- ============================================================
+-- CZAT AGA CLUB (5 września 2026)
+-- ============================================================
+-- Jeden wspólny pokój dla klubowiczek — „co dziś gotujecie".
+--
+-- WIADOMOŚCI ZNIKAJĄ PO 14 DNIACH i to jest cecha, nie brak funkcji
+-- (prośba Michała: „automatycznie kasuje wiadomości po 2 tygodniach").
+-- Sprząta lib/klub/czat.ts przy okazji odczytu; razem z wierszem znika
+-- też plik zdjęcia z dysku, inaczej wolumen rósłby w nieskończoność.
+--
+-- `tresc` MOŻE BYĆ PUSTA, gdy wiadomość jest samym zdjęciem. Dlatego
+-- warunek pilnuje, żeby wiadomość miała przynajmniej jedno z dwojga —
+-- pusty wiersz bez treści i bez zdjęcia nie ma prawa powstać.
+--
+-- `usunieta_*` zamiast kasowania wiersza przy moderacji: zostaje ślad,
+-- kto i kiedy usunął, a rozmowa nie gubi kontekstu bez wyjaśnienia.
+-- Po 14 dniach i tak znika wszystko, więc ślad nie rośnie w nieskończoność.
+
+create table if not exists club_chat_messages (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references client_users (id) on delete cascade,
+  tresc text,
+  obraz_url text,
+  obraz_plik text,
+  created_at timestamptz not null default now(),
+  usunieta_at timestamptz,
+  usunieta_przez text,
+  constraint club_chat_cos_jest check (
+    (tresc is not null and length(btrim(tresc)) > 0) or obraz_plik is not null
+  )
+);
+
+-- Odczyt czatu to zawsze „ostatnie N wiadomości", a sprzątanie to zawsze
+-- „starsze niż 14 dni" — oba idą po tej samej kolumnie.
+create index if not exists club_chat_messages_czas_idx on club_chat_messages (created_at desc);
+
+-- ============================================================
 -- USTAWIENIA FINANSOWANIA (1 września 2026)
 -- ============================================================
 -- Jeden wiersz, jak seo_settings. Powstało, bo raty 0% to promocja
