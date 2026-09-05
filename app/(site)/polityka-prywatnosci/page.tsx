@@ -164,6 +164,29 @@ export default function PolitykaPrywatnosciPage() {
             </li>
           </ul>
 
+          <h3>Powiadomienia w aplikacji Aga Club</h3>
+          <p>
+            Jeśli włączysz powiadomienia o nowych wiadomościach na czacie, zapisujemy adres
+            techniczny nadany przez Twoją przeglądarkę oraz klucze potrzebne do zaszyfrowania
+            powiadomienia. <strong>Nie jest to numer telefonu ani nic, po czym można Cię
+            rozpoznać poza tym jednym urządzeniem.</strong> Zgoda dotyczy konkretnego urządzenia
+            — telefon i komputer to dwie osobne zgody.
+          </p>
+          <ul>
+            <li>
+              <strong>Po co:</strong> żeby dać Ci znać, że ktoś napisał na czacie klubu. Najwyżej
+              raz na pół godziny i nigdy między 22:00 a 7:00.
+            </li>
+            <li>
+              <strong>Podstawa prawna:</strong> Twoja zgoda — art. 6 ust. 1 lit. a RODO.
+            </li>
+            <li>
+              <strong>Jak długo:</strong> do wyłączenia powiadomień. Możesz to zrobić jednym
+              kliknięciem pod polem wpisywania w czacie; wtedy zapis znika od razu. Znika też sam,
+              gdy odinstalujesz aplikację albo usuniesz konto.
+            </li>
+          </ul>
+
           <h2>Komu Aga przekazuje dane</h2>
           <p>
             Aga nie sprzedaje ani nie udostępnia Twoich danych innym firmom w celach handlowych.
@@ -178,10 +201,20 @@ export default function PolitykaPrywatnosciPage() {
               <strong>Interia</strong> — skrzynka pocztowa, na którą przychodzi powiadomienie
               o nowym zgłoszeniu.
             </li>
+            <li>
+              <strong>Google lub Apple</strong> — wyłącznie wtedy, gdy sama włączysz powiadomienia
+              w aplikacji Aga Club. Powiadomienie musi przejść przez serwis producenta Twojej
+              przeglądarki lub telefonu; nie da się tego ominąć. <strong>Treść powiadomienia jest
+              zaszyfrowana</strong> tak, że ani Google, ani Apple nie może jej odczytać — widzą
+              tylko, że coś przyszło na to urządzenie.
+            </li>
           </ul>
           <p>
             Serwer znajduje się we Frankfurcie, czyli w Unii Europejskiej. Twoje dane nie są
-            przekazywane poza Europejski Obszar Gospodarczy.
+            przekazywane poza Europejski Obszar Gospodarczy — <strong>z jednym wyjątkiem</strong>:
+            jeśli włączysz powiadomienia, zaszyfrowane powiadomienie przechodzi przez serwery Google
+            albo Apple, czyli firm spoza EOG. Dlatego powiadomienia są dobrowolne i domyślnie
+            wyłączone; bez nich Twoje dane nie opuszczają Europy.
           </p>
           <p>
             Jeśli piszesz do Agi przez Messengera, Facebooka albo Instagrama, ta rozmowa odbywa się
