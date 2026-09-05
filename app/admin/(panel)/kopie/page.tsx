@@ -47,7 +47,7 @@ export default async function AdminKopiePage() {
         <div className="mt-4">
           <EmptyState
             title="Nie ma jeszcze żadnej kopii"
-            description="Nową kopię robi się na serwerze poleceniem: bash /root/zrob-kopie.sh"
+            description="Nową kopię robi się na serwerze poleceniem: bash /root/agahorche/scripts/zrob-kopie.sh"
           />
         </div>
       ) : (
@@ -75,7 +75,7 @@ export default async function AdminKopiePage() {
           Na serwerze, w konsoli internetowej Hostingera:
         </p>
         <pre className="mt-2 overflow-x-auto rounded-lg bg-neutral-900 px-3 py-2 text-xs text-neutral-0">
-          bash /root/zrob-kopie.sh
+          bash /root/agahorche/scripts/zrob-kopie.sh
         </pre>
         <p className="mt-2 text-sm leading-relaxed text-muted">
           Po chwili nowe archiwum pojawi się na tej liście. Stare kopie kasują się same — zostaje
