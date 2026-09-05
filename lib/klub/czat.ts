@@ -150,9 +150,21 @@ export async function pobierzWiadomosci(idPatrzacego: string): Promise<Wiadomosc
        */
       tresc: usunieta ? "Wiadomość usunięta" : w.tresc,
       obrazUrl: usunieta ? null : w.obraz_url,
-      kiedy: w.created_at,
+      kiedy: naISO(w.created_at),
     };
   });
+}
+
+/**
+ * Postgres oddaje znacznik czasu jako „2026-09-05 08:00:05.013+00" —
+ * ze spacją zamiast „T". Chrome to zrozumie, ale Safari na iPhonie
+ * potrafi zwrócić Invalid Date i pod wiadomością wyświetliłoby się
+ * „Invalid Date" zamiast godziny. Klubowiczki siedzą na telefonach,
+ * więc zamieniamy to na ISO po stronie serwera, raz.
+ */
+function naISO(znacznik: string): string {
+  const data = new Date(znacznik);
+  return Number.isNaN(data.getTime()) ? znacznik : data.toISOString();
 }
 
 export async function wyslijWiadomosc(input: {
@@ -202,15 +214,40 @@ export async function usunWiadomosc(id: string, kto: string, wlascicielId?: stri
   const p = pula();
   if (!p) return false;
 
-  const warunek = wlascicielId ? "and user_id = $3" : "";
+  const warunek = wlascicielId ? "and m.user_id = $3" : "";
   const parametry: string[] = wlascicielId ? [id, kto, wlascicielId] : [id, kto];
 
-  const wynik = await p.query(
-    `update club_chat_messages
-        set usunieta_at = now(), usunieta_przez = $2
-      where id = $1 and usunieta_at is null ${warunek}`,
+  /*
+   * Nazwę pliku wyciągamy CTE (`stara`), bo `returning` po `set ... = null`
+   * oddałoby już nową wartość. Zdjęcie kasujemy z dysku OD RAZU, a nie
+   * dopiero przy czternastodniowym sprzątaniu. To jest cały sens
+   * moderacji: jeśli Aga usuwa fotkę, bo nie powinno jej tu być, to
+   * plik nie może jeszcze przez dwa tygodnie wisieć pod swoim adresem
+   * i być otwierany przez każdego, kto ten adres zna. Sama wiadomość
+   * zostaje jako ślad „Wiadomość usunięta" — znika treść i obraz, nie
+   * fakt, że coś tu było.
+   */
+  const wynik = await p.query<{ obraz_plik: string | null }>(
+    `with stara as (
+       select obraz_plik from club_chat_messages where id = $1
+     )
+     update club_chat_messages m
+        set usunieta_at = now(), usunieta_przez = $2, obraz_url = null, obraz_plik = null
+       from stara
+      where m.id = $1 and m.usunieta_at is null ${warunek}
+     returning stara.obraz_plik`,
     parametry,
   );
+
+  const plik = wynik.rows[0]?.obraz_plik;
+  if (plik) {
+    try {
+      await unlink(path.join(MEDIA_STORAGE_DIR, plik));
+    } catch {
+      // Plik mógł już zniknąć. Wiadomość i tak jest oznaczona jako
+      // usunięta, więc nikt go nie zobaczy w czacie.
+    }
+  }
 
   return (wynik.rowCount ?? 0) > 0;
 }
@@ -256,7 +293,7 @@ export async function wiadomosciDlaPanelu(): Promise<WiadomoscDlaPanelu[]> {
     email: w.email,
     tresc: w.tresc,
     obrazUrl: w.obraz_url,
-    kiedy: w.created_at,
+    kiedy: naISO(w.created_at),
     usunieta: Boolean(w.usunieta_at),
     usunietaPrzez: w.usunieta_przez,
   }));
