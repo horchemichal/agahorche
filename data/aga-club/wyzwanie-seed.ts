@@ -6,7 +6,7 @@ import type { AgaClubChallengeDayInput } from "@/types/aga-club";
  * z czego osiemnaście prowadzi do konkretnego przepisu z rejestru.
  *
  * UKŁAD MIESIĄCA. Cztery tygodnie o czterech różnych rzeczach:
- *   1-7   pierwsze kroki (pierwsze uruchomienie, mycie, Cookidoo, pierwsza zupa),
+ *   1-7   pierwsze kroki (rozpakowanie, Cookidoo, pierwsze uruchomienie, mycie, pierwsza zupa),
  *   8-14  codzienne gotowanie (obiad jednogarnkowy, sos, para, pasta, zupa),
  *   15-21 oszczędzanie czasu (podwójna porcja, bazy, planowanie, lista zakupów),
  *   22-30 rozwinięcie (jogurt, dzieci, goście, ryba, risotto, podsumowanie).
@@ -18,8 +18,16 @@ import type { AgaClubChallengeDayInput } from "@/types/aga-club";
  * obrotów). Wyzwanie mówi CO zrobić, a przepis na Cookidoo mówi JAK.
  * Przepisywanie instrukcji Vorwerka to i naruszenie praw autorskich,
  * i podawanie parametrów, których nie mamy jak sprawdzić. Tam, gdzie
- * potrzebna jest wiedza o urządzeniu (dzień 2 i 3), wpis odsyła do
+ * potrzebna jest wiedza o urządzeniu (dzień 1 i 4), wpis odsyła do
  * instrukcji producenta — jedynego wiążącego źródła.
+ *
+ * KOLEJNOŚĆ PIERWSZYCH CZTERECH DNI (zgłoszenie Michała, 5.09.2026).
+ * Wcześniej dzień 1 kazał zrobić koktajl z przepisu na Cookidoo, a konto
+ * na Cookidoo zakładało się dopiero czwartego dnia — czyli zadanie było
+ * niewykonalne dla dokładnie tej osoby, dla której jest napisane. Teraz
+ * idzie to tak, jak wygląda pierwszy tydzień w domu: rozpakuj → załóż
+ * konto → ugotuj → naucz się myć (mycie po pierwszym gotowaniu, nie
+ * przed, bo dopiero wtedy jest co myć).
  *
  * `wlasne: false` przy każdym dniu — to plan, nie słowa Agi. Panel
  * pokazuje przy takich dniach znacznik „do przepisania”; wszystko tutaj
@@ -31,16 +39,7 @@ import type { AgaClubChallengeDayInput } from "@/types/aga-club";
 export const WYZWANIE_SEED: AgaClubChallengeDayInput[] = [
   {
     day: 1,
-    task: "Zrób pierwszą rzecz — koktajl w pięć minut.",
-    tip: "Nie zaczynaj od obiadu na sześć osób. Pierwsze uruchomienie ma się skończyć sukcesem, a nie sprzątaniem.\n\nKoktajl to najkrótsza droga: wrzucasz, włączasz, pijesz. Po pięciu minutach masz za sobą pierwsze mycie, pierwszy dźwięk i pierwszą pewność, że to działa.\n\n**Po co ten dzień:** żeby urządzenie przestało być pudłem na blacie.",
-    videoUrl: null,
-    przepisId: "cd-r10001",
-    wlasne: false,
-    active: true,
-  },
-  {
-    day: 2,
-    task: "Przejrzyj, co dostałaś w pudełku, i zajrzyj do instrukcji.",
+    task: "Rozpakuj wszystko i zobacz, co masz w środku.",
     tip: "Piętnaście minut dzisiaj oszczędzi Ci pół godziny szukania w przyszłym tygodniu.\n\nRozłóż wszystkie akcesoria i nazwij je po kolei. Instrukcja od producenta jest jedynym miejscem z wiążącymi informacjami o bezpieczeństwie, temperaturach i gwarancji — przeczytaj ją, nawet jeśli nie czytasz instrukcji.\n\n**Zapamiętaj, gdzie ją odkładasz.** To nie jest oczywiste za trzy miesiące.",
     videoUrl: null,
     przepisId: null,
@@ -48,18 +47,27 @@ export const WYZWANIE_SEED: AgaClubChallengeDayInput[] = [
     active: true,
   },
   {
-    day: 3,
-    task: "Umyj urządzenie i naucz się swojej kolejności.",
-    tip: "Sposób mycia opisuje instrukcja producenta — trzymaj się jej, bo od tego zależy gwarancja.\n\nCo warto ustalić dziś, raz na zawsze: gdzie odkładasz mokre części, czym wycierasz i w którym momencie to robisz. Mycie od razu po gotowaniu zajmuje minutę; mycie wieczorem, gdy wszystko zaschnie — kwadrans.\n\n**To jest dzień o nawyku, nie o technice.**",
+    day: 2,
+    task: "Załóż konto na Cookidoo i zapisz pierwsze pięć przepisów.",
+    tip: "Cookidoo to biblioteka przepisów — stamtąd bierzesz to, co będziesz gotować od jutra. Dlatego konto zakładamy dziś, zanim staniesz przy urządzeniu z pustymi rękami.\n\nNie przeglądaj godzinę. Wejdź, znajdź pięć rzeczy, które realnie zjesz w tym tygodniu, i dodaj je do listy. Pięć konkretnych przepisów jest warte więcej niż sto zapisanych „na kiedyś”.\n\n**Wskazówka:** zacznij od dania, które już umiesz zrobić bez urządzenia. Porównanie będzie uczciwe.",
     videoUrl: null,
     przepisId: null,
     wlasne: false,
     active: true,
   },
   {
+    day: 3,
+    task: "Zrób pierwszą rzecz — koktajl w pięć minut.",
+    tip: "Masz już konto z wczoraj, więc przepis otworzysz jednym kliknięciem. Nie zaczynaj od obiadu na sześć osób — pierwsze uruchomienie ma się skończyć sukcesem, a nie sprzątaniem.\n\nKoktajl to najkrótsza droga: wrzucasz, włączasz, pijesz. Po pięciu minutach masz za sobą pierwszy dźwięk i pierwszą pewność, że to działa.\n\n**Po co ten dzień:** żeby urządzenie przestało być pudłem na blacie.",
+    videoUrl: null,
+    przepisId: "cd-r10001",
+    wlasne: false,
+    active: true,
+  },
+  {
     day: 4,
-    task: "Załóż konto na Cookidoo i zapisz pierwsze pięć przepisów.",
-    tip: "Cookidoo to biblioteka przepisów, w której są też te, do których prowadzą wszystkie plany na tej stronie.\n\nNie przeglądaj godzinę. Wejdź, znajdź pięć rzeczy, które realnie zjesz w tym tygodniu, i dodaj je do listy. Pięć konkretnych przepisów jest warte więcej niż sto zapisanych „na kiedyś”.\n\n**Wskazówka:** zacznij od dania, które już umiesz zrobić bez urządzenia. Porównanie będzie uczciwe.",
+    task: "Umyj urządzenie i naucz się swojej kolejności.",
+    tip: "Masz za sobą pierwsze gotowanie, więc dziś jest co myć — i o to chodzi. Sposób mycia opisuje instrukcja producenta; trzymaj się jej, bo od tego zależy gwarancja.\n\nCo warto ustalić dziś, raz na zawsze: gdzie odkładasz mokre części, czym wycierasz i w którym momencie to robisz. Mycie od razu po gotowaniu zajmuje minutę; mycie wieczorem, gdy wszystko zaschnie — kwadrans.\n\n**To jest dzień o nawyku, nie o technice.**",
     videoUrl: null,
     przepisId: null,
     wlasne: false,

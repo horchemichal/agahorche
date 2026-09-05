@@ -5,6 +5,7 @@ import {
   LeafIcon,
   CalendarIcon,
   LightningIcon,
+  CzatIcon,
   PobierzAplikacjeIcon,
 } from "@/components/marketing/icons";
 
@@ -86,6 +87,20 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     krotki: "Poradnik",
     opis: "Kuchenne pytania i wpadki — krótkie odpowiedzi.",
     prefiksy: ["/poradnik"],
+  },
+  /*
+   * Czat (5.09.2026). Stoi PRZED „30 dniami”, a nie na końcu przed
+   * aplikacją: to jedyna pozycja klubu, do której wraca się kilka razy
+   * dziennie, więc powinna być w zasięgu kciuka, a nie za wyzwaniem,
+   * które odhacza się raz na dobę.
+   */
+  {
+    href: "/aga-club/czat",
+    ikona: CzatIcon,
+    tytul: "Czat klubu",
+    krotki: "Czat",
+    opis: "Codzienne „co dziś gotujecie” z innymi klubowiczkami.",
+    prefiksy: ["/aga-club/czat"],
   },
   {
     href: "/aga-club/30-dni-z-aga",
