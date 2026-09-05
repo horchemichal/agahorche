@@ -522,3 +522,30 @@ create index if not exists poradnik_dzial_idx on poradnik_wpisy (dzial, kolejnos
 -- tak samo jak w tabeli poradnik_wpisy.
 alter table aga_club_challenge_days add column if not exists przepis_id text;
 alter table aga_club_challenge_days add column if not exists wlasne boolean not null default true;
+
+-- 5.09.2026 — powiadomienia push do aplikacji Aga Club.
+--
+-- JEDEN WIERSZ = JEDNO URZĄDZENIE, nie jedno konto. Ta sama klientka może
+-- mieć telefon i laptopa; każde ma własny adres push, własne klucze i własną
+-- zgodę. Stąd `endpoint` jako klucz unikalny — powtórna zgoda z tego samego
+-- urządzenia ma odświeżyć wiersz, a nie założyć drugi.
+--
+-- `powiadomiona_at` to dławik: pilnuje, żeby na jedno urządzenie nie poszło
+-- więcej niż jedno powiadomienie na pół godziny. Bez tego dziesięć kobiet
+-- piszących rano oznacza kilkanaście brzęknięć w kwadrans i wyłączoną
+-- aplikację.
+--
+-- `on delete cascade` — po skasowaniu konta znika też zgoda na kontakt.
+
+create table if not exists club_push_subscriptions (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references client_users (id) on delete cascade,
+  endpoint text not null unique,
+  p256dh text not null,
+  auth text not null,
+  created_at timestamptz not null default now(),
+  odswiezona_at timestamptz not null default now(),
+  powiadomiona_at timestamptz
+);
+
+create index if not exists club_push_user_idx on club_push_subscriptions (user_id);
