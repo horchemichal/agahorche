@@ -16,6 +16,11 @@ services:
       - REVALIDATE_SECRET=${REVALIDATE_SECRET}
       - ADMIN_AUTH_PROVIDER=${ADMIN_AUTH_PROVIDER}
       - MEDIA_STORAGE_PROVIDER=${MEDIA_STORAGE_PROVIDER}
+      # Powiadomienia push w aplikacji Aga Club (lib/klub/powiadomienia.ts).
+      # Bez tych trzech czat działa normalnie, tylko po cichu.
+      - VAPID_PUBLIC_KEY=${VAPID_PUBLIC_KEY}
+      - VAPID_PRIVATE_KEY=${VAPID_PRIVATE_KEY}
+      - VAPID_SUBJECT=${VAPID_SUBJECT}
     volumes:
       - agahorche_media_data:/app/storage/media
     networks:
