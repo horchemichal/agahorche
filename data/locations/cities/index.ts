@@ -235,6 +235,8 @@ import { KOLBUSZOWA } from "./kolbuszowa";
 import { NOWA_DEBA } from "./nowa-deba";
 import { BRZOZOW } from "./brzozow";
 import { STRZYZOW } from "./strzyzow";
+import { RYMANOW } from "./rymanow";
+import { RUDNIK_NAD_SANEM } from "./rudnik-nad-sanem";
 
 
 /**
@@ -490,4 +492,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   NOWA_DEBA,
   BRZOZOW,
   STRZYZOW,
+  RYMANOW,
+  RUDNIK_NAD_SANEM,
 ];
