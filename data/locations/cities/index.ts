@@ -229,6 +229,9 @@ import { NISKO } from "./nisko";
 import { LUBACZOW } from "./lubaczow";
 import { LEZAJSK } from "./lezajsk";
 import { ROPCZYCE } from "./ropczyce";
+import { PRZEWORSK } from "./przeworsk";
+import { USTRZYKI_DOLNE } from "./ustrzyki-dolne";
+import { KOLBUSZOWA } from "./kolbuszowa";
 
 
 /**
@@ -478,4 +481,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LUBACZOW,
   LEZAJSK,
   ROPCZYCE,
+  PRZEWORSK,
+  USTRZYKI_DOLNE,
+  KOLBUSZOWA,
 ];
