@@ -114,6 +114,40 @@ export async function CityLandingTemplate({
   const section = (id: string) => content.sections.find((s) => s.id === id);
 
   /**
+   * SEKCJE WŁASNE MIASTA — poprawka z 6 września 2026.
+   *
+   * Szablon układa sekcje w stałe miejsca i dobiera je po `id`: prezentacja,
+   * na-zywo, jak-umowic, tm7, cena, raty, rodzina i tak dalej. Dopóki wszystkie
+   * pliki miast używały wyłącznie tych identyfikatorów, działało to bez zarzutu.
+   *
+   * Przy stronach śląskich zaczęliśmy pisać sekcje z własnymi `id` — bo to
+   * właśnie one niosą to, co odróżnia Bytom od Rudy Śląskiej: familoki, kuchnia
+   * po rodzicach, dwie pielgrzymki w roku, zakupy noszone w rękach. Te sekcje
+   * NIE BYŁY W OGÓLE RENDEROWANE. Strony wychodziły w świat kompletne z punktu
+   * widzenia szablonu i puste z punktu widzenia sensu — czyli dokładnie tym,
+   * czego chcemy uniknąć: szablonem z podmienioną nazwą miasta.
+   *
+   * Poprawka jest celowo tępa: cokolwiek nie trafia do stałego slotu, ląduje
+   * tutaj, w kolejności z pliku miasta, zaraz po sekcji „prezentacja” — bo tak
+   * te pliki są napisane. Dzięki temu dopisanie nowej sekcji w treści miasta
+   * nie wymaga już dotykania szablonu i nie może po cichu zniknąć.
+   */
+  const SLOTY_STALE = new Set([
+    "prezentacja",
+    "na-zywo",
+    "jak-umowic",
+    "tm7",
+    "cena",
+    "raty",
+    "rodzina",
+    "krakowskie-mieszkanie",
+    "jedna-osoba",
+    "co-ugotujesz",
+    "tradycyjne-gotowanie",
+  ]);
+  const sekcjeWlasne = content.sections.filter((s) => !SLOTY_STALE.has(s.id));
+
+  /**
    * Sama TREŚĆ sekcji, bez ramki <Section>. Wydzielona, żeby dało się wstawić
    * dwie sekcje obok siebie w jednym pasie tła (patrz ProseSectionPair) —
    * inaczej każda ciągnęłaby własne tło i własny pionowy padding.
@@ -321,6 +355,16 @@ export async function CityLandingTemplate({
       </Section>
 
       <ProseSection data={section("prezentacja")} tone="surface" />
+
+      {/* To, co w tym mieście jest inne niż wszędzie — patrz `sekcjeWlasne`. */}
+      {sekcjeWlasne.map((sekcja, i) => (
+        <ProseSection
+          key={sekcja.id}
+          data={sekcja}
+          tone={i % 2 === 1 ? "surface" : undefined}
+        />
+      ))}
+
       <ProseSectionPair
         left={section("na-zywo")}
         right={section("jak-umowic")}
