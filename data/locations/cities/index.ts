@@ -259,6 +259,15 @@ import { NOWA_SLUPIA } from "./nowa-slupia";
 import { WISLICA } from "./wislica";
 import { OPATOW } from "./opatow";
 import { KONSKIE } from "./konskie";
+import { LUBLIN } from "./lublin";
+import { ZAMOSC } from "./zamosc";
+import { CHELM } from "./chelm";
+import { BIALA_PODLASKA } from "./biala-podlaska";
+import { PULAWY } from "./pulawy";
+import { KRASNIK } from "./krasnik";
+import { SZCZEBRZESZYN } from "./szczebrzeszyn";
+import { KAZIMIERZ_DOLNY } from "./kazimierz-dolny";
+import { BILGORAJ } from "./bilgoraj";
 
 
 /**
@@ -540,4 +549,15 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WISLICA,
   OPATOW,
   KONSKIE,
+
+  // ——— Województwo lubelskie ———
+  LUBLIN,
+  ZAMOSC,
+  CHELM,
+  BIALA_PODLASKA,
+  PULAWY,
+  KRASNIK,
+  SZCZEBRZESZYN,
+  KAZIMIERZ_DOLNY,
+  BILGORAJ,
 ];

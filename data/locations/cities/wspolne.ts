@@ -26,16 +26,16 @@ import type { CitySection } from "../city-content";
 
 /**
  * REGION, W KTÓRYM LEŻY MIASTO. Wrzesień 2026 — do tej pory blok „kto
- * poprowadzi prezentację" mówił na sztywno „przedstawicielka w Małopolsce"
- * i „prezentacje w całej Małopolsce". Przy pierwszej stronie spoza regionu
+ * poprowadzi prezentację” mówił na sztywno „przedstawicielka w Małopolsce”
+ * i „prezentacje w całej Małopolsce”. Przy pierwszej stronie spoza regionu
  * dałoby to na stronie Katowic zdanie o Małopolsce — czyli dokładnie ten
  * błąd, który zarzucamy konkurencji („na stronie Krakowa zostaje zdanie
- * o Katowicach").
+ * o Katowicach”).
  *
- * CZEGO TU CELOWO NIE MA: podmiany „przedstawicielka w Małopolsce" na
- * „przedstawicielka na Śląsku". Przydział regionu nadaje Vorwerk i nie mam
+ * CZEGO TU CELOWO NIE MA: podmiany „przedstawicielka w Małopolsce” na
+ * „przedstawicielka na Śląsku”. Przydział regionu nadaje Vorwerk i nie mam
  * potwierdzenia, żeby obejmował Śląsk. Poza Małopolską piszemy więc samo
- * „oficjalna przedstawicielka Thermomix®" — to jest prawda niezależnie od
+ * „oficjalna przedstawicielka Thermomix®” — to jest prawda niezależnie od
  * przydziału — a fakt dojazdu mówimy wprost i osobno.
  */
 export interface RegionMiasta {
@@ -81,6 +81,13 @@ export const REGION_PODKARPACIE: RegionMiasta = {
 export const REGION_SWIETOKRZYSKIE: RegionMiasta = {
   przyKredencjale: "",
   zasieg: "i w całym województwie świętokrzyskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+/* LUBELSKIE — czwarty region i czwarty raz ta sama, niezmienna zasada. */
+export const REGION_LUBELSZCZYZNA: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie lubelskim",
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
