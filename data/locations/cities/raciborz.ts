@@ -90,7 +90,7 @@ export const RACIBORZ: CityContent = {
       heading: "Cały powiat raciborski",
       paragraphs: [
         "Jeżdżę też do Kuźni Raciborskiej, Krzanowic, Krzyżanowic, Rudnika, Nędzy, Pietrowic Wielkich i Kornowaca. To okolica rolnicza, więc częściej niż gdzie indziej gotuje się tu z tego, co własne albo kupione od sąsiada — i częściej robi się przetwory.",
-        "Przy umawianiu wystarczy podać miejscowość. Dojazd jest wszędzie bezpłatny i wpływa tylko na godzinę, którą mogę zaproponować.",
+        "Przy umawianiu wystarczy podać miejscowość. Za dojazd nie płacicie nigdzie i nigdy — wpływa on wyłącznie na to, którą godzinę mogę zaproponować.",
       ],
     },
     {

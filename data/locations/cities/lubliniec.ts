@@ -86,7 +86,7 @@ export const LUBLINIEC: CityContent = {
       heading: "Cały powiat lubliniecki",
       paragraphs: [
         "Jeżdżę też do Woźnik, Koszęcina, Herbów, Kochanowic, Ciasnej, Pawonkowa i Boronowa. To okolica domów z ogrodami i sporych odległości między miejscowościami — a jednocześnie taka, z której wiele osób dojeżdża do pracy do Lublińca, Tarnowskich Gór albo Częstochowy.",
-        "Przy umawianiu wystarczy podać miejscowość. Dojazd jest wszędzie bezpłatny i wpływa tylko na godzinę, którą mogę zaproponować.",
+        "Przy umawianiu wystarczy podać miejscowość — reszta to już mój problem z ułożeniem trasy, nie Wasz z ceną.",
       ],
     },
     {

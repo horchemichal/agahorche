@@ -92,7 +92,7 @@ export const WODZISLAW_SLASKI: CityContent = {
       heading: "Cały powiat wodzisławski",
       paragraphs: [
         "Jeżdżę też do Radlina, Rydułtów, Pszowa, Marklowic, Gorzyc, Godowa, Lubomi i Mszany. Wodzisław jest środkiem tego pierścienia miasteczek, więc jedna trasa spokojnie obsługuje dwa spotkania w jeden wieczór.",
-        "Przy umawianiu wystarczy podać miejscowość. Dojazd jest wszędzie bezpłatny i wpływa tylko na godzinę, którą mogę zaproponować.",
+        "Przy umawianiu wystarczy podać miejscowość. Dojazd jest bezpłatny w całym powiecie — decyduje tylko o porze, na którą mogę się umówić.",
       ],
     },
     {
