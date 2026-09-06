@@ -268,6 +268,11 @@ import { KRASNIK } from "./krasnik";
 import { SZCZEBRZESZYN } from "./szczebrzeszyn";
 import { KAZIMIERZ_DOLNY } from "./kazimierz-dolny";
 import { BILGORAJ } from "./bilgoraj";
+import { KRASNYSTAW } from "./krasnystaw";
+import { WLODAWA } from "./wlodawa";
+import { SWIDNIK } from "./swidnik";
+import { LECZNA } from "./leczna";
+import { TERESPOL } from "./terespol";
 
 
 /**
@@ -560,4 +565,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SZCZEBRZESZYN,
   KAZIMIERZ_DOLNY,
   BILGORAJ,
+  KRASNYSTAW,
+  WLODAWA,
+  SWIDNIK,
+  LECZNA,
+  TERESPOL,
 ];
