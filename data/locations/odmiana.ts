@@ -352,6 +352,55 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   dukla: { msc: "Dukli", dop: "Dukli" },
   cieszanow: { msc: "Cieszanowie", dop: "Cieszanowa" },
   oleszyce: { msc: "Oleszycach", dop: "Oleszyc" },
+
+  /*
+   * ŚWIĘTOKRZYSKIE. Trzy pułapki, przez które te nazwy trzeba było
+   * sprawdzać po jednej, a nie dopisywać z pamięci:
+   * — nazwy dwuczłonowe odmieniają się w obu członach: „w Ostrowcu
+   *   Świętokrzyskim”, „w Skarżysku-Kamiennej”, „w Busku-Zdroju”;
+   * — Kazimierza Wielka to nie jest imię — to rodzaj żeński i miejscownik
+   *   brzmi „w Kazimierzy Wielkiej”, nie „w Kazimierzu”;
+   * — Wąchock, Zawichost i Małogoszcz mają nieoczywisty dopełniacz
+   *   („Zawichostu”, nie „Zawichosta”).
+   */
+  "ostrowiec-swietokrzyski": { msc: "Ostrowcu Świętokrzyskim", dop: "Ostrowca Świętokrzyskiego" },
+  starachowice: { msc: "Starachowicach", dop: "Starachowic" },
+  "skarzysko-kamienna": { msc: "Skarżysku-Kamiennej", dop: "Skarżyska-Kamiennej" },
+  suchedniow: { msc: "Suchedniowie", dop: "Suchedniowa" },
+  wachock: { msc: "Wąchocku", dop: "Wąchocka" },
+  staporkow: { msc: "Stąporkowie", dop: "Stąporkowa" },
+  kunow: { msc: "Kunowie", dop: "Kunowa" },
+  konskie: { msc: "Końskich", dop: "Końskich" },
+  wloszczowa: { msc: "Włoszczowie", dop: "Włoszczowy" },
+  jedrzejow: { msc: "Jędrzejowie", dop: "Jędrzejowa" },
+  sedziszow: { msc: "Sędziszowie", dop: "Sędziszowa" },
+  malogoszcz: { msc: "Małogoszczu", dop: "Małogoszcza" },
+  checiny: { msc: "Chęcinach", dop: "Chęcin" },
+  morawica: { msc: "Morawicy", dop: "Morawicy" },
+  daleszyce: { msc: "Daleszycach", dop: "Daleszyc" },
+  bodzentyn: { msc: "Bodzentynie", dop: "Bodzentyna" },
+  "nowa-slupia": { msc: "Nowej Słupi", dop: "Nowej Słupi" },
+  chmielnik: { msc: "Chmielniku", dop: "Chmielnika" },
+  pierzchnica: { msc: "Pierzchnicy", dop: "Pierzchnicy" },
+  lagow: { msc: "Łagowie", dop: "Łagowa" },
+  sandomierz: { msc: "Sandomierzu", dop: "Sandomierza" },
+  opatow: { msc: "Opatowie", dop: "Opatowa" },
+  ozarow: { msc: "Ożarowie", dop: "Ożarowa" },
+  cmielow: { msc: "Ćmielowie", dop: "Ćmielowa" },
+  zawichost: { msc: "Zawichoście", dop: "Zawichostu" },
+  koprzywnica: { msc: "Koprzywnicy", dop: "Koprzywnicy" },
+  klimontow: { msc: "Klimontowie", dop: "Klimontowa" },
+  polaniec: { msc: "Połańcu", dop: "Połańca" },
+  staszow: { msc: "Staszowie", dop: "Staszowa" },
+  szydlow: { msc: "Szydłowie", dop: "Szydłowa" },
+  "busko-zdroj": { msc: "Busku-Zdroju", dop: "Buska-Zdroju" },
+  stopnica: { msc: "Stopnicy", dop: "Stopnicy" },
+  pinczow: { msc: "Pińczowie", dop: "Pińczowa" },
+  wislica: { msc: "Wiślicy", dop: "Wiślicy" },
+  "nowy-korczyn": { msc: "Nowym Korczynie", dop: "Nowego Korczyna" },
+  "kazimierza-wielka": { msc: "Kazimierzy Wielkiej", dop: "Kazimierzy Wielkiej" },
+  skalbmierz: { msc: "Skalbmierzu", dop: "Skalbmierza" },
+  dzialoszyce: { msc: "Działoszycach", dop: "Działoszyc" },
 };
 
 /**

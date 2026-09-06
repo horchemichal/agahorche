@@ -19,8 +19,11 @@ import type { Location } from "@/types/location";
  * prawdziwej treści.
  *
  * Wrzesień 2026 — dołączyły śląskie i podkarpackie, dokładnie tą drogą:
- * najpierw powstaje fala stron miast, potem flaga. W kolejce świętokrzyskie
- * i lubelskie; flagi dostaną wtedy, gdy będą miały treść, a nie wcześniej.
+ * najpierw powstaje fala stron miast, potem flaga. Kilka dni później tą samą
+ * drogą doszło świętokrzyskie: dziewiętnaście miast z własną, napisaną treścią
+ * — od Kielc i Ostrowca po Wiślicę — a dopiero po nich flaga. W kolejce
+ * zostaje lubelskie; flagę dostanie wtedy, gdy będzie miało treść,
+ * a nie wcześniej.
  */
 function base(
   input: Pick<Location, "name" | "slug" | "region" | "population"> & {
@@ -85,7 +88,8 @@ export const WOJEWODZTWA: Location[] = [
   base({ name: "Lubelskie", slug: "lubelskie", region: "Lubelszczyzna", population: 2_050_000, neighborSlugs: ["mazowieckie", "podkarpackie", "swietokrzyskie", "podlaskie"] }),
   base({ name: "Zachodniopomorskie", slug: "zachodniopomorskie", region: "Pomorze Zachodnie", population: 1_670_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lubuskie"] }),
   base({ name: "Warmińsko-Mazurskie", slug: "warminsko-mazurskie", region: "Warmia i Mazury", population: 1_370_000, neighborSlugs: ["pomorskie", "kujawsko-pomorskie", "mazowieckie", "podlaskie"] }),
-  base({ name: "Świętokrzyskie", slug: "swietokrzyskie", region: "Ziemia Świętokrzyska", population: 1_200_000, neighborSlugs: ["mazowieckie", "lodzkie", "slaskie", "malopolskie", "podkarpackie", "lubelskie"] }),
+  // Indeksowane od 6 września 2026 — po napisaniu treści dla 19 miast regionu.
+  base({ name: "Świętokrzyskie", slug: "swietokrzyskie", region: "Ziemia Świętokrzyska", population: 1_200_000, neighborSlugs: ["mazowieckie", "lodzkie", "slaskie", "malopolskie", "podkarpackie", "lubelskie"], indexable: true }),
   base({ name: "Podlaskie", slug: "podlaskie", region: "Podlasie", population: 1_140_000, neighborSlugs: ["mazowieckie", "warminsko-mazurskie", "lubelskie"] }),
   base({ name: "Lubuskie", slug: "lubuskie", region: "Ziemia Lubuska", population: 1_000_000, neighborSlugs: ["wielkopolskie", "zachodniopomorskie", "dolnoslaskie"] }),
   base({ name: "Opolskie", slug: "opolskie", region: "Śląsk Opolski", population: 950_000, neighborSlugs: ["dolnoslaskie", "wielkopolskie", "slaskie"] }),
