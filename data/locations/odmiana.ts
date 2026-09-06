@@ -453,6 +453,98 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   modliborzyce: { msc: "Modliborzycach", dop: "Modliborzyc" },
   frampol: { msc: "Frampolu", dop: "Frampola" },
   "jozefow-nad-wisla": { msc: "Józefowie nad Wisłą", dop: "Józefowa nad Wisłą" },
+
+  /*
+   * OPOLSKIE. Dwie pułapki. Kędzierzyn-Koźle odmienia oba człony
+   * („w Kędzierzynie-Koźlu", „do Kędzierzyna-Koźla"). Zawadzkie
+   * i Kolonowskie to nazwy w formie przymiotnikowej rodzaju nijakiego,
+   * więc miejscownik brzmi „w Zawadzkiem" i „w Kolonowskiem" — nie
+   * „w Zawadzkiu". Do tego Ujazd ma miejscownik „w Ujeździe".
+   */
+  "kedzierzyn-kozle": { msc: "Kędzierzynie-Koźlu", dop: "Kędzierzyna-Koźla" },
+  nysa: { msc: "Nysie", dop: "Nysy" },
+  brzeg: { msc: "Brzegu", dop: "Brzegu" },
+  kluczbork: { msc: "Kluczborku", dop: "Kluczborka" },
+  prudnik: { msc: "Prudniku", dop: "Prudnika" },
+  "strzelce-opolskie": { msc: "Strzelcach Opolskich", dop: "Strzelec Opolskich" },
+  krapkowice: { msc: "Krapkowicach", dop: "Krapkowic" },
+  namyslow: { msc: "Namysłowie", dop: "Namysłowa" },
+  glucholazy: { msc: "Głuchołazach", dop: "Głuchołaz" },
+  glubczyce: { msc: "Głubczycach", dop: "Głubczyc" },
+  zdzieszowice: { msc: "Zdzieszowicach", dop: "Zdzieszowic" },
+  ozimek: { msc: "Ozimku", dop: "Ozimka" },
+  grodkow: { msc: "Grodkowie", dop: "Grodkowa" },
+  paczkow: { msc: "Paczkowie", dop: "Paczkowa" },
+  praszka: { msc: "Praszce", dop: "Praszki" },
+  zawadzkie: { msc: "Zawadzkiem", dop: "Zawadzkiego" },
+  gogolin: { msc: "Gogolinie", dop: "Gogolina" },
+  otmuchow: { msc: "Otmuchowie", dop: "Otmuchowa" },
+  niemodlin: { msc: "Niemodlinie", dop: "Niemodlina" },
+  kietrz: { msc: "Kietrzu", dop: "Kietrza" },
+  wolczyn: { msc: "Wołczynie", dop: "Wołczyna" },
+  "lewin-brzeski": { msc: "Lewinie Brzeskim", dop: "Lewina Brzeskiego" },
+  glogowek: { msc: "Głogówku", dop: "Głogówka" },
+  tulowice: { msc: "Tułowicach", dop: "Tułowic" },
+  dobrodzien: { msc: "Dobrodzieniu", dop: "Dobrodzienia" },
+  byczyna: { msc: "Byczynie", dop: "Byczyny" },
+  kolonowskie: { msc: "Kolonowskiem", dop: "Kolonowskiego" },
+  baborow: { msc: "Baborowie", dop: "Baborowa" },
+  proszkow: { msc: "Prószkowie", dop: "Prószkowa" },
+  lesnica: { msc: "Leśnicy", dop: "Leśnicy" },
+  "biala-opolska": { msc: "Białej", dop: "Białej" },
+  korfantow: { msc: "Korfantowie", dop: "Korfantowa" },
+  ujazd: { msc: "Ujeździe", dop: "Ujazdu" },
+
+  /*
+   * ŁÓDZKIE. Nazwy dwuczłonowe odmieniają się w obu członach (Piotrków
+   * Trybunalski, Tomaszów Mazowiecki, Aleksandrów Łódzki, Konstantynów
+   * Łódzki, Rawa Mazowiecka, Zduńska Wola, Biała Rawska). Osobno warto
+   * pamiętać, że Łask i Szadek mają dopełniacz zakończony na -u
+   * („do Łasku", „do Szadku"), a nie na -a.
+   */
+  "piotrkow-trybunalski": { msc: "Piotrkowie Trybunalskim", dop: "Piotrkowa Trybunalskiego" },
+  pabianice: { msc: "Pabianicach", dop: "Pabianic" },
+  "tomaszow-mazowiecki": { msc: "Tomaszowie Mazowieckim", dop: "Tomaszowa Mazowieckiego" },
+  belchatow: { msc: "Bełchatowie", dop: "Bełchatowa" },
+  zgierz: { msc: "Zgierzu", dop: "Zgierza" },
+  skierniewice: { msc: "Skierniewicach", dop: "Skierniewic" },
+  radomsko: { msc: "Radomsku", dop: "Radomska" },
+  kutno: { msc: "Kutnie", dop: "Kutna" },
+  sieradz: { msc: "Sieradzu", dop: "Sieradza" },
+  "zdunska-wola": { msc: "Zduńskiej Woli", dop: "Zduńskiej Woli" },
+  lowicz: { msc: "Łowiczu", dop: "Łowicza" },
+  "aleksandrow-lodzki": { msc: "Aleksandrowie Łódzkim", dop: "Aleksandrowa Łódzkiego" },
+  wielun: { msc: "Wieluniu", dop: "Wielunia" },
+  opoczno: { msc: "Opocznie", dop: "Opoczna" },
+  ozorkow: { msc: "Ozorkowie", dop: "Ozorkowa" },
+  "konstantynow-lodzki": { msc: "Konstantynowie Łódzkim", dop: "Konstantynowa Łódzkiego" },
+  "rawa-mazowiecka": { msc: "Rawie Mazowieckiej", dop: "Rawy Mazowieckiej" },
+  lask: { msc: "Łasku", dop: "Łasku" },
+  leczyca: { msc: "Łęczycy", dop: "Łęczycy" },
+  glowno: { msc: "Głownie", dop: "Głowna" },
+  koluszki: { msc: "Koluszkach", dop: "Koluszek" },
+  brzeziny: { msc: "Brzezinach", dop: "Brzezin" },
+  wieruszow: { msc: "Wieruszowie", dop: "Wieruszowa" },
+  zychlin: { msc: "Żychlinie", dop: "Żychlina" },
+  poddebice: { msc: "Poddębicach", dop: "Poddębic" },
+  zelow: { msc: "Zelowie", dop: "Zelowa" },
+  tuszyn: { msc: "Tuszynie", dop: "Tuszyna" },
+  pajeczno: { msc: "Pajęcznie", dop: "Pajęczna" },
+  sulejow: { msc: "Sulejowie", dop: "Sulejowa" },
+  dzialoszyn: { msc: "Działoszynie", dop: "Działoszyna" },
+  krosniewice: { msc: "Krośniewicach", dop: "Krośniewic" },
+  drzewica: { msc: "Drzewicy", dop: "Drzewicy" },
+  przedborz: { msc: "Przedborzu", dop: "Przedborza" },
+  strykow: { msc: "Strykowie", dop: "Strykowa" },
+  rzgow: { msc: "Rzgowie", dop: "Rzgowa" },
+  warta: { msc: "Warcie", dop: "Warty" },
+  zloczew: { msc: "Złoczewie", dop: "Złoczewa" },
+  "biala-rawska": { msc: "Białej Rawskiej", dop: "Białej Rawskiej" },
+  uniejow: { msc: "Uniejowie", dop: "Uniejowa" },
+  kamiensk: { msc: "Kamieńsku", dop: "Kamieńska" },
+  wolborz: { msc: "Wolborzu", dop: "Wolborza" },
+  blaszki: { msc: "Błaszkach", dop: "Błaszek" },
+  szadek: { msc: "Szadku", dop: "Szadku" },
 };
 
 /**

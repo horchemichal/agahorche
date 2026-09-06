@@ -24,8 +24,10 @@ import type { Location } from "@/types/location";
  * — od Kielc i Ostrowca po Wiślicę — a dopiero po nich flaga. Tego samego
  * dnia dołączyło lubelskie: dziewięć miast z własną treścią, od Lublina
  * i Zamościa po Szczebrzeszyn. Czwórka z decyzji Michała jest tym samym
- * zamknięta. Kolejne województwo dostanie flagę na tych samych warunkach:
- * najpierw treść, potem indeks.
+ * zamknięta. Tego samego dnia doszły jeszcze dwa województwa z osobnego
+ * polecenia („teraz opolskie i łódzkie") — po dziewięć miast z własną
+ * treścią w każdym. Indeksowanych województw jest więc siedem i wszystkie
+ * przeszły tę samą drogę: najpierw treść, potem flaga.
  */
 function base(
   input: Pick<Location, "name" | "slug" | "region" | "population"> & {
@@ -76,7 +78,8 @@ export const WOJEWODZTWA: Location[] = [
   // Jedyne indeksowane województwo — obszar, w którym Aga faktycznie pracuje.
   base({ name: "Małopolskie", slug: "malopolskie", region: "Małopolska", population: 3_400_000, neighborSlugs: ["slaskie", "swietokrzyskie", "podkarpackie"], indexable: true }),
   base({ name: "Dolnośląskie", slug: "dolnoslaskie", region: "Dolny Śląsk", population: 2_900_000, neighborSlugs: ["lubuskie", "wielkopolskie", "opolskie"] }),
-  base({ name: "Łódzkie", slug: "lodzkie", region: "Polska Centralna", population: 2_400_000, neighborSlugs: ["mazowieckie", "wielkopolskie", "slaskie", "swietokrzyskie", "kujawsko-pomorskie"] }),
+  // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
+  base({ name: "Łódzkie", slug: "lodzkie", region: "Polska Centralna", population: 2_400_000, neighborSlugs: ["mazowieckie", "wielkopolskie", "slaskie", "swietokrzyskie", "kujawsko-pomorskie"], indexable: true }),
   base({ name: "Pomorskie", slug: "pomorskie", region: "Pomorze", population: 2_340_000, neighborSlugs: ["zachodniopomorskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
   /*
    * PODKARPACKIE — indeksowane od 6.09.2026, tą samą drogą co śląskie:
@@ -95,5 +98,6 @@ export const WOJEWODZTWA: Location[] = [
   base({ name: "Świętokrzyskie", slug: "swietokrzyskie", region: "Ziemia Świętokrzyska", population: 1_200_000, neighborSlugs: ["mazowieckie", "lodzkie", "slaskie", "malopolskie", "podkarpackie", "lubelskie"], indexable: true }),
   base({ name: "Podlaskie", slug: "podlaskie", region: "Podlasie", population: 1_140_000, neighborSlugs: ["mazowieckie", "warminsko-mazurskie", "lubelskie"] }),
   base({ name: "Lubuskie", slug: "lubuskie", region: "Ziemia Lubuska", population: 1_000_000, neighborSlugs: ["wielkopolskie", "zachodniopomorskie", "dolnoslaskie"] }),
-  base({ name: "Opolskie", slug: "opolskie", region: "Śląsk Opolski", population: 950_000, neighborSlugs: ["dolnoslaskie", "wielkopolskie", "slaskie"] }),
+  // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
+  base({ name: "Opolskie", slug: "opolskie", region: "Śląsk Opolski", population: 950_000, neighborSlugs: ["dolnoslaskie", "wielkopolskie", "slaskie"], indexable: true }),
 ];
