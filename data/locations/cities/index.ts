@@ -224,6 +224,11 @@ import { DEBICA } from "./debica";
 import { JASLO } from "./jaslo";
 import { JAROSLAW } from "./jaroslaw";
 import { TARNOBRZEG } from "./tarnobrzeg";
+import { LANCUT } from "./lancut";
+import { NISKO } from "./nisko";
+import { LUBACZOW } from "./lubaczow";
+import { LEZAJSK } from "./lezajsk";
+import { ROPCZYCE } from "./ropczyce";
 
 
 /**
@@ -468,4 +473,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JASLO,
   JAROSLAW,
   TARNOBRZEG,
+  LANCUT,
+  NISKO,
+  LUBACZOW,
+  LEZAJSK,
+  ROPCZYCE,
 ];
