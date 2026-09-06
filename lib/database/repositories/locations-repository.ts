@@ -5,6 +5,7 @@ import { WOJEWODZTWA } from "@/data/locations/wojewodztwa";
 import { MIASTA } from "@/data/locations/miasta";
 import { MALOPOLSKA_AGI } from "@/data/locations/malopolska";
 import { SLASKIE_AGI } from "@/data/locations/slaskie";
+import { PODKARPACKIE_AGI } from "@/data/locations/podkarpackie";
 import { POWIATY_DEMO, MIEJSCOWOSCI_DEMO } from "@/data/locations/hierarchy-demo";
 import { getGlobalSingleton } from "@/lib/database/global-singleton";
 import { miejscownik, miejscownikWojewodztwa } from "@/data/locations/odmiana";
@@ -114,7 +115,7 @@ function slugify(value: string): string {
  * tabela odmiany była jedynym miejscem, w którym trzyma się formy gramatyczne.
  */
 function seedLocations(): Location[] {
-  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
+  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...PODKARPACKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
     (l) => {
       const msc =
         l.unitType === "wojewodztwo"
