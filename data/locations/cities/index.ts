@@ -213,6 +213,13 @@ import { ZAWIERCIE } from "./zawiercie";
 import { LUBLINIEC } from "./lubliniec";
 import { CZECHOWICE_DZIEDZICE } from "./czechowice-dziedzice";
 import { MYSZKOW } from "./myszkow";
+// ——— Województwo podkarpackie (wrzesień 2026, pierwsza fala) ———
+import { RZESZOW } from "./rzeszow";
+import { PRZEMYSL } from "./przemysl";
+import { STALOWA_WOLA } from "./stalowa-wola";
+import { KROSNO } from "./krosno";
+import { MIELEC } from "./mielec";
+
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -444,4 +451,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LUBLINIEC,
   CZECHOWICE_DZIEDZICE,
   MYSZKOW,
+
+  // ——— Województwo podkarpackie ———
+  RZESZOW,
+  PRZEMYSL,
+  STALOWA_WOLA,
+  KROSNO,
+  MIELEC,
 ];

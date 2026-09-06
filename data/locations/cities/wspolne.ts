@@ -59,6 +59,19 @@ export const REGION_SLASKIE: RegionMiasta = {
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
+/*
+ * PODKARPACKIE — ta sama zasada co przy śląskim: żadnego „przedstawicielka
+ * na Podkarpaciu”, bo przydział regionu nadaje Vorwerk i nie mam
+ * potwierdzenia, żeby go obejmował. Mówimy samo „oficjalna przedstawicielka
+ * Thermomix®”, co jest prawdą niezależnie od przydziału, a fakt dojazdu
+ * podajemy osobno i wprost.
+ */
+export const REGION_PODKARPACIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie podkarpackim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
 export function blokOMnie(
   miejscownik: string,
