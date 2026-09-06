@@ -196,6 +196,10 @@ import { MYSLOWICE } from "./myslowice";
 import { RUDA_SLASKA } from "./ruda-slaska";
 import { SIEMIANOWICE_SLASKIE } from "./siemianowice-slaskie";
 import { BEDZIN } from "./bedzin";
+import { SWIETOCHLOWICE } from "./swietochlowice";
+import { TARNOWSKIE_GORY } from "./tarnowskie-gory";
+import { PIEKARY_SLASKIE } from "./piekary-slaskie";
+import { CZELADZ } from "./czeladz";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -410,4 +414,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RUDA_SLASKA,
   SIEMIANOWICE_SLASKIE,
   BEDZIN,
+  SWIETOCHLOWICE,
+  TARNOWSKIE_GORY,
+  PIEKARY_SLASKIE,
+  CZELADZ,
 ];
