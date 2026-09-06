@@ -18,10 +18,9 @@ import type { Location } from "@/types/location";
  * Promocja kolejnego województwa to jedna flaga, po napisaniu dla niego
  * prawdziwej treści.
  *
- * Wrzesień 2026 — dołączyło śląskie, dokładnie tą drogą: najpierw powstała
- * pierwsza fala stron miast, potem flaga. W kolejce podkarpackie,
- * świętokrzyskie i lubelskie; flagi dostaną wtedy, gdy będą miały treść,
- * a nie wcześniej.
+ * Wrzesień 2026 — dołączyły śląskie i podkarpackie, dokładnie tą drogą:
+ * najpierw powstaje fala stron miast, potem flaga. W kolejce świętokrzyskie
+ * i lubelskie; flagi dostaną wtedy, gdy będą miały treść, a nie wcześniej.
  */
 function base(
   input: Pick<Location, "name" | "slug" | "region" | "population"> & {
@@ -74,7 +73,14 @@ export const WOJEWODZTWA: Location[] = [
   base({ name: "Dolnośląskie", slug: "dolnoslaskie", region: "Dolny Śląsk", population: 2_900_000, neighborSlugs: ["lubuskie", "wielkopolskie", "opolskie"] }),
   base({ name: "Łódzkie", slug: "lodzkie", region: "Polska Centralna", population: 2_400_000, neighborSlugs: ["mazowieckie", "wielkopolskie", "slaskie", "swietokrzyskie", "kujawsko-pomorskie"] }),
   base({ name: "Pomorskie", slug: "pomorskie", region: "Pomorze", population: 2_340_000, neighborSlugs: ["zachodniopomorskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
-  base({ name: "Podkarpackie", slug: "podkarpackie", region: "Podkarpacie", population: 2_100_000, neighborSlugs: ["malopolskie", "swietokrzyskie", "lubelskie"] }),
+  /*
+   * PODKARPACKIE — indeksowane od 6.09.2026, tą samą drogą co śląskie:
+   * najpierw powstała pierwsza fala stron miast (Rzeszów, Przemyśl,
+   * Stalowa Wola, Krosno, Mielec), dopiero potem flaga. Kolejne miasta
+   * regionu mają już wiersze w `podkarpackie.ts`, ale zostają noindex,
+   * dopóki ktoś nie napisze dla nich prawdziwej treści.
+   */
+  base({ name: "Podkarpackie", slug: "podkarpackie", region: "Podkarpacie", population: 2_100_000, neighborSlugs: ["malopolskie", "swietokrzyskie", "lubelskie"], indexable: true }),
   base({ name: "Kujawsko-Pomorskie", slug: "kujawsko-pomorskie", region: "Kujawy i Pomorze", population: 2_050_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lodzkie", "mazowieckie", "warminsko-mazurskie"] }),
   base({ name: "Lubelskie", slug: "lubelskie", region: "Lubelszczyzna", population: 2_050_000, neighborSlugs: ["mazowieckie", "podkarpackie", "swietokrzyskie", "podlaskie"] }),
   base({ name: "Zachodniopomorskie", slug: "zachodniopomorskie", region: "Pomorze Zachodnie", population: 1_670_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lubuskie"] }),
