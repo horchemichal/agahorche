@@ -232,6 +232,9 @@ import { ROPCZYCE } from "./ropczyce";
 import { PRZEWORSK } from "./przeworsk";
 import { USTRZYKI_DOLNE } from "./ustrzyki-dolne";
 import { KOLBUSZOWA } from "./kolbuszowa";
+import { NOWA_DEBA } from "./nowa-deba";
+import { BRZOZOW } from "./brzozow";
+import { STRZYZOW } from "./strzyzow";
 
 
 /**
@@ -484,4 +487,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PRZEWORSK,
   USTRZYKI_DOLNE,
   KOLBUSZOWA,
+  NOWA_DEBA,
+  BRZOZOW,
+  STRZYZOW,
 ];
