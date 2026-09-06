@@ -273,6 +273,24 @@ import { WLODAWA } from "./wlodawa";
 import { SWIDNIK } from "./swidnik";
 import { LECZNA } from "./leczna";
 import { TERESPOL } from "./terespol";
+import { OPOLE } from "./opole";
+import { KEDZIERZYN_KOZLE } from "./kedzierzyn-kozle";
+import { NYSA } from "./nysa";
+import { GOGOLIN } from "./gogolin";
+import { OZIMEK } from "./ozimek";
+import { DOBRODZIEN } from "./dobrodzien";
+import { GLUBCZYCE } from "./glubczyce";
+import { KLUCZBORK } from "./kluczbork";
+import { PRUDNIK } from "./prudnik";
+import { LODZ } from "./lodz";
+import { BELCHATOW } from "./belchatow";
+import { KUTNO } from "./kutno";
+import { LOWICZ } from "./lowicz";
+import { PIOTRKOW_TRYBUNALSKI } from "./piotrkow-trybunalski";
+import { BRZEZINY } from "./brzeziny";
+import { RZGOW } from "./rzgow";
+import { TOMASZOW_MAZOWIECKI } from "./tomaszow-mazowiecki";
+import { SKIERNIEWICE } from "./skierniewice";
 
 
 /**
@@ -570,4 +588,26 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SWIDNIK,
   LECZNA,
   TERESPOL,
+
+  // ——— Województwo opolskie ———
+  OPOLE,
+  KEDZIERZYN_KOZLE,
+  NYSA,
+  GOGOLIN,
+  OZIMEK,
+  DOBRODZIEN,
+  GLUBCZYCE,
+  KLUCZBORK,
+  PRUDNIK,
+
+  // ——— Województwo łódzkie ———
+  LODZ,
+  BELCHATOW,
+  KUTNO,
+  LOWICZ,
+  PIOTRKOW_TRYBUNALSKI,
+  BRZEZINY,
+  RZGOW,
+  TOMASZOW_MAZOWIECKI,
+  SKIERNIEWICE,
 ];

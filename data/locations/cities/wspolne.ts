@@ -91,6 +91,22 @@ export const REGION_LUBELSZCZYZNA: RegionMiasta = {
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
+/* OPOLSKIE i ŁÓDZKIE — piąty i szósty raz. Zasada się nie zmienia i nie
+ * zmieni: poza Małopolską mówimy samo „oficjalna przedstawicielka
+ * Thermomix®”, bo przydział regionu nadaje Vorwerk, a fakt dojazdu podajemy
+ * osobno i wprost. */
+export const REGION_OPOLSKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie opolskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_LODZKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie łódzkim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
 export function blokOMnie(
   miejscownik: string,
