@@ -219,6 +219,11 @@ import { PRZEMYSL } from "./przemysl";
 import { STALOWA_WOLA } from "./stalowa-wola";
 import { KROSNO } from "./krosno";
 import { MIELEC } from "./mielec";
+import { SANOK } from "./sanok";
+import { DEBICA } from "./debica";
+import { JASLO } from "./jaslo";
+import { JAROSLAW } from "./jaroslaw";
+import { TARNOBRZEG } from "./tarnobrzeg";
 
 
 /**
@@ -458,4 +463,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   STALOWA_WOLA,
   KROSNO,
   MIELEC,
+  SANOK,
+  DEBICA,
+  JASLO,
+  JAROSLAW,
+  TARNOBRZEG,
 ];
