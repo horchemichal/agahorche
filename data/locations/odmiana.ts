@@ -277,6 +277,41 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
 
   // Powiaty
   krakowski: { msc: "powiecie krakowskim", dop: "powiatu krakowskiego" },
+  // ——— Województwo śląskie (wrzesień 2026) ———
+  // Śląskie nazwy sprawiają odmianie więcej kłopotu niż małopolskie, bo
+  // wiele z nich to liczba mnoga (Katowice, Gliwice, Tychy, Siemianowice)
+  // albo nazwy dwuczłonowe, w których odmieniają się oba człony
+  // (Bielsko-Biała → w Bielsku-Białej). Bez tabeli szablon pisałby
+  // „w Bielsko-Biała" i „do Bielsko-Biała".
+  sosnowiec: { msc: "Sosnowcu", dop: "Sosnowca" },
+  zabrze: { msc: "Zabrzu", dop: "Zabrza" },
+  bytom: { msc: "Bytomiu", dop: "Bytomia" },
+  "ruda-slaska": { msc: "Rudzie Śląskiej", dop: "Rudy Śląskiej" },
+  tychy: { msc: "Tychach", dop: "Tychów" },
+  "dabrowa-gornicza": { msc: "Dąbrowie Górniczej", dop: "Dąbrowy Górniczej" },
+  chorzow: { msc: "Chorzowie", dop: "Chorzowa" },
+  myslowice: { msc: "Mysłowicach", dop: "Mysłowic" },
+  "siemianowice-slaskie": { msc: "Siemianowicach Śląskich", dop: "Siemianowic Śląskich" },
+  bedzin: { msc: "Będzinie", dop: "Będzina" },
+  "piekary-slaskie": { msc: "Piekarach Śląskich", dop: "Piekar Śląskich" },
+  swietochlowice: { msc: "Świętochłowicach", dop: "Świętochłowic" },
+  "tarnowskie-gory": { msc: "Tarnowskich Górach", dop: "Tarnowskich Gór" },
+  czeladz: { msc: "Czeladzi", dop: "Czeladzi" },
+  knurow: { msc: "Knurowie", dop: "Knurowa" },
+  "bielsko-biala": { msc: "Bielsku-Białej", dop: "Bielska-Białej" },
+  rybnik: { msc: "Rybniku", dop: "Rybnika" },
+  "jastrzebie-zdroj": { msc: "Jastrzębiu-Zdroju", dop: "Jastrzębia-Zdroju" },
+  zory: { msc: "Żorach", dop: "Żor" },
+  "wodzislaw-slaski": { msc: "Wodzisławiu Śląskim", dop: "Wodzisławia Śląskiego" },
+  raciborz: { msc: "Raciborzu", dop: "Raciborza" },
+  zywiec: { msc: "Żywcu", dop: "Żywca" },
+  cieszyn: { msc: "Cieszynie", dop: "Cieszyna" },
+  "czechowice-dziedzice": { msc: "Czechowicach-Dziedzicach", dop: "Czechowic-Dziedzic" },
+  zawiercie: { msc: "Zawierciu", dop: "Zawiercia" },
+  myszkow: { msc: "Myszkowie", dop: "Myszkowa" },
+  lubliniec: { msc: "Lublińcu", dop: "Lublińca" },
+  pszczyna: { msc: "Pszczynie", dop: "Pszczyny" },
+  mikolow: { msc: "Mikołowie", dop: "Mikołowa" },
 };
 
 /**

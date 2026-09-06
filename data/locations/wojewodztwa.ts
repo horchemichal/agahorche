@@ -12,11 +12,16 @@ import type { Location } from "@/types/location";
  * samą wygenerowaną treść szkieletową, więc do indeksu trafiłoby 16 niemal
  * identycznych stron o regionach, w których Aga nie pracuje — czyli dokładnie
  * ten rodzaj duplikatu, na którym wykłada się konkurencja. Indeksowane
- * zostaje tylko Małopolskie: to jedyny region, w którym Aga realnie jeździ
- * z prezentacją, i jedyna fraza regionalna, o którą tu walczymy. Pozostałe
- * strony nadal działają i są dostępne z /wojewodztwa — po prostu nie
- * konkurują same ze sobą w wyszukiwarce. Promocja kolejnego województwa to
- * jedna flaga, po napisaniu dla niego prawdziwej treści.
+ * zostaje tylko to województwo, w którym Aga realnie pracuje i dla którego
+ * napisano prawdziwą treść. Pozostałe strony nadal działają i są dostępne
+ * z /wojewodztwa — po prostu nie konkurują same ze sobą w wyszukiwarce.
+ * Promocja kolejnego województwa to jedna flaga, po napisaniu dla niego
+ * prawdziwej treści.
+ *
+ * Wrzesień 2026 — dołączyło śląskie, dokładnie tą drogą: najpierw powstała
+ * pierwsza fala stron miast, potem flaga. W kolejce podkarpackie,
+ * świętokrzyskie i lubelskie; flagi dostaną wtedy, gdy będą miały treść,
+ * a nie wcześniej.
  */
 function base(
   input: Pick<Location, "name" | "slug" | "region" | "population"> & {
@@ -53,7 +58,16 @@ function base(
 
 export const WOJEWODZTWA: Location[] = [
   base({ name: "Mazowieckie", slug: "mazowieckie", region: "Mazowsze", population: 5_423_000, neighborSlugs: ["lodzkie", "podlaskie", "lubelskie", "swietokrzyskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
-  base({ name: "Śląskie", slug: "slaskie", region: "Śląsk", population: 4_370_000, neighborSlugs: ["malopolskie", "opolskie", "swietokrzyskie", "lodzkie"] }),
+  /*
+   * ŚLĄSKIE — indeksowane od 6.09.2026. Do tej pory jedynym indeksowanym
+   * województwem było małopolskie, bo tylko ono miało prawdziwą treść.
+   * Śląskie dostaje tę flagę na tej samej zasadzie: powstała pierwsza fala
+   * stron miast (Katowice, Sosnowiec, Gliwice, Zabrze, Tychy, Częstochowa,
+   * Bielsko-Biała, Rybnik), a Aga potwierdziła, że dojeżdża tu z prezentacją.
+   * Kolejne trzy województwa czekają na swoją treść — flaga jest skutkiem
+   * napisania stron, nie zapowiedzią, że powstaną.
+   */
+  base({ name: "Śląskie", slug: "slaskie", region: "Śląsk", population: 4_370_000, neighborSlugs: ["malopolskie", "opolskie", "swietokrzyskie", "lodzkie"], indexable: true }),
   base({ name: "Wielkopolskie", slug: "wielkopolskie", region: "Wielkopolska", population: 3_500_000, neighborSlugs: ["lubuskie", "zachodniopomorskie", "kujawsko-pomorskie", "lodzkie", "opolskie", "dolnoslaskie"] }),
   // Jedyne indeksowane województwo — obszar, w którym Aga faktycznie pracuje.
   base({ name: "Małopolskie", slug: "malopolskie", region: "Małopolska", population: 3_400_000, neighborSlugs: ["slaskie", "swietokrzyskie", "podkarpackie"], indexable: true }),
