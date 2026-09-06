@@ -72,6 +72,18 @@ export const REGION_PODKARPACIE: RegionMiasta = {
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
+/*
+ * ŚWIĘTOKRZYSKIE — trzeci region i trzeci raz ta sama decyzja: bez
+ * „przedstawicielka w świętokrzyskiem”. Powód jest niezmienny — przydział
+ * regionu nadaje Vorwerk, a potwierdzenia nie mam. Zostaje sam kredencjał,
+ * który jest prawdziwy wszędzie, plus wprost powiedziany zasięg dojazdu.
+ */
+export const REGION_SWIETOKRZYSKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie świętokrzyskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
 export function blokOMnie(
   miejscownik: string,

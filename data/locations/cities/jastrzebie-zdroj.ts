@@ -90,7 +90,7 @@ export const JASTRZEBIE_ZDROJ: CityContent = {
       heading: "Praca zmianowa i obiad, który ma poczekać",
       paragraphs: [
         "W wielu jastrzębskich domach ktoś pracuje na zmiany — a to znaczy trzy różne pory posiłku i osobę, która gotuje, choć sama zje dopiero za kilka godzin.",
-        "Thermomix nadaje się do tego, bo nie wymaga obecności. Danie może powstać wcześniej i czekać, a odgrzewanie na parze podgrzewa wilgotnym ciepłem, zamiast dosuszać. Po dwunastu godzinach na dole to nie jest drobiazg — to różnica między zjedzeniem obiadu a odpuszczeniem go i pójściem spać.",
+        "Urządzenie ma tu jedną zaletę, która akurat w takim domu waży najwięcej: nie potrzebuje nikogo obok. Danie może powstać wcześniej i czekać, a odgrzewanie na parze podgrzewa wilgotnym ciepłem, zamiast dosuszać. Po dwunastu godzinach na dole to nie jest drobiazg — to różnica między zjedzeniem obiadu a odpuszczeniem go i pójściem spać.",
         "Przy umawianiu terminu obowiązuje ta sama zasada. Nie pytam, kiedy Ci wygodnie „normalnie”, tylko kiedy realnie jesteś w domu — i pod to się dopasowuję, także w środku dnia roboczego.",
       ],
     },

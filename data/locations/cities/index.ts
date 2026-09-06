@@ -240,6 +240,25 @@ import { RUDNIK_NAD_SANEM } from "./rudnik-nad-sanem";
 import { LESKO } from "./lesko";
 import { BOGUCHWALA } from "./boguchwala";
 import { GLOGOW_MALOPOLSKI } from "./glogow-malopolski";
+import { KIELCE } from "./kielce";
+import { OSTROWIEC_SWIETOKRZYSKI } from "./ostrowiec-swietokrzyski";
+import { STARACHOWICE } from "./starachowice";
+import { SKARZYSKO_KAMIENNA } from "./skarzysko-kamienna";
+import { SANDOMIERZ } from "./sandomierz";
+import { BUSKO_ZDROJ } from "./busko-zdroj";
+import { JEDRZEJOW } from "./jedrzejow";
+import { CMIELOW } from "./cmielow";
+import { WACHOCK } from "./wachock";
+import { PINCZOW } from "./pinczow";
+import { KAZIMIERZA_WIELKA } from "./kazimierza-wielka";
+import { CHECINY } from "./checiny";
+import { SZYDLOW } from "./szydlow";
+import { POLANIEC } from "./polaniec";
+import { CHMIELNIK } from "./chmielnik";
+import { NOWA_SLUPIA } from "./nowa-slupia";
+import { WISLICA } from "./wislica";
+import { OPATOW } from "./opatow";
+import { KONSKIE } from "./konskie";
 
 
 /**
@@ -500,4 +519,25 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LESKO,
   BOGUCHWALA,
   GLOGOW_MALOPOLSKI,
+
+  // ——— Województwo świętokrzyskie ———
+  KIELCE,
+  OSTROWIEC_SWIETOKRZYSKI,
+  STARACHOWICE,
+  SKARZYSKO_KAMIENNA,
+  SANDOMIERZ,
+  BUSKO_ZDROJ,
+  JEDRZEJOW,
+  CMIELOW,
+  WACHOCK,
+  PINCZOW,
+  KAZIMIERZA_WIELKA,
+  CHECINY,
+  SZYDLOW,
+  POLANIEC,
+  CHMIELNIK,
+  NOWA_SLUPIA,
+  WISLICA,
+  OPATOW,
+  KONSKIE,
 ];
