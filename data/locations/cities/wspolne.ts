@@ -24,17 +24,56 @@ import type { CitySection } from "../city-content";
  * warto je przełączyć na te funkcje, ale to osobna zmiana.
  */
 
+/**
+ * REGION, W KTÓRYM LEŻY MIASTO. Wrzesień 2026 — do tej pory blok „kto
+ * poprowadzi prezentację" mówił na sztywno „przedstawicielka w Małopolsce"
+ * i „prezentacje w całej Małopolsce". Przy pierwszej stronie spoza regionu
+ * dałoby to na stronie Katowic zdanie o Małopolsce — czyli dokładnie ten
+ * błąd, który zarzucamy konkurencji („na stronie Krakowa zostaje zdanie
+ * o Katowicach").
+ *
+ * CZEGO TU CELOWO NIE MA: podmiany „przedstawicielka w Małopolsce" na
+ * „przedstawicielka na Śląsku". Przydział regionu nadaje Vorwerk i nie mam
+ * potwierdzenia, żeby obejmował Śląsk. Poza Małopolską piszemy więc samo
+ * „oficjalna przedstawicielka Thermomix®" — to jest prawda niezależnie od
+ * przydziału — a fakt dojazdu mówimy wprost i osobno.
+ */
+export interface RegionMiasta {
+  /** Do zdania „jestem oficjalną przedstawicielką Thermomix® …”. Puste poza Małopolską. */
+  przyKredencjale: string;
+  /** Do wypunktowania: „prezentacje w domach klientów … i …”. */
+  zasieg: string;
+  /** Podpis pod zdjęciem. */
+  podpis: string;
+}
+
+export const REGION_MALOPOLSKA: RegionMiasta = {
+  przyKredencjale: " w Małopolsce",
+  zasieg: "i w całej Małopolsce",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce.",
+};
+
+export const REGION_SLASKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie śląskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
-export function blokOMnie(miejscownik: string, okolica: string) {
+export function blokOMnie(
+  miejscownik: string,
+  okolica: string,
+  region: RegionMiasta = REGION_MALOPOLSKA,
+) {
   return {
     heading: "Kto poprowadzi Twoją prezentację",
     paragraphs: [
-      "Nazywam się Aga Horche i jestem oficjalną przedstawicielką Thermomix® w Małopolsce. Kupujesz u mnie legalnie: z gwarancją producenta, z aktualną promocją i z możliwością zgłoszenia urządzenia do serwisu.",
+      `Nazywam się Aga Horche i jestem oficjalną przedstawicielką Thermomix®${region.przyKredencjale}. Kupujesz u mnie legalnie: z gwarancją producenta, z aktualną promocją i z możliwością zgłoszenia urządzenia do serwisu.`,
       `Pracuję pojedynczo, nie przez call center. Ta sama osoba, która przyjedzie do Ciebie ${miejscownik}, odbierze telefon pół roku później, gdy nie będzie wychodzić ciasto.`,
     ],
     bullets: [
       "oficjalna przedstawicielka Vorwerk — gwarancja producenta i legalny zakup",
-      `prezentacje w domach klientów ${okolica} i w całej Małopolsce`,
+      `prezentacje w domach klientów ${okolica} ${region.zasieg}`,
       "pomoc przy pierwszym uruchomieniu i założeniu konta Cookidoo",
       "stały kontakt telefoniczny po zakupie, także przy zgłoszeniu serwisowym",
       "pełne 7-dniowe jadłospisy z listami zakupów dla moich klientek i klientów",
@@ -42,7 +81,7 @@ export function blokOMnie(miejscownik: string, okolica: string) {
     photo: {
       src: "/media/aga-przedstawiciel-thermomix-e08f7154.webp",
       alt: "Aga Horche z Thermomixem TM7 — napis „Przedstawiciel Thermomix”",
-      caption: "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce.",
+      caption: region.podpis,
     },
   };
 }

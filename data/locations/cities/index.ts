@@ -180,6 +180,16 @@ import { NOWE_BRZESKO } from "./nowe-brzesko";
 import { PALECZNICA } from "./palecznica";
 import { RADZIEMICE } from "./radziemice";
 
+// ——— Województwo śląskie (wrzesień 2026, pierwsza fala) ———
+import { KATOWICE } from "./katowice";
+import { SOSNOWIEC } from "./sosnowiec";
+import { GLIWICE } from "./gliwice";
+import { ZABRZE } from "./zabrze";
+import { TYCHY } from "./tychy";
+import { CZESTOCHOWA } from "./czestochowa";
+import { BIELSKO_BIALA } from "./bielsko-biala";
+import { RYBNIK } from "./rybnik";
+
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
  * Każde ma własny plik, bo `city-content.ts` przy dwunastu kolejnych
@@ -376,4 +386,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OCHOTNICA_DOLNA,
   CZORSZTYN,
   LIPNICA_WIELKA,
+
+  // ——— Województwo śląskie ———
+  KATOWICE,
+  SOSNOWIEC,
+  GLIWICE,
+  ZABRZE,
+  TYCHY,
+  CZESTOCHOWA,
+  BIELSKO_BIALA,
+  RYBNIK,
 ];
