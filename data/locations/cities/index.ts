@@ -237,6 +237,9 @@ import { BRZOZOW } from "./brzozow";
 import { STRZYZOW } from "./strzyzow";
 import { RYMANOW } from "./rymanow";
 import { RUDNIK_NAD_SANEM } from "./rudnik-nad-sanem";
+import { LESKO } from "./lesko";
+import { BOGUCHWALA } from "./boguchwala";
+import { GLOGOW_MALOPOLSKI } from "./glogow-malopolski";
 
 
 /**
@@ -494,4 +497,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   STRZYZOW,
   RYMANOW,
   RUDNIK_NAD_SANEM,
+  LESKO,
+  BOGUCHWALA,
+  GLOGOW_MALOPOLSKI,
 ];
