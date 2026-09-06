@@ -206,6 +206,13 @@ import { PSZCZYNA } from "./pszczyna";
 import { JASTRZEBIE_ZDROJ } from "./jastrzebie-zdroj";
 import { ZORY } from "./zory";
 import { MIKOLOW } from "./mikolow";
+import { RACIBORZ } from "./raciborz";
+import { KNUROW } from "./knurow";
+import { WODZISLAW_SLASKI } from "./wodzislaw-slaski";
+import { ZAWIERCIE } from "./zawiercie";
+import { LUBLINIEC } from "./lubliniec";
+import { CZECHOWICE_DZIEDZICE } from "./czechowice-dziedzice";
+import { MYSZKOW } from "./myszkow";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -430,4 +437,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JASTRZEBIE_ZDROJ,
   ZORY,
   MIKOLOW,
+  RACIBORZ,
+  KNUROW,
+  WODZISLAW_SLASKI,
+  ZAWIERCIE,
+  LUBLINIEC,
+  CZECHOWICE_DZIEDZICE,
+  MYSZKOW,
 ];
