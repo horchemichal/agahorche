@@ -291,6 +291,10 @@ import { BRZEZINY } from "./brzeziny";
 import { RZGOW } from "./rzgow";
 import { TOMASZOW_MAZOWIECKI } from "./tomaszow-mazowiecki";
 import { SKIERNIEWICE } from "./skierniewice";
+import { ZDUNSKA_WOLA } from "./zdunska-wola";
+import { RADOMSKO } from "./radomsko";
+import { PABIANICE } from "./pabianice";
+import { NAMYSLOW } from "./namyslow";
 
 
 /**
@@ -610,4 +614,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RZGOW,
   TOMASZOW_MAZOWIECKI,
   SKIERNIEWICE,
+  ZDUNSKA_WOLA,
+  RADOMSKO,
+  PABIANICE,
+  NAMYSLOW,
 ];
