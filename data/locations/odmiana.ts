@@ -401,6 +401,58 @@ export const ODMIANA_MIEJSCOWOSCI: Record<string, Odmiana> = {
   "kazimierza-wielka": { msc: "Kazimierzy Wielkiej", dop: "Kazimierzy Wielkiej" },
   skalbmierz: { msc: "Skalbmierzu", dop: "Skalbmierza" },
   dzialoszyce: { msc: "Działoszycach", dop: "Działoszyc" },
+
+  /*
+   * LUBELSKIE. Jedna nazwa jest tu pułapką, przy której myli się większość
+   * piszących: KRASNYSTAW odmienia się w obu członach i to nieregularnie —
+   * „w Krasnymstawie”, ale „do Krasnegostawu”. Pozostałe nazwy dwuczłonowe
+   * (Biała Podlaska, Tomaszów Lubelski, Międzyrzec Podlaski, Radzyń Podlaski,
+   * Kazimierz Dolny, Opole Lubelskie, Janów Lubelski, Ostrów Lubelski,
+   * Stoczek Łukowski, Józefów nad Wisłą) trzymają się reguły, ale i tak
+   * wymagają obu członów.
+   */
+  zamosc: { msc: "Zamościu", dop: "Zamościa" },
+  chelm: { msc: "Chełmie", dop: "Chełma" },
+  "biala-podlaska": { msc: "Białej Podlaskiej", dop: "Białej Podlaskiej" },
+  pulawy: { msc: "Puławach", dop: "Puław" },
+  swidnik: { msc: "Świdniku", dop: "Świdnika" },
+  krasnik: { msc: "Kraśniku", dop: "Kraśnika" },
+  lukow: { msc: "Łukowie", dop: "Łukowa" },
+  bilgoraj: { msc: "Biłgoraju", dop: "Biłgoraja" },
+  lubartow: { msc: "Lubartowie", dop: "Lubartowa" },
+  leczna: { msc: "Łęcznej", dop: "Łęcznej" },
+  "tomaszow-lubelski": { msc: "Tomaszowie Lubelskim", dop: "Tomaszowa Lubelskiego" },
+  krasnystaw: { msc: "Krasnymstawie", dop: "Krasnegostawu" },
+  hrubieszow: { msc: "Hrubieszowie", dop: "Hrubieszowa" },
+  "miedzyrzec-podlaski": { msc: "Międzyrzecu Podlaskim", dop: "Międzyrzeca Podlaskiego" },
+  deblin: { msc: "Dęblinie", dop: "Dęblina" },
+  "radzyn-podlaski": { msc: "Radzyniu Podlaskim", dop: "Radzynia Podlaskiego" },
+  wlodawa: { msc: "Włodawie", dop: "Włodawy" },
+  "janow-lubelski": { msc: "Janowie Lubelskim", dop: "Janowa Lubelskiego" },
+  parczew: { msc: "Parczewie", dop: "Parczewa" },
+  ryki: { msc: "Rykach", dop: "Ryk" },
+  poniatowa: { msc: "Poniatowej", dop: "Poniatowej" },
+  "opole-lubelskie": { msc: "Opolu Lubelskim", dop: "Opola Lubelskiego" },
+  belzyce: { msc: "Bełżycach", dop: "Bełżyc" },
+  terespol: { msc: "Terespolu", dop: "Terespola" },
+  szczebrzeszyn: { msc: "Szczebrzeszynie", dop: "Szczebrzeszyna" },
+  bychawa: { msc: "Bychawie", dop: "Bychawy" },
+  "rejowiec-fabryczny": { msc: "Rejowcu Fabrycznym", dop: "Rejowca Fabrycznego" },
+  naleczow: { msc: "Nałęczowie", dop: "Nałęczowa" },
+  "kazimierz-dolny": { msc: "Kazimierzu Dolnym", dop: "Kazimierza Dolnego" },
+  kock: { msc: "Kocku", dop: "Kocka" },
+  zwierzyniec: { msc: "Zwierzyńcu", dop: "Zwierzyńca" },
+  tarnogrod: { msc: "Tarnogrodzie", dop: "Tarnogrodu" },
+  krasnobrod: { msc: "Krasnobrodzie", dop: "Krasnobrodu" },
+  annopol: { msc: "Annopolu", dop: "Annopola" },
+  jozefow: { msc: "Józefowie", dop: "Józefowa" },
+  "stoczek-lukowski": { msc: "Stoczku Łukowskim", dop: "Stoczka Łukowskiego" },
+  piaski: { msc: "Piaskach", dop: "Piask" },
+  "ostrow-lubelski": { msc: "Ostrowie Lubelskim", dop: "Ostrowa Lubelskiego" },
+  urzedow: { msc: "Urzędowie", dop: "Urzędowa" },
+  modliborzyce: { msc: "Modliborzycach", dop: "Modliborzyc" },
+  frampol: { msc: "Frampolu", dop: "Frampola" },
+  "jozefow-nad-wisla": { msc: "Józefowie nad Wisłą", dop: "Józefowa nad Wisłą" },
 };
 
 /**

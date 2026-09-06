@@ -21,9 +21,11 @@ import type { Location } from "@/types/location";
  * Wrzesień 2026 — dołączyły śląskie i podkarpackie, dokładnie tą drogą:
  * najpierw powstaje fala stron miast, potem flaga. Kilka dni później tą samą
  * drogą doszło świętokrzyskie: dziewiętnaście miast z własną, napisaną treścią
- * — od Kielc i Ostrowca po Wiślicę — a dopiero po nich flaga. W kolejce
- * zostaje lubelskie; flagę dostanie wtedy, gdy będzie miało treść,
- * a nie wcześniej.
+ * — od Kielc i Ostrowca po Wiślicę — a dopiero po nich flaga. Tego samego
+ * dnia dołączyło lubelskie: dziewięć miast z własną treścią, od Lublina
+ * i Zamościa po Szczebrzeszyn. Czwórka z decyzji Michała jest tym samym
+ * zamknięta. Kolejne województwo dostanie flagę na tych samych warunkach:
+ * najpierw treść, potem indeks.
  */
 function base(
   input: Pick<Location, "name" | "slug" | "region" | "population"> & {
@@ -85,7 +87,8 @@ export const WOJEWODZTWA: Location[] = [
    */
   base({ name: "Podkarpackie", slug: "podkarpackie", region: "Podkarpacie", population: 2_100_000, neighborSlugs: ["malopolskie", "swietokrzyskie", "lubelskie"], indexable: true }),
   base({ name: "Kujawsko-Pomorskie", slug: "kujawsko-pomorskie", region: "Kujawy i Pomorze", population: 2_050_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lodzkie", "mazowieckie", "warminsko-mazurskie"] }),
-  base({ name: "Lubelskie", slug: "lubelskie", region: "Lubelszczyzna", population: 2_050_000, neighborSlugs: ["mazowieckie", "podkarpackie", "swietokrzyskie", "podlaskie"] }),
+  // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
+  base({ name: "Lubelskie", slug: "lubelskie", region: "Lubelszczyzna", population: 2_050_000, neighborSlugs: ["mazowieckie", "podkarpackie", "swietokrzyskie", "podlaskie"], indexable: true }),
   base({ name: "Zachodniopomorskie", slug: "zachodniopomorskie", region: "Pomorze Zachodnie", population: 1_670_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lubuskie"] }),
   base({ name: "Warmińsko-Mazurskie", slug: "warminsko-mazurskie", region: "Warmia i Mazury", population: 1_370_000, neighborSlugs: ["pomorskie", "kujawsko-pomorskie", "mazowieckie", "podlaskie"] }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 19 miast regionu.
