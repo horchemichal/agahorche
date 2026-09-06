@@ -189,6 +189,13 @@ import { TYCHY } from "./tychy";
 import { CZESTOCHOWA } from "./czestochowa";
 import { BIELSKO_BIALA } from "./bielsko-biala";
 import { RYBNIK } from "./rybnik";
+import { BYTOM } from "./bytom";
+import { CHORZOW } from "./chorzow";
+import { DABROWA_GORNICZA } from "./dabrowa-gornicza";
+import { MYSLOWICE } from "./myslowice";
+import { RUDA_SLASKA } from "./ruda-slaska";
+import { SIEMIANOWICE_SLASKIE } from "./siemianowice-slaskie";
+import { BEDZIN } from "./bedzin";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -396,4 +403,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CZESTOCHOWA,
   BIELSKO_BIALA,
   RYBNIK,
+  BYTOM,
+  CHORZOW,
+  DABROWA_GORNICZA,
+  MYSLOWICE,
+  RUDA_SLASKA,
+  SIEMIANOWICE_SLASKIE,
+  BEDZIN,
 ];
