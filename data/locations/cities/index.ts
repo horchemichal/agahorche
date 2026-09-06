@@ -200,6 +200,12 @@ import { SWIETOCHLOWICE } from "./swietochlowice";
 import { TARNOWSKIE_GORY } from "./tarnowskie-gory";
 import { PIEKARY_SLASKIE } from "./piekary-slaskie";
 import { CZELADZ } from "./czeladz";
+import { CIESZYN } from "./cieszyn";
+import { ZYWIEC } from "./zywiec";
+import { PSZCZYNA } from "./pszczyna";
+import { JASTRZEBIE_ZDROJ } from "./jastrzebie-zdroj";
+import { ZORY } from "./zory";
+import { MIKOLOW } from "./mikolow";
 
 /**
  * Miasta, których treść powstała po pierwszej trójce satelitów Krakowa.
@@ -418,4 +424,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TARNOWSKIE_GORY,
   PIEKARY_SLASKIE,
   CZELADZ,
+  CIESZYN,
+  ZYWIEC,
+  PSZCZYNA,
+  JASTRZEBIE_ZDROJ,
+  ZORY,
+  MIKOLOW,
 ];
