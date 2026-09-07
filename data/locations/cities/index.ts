@@ -282,6 +282,8 @@ import { DOBRODZIEN } from "./dobrodzien";
 import { GLUBCZYCE } from "./glubczyce";
 import { KLUCZBORK } from "./kluczbork";
 import { PRUDNIK } from "./prudnik";
+import { NAMYSLOW } from "./namyslow";
+import { STRZELCE_OPOLSKIE } from "./strzelce-opolskie";
 import { LODZ } from "./lodz";
 import { BELCHATOW } from "./belchatow";
 import { KUTNO } from "./kutno";
@@ -294,7 +296,8 @@ import { SKIERNIEWICE } from "./skierniewice";
 import { ZDUNSKA_WOLA } from "./zdunska-wola";
 import { RADOMSKO } from "./radomsko";
 import { PABIANICE } from "./pabianice";
-import { NAMYSLOW } from "./namyslow";
+import { ZGIERZ } from "./zgierz";
+import { OPOCZNO } from "./opoczno";
 
 
 /**
@@ -603,6 +606,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GLUBCZYCE,
   KLUCZBORK,
   PRUDNIK,
+  NAMYSLOW,
+  STRZELCE_OPOLSKIE,
 
   // ——— Województwo łódzkie ———
   LODZ,
@@ -617,5 +622,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZDUNSKA_WOLA,
   RADOMSKO,
   PABIANICE,
-  NAMYSLOW,
+  ZGIERZ,
+  OPOCZNO,
 ];
