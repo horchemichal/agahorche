@@ -8,7 +8,8 @@ import { getGlobalFaq } from "@/lib/faq";
 
 export const metadata: Metadata = buildMetadata({
   title: "FAQ — najczęstsze pytania o Thermomix",
-  description: "Odpowiedzi na najczęstsze pytania o Thermomixa i prezentacje z Agą.",
+  description:
+    "Odpowiedzi na najczęstsze pytania o Thermomixa: cena, raty 0%, przebieg prezentacji, dojazd i to, czy trzeba decydować tego samego dnia.",
   path: "/faq",
 });
 
