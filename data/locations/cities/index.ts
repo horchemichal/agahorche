@@ -393,6 +393,11 @@ import { OLAWA } from "./olawa";
 import { OSTRODA } from "./ostroda";
 import { ILAWA } from "./ilawa";
 import { SWARZEDZ } from "./swarzedz";
+import { GRODZISK_MAZOWIECKI } from "./grodzisk-mazowiecki";
+import { PRUSZCZ_GDANSKI } from "./pruszcz-gdanski";
+import { LUBON } from "./lubon";
+import { POLICE } from "./police";
+import { BIELAWA } from "./bielawa";
 
 
 /**
@@ -842,4 +847,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OSTRODA,
   ILAWA,
   SWARZEDZ,
+
+  // ——— Fala miast 29-32 tys. ———
+  GRODZISK_MAZOWIECKI,
+  PRUSZCZ_GDANSKI,
+  LUBON,
+  POLICE,
+  BIELAWA,
 ];
