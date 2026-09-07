@@ -13,6 +13,7 @@ import { Section } from "@/components/ui/section";
 import { Heading } from "@/components/ui/heading";
 import { JsonLdScript } from "@/components/seo/json-ld";
 import { buildLocationIntro, buildLocationFaq } from "@/lib/locations/content";
+import { buildWariantTresci } from "@/lib/locations/warianty";
 import { serviceSchema, webPageSchema } from "@/lib/seo/schema";
 import { TESTIMONIALS } from "@/data/testimonials";
 
@@ -27,7 +28,19 @@ import { TESTIMONIALS } from "@/data/testimonials";
 export function LocationPageTemplate({ resolution }: { resolution: LocationResolution }) {
   const { location, wojewodztwo, neighbors, breadcrumbs } = resolution;
   const intro = buildLocationIntro(resolution);
-  const faq = buildLocationFaq(resolution);
+
+  /*
+    Treść składana dla lokalizacji bez własnej, napisanej strony
+    (patrz lib/locations/warianty.ts). Województwa dostają `null`
+    i zostają przy dotychczasowym tekście, bo mają inną gramatykę
+    i inny sens — „sąsiedzi” województwa to inne województwa.
+
+    FAQ wariantu doklejamy PO wspólnym, żeby pytania strukturalne
+    („czy dojeżdżasz”, „czy prezentacja jest bezpłatna”) zostały na
+    górze, a pytania o samo urządzenie niżej.
+  */
+  const wariant = buildWariantTresci(resolution);
+  const faq = [...buildLocationFaq(resolution), ...(wariant?.faq ?? [])];
 
   const relevantTestimonials = TESTIMONIALS.filter(
     (t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase(),
@@ -54,6 +67,21 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
           </ul>
         )}
       </Section>
+
+      {wariant && (
+        <Section>
+          <Heading as="h2" size="md" className="mb-4">
+            {wariant.heading}
+          </Heading>
+          <div className="flex max-w-2xl flex-col gap-4">
+            {wariant.paragraphs.map((akapit) => (
+              <p key={akapit.slice(0, 40)} className="text-muted leading-relaxed">
+                {akapit}
+              </p>
+            ))}
+          </div>
+        </Section>
+      )}
 
       <PresentationStepsSection />
       <WhyLiveDemoSection />
