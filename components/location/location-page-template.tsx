@@ -1,4 +1,4 @@
-import type { LocationResolution } from "@/types/location";
+import type { Location, LocationResolution } from "@/types/location";
 import { LocationHero } from "./location-hero";
 import { NearbyLocations } from "./nearby-locations";
 import { TestimonialsSection } from "./testimonials-section";
@@ -14,6 +14,7 @@ import { Heading } from "@/components/ui/heading";
 import { JsonLdScript } from "@/components/seo/json-ld";
 import { buildLocationIntro, buildLocationFaq } from "@/lib/locations/content";
 import { buildWariantTresci } from "@/lib/locations/warianty";
+import { MiastaWojewodztwa } from "./miasta-wojewodztwa";
 import { serviceSchema, webPageSchema } from "@/lib/seo/schema";
 import { TESTIMONIALS } from "@/data/testimonials";
 
@@ -25,7 +26,19 @@ import { TESTIMONIALS } from "@/data/testimonials";
  * JSX, which is what keeps this scalable to hundreds of locations without
  * hundreds of near-duplicate files.
  */
-export function LocationPageTemplate({ resolution }: { resolution: LocationResolution }) {
+export function LocationPageTemplate({
+  resolution,
+  miastaWojewodztwa = [],
+}: {
+  resolution: LocationResolution;
+  /*
+    Miasta tego województwa — przekazywane wyłącznie dla stron województw.
+    Patrz components/location/miasta-wojewodztwa.tsx: bez tego strona
+    województwa nie linkowała do ani jednego ze swoich miast, a cała
+    ścieżka do stron lokalnych szła przez jeden adres `/miasta`.
+  */
+  miastaWojewodztwa?: Location[];
+}) {
   const { location, wojewodztwo, neighbors, breadcrumbs } = resolution;
   const intro = buildLocationIntro(resolution);
 
@@ -90,6 +103,10 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       <TestimonialsSection items={relevantTestimonials} />
       <AgaClubTeaser />
       <FaqSection items={faq} />
+      {location.unitType === "wojewodztwo" && (
+        <MiastaWojewodztwa wojewodztwo={location} miasta={miastaWojewodztwa} />
+      )}
+
       <NearbyLocations wojewodztwo={wojewodztwo} neighbors={neighbors} />
 
       <Section>
