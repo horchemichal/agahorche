@@ -10,6 +10,8 @@ import { SWIETOKRZYSKIE_AGI } from "@/data/locations/swietokrzyskie";
 import { LUBELSKIE_AGI } from "@/data/locations/lubelskie";
 import { OPOLSKIE_AGI } from "@/data/locations/opolskie";
 import { LODZKIE_AGI } from "@/data/locations/lodzkie";
+import { DOLNOSLASKIE_AGI } from "@/data/locations/dolnoslaskie";
+import { WIELKOPOLSKIE_AGI } from "@/data/locations/wielkopolskie";
 import { POWIATY_DEMO, MIEJSCOWOSCI_DEMO } from "@/data/locations/hierarchy-demo";
 import { getGlobalSingleton } from "@/lib/database/global-singleton";
 import { miejscownik, miejscownikWojewodztwa } from "@/data/locations/odmiana";
@@ -119,7 +121,7 @@ function slugify(value: string): string {
  * tabela odmiany była jedynym miejscem, w którym trzyma się formy gramatyczne.
  */
 function seedLocations(): Location[] {
-  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...PODKARPACKIE_AGI, ...SWIETOKRZYSKIE_AGI, ...LUBELSKIE_AGI, ...OPOLSKIE_AGI, ...LODZKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
+  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...PODKARPACKIE_AGI, ...SWIETOKRZYSKIE_AGI, ...LUBELSKIE_AGI, ...OPOLSKIE_AGI, ...LODZKIE_AGI, ...DOLNOSLASKIE_AGI, ...WIELKOPOLSKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
     (l) => {
       const msc =
         l.unitType === "wojewodztwo"
