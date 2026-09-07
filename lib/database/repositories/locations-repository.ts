@@ -12,6 +12,13 @@ import { OPOLSKIE_AGI } from "@/data/locations/opolskie";
 import { LODZKIE_AGI } from "@/data/locations/lodzkie";
 import { DOLNOSLASKIE_AGI } from "@/data/locations/dolnoslaskie";
 import { WIELKOPOLSKIE_AGI } from "@/data/locations/wielkopolskie";
+import { MAZOWIECKIE_AGI } from "@/data/locations/mazowieckie";
+import { POMORSKIE_AGI } from "@/data/locations/pomorskie";
+import { KUJAWSKO_POMORSKIE_AGI } from "@/data/locations/kujawsko-pomorskie";
+import { ZACHODNIOPOMORSKIE_AGI } from "@/data/locations/zachodniopomorskie";
+import { WARMINSKO_MAZURSKIE_AGI } from "@/data/locations/warminsko-mazurskie";
+import { PODLASKIE_AGI } from "@/data/locations/podlaskie";
+import { LUBUSKIE_AGI } from "@/data/locations/lubuskie";
 import { POWIATY_DEMO, MIEJSCOWOSCI_DEMO } from "@/data/locations/hierarchy-demo";
 import { getGlobalSingleton } from "@/lib/database/global-singleton";
 import { miejscownik, miejscownikWojewodztwa } from "@/data/locations/odmiana";
@@ -121,7 +128,7 @@ function slugify(value: string): string {
  * tabela odmiany była jedynym miejscem, w którym trzyma się formy gramatyczne.
  */
 function seedLocations(): Location[] {
-  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...PODKARPACKIE_AGI, ...SWIETOKRZYSKIE_AGI, ...LUBELSKIE_AGI, ...OPOLSKIE_AGI, ...LODZKIE_AGI, ...DOLNOSLASKIE_AGI, ...WIELKOPOLSKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
+  return [...WOJEWODZTWA, ...MIASTA, ...MALOPOLSKA_AGI, ...SLASKIE_AGI, ...PODKARPACKIE_AGI, ...SWIETOKRZYSKIE_AGI, ...LUBELSKIE_AGI, ...OPOLSKIE_AGI, ...LODZKIE_AGI, ...DOLNOSLASKIE_AGI, ...WIELKOPOLSKIE_AGI, ...MAZOWIECKIE_AGI, ...POMORSKIE_AGI, ...KUJAWSKO_POMORSKIE_AGI, ...ZACHODNIOPOMORSKIE_AGI, ...WARMINSKO_MAZURSKIE_AGI, ...PODLASKIE_AGI, ...LUBUSKIE_AGI, ...POWIATY_DEMO, ...MIEJSCOWOSCI_DEMO].map(
     (l) => {
       const msc =
         l.unitType === "wojewodztwo"
