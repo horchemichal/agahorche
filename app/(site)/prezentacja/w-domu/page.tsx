@@ -8,7 +8,8 @@ import { LeadForm } from "@/components/lead/lead-form";
 
 export const metadata: Metadata = buildMetadata({
   title: "Prezentacja Thermomix w domu",
-  description: "Umów bezpłatną prezentację Thermomix u siebie w domu.",
+  description:
+    "Bezpłatna prezentacja Thermomixa TM7 u Ciebie w kuchni: gotujemy razem, bez zakupów i przygotowań z Twojej strony. Dojazd też jest bezpłatny.",
   path: "/prezentacja/w-domu",
 });
 
