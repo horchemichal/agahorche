@@ -1,4 +1,4 @@
-import type { Location, LocationResolution } from "@/types/location";
+import type { LocationResolution } from "@/types/location";
 import { LocationHero } from "./location-hero";
 import { NearbyLocations } from "./nearby-locations";
 import { TestimonialsSection } from "./testimonials-section";
@@ -26,19 +26,7 @@ import { TESTIMONIALS } from "@/data/testimonials";
  * JSX, which is what keeps this scalable to hundreds of locations without
  * hundreds of near-duplicate files.
  */
-export function LocationPageTemplate({
-  resolution,
-  miastaWojewodztwa = [],
-}: {
-  resolution: LocationResolution;
-  /*
-    Miasta tego województwa — przekazywane wyłącznie dla stron województw.
-    Patrz components/location/miasta-wojewodztwa.tsx: bez tego strona
-    województwa nie linkowała do ani jednego ze swoich miast, a cała
-    ścieżka do stron lokalnych szła przez jeden adres `/miasta`.
-  */
-  miastaWojewodztwa?: Location[];
-}) {
+export function LocationPageTemplate({ resolution }: { resolution: LocationResolution }) {
   const { location, wojewodztwo, neighbors, breadcrumbs } = resolution;
   const intro = buildLocationIntro(resolution);
 
@@ -104,7 +92,7 @@ export function LocationPageTemplate({
       <AgaClubTeaser />
       <FaqSection items={faq} />
       {location.unitType === "wojewodztwo" && (
-        <MiastaWojewodztwa wojewodztwo={location} miasta={miastaWojewodztwa} />
+        <MiastaWojewodztwa wojewodztwo={location} />
       )}
 
       <NearbyLocations wojewodztwo={wojewodztwo} neighbors={neighbors} />

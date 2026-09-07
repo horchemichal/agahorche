@@ -3,6 +3,7 @@ import type { Location } from "@/types/location";
 import { Section } from "@/components/ui/section";
 import { Heading } from "@/components/ui/heading";
 import { miejscownikWojewodztwa } from "@/data/locations/odmiana";
+import { getCitiesInWojewodztwo } from "@/lib/locations";
 
 /**
  * LISTA MIAST NA STRONIE WOJEWÓDZTWA (wrzesień 2026).
@@ -31,13 +32,19 @@ import { miejscownikWojewodztwa } from "@/data/locations/odmiana";
  *   znalazł. Rozkładamy je przy okazji na 16 stron zamiast trzymać
  *   wszystkie na jednej.
  */
-export function MiastaWojewodztwa({
-  wojewodztwo,
-  miasta,
-}: {
-  wojewodztwo: Location;
-  miasta: Location[];
-}) {
+/*
+  KOMPONENT SAM POBIERA SWOJE DANE i jest to decyzja, nie niedopatrzenie.
+  Alternatywą było przekazanie listy miast propsem z trasy
+  `app/(site)/thermomix/[...slug]/page.tsx` — ale ten plik siedzi w katalogu
+  z nawiasami kwadratowymi w nazwie, którego interfejs GitHuba nie przyjmuje
+  przy wysyłce plików. Asynchroniczny komponent serwerowy renderowany
+  z synchronicznego rodzica jest w App Routerze normalną konstrukcją,
+  więc dane pobieramy tutaj i trasa zostaje nietknięta.
+*/
+export async function MiastaWojewodztwa({ wojewodztwo }: { wojewodztwo: Location }) {
+  const miasta = (await getCitiesInWojewodztwo(wojewodztwo.slug)).sort((a, b) =>
+    a.name.localeCompare(b.name, "pl"),
+  );
   if (miasta.length === 0) return null;
 
   /*
