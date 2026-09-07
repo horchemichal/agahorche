@@ -7,7 +7,8 @@ const category = getDietCategory("bezglutenowa")!;
 
 export const metadata: Metadata = buildMetadata({
   title: category.name,
-  description: `${category.description} Skonfiguruj plan i zobacz przykładowy jadłospis na Dzień 1.`,
+  description:
+    "Śniadania, obiady i kolacje ze składnikami realnie zweryfikowanymi, nie tylko z założenia bezglutenowymi. Skonfiguruj plan i zobacz Dzień 1.",
   path: `/diety/${category.slug}`,
 });
 
