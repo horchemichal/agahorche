@@ -227,6 +227,51 @@ class PostgresLocationsRepository implements LocationsRepository {
       );
     }
 
+    // PODNOSZENIE FLAG SEO NA WIERSZACH, KTÓRE JUŻ W BAZIE STOJĄ.
+    //
+    // To jest łatka na pułapkę, która kosztowała nas już realną widoczność
+    // w wyszukiwarce. Dosiewanie powyżej robi wyłącznie INSERT, więc nowe
+    // miasto wjeżdża z poprawnym `indexable` policzonym z CITIES_WITH_CONTENT.
+    // Ale miasto, które w bazie SIEDZIAŁO OD DAWNA jako pusty wpis z
+    // `miasta.ts` i dopiero teraz dostało treść, zostaje z `indexable = false`
+    // sprzed miesięcy — strona działa, wygląda dobrze i ma w środku
+    // `<meta name="robots" content="noindex">`. Nikt tego nie widzi gołym
+    // okiem. Tak było z Lublinem, Łodzią, Opolem, Radomskiem, Pabianicami,
+    // Zduńską Wolą, Zgierzem, Opocznem i Strzelcami Opolskimi — dziewięć
+    // gotowych stron leżało w indeksie zablokowanych, a poprawka polegała
+    // za każdym razem na ręcznym UPDATE puszczanym z konsoli VPS.
+    //
+    // Dlatego kod jest teraz źródłem prawdy dla PODNIESIENIA flagi.
+    //
+    // ŚWIADOMIE ROBIMY TO TYLKO W JEDNĄ STRONĘ — false → true, nigdy
+    // odwrotnie. Gdyby ten kod ustawiał flagę na dokładnie to, co mówi seed,
+    // to każdy restart kontenera kasowałby decyzje podjęte ręcznie
+    // w `/admin/lokalizacje`. Wyłączenie strony z indeksu zostaje więc
+    // operacją ręczną i taką ma zostać.
+    const seedy = seedLocations();
+
+    const doOtwarcia = seedy
+      .filter((l) => l.seo.indexable && l.seo.inSitemap)
+      .map((l) => l.urlPath);
+    if (doOtwarcia.length > 0) {
+      await this.pool.query(
+        `update locations set indexable = true, in_sitemap = true, updated_at = now()
+         where url_path = any($1) and (indexable = false or in_sitemap = false)`,
+        [doOtwarcia],
+      );
+    }
+
+    const doOpublikowania = seedy
+      .filter((l) => l.seo.contentStatus === "published")
+      .map((l) => l.urlPath);
+    if (doOpublikowania.length > 0) {
+      await this.pool.query(
+        `update locations set content_status = 'published', updated_at = now()
+         where url_path = any($1) and content_status <> 'published'`,
+        [doOpublikowania],
+      );
+    }
+
     if (doDosiania.length === 0) return;
 
     for (const location of doDosiania) {
