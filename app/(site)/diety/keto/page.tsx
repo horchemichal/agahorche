@@ -6,7 +6,7 @@ import { getDietCategory } from "@/data/diets/categories";
 const category = getDietCategory("keto")!;
 
 export const metadata: Metadata = buildMetadata({
-  title: category.name,
+  title: "Dieta keto z Thermomixem — jadłospis i plan",
   description: `${category.description} Skonfiguruj plan i zobacz przykładowy jadłospis na Dzień 1.`,
   path: `/diety/${category.slug}`,
 });
