@@ -120,6 +120,51 @@ export const REGION_WIELKOPOLSKIE: RegionMiasta = {
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
+/* SIEDEM OSTATNICH WOJEWÓDZTW — wrzesień 2026. Po nich mapa Polski jest
+ * domknięta. Zasada bez zmian: poza Małopolską mówimy samo „oficjalna
+ * przedstawicielka Thermomix®", bo przydział regionu nadaje Vorwerk. */
+export const REGION_MAZOWSZE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie mazowieckim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_POMORZE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie pomorskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_KUJAWSKO_POMORSKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie kujawsko-pomorskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_POMORZE_ZACHODNIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie zachodniopomorskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_WARMIA_MAZURY: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie warmińsko-mazurskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_PODLASIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie podlaskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_LUBUSKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie lubuskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
 export function blokOMnie(
   miejscownik: string,
