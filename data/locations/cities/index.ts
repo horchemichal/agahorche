@@ -403,6 +403,11 @@ import { SREM } from "./srem";
 import { KROTOSZYN } from "./krotoszyn";
 import { BRODNICA } from "./brodnica";
 import { NOWY_DWOR_MAZOWIECKI } from "./nowy-dwor-mazowiecki";
+import { WYSZKOW } from "./wyszkow";
+import { REDA } from "./reda";
+import { KETRZYN } from "./ketrzyn";
+import { ZAGAN } from "./zagan";
+import { KOBYLKA } from "./kobylka";
 
 
 /**
@@ -866,4 +871,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KROTOSZYN,
   BRODNICA,
   NOWY_DWOR_MAZOWIECKI,
+
+  // ——— Fala miast 25-27 tys. ———
+  WYSZKOW,
+  REDA,
+  KETRZYN,
+  ZAGAN,
+  KOBYLKA,
 ];
