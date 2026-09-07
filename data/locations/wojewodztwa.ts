@@ -63,7 +63,7 @@ function base(
 }
 
 export const WOJEWODZTWA: Location[] = [
-  base({ name: "Mazowieckie", slug: "mazowieckie", region: "Mazowsze", population: 5_423_000, neighborSlugs: ["lodzkie", "podlaskie", "lubelskie", "swietokrzyskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
+  base({ name: "Mazowieckie", slug: "mazowieckie", region: "Mazowsze", population: 5_423_000, neighborSlugs: ["lodzkie", "podlaskie", "lubelskie", "swietokrzyskie", "kujawsko-pomorskie", "warminsko-mazurskie"], indexable: true }),
   /*
    * ŚLĄSKIE — indeksowane od 6.09.2026. Do tej pory jedynym indeksowanym
    * województwem było małopolskie, bo tylko ono miało prawdziwą treść.
@@ -80,7 +80,7 @@ export const WOJEWODZTWA: Location[] = [
   base({ name: "Dolnośląskie", slug: "dolnoslaskie", region: "Dolny Śląsk", population: 2_900_000, neighborSlugs: ["lubuskie", "wielkopolskie", "opolskie"], indexable: true }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
   base({ name: "Łódzkie", slug: "lodzkie", region: "Polska Centralna", population: 2_400_000, neighborSlugs: ["mazowieckie", "wielkopolskie", "slaskie", "swietokrzyskie", "kujawsko-pomorskie"], indexable: true }),
-  base({ name: "Pomorskie", slug: "pomorskie", region: "Pomorze", population: 2_340_000, neighborSlugs: ["zachodniopomorskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
+  base({ name: "Pomorskie", slug: "pomorskie", region: "Pomorze", population: 2_340_000, neighborSlugs: ["zachodniopomorskie", "kujawsko-pomorskie", "warminsko-mazurskie"], indexable: true }),
   /*
    * PODKARPACKIE — indeksowane od 6.09.2026, tą samą drogą co śląskie:
    * najpierw powstała pierwsza fala stron miast (Rzeszów, Przemyśl,
@@ -89,15 +89,15 @@ export const WOJEWODZTWA: Location[] = [
    * dopóki ktoś nie napisze dla nich prawdziwej treści.
    */
   base({ name: "Podkarpackie", slug: "podkarpackie", region: "Podkarpacie", population: 2_100_000, neighborSlugs: ["malopolskie", "swietokrzyskie", "lubelskie"], indexable: true }),
-  base({ name: "Kujawsko-Pomorskie", slug: "kujawsko-pomorskie", region: "Kujawy i Pomorze", population: 2_050_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lodzkie", "mazowieckie", "warminsko-mazurskie"] }),
+  base({ name: "Kujawsko-Pomorskie", slug: "kujawsko-pomorskie", region: "Kujawy i Pomorze", population: 2_050_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lodzkie", "mazowieckie", "warminsko-mazurskie"], indexable: true }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
   base({ name: "Lubelskie", slug: "lubelskie", region: "Lubelszczyzna", population: 2_050_000, neighborSlugs: ["mazowieckie", "podkarpackie", "swietokrzyskie", "podlaskie"], indexable: true }),
-  base({ name: "Zachodniopomorskie", slug: "zachodniopomorskie", region: "Pomorze Zachodnie", population: 1_670_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lubuskie"] }),
-  base({ name: "Warmińsko-Mazurskie", slug: "warminsko-mazurskie", region: "Warmia i Mazury", population: 1_370_000, neighborSlugs: ["pomorskie", "kujawsko-pomorskie", "mazowieckie", "podlaskie"] }),
+  base({ name: "Zachodniopomorskie", slug: "zachodniopomorskie", region: "Pomorze Zachodnie", population: 1_670_000, neighborSlugs: ["pomorskie", "wielkopolskie", "lubuskie"], indexable: true }),
+  base({ name: "Warmińsko-Mazurskie", slug: "warminsko-mazurskie", region: "Warmia i Mazury", population: 1_370_000, neighborSlugs: ["pomorskie", "kujawsko-pomorskie", "mazowieckie", "podlaskie"], indexable: true }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 19 miast regionu.
   base({ name: "Świętokrzyskie", slug: "swietokrzyskie", region: "Ziemia Świętokrzyska", population: 1_200_000, neighborSlugs: ["mazowieckie", "lodzkie", "slaskie", "malopolskie", "podkarpackie", "lubelskie"], indexable: true }),
-  base({ name: "Podlaskie", slug: "podlaskie", region: "Podlasie", population: 1_140_000, neighborSlugs: ["mazowieckie", "warminsko-mazurskie", "lubelskie"] }),
-  base({ name: "Lubuskie", slug: "lubuskie", region: "Ziemia Lubuska", population: 1_000_000, neighborSlugs: ["wielkopolskie", "zachodniopomorskie", "dolnoslaskie"] }),
+  base({ name: "Podlaskie", slug: "podlaskie", region: "Podlasie", population: 1_140_000, neighborSlugs: ["mazowieckie", "warminsko-mazurskie", "lubelskie"], indexable: true }),
+  base({ name: "Lubuskie", slug: "lubuskie", region: "Ziemia Lubuska", population: 1_000_000, neighborSlugs: ["wielkopolskie", "zachodniopomorskie", "dolnoslaskie"], indexable: true }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
   base({ name: "Opolskie", slug: "opolskie", region: "Śląsk Opolski", population: 950_000, neighborSlugs: ["dolnoslaskie", "wielkopolskie", "slaskie"], indexable: true }),
 ];
