@@ -39,7 +39,7 @@ import {
 export const SIEMIANOWICE_SLASKIE: CityContent = {
   slug: "siemianowice-slaskie",
   h1: "Thermomix Siemianowice Śląskie – prezentacja u Ciebie w domu",
-  seoTitle: "Przedstawiciel Thermomix Siemianowice Śląskie — prezentacja i cena",
+  seoTitle: "Thermomix Siemianowice Śląskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Siemianowicach Śląskich: bezpłatna prezentacja TM7 u Ciebie w kuchni, wszystkie dzielnice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Siemianowice Śląskie — prezentacja u Ciebie w kuchni",

@@ -40,7 +40,7 @@ import {
 export const PIOTRKOW_TRYBUNALSKI: CityContent = {
   slug: "piotrkow-trybunalski",
   h1: "Thermomix Piotrków Trybunalski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Piotrków Trybunalski — prezentacja i cena",
+  seoTitle: "Thermomix Piotrków Trybunalski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Piotrkowie Trybunalskim: bezpłatna prezentacja TM7 u Ciebie w domu. Cena, raty 0%, bez nacisku na decyzję. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Piotrków Trybunalski — prezentacja u Ciebie w kuchni",

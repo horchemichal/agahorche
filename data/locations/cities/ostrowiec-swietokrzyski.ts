@@ -43,7 +43,7 @@ import {
 export const OSTROWIEC_SWIETOKRZYSKI: CityContent = {
   slug: "ostrowiec-swietokrzyski",
   h1: "Thermomix Ostrowiec Świętokrzyski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Ostrowiec Świętokrzyski — prezentacja i cena",
+  seoTitle: "Thermomix Ostrowiec Świętokrzyski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Ostrowcu Świętokrzyskim: bezpłatna prezentacja TM7 u Ciebie w domu, wszystkie dzielnice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ostrowiec Świętokrzyski — prezentacja u Ciebie w kuchni",

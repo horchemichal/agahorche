@@ -38,7 +38,7 @@ import {
 export const CZECHOWICE_DZIEDZICE: CityContent = {
   slug: "czechowice-dziedzice",
   h1: "Thermomix Czechowice-Dziedzice – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Czechowice-Dziedzice — prezentacja i cena",
+  seoTitle: "Thermomix Czechowice-Dziedzice — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Czechowicach-Dziedzicach: bezpłatna prezentacja TM7 u Ciebie w domu. Cena, raty 0%, terminy też wcześnie rano. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Czechowice-Dziedzice — prezentacja u Ciebie w kuchni",
