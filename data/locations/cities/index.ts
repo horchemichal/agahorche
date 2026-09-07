@@ -322,6 +322,40 @@ import { JAROCIN } from "./jarocin";
 import { WAGROWIEC } from "./wagrowiec";
 import { GOSTYN } from "./gostyn";
 import { KORNIK } from "./kornik";
+import { PLOCK } from "./plock";
+import { SIEDLCE } from "./siedlce";
+import { PRUSZKOW } from "./pruszkow";
+import { LEGIONOWO } from "./legionowo";
+import { PIASECZNO } from "./piaseczno";
+import { CIECHANOW } from "./ciechanow";
+import { MLAWA } from "./mlawa";
+import { OSTROLEKA } from "./ostroleka";
+import { SLUPSK } from "./slupsk";
+import { SOPOT } from "./sopot";
+import { CHOJNICE } from "./chojnice";
+import { MALBORK } from "./malbork";
+import { BYTOW } from "./bytow";
+import { KARTUZY } from "./kartuzy";
+import { WEJHEROWO } from "./wejherowo";
+import { WLOCLAWEK } from "./wloclawek";
+import { GRUDZIADZ } from "./grudziadz";
+import { INOWROCLAW } from "./inowroclaw";
+import { SWIECIE } from "./swiecie";
+import { KOSZALIN } from "./koszalin";
+import { SZCZECINEK } from "./szczecinek";
+import { KOLOBRZEG } from "./kolobrzeg";
+import { SWINOUJSCIE } from "./swinoujscie";
+import { PYRZYCE } from "./pyrzyce";
+import { ELBLAG } from "./elblag";
+import { MIKOLAJKI } from "./mikolajki";
+import { GIZYCKO } from "./gizycko";
+import { OLSZTYNEK } from "./olsztynek";
+import { SUWALKI } from "./suwalki";
+import { BIELSK_PODLASKI } from "./bielsk-podlaski";
+import { AUGUSTOW } from "./augustow";
+import { GORZOW_WIELKOPOLSKI } from "./gorzow-wielkopolski";
+import { SULECHOW } from "./sulechow";
+import { MIEDZYRZECZ } from "./miedzyrzecz";
 
 
 /**
@@ -676,4 +710,52 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WAGROWIEC,
   GOSTYN,
   KORNIK,
+
+  // ——— Województwo mazowieckie ———
+  PLOCK,
+  SIEDLCE,
+  PRUSZKOW,
+  LEGIONOWO,
+  PIASECZNO,
+  CIECHANOW,
+  MLAWA,
+  OSTROLEKA,
+
+  // ——— Województwo pomorskie ———
+  SLUPSK,
+  SOPOT,
+  CHOJNICE,
+  MALBORK,
+  BYTOW,
+  KARTUZY,
+  WEJHEROWO,
+
+  // ——— Województwo kujawsko-pomorskie ———
+  WLOCLAWEK,
+  GRUDZIADZ,
+  INOWROCLAW,
+  SWIECIE,
+
+  // ——— Województwo zachodniopomorskie ———
+  KOSZALIN,
+  SZCZECINEK,
+  KOLOBRZEG,
+  SWINOUJSCIE,
+  PYRZYCE,
+
+  // ——— Województwo warmińsko-mazurskie ———
+  ELBLAG,
+  MIKOLAJKI,
+  GIZYCKO,
+  OLSZTYNEK,
+
+  // ——— Województwo podlaskie ———
+  SUWALKI,
+  BIELSK_PODLASKI,
+  AUGUSTOW,
+
+  // ——— Województwo lubuskie ———
+  GORZOW_WIELKOPOLSKI,
+  SULECHOW,
+  MIEDZYRZECZ,
 ];
