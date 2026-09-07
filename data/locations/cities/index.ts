@@ -373,6 +373,10 @@ import { LOMZA } from "./lomza";
 import { ELK } from "./elk";
 import { TCZEW } from "./tczew";
 import { RUMIA } from "./rumia";
+import { STAROGARD_GDANSKI } from "./starogard-gdanski";
+import { OTWOCK } from "./otwock";
+import { SIERADZ } from "./sieradz";
+import { ZABKI } from "./zabki";
 
 
 /**
@@ -796,4 +800,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ELK,
   TCZEW,
   RUMIA,
+  STAROGARD_GDANSKI,
+  OTWOCK,
+  SIERADZ,
+  ZABKI,
 ];
