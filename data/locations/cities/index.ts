@@ -368,6 +368,11 @@ import { RADOM } from "./radom";
 import { TORUN } from "./torun";
 import { OLSZTYN } from "./olsztyn";
 import { ZIELONA_GORA } from "./zielona-gora";
+import { STARGARD } from "./stargard";
+import { LOMZA } from "./lomza";
+import { ELK } from "./elk";
+import { TCZEW } from "./tczew";
+import { RUMIA } from "./rumia";
 
 
 /**
@@ -784,4 +789,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TORUN,
   OLSZTYN,
   ZIELONA_GORA,
+
+  // ——— Fala miast 45-70 tys. ———
+  STARGARD,
+  LOMZA,
+  ELK,
+  TCZEW,
+  RUMIA,
 ];
