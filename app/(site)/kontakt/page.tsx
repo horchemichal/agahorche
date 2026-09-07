@@ -9,8 +9,9 @@ import { PhoneIcon, MessengerIcon } from "@/components/marketing/icons";
 import { SITE } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Kontakt",
-  description: "Skontaktuj się z Agą Horche — umów prezentację lub zadaj pytanie o Thermomix.",
+  title: "Kontakt — umów prezentację Thermomixa",
+  description:
+    "Telefon, SMS, Messenger albo formularz — odezwij się, jak Ci wygodnie. Umówimy bezpłatną prezentację Thermomixa u Ciebie w kuchni albo odpowiem na pytanie.",
   path: "/kontakt",
 });
 
