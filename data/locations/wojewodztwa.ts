@@ -74,10 +74,10 @@ export const WOJEWODZTWA: Location[] = [
    * napisania stron, nie zapowiedzią, że powstaną.
    */
   base({ name: "Śląskie", slug: "slaskie", region: "Śląsk", population: 4_370_000, neighborSlugs: ["malopolskie", "opolskie", "swietokrzyskie", "lodzkie"], indexable: true }),
-  base({ name: "Wielkopolskie", slug: "wielkopolskie", region: "Wielkopolska", population: 3_500_000, neighborSlugs: ["lubuskie", "zachodniopomorskie", "kujawsko-pomorskie", "lodzkie", "opolskie", "dolnoslaskie"] }),
+  base({ name: "Wielkopolskie", slug: "wielkopolskie", region: "Wielkopolska", population: 3_500_000, neighborSlugs: ["lubuskie", "zachodniopomorskie", "kujawsko-pomorskie", "lodzkie", "opolskie", "dolnoslaskie"], indexable: true }),
   // Jedyne indeksowane województwo — obszar, w którym Aga faktycznie pracuje.
   base({ name: "Małopolskie", slug: "malopolskie", region: "Małopolska", population: 3_400_000, neighborSlugs: ["slaskie", "swietokrzyskie", "podkarpackie"], indexable: true }),
-  base({ name: "Dolnośląskie", slug: "dolnoslaskie", region: "Dolny Śląsk", population: 2_900_000, neighborSlugs: ["lubuskie", "wielkopolskie", "opolskie"] }),
+  base({ name: "Dolnośląskie", slug: "dolnoslaskie", region: "Dolny Śląsk", population: 2_900_000, neighborSlugs: ["lubuskie", "wielkopolskie", "opolskie"], indexable: true }),
   // Indeksowane od 6 września 2026 — po napisaniu treści dla 9 miast regionu.
   base({ name: "Łódzkie", slug: "lodzkie", region: "Polska Centralna", population: 2_400_000, neighborSlugs: ["mazowieckie", "wielkopolskie", "slaskie", "swietokrzyskie", "kujawsko-pomorskie"], indexable: true }),
   base({ name: "Pomorskie", slug: "pomorskie", region: "Pomorze", population: 2_340_000, neighborSlugs: ["zachodniopomorskie", "kujawsko-pomorskie", "warminsko-mazurskie"] }),
