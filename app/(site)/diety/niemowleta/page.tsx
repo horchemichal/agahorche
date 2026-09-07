@@ -7,7 +7,8 @@ const category = getDietCategory("niemowleta")!;
 
 export const metadata: Metadata = buildMetadata({
   title: category.name,
-  description: `${category.description} Cztery etapy rozszerzania diety, każdy po 7 dni — zobacz przykładowy jadłospis.`,
+  description:
+    "Cztery etapy rozszerzania diety, każdy po 7 dni. Proste posiłki i przygotowanie produktów odpowiednio do etapu — zobacz przykładowy jadłospis.",
   path: `/diety/${category.slug}`,
 });
 
