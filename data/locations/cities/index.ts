@@ -383,6 +383,11 @@ import { ZYRARDOW } from "./zyrardow";
 import { NOWA_SOL } from "./nowa-sol";
 import { WOLOMIN } from "./wolomin";
 import { KWIDZYN } from "./kwidzyn";
+import { ZARY } from "./zary";
+import { SOCHACZEW } from "./sochaczew";
+import { OLESNICA } from "./olesnica";
+import { BRZEG } from "./brzeg";
+import { LEBORK } from "./lebork";
 
 
 /**
@@ -818,4 +823,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   NOWA_SOL,
   WOLOMIN,
   KWIDZYN,
+
+  // ——— Fala miast 34-37 tys. ———
+  ZARY,
+  SOCHACZEW,
+  OLESNICA,
+  BRZEG,
+  LEBORK,
 ];
