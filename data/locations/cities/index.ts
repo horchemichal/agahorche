@@ -377,6 +377,12 @@ import { STAROGARD_GDANSKI } from "./starogard-gdanski";
 import { OTWOCK } from "./otwock";
 import { SIERADZ } from "./sieradz";
 import { ZABKI } from "./zabki";
+import { MARKI } from "./marki";
+import { MINSK_MAZOWIECKI } from "./minsk-mazowiecki";
+import { ZYRARDOW } from "./zyrardow";
+import { NOWA_SOL } from "./nowa-sol";
+import { WOLOMIN } from "./wolomin";
+import { KWIDZYN } from "./kwidzyn";
 
 
 /**
@@ -804,4 +810,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OTWOCK,
   SIERADZ,
   ZABKI,
+
+  // ——— Fala miast 36-40 tys. ———
+  MARKI,
+  MINSK_MAZOWIECKI,
+  ZYRARDOW,
+  NOWA_SOL,
+  WOLOMIN,
+  KWIDZYN,
 ];
