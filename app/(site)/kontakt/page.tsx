@@ -5,7 +5,7 @@ import { Section } from "@/components/ui/section";
 import { Heading, Lead } from "@/components/ui/heading";
 import { Card } from "@/components/ui/card";
 import { LeadForm } from "@/components/lead/lead-form";
-import { PhoneIcon, MessengerIcon } from "@/components/marketing/icons";
+import { PhoneIcon, MessengerIcon, MailIcon } from "@/components/marketing/icons";
 import { SITE } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
@@ -34,6 +34,12 @@ export default function KontaktPage() {
             <div className="mt-6 flex flex-col gap-3 text-sm">
               <a href={SITE.phoneHref} className="flex items-center gap-2.5 font-medium text-neutral-800 hover:text-brand-700">
                 <PhoneIcon width={17} height={17} /> {SITE.phone}
+              </a>
+              <a
+                href={SITE.emailHref}
+                className="flex items-center gap-2.5 text-neutral-700 hover:text-brand-700"
+              >
+                <MailIcon width={17} height={17} /> {SITE.email}
               </a>
               <a
                 href={SITE.messengerHref}
