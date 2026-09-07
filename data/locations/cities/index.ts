@@ -356,6 +356,10 @@ import { AUGUSTOW } from "./augustow";
 import { GORZOW_WIELKOPOLSKI } from "./gorzow-wielkopolski";
 import { SULECHOW } from "./sulechow";
 import { MIEDZYRZECZ } from "./miedzyrzecz";
+import { WARSZAWA } from "./warszawa";
+import { WROCLAW } from "./wroclaw";
+import { POZNAN } from "./poznan";
+import { GDANSK } from "./gdansk";
 
 
 /**
@@ -758,4 +762,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GORZOW_WIELKOPOLSKI,
   SULECHOW,
   MIEDZYRZECZ,
+
+  // ——— Największe miasta kraju ———
+  WARSZAWA,
+  WROCLAW,
+  POZNAN,
+  GDANSK,
 ];
