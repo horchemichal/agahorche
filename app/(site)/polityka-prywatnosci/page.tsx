@@ -62,8 +62,9 @@ export default function PolitykaPrywatnosciPage() {
           </p>
           <p>
             W sprawach dotyczących swoich danych możesz zadzwonić pod{" "}
-            <a href={SITE.phoneHref}>{SITE.phone}</a>, napisać przez Messengera albo listownie na
-            adres podany wyżej.
+            <a href={SITE.phoneHref}>{SITE.phone}</a>, napisać na{" "}
+            <a href={SITE.emailHref}>{SITE.email}</a>, odezwać się przez Messengera albo
+            listownie na adres podany wyżej.
           </p>
 
           <h2>Skąd Aga ma Twoje dane</h2>
