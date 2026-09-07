@@ -398,6 +398,11 @@ import { PRUSZCZ_GDANSKI } from "./pruszcz-gdanski";
 import { LUBON } from "./lubon";
 import { POLICE } from "./police";
 import { BIELAWA } from "./bielawa";
+import { LUKOW } from "./lukow";
+import { SREM } from "./srem";
+import { KROTOSZYN } from "./krotoszyn";
+import { BRODNICA } from "./brodnica";
+import { NOWY_DWOR_MAZOWIECKI } from "./nowy-dwor-mazowiecki";
 
 
 /**
@@ -854,4 +859,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LUBON,
   POLICE,
   BIELAWA,
+
+  // ——— Fala miast 27-29 tys. ———
+  LUKOW,
+  SREM,
+  KROTOSZYN,
+  BRODNICA,
+  NOWY_DWOR_MAZOWIECKI,
 ];
