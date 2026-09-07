@@ -408,6 +408,11 @@ import { REDA } from "./reda";
 import { KETRZYN } from "./ketrzyn";
 import { ZAGAN } from "./zagan";
 import { KOBYLKA } from "./kobylka";
+import { KOSCIAN } from "./koscian";
+import { WALCZ } from "./walcz";
+import { PIASTOW } from "./piastow";
+import { KOSCIERZYNA } from "./koscierzyna";
+import { SZCZYTNO } from "./szczytno";
 
 
 /**
@@ -878,4 +883,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KETRZYN,
   ZAGAN,
   KOBYLKA,
+
+  // ——— Fala miast 23-24 tys. ———
+  KOSCIAN,
+  WALCZ,
+  PIASTOW,
+  KOSCIERZYNA,
+  SZCZYTNO,
 ];
