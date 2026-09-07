@@ -388,6 +388,11 @@ import { SOCHACZEW } from "./sochaczew";
 import { OLESNICA } from "./olesnica";
 import { BRZEG } from "./brzeg";
 import { LEBORK } from "./lebork";
+import { DZIERZONIOW } from "./dzierzoniow";
+import { OLAWA } from "./olawa";
+import { OSTRODA } from "./ostroda";
+import { ILAWA } from "./ilawa";
+import { SWARZEDZ } from "./swarzedz";
 
 
 /**
@@ -830,4 +835,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OLESNICA,
   BRZEG,
   LEBORK,
+
+  // ——— Fala miast 31-33 tys. ———
+  DZIERZONIOW,
+  OLAWA,
+  OSTRODA,
+  ILAWA,
+  SWARZEDZ,
 ];
