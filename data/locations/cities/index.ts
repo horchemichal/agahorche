@@ -298,6 +298,30 @@ import { RADOMSKO } from "./radomsko";
 import { PABIANICE } from "./pabianice";
 import { ZGIERZ } from "./zgierz";
 import { OPOCZNO } from "./opoczno";
+import { WALBRZYCH } from "./walbrzych";
+import { LEGNICA } from "./legnica";
+import { JELENIA_GORA } from "./jelenia-gora";
+import { LUBIN } from "./lubin";
+import { GLOGOW } from "./glogow";
+import { SWIDNICA } from "./swidnica";
+import { BOLESLAWIEC } from "./boleslawiec";
+import { KLODZKO } from "./klodzko";
+import { ZGORZELEC } from "./zgorzelec";
+import { KARPACZ } from "./karpacz";
+import { BYSTRZYCA_KLODZKA } from "./bystrzyca-klodzka";
+import { ZABKOWICE_SLASKIE } from "./zabkowice-slaskie";
+import { KALISZ } from "./kalisz";
+import { KONIN } from "./konin";
+import { PILA } from "./pila";
+import { OSTROW_WIELKOPOLSKI } from "./ostrow-wielkopolski";
+import { GNIEZNO } from "./gniezno";
+import { LESZNO } from "./leszno";
+import { WRZESNIA } from "./wrzesnia";
+import { TUREK } from "./turek";
+import { JAROCIN } from "./jarocin";
+import { WAGROWIEC } from "./wagrowiec";
+import { GOSTYN } from "./gostyn";
+import { KORNIK } from "./kornik";
 
 
 /**
@@ -624,4 +648,32 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PABIANICE,
   ZGIERZ,
   OPOCZNO,
+
+  // ——— Województwo dolnośląskie ———
+  WALBRZYCH,
+  LEGNICA,
+  JELENIA_GORA,
+  LUBIN,
+  GLOGOW,
+  SWIDNICA,
+  BOLESLAWIEC,
+  KLODZKO,
+  ZGORZELEC,
+  KARPACZ,
+  BYSTRZYCA_KLODZKA,
+  ZABKOWICE_SLASKIE,
+
+  // ——— Województwo wielkopolskie ———
+  KALISZ,
+  KONIN,
+  PILA,
+  OSTROW_WIELKOPOLSKI,
+  GNIEZNO,
+  LESZNO,
+  WRZESNIA,
+  TUREK,
+  JAROCIN,
+  WAGROWIEC,
+  GOSTYN,
+  KORNIK,
 ];

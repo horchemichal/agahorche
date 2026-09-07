@@ -107,6 +107,19 @@ export const REGION_LODZKIE: RegionMiasta = {
   podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
 };
 
+/* DOLNOŚLĄSKIE i WIELKOPOLSKIE — siódmy i ósmy raz, ta sama zasada. */
+export const REGION_DOLNOSLASKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie dolnośląskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
+export const REGION_WIELKOPOLSKIE: RegionMiasta = {
+  przyKredencjale: "",
+  zasieg: "i w całym województwie wielkopolskim",
+  podpis: "Aga Horche — oficjalna przedstawicielka Thermomix®.",
+};
+
 /** Kim jestem i dlaczego to nie jest call center. */
 export function blokOMnie(
   miejscownik: string,
