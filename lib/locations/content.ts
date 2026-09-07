@@ -130,9 +130,20 @@ export function buildLocationFaq(resolution: LocationResolution): FaqItem[] {
       question: `Czy Aga dojeżdża z prezentacją ${dokad}?`,
       answer: `Tak — Aga organizuje stacjonarne prezentacje Thermomix w całej Polsce, a najczęściej w Małopolsce, w tym ${gdzie}.`,
     },
+    // Wrzesień 2026: tu stało literalne „TODO: Aga uzupełni…”. Placeholder
+    // renderował się na KAŻDEJ stronie bez własnej treści — sześciuset dwóch
+    // adresach — i widział go każdy, kto trafił tam z linku. Strony są
+    // `noindex`, więc nikt tego nie wyłapał przez audyty SEO; wyszło dopiero
+    // przy czytaniu szablonu.
+    //
+    // Odpowiedź nie wymyśla nowej obietnicy: „godzina” to ta sama liczba,
+    // którą Aga podaje na wszystkich stronach z własną treścią („wystarczy
+    // blat, gniazdko i godzina spokoju”). Świadomie nie deklarujemy sztywnego
+    // czasu, bo spotkanie kończy się wtedy, kiedy chce tego gospodarz.
     {
       question: "Ile trwa prezentacja Thermomix?",
-      answer: "TODO: Aga uzupełni dokładny, rzeczywisty czas trwania prezentacji.",
+      answer:
+        "Warto zarezerwować około godziny — tyle zwykle zajmuje wspólne gotowanie. Bywa dłużej, jeśli macie dużo pytań, i nic nie stoi na przeszkodzie, żeby skończyć wcześniej.",
     },
   ];
 }
