@@ -360,6 +360,14 @@ import { WARSZAWA } from "./warszawa";
 import { WROCLAW } from "./wroclaw";
 import { POZNAN } from "./poznan";
 import { GDANSK } from "./gdansk";
+import { SZCZECIN } from "./szczecin";
+import { BYDGOSZCZ } from "./bydgoszcz";
+import { BIALYSTOK } from "./bialystok";
+import { GDYNIA } from "./gdynia";
+import { RADOM } from "./radom";
+import { TORUN } from "./torun";
+import { OLSZTYN } from "./olsztyn";
+import { ZIELONA_GORA } from "./zielona-gora";
 
 
 /**
@@ -768,4 +776,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WROCLAW,
   POZNAN,
   GDANSK,
+  SZCZECIN,
+  BYDGOSZCZ,
+  BIALYSTOK,
+  GDYNIA,
+  RADOM,
+  TORUN,
+  OLSZTYN,
+  ZIELONA_GORA,
 ];
