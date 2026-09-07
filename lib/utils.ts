@@ -29,10 +29,18 @@ export const SITE = {
   // m.me deep link uses the same profile name as the confirmed Facebook
   // page below (spec §42: never invent a link — this reuses one we already have).
   messengerHref: "https://m.me/agulabuu",
-  // null = no confirmed public inbox (spec §42: never invent contact
-  // details). Previously held a made-up address; Aga confirmed she has no
-  // public email, so components must not render a mailto link here.
-  email: null as string | null,
+  /*
+   * Adres podany przez Michała 7.09.2026 do publikacji na stronie.
+   *
+   * HISTORIA TEGO POLA, ŻEBY NIKT GO PONOWNIE NIE ZMYŚLIŁ: stał tu kiedyś
+   * adres wymyślony, potem — po wykryciu tego — twarde `null` z zakazem
+   * renderowania mailto. Ta wartość jest pierwszą POTWIERDZONĄ: to ta sama
+   * skrzynka, z której serwis wysyła powiadomienia o zgłoszeniach.
+   *
+   * Jeśli kiedyś zniknie, wraca `null`, a nie kolejny wymyślony adres.
+   */
+  email: "gunia663@interia.pl" as string | null,
+  emailHref: "mailto:gunia663@interia.pl",
   // null = not confirmed yet (spec §42: never invent a link). Components
   // should only render an icon when the value is set — see components
   // that map over Object.entries(SITE.social).
