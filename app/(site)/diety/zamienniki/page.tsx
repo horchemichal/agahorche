@@ -7,7 +7,8 @@ const category = getDietCategory("zamienniki")!;
 
 export const metadata: Metadata = buildMetadata({
   title: category.name,
-  description: `${category.description} Skonfiguruj plan i zobacz przykładowy jadłospis na Dzień 1.`,
+  description:
+    "Zwyczajne, mieszane menu na tydzień lub dwa — bez wykluczeń, jeśli nie potrzebujesz diety pod konkretne wskazanie. Skonfiguruj plan i zobacz Dzień 1.",
   path: `/diety/${category.slug}`,
 });
 
