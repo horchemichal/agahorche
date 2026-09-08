@@ -495,6 +495,11 @@ export async function CityLandingTemplate({
             </p>
           ))}
         </div>
+        {/* Lista osiedli jest opcjonalna. Część miast nie ma oficjalnego ani
+            powszechnie używanego podziału — wtedy zostaje sam akapit, a listy
+            nie ma. Wpisanie tu zgadywanych nazw byłoby podaniem niesprawdzonej
+            informacji jako faktu, więc pusta tablica jest poprawnym stanem. */}
+        {content.districts.length > 0 && (
         <ul className="mt-7 grid grid-cols-2 gap-x-6 gap-y-2.5 sm:grid-cols-3 lg:grid-cols-4">
           {content.districts.map((district) => {
             // Dzielnica, która ma własną stronę, staje się linkiem. Reszta
@@ -534,6 +539,7 @@ export async function CityLandingTemplate({
             );
           })}
         </ul>
+        )}
       </Section>
 
       {/* OBSZAR DZIAŁANIA */}
