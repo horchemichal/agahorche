@@ -413,6 +413,16 @@ import { WALCZ } from "./walcz";
 import { PIASTOW } from "./piastow";
 import { KOSCIERZYNA } from "./koscierzyna";
 import { SZCZYTNO } from "./szczytno";
+import { BARTOSZYCE } from "./bartoszyce";
+import { BIALOGARD } from "./bialogard";
+import { SWIEBODZICE } from "./swiebodzice";
+import { JAWOR } from "./jawor";
+import { POLKOWICE } from "./polkowice";
+import { OSTROW_MAZOWIECKA } from "./ostrow-mazowiecka";
+import { PLONSK } from "./plonsk";
+import { KOLO } from "./kolo";
+import { SRODA_WIELKOPOLSKA } from "./sroda-wielkopolska";
+import { GOLENIOW } from "./goleniow";
 
 
 /**
@@ -890,4 +900,16 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PIASTOW,
   KOSCIERZYNA,
   SZCZYTNO,
+
+  // ——— Fala miast 22-23 tys. (research: podagenci, źródła w notatce) ———
+  BARTOSZYCE,
+  BIALOGARD,
+  SWIEBODZICE,
+  JAWOR,
+  POLKOWICE,
+  OSTROW_MAZOWIECKA,
+  PLONSK,
+  KOLO,
+  SRODA_WIELKOPOLSKA,
+  GOLENIOW,
 ];
