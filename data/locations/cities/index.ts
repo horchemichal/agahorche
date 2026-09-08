@@ -423,10 +423,12 @@ import { PLONSK } from "./plonsk";
 import { KOLO } from "./kolo";
 import { SRODA_WIELKOPOLSKA } from "./sroda-wielkopolska";
 import { GOLENIOW } from "./goleniow";
-import { WIELICZKA } from "./wieliczka";
-import { SKAWINA } from "./skawina";
 import { WIELUN } from "./wielun";
 import { SWIEBODZIN } from "./swiebodzin";
+import { NOWA_RUDA } from "./nowa-ruda";
+import { LUBAN } from "./luban";
+import { ALEKSANDROW_LODZKI } from "./aleksandrow-lodzki";
+import { LUBARTOW } from "./lubartow";
 
 
 /**
@@ -918,8 +920,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GOLENIOW,
 
   // ——— Fala miast 20-24 tys. (research: podagenci, źródła w notatce) ———
-  WIELICZKA,
-  SKAWINA,
   WIELUN,
   SWIEBODZIN,
+  NOWA_RUDA,
+  LUBAN,
+  ALEKSANDROW_LODZKI,
+  LUBARTOW,
 ];
