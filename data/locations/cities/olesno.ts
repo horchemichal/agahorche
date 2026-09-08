@@ -26,7 +26,8 @@ import {
  * — ⭐⭐ ZALIPIE LEŻY W GMINIE OLESNO — POTWIERDZONE.
  *   Sołectwo o powierzchni 805 HA, 736 MIESZKAŃCÓW, pierwsza
  *   wzmianka 1674 R. (gminaolesno.pl),
- * — ⭐ KONKURS „MALOWANA CHATA” — ORGANIZOWANY OD 1948 R.,
+ * — ⭐ KONKURS „MALOWANA CHATA” — ORGANIZOWANY OD 1948 R. (ale NIE co
+ *   roku: 60. edycja przypadła na 2024 r., czyli 77 lat po pierwszej),
  *   NAJDŁUŻEJ TRWAJĄCY KONKURS SZTUKI LUDOWEJ W POLSCE.
  *   OD 1978 organizuje go muzeum w Tarnowie. 60. EDYCJA W 2024 R.
  *   (58., 59. i 60. udokumentowane na stronie muzeum).
@@ -122,7 +123,7 @@ export const OLESNO: CityContent = {
       paragraphs: [
         "Zalipie jest jednym z trzynastu sołectw gminy Olesno — osiemset pięć hektarów, siedemset trzydzieści sześć mieszkańców, pierwsza wzmianka z tysiąc sześćset siedemdziesiątego czwartego roku. I jest przy tym jedną z najbardziej rozpoznawalnych wsi w Polsce.",
         "Kobiety malują tu domy w kwiaty. Nie tylko wnętrza — także ściany zewnętrzne, piece, studnie, płoty, budy dla psów. Zwyczaj wziął się z konieczności: w chałupach kurnych sadza osiadała na ścianach, więc zamalowywano ją wapnem, a z czasem zamiast zamalowywać zaczęto zdobić.",
-        "Najważniejsza jest tu jednak nie sama tradycja, tylko sposób, w jaki ją utrzymano. Konkurs „Malowana Chata” organizuje się nieprzerwanie od tysiąc dziewięćset czterdziestego ósmego roku i jest to najdłużej trwający konkurs sztuki ludowej w Polsce. Od tysiąc dziewięćset siedemdziesiątego ósmego prowadzi go muzeum w Tarnowie, a w dwa tysiące dwudziestym czwartym odbyła się sześćdziesiąta edycja.",
+        "Najważniejsza jest tu jednak nie sama tradycja, tylko sposób, w jaki ją utrzymano. Konkurs „Malowana Chata” organizuje się od tysiąc dziewięćset czterdziestego ósmego roku i jest to najdłużej trwający konkurs sztuki ludowej w Polsce. Od tysiąc dziewięćset siedemdziesiątego ósmego prowadzi go muzeum w Tarnowie, a w dwa tysiące dwudziestym czwartym odbyła się sześćdziesiąta edycja — czyli nie co roku.",
         "Nie podaję stałego terminu, bo go nie ma — jedna z edycji odbyła się wyjątkowo we wrześniu, a informacje o powiązaniu z Bożym Ciałem nie są potwierdzone.",
         "Najsłynniejszą malarką Zalipia była Felicja Curyłowa, żyjąca w latach tysiąc dziewięćset czwartym–siedemdziesiątym czwartym; znano ją już w latach trzydziestych. Jej zagroda działa dziś jako oddział Muzeum Ziemi Tarnowskiej: pomalowane wnętrza i ściany zewnętrzne, czarny strop z białymi wzorami wyklejanymi z gliny, malowany piec kuchenny i wycinanki. Na tym samym terenie stoi chałupa Stefanii Łączyńskiej.",
         "Warto zauważyć, jak to działa mechanicznie, bo to jest ciekawsze niż same kwiaty. Zalipie nie przetrwało dzięki temu, że ktoś je objął ochroną konserwatorską — przetrwało dlatego, że co roku odbywa się konkurs, w którym gospodynie muszą namalować chatę od nowa. Wzory zmywa deszcz, więc malowanie trzeba powtarzać. Tradycja jest tu czynnością, a nie zabytkiem.",
