@@ -61,7 +61,9 @@ import {
  *   Młynne, Mordarka, Nowe Rybie, Pasierbiec, Pisarzowa, Rupniów,
  *   Siekierczyna I, Siekierczyna II, Sowliny, Stara Wieś I,
  *   Stara Wieś II, Stare Rybie, Walowa Góra, Wysokie. Największa wieś
- *   Stara Wieś (2 117,30 ha), najmniejsza Bałażówka (81,61 ha),
+ *   największe SOŁECTWO to Męcina (1 793,25 ha); Stara Wieś to dwa
+ *   sołectwa o łącznej powierzchni 2 117,38 ha; najmniejsza Bałażówka
+ *   (81,46 ha),
  * — ⭐ CHLEB MĘCIŃSKI — Lista Produktów Tradycyjnych MRiRW,
  *   WPIS 1.12.2010. To WŁASNY wpis gminy wiejskiej, z jej sołectwa
  *   Męcina. Wypiekają HALINA I MAREK PIWOWAROWIE; laureat
@@ -176,7 +178,7 @@ export const LIMANOWA_GMINA: CityContent = {
         "Drugi kontrakt, na odcinek z Tymbarku do Limanowej, opiewa na około miliarda sześciuset milionów złotych i przewiduje czternaście kilometrów nowego toru, siedemnaście mostów i wiaduktów, kolejny tunel — tym razem pod Koszarami, też tutejszym sołectwem — nowy przystanek Koszary i dwukilometrowy wiadukt nad doliną Sowlinki, średnio dziewięć metrów nad ziemią.",
         "Docelowo z Krakowa do Nowego Sącza ma się jechać około godziny zamiast trzech. Z Limanowej do Nowego Sącza dwadzieścia minut, do Krakowa czterdzieści.",
         "To jest gmina, która przez trzy lata ma pod sobą największy plac budowy kolejowej w Polsce — i której trzy sołectwa dostaną z tego stacje albo przystanki.",
-        "Poza budową gmina jest wyjątkowo rozciągnięta: czterdzieści kilometrów z północy na południe, dwadzieścia trzy sołectwa przy dwudziestu jeden wsiach, bo Siekierczyna i Stara Wieś dzielą się na po dwa. Najmniejsza, Bałażówka, ma osiemdziesiąt jeden hektarów; największa, Stara Wieś, ponad dwa tysiące sto.",
+        "Poza budową gmina jest wyjątkowo rozciągnięta: czterdzieści kilometrów z północy na południe, dwadzieścia trzy sołectwa przy dwudziestu jeden wsiach, bo Siekierczyna i Stara Wieś dzielą się na po dwa. Najmniejsze, Bałażówka, ma osiemdziesiąt jeden hektarów; największe, Męcina, prawie tysiąc osiemset. Stara Wieś, podzielona na dwa sołectwa, zajmuje razem ponad dwa tysiące sto hektarów.",
         "I jeszcze jedna liczba, która mówi o niej najwięcej: średni wiek mieszkańca wynosi tu trzydzieści siedem lat i jedną dziesiątą, przy czterdziestu jeden w sąsiednim mieście. Od dwa tysiące drugiego roku gmina urosła o szesnaście i pół procenta.",
       ],
     },

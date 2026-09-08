@@ -72,7 +72,8 @@ import {
  *   1468 pierwsza pisemna dokumentacja; 1493 książę Janusz IV pozwala
  *   mieszczanom wykopać dwa stawy; XVI w. szczyt — 291–443 tony
  *   rocznie, w 1569 trzyletnie karpie („piątniki”) po 2–3 złote;
- *   2. poł. XIX w. Zator największym przedsiębiorstwem rybackim
+ *   2. poł. XIX w. — wyhodowanie karpia galicyjskiego; XVI w. produkcja
+ *   7,2–13,3 t rocznie (NIE 400 t). Zator ważnym ośrodkiem rybackim
  *   kraju, w Niemczech nazywany „galizische Karpfen-Race”;
  *   1946 przejęcie przez UNIWERSYTET JAGIELLOŃSKI; lata 80.–90.
  *   produkcja średnio 489,3 tony,
@@ -180,7 +181,7 @@ export const ZATOR: CityContent = {
         "Skąd bierze się ryba, też jest opisane, i to bardzo szczegółowo. Karp zatorski ma od dwa tysiące jedenastego roku Chronioną Nazwę Pochodzenia — czyli najostrzejszą kategorię unijnej ochrony, wymagającą, by cały proces zachodził na wskazanym obszarze. Obszar to trzy gminy: Zator, Przeciszów i Spytkowice, razem sto trzydzieści cztery kilometry kwadratowe.",
         "Specyfikacja jest tak konkretna, że czyta się ją jak przepis. Ryba rośnie w systemie dwuletnim: w pierwszym roku osiąga od sześćdziesięciu do stu pięćdziesięciu gramów, w drugim od tysiąca stu do tysiąca ośmiuset — i to jest masa handlowa. Karmi się ją wyłącznie paszami zbożowymi, przy czym co najmniej siedemdziesiąt procent zboża musi pochodzić z tego samego obszaru. Białka ma od siedemnastu do dziewiętnastu procent, tłuszczu od trzech do sześciu.",
         "Stawy mają razem tysiąc sto pięćdziesiąt sześć hektarów, z czego produkcyjnych osiemset do osiemset pięćdziesiąt. Największy kompleks, Przeręb, liczy czterysta sześćdziesiąt jeden hektarów. Od tysiąc dziewięćset czterdziestego szóstego roku należą do Uniwersytetu Jagiellońskiego.",
-        "Hoduje się tu ryby od czternastego wieku. Pierwsza pisemna wzmianka pochodzi z tysiąc czterysta sześćdziesiątego ósmego roku, a w tysiąc czterysta dziewięćdziesiątym trzecim książę Janusz Czwarty pozwolił mieszczanom wykopać dwa stawy. W szesnastym wieku produkcja sięgała czterystu ton rocznie, a w drugiej połowie dziewiętnastego Zator był największym przedsiębiorstwem rybackim w kraju — w Niemczech mówiono wtedy o galicyjskiej rasie karpia.",
+        "Hoduje się tu ryby od czternastego wieku. Pierwsza pisemna wzmianka pochodzi z tysiąc czterysta sześćdziesiątego ósmego roku, a w tysiąc czterysta dziewięćdziesiątym trzecim książę Janusz Czwarty pozwolił mieszczanom wykopać dwa stawy. W szesnastym wieku stawy tutejszego starostwa dawały kilkanaście ton ryb rocznie. Prawdziwy rozkwit przyszedł w drugiej połowie dziewiętnastego wieku, gdy wyhodowano tu nową rasę: karpia galicyjskiego.",
         "Samo miasto jest jeszcze starsze: prawa miejskie dostało dziesiątego listopada tysiąc dwieście dziewięćdziesiątego drugiego roku, a od tysiąc czterysta czterdziestego piątego było stolicą osobnego księstwa zatorskiego, wcielonego do Polski dopiero w tysiąc pięćset trzynastym.",
         "Dziś obok stawów działa jeszcze jedna rzecz, o skali trudnej do przeoczenia: Energylandia, otwarta w dwa tysiące czternastym roku, dziś siedemdziesiąt hektarów i sto trzydzieści trzy atrakcje, z dwoma milionami gości w sezonie dwa tysiące dwudziestym czwartym. Ma nawet własny przystanek kolejowy.",
       ],

@@ -166,7 +166,7 @@ export const SKALA: CityContent = {
       id: "rodzina",
       heading: "Kuchnia, która zaczyna się na targu",
       paragraphs: [
-        "W gminie z targiem na rynku i mleczarnią jako największym pracodawcą zakupy wyglądają inaczej niż w mieście z dyskontem na rogu. Kupuje się to, co akurat jest, w ilościach, jakie ktoś przywiózł, i myśli o obiedzie dopiero po powrocie do domu — a nie odwrotnie.",
+        "W gminie z cotygodniowym targiem na rynku i własną mleczarnią zakupy wyglądają inaczej niż w mieście z dyskontem na rogu. Kupuje się to, co akurat jest, w ilościach, jakie ktoś przywiózł, i myśli o obiedzie dopiero po powrocie do domu — a nie odwrotnie.",
         "To całkiem wygodny sposób gotowania, ale ma jedną wadę: bywa, że wraca się z kilogramem czegoś, czego nie było w planie. Trzy kilo porzeczek, bo były tanie. Worek ziemniaków. Kapusta, bo sąsiadka miała za dużo.",
         "Pierwsza rzecz, która się wtedy przydaje, to przerabianie bez pilnowania. Dżem, przecier, sok czy zupa krem gotują się bez stania nad garnkiem i bez mieszania, żeby nie przywarło. Nastawia się i wraca za pół godziny.",
         "Druga to nabiał. W gminie, gdzie mleko jest lokalne i dobre, warto wiedzieć, że jogurt, twarożek i masło robi się w domu z jednego składnika, bez sprzętu dodatkowego poza tym, co już stoi na blacie.",

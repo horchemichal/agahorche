@@ -13,7 +13,7 @@ import {
 
 /**
  * OZIMEK — miasto nad Małą Panwią, wyrosłe wokół dawnej huty. Stoi tu
- * żeliwny most wiszący z 1827 roku, uznawany za najstarszy tego typu
+ * żelazny most wiszący z 1827 roku, uznawany za najstarszy tego typu
  * w Europie kontynentalnej. W gminie leży Krasiejów ze stanowiskiem
  * paleontologicznym i parkiem.
  *
@@ -35,7 +35,7 @@ import {
  * ma być prawdziwa także za dwa lata.
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
- * — w Ozimku stoi żeliwny most wiszący z 1827 roku, uznawany
+ * — w Ozimku stoi żelazny most wiszący z 1827 roku, uznawany
  *   za najstarszy tego typu w Europie kontynentalnej,
  * — miasto rozwinęło się wokół dawnej huty nad Małą Panwią,
  * — w gminie leży Krasiejów ze stanowiskiem paleontologicznym.
@@ -84,7 +84,7 @@ export const OZIMEK: CityContent = {
       id: "co-sie-zuzywa",
       heading: "Most z tysiąc osiemset dwudziestego siódmego — i pytanie, co się zużywa",
       paragraphs: [
-        "W Ozimku stoi żeliwny most wiszący, uznawany za najstarszy tego typu w Europie kontynentalnej. Zbudowano go w tysiąc osiemset dwudziestym siódmym roku przy tutejszej hucie i stoi do dziś. Nie stoi jednak dlatego, że nic się w nim nie psuło — stoi dlatego, że przez dwieście lat ktoś go pilnował i naprawiał.",
+        "W Ozimku stoi żelazny most wiszący, uznawany za najstarszy tego typu w Europie kontynentalnej. Zbudowano go w tysiąc osiemset dwudziestym siódmym roku przy tutejszej hucie i stoi do dziś. Nie stoi jednak dlatego, że nic się w nim nie psuło — stoi dlatego, że przez dwieście lat ktoś go pilnował i naprawiał.",
         "To jest dobre wprowadzenie do rozmowy, której sprzedawcy zwykle unikają, a którą uważam za obowiązkową. W Thermomixie też są rzeczy, które się zużywają, i lepiej wiedzieć o nich przed zakupem niż po trzech latach.",
         "Zużywa się przede wszystkim uszczelka pod nożami — to najczęstsza wymiana i po jakimś czasie po prostu na nią przychodzi pora. Zużywają się noże, choć znacznie wolniej. Z czasem swoje odrabiają też koszyk, miarka i pokrywka, zwłaszcza jeśli ktoś gotuje codziennie i myje wszystko w zmywarce.",
         "Dobra wiadomość jest taka, że to są części wymienne, a nie powód do wyrzucenia całego urządzenia — i właśnie na tym polega różnica między sprzętem serwisowanym a jednorazowym. Świadomie nie wpisuję tu cen ani tego, co ile lat, bo to się zmienia i nie chcę, żeby ta strona kłamała za dwa lata. Powiem Wam konkretne liczby na spotkaniu, z aktualnych materiałów producenta.",

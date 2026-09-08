@@ -241,7 +241,7 @@ export const OLKUSZ: CityContent = {
   districtsHeading: "Gdzie w gminie Olkusz dojeżdżam?",
   districtsParagraphs: [
     "Do całego miasta i do wszystkich dwudziestu sołectw, bez żadnej dopłaty za odległość. W mieście to Śródmieście, Centrum, Pakuska, Czarna Góra, Pomorzany, Glinianki, osiedle Młodych, Wschód, Słowiki i Skalskie.",
-    "Na terenach wiejskich największe są Osiek, Zederman, Gorenice i Żurada — każde po tysiąc kilkaset osób, czyli tyle co niejedna samodzielna wieś w okolicy. Dalej Braciejówka, Kosmolów, Niesułowice, Olewin, Pazurek, Podlesie Rabsztyńskie, Rabsztyn, Sieniczno, Troks, Wiśliczka, Witeradów, Zadole Kosmolowskie, Zawada, Zimnodół, Bogucin Mały i Kogutek.",
+    "Na terenach wiejskich największy jest Osiek — prawie dwa tysiące mieszkańców. Dalej Zederman, Gorenice i Żurada, każde po tysiąc dwieście do tysiąca czterystu osób, czyli tyle co niejedna samodzielna wieś w okolicy. Dalej Braciejówka, Kosmolów, Niesułowice, Olewin, Pazurek, Podlesie Rabsztyńskie, Rabsztyn, Sieniczno, Troks, Wiśliczka, Witeradów, Zadole Kosmolowskie, Zawada, Zimnodół, Bogucin Mały i Kogutek.",
     "Gmina leży na Wyżynie Krakowsko-Częstochowskiej i prawie połowę jej powierzchni zajmują lasy. Przez miasto płynie Baba — nie Biała Przemsza, jak czasem można przeczytać. W sołectwie Rabsztyn stoi zamek na Szlaku Orlich Gniazd, od dwa tysiące dwudziestego piątego roku znów w rękach konserwatorów.",
     "Dojazd jest tu wygodniejszy niż w większości gmin, do których jeżdżę: przez Olkusz biegnie droga krajowa numer dziewięćdziesiąt cztery, a stąd rozchodzą się drogi wojewódzkie na Trzebinię, Zawiercie, Wolbrom i Miechów. Do niektórych sołectw jedzie się już wąsko i wolno, więc przy umawianiu warto powiedzieć, którędy najlepiej trafić.",
   ],

@@ -200,7 +200,7 @@ export const TOMICE: CityContent = {
   districtsHeading: "Gdzie w gminie Tomice dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich sześciu sołectw, bez żadnej dopłaty za odległość: Tomice, Radocza, Witanowice, Woźniki, Zygodowice i Lgota.",
-    "Radocza jest drugą co do wielkości miejscowością gminy i ma najstarszy tutejszy zabytek — drewniany kościół z tysiąc pięćset trzydziestego piątego roku, z rokokową polichromią i osiemnastowieczną Pietą. Parafia istnieje tam od czternastego wieku. Ciekawostka, o której mało kto pamięta: w latach dwudziestych działała w Radoczy szkoła wikliniarska.",
+    "Radocza jest drugą co do wielkości miejscowością gminy — mieszka tu blisko dziewiętnaście setek osób. Stoi tu drewniany kościół z tysiąc pięćset trzydziestego piątego roku, z rokokową Pietą z tysiąc siedemset dziewięćdziesiątego czwartego. Najstarszy zabytek gminy jest jednak w Woźnikach: gotycki krucyfiks z około tysiąc trzysta osiemdziesiątego roku. Parafia istnieje tam od czternastego wieku. Ciekawostka, o której mało kto pamięta: w latach dwudziestych działała w Radoczy szkoła wikliniarska.",
     "Witanowice są jeszcze starsze — pierwsza wzmianka pochodzi z tysiąc trzysta siedemnastego roku. To stamtąd pochodzą kładzionki i to tamtejsze koło gospodyń zgłosiło je na ministerialną listę.",
     "Gmina leży w dolinie Skawy, na pograniczu Pogórza Wielickiego i Śląskiego, w wysokościach od dwustu czterdziestu do czterystu jedenastu metrów. Sąsiaduje bezpośrednio z Wadowicami, a stąd jest blisko zarówno w stronę Krakowa przez Skawinę, jak i w stronę Oświęcimia przez Zator.",
   ],

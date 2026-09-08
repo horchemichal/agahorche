@@ -17,7 +17,7 @@ import {
  * światowej rangi: kościół św. Leonarda wchodzi w skład wpisu UNESCO
  * „Drewniane kościoły południowej Małopolski” z 2003 r. Do tego rynek
  * z lokacji Władysława Łokietka z 1326 r., konkurs palm wielkanocnych
- * organizowany nieprzerwanie od 1958 r. i DWA produkty na ministerialnej
+ * organizowany od 1958 r. (przerwa tylko w 2020 r.) i DWA produkty na ministerialnej
  * Liście Produktów Tradycyjnych — jedyne potwierdzone w tym pierścieniu.
  *
  * Oś tekstu: rzeczy robione ręcznie, według przepisu, raz do roku.
@@ -126,7 +126,7 @@ export const LIPNICA_MUROWANA: CityContent = {
       heading: "Miejscowość, w której rzeczy robi się ręcznie i raz do roku",
       paragraphs: [
         "Lipnica Murowana ma rynek z przywileju lokacyjnego Władysława Łokietka z 1326 roku — w tym roku obchodzi się tu siedemsetlecie. Prawa miejskie straciła w 1934 roku i formalnie jest dziś wsią, choć układ przestrzenny został miejski i widać to od pierwszego wjazdu. Na skraju, w Lipnicy Dolnej, stoi drewniany kościół świętego Leonarda, który wchodzi w skład wpisu UNESCO obejmującego drewniane kościoły południowej Małopolski.",
-        "Piszę o tym nie dlatego, że sprzedaję wycieczki, tylko dlatego, że to najlepiej tłumaczy, z jaką gminą mamy do czynienia. To miejsce, w którym rzeczy robi się ręcznie, według przepisu i w swoim czasie. Najlepiej widać to w Niedzielę Palmową: konkurs lipnickich palm odbywa się nieprzerwanie od 1958 roku, a najwyższa palma w historii mierzyła prawie trzydzieści osiem metrów. Nikt jej nie zrobił na skróty.",
+        "Piszę o tym nie dlatego, że sprzedaję wycieczki, tylko dlatego, że to najlepiej tłumaczy, z jaką gminą mamy do czynienia. To miejsce, w którym rzeczy robi się ręcznie, według przepisu i w swoim czasie. Najlepiej widać to w Niedzielę Palmową: konkurs lipnickich palm odbywa się od 1958 roku — przerwał go tylko rok pandemii — a najwyższa palma w historii mierzyła prawie trzydzieści osiem metrów. Nikt jej nie zrobił na skróty.",
         "Ta sama logika dotyczy jedzenia. Z tej gminy pochodzą dwa produkty wpisane na ministerialną Listę Produktów Tradycyjnych — napar z kwiatów lipy i razowy chleb na zakwasie wypiekany w Lipnicy Górnej. To jedyne potwierdzone wpisy w całym pierścieniu wokół Bochni; sąsiednie gminy takich nie mają.",
         "I właśnie dlatego mówię tutaj coś, czego nie mówię wszędzie tak dobitnie: to urządzenie nie zastąpi umiejętności i nie zrobi za nikogo chleba, który ktoś piecze od czterdziestu lat. Byłoby to zwyczajnie nieprawdą, a w tej gminie usłyszałabym to od razu. Thermomix robi co innego — zdejmuje mieszanie, wyrabianie i pilnowanie temperatury. Ciasto na chleb wyrobi, ale przepis, zakwas i wyczucie zostają po Waszej stronie.",
         "W praktyce najczęściej sprawdza się tu przy tym, co i tak powstaje sezonowo: przy powidłach ze śliwek, przy sokach, przy zupach mrożonych na zimę. Wszędzie tam, gdzie normalnie trzeba stać nad garnkiem i mieszać przez godzinę, żeby się nie przypaliło.",

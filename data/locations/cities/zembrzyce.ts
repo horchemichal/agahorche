@@ -36,8 +36,10 @@ import {
  *   Nowy tor ułożono na nasypie hydrotechnicznym stabilizującym
  *   osuwiskowe zbocza,
  * — MOSTY: siedmioprzęsłowy w Zembrzycach o długości blisko 400 m
- *   (opisywany w 2014 r. jako największy budowany wówczas most
- *   kolejowy w Polsce) oraz 234-metrowy czteroprzęsłowy nad Stryszawką,
+ *   (największy most kolejowy w MAŁOPOLSCE — określenie „najdłuższy
+ *   w Polsce” zostało zdementowane, rekord ma Grudziądz 1 098 m)
+ *   oraz 234-metrowy czteroprzęsłowy w Dąbrówce nad StryszÓWką
+ *   (gmina Stryszów, nie Zembrzyce),
  * — OBWODNICA ZEMBRZYC: 1 785 m z mostem o rozpiętości 105 m;
  *   nowy odcinek DK28 Tarnawa Dolna–Jaszczurowa budowany 2006–2011,
  * — PIERWSZA WZMIANKA: 1333 r. Śleszowice i Tarnawa Dolna również
@@ -144,7 +146,7 @@ export const ZEMBRZYCE: CityContent = {
       heading: "Pół miliarda złotych, żeby przesunąć tory o kilka kilometrów",
       paragraphs: [
         "Kiedy budowano zbiornik na Skawie, okazało się, że stara linia kolejowa ze Skawiny do Żywca znajdzie się pod wodą. Można było ją po prostu zamknąć. Zamiast tego przełożono dziewięć kilometrów torów na odcinku Stryszów–Zembrzyce i oddano je do użytku w grudniu dwa tysiące czternastego roku.",
-        "Ta operacja kosztowała ponad pięćset czternaście milionów złotych, czyli blisko jedną czwartą całego budżetu budowy zbiornika. Nowy tor położono na nasypie hydrotechnicznym, bo zbocza są tu osuwiskowe i sam nasyp musiał je stabilizować. Powstały przy tym dwa mosty: siedmioprzęsłowy w Zembrzycach o długości blisko czterystu metrów — opisywano go wtedy jako największy budowany wówczas most kolejowy w Polsce — i drugi, ponaddwustumetrowy, nad Stryszawką.",
+        "Ta operacja kosztowała ponad pięćset czternaście milionów złotych, czyli blisko jedną czwartą całego budżetu budowy zbiornika. Nowy tor położono na nasypie hydrotechnicznym, bo zbocza są tu osuwiskowe i sam nasyp musiał je stabilizować. Powstały przy tym dwa mosty: siedmioprzęsłowy w Zembrzycach o długości blisko czterystu metrów, największy most kolejowy w Małopolsce, i drugi, dwustutrzydziestoczterometrowy, kawałek dalej w Dąbrówce nad Stryszówką.",
         "Chwilę wcześniej zbudowano jeszcze obwodnicę Zembrzyc, prawie dwa kilometry drogi z mostem o rozpiętości stu pięciu metrów, oraz nowy odcinek drogi krajowej. W ciągu kilkunastu lat cała komunikacja tej gminy została w praktyce zbudowana od nowa.",
         "Chcę powiedzieć wprost, co to znaczy, bo o tym zbiorniku pisze się zwykle od strony strat. W sąsiednim Mucharzu woda zabrała zabudowę i zmieniła mapę tak, że jedno sołectwo skurczyło się do dwudziestu kilku osób. W Zembrzycach nie zalano wsi i nikogo stąd nie przesiedlano — tutaj wydano pół miliarda na to, żeby wieś licząca dwa tysiące ludzi nie straciła pociągu.",
         "I nie straciła. To jest zresztą rzecz, która odróżnia Zembrzyce od większości gmin tego powiatu: tutaj pociągi jeżdżą. W Jordanowie i Stryszawie ruch jest w tej chwili zawieszony przez remonty, w Zawoi kolei nie ma w ogóle, a z Zembrzyc jedzie się do Krakowa bezpośrednio, nieco ponad godzinę z kwadransem.",

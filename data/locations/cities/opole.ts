@@ -30,7 +30,8 @@ import {
  * miastach i właśnie dlatego muszą prowadzić do innych argumentów.
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
- * — Opole jest najmniejszym miastem wojewódzkim w Polsce i leży nad Odrą,
+ * — Opole jest JEDNYM z najmniejszych miast wojewódzkich (ok. 125 tys.);
+ *   najmniejszy jest Gorzów Wielkopolski (ok. 115 tys.). Leży nad Odrą,
  * — odbywa się tu Krajowy Festiwal Polskiej Piosenki, a amfiteatr stoi
  *   przy wzgórzu w centrum,
  * — ratusz na rynku wzorowano na florenckim Palazzo Vecchio,
@@ -83,7 +84,7 @@ export const OPOLE: CityContent = {
       id: "male-zakupy-czesciej",
       heading: "Najmniejsza stolica województwa — i kuchnia kupowana po kawałku",
       paragraphs: [
-        "Opole jest najmniejszym miastem wojewódzkim w Polsce i to nie jest wada, tylko konkretna właściwość codzienności. Centrum obchodzi się pieszo. Praca, szkoła i sklep bywają w promieniu kilkunastu minut. Nie trzeba planować wyprawy, żeby cokolwiek załatwić.",
+        "Opole jest jednym z najmniejszych miast wojewódzkich w Polsce — mieszka tu około stu dwudziestu pięciu tysięcy osób — i to nie jest wada, tylko konkretna właściwość codzienności. Centrum obchodzi się pieszo. Praca, szkoła i sklep bywają w promieniu kilkunastu minut. Nie trzeba planować wyprawy, żeby cokolwiek załatwić.",
         "Dla kuchni wynika z tego rzecz, o której nikt nie pisze, bo wygląda na zbyt oczywistą: tutaj kupuje się mało i często. Nie ma jednej wielkiej soboty z pełnym bagażnikiem, po której lodówka jest zapchana na tydzień. Jest wpadnięcie po drodze po to, co się dziś zje.",
         "Piszę o tym, bo to zmienia, co w urządzeniu jest dla Was warte pieniędzy, a co nie. Cała ta część, którą sprzedawcy lubią najbardziej — plan tygodnia, lista zakupów, gotowanie na zapas w niedzielę — u kogoś, kto kupuje codziennie na wieczór, po prostu leży odłogiem. I nie zamierzam Wam jej sprzedawać jako głównej zalety.",
         "Zostaje natomiast to, co przy takim trybie liczy się naprawdę: żeby z tego, co właśnie przyniesiono, dało się zrobić obiad w dwadzieścia minut i bez stania nad garnkiem. Zupa krem z jednego warzywa i śmietanki. Sos do makaronu, który gotuje się sam, gdy woda dochodzi. Danie jednogarnkowe z tego, co zostało w lodówce z wczoraj.",

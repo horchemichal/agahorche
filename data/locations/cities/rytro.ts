@@ -39,7 +39,8 @@ import {
  *   jako podanie,
  * — LESISTOŚĆ 72,0% — najwyższa z całej doliny Popradu,
  * — POPRADZKI PARK KRAJOBRAZOWY — utworzony 1987 r., ok. 52 000 ha
- *   plus otulina; 12 rezerwatów leśnych, m.in. Las Lipowy Obrożyska
+ *   plus otulina; 13 rezerwatów leśnych, największy Baniska (141,96 ha),
+ *   drugi Las Lipowy Obrożyska (100,38 ha)
  *   (100,38 ha), Baniska (55,52 ha), Żebracze (44,67 ha),
  *   Barnowiec (21,61 ha), Łabowiec (10,30 ha), Lembarczek (47,16 ha),
  * — REGON: 376 podmiotów (2024) — 103 na 1000 mieszkańców,
@@ -184,7 +185,7 @@ export const RYTRO: CityContent = {
   districtsParagraphs: [
     "Do całej gminy — do Rytra, Suchej Strugi, Roztoki Ryterskiej i Obłazów Ryterskich — bez żadnej dopłaty za odległość. Gmina liczy trzy tysiące sześćset mieszkańców na czterdziestu dwóch kilometrach kwadratowych i jest najmniejsza w całej dolinie Popradu.",
     "Z liczbą sołectw jest tu drobne zamieszanie: statystyka publiczna wymienia cztery miejscowości, a biuletyn informacji publicznej gminy prowadzi osobną stronę sołectwa Życzanów. Nie umiem tego rozstrzygnąć, więc podaję nazwy, a nie liczbę.",
-    "Siedemdziesiąt dwa procent powierzchni to lasy — najwięcej w okolicy — a cała gmina leży w Popradzkim Parku Krajobrazowym, utworzonym w tysiąc dziewięćset osiemdziesiątym siódmym roku. W parku jest kilkanaście rezerwatów leśnych; największy, Las Lipowy Obrożyska, ma ponad sto hektarów. Nad wsią stoją ruiny średniowiecznego zamku, a zimą działa stacja narciarska.",
+    "Siedemdziesiąt dwa procent powierzchni to lasy — najwięcej w okolicy — a cała gmina leży w Popradzkim Parku Krajobrazowym, utworzonym w tysiąc dziewięćset osiemdziesiątym siódmym roku. W parku jest trzynaście rezerwatów leśnych; największy, Baniska na północnych stokach Radziejowej, ma prawie sto czterdzieści dwa hektary, a drugi co do wielkości Las Lipowy Obrożyska pod Muszyną — sto. Nad wsią stoją ruiny średniowiecznego zamku, a zimą działa stacja narciarska.",
     "Dojazd: przez gminę biegnie linia kolejowa z Tarnowa do Leluchowa i droga krajowa z Nowego Sącza do Piwnicznej. Do Starego Sącza jest stąd kilkanaście kilometrów.",
   ],
   districts: [

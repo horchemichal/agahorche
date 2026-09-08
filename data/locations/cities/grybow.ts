@@ -137,7 +137,7 @@ export const GRYBOW: CityContent = {
       id: "na-zywo",
       heading: "Miasto na siedemnastu kilometrach kwadratowych",
       paragraphs: [
-        "Grybów jest najmniejszą terytorialnie gminą powiatu nowosądeckiego: siedemnaście kilometrów kwadratowych, na których mieszka blisko sześć tysięcy osób. To daje niecałe trzysta pięćdziesiąt osób na kilometr kwadratowy — najwyższą gęstość zaludnienia w całym powiecie, gdzie średnia wynosi mniej więcej sto trzydzieści siedem.",
+        "Grybów jest najmniejszą terytorialnie gminą powiatu nowosądeckiego: siedemnaście kilometrów kwadratowych, na których mieszka blisko sześć tysięcy osób. To daje niecałe trzysta pięćdziesiąt osób na kilometr kwadratowy — najwyższą gęstość zaludnienia w całym powiecie, gdzie średnia wynosi mniej więcej sto czterdzieści.",
         "Jest to zarazem miasto-wyspa: ze wszystkich stron otacza je gmina wiejska o tej samej nazwie, która ma szesnaście sołectw, ponad dwadzieścia pięć tysięcy mieszkańców i urząd mieszczący się w tym mieście. Wsi o nazwie Grybów nie ma wcale.",
         "Lokował je Kazimierz Wielki piętnastego maja tysiąc trzysta czterdziestego roku, pod pierwotną nazwą Grynberg. Miasto dostało piętnaście lat zwolnienia od danin, prawo targów, prawo składowe i mostowe. Kto był zasadźcą, nie umiem powiedzieć — sam serwis miasta podaje w dwóch miejscach dwie różne wersje.",
         "Przez szesnasty i siedemnasty wiek Grybów żył z sukiennictwa, saletry i wapna, a przez miasto szedł transport suszonych śliwek, budulca i skór. Potem zaczęły się nieszczęścia: potop szwedzki spalił północną pierzeję rynku, ratusz, kramy i kościół, a w osiemnastym wieku miasto płaciło kontrybucje sześćdziesiąt pięć razy.",

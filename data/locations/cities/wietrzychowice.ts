@@ -227,7 +227,7 @@ export const WIETRZYCHOWICE: CityContent = {
 
   districtsHeading: "Do których miejscowości gminy Wietrzychowice dojeżdżam?",
   districtsParagraphs: [
-    "Do wszystkich, bez żadnej dopłaty za odległość. Gmina liczy niespełna trzy i pół tysiąca mieszkańców na czterdziestu ośmiu kilometrach kwadratowych i jest najmniejsza w powiecie tarnowskim.",
+    "Do wszystkich, bez żadnej dopłaty za odległość. Gmina liczy blisko trzy tysiące siedemset mieszkańców na czterdziestu ośmiu kilometrach kwadratowych i jest najmniejsza w powiecie tarnowskim.",
     "Miejscowości to: Wietrzychowice, Jadowniki Mokre, Miechowice Małe, Miechowice Wielkie, Sikorzyce, Wola Rogowska, Demblin, Nowopole i Pałuszyce; część opracowań wymienia dodatkowo Jagodniki i Pasiekę Otfinowską.",
     "Największą wsią gminy nie jest jej siedziba, tylko Jadowniki Mokre — mieszka tam około dziewięciuset pięćdziesięciu osób, o dwieście pięćdziesiąt więcej niż w samych Wietrzychowicach.",
     "Gmina leży w północno-zachodnim krańcu powiatu, tam gdzie Dunajec wpada do Wisły; Wisła jest tu granicą województwa małopolskiego. Przez Dunajec kursuje bezpłatna przeprawa promowa do Siedliszowic, czynna od szóstej rano, o ile pozwala na to stan wody.",

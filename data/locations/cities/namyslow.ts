@@ -13,7 +13,8 @@ import {
 
 /**
  * NAMYSŁÓW — miasto na północy województwa, z zachowanymi murami miejskimi
- * i zamkiem, w którym od stuleci warzy się piwo; tutejszy browar należy
+ * i zamkiem. Piwo warzono tu od 1321 r.; produkcję zakończono
+ * z początkiem 2026 r. Tutejszy browar należał
  * do najstarszych w Polsce.
  *
  * KĄT: czego nie da się przyspieszyć. Warzenie i fermentacja to procesy,
@@ -28,7 +29,8 @@ import {
  * jest składnikiem, a nie kosztem.
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
- * — w Namysłowie od stuleci warzy się piwo, a tutejszy browar należy
+ * — w Namysłowie warzono piwo od 1321 r. (produkcja zakończona
+ *   z początkiem 2026 r.), a tutejszy browar należał
  *   do najstarszych w Polsce,
  * — zachowały się mury miejskie i zamek,
  * — fermentacja jest procesem wymagającym czasu.
@@ -77,7 +79,7 @@ export const NAMYSLOW: CityContent = {
       id: "czego-nie-da-sie-przyspieszyc",
       heading: "Miasto, które od wieków czeka na fermentację",
       paragraphs: [
-        "W Namysłowie od stuleci warzy się piwo, a tutejszy browar należy do najstarszych w Polsce. Nie będę o tym pisać więcej, bo nie jest to temat tej strony — zwrócę uwagę tylko na jedno: w tym fachu nie da się niczego przyspieszyć. Fermentacja trwa tyle, ile trwa, i żadne urządzenie tego nie zmieni.",
+        "W Namysłowie piwo warzono przez siedemset lat — pierwsza wzmianka o książęcym browarze pochodzi z 1321 roku i była to jedna z najstarszych takich tradycji w Polsce. Piszę w czasie przeszłym, bo z początkiem 2026 roku właściciel zakończył tu produkcję. Zwrócę uwagę na jedno, co z tego rzemiosła zostaje: w tym fachu nie dało się niczego przyspieszyć. Fermentacja trwała tyle, ile trwała, i żadne urządzenie tego nie zmieniało.",
         "Warto to przenieść do kuchni, bo w rozmowach o Thermomixie ta granica bywa zacierana. Są w gotowaniu rzeczy, w których czas nie jest kosztem, tylko składnikiem — i tych urządzenie nie skraca ani o minutę.",
         "Nie przyspieszy zakwasu. Nie zrobi kiszonek szybciej, bo kiszenie to nie gotowanie, tylko czekanie. Nie skróci wyrastania ciasta drożdżowego — może je wyrobić i utrzymać w cieple, ale drożdże pracują we własnym tempie. Nie zrobi z młodego sera dojrzewającego, nie zamarynuje mięsa w kwadrans i nie sprawi, że wywar będzie miał głębię po dziesięciu minutach.",
         "Ktoś, kto sprzedaje to inaczej, sprzedaje bajkę — a klientka, która kupiła w takim przekonaniu, będzie rozczarowana już przy pierwszym cieście.",

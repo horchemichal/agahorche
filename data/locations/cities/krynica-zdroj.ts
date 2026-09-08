@@ -155,7 +155,7 @@ export const KRYNICA_ZDROJ: CityContent = {
       id: "rodzina",
       heading: "Sto pięćdziesiąt firm na tysiąc mieszkańców",
       paragraphs: [
-        "Krynica ma ponad dwa tysiące trzysta zarejestrowanych podmiotów gospodarczych przy piętnastu i pół tysiąca mieszkańców — to sto pięćdziesiąt firm na każdy tysiąc osób i najwyższy taki wskaźnik w okolicy. Do tego prawie sto obiektów noclegowych, cztery razy więcej niż w sąsiedniej Muszynie.",
+        "Krynica ma ponad dwa tysiące trzysta zarejestrowanych podmiotów gospodarczych przy piętnastu i pół tysiąca mieszkańców — to blisko sto pięćdziesiąt firm na każdy tysiąc osób i najwyższy taki wskaźnik w okolicy. Do tego prawie sto obiektów noclegowych, cztery razy więcej niż w sąsiedniej Muszynie.",
         "W praktyce znaczy to, że w bardzo wielu domach ktoś prowadzi coś swojego albo pracuje w obsłudze gości. A praca przy gościach ma jedną cechę, którą znają wszyscy, którzy ją wykonują: dzień nie ma stałych godzin, a sezon i martwy okres różnią się jak dzień i noc.",
         "Najbardziej praktyczna rzecz jest tu prosta. Danie jednogarnkowe wstawia się i wychodzi z domu. Gotuje się bez pilnowania, samo się wyłącza i czeka na tego, kto wróci pierwszy. Nie przypala się i nie stygnie w garnku od południa.",
         "Druga to gotowanie z zapasem, w sezonie wręcz konieczne. Podwójna porcja zupy, sos na kilka dni, pasty, ciasto — robione seriami w spokojne przedpołudnie, w jednym naczyniu. W szczycie lipca to często jedyny sposób, żeby w domu w ogóle było ciepłe jedzenie.",

@@ -35,7 +35,8 @@ import {
  * — szczyty: Mogielica 1 170–1 171 m (najwyższy w Beskidzie Wyspowym,
  *   na styku gmin), Ćwilin (1 060 m wg gminy, 1 072 m wg Korony
  *   Beskidu Wyspowego), Jasień 1 062 m, Śnieżnica ok. 1 006 m,
- * — wieża widokowa na Mogielicy — ok. 25 m, zbudowana w 2008 r.
+ * — wieża widokowa na Mogielicy: pierwsza (drewniana) z 2008 r. została
+ *   rozebrana; obecna, 23 m, stoi od 2022 r.
  *   we współpracy gmin Dobra, Kamienica i Słopnice,
  * — drewniany kościół św. Apostołów Szymona i Judy Tadeusza w Dobrej:
  *   po pożarze poprzedniego w 1678 r., konsekrowany 1684, polichromia
@@ -138,7 +139,7 @@ export const DOBRA: CityContent = {
       id: "na-zywo",
       heading: "Gmina, w której mieszka się wysoko i daleko od sklepu",
       paragraphs: [
-        "Dobra jest największa w całym tym korytarzu — sto dziesięć kilometrów kwadratowych, prawie połowa pod lasem, jedenaście sołectw rozrzuconych po dolinach i grzbietach. Zabudowa stoi na wysokości od czterystu pięćdziesięciu do sześciuset pięćdziesięciu metrów, a Chyszówki średnio na siedmiuset osiemdziesięciu. To już nie jest podgórze, to góry.",
+        "Dobra jest jedną z największych gmin powiatu limanowskiego — sto dziesięć kilometrów kwadratowych, prawie połowa pod lasem, jedenaście sołectw rozrzuconych po dolinach i grzbietach. Zabudowa stoi na wysokości od czterystu pięćdziesięciu do sześciuset pięćdziesięciu metrów, a Chyszówki średnio na siedmiuset osiemdziesięciu. To już nie jest podgórze, to góry.",
         "Praktyczna konsekwencja jest taka, że zakupy robi się rzadko i duże. Do sklepu z prawdziwego zdarzenia bywa kwadrans jazdy, a od listopada do marca ten kwadrans potrafi się wydłużyć. O Gruszowcu, przez który przechodzi krajowa dwudziestka ósma, pisano nawet w lokalnych mediach: przy ośnieżonej jezdni ciężarówki nie były w stanie pokonać podjazdu i ruch szedł wahadłowo. Kto tu mieszka, ten planuje spiżarnię, a nie codzienne wypady.",
         "Druga rzecz to sady i hodowla. Mimo tej wysokości i tego lasu na nasłonecznionych stokach rosną jabłonie, grusze i śliwy, a w gospodarstwach jest bydło, trzoda i drób. Bardzo dużo tego, co ląduje tu na stole, powstaje kilkaset metrów od stołu.",
         "Trzecia — i to jest w Dobrej naprawdę wyjątkowe — życie ludowe. Osiem kół gospodyń w jedenastu sołectwach. Zespół „Jurkowianie” założyły w 1966 roku same panie z koła w Jurkowie i śpiewają w gwarze zagórzańskiej do dziś. Do tego chóry, orkiestra dęta, kameralna orkiestra i konkurs na Śmiguśnioka Roku, którego nie ma nigdzie indziej. Kobiety w tej gminie od pokoleń gotują razem i pokazują sobie nawzajem, co ugotowały.",
@@ -191,7 +192,7 @@ export const DOBRA: CityContent = {
     "Do wszystkich jedenastu sołectw i bez żadnej dopłaty za odległość: do Dobrej, Jurkowa, Skrzydlnej, Wilczyc, Chyszówek, Półrzeczek, Stróży, Porąbki, Przenoszy, Gruszowca i Woli Skrzydlańskiej.",
     "Gmina dzieli się w praktyce na dwie części. Północna — Skrzydlna, Wola Skrzydlańska, Porąbka, Przenosza — leży niżej i ciąży w stronę Dobczyc i Krakowa; Skrzydlna była zresztą przez dwanaście lat w połowie dziewiętnastego wieku siedzibą powiatu. Południowa i wschodnia — Chyszówki, Półrzeczki, Jurków — to już wysokie góry, wąskie drogi i długie podjazdy. Do jednych i drugich jadę tak samo chętnie, tylko innym dniem.",
     "Przez środek biegnie krajowa dwudziestka ósma z Przełęczą Gruszowiec, między Śnieżnicą a Ćwilinem. To jedyna porządna droga w tej okolicy i wszystko się przez nią przetacza — a zimą potrafi być wąskim gardłem. Dlatego przy umawianiu zostawiam sobie zapas czasu i wolę uprzedzić, niż spóźnić się bez słowa.",
-    "Jedna uwaga, żeby nie było nieporozumienia: stacja narciarska Śnieżnica leży w Kasinie Wielkiej, czyli już w gminie Mszana Dolna — osiem kilometrów stąd. Za to wieża widokowa na Mogielicy, najwyższym szczycie Beskidu Wyspowego, powstała w 2008 roku ze wspólnej inicjatywy trzech gmin: Dobrej, Kamienicy i Słopnic.",
+    "Jedna uwaga, żeby nie było nieporozumienia: stacja narciarska Śnieżnica leży w Kasinie Wielkiej, czyli już w gminie Mszana Dolna — osiem kilometrów stąd. Za to wieża widokowa na Mogielicy, najwyższym szczycie Beskidu Wyspowego, jest po części tutejsza. Pierwszą, drewnianą, postawiły w 2008 roku wspólnie trzy gminy: Dobra, Kamienica i Słopnice. Ta się zestarzała i trzeba ją było rozebrać, więc te same gminy razem z powiatem limanowskim postawiły w 2022 roku nową, dwudziestotrzymetrową.",
   ],
   districts: [
     "Dobra",

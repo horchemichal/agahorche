@@ -121,7 +121,7 @@ export const KATOWICE: CityContent = {
       id: "slaski-obiad",
       heading: "Śląski niedzielny obiad a Thermomix",
       paragraphs: [
-        "Rolada, kluski śląskie i modro kapusta to jedyny w Polsce regionalny obiad o tak ustalonej formie — wszyscy wiedzą, co powinno być na talerzu. Jest też jednym z najbardziej pracochłonnych: mięso trzeba doglądać, kapustę dusić, a kluski wyrobić i ulepić, zwykle w tym samym czasie, gdy dzieje się wszystko inne.",
+        "Rolada, kluski śląskie i modro kapusta — mało który region w Polsce ma swój obiad tak ustalony, że wszyscy wiedzą, co powinno być na talerzu. Jest też jednym z najbardziej pracochłonnych: mięso trzeba doglądać, kapustę dusić, a kluski wyrobić i ulepić, zwykle w tym samym czasie, gdy dzieje się wszystko inne.",
         "Thermomix nie zastąpi tu tradycji i nie ma takiej ambicji. Zdejmuje natomiast tę część, która jest zwykłą robotą: ciasto na kluski wyrabia się bez ubrudzenia rąk, kapusta dusi się z ustawioną temperaturą i mieszaniem, więc nie przywiera do dna, a sos można zagęścić bez stania nad garnkiem. Zostaje to, co w tym obiedzie jest najlepsze — czyli formowanie klusek, przy którym i tak zbiera się pół rodziny.",
         "Uczciwie: jeśli robisz taki obiad raz na kwartał, samo to nie jest powodem do zakupu. Powodem bywa raczej to, co dzieje się w pozostałe dni tygodnia — i o tym rozmawiamy na spotkaniu w pierwszej kolejności.",
       ],

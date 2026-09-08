@@ -208,7 +208,7 @@ export const SZAFLARY: CityContent = {
   districtsHeading: "Gdzie w gminie Szaflary dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich siedmiu sołectw, bez żadnej dopłaty za odległość: Szaflar, Maruszyny, Zaskala, Bańskiej Niżnej, Bańskiej Wyżnej, Skrzypnego i Boru.",
-    "Same Szaflary liczą blisko trzy i pół tysiąca mieszkańców, czyli około jednej trzeciej gminy — siedziba jest tu największa. Najmniejszy Bór ma pięćset czterdzieści cztery osoby. Cała gmina to nieco ponad pięćdziesiąt cztery kilometry kwadratowe, a zabudowa rozciąga się od sześciuset pięciu do dziewięciuset dwudziestu siedmiu metrów nad poziomem morza.",
+    "Same Szaflary liczą ponad trzy i pół tysiąca mieszkańców, czyli około jednej trzeciej gminy — siedziba jest tu największa. Najmniejszy Bór ma pięćset czterdzieści cztery osoby. Cała gmina to nieco ponad pięćdziesiąt cztery kilometry kwadratowe, a zabudowa rozciąga się od sześciuset pięciu do dziewięciuset dwudziestu siedmiu metrów nad poziomem morza.",
     "W Bańskiej Niżnej mieści się siedziba spółki geotermalnej, a przy niej ciepłownia, z której ciepło płynie rurociągiem aż do Zakopanego. W samych Szaflarach działają Termy Szaflary — kameralny obiekt z czterema basenami, który bywa mylony z Chochołowskimi albo z Bukoviną. To trzy różne miejsca w trzech różnych gminach.",
     "Dojazd jest tu wyjątkowo dobry. Przez gminę przechodzi zakopianka, a na linii z Chabówki do Zakopanego są aż trzy punkty zatrzymania: stacja Szaflary oraz przystanki Szaflary Centrum i Bańska Niżna. Samochodem z Krakowa jest około dziewięćdziesięciu kilometrów, czyli mniej więcej półtorej godziny — z zastrzeżeniem, że trwa rozbudowa odcinka z Nowego Targu, więc bywa wolniej.",
   ],

@@ -12,7 +12,7 @@ import {
 } from "./wspolne";
 
 /**
- * PIASTÓW — jedno z najmniejszych powierzchniowo miast w Polsce,
+ * PIASTÓW — najmniejsza powierzchniowo gmina Mazowsza (5,76 km²),
  * wciśnięte między Pruszków a Warszawę. Wszystko jest tu blisko
  * i wszystko musi się zmieścić.
  *
@@ -43,7 +43,10 @@ import {
  * o resztkach. Tutaj chodzi o LISTĘ ZAKUPÓW.
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
- * — Piastów jest jednym z najmniejszych powierzchniowo miast w Polsce
+ * — Piastów to najmniejsza powierzchniowo gmina woj. mazowieckiego
+ *   (5,76 km², ponad 22 tys. mieszkańców, ok. 3 900 os./km² — druga
+ *   najgęściej zaludniona gmina w Polsce). NIE jest jednym z najmniejszych
+ *   miast w Polsce — dziesiątki miast są mniejsze (Stawiszyn 0,99 km²)
  *   i leży między Pruszkowem a Warszawą.
  */
 export const PIASTOW: CityContent = {
@@ -87,7 +90,7 @@ export const PIASTOW: CityContent = {
       id: "lista-zakupow",
       heading: "Miasto, w którym wszystko jest blisko — i co się zmienia na liście zakupów",
       paragraphs: [
-        "Piastów jest jednym z najmniejszych powierzchniowo miast w Polsce: wszystko jest tu blisko i wszystko musi się zmieścić na niewielkim obszarze. Wykorzystam to do pytania, którego nikt nie zadaje przed zakupem, a które wraca w pierwszym tygodniu, przy półce w sklepie: czy teraz trzeba kupować coś innego?",
+        "Piastów jest najmniejszą powierzchniowo gminą na Mazowszu — niecałe sześć kilometrów kwadratowych, a mieszka tu ponad dwadzieścia dwa tysiące osób. Wszystko jest tu blisko i wszystko musi się zmieścić na niewielkim obszarze. Wykorzystam to do pytania, którego nikt nie zadaje przed zakupem, a które wraca w pierwszym tygodniu, przy półce w sklepie: czy teraz trzeba kupować coś innego?",
         "Odpowiedź, którą uważam za najważniejszą: w większości nie i to jest dobra wiadomość. Gotujecie dalej z tego samego, z czego gotowaliście. Nie ma żadnych „dedykowanych” produktów, żadnych specjalnych składników i żadnej listy rzeczy, które trzeba teraz dokupić. Gdyby ktoś Wam takie rzeczy sprzedawał, warto zapytać, na jakiej podstawie.",
         "Zmienia się natomiast kilka drobiazgów i te warto znać, bo są prawdziwe. Rozdrobnienie przestaje być problemem, więc niektóre rzeczy zaczyna się kupować w innej postaci: przyprawy w całości zamiast mielonych, ser w kostce zamiast startego, orzechy całe zamiast płatków, cukier zwykły zamiast pudru. To nie są zakupy dodatkowe — to te same produkty, tylko w innej formie.",
         "Druga zmiana dotyczy ilości. Skoro pewne rzeczy robicie w domu, część gotowych produktów przestaje trafiać do koszyka sama z siebie — u każdego inne, więc nie będę zgadywać, które u Was. To się dzieje samo w ciągu kilku tygodni i nie wymaga żadnego planowania.",

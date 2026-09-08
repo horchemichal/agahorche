@@ -86,7 +86,8 @@ import {
  * — Gminne Święto Plonów — dożynki rotacyjnie w sołectwach, konkurs
  *   wieńców i konkurs na najlepsze ciasto owocowe, z udziałem Kół
  *   Gospodyń Wiejskich; Dni Gorczańskie,
- * — wieża widokowa na Mogielicy powstała w 2008 r. ze wspólnej
+ * — wieża widokowa na Mogielicy: pierwsza z 2008 r. rozebrana,
+ *   obecna (23 m) z 2022 r., powstała ze wspólnej
  *   inicjatywy gmin Dobra, Kamienica i Słopnice.
  *
  * CZEGO TU NIE MA I DLACZEGO:
@@ -226,7 +227,7 @@ export const KAMIENICA: CityContent = {
   nearbyHeading: "Mszana Dolna, Limanowa i Nowy Sącz też są na mojej trasie",
   nearbyParagraphs: [
     "Kamienica leży na uboczu, ale nie poza moim obszarem. Do Mszany Dolnej mam stąd niecałe pół godziny doliną, do Limanowej i Łukowicy trochę dłużej, do Nowego Sącza przez Łącko. Do Szczawy — od 2025 roku osobnej gminy — również dojeżdżam. Do żadnej z tych miejscowości nie doliczam kosztu dojazdu.",
-    "Warto wiedzieć, że wieża widokowa na Mogielicy, najwyższym szczycie Beskidu Wyspowego, powstała w 2008 roku ze wspólnej inicjatywy trzech gmin: Kamienicy, Dobrej i Słopnic. Sam szczyt leży już poza granicami gminy, ale ta wieża jest po części tutejsza.",
+    "Warto wiedzieć, że wieża widokowa na Mogielicy, najwyższym szczycie Beskidu Wyspowego, jest wspólnym dziełem trzech gmin: Kamienicy, Dobrej i Słopnic. Pierwsza, drewniana, stanęła tam w 2008 roku, a kiedy się zestarzała, te same gminy razem z powiatem limanowskim postawiły w 2022 roku nową, dwudziestotrzymetrową. Sam szczyt leży już poza granicami gminy, ale ta wieża jest po części tutejsza.",
   ],
   nearbyTowns: [
     "Mszana Dolna",

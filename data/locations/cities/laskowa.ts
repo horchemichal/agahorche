@@ -192,7 +192,7 @@ export const LASKOWA: CityContent = {
   districtsParagraphs: [
     "Do wszystkich dziewięciu sołectw i bez żadnej dopłaty za odległość: do Laskowej, Ujanowic, Żmiącej, Jaworznej, Sechnej, Krosnej, Strzeszyc, Kamionki Małej i Kobyłczyny.",
     "Gmina rozłożyła się w dolinie Łososiny i w dolinach jej dopływów — to znaczy, że jedzie się tu wzdłuż wody, a nie na przełaj. Sama Laskowa skupia blisko czterdzieści procent mieszkańców i jest jedynym dużym centrum; reszta sołectw to kilkusetosobowe wsie rozciągnięte po zboczach. Dlatego przy umawianiu proszę o nazwę miejscowości, a nie o samą „gminę Laskowa”.",
-    "Osobno zaznaczam Sechną, bo od niej wzięła nazwę suska sechlońska, i Ujanowice, gdzie stoi gotycki kościół z 1526 roku i gdzie w lipcu odbywa się Galicyjski Konkurs Powożenia Zaprzęgami Konnymi. Warto też wiedzieć, że najstarszy zabytek gminy — drewniany, modrzewiowy dwór z 1667 roku — stoi w samej Laskowej, w parku.",
+    "Osobno zaznaczam Sechną, bo od niej wzięła nazwę suska sechlońska, i Ujanowice, gdzie stoi gotycki kościół z 1526 roku i gdzie w lipcu odbywa się Galicyjski Konkurs Powożenia Zaprzęgami Konnymi. Najstarszym zabytkiem gminy jest zresztą właśnie ten kościół w Ujanowicach. A w samej Laskowej, w parku, stoi drewniany, modrzewiowy dwór z 1677 roku — najstarszy drewniany budynek w gminie.",
     "Przez gminę biegnie droga wojewódzka z Limanowej przez Żegocinę do Nowego Wiśnicza i Bochni. Była przez lata przebudowywana i jeszcze niedawno na odcinku w Laskowej Górnej obowiązywał ruch wahadłowy — jeśli umawiamy się w godzinach szczytu, zostawiam sobie zapas czasu.",
   ],
   districts: [
