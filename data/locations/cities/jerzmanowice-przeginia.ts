@@ -59,7 +59,9 @@ import {
  *   1872–1879 znaleziono ok. 4000 kłów niedźwiedzia jaskiniowego; kręcono
  *   tu zdjęcia do „Ogniem i mieczem”. Inne jaskinie: Szeroki Aven 270 m,
  *   Racławicka 168 m, Ciasny Aven 150 m, Koziarnia 90 m, Sadlana 89 m,
- * — REZERWATY: Dolina Racławki 473,66 ha — NAJWIĘKSZY REZERWAT
+ * — REZERWATY: Dolina Racławki 473,66 ha — największy rezerwat Małopolski,
+ *   ale UWAGA (zweryfikowane 8.09.2026): leży w gminie KRZESZOWICE,
+ *   nie w tej gminie. Wcześniejsza wersja tekstu przypisywała go tutaj
  *   W MAŁOPOLSCE (gmina + Krzeszowice); Dolina Szklarki 46,69 ha (1989).
  *   Park Krajobrazowy Dolinki Krakowskie 20 686,1 ha na 9 gmin;
  *   38 pomników przyrody,
@@ -167,7 +169,7 @@ export const JERZMANOWICE_PRZEGINIA: CityContent = {
         "Za to woda, kiedy się już pojawia, potrafi zrobić wrażenie. W Dolinie Szklarki bije wywierzysko krasowe zwane źródłem Pióro, o wydajności dochodzącej do sześćdziesięciu litrów na sekundę.",
         "Wierzchowina ma jeszcze jedną konsekwencję, tym razem społeczną. Ta gmina jako jedyna w podkrakowskim pierścieniu praktycznie się nie zsuburbanizowała: od dwa tysiące drugiego roku przybyło tu niecałe osiem procent mieszkańców, a średnia wieku wynosi czterdzieści jeden lat. Dla porównania — sąsiednia Wielka Wieś urosła w tym samym czasie o ponad dziewięćdziesiąt procent. Tu się mieszka, a nie wprowadza.",
         "Pod ziemią jest natomiast bardzo tłoczno. W gminie leży kilkanaście jaskiń, z Jaskinią Nietoperzową na czele — trzysta dwadzieścia sześć metrów korytarzy, badania archeologiczne z przełomu lat pięćdziesiątych i sześćdziesiątych, a w dziewiętnastym wieku, przy eksploatacji namuliska na nawóz, wydobyto stąd około czterech tysięcy kłów niedźwiedzia jaskiniowego. Kręcono w niej zdjęcia do Ogniem i mieczem.",
-        "Do gminy należy też największy rezerwat w Małopolsce — Dolina Racławki, blisko czterysta siedemdziesiąt cztery hektary — oraz czternaście procent powierzchni Ojcowskiego Parku Narodowego. Historia sięga tu głęboko: Przeginia po raz pierwszy pojawia się w dokumentach dwudziestego dziewiątego września tysiąc dwieście dwudziestego ósmego roku, Jerzmanowice w tysiąc trzysta trzydziestym piątym.",
+        "Tuż obok leży największy rezerwat w Małopolsce — Dolina Racławki, blisko czterysta siedemdziesiąt cztery hektary, już w gminie Krzeszowice — a do samej gminy należy czternaście procent powierzchni Ojcowskiego Parku Narodowego. Historia sięga tu głęboko: Przeginia po raz pierwszy pojawia się w dokumentach dwudziestego dziewiątego września tysiąc dwieście dwudziestego ósmego roku, Jerzmanowice w tysiąc trzysta trzydziestym piątym.",
       ],
     },
     {
@@ -226,8 +228,8 @@ export const JERZMANOWICE_PRZEGINIA: CityContent = {
   districtsHeading: "Do których sołectw gminy Jerzmanowice-Przeginia dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich ośmiu, bez żadnej dopłaty za odległość. Gmina liczy około jedenastu tysięcy mieszkańców na sześćdziesięciu ośmiu kilometrach kwadratowych, około dwudziestu dwóch kilometrów na północny zachód od Krakowa.",
-    "Sołectwa to: Jerzmanowice, Przeginia, Racławice, Sąspów, Czubrowice, Szklary, Łazy i Gotkowice. Dwa największe są niemal równe — Jerzmanowice liczą blisko trzy tysiące mieszkańców, Przeginia ponad dwa i pół — i stąd dwuczłonowa nazwa gminy. Urząd stoi w Jerzmanowicach, przy ulicy Rajskiej.",
-    "Na terenie gminy leży największy rezerwat przyrody w Małopolsce, Dolina Racławki, oraz Dolina Szklarki ze źródłem Pióro. Do gminy należy też blisko czternaście procent powierzchni Ojcowskiego Parku Narodowego, głównie w rejonie Sąspowa.",
+    "Sołectwa to: Jerzmanowice, Przeginia, Racławice, Sąspów, Czubrowice, Szklary, Łazy i Gotkowice. Dwa największe są niemal równe — Jerzmanowice liczą blisko trzy tysiące mieszkańców, Przeginia blisko dwa i pół — i stąd dwuczłonowa nazwa gminy. Urząd stoi w Jerzmanowicach, przy ulicy Rajskiej.",
+    "Tuż za granicą gminy, w gminie Krzeszowice, leży największy rezerwat przyrody w Małopolsce — Dolina Racławki. Na terenie samej gminy jest Dolina Szklarki ze źródłem Pióro. Do gminy należy też blisko czternaście procent powierzchni Ojcowskiego Parku Narodowego, głównie w rejonie Sąspowa.",
     "Jaskiń jest tu kilkanaście. Największa i jedyna udostępniona z przewodnikiem to Jaskinia Nietoperzowa w górnej części Doliny Będkowskiej — sama dolina ciągnie się zresztą przez trzy gminy, bo jej środkowy odcinek leży w Będkowicach koło Wielkiej Wsi, a wylot pod Kobylanami w gminie Zabierzów.",
     "Dojazd: kolei w gminie nie ma. Główną osią jest droga krajowa dziewięćdziesiąt cztery, biegnąca przez Przeginię, Gotkowice i Jerzmanowice. Od grudnia dwa tysiące dwudziestego trzeciego roku kursuje tu krakowska linia dwieście, co godzinę w dni robocze; działają też trzy linie komunikacji gminnej.",
   ],

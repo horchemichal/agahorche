@@ -232,7 +232,7 @@ export const GNOJNIK: CityContent = {
   districtsHeading: "Gdzie w gminie Gnojnik dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich siedmiu sołectw, bez żadnej dopłaty za odległość: Gnojnika, Uszwi, Gosprzydowej, Lewniowej, Biesiadek, Zawady Uszewskiej i Żerkowa.",
-    "Gmina zajmuje pięćdziesiąt pięć kilometrów kwadratowych i liczy około ośmiu tysięcy mieszkańców. Największy jest Gnojnik z blisko dwoma tysiącami sześciuset osobami, najmniejszy Żerków z dwustoma dziewięćdziesięcioma jeden. Przejechanie gminy z końca na koniec to kilkanaście minut.",
+    "Gmina zajmuje pięćdziesiąt pięć kilometrów kwadratowych i liczy około ośmiu tysięcy mieszkańców. Największy jest Gnojnik z około dwoma tysiącami siedmiuset osobami, najmniejszy Żerków z około dwustoma dziewięćdziesięcioma. Przejechanie gminy z końca na koniec to kilkanaście minut.",
     "Leżymy na wschodnim skraju Pogórza Wiśnickiego, w dolinie Uszwicy — teren jest pofałdowany i poprzecinany wąwozami. Beskid Wyspowy stąd widać, ale gmina do niego nie należy i nie będę tego naciągać.",
     "Przez gminę biegnie droga krajowa numer siedemdziesiąt pięć, ta z Brzeska do Nowego Sącza. Do Brzeska jest stąd około dziesięciu kilometrów, do Krakowa około pięćdziesięciu dwóch. Kolei w gminie nie ma — najbliższa stacja to Brzesko Okocim. Ja przyjeżdżam samochodem i dojazd nic nie kosztuje.",
     "Jedna uwaga językowa, która bardzo pomaga przy umawianiu: sołectwo nazywa się Uszew, ale mówi się „w Uszwi” i „kukiełki z Uszwi”. I nie mylcie go z Porąbką Uszewską — ta leży już w gminie Dębno — ani Zawady Uszewskiej z samą Uszwią, bo to osobne sołectwo.",

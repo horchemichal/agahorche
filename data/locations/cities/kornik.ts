@@ -74,7 +74,7 @@ export const KORNIK: CityContent = {
       id: "kolekcja-przepisow",
       heading: "Miasto kolekcji — i przepisy, których nikt nigdy nie ugotuje",
       paragraphs: [
-        "W Kórniku jest zamek z biblioteką zbieraną przez pokolenia i arboretum z największą w Polsce kolekcją drzew. To miasto zbudowane wokół gromadzenia — i dlatego właśnie tutaj chcę powiedzieć coś niepopularnego o liczbie przepisów.",
+        "W Kórniku jest zamek z biblioteką zbieraną przez pokolenia i najstarsze w Polsce arboretum, z jedną z najbogatszych kolekcji dendrologicznych w kraju. To miasto zbudowane wokół gromadzenia — i dlatego właśnie tutaj chcę powiedzieć coś niepopularnego o liczbie przepisów.",
         "Na pokazach pada zwykle bardzo duża liczba: tyle a tyle tysięcy przepisów dostępnych w urządzeniu. Brzmi to imponująco i ma imponować. Tyle że jest to argument sprzedażowy, a nie kuchenny.",
         "Bo policzmy uczciwie. Nikt nie ugotuje tysiąca dań. Nawet osoba gotująca codziennie robi w ciągu roku około trzystu obiadów, a większość z nich to powtórki. W praktyce każdy dom kończy na kilkunastu daniach, które wchodzą na stałe, plus kilka na okazje. Tak było przed tym urządzeniem i tak jest po nim.",
         "Wielka baza ma więc jedną realną wartość i jedną realną pułapkę. Wartość: łatwiej znaleźć w niej te kilkanaście, które akurat Wam pasują, i dostajecie do nich gotowe czasy i temperatury. Pułapka: przeglądanie katalogu potrafi zastąpić gotowanie. Człowiek scrolluje piętnaście minut, nie może się zdecydować, w końcu robi makaron.",

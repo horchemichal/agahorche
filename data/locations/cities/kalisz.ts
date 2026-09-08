@@ -12,7 +12,7 @@ import {
 } from "./wspolne";
 
 /**
- * KALISZ — miasto uważane za najstarsze w Polsce; jako Kalisia pojawia się
+ * KALISZ — miasto uważane za najstarsze w Polsce; jako Calisia pojawia się
  * u Ptolemeusza w drugim wieku, przy szlaku bursztynowym prowadzącym znad
  * Bałtyku nad Adriatyk.
  *
@@ -29,7 +29,7 @@ import {
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
  * — Kalisz jest uważany za najstarsze miasto w Polsce, wzmiankowany
- *   przez Ptolemeusza jako Kalisia,
+ *   przez Ptolemeusza jako Calisia,
  * — leżał przy szlaku bursztynowym.
  */
 export const KALISZ: CityContent = {
@@ -73,7 +73,7 @@ export const KALISZ: CityContent = {
       id: "przyprawy",
       heading: "Miasto na szlaku, którym wożono towar przez pół Europy",
       paragraphs: [
-        "Kalisz uchodzi za najstarsze miasto w Polsce i pojawia się u Ptolemeusza jako Kalisia, przy szlaku, którym wożono bursztyn znad Bałtyku aż nad Adriatyk. Ludzie przemierzali pół Europy za towarem, który miał wartość, bo był rzadki. Wykorzystuję to do rzeczy, która w gotowaniu robi ogromną różnicę, a prawie nigdy nie pojawia się na pokazach: do przypraw.",
+        "Kalisz uchodzi za najstarsze miasto w Polsce i pojawia się u Ptolemeusza jako Calisia, przy szlaku, którym wożono bursztyn znad Bałtyku aż nad Adriatyk. Ludzie przemierzali pół Europy za towarem, który miał wartość, bo był rzadki. Wykorzystuję to do rzeczy, która w gotowaniu robi ogromną różnicę, a prawie nigdy nie pojawia się na pokazach: do przypraw.",
         "Zacznę od twardej obserwacji. Bardzo wiele domowych dań jest poprawnie ugotowanych i po prostu nudnych — i nie jest to wina garnka ani urządzenia. Jest to kwestia tego, że przyprawiamy z gotowej torebki, w której głównym składnikiem bywa sól, a wszystko inne jest tam w ilościach śladowych.",
         "Co z tym ma wspólnego to urządzenie? Tyle, że mieli. Naprawdę mieli — pieprz ziarnisty, kolendrę, kminek, suszone grzyby, cukier na puder, kaszę na mąkę. Ziarna zmielone bezpośrednio przed gotowaniem pachną zupełnie inaczej niż proszek stojący w szafce od dwóch lat, i to jest różnica, którą wyczuwa każdy przy pierwszej łyżce.",
         "Praktyczny wniosek jest taki, że zamiast kupować dziesięć gotowych mieszanek, warto mieć kilka rzeczy w ziarnach i mielić je na bieżąco. Wyjdzie taniej, a smak będzie mocniejszy. Nie podaję tu proporcji ani przepisów na mieszanki, bo każdy dom ma inne — powiem tylko, że dwie albo trzy własne mieszanki wystarczą na cały tydzień gotowania.",

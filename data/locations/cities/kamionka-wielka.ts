@@ -201,7 +201,7 @@ export const KAMIONKA_WIELKA: CityContent = {
   districtsHeading: "Do których sołectw gminy Kamionka Wielka dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich, bez żadnej dopłaty za odległość. Gmina liczy ponad dziesięć i pół tysiąca mieszkańców na sześćdziesięciu pięciu kilometrach kwadratowych, z czego ponad czterdzieści sześć procent to lasy.",
-    "Miejscowości jest osiem — Bogusza, Jamnica, Kamionka Mała, Kamionka Wielka, Królowa Górna, Królowa Polska, Mszalnica i Mystków — ale sołectw dziewięć, bo Mszalnica dzieli się na Mszalnicę i Mszalnicę-Zagórę. Największe są Kamionka Wielka i Mystków, obie po ponad dwa tysiące mieszkańców.",
+    "Miejscowości jest osiem — Bogusza, Jamnica, Kamionka Mała, Kamionka Wielka, Królowa Górna, Królowa Polska, Mszalnica i Mystków — ale sołectw dziewięć, bo Mszalnica dzieli się na Mszalnicę i Mszalnicę-Zagórę. Największe są Kamionka Wielka z ponad trzema tysiącami trzystoma mieszkańcami i Mystków z ponad dwoma tysiącami stoma.",
     "Warto zobaczyć cerkiew świętego Dymitra w Boguszy z tysiąc osiemset pięćdziesiątego ósmego roku — drewnianą, z kopułkami cebulastymi, ikonostasem z tysiąc sześćset siedemdziesiątego i polichromią z tysiąc osiemset siedemdziesiątego trzeciego. Dziś służy jako kościół rzymskokatolicki i należy do Szlaku Architektury Drewnianej.",
     "Dojazd: do Nowego Sącza jest stąd osiem kilometrów. Przez gminę biegnie linia kolejowa z Tarnowa do Leluchowa, czynna od tysiąc osiemset siedemdziesiątego szóstego roku — to właśnie ona uruchomiła kiedyś tutejsze kamieniołomy i tartaki.",
   ],
