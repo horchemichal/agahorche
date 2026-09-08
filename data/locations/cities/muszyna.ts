@@ -23,7 +23,8 @@ import {
  *
  * FAKTY UŻYTE I ŹRÓDŁA:
  * — 1209 — pierwsza wzmianka: król Węgier Andrzej II zezwala
- *   miejscowemu plebanowi pobierać cło,
+ *   duchownemu ze spiskiej kapituły (NIE miejscowemu plebanowi)
+ *   pobierać cło,
  * — 1288 — Wysz, scholastyk kapituły wawelskiej, zapisuje Muszynę
  *   biskupowi krakowskiemu,
  * — XIV w. — za Kazimierza Wielkiego murowany zamek na wzgórzu
@@ -133,7 +134,7 @@ export const MUSZYNA: CityContent = {
       paragraphs: [
         "W tysiąc trzysta dziewięćdziesiątym pierwszym roku Władysław Jagiełło nadał Muszynę biskupom krakowskim i tak zaczęło się coś, co historycy nazywają państwem muszyńskim albo kluczem muszyńskim. Nie jest to przenośnia.",
         "Ten organizm miał własną administrację, własny sąd kryminalny i własne wojsko — formację nazywaną dragonią biskupią. Rozciągał się na kilkanaście wsi po obu stronach Popradu i przetrwał w tej formie prawie czterysta lat, do tysiąc siedemset osiemdziesiątego pierwszego roku, kiedy przejął go austriacki skarb cesarski.",
-        "Powód tej odrębności był bardzo praktyczny: granica. Już w tysiąc dwieście dziewiątym roku król Węgier Andrzej II pozwolił tutejszemu plebanowi pobierać cło, a w czternastym wieku, za Kazimierza Wielkiego, stanął tu murowany zamek pełniący funkcję komory celnej. Prawa miejskie Muszyna dostała w tysiąc trzysta pięćdziesiątym szóstym.",
+        "Powód tej odrębności był bardzo praktyczny: granica. Już w tysiąc dwieście dziewiątym roku król Węgier Andrzej II nadał prawo pobierania cła nad Popradem duchownemu ze spiskiej kapituły, a w czternastym wieku, za Kazimierza Wielkiego, stanął tu murowany zamek pełniący funkcję komory celnej. Prawa miejskie Muszyna dostała w tysiąc trzysta pięćdziesiątym szóstym.",
         "Zamek miał pecha. W tysiąc czterysta pięćdziesiątym piątym zawaliła się jego czwarta część, w siedemdziesiątym czwartym najechali Węgrzy, na przełomie szesnastego i siedemnastego wieku strawił go pożar, a w połowie siedemnastego został opuszczony. Przez trzysta lat stały tam ruiny.",
         "I tu jest najświeższa część tej historii. Odbudowę zaczęto w październiku dwa tysiące dwudziestego roku, a trzydziestego września dwa tysiące dwudziestego trzeciego zamek udostępniono zwiedzającym. Kosztowało to około trzynastu i pół miliona złotych. Jest baszta, taras widokowy, dziedziniec, sala wystawiennicza i kawiarnia.",
         "Druga rzecz, którą warto tu zobaczyć, stoi w Powroźniku. Drewniana cerkiew świętego Jakuba Młodszego Apostoła zbudowana w tysiąc sześćsetnym roku jest najstarszą drewnianą cerkwią w polskich Karpatach, a od dwa tysiące trzynastego roku figuruje na liście światowego dziedzictwa UNESCO. Od tysiąc dziewięćset pięćdziesiątego pierwszego roku służy jako kościół rzymskokatolicki.",

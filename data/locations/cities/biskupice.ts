@@ -51,7 +51,9 @@ import {
  * — ROLNICTWO: ok. 87% powierzchni to użytki rolne; lasy tylko 9,6%;
  *   silne rozdrobnienie (742 gospodarstwa 1–2 ha); gleby klas II i III,
  * — ŁAZANY: kościół Znalezienia Krzyża Świętego, fundacja XVI w.
- *   (Jakub i Stanisław Lubomirscy); SCHOWEK NA MONSTRANCJĘ WYDRĄŻONY
+ *   (fundator: SEBASTIAN Lubomirski, budowa 1586, konsekracja 1594 —
+ *   Jakub i Stanisław są UPAMIĘTNIENI nagrobkiem, nie są fundatorami;
+ *   błąd powiela strona gminy); SCHOWEK NA MONSTRANCJĘ WYDRĄŻONY
  *   W PNIU DĘBU, 1586 — gmina nazywa go unikatowym; nagrobek fundatorów
  *   1619; chrzcielnica koniec XVI w.,
  * — BODZANÓW: drewniany kościół św. Apostołów Piotra i Pawła z 1765 r.,
@@ -157,7 +159,7 @@ export const BISKUPICE: CityContent = {
         "Ciekawsze jest, skąd ten wzrost. Przyrost naturalny jest tu ujemny — dziewięćdziesiąt pięć urodzeń przy dziewięćdziesięciu ośmiu zgonach. Gmina nie rośnie dziećmi, tylko przeprowadzkami: saldo migracji wynosi plus sto dziewięćdziesiąt cztery osoby rocznie. A bilans dojazdów do pracy to minus tysiąc osiemdziesiąt. Mieszka się tu i wyjeżdża do Krakowa.",
         "Są w tej gminie trzy rzeczy, które przy pierwszym kontakcie zaskakują. Pierwsza: urząd nie stoi w Biskupicach, tylko w Tomaszkowicach. Druga: największą wsią nie są Biskupice, tylko Trąbki — tysiąc sześćset dziewięćdziesiąt jeden osób wobec tysiąca osiemdziesięciu sześciu. Trzecia: sołectw jest dwanaście, a miejscowości jedenaście, bo Zborówek jest sołectwem bez odrębnej miejscowości.",
         "Historia jest tu znacznie starsza, niż sugeruje nowa zabudowa. Pierwsza pisana wzmianka o Bodzanowie pochodzi z tysiąc dwieście dwudziestego dziewiątego roku, z bulli papieża Grzegorza IX potwierdzającej, że wieś należy do uposażenia benedyktynów tynieckich. W Przebieczanach działał szyb solny należący do miechowskich Bożogrobców, a mieszkańcy warzyli sól. Wieliczka jest obok, ale sól była i tutaj.",
-        "Rzecz, którą sama gmina nazywa unikatową: w kościele w Łazanach zachował się schowek na monstrancję wydrążony w pniu dębu, z tysiąc pięćset osiemdziesiątego szóstego roku. Kościół ufundowali w szesnastym wieku Jakub i Stanisław Lubomirscy, jest tam ich nagrobek z tysiąc sześćset dziewiętnastego roku i chrzcielnica z końca szesnastego wieku.",
+        "Rzecz, którą sama gmina nazywa unikatową: w kościele w Łazanach zachował się schowek na monstrancję wydrążony w pniu dębu, z tysiąc pięćset osiemdziesiątego szóstego roku. Kościół ufundował w szesnastym wieku Sebastian Lubomirski, żupnik krakowski — budowę zaczęto w tysiąc pięćset osiemdziesiątym szóstym, a świątynię konsekrowano w tysiąc pięćset dziewięćdziesiątym czwartym. Stoi tam późnorenesansowy nagrobek Lubomirskich i chrzcielnica z końca szesnastego wieku.",
         "Drewniany kościół świętych Apostołów Piotra i Pawła w Bodzanowie pochodzi z tysiąc siedemset sześćdziesiątego piątego roku i jest trzecią świątynią w tym miejscu. Kościół świętego Marcina w Biskupicach — murowany, gotycki, po tysiąc czterysta osiemdziesiątym roku, z kamiennym portalem z piętnastego wieku. A po całej gminie stoi ponad siedemdziesiąt kapliczek i krzyży przydrożnych.",
       ],
     },

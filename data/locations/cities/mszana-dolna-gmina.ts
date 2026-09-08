@@ -50,7 +50,10 @@ import {
  *   Olszówka, Raba Niżna. ⚠️ polskawliczbach podaje 11 miejscowości —
  *   to przysiółki liczone osobno; SOŁECTW JEST DZIEWIĘĆ,
  * — KGW: „Paradne Gosposie” w Kasince Małej, KGW Olszówka,
- * — KASINA SKI (Kasina Wielka, stoki Śnieżnicy): kolej krzesełkowa
+ * — KASINA SKI (Kasina Wielka, stoki Śnieżnicy): od sezonu 2016/17
+ *   SZEŚCIOOSOBOWA kolej Doppelmayr, 1051,87 m, 3000 os./h,
+ *   górna stacja 900 m n.p.m. Rezerwat Śnieżnica leży w gminie DOBRA
+ *   i NIE obejmuje szczytu. Dawna kolej krzesełkowa
  *   1 100 m, przepustowość 1 200 osób na godzinę, stacja górna
  *   900 m n.p.m. REZERWAT ŚNIEŻNICA utworzony w 1968 r.,
  * — IMPREZY: „Zagórzańskie Lato” (8–9.08.2026), Zagórzańskie Dożynki,
@@ -135,7 +138,7 @@ export const MSZANA_DOLNA_GMINA: CityContent = {
         "Robi je firma rodzinna. Kazimiera i Andrzej Skolarusowie założyli ją w tysiąc dziewięćset dziewięćdziesiątym pierwszym roku pod adresem Kasinka Mała pięćset trzydzieści dziewięć. Od dwutysięcznego mają własną hodowlę trzody, później doszła własna uprawa zbóż i własna pasza. Dziś prowadzą ponad pięćdziesiąt punktów sprzedaży.",
         "To jest dokładnie ta droga, o której zwykle mówi się teoretycznie: od paszy przez zwierzę po wędzarnię, w jednych rękach, w jednej wsi. Rzadko zdarza się, żeby dało się ją wskazać palcem na mapie sołectwa.",
         "Dla mnie to również praktyczna informacja o tym, jak się tu gotuje. Tam, gdzie mięso i wędlina są lokalne i dobre, obiad nieczęsto zaczyna się od paczki z supermarketu, a częściej od kawałka mięsa, które trzeba obrobić. I to jest zupełnie inna praca w kuchni niż odgrzewanie.",
-        "Poza wędzarnią gmina żyje z lasu i ze stoku. Lasy zajmują czterdzieści dwa procent jej powierzchni. W Kasinie Wielkiej — to inna wieś niż Kasinka Mała, warto uważać na te nazwy — działa Kasina Ski: kolej krzesełkowa o długości tysiąca stu metrów, przepustowość tysiąc dwieście osób na godzinę, górna stacja na dziewięciuset metrach nad poziomem morza, na stokach Śnieżnicy. Sam szczyt jest od tysiąc dziewięćset sześćdziesiątego ósmego roku rezerwatem.",
+        "Poza wędzarnią gmina żyje z lasu i ze stoku. Lasy zajmują czterdzieści dwa procent jej powierzchni. W Kasinie Wielkiej — to inna wieś niż Kasinka Mała, warto uważać na te nazwy — działa Kasina Ski: sześcioosobowa kolej krzesełkowa o długości około tysiąca pięćdziesięciu metrów, przepustowość trzy tysiące osób na godzinę, górna stacja na dziewięciuset metrach nad poziomem morza, na stokach Śnieżnicy. Północne zbocza Śnieżnicy, już po stronie gminy Dobra, są od tysiąc dziewięćset sześćdziesiątego ósmego roku rezerwatem.",
         "Latem gmina zbiera się na Zagórzańskim Lecie i na Zagórzańskich Dożynkach. Zagórzanie to nazwa grupy, do której należy ta okolica — sama Mszana Dolna, czyli miasto, jest odrębną gminą i ma tę kuchnię opisaną u siebie.",
         "Trwa też remont linii kolejowej numer sto cztery, z Rabki Zaryte przez Mszanę Dolną do Fornali. Umowę na ponad pięćset sześćdziesiąt siedem milionów złotych netto podpisano w sierpniu dwa tysiące dwudziestego piątego roku, prace obejmują sześćdziesiąt sześć obiektów inżynieryjnych, a prędkość ma wzrosnąć z trzydziestu do stu dwudziestu kilometrów na godzinę. Koniec przewidziano na sierpień dwa tysiące dwudziestego siódmego.",
         "Gmina liczy siedemnaście tysięcy sześćset pięćdziesiąt dwie osoby na stu siedemdziesięciu kilometrach kwadratowych i od dwa tysiące drugiego roku urosła o dziewięć i sześć dziesiątych procenta. Średni wiek mieszkańca to trzydzieści siedem lat i osiem dziesiątych.",
@@ -199,7 +202,7 @@ export const MSZANA_DOLNA_GMINA: CityContent = {
     "Do wszystkich dziewięciu, bez żadnej dopłaty za odległość. Gmina liczy ponad siedemnaście i pół tysiąca mieszkańców na stu siedemdziesięciu kilometrach kwadratowych, a lasy zajmują czterdzieści dwa procent jej powierzchni.",
     "Sołectw jest dokładnie dziewięć i pokrywają się ze wsiami: Glisne, Kasina Wielka, Kasinka Mała, Lubomierz, Łętowe, Łostówka, Mszana Górna, Olszówka i Raba Niżna. Przysiółków jest znacznie więcej, więc przy umawianiu przydaje się nazwa tego, w którym stoi dom.",
     "Urząd gminy mieści się przy ulicy Spadochroniarzy w Mszanie Dolnej — w mieście, które do gminy nie należy i jest odrębną gminą miejską.",
-    "W Kasince Małej działa rodzinna wędzarnia z dwoma wpisami na ministerialną listę produktów tradycyjnych. W Kasinie Wielkiej, na stokach Śnieżnicy, działa Kasina Ski: kolej krzesełkowa o długości tysiąca stu metrów, przepustowość tysiąc dwieście osób na godzinę, górna stacja na dziewięciuset metrach nad poziomem morza. Szczyt Śnieżnicy jest rezerwatem od tysiąc dziewięćset sześćdziesiątego ósmego roku.",
+    "W Kasince Małej działa rodzinna wędzarnia z dwoma wpisami na ministerialną listę produktów tradycyjnych. W Kasinie Wielkiej, na stokach Śnieżnicy, działa Kasina Ski: sześcioosobowa kolej krzesełkowa o długości około tysiąca pięćdziesięciu metrów, przepustowość trzy tysiące osób na godzinę, górna stacja na dziewięciuset metrach nad poziomem morza. Północne zbocza Śnieżnicy, po stronie gminy Dobra, są rezerwatem od tysiąc dziewięćset sześćdziesiątego ósmego roku.",
     "Dojazd: trwa remont linii kolejowej numer sto cztery z Rabki Zaryte przez Mszanę Dolną do Fornali — ponad pięćset sześćdziesiąt siedem milionów złotych netto, sześćdziesiąt sześć obiektów inżynieryjnych, prędkość z trzydziestu do stu dwudziestu kilometrów na godzinę, zakończenie planowane na sierpień dwa tysiące dwudziestego siódmego roku.",
   ],
   districts: [

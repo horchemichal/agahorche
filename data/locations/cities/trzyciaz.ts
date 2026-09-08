@@ -224,7 +224,7 @@ export const TRZYCIAZ: CityContent = {
   districtsHeading: "Gdzie w gminie Trzyciąż dojeżdżam?",
   districtsParagraphs: [
     "Do wszystkich trzynastu wsi i bez żadnej dopłaty za odległość: Glanów, Imbramowice, Jangrot, Małyszyce, Michałówka, Milonki, Podchybie, Porąbka, Ściborzyce, Sucha, Trzyciąż, Zadroże i Zagórowa.",
-    "W Imbramowicach stoi klasztor sióstr norbertanek, ufundowany około tysiąc dwieście dwudziestego drugiego roku — osiemset lat w jednym miejscu. To także sanktuarium na Szlaku Orlich Gniazd. Warto wiedzieć, że to nie te Imbramowice, które wyskakują w wyszukiwarce: dolnośląskie mają tę samą nazwę i zupełnie nic wspólnego z powiatem olkuskim.",
+    "W Imbramowicach stoi klasztor sióstr norbertanek, ufundowany około tysiąc dwieście dwudziestego szóstego roku — osiemset lat w jednym miejscu. To także sanktuarium na Szlaku Orlich Gniazd. Warto wiedzieć, że to nie te Imbramowice, które wyskakują w wyszukiwarce: dolnośląskie mają tę samą nazwę i zupełnie nic wspólnego z powiatem olkuskim.",
     "Gmina leży na Wyżynie Krakowsko-Częstochowskiej i obejmuje część Dłubniańskiego Parku Krajobrazowego. Tu biją źródła Dłubni, a w Ściborzycach jest pulsujące źródło Jordan — rzadkość w tej części Polski. Są też dwa rezerwaty: jeden ze storczykami, drugi z ciepłolubną buczyną.",
     "Dojazd: przez gminę biegnie droga wojewódzka z Krakowa przez Skałę i Zadroże do Wolbromia. Do Krakowa jest stąd trzydzieści kilka kilometrów, do Olkusza piętnaście. Kolei w gminie nie ma — najbliższa stacja to Wolbrom — więc przy umawianiu warto powiedzieć, którędy najwygodniej trafić pod dom.",
   ],

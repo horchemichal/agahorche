@@ -201,7 +201,7 @@ export const WIEPRZ: CityContent = {
   districtsParagraphs: [
     "Do wszystkich sześciu sołectw, bez żadnej dopłaty za odległość: Wieprz, Frydrychowice, Nidek, Gierałtowice, Przybradz i Gierałtowiczki.",
     "Warto wiedzieć, jak ta gmina jest zbudowana, bo to nie są zwarte wsie. Samo sołectwo Wieprz składa się z ponad dwudziestu przysiółków, Frydrychowice z kilkunastu. Dlatego przy umawianiu proszę o nazwę przysiółka albo o jakiś punkt orientacyjny — sam adres bywa mylący, a ja wolę trafić za pierwszym razem.",
-    "Nidek warto odwiedzić przy okazji: stoi tam drewniany kościół, prawdopodobnie starszy niż tysiąc pięćset trzydziesty dziewiąty rok, na Szlaku Architektury Drewnianej. Parafia jest tam od czternastego wieku.",
+    "Nidek warto odwiedzić przy okazji: stoi tam drewniany kościół świętych Szymona i Judy Tadeusza z tysiąc pięćset trzydziestego dziewiątego roku, na Szlaku Architektury Drewnianej. Parafia jest tam od czternastego wieku, ale to dotyczy poprzedniego kościoła.",
     "Dojazd: przez gminę biegnie droga wojewódzka z Chrzanowa do Andrychowa. Do Wadowic jest stąd około dziesięciu kilometrów, do Krakowa około czterdziestu sześciu. Powiem od razu uczciwie: w gminie Wieprz nie ma stacji ani przystanku kolejowego — linia z Krakowa do Bielska omija ją między Wadowicami a Andrychowem. Pociągiem dojedziesz do jednej z tych dwóch stacji, dalej autobusem.",
   ],
   districts: [

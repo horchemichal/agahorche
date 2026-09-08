@@ -73,7 +73,8 @@ import {
  *   Przez gminę biegnie Szlak Papieski w Beskidzie Wyspowym,
  * — WOJNA: 3–4 września 1939 Niemcy spalili kościół i ok. 160 domów
  *   w Lubniu, zginęło 9 osób; 20 czerwca 1943 — PACYFIKACJA
- *   KRZECZOWA: 20 osób przetrzymywanych w szkole i rozstrzelanych
+ *   KRZECZOWA (wg IPN): 9 osób rozstrzelanych przy cmentarzu,
+ *   19 ofiar w całej wsi tego dnia. NIE 20 przetrzymywanych
  *   przy cmentarzu, 6 aresztowanych (w tym dwóch księży).
  *   W Skomielnej Białej we wrześniu 1939 spłonął modrzewiowy kościół,
  * — GOSPODARKA (31.12.2024): 1 009 podmiotów REGON, 988 mikrofirm,
@@ -189,8 +190,8 @@ export const LUBIEN: CityContent = {
         "Wiadomo to z dokumentu, który powstał pół roku wcześniej. Strategia rozwoju gminy przyjęta piętnastego czerwca dwa tysiące dwudziestego drugiego roku pisała wprost o dużym natężeniu ruchu na przechodzącej przez gminę siódemce i o tym, że budowany wtedy odcinek zmusza kierowców do zjazdu z drogi ekspresowej na jednojezdniową krajówkę, co sprzyja korkom. To jest opis stanu sprzed otwarcia, spisany przez samą gminę.",
         "Nie mam pomiarów ruchu, które pokazywałyby, ile tranzytu ubyło, więc nie będę udawać, że wiem. Każdy, kto tu mieszka, i tak wie lepiej ode mnie, jak wyglądały sierpniowe soboty przed tunelem i jak wyglądają teraz.",
         "Poza zakopianką ta gmina ma coś znacznie starszego. W Krzeczowie stoi drewniany kościół świętego Wojciecha, zbudowany w latach tysiąc siedemset sześćdziesiąt–sześćdziesiąt pięć, przeniesiony tu z Łętowni i wpisany do rejestru zabytków w tysiąc dziewięćset sześćdziesiątym dziewiątym roku wraz z otoczeniem. W środku dwadzieścia jeden zabytków ruchomych, w tym trzy barokowe ołtarze z końca siedemnastego wieku i późnogotycki obraz Matki Bożej z początku szesnastego. Obok rośnie ponad pięćsetletni dąb.",
-        "Jest tu też ślad, który w tej okolicy znaczy więcej niż gdzie indziej: odbudowany po wojnie kościół w Lubniu konsekrował w tysiąc dziewięćset sześćdziesiątym roku ksiądz Karol Wojtyła. Przez gminę biegnie Szlak Papieski w Beskidzie Wyspowym.",
-        "A wojna zostawiła tu ślady bardzo konkretne. Trzeciego i czwartego września tysiąc dziewięćset trzydziestego dziewiątego roku Niemcy spalili w Lubniu kościół i około stu sześćdziesięciu domów; zginęło dziewięć osób. Dwudziestego czerwca tysiąc dziewięćset czterdziestego trzeciego spacyfikowali Krzeczów — dwadzieścioro ludzi przetrzymywano w szkole i rozstrzelano przy cmentarzu.",
+        "Jest tu też ślad, który w tej okolicy znaczy więcej niż gdzie indziej: budowę odbudowanego po wojnie kościoła w Lubniu ukończono w tysiąc dziewięćset sześćdziesiątym roku. Przez gminę biegnie Szlak Papieski w Beskidzie Wyspowym.",
+        "A wojna zostawiła tu ślady bardzo konkretne. Czwartego września tysiąc dziewięćset trzydziestego dziewiątego roku Niemcy spalili w Lubniu kościół, plebanię i około stu sześćdziesięciu domów; zginęło dziewięć osób. Dzień wcześniej spłonął zabytkowy kościół w sąsiedniej Skomielnej Białej. Dwudziestego czerwca tysiąc dziewięćset czterdziestego trzeciego spacyfikowali Krzeczów — dziewięć osób rozstrzelano przy cmentarzu, a w całej wsi zginęło tego dnia dziewiętnaścioro ludzi.",
       ],
     },
     {

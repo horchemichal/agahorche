@@ -33,6 +33,8 @@ import {
  *   MIESZKAŃCÓW wobec 6,7 dla Polski — jeden z najwyższych wyników
  *   w powiecie,
  * — PRAWA MIEJSKIE: 1969 R. Sułkowice są najmłodszym miastem
+ *   POWIATU MYŚLENICKIEGO (nie „okolicy” — Świątniki Górne 1997,
+ *   Alwernia 1993, oba w powiecie krakowskim)
  *   w okolicy,
  * — JEDNOSTKI (5): miasto Sułkowice oraz wsie Biertowice,
  *   Harbutowice, Krzywaczka, Rudnik,
@@ -185,7 +187,7 @@ export const SULKOWICE: CityContent = {
   districtsParagraphs: [
     "Do miasta Sułkowice i do wszystkich czterech wsi: Krzywaczki, Harbutowic, Biertowic i Rudnika. Dopłaty za odległość nie ma nigdzie.",
     "Gmina liczy piętnaście tysięcy dwieście trzydzieści dwie osoby i leży w Beskidzie Makowskim: na północ Kraków, na wschód Myślenice, na zachód Kalwaria Zebrzydowska i Lanckorona. Ja przyjeżdżam samochodem i dojazd nic nie kosztuje.",
-    "Sułkowice są najmłodszym miastem w tej okolicy — prawa miejskie mają od tysiąc dziewięćset sześćdziesiątego dziewiątego roku. Praktycznie znaczy to, że układ zabudowy jest wiejski, a adresy bywają rozciągnięte wzdłuż drogi. Jeśli trafienie pod Wasz dom bywa trudne, napiszcie mi punkt orientacyjny.",
+    "Sułkowice są najmłodszym miastem w powiecie myślenickim — prawa miejskie mają od tysiąc dziewięćset sześćdziesiątego dziewiątego roku. Praktycznie znaczy to, że układ zabudowy jest wiejski, a adresy bywają rozciągnięte wzdłuż drogi. Jeśli trafienie pod Wasz dom bywa trudne, napiszcie mi punkt orientacyjny.",
     "Terminy wieczorne i sobotnie mam tu w pierwszej kolejności, bo saldo dojazdów do pracy wynosi minus dziewięćset trzydzieści pięć osób. To gmina, z której się wyjeżdża rano.",
     "Jedno rozstrzygnięcie na wszelki wypadek: Krzywaczka należy do gminy Sułkowice, a nie do Skawiny. Do obu dojeżdżam, ale przy umawianiu wolę wiedzieć, o którą stronę chodzi.",
   ],
