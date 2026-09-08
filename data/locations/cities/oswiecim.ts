@@ -170,7 +170,7 @@ export const OSWIECIM: CityContent = {
     },
     {
       id: "jedna-osoba",
-      heading: "A jeśli gotuję dla jednej albo dwóch osób?",
+      heading: "Gotowanie w małym składzie — na co uważać przy tej decyzji",
       paragraphs: [
         "W Oświęcimiu to pytanie pada częściej niż gdzie indziej i ma to swoje uzasadnienie: mediana wieku wynosi tu ponad czterdzieści pięć lat, a co czwarty mieszkaniec przekroczył sześćdziesiątkę piątkę. Bardzo dużo mieszkań to dziś gospodarstwa jedno- lub dwuosobowe — dzieci wyprowadziły się do gminy albo dalej, a w kuchni zostały garnki na sześć osób.",
         "Odpowiadam uczciwie: przy jednej porcji Thermomix nie oszczędza dużo czasu. Zupę na jeden talerz da się ugotować w rondlu równie szybko. Zmienia natomiast dwie inne rzeczy i to one decydują.",

@@ -40,7 +40,7 @@ import {
 export const GLOGOW_MALOPOLSKI: CityContent = {
   slug: "glogow-malopolski",
   h1: "Thermomix Głogów Małopolski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Głogów Małopolski — prezentacja i cena",
+  seoTitle: "Thermomix Głogów Małopolski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Głogowie Małopolskim: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Cena, raty 0%, elastyczne terminy. Aga, 517 185 691.",
   ogTitle: "Thermomix Głogów Małopolski — prezentacja u Ciebie w kuchni",

@@ -33,13 +33,16 @@ import {
  * palnikiem a grzaniem elektrycznym z wyłącznikiem — i na tym kończę.
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, powszechnie znane):
- * — w Bystrzycy Kłodzkiej działa jedyne w Polsce muzeum zapałczarstwa,
+ * — w Bystrzycy Kłodzkiej działa jedyne w Polsce muzeum FILUMENISTYCZNE
+ *   (zweryfikowane 8.09.2026). NIE „jedyne muzeum zapałczarstwa" — w
+ *   Częstochowie działa Muzeum Produkcji Zapałek, więc taki zapis byłby
+ *   nieprawdziwy,
  * — miasto leży w Kotlinie Kłodzkiej i zachowało średniowieczny układ.
  */
 export const BYSTRZYCA_KLODZKA: CityContent = {
   slug: "bystrzyca-klodzka",
   h1: "Thermomix Bystrzyca Kłodzka – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Bystrzyca Kłodzka — prezentacja i cena",
+  seoTitle: "Thermomix Bystrzyca Kłodzka — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Bystrzycy Kłodzkiej: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i cała gmina. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bystrzyca Kłodzka — prezentacja u Ciebie w kuchni",
@@ -62,7 +65,7 @@ export const BYSTRZYCA_KLODZKA: CityContent = {
       id: "bez-otwartego-ognia",
       heading: "Miasto z muzeum zapałek — i kuchnia bez otwartego ognia",
       paragraphs: [
-        "W Bystrzycy Kłodzkiej działa jedyne w Polsce muzeum zapałczarstwa. Nie zamierzam z tego robić anegdoty, bo mam z tego pretekst do rzeczy poważniejszej — takiej, o której na pokazach mówi się na końcu i szeptem, a dla części osób jest ważniejsza niż wszystkie funkcje razem wzięte.",
+        "W Bystrzycy Kłodzkiej działa jedyne w Polsce muzeum filumenistyczne — poświęcone etykietom i pudełkom zapałczanym oraz historii krzesania ognia. Nie zamierzam z tego robić anegdoty, bo mam z tego pretekst do rzeczy poważniejszej — takiej, o której na pokazach mówi się na końcu i szeptem, a dla części osób jest ważniejsza niż wszystkie funkcje razem wzięte.",
         "W tym urządzeniu nie ma otwartego ognia. Grzeje elektrycznie, w zamkniętym naczyniu, do ustawionej temperatury, przez ustawiony czas — i po tym czasie przestaje grzać samo. Nic nie kipi na palnik. Nic nie przywiera do dna, bo miesza się bez przerwy. Nic nie zostaje włączone dlatego, że ktoś wyszedł z kuchni do telefonu i zapomniał.",
         "Dla większości osób to jest drobiazg. Ale są trzy sytuacje, w których to jest cała rzecz.",
         "Pierwsza: starszy rodzic mieszkający sam, o którego wszyscy się martwią. Nie napiszę Wam, że urządzenie kogokolwiek pilnuje ani że zastępuje opiekę, bo to byłaby nieprawda i nieprzyzwoitość. Napiszę tylko tyle: garnek zapomniany na palniku i garnek zapomniany w wyłączonym urządzeniu to nie jest ta sama sytuacja.",

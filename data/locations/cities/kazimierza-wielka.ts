@@ -46,7 +46,7 @@ import {
 export const KAZIMIERZA_WIELKA: CityContent = {
   slug: "kazimierza-wielka",
   h1: "Thermomix Kazimierza Wielka – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Kazimierza Wielka — prezentacja i cena",
+  seoTitle: "Thermomix Kazimierza Wielka — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Kazimierzy Wielkiej: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i cała gmina. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kazimierza Wielka — prezentacja u Ciebie w kuchni",

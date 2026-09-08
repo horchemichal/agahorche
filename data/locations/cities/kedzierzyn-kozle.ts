@@ -45,7 +45,7 @@ import {
 export const KEDZIERZYN_KOZLE: CityContent = {
   slug: "kedzierzyn-kozle",
   h1: "Thermomix Kędzierzyn-Koźle – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Kędzierzyn-Koźle — prezentacja i cena",
+  seoTitle: "Thermomix Kędzierzyn-Koźle — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Kędzierzynie-Koźlu: bezpłatna prezentacja TM7 u Ciebie w domu, wszystkie dzielnice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kędzierzyn-Koźle — prezentacja u Ciebie w kuchni",

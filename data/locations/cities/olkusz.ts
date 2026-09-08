@@ -210,7 +210,7 @@ export const OLKUSZ: CityContent = {
     },
     {
       id: "jedna-osoba",
-      heading: "Czy Thermomix ma sens, gdy gotuje się dla jednej lub dwóch osób?",
+      heading: "Mały dom, mała porcja — i pytanie o sens takiego zakupu",
       paragraphs: [
         "To pytanie słyszę w Olkuszu częściej niż gdzie indziej i jest ono uczciwe. Odpowiedź brzmi: ma, ale z innego powodu niż w domu z czwórką dzieci. Tam chodzi o ilość. Tutaj o to, żeby w ogóle chciało się gotować.",
         "Gotowanie dla jednej osoby najczęściej przegrywa nie z brakiem umiejętności, tylko z rachunkiem opłacalności — pół godziny przy garnku i góra naczyń dla jednego talerza. Kiedy nastawienie zupy zajmuje pięć minut, a naczynie jest jedno, ten rachunek się zmienia.",

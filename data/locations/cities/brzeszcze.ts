@@ -178,12 +178,12 @@ export const BRZESZCZE: CityContent = {
       id: "rodzina",
       heading: "Jedno urządzenie zamiast pięciu",
       paragraphs: [
-        "Czterysta pięćdziesiąt osób na kilometr kwadratowy to najwyższa gęstość zaludnienia w powiecie — a w praktyce znaczy to, że duża część tutejszych domów to mieszkania, a duża część kuchni jest niewielka.",
+        "Czterysta pięćdziesiąt osób na kilometr kwadratowy to jedna z najwyższych gęstości zaludnienia w powiecie — a w praktyce znaczy to, że duża część tutejszych domów to mieszkania, a duża część kuchni jest niewielka.",
         "W małej kuchni problemem nie jest to, czego brakuje, tylko to, co już stoi. Blender, malakser, mikser ręczny, robot do ciasta, czajnik — pięć sprzętów, z których każdy używany jest raz na jakiś czas, a miejsce zajmuje przez cały rok.",
         "To jest chyba najbardziej prozaiczny argument za takim urządzeniem i jednocześnie najczęściej powtarzany przez moje klientki. Zajmuje mniej więcej tyle co czajnik z podstawką, a robi to, co robiły tamte cztery. Po zakupie zwykle coś z blatu znika, a nie przybywa.",
         "Druga rzecz dotyczy zmywania. Sos, zupa i krem powstają w jednym naczyniu, bez przelewania do blendera i z powrotem. W kuchni bez zmywarki albo z małą zmywarką to jest różnica, którą czuje się codziennie.",
         "Trzecia jest o hałasie i zapachu, co w bloku ma znaczenie inne niż w domu. Naczynie jest zamknięte i izolowane, więc gotowanie nie zaparowuje kuchni tak jak otwarty garnek, a przy zupach nie roznosi zapachu po całej klatce.",
-        "Czwarta, praktyczna w gminie o najstarszej strukturze wieku w powiecie: gotowanie mniejszych porcji ma tu sens częściej niż gdzie indziej. Zupa na dwa dni dla dwóch osób, a nie garnek na tydzień, który potem nudzi albo się marnuje.",
+        "Czwarta, praktyczna w gminie o starszej niż przeciętna strukturze wieku: gotowanie mniejszych porcji ma tu sens częściej niż gdzie indziej. Zupa na dwa dni dla dwóch osób, a nie garnek na tydzień, który potem nudzi albo się marnuje.",
         "Rodzicom najmłodszych dzieci przydaje się przy tym to, że da się ugotować i zmiksować w jednym naczyniu, bez przelewania gorących rzeczy między naczyniami.",
       ],
       links: [
@@ -207,7 +207,7 @@ export const BRZESZCZE: CityContent = {
       "Zacznę uczciwie, i będzie to dłuższe zastrzeżenie niż zwykle. Nie potwierdziłam żadnego wpisu z gminy Brzeszcze na ministerialnej Liście Produktów Tradycyjnych ani żadnej konkretnej potrawy opisanej jako tutejsza. Krąży po internecie pojęcie kuchni górniczej, ale nie znalazłam dla tej gminy ani jednego źródła, które by je wypełniło treścią — i nie zamierzam go wymyślać.",
       "To, co potwierdzone, dotyczy ludzi, a nie przepisów. Koło Gospodyń Wiejskich w Brzeszczach powstało dziesiątego listopada tysiąc dziewięćset sześćdziesiątego pierwszego roku, a jego pierwszą przewodniczącą była Maria Senkowska; sześćdziesięciolecie obchodzono w dwa tysiące dwudziestym pierwszym. Działa też koło w Brzeszczach-Borze oraz zespół Borowianki, który występuje przy dożynkach gminnych.",
       "Sześćdziesiąt kilka lat nieprzerwanej działalności jednego koła to więcej niż większość instytucji w tej okolicy. Gmina należy też do Lokalnej Grupy Działania Dolina Soły, obejmującej pięć gmin powiatu.",
-      "Kuchnia jest tu taka jak w całej zachodniej Małopolsce: rosół, ziemniaki, kapusta, kluski, kotlety, ciasto drożdżowe na niedzielę. Z jedną poprawką, którą warto powiedzieć wprost: w gminie o najwyższej średniej wieku w powiecie coraz częściej gotuje się dla dwóch osób, a nie dla sześciu, i to zmienia więcej niż jakikolwiek przepis.",
+      "Kuchnia jest tu taka jak w całej zachodniej Małopolsce: rosół, ziemniaki, kapusta, kluski, kotlety, ciasto drożdżowe na niedzielę. Z jedną poprawką, którą warto powiedzieć wprost: w gminie, w której średnia wieku jest wyższa od krajowej, coraz częściej gotuje się dla dwóch osób, a nie dla sześciu, i to zmienia więcej niż jakikolwiek przepis.",
       "Dla urządzenia najsensowniejsze są tu mniejsze porcje robione bez wysiłku, zupy i kremy w jednym naczyniu oraz to, że jeden sprzęt zastępuje kilka na ciasnym blacie. Czego nie zrobi, mówię wprost: nie usmaży kotleta i nie zastąpi wprawy. Zabiera tę część roboty, która jest wyłącznie czasem.",
     ],
   },

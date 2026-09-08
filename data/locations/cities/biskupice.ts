@@ -61,7 +61,10 @@ import {
  * — PRZEBIECZANY: szyb solny należący do zakonu Bożogrobców
  *   z Miechowa; mieszkańcy zajmowali się warzeniem soli,
  * — METRYKA: najstarszy zapis 1044 r. — darowizna Kazimierza
- *   Odnowiciela dla benedyktynów z Tyńca, dotycząca Bodzanowa,
+ *   NIEAKTUALNE — zweryfikowane 8.09.2026: dokument z 1044 r. nie istnieje
+ *   (datę podał dopiero Długosz). Pierwsza pisana wzmianka o Bodzanowie to
+ *   bulla Grzegorza IX z 1229 r. Uwaga: błędną wersję powtarza sama strona
+ *   gminy Biskupice, więc nie jest to źródło wiarygodne w tej sprawie,
  * — JAWCZYCE: dwór z 1935 r., jedyna posiadłość w gminie
  *   nieznacjonalizowana w 1946 r.; ok. 200-letni buk amerykański
  *   — pomnik przyrody,
@@ -153,7 +156,7 @@ export const BISKUPICE: CityContent = {
         "Od dwa tysiące drugiego do dwa tysiące dwudziestego czwartego roku ludność gminy Biskupice wzrosła o niecałe czterdzieści procent. To nie jest literówka i nie jest to typowa gmina wiejska — dziś mieszka tu jedenaście tysięcy osiemset czterdzieści dwie osoby na czterdziestu jeden kilometrach kwadratowych, czyli dwieście osiemdziesiąt jeden na kilometr. Średni wiek: trzydzieści osiem i pół roku.",
         "Ciekawsze jest, skąd ten wzrost. Przyrost naturalny jest tu ujemny — dziewięćdziesiąt pięć urodzeń przy dziewięćdziesięciu ośmiu zgonach. Gmina nie rośnie dziećmi, tylko przeprowadzkami: saldo migracji wynosi plus sto dziewięćdziesiąt cztery osoby rocznie. A bilans dojazdów do pracy to minus tysiąc osiemdziesiąt. Mieszka się tu i wyjeżdża do Krakowa.",
         "Są w tej gminie trzy rzeczy, które przy pierwszym kontakcie zaskakują. Pierwsza: urząd nie stoi w Biskupicach, tylko w Tomaszkowicach. Druga: największą wsią nie są Biskupice, tylko Trąbki — tysiąc sześćset dziewięćdziesiąt jeden osób wobec tysiąca osiemdziesięciu sześciu. Trzecia: sołectw jest dwanaście, a miejscowości jedenaście, bo Zborówek jest sołectwem bez odrębnej miejscowości.",
-        "Historia jest tu znacznie starsza, niż sugeruje nowa zabudowa. Najstarszy zapis pochodzi z tysiąc czterdziestego czwartego roku — darowizna Kazimierza Odnowiciela dla benedyktynów z Tyńca, dotycząca Bodzanowa. W Przebieczanach działał szyb solny należący do miechowskich Bożogrobców, a mieszkańcy warzyli sól. Wieliczka jest obok, ale sól była i tutaj.",
+        "Historia jest tu znacznie starsza, niż sugeruje nowa zabudowa. Pierwsza pisana wzmianka o Bodzanowie pochodzi z tysiąc dwieście dwudziestego dziewiątego roku, z bulli papieża Grzegorza IX potwierdzającej, że wieś należy do uposażenia benedyktynów tynieckich. W Przebieczanach działał szyb solny należący do miechowskich Bożogrobców, a mieszkańcy warzyli sól. Wieliczka jest obok, ale sól była i tutaj.",
         "Rzecz, którą sama gmina nazywa unikatową: w kościele w Łazanach zachował się schowek na monstrancję wydrążony w pniu dębu, z tysiąc pięćset osiemdziesiątego szóstego roku. Kościół ufundowali w szesnastym wieku Jakub i Stanisław Lubomirscy, jest tam ich nagrobek z tysiąc sześćset dziewiętnastego roku i chrzcielnica z końca szesnastego wieku.",
         "Drewniany kościół świętych Apostołów Piotra i Pawła w Bodzanowie pochodzi z tysiąc siedemset sześćdziesiątego piątego roku i jest trzecią świątynią w tym miejscu. Kościół świętego Marcina w Biskupicach — murowany, gotycki, po tysiąc czterysta osiemdziesiątym roku, z kamiennym portalem z piętnastego wieku. A po całej gminie stoi ponad siedemdziesiąt kapliczek i krzyży przydrożnych.",
       ],

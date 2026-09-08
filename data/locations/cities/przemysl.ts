@@ -89,7 +89,7 @@ export const PRZEMYSL: CityContent = {
     },
     {
       id: "daleko",
-      heading: "Uczciwie o odległości",
+      heading: "Ile to naprawdę jest drogi — i co z tego wynika przy umawianiu",
       paragraphs: [
         "Przemyśl leży daleko od reszty regionu — do Rzeszowa jest stąd ponad godzina drogi, a do Krosna jeszcze dalej. Nie będę udawać, że wpadam tu po drodze, bo tędy żadna droga nie prowadzi.",
         "Znaczy to tyle: wyjazdy do Przemyśla planuję z wyprzedzeniem, a nie z dnia na dzień. Dojazd jest bezpłatny, tak jak wszędzie, ale termin ustalamy zwykle na kilka dni do przodu. Jeżeli zależy Wam na konkretnym dniu, powiedzcie od razu przy pierwszym telefonie.",

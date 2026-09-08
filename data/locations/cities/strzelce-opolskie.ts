@@ -46,7 +46,7 @@ import {
 export const STRZELCE_OPOLSKIE: CityContent = {
   slug: "strzelce-opolskie",
   h1: "Thermomix Strzelce Opolskie – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Strzelce Opolskie — prezentacja i cena",
+  seoTitle: "Thermomix Strzelce Opolskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Strzelcach Opolskich: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i cała gmina. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Strzelce Opolskie — prezentacja u Ciebie w kuchni",

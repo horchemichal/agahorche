@@ -42,7 +42,7 @@ import {
 export const DABROWA_GORNICZA: CityContent = {
   slug: "dabrowa-gornicza",
   h1: "Thermomix Dąbrowa Górnicza – prezentacja u Ciebie w domu",
-  seoTitle: "Przedstawiciel Thermomix Dąbrowa Górnicza — prezentacja i cena",
+  seoTitle: "Thermomix Dąbrowa Górnicza — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Dąbrowie Górniczej: bezpłatna prezentacja TM7 u Ciebie w kuchni, wszystkie dzielnice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Dąbrowa Górnicza — prezentacja u Ciebie w kuchni",

@@ -37,7 +37,7 @@ import {
 export const BIELSK_PODLASKI: CityContent = {
   slug: "bielsk-podlaski",
   h1: "Thermomix Bielsk Podlaski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Bielsk Podlaski — prezentacja i cena",
+  seoTitle: "Thermomix Bielsk Podlaski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Bielsku Podlaskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bielsk Podlaski — prezentacja u Ciebie w kuchni",

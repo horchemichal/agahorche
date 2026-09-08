@@ -41,7 +41,7 @@ import {
 export const JASTRZEBIE_ZDROJ: CityContent = {
   slug: "jastrzebie-zdroj",
   h1: "Thermomix Jastrzębie-Zdrój – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Jastrzębie-Zdrój — prezentacja i cena",
+  seoTitle: "Thermomix Jastrzębie-Zdrój — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Jastrzębiu-Zdroju: bezpłatna prezentacja TM7 u Ciebie w domu, wszystkie osiedla. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Jastrzębie-Zdrój — prezentacja u Ciebie w kuchni",

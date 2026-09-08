@@ -43,7 +43,7 @@ import {
 export const PIEKARY_SLASKIE: CityContent = {
   slug: "piekary-slaskie",
   h1: "Thermomix Piekary Śląskie – prezentacja u Ciebie w domu",
-  seoTitle: "Przedstawiciel Thermomix Piekary Śląskie — prezentacja i cena",
+  seoTitle: "Thermomix Piekary Śląskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Piekarach Śląskich: bezpłatna prezentacja TM7 u Ciebie w kuchni, wszystkie dzielnice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Piekary Śląskie — prezentacja u Ciebie w kuchni",

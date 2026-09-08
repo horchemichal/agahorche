@@ -39,7 +39,7 @@ import {
 export const TOMASZOW_MAZOWIECKI: CityContent = {
   slug: "tomaszow-mazowiecki",
   h1: "Thermomix Tomaszów Mazowiecki – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Tomaszów Mazowiecki — prezentacja i cena",
+  seoTitle: "Thermomix Tomaszów Mazowiecki — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Tomaszowie Mazowieckim: bezpłatna prezentacja TM7 u Ciebie w domu. Cena, raty 0%, terminy pod grafik rodziny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Tomaszów Mazowiecki — prezentacja u Ciebie w kuchni",

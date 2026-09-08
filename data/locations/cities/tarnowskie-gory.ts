@@ -41,7 +41,7 @@ import {
 export const TARNOWSKIE_GORY: CityContent = {
   slug: "tarnowskie-gory",
   h1: "Thermomix Tarnowskie Góry – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Tarnowskie Góry — prezentacja i cena",
+  seoTitle: "Thermomix Tarnowskie Góry — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Tarnowskich Górach: bezpłatna prezentacja TM7 u Ciebie w domu, wszystkie dzielnice i powiat. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Tarnowskie Góry — prezentacja u Ciebie w kuchni",

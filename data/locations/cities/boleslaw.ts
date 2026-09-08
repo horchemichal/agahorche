@@ -215,7 +215,7 @@ export const BOLESLAW: CityContent = {
   districtsParagraphs: [
     "Do wszystkich dwunastu sołectw i bez żadnej dopłaty za odległość: Bolesław, Hutki, Krążek, Krze, Krzykawa, Krzykawka, Laski, Małobądz, Międzygórze, Podlipie, Ujków Nowy i Ujków Nowy Kolonia.",
     "Warto od razu doprecyzować dwie pary nazw, bo mylą się nawet w internetowych spisach. Krzykawa i Krzykawka to dwie różne wsie — pomnik Francesco Nullo stoi w tej drugiej. Ujków Nowy i Ujków Nowy Kolonia to również dwa osobne sołectwa, a nie jedno pisane na dwa sposoby.",
-    "Gmina jest najmniejsza w powiecie: czterdzieści jeden kilometrów kwadratowych. Wszystko leży blisko siebie, więc dojazd między sołectwami zajmuje minuty. Do Olkusza mam stąd siedem kilometrów, do Bukowna jeszcze mniej.",
+    "Gmina jest najmniejsza w powiecie pod względem powierzchni: czterdzieści jeden kilometrów kwadratowych. Wszystko leży blisko siebie, więc dojazd między sołectwami zajmuje minuty. Do Olkusza mam stąd siedem kilometrów, do Bukowna jeszcze mniej.",
     "Dojazd: przez gminę przebiega droga krajowa numer dziewięćdziesiąt cztery, więc samochodem jest tu wygodnie. Kolei w gminie nie ma — najbliższe stacje to Bukowno i Olkusz. Jeśli dojazd pod dom jest trudny, powiedz o tym przy umawianiu, nie jest to problem, o ile wiem wcześniej.",
   ],
   districts: [

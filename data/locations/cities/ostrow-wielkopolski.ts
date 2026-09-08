@@ -36,7 +36,7 @@ import {
 export const OSTROW_WIELKOPOLSKI: CityContent = {
   slug: "ostrow-wielkopolski",
   h1: "Thermomix Ostrów Wielkopolski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Ostrów Wielkopolski — prezentacja i cena",
+  seoTitle: "Thermomix Ostrów Wielkopolski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Ostrowie Wielkopolskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ostrów Wielkopolski — prezentacja u Ciebie w kuchni",

@@ -82,7 +82,7 @@ export const RYBNIK: CityContent = {
     },
     {
       id: "zmiany",
-      heading: "Praca zmianowa i obiad, który ma poczekać",
+      heading: "Dom, w którym obiad czeka na kogoś wracającego ze zmiany",
       paragraphs: [
         "Rybnik leży w Rybnickim Okręgu Węglowym i praca zmianowa jest tu normą, a nie wyjątkiem. W wielu domach oznacza to trzy różne pory posiłku i osobę, która gotuje, choć sama zje dopiero za sześć godzin.",
         "Thermomix nadaje się do tego, bo nie wymaga obecności. Danie może powstać rano i czekać, a odgrzewanie na parze nie wysusza go tak, jak robi to mikrofalówka. Dla kogoś, kto wraca po nocce, różnica między odgrzanym a wysuszonym obiadem jest bardzo realna.",

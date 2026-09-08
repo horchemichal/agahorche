@@ -37,7 +37,7 @@ import {
 export const RUDNIK_NAD_SANEM: CityContent = {
   slug: "rudnik-nad-sanem",
   h1: "Thermomix Rudnik nad Sanem – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Rudnik nad Sanem — prezentacja i cena",
+  seoTitle: "Thermomix Rudnik nad Sanem — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Rudniku nad Sanem: bezpłatna prezentacja TM7 u Ciebie w domu. Cena, raty 0%, elastyczne terminy. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Rudnik nad Sanem — prezentacja u Ciebie w kuchni",

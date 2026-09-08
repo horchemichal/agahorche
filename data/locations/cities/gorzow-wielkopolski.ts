@@ -38,7 +38,7 @@ import {
 export const GORZOW_WIELKOPOLSKI: CityContent = {
   slug: "gorzow-wielkopolski",
   h1: "Thermomix Gorzów Wielkopolski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Gorzów Wielkopolski — prezentacja i cena",
+  seoTitle: "Thermomix Gorzów Wielkopolski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Gorzowie Wielkopolskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Gorzów Wielkopolski — prezentacja u Ciebie w kuchni",

@@ -45,7 +45,7 @@ import {
 export const SKARZYSKO_KAMIENNA: CityContent = {
   slug: "skarzysko-kamienna",
   h1: "Thermomix Skarżysko-Kamienna – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Skarżysko-Kamienna — prezentacja i cena",
+  seoTitle: "Thermomix Skarżysko-Kamienna — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Skarżysku-Kamiennej: bezpłatna prezentacja TM7 u Ciebie w domu, także rano i w środku dnia. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Skarżysko-Kamienna — prezentacja u Ciebie w kuchni",

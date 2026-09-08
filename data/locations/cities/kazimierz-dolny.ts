@@ -43,7 +43,7 @@ import {
 export const KAZIMIERZ_DOLNY: CityContent = {
   slug: "kazimierz-dolny",
   h1: "Thermomix Kazimierz Dolny – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Kazimierz Dolny — prezentacja i cena",
+  seoTitle: "Thermomix Kazimierz Dolny — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Kazimierzu Dolnym: bezpłatna prezentacja TM7 u Ciebie w domu, terminy w tygodniu. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kazimierz Dolny — prezentacja u Ciebie w kuchni",

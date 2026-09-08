@@ -161,7 +161,7 @@ export const BUKOWNO: CityContent = {
     },
     {
       id: "jedna-osoba",
-      heading: "Czy Thermomix ma sens, gdy gotuje się dla jednej lub dwóch osób?",
+      heading: "Dwie osoby przy stole — czy taki sprzęt się wtedy broni?",
       paragraphs: [
         "To jest najczęstsze pytanie, jakie słyszę w Bukownie, i jest całkowicie uczciwe. Odpowiadam na nie na początku, a nie na końcu rozmowy, bo od niego zależy, czy w ogóle warto rozmawiać dalej.",
         "Odpowiedź brzmi: ma, ale z innego powodu niż w domu z czwórką dzieci. Tam chodzi o ilość i o czas. Tutaj o to, żeby w ogóle chciało się ugotować — bo gotowanie dla jednej osoby przegrywa najczęściej nie z brakiem umiejętności, tylko z rachunkiem: pół godziny przy garnku i zlew pełen naczyń dla jednego talerza.",
@@ -195,7 +195,7 @@ export const BUKOWNO: CityContent = {
     sekcjaRaty(),
     {
       id: "rodzina",
-      heading: "Kiedy dzieci są dorosłe, a gotuje się nadal dla wszystkich",
+      heading: "Dorosłe dzieci przyjeżdżają na obiad — i kuchnia znów pracuje na pełnych obrotach",
       paragraphs: [
         "W Bukownie często trafiam do domów, w których na co dzień mieszkają dwie osoby, ale w niedzielę albo w święta zjeżdża się cała rodzina — dzieci z Krakowa, z Katowic, czasem z dalszych stron. To dwa zupełnie różne tryby gotowania w jednej kuchni.",
         "W tygodniu chodzi o to, żeby ugotować mało i bez wysiłku. W weekend odwrotnie: nagle trzeba obiad dla ośmiu osób, ciasto i coś, co da się przygotować dzień wcześniej. Praktyczne bywa to, że oba tryby wychodzą tym samym urządzeniem i tym samym naczyniem.",

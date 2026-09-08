@@ -43,7 +43,7 @@ import {
 export const WODZISLAW_SLASKI: CityContent = {
   slug: "wodzislaw-slaski",
   h1: "Thermomix Wodzisław Śląski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Wodzisław Śląski — prezentacja i cena",
+  seoTitle: "Thermomix Wodzisław Śląski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Wodzisławiu Śląskim: bezpłatna prezentacja TM7 u Ciebie w domu, cały powiat. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Wodzisław Śląski — prezentacja u Ciebie w kuchni",

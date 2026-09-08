@@ -37,7 +37,7 @@ import {
 export const ZABKOWICE_SLASKIE: CityContent = {
   slug: "zabkowice-slaskie",
   h1: "Thermomix Ząbkowice Śląskie – prezentacja u Ciebie w kuchni",
-  seoTitle: "Przedstawiciel Thermomix Ząbkowice Śląskie — prezentacja i cena",
+  seoTitle: "Thermomix Ząbkowice Śląskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Ząbkowicach Śląskich: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i cała gmina. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ząbkowice Śląskie — prezentacja u Ciebie w kuchni",
