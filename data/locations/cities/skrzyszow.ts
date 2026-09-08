@@ -44,7 +44,8 @@ import {
  *   Pogórska Wola 20,8 km², Łękawica 15,8 km², Ładna 13,3 km²,
  *   Skrzyszów 13,1 km². Gmina podaje własną powierzchnię 86,2 km²,
  * — ⭐ KOŚCIÓŁ ŚW. STANISŁAWA BISKUPA W SKRZYSZOWIE: ROK BUDOWY 1517,
- *   FUNDACJA JANA AMORA TARNOWSKIEGO, hetmana wielkiego koronnego;
+ *   FUNDACJA JANA AMORA TARNOWSKIEGO, PÓŹNIEJSZEGO hetmana
+ *   wielkiego koronnego (buławę dostał dopiero w 1527 r.);
  *   budowniczy CIEŚLA JAN Z CZCHOWA. Styl późnogotycki, konstrukcja
  *   zrębowa; opisywany jako NAJWIĘKSZY DREWNIANY KOŚCIÓŁ PÓŹNOGOTYCKI
  *   KONSTRUKCJI ZRĘBOWEJ W MAŁOPOLSCE. NALEŻY DO SZLAKU ARCHITEKTURY
@@ -178,7 +179,7 @@ export const SKRZYSZOW: CityContent = {
         "Gaz-System zbudował tam węzeł przesyłowy i centrum zarządzania gazem: laboratorium pomiaru jakości gazu, węzeł nowych gazociągów, siedzibę pogotowia gazowego. Przez tarnowski oddział przechodzi około czterdziestu procent gazu w Polsce, a węzeł spina trzy kierunki naraz — Baltic Pipe, terminal skroplonego gazu w Świnoujściu oraz połączenia ze Słowacją i Ukrainą.",
         "Stąd wychodzi też gazociąg Pogórska Wola–Tworzeń: rura o średnicy metra, długa na sto sześćdziesiąt osiem kilometrów, oddawana do użytku w latach dwa tysiące dwadzieścia jeden i dwa tysiące dwadzieścia dwa, dofinansowana przez Unię kwotą ponad sześciuset milionów złotych jako element Korytarza Północ–Południe.",
         "Gmina ma z tego wymierny pożytek: pod względem dochodów podatkowych na mieszkańca zajmuje trzecie miejsce w subregionie tarnowskim, z kwotą powyżej dwóch tysięcy złotych na osobę. Przy drodze krajowej dziewięćdziesiąt cztery, którą w okolicy nazywa się starą czwórką, wyrastają hale magazynowe, farma fotowoltaiczna i zakład produkujący domy modułowe.",
-        "Ale najstarsza rzecz w tej gminie jest z drewna. W Skrzyszowie stoi kościół świętego Stanisława Biskupa, zbudowany w tysiąc pięćset siedemnastym roku z fundacji Jana Amora Tarnowskiego, hetmana wielkiego koronnego, przez cieślę Jana z Czchowa. Późnogotycki, w konstrukcji zrębowej — i opisywany jako największa taka świątynia w Małopolsce. W środku zachowały się gotyckie stalle z piętnastego wieku i późnogotycki krucyfiks na belce tęczowej. Kościół należy do Szlaku Architektury Drewnianej; od razu sprostuję, bo bywa mylony — na liście UNESCO go nie ma, ta obejmuje sześć innych drewnianych kościołów Małopolski.",
+        "Ale najstarsza rzecz w tej gminie jest z drewna. W Skrzyszowie stoi kościół świętego Stanisława Biskupa, zbudowany w tysiąc pięćset siedemnastym roku z fundacji Jana Amora Tarnowskiego, późniejszego hetmana wielkiego koronnego, przez cieślę Jana z Czchowa. Późnogotycki, w konstrukcji zrębowej — i opisywany jako największa taka świątynia w Małopolsce. W środku zachowały się gotyckie stalle z piętnastego wieku i późnogotycki krucyfiks na belce tęczowej. Kościół należy do Szlaku Architektury Drewnianej; od razu sprostuję, bo bywa mylony — na liście UNESCO go nie ma, ta obejmuje sześć innych drewnianych kościołów Małopolski.",
         "Historia gminy jest zresztą nierówna w sposób, który trudno spotkać gdzie indziej. Skrzyszów pojawia się w dokumentach w tysiąc trzysta dwudziestym siódmym roku, Szynwałd w tysiąc trzysta czterdziestym czwartym — nazwę wziął z niemieckiego Schönwald, czyli piękny las, a należał kolejno do Tarnowskich, Ostrogskich, Zamojskich, Koniecpolskich i Sanguszków, aż do tysiąc dziewięćset czterdziestego piątego. Ładna natomiast powstała dopiero w tysiąc dziewięćset czterdziestym dziewiątym. Sześćset lat różnicy między najstarszą a najmłodszą wsią jednej gminy.",
       ],
     },

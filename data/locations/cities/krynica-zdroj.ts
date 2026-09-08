@@ -191,7 +191,7 @@ export const KRYNICA_ZDROJ: CityContent = {
   districtsHeading: "Gdzie w gminie Krynica-Zdrój dojeżdżam?",
   districtsParagraphs: [
     "Do całego miasta i do wszystkich ośmiu sołectw, bez żadnej dopłaty za odległość. Gmina zajmuje sto czterdzieści pięć kilometrów kwadratowych i liczy ponad piętnaście tysięcy mieszkańców.",
-    "Sołectwa to: Berest, Czyrna, Mochnaczka Niżna, Mochnaczka Wyżna, Muszynka, Piorunka, Polany i Tylicz. Warto wiedzieć, że w Tyliczu od tysiąc dziewięćset dziewięćdziesiątego drugiego roku działa zakład butelkujący wodę z odwiertów o głębokości stu trzydziestu siedmiu metrów — to jeden z większych pracodawców gminy.",
+    "Sołectwa to: Berest, Czyrna, Mochnaczka Niżna, Mochnaczka Wyżna, Muszynka, Piorunka, Polany i Tylicz. Warto wiedzieć, że w Tyliczu od tysiąc dziewięćset dziewięćdziesiątego drugiego roku działa zakład butelkujący wodę z odwiertów o głębokości od pięćdziesięciu do stu trzydziestu siedmiu metrów — to jeden z większych pracodawców gminy.",
     "W samym mieście najciekawsze rzeczy stoją blisko siebie: deptak, pijalnie, Muzeum Nikifora w willi Romanówka i pomnik profesora Dietla z tysiąc dziewięćsetnego roku. Na Górę Parkową jeździ od tysiąc dziewięćset trzydziestego siódmego roku najstarsza w Polsce kolej linowo-terenowa, a od tysiąc dziewięćset dziewięćdziesiątego siódmego działa kolej gondolowa na Jaworzynę Krynicką — dwa i dwie dziesiąte kilometra w siedem minut.",
     "Dojazd: stacja kolejowa w mieście leży na linii z Muszyny, odgałęzieniu od głównej trasy z Tarnowa do Leluchowa. Samochodem prowadzi tu droga krajowa od Nowego Sącza, która kończy się na przejściu granicznym w Muszynce — a Muszynka, mimo nazwy, jest sołectwem tej gminy, nie Muszyny.",
   ],

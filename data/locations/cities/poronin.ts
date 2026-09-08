@@ -149,7 +149,7 @@ export const PORONIN: CityContent = {
       heading: "Muzeum urządzone w niewłaściwym domu",
       paragraphs: [
         "W tysiąc dziewięćset czterdziestym siódmym roku otwarto w Poroninie muzeum Lenina. Powód był prosty: Lenin spędził tu dwa sezony przed pierwszą wojną, w tysiąc dziewięćset trzynastym i czternastym. Urządzono je w domu Pawła Guta-Mostowego i przez lata zwożono tam wycieczki z całej Polski i z zagranicy.",
-        "Był jeden problem: Lenin w tym domu nie mieszkał. Nie mieszkał zresztą w Poroninie w ogóle — wynajmował dom Teresy Skupień w sąsiednim Białym Dunajcu, a do Poronina chodził po pocztę i gazety. Muzeum powstało na podstawie błędnej informacji.",
+        "Był jeden problem: Lenin w tym domu nie mieszkał. Nie mieszkał zresztą w Poroninie w ogóle — wynajmował dom Teresy Skupień w sąsiednim Białym Dunajcu, a do Poronina chodził po pocztę i gazety. Muzeum urządzono w Poroninie, bo taki adres pocztowy Lenin podawał.",
         "Kiedy pomyłkę sprostowano, muzeum nie przeniesiono. Budynek przebudowano w tysiąc dziewięćset czterdziestym dziewiątym i otwarto ponownie w styczniu pięćdziesiątego, a tego samego dnia uruchomiono filię w Białym Dunajcu — tam, gdzie Lenin faktycznie mieszkał. W lipcu tego samego roku dobudowano duży gmach, a przed nim stanął pomnik z brązu, dar robotników Leningradu, dwa i pół metra wysokości.",
         "Historia ma jeszcze dwa epizody, które warto znać. W tysiąc dziewięćset siedemdziesiątym podziemna organizacja „Ruch” planowała podpalić muzeum i wysadzić pomnik; służba bezpieczeństwa aresztowała dwadzieścia cztery osoby dzień przed planowaną akcją. Przy okazji rekonesansu wyszło na jaw, że w piwnicy muzeum jeden z pracowników handlował wódką.",
         "Muzeum zlikwidowano w tysiąc dziewięćset dziewięćdziesiątym. Pomnik pojechał w maju dziewięćdziesiątego dziewiątego do Kozłówki na Lubelszczyźnie, do plenerowej galerii sztuki socrealizmu, gdzie stoi do dziś. W budynku po muzeum mieści się Gminny Ośrodek Kultury.",
@@ -253,7 +253,7 @@ export const PORONIN: CityContent = {
     {
       question: "Czy Lenin mieszkał w Poroninie?",
       answer:
-        "Nie — mieszkał w sąsiednim Białym Dunajcu, a do Poronina chodził po pocztę. Muzeum urządzono jednak w Poroninie, w tysiąc dziewięćset czterdziestym siódmym roku, na podstawie błędnej informacji. Zlikwidowano je w dziewięćdziesiątym, a w budynku działa dziś Gminny Ośrodek Kultury. Pomnik stoi od dwudziestu kilku lat w Kozłówce na Lubelszczyźnie.",
+        "Nie — mieszkał w sąsiednim Białym Dunajcu, a do Poronina chodził po pocztę. Muzeum urządzono jednak w Poroninie, w tysiąc dziewięćset czterdziestym siódmym roku — bo taki adres pocztowy Lenin podawał. Zlikwidowano je w dziewięćdziesiątym, a w budynku działa dziś Gminny Ośrodek Kultury. Pomnik stoi od dwudziestu kilku lat w Kozłówce na Lubelszczyźnie.",
     },
     {
       question: "Prowadzę pokoje gościnne. Czy to się nada do śniadań dla gości?",

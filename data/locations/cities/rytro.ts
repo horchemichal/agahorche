@@ -120,7 +120,7 @@ export const RYTRO: CityContent = {
       id: "na-zywo",
       heading: "Zamek, który pobierał cło od Węgrów",
       paragraphs: [
-        "Rytro jest najmniejszą gminą w całej dolinie Popradu: trzy tysiące sześćset mieszkańców na czterdziestu dwóch kilometrach kwadratowych. Jest też jedyną wiejską i jedyną, która nigdy nie żyła z wód mineralnych. Za to siedemdziesiąt dwa procent jej powierzchni to las — najwięcej w okolicy — a cała leży w Popradzkim Parku Krajobrazowym.",
+        "Rytro jest najmniejszą gminą w całej dolinie Popradu: trzy tysiące sześćset mieszkańców na czterdziestu dwóch kilometrach kwadratowych. Jest też jedyną wiejską i jedyną, która nigdy nie żyła z wód mineralnych. Za to siedemdziesiąt dwa procent jej powierzchni to las — jedna z najwyższych lesistości w Polsce — a praktycznie cała leży w Popradzkim Parku Krajobrazowym.",
         "Nad wsią stoją ruiny zamku i to jest właściwa historia tego miejsca. Warownię wzmiankuje już dokument świętej Kingi z tysiąc dwieście siedemdziesiątego dziewiątego roku, ale najstarszy pewny zapis pochodzi z siedemnastego kwietnia tysiąc trzysta dwunastego. Władysław Łokietek nadał wtedy przywilej celny na rzecz starosądeckich klarysek, a zamek nazwano w nim castrum Ritter.",
         "Funkcja była podwójna: strażnica i komora celna. Przez przełom Popradu biegł szlak handlowy z Polski na Węgry i wszystko, co nim jechało, płaciło tutaj. Zamek stał w miejscu, którego nie dało się ominąć — dolina jest w tym punkcie wąska i stroma.",
         "Tędy jeździli też królowie. W tysiąc trzysta sześćdziesiątym dziewiątym Kazimierz Wielki, w tysiąc trzysta osiemdziesiątym piątym Jadwiga z Jagiełłą, później jeszcze dwukrotnie w piętnastym wieku. Rytro nie było celem żadnej z tych podróży — było punktem, przez który trzeba było przejechać.",
@@ -185,7 +185,7 @@ export const RYTRO: CityContent = {
   districtsParagraphs: [
     "Do całej gminy — do Rytra, Suchej Strugi, Roztoki Ryterskiej i Obłazów Ryterskich — bez żadnej dopłaty za odległość. Gmina liczy trzy tysiące sześćset mieszkańców na czterdziestu dwóch kilometrach kwadratowych i jest najmniejsza w całej dolinie Popradu.",
     "Z liczbą sołectw jest tu drobne zamieszanie: statystyka publiczna wymienia cztery miejscowości, a biuletyn informacji publicznej gminy prowadzi osobną stronę sołectwa Życzanów. Nie umiem tego rozstrzygnąć, więc podaję nazwy, a nie liczbę.",
-    "Siedemdziesiąt dwa procent powierzchni to lasy — najwięcej w okolicy — a cała gmina leży w Popradzkim Parku Krajobrazowym, utworzonym w tysiąc dziewięćset osiemdziesiątym siódmym roku. W parku jest trzynaście rezerwatów leśnych; największy, Baniska na północnych stokach Radziejowej, ma prawie sto czterdzieści dwa hektary, a drugi co do wielkości Las Lipowy Obrożyska pod Muszyną — sto. Nad wsią stoją ruiny średniowiecznego zamku, a zimą działa stacja narciarska.",
+    "Siedemdziesiąt dwa procent powierzchni to lasy — jedna z najwyższych lesistości w Polsce — a praktycznie cała gmina leży w Popradzkim Parku Krajobrazowym, utworzonym w tysiąc dziewięćset osiemdziesiątym siódmym roku. W parku jest trzynaście rezerwatów leśnych; największy, Baniska na północnych stokach Radziejowej, ma prawie sto czterdzieści dwa hektary, a drugi co do wielkości Las Lipowy Obrożyska pod Muszyną — sto. Nad wsią stoją ruiny średniowiecznego zamku, a zimą działa stacja narciarska.",
     "Dojazd: przez gminę biegnie linia kolejowa z Tarnowa do Leluchowa i droga krajowa z Nowego Sącza do Piwnicznej. Do Starego Sącza jest stąd kilkanaście kilometrów.",
   ],
   districts: [

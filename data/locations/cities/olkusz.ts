@@ -234,7 +234,7 @@ export const OLKUSZ: CityContent = {
       "Olkuska rzecz, o której warto wiedzieć, nazywa się cebulorz. To drożdżowy placek z cebulą i kminkiem, pieczony dawniej w piecu chlebowym zaraz po wyjęciu chleba, kiedy piec jeszcze trzymał ciepło. Jadło się go na ciepło albo na zimno, ze śmietaną, z twarogiem, albo zamiast chleba do żuru i barszczu.",
       "Uczciwie: cebulorz nie jest wpisany na ministerialną Listę Produktów Tradycyjnych — żadna z gmin powiatu olkuskiego nie ma na niej swojego produktu. To tradycja opisana lokalnie, nie zarejestrowana. Piszę o tym, bo lubię, gdy rzeczy są nazwane dokładnie, a nie awansowane na potrzeby ładniejszego zdania.",
       "Ciasto drożdżowe to zresztą dobry przykład tego, co Thermomix realnie zmienia. Wyrabianie przestaje być kwestią siły w rękach i czasu, a wyrastanie da się prowadzić w tym samym naczyniu. Nie zastąpi to wyczucia, ile cebuli i jak drobno — to zostaje po stronie osoby, która piecze.",
-      "I jeszcze jedno, czego nie ma nigdzie indziej w Małopolsce: w Olkuszu robi się naczynia. Fabryka emalii działa od tysiąc dziewięćset siódmego roku i jej wyroby stają na festiwalach smaku obok jedzenia, a nie obok sprzętu. W mieście, które produkuje garnki, rozmowa o kuchni zaczyna się od innego miejsca — i to jest wygodne dla nas obu.",
+      "I jeszcze jedno, czego nie ma nigdzie indziej w Małopolsce: w Olkuszu robi się naczynia. Fabryka emalii działa nieprzerwanie od tysiąc dziewięćset siódmego roku — założył ją Peter Westen, a dziś prowadzi rodzina Cader. W mieście, które produkuje garnki, rozmowa o kuchni zaczyna się od innego miejsca — i to jest wygodne dla nas obu.",
     ],
   },
 

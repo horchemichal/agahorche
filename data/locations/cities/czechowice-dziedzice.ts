@@ -86,7 +86,7 @@ export const CZECHOWICE_DZIEDZICE: CityContent = {
       id: "dwa-miasta",
       heading: "Dwa miasta w jednej nazwie",
       paragraphs: [
-        "Czechowice i Dziedzice połączono w jedno w 1950 roku i do dziś są to dwa różne miejsca w jednych granicach: kolej i przemysł po jednej stronie, tereny nadwiślańskie ze stawami po drugiej. Sołectwa takie jak Zabrzeg czy Ligota wciąż mają swój charakter.",
+        "Czechowice i Dziedzice połączono w jedno pierwszego stycznia 1951 roku, a wspólną nazwę miasto nosi od 1958 i do dziś są to dwa różne miejsca w jednych granicach: kolej i przemysł po jednej stronie, tereny nadwiślańskie ze stawami po drugiej. Sołectwa takie jak Zabrzeg czy Ligota wciąż mają swój charakter.",
         "Praktycznie oznacza to dla mnie tyle, że przy umawianiu proszę o nazwę dzielnicy albo sołectwa. Wpływa to na porę spotkania, którą mogę zaproponować — na cenę nie wpływa nigdy.",
       ],
     },

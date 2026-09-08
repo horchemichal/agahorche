@@ -139,7 +139,7 @@ export const CIEZKOWICE: CityContent = {
       id: "na-zywo",
       heading: "Dom Paderewskiego stoi w tej gminie",
       paragraphs: [
-        "W Kąśnej Dolnej stoi dwór, który Ignacy Jan Paderewski kupił w tysiąc osiemset dziewięćdziesiątym siódmym roku i w którym mieszkał przez sześć lat, do tysiąc dziewięćset trzeciego. Sprzedał go potem, zniechęcony sporami o zarząd majątkiem i stratami, jakie przynosił.",
+        "W Kąśnej Dolnej stoi dwór, który Ignacy Jan Paderewski kupił w tysiąc osiemset dziewięćdziesiątym siódmym roku i był jego właścicielem przez sześć lat, do tysiąc dziewięćset trzeciego — przyjeżdżał tu na lato. Sprzedał go potem, zniechęcony sporami o zarząd majątkiem i stratami, jakie przynosił.",
         "I to jest jedyny zachowany dom Paderewskiego na świecie. Jego szwajcarską rezydencję Riond Bosson nad Jeziorem Genewskim, kupioną dwa lata po Kąśnej, wyburzono w tysiąc dziewięćset sześćdziesiątym piątym przy budowie drogi. Centrum Paderewskiego, które opiekuje się dworem, określa go jako jedyne autentyczne, zachowane w niezmienionej formie miejsce spośród wszystkich rezydencji pianisty i premiera.",
         "Przetrwał zresztą o włos. Po wojnie majątek rozparcelowano, a dwór popadł w ruinę. Dopiero od tysiąc dziewięćset siedemdziesiątego szóstego roku Towarzystwo Muzyczne w Tarnowie zaczęło go ratować. Pierwszy koncert zabrzmiał tu w tysiąc dziewięćset osiemdziesiątym trzecim, rok później pierwszy recital.",
         "Dziś dwór znów gra przez cały rok. Od tysiąc dziewięćset dziewięćdziesiątego szóstego odbywa się tu festiwal Bravo Maestro poświęcony muzyce kameralnej, do tego Tydzień Talentów i Viva Polonia.",
