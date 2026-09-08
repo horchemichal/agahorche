@@ -423,6 +423,10 @@ import { PLONSK } from "./plonsk";
 import { KOLO } from "./kolo";
 import { SRODA_WIELKOPOLSKA } from "./sroda-wielkopolska";
 import { GOLENIOW } from "./goleniow";
+import { WIELICZKA } from "./wieliczka";
+import { SKAWINA } from "./skawina";
+import { WIELUN } from "./wielun";
+import { SWIEBODZIN } from "./swiebodzin";
 
 
 /**
@@ -912,4 +916,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KOLO,
   SRODA_WIELKOPOLSKA,
   GOLENIOW,
+
+  // ——— Fala miast 20-24 tys. (research: podagenci, źródła w notatce) ———
+  WIELICZKA,
+  SKAWINA,
+  WIELUN,
+  SWIEBODZIN,
 ];
