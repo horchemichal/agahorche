@@ -438,6 +438,9 @@ import { JOZEFOW_MAZOWIECKI } from "./jozefow-mazowiecki";
 import { RAWICZ } from "./rawicz";
 import { GRYFINO } from "./gryfino";
 import { GRAJEWO } from "./grajewo";
+import { HRUBIESZOW } from "./hrubieszow";
+import { DEBLIN } from "./deblin";
+import { RADZYN_PODLASKI } from "./radzyn-podlaski";
 
 
 /**
@@ -944,4 +947,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RAWICZ,
   GRYFINO,
   GRAJEWO,
+  HRUBIESZOW,
+  DEBLIN,
+  RADZYN_PODLASKI,
 ];
