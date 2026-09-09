@@ -31,7 +31,7 @@ import {
  *   granicznym, pełniący funkcję komory celnej,
  * — 1356 — prawa miejskie magdeburskie,
  * — 1391 — WŁADYSŁAW JAGIEŁŁO NADAJE MUSZYNĘ BISKUPOM KRAKOWSKIM →
- *   początek „PAŃSTWA MUSZYŃSKIEGO” / kluczа muszyńskiego,
+ *   początek „PAŃSTWA MUSZYŃSKIEGO” / klucza muszyńskiego,
  * — 1391–1781 — ODRĘBNY ORGANIZM Z WŁASNYM WOJSKIEM („DRAGONIA
  *   BISKUPIA”), SĄDEM KRYMINALNYM I ADMINISTRACJĄ.
  *   1781 — PRZEJĘCIE PRZEZ AUSTRIACKI SKARB CESARSKI,

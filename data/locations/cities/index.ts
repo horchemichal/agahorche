@@ -451,6 +451,8 @@ import { OPOLE_LUBELSKIE } from "./opole-lubelskie";
 import { BELZYCE } from "./belzyce";
 import { BYCHAWA } from "./bychawa";
 import { ZWIERZYNIEC } from "./zwierzyniec";
+import { REJOWIEC_FABRYCZNY } from "./rejowiec-fabryczny";
+import { KRASNOBROD } from "./krasnobrod";
 
 
 /**
@@ -970,4 +972,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BELZYCE,
   BYCHAWA,
   ZWIERZYNIEC,
+  REJOWIEC_FABRYCZNY,
+  KRASNOBROD,
 ];
