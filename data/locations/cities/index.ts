@@ -429,6 +429,7 @@ import { NOWA_RUDA } from "./nowa-ruda";
 import { LUBAN } from "./luban";
 import { ALEKSANDROW_LODZKI } from "./aleksandrow-lodzki";
 import { LUBARTOW } from "./lubartow";
+import { MRAGOWO } from "./mragowo";
 
 
 /**
@@ -926,4 +927,5 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LUBAN,
   ALEKSANDROW_LODZKI,
   LUBARTOW,
+  MRAGOWO,
 ];
