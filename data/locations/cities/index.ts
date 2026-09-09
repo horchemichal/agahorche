@@ -449,6 +449,8 @@ import { RYKI } from "./ryki";
 import { PARCZEW } from "./parczew";
 import { OPOLE_LUBELSKIE } from "./opole-lubelskie";
 import { BELZYCE } from "./belzyce";
+import { BYCHAWA } from "./bychawa";
+import { ZWIERZYNIEC } from "./zwierzyniec";
 
 
 /**
@@ -966,4 +968,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PARCZEW,
   OPOLE_LUBELSKIE,
   BELZYCE,
+  BYCHAWA,
+  ZWIERZYNIEC,
 ];
