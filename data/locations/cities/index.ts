@@ -432,6 +432,9 @@ import { LUBARTOW } from "./lubartow";
 import { MRAGOWO } from "./mragowo";
 import { DZIALDOWO } from "./dzialdowo";
 import { ZAMBROW } from "./zambrow";
+import { HAJNOWKA } from "./hajnowka";
+import { SULEJOWEK } from "./sulejowek";
+import { JOZEFOW_MAZOWIECKI } from "./jozefow-mazowiecki";
 
 
 /**
@@ -932,4 +935,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   MRAGOWO,
   DZIALDOWO,
   ZAMBROW,
+  HAJNOWKA,
+  SULEJOWEK,
+  JOZEFOW_MAZOWIECKI,
 ];
