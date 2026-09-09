@@ -441,6 +441,9 @@ import { GRAJEWO } from "./grajewo";
 import { HRUBIESZOW } from "./hrubieszow";
 import { DEBLIN } from "./deblin";
 import { RADZYN_PODLASKI } from "./radzyn-podlaski";
+import { TOMASZOW_LUBELSKI } from "./tomaszow-lubelski";
+import { JANOW_LUBELSKI } from "./janow-lubelski";
+import { MIEDZYRZEC_PODLASKI } from "./miedzyrzec-podlaski";
 
 
 /**
@@ -950,4 +953,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   HRUBIESZOW,
   DEBLIN,
   RADZYN_PODLASKI,
+  TOMASZOW_LUBELSKI,
+  JANOW_LUBELSKI,
+  MIEDZYRZEC_PODLASKI,
 ];
