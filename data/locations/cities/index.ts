@@ -444,6 +444,9 @@ import { RADZYN_PODLASKI } from "./radzyn-podlaski";
 import { TOMASZOW_LUBELSKI } from "./tomaszow-lubelski";
 import { JANOW_LUBELSKI } from "./janow-lubelski";
 import { MIEDZYRZEC_PODLASKI } from "./miedzyrzec-podlaski";
+import { PONIATOWA } from "./poniatowa";
+import { RYKI } from "./ryki";
+import { PARCZEW } from "./parczew";
 
 
 /**
@@ -956,4 +959,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TOMASZOW_LUBELSKI,
   JANOW_LUBELSKI,
   MIEDZYRZEC_PODLASKI,
+  PONIATOWA,
+  RYKI,
+  PARCZEW,
 ];
