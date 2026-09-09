@@ -435,6 +435,9 @@ import { ZAMBROW } from "./zambrow";
 import { HAJNOWKA } from "./hajnowka";
 import { SULEJOWEK } from "./sulejowek";
 import { JOZEFOW_MAZOWIECKI } from "./jozefow-mazowiecki";
+import { RAWICZ } from "./rawicz";
+import { GRYFINO } from "./gryfino";
+import { GRAJEWO } from "./grajewo";
 
 
 /**
@@ -938,4 +941,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   HAJNOWKA,
   SULEJOWEK,
   JOZEFOW_MAZOWIECKI,
+  RAWICZ,
+  GRYFINO,
+  GRAJEWO,
 ];
