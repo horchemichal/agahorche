@@ -430,6 +430,7 @@ import { LUBAN } from "./luban";
 import { ALEKSANDROW_LODZKI } from "./aleksandrow-lodzki";
 import { LUBARTOW } from "./lubartow";
 import { MRAGOWO } from "./mragowo";
+import { DZIALDOWO } from "./dzialdowo";
 
 
 /**
@@ -928,4 +929,5 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ALEKSANDROW_LODZKI,
   LUBARTOW,
   MRAGOWO,
+  DZIALDOWO,
 ];
