@@ -447,6 +447,8 @@ import { MIEDZYRZEC_PODLASKI } from "./miedzyrzec-podlaski";
 import { PONIATOWA } from "./poniatowa";
 import { RYKI } from "./ryki";
 import { PARCZEW } from "./parczew";
+import { OPOLE_LUBELSKIE } from "./opole-lubelskie";
+import { BELZYCE } from "./belzyce";
 
 
 /**
@@ -962,4 +964,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PONIATOWA,
   RYKI,
   PARCZEW,
+  OPOLE_LUBELSKIE,
+  BELZYCE,
 ];
