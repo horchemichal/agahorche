@@ -457,6 +457,8 @@ import { TARNOGROD } from "./tarnogrod";
 import { ANNOPOL } from "./annopol";
 import { PIASKI } from "./piaski";
 import { STOCZEK_LUKOWSKI } from "./stoczek-lukowski";
+import { OSTROW_LUBELSKI } from "./ostrow-lubelski";
+import { URZEDOW } from "./urzedow";
 
 
 /**
@@ -982,4 +984,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ANNOPOL,
   PIASKI,
   STOCZEK_LUKOWSKI,
+  OSTROW_LUBELSKI,
+  URZEDOW,
 ];
