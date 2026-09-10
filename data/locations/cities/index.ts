@@ -470,6 +470,8 @@ import { NOWA_SARZYNA } from "./nowa-sarzyna";
 import { DYNOW } from "./dynow";
 import { RADYMNO } from "./radymno";
 import { ZAGORZ } from "./zagorz";
+import { PILZNO } from "./pilzno";
+import { OLESZYCE } from "./oleszyce";
 
 
 /**
@@ -1008,4 +1010,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   DYNOW,
   RADYMNO,
   ZAGORZ,
+  PILZNO,
+  OLESZYCE,
 ];
