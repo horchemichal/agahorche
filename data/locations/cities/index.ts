@@ -465,6 +465,11 @@ import { NALECZOW } from "./naleczow";
 import { FRAMPOL } from "./frampol";
 import { MODLIBORZYCE } from "./modliborzyce";
 import { JOZEFOW } from "./jozefow";
+import { SEDZISZOW_MALOPOLSKI } from "./sedziszow-malopolski";
+import { NOWA_SARZYNA } from "./nowa-sarzyna";
+import { DYNOW } from "./dynow";
+import { RADYMNO } from "./radymno";
+import { ZAGORZ } from "./zagorz";
 
 
 /**
@@ -998,4 +1003,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   FRAMPOL,
   MODLIBORZYCE,
   JOZEFOW,
+  SEDZISZOW_MALOPOLSKI,
+  NOWA_SARZYNA,
+  DYNOW,
+  RADYMNO,
+  ZAGORZ,
 ];
