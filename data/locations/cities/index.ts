@@ -453,6 +453,8 @@ import { BYCHAWA } from "./bychawa";
 import { ZWIERZYNIEC } from "./zwierzyniec";
 import { REJOWIEC_FABRYCZNY } from "./rejowiec-fabryczny";
 import { KRASNOBROD } from "./krasnobrod";
+import { TARNOGROD } from "./tarnogrod";
+import { ANNOPOL } from "./annopol";
 
 
 /**
@@ -974,4 +976,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZWIERZYNIEC,
   REJOWIEC_FABRYCZNY,
   KRASNOBROD,
+  TARNOGROD,
+  ANNOPOL,
 ];
