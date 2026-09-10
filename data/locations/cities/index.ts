@@ -455,6 +455,8 @@ import { REJOWIEC_FABRYCZNY } from "./rejowiec-fabryczny";
 import { KRASNOBROD } from "./krasnobrod";
 import { TARNOGROD } from "./tarnogrod";
 import { ANNOPOL } from "./annopol";
+import { PIASKI } from "./piaski";
+import { STOCZEK_LUKOWSKI } from "./stoczek-lukowski";
 
 
 /**
@@ -978,4 +980,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KRASNOBROD,
   TARNOGROD,
   ANNOPOL,
+  PIASKI,
+  STOCZEK_LUKOWSKI,
 ];
