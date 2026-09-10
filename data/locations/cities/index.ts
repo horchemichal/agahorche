@@ -460,6 +460,11 @@ import { STOCZEK_LUKOWSKI } from "./stoczek-lukowski";
 import { OSTROW_LUBELSKI } from "./ostrow-lubelski";
 import { URZEDOW } from "./urzedow";
 import { JOZEFOW_NAD_WISLA } from "./jozefow-nad-wisla";
+import { KOCK } from "./kock";
+import { NALECZOW } from "./naleczow";
+import { FRAMPOL } from "./frampol";
+import { MODLIBORZYCE } from "./modliborzyce";
+import { JOZEFOW } from "./jozefow";
 
 
 /**
@@ -988,4 +993,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OSTROW_LUBELSKI,
   URZEDOW,
   JOZEFOW_NAD_WISLA,
+  KOCK,
+  NALECZOW,
+  FRAMPOL,
+  MODLIBORZYCE,
+  JOZEFOW,
 ];
