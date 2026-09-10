@@ -459,6 +459,7 @@ import { PIASKI } from "./piaski";
 import { STOCZEK_LUKOWSKI } from "./stoczek-lukowski";
 import { OSTROW_LUBELSKI } from "./ostrow-lubelski";
 import { URZEDOW } from "./urzedow";
+import { JOZEFOW_NAD_WISLA } from "./jozefow-nad-wisla";
 
 
 /**
@@ -986,4 +987,5 @@ export const MIASTA_DOPISANE: CityContent[] = [
   STOCZEK_LUKOWSKI,
   OSTROW_LUBELSKI,
   URZEDOW,
+  JOZEFOW_NAD_WISLA,
 ];
