@@ -475,6 +475,12 @@ import { OLESZYCE } from "./oleszyce";
 import { DUKLA } from "./dukla";
 import { SOKOLOW_MALOPOLSKI } from "./sokolow-malopolski";
 import { CIESZANOW } from "./cieszanow";
+import { STASZOW } from "./staszow";
+import { WLOSZCZOWA } from "./wloszczowa";
+import { SUCHEDNIOW } from "./suchedniow";
+import { SEDZISZOW } from "./sedziszow";
+import { STAPORKOW } from "./staporkow";
+import { OZAROW } from "./ozarow";
 
 
 /**
@@ -1018,4 +1024,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   DUKLA,
   SOKOLOW_MALOPOLSKI,
   CIESZANOW,
+  STASZOW,
+  WLOSZCZOWA,
+  SUCHEDNIOW,
+  SEDZISZOW,
+  STAPORKOW,
+  OZAROW,
 ];
