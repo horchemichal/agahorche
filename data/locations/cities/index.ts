@@ -481,6 +481,10 @@ import { SUCHEDNIOW } from "./suchedniow";
 import { SEDZISZOW } from "./sedziszow";
 import { STAPORKOW } from "./staporkow";
 import { OZAROW } from "./ozarow";
+import { MALOGOSZCZ } from "./malogoszcz";
+import { KUNOW } from "./kunow";
+import { KOPRZYWNICA } from "./koprzywnica";
+import { KLIMONTOW } from "./klimontow";
 
 
 /**
@@ -1030,4 +1034,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SEDZISZOW,
   STAPORKOW,
   OZAROW,
+  MALOGOSZCZ,
+  KUNOW,
+  KOPRZYWNICA,
+  KLIMONTOW,
 ];
