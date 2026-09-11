@@ -485,6 +485,10 @@ import { MALOGOSZCZ } from "./malogoszcz";
 import { KUNOW } from "./kunow";
 import { KOPRZYWNICA } from "./koprzywnica";
 import { KLIMONTOW } from "./klimontow";
+import { DALESZYCE } from "./daleszyce";
+import { BODZENTYN } from "./bodzentyn";
+import { ZAWICHOST } from "./zawichost";
+import { STOPNICA } from "./stopnica";
 
 
 /**
@@ -1038,4 +1042,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KUNOW,
   KOPRZYWNICA,
   KLIMONTOW,
+  DALESZYCE,
+  BODZENTYN,
+  ZAWICHOST,
+  STOPNICA,
 ];
