@@ -489,6 +489,12 @@ import { DALESZYCE } from "./daleszyce";
 import { BODZENTYN } from "./bodzentyn";
 import { ZAWICHOST } from "./zawichost";
 import { STOPNICA } from "./stopnica";
+import { MORAWICA } from "./morawica";
+import { LAGOW } from "./lagow";
+import { SKALBMIERZ } from "./skalbmierz";
+import { PIERZCHNICA } from "./pierzchnica";
+import { NOWY_KORCZYN } from "./nowy-korczyn";
+import { DZIALOSZYCE } from "./dzialoszyce";
 
 
 /**
@@ -1046,4 +1052,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BODZENTYN,
   ZAWICHOST,
   STOPNICA,
+  MORAWICA,
+  LAGOW,
+  SKALBMIERZ,
+  PIERZCHNICA,
+  NOWY_KORCZYN,
+  DZIALOSZYCE,
 ];
