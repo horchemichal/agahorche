@@ -472,6 +472,9 @@ import { RADYMNO } from "./radymno";
 import { ZAGORZ } from "./zagorz";
 import { PILZNO } from "./pilzno";
 import { OLESZYCE } from "./oleszyce";
+import { DUKLA } from "./dukla";
+import { SOKOLOW_MALOPOLSKI } from "./sokolow-malopolski";
+import { CIESZANOW } from "./cieszanow";
 
 
 /**
@@ -1012,4 +1015,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZAGORZ,
   PILZNO,
   OLESZYCE,
+  DUKLA,
+  SOKOLOW_MALOPOLSKI,
+  CIESZANOW,
 ];
