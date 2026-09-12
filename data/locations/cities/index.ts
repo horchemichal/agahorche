@@ -501,6 +501,22 @@ import { ZDZIESZOWICE } from "./zdzieszowice";
 import { GRODKOW } from "./grodkow";
 import { PACZKOW } from "./paczkow";
 import { PRASZKA } from "./praszka";
+import { ZAWADZKIE } from "./zawadzkie";
+import { OTMUCHOW } from "./otmuchow";
+import { NIEMODLIN } from "./niemodlin";
+import { KIETRZ } from "./kietrz";
+import { WOLCZYN } from "./wolczyn";
+import { LEWIN_BRZESKI } from "./lewin-brzeski";
+import { GLOGOWEK } from "./glogowek";
+import { TULOWICE } from "./tulowice";
+import { BYCZYNA } from "./byczyna";
+import { KOLONOWSKIE } from "./kolonowskie";
+import { BABOROW } from "./baborow";
+import { PROSZKOW } from "./proszkow";
+import { LESNICA } from "./lesnica";
+import { BIALA_OPOLSKA } from "./biala-opolska";
+import { KORFANTOW } from "./korfantow";
+import { UJAZD } from "./ujazd";
 
 
 /**
@@ -1070,4 +1086,20 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GRODKOW,
   PACZKOW,
   PRASZKA,
+  ZAWADZKIE,
+  OTMUCHOW,
+  NIEMODLIN,
+  KIETRZ,
+  WOLCZYN,
+  LEWIN_BRZESKI,
+  GLOGOWEK,
+  TULOWICE,
+  BYCZYNA,
+  KOLONOWSKIE,
+  BABOROW,
+  PROSZKOW,
+  LESNICA,
+  BIALA_OPOLSKA,
+  KORFANTOW,
+  UJAZD,
 ];
