@@ -594,6 +594,16 @@ import { BIALA_PISKA } from "./biala-piska";
 import { GOROWO_ILAWECKIE } from "./gorowo-ilaweckie";
 import { JEZIORANY } from "./jeziorany";
 import { RYN } from "./ryn";
+import { PIENIEZNO } from "./pieniezno";
+import { TOLKMICKO } from "./tolkmicko";
+import { PASYM } from "./pasym";
+import { BISZTYNEK } from "./bisztynek";
+import { MILAKOWO } from "./milakowo";
+import { FROMBORK } from "./frombork";
+import { MILOMLYN } from "./milomlyn";
+import { ZALEWO } from "./zalewo";
+import { SEPOPOL } from "./sepopol";
+import { MLYNARY } from "./mlynary";
 
 
 /**
@@ -1256,4 +1266,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GOROWO_ILAWECKIE,
   JEZIORANY,
   RYN,
+  PIENIEZNO,
+  TOLKMICKO,
+  PASYM,
+  BISZTYNEK,
+  MILAKOWO,
+  FROMBORK,
+  MILOMLYN,
+  ZALEWO,
+  SEPOPOL,
+  MLYNARY,
 ];
