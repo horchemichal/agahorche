@@ -569,6 +569,11 @@ import { KAMIENSK } from "./kamiensk";
 import { WOLBORZ } from "./wolborz";
 import { BLASZKI } from "./blaszki";
 import { SZADEK } from "./szadek";
+import { PISZ } from "./pisz";
+import { BRANIEWO } from "./braniewo";
+import { LIDZBARK_WARMINSKI } from "./lidzbark-warminski";
+import { OLECKO } from "./olecko";
+import { MORAG } from "./morag";
 
 
 /**
@@ -1206,4 +1211,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WOLBORZ,
   BLASZKI,
   SZADEK,
+  PISZ,
+  BRANIEWO,
+  LIDZBARK_WARMINSKI,
+  OLECKO,
+  MORAG,
 ];
