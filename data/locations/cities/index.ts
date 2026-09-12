@@ -589,6 +589,11 @@ import { ORZYSZ } from "./orzysz";
 import { SUSZ } from "./susz";
 import { RUCIANE_NIDA } from "./ruciane-nida";
 import { RESZEL } from "./reszel";
+import { KORSZE } from "./korsze";
+import { BIALA_PISKA } from "./biala-piska";
+import { GOROWO_ILAWECKIE } from "./gorowo-ilaweckie";
+import { JEZIORANY } from "./jeziorany";
+import { RYN } from "./ryn";
 
 
 /**
@@ -1246,4 +1251,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SUSZ,
   RUCIANE_NIDA,
   RESZEL,
+  KORSZE,
+  BIALA_PISKA,
+  GOROWO_ILAWECKIE,
+  JEZIORANY,
+  RYN,
 ];
