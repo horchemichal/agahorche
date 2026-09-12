@@ -574,6 +574,11 @@ import { BRANIEWO } from "./braniewo";
 import { LIDZBARK_WARMINSKI } from "./lidzbark-warminski";
 import { OLECKO } from "./olecko";
 import { MORAG } from "./morag";
+import { NIDZICA } from "./nidzica";
+import { GOLDAP } from "./goldap";
+import { PASLEK } from "./paslek";
+import { WEGORZEWO } from "./wegorzewo";
+import { NOWE_MIASTO_LUBAWSKIE } from "./nowe-miasto-lubawskie";
 
 
 /**
@@ -1216,4 +1221,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   LIDZBARK_WARMINSKI,
   OLECKO,
   MORAG,
+  NIDZICA,
+  GOLDAP,
+  PASLEK,
+  WEGORZEWO,
+  NOWE_MIASTO_LUBAWSKIE,
 ];
