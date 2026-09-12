@@ -619,6 +619,12 @@ import { SUPRASL } from "./suprasl";
 import { CIECHANOWIEC } from "./ciechanowiec";
 import { BRANSK } from "./bransk";
 import { SZCZUCZYN } from "./szczuczyn";
+import { MICHALOWO } from "./michalowo";
+import { KNYSZYN } from "./knyszyn";
+import { CZYZEW } from "./czyzew";
+import { ZABLUDOW } from "./zabludow";
+import { LIPSK } from "./lipsk";
+import { SUCHOWOLA } from "./suchowola";
 
 
 /**
@@ -1306,4 +1312,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CIECHANOWIEC,
   BRANSK,
   SZCZUCZYN,
+  MICHALOWO,
+  KNYSZYN,
+  CZYZEW,
+  ZABLUDOW,
+  LIPSK,
+  SUCHOWOLA,
 ];
