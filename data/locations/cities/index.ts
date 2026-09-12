@@ -517,6 +517,26 @@ import { LESNICA } from "./lesnica";
 import { BIALA_OPOLSKA } from "./biala-opolska";
 import { KORFANTOW } from "./korfantow";
 import { UJAZD } from "./ujazd";
+import { USTKA } from "./ustka";
+import { CZLUCHOW } from "./czluchow";
+import { PUCK } from "./puck";
+import { WLADYSLAWOWO } from "./wladyslawowo";
+import { MIASTKO } from "./miastko";
+import { CZERSK } from "./czersk";
+import { NOWY_DWOR_GDANSKI } from "./nowy-dwor-gdanski";
+import { SZTUM } from "./sztum";
+import { PRABUTY } from "./prabuty";
+import { PELPLIN } from "./pelplin";
+import { ZUKOWO } from "./zukowo";
+import { SKARSZEWY } from "./skarszewy";
+import { GNIEW } from "./gniew";
+import { DZIERZGON } from "./dzierzgon";
+import { NOWY_STAW } from "./nowy-staw";
+import { SKORCZ } from "./skorcz";
+import { BRUSY } from "./brusy";
+import { DEBRZNO } from "./debrzno";
+import { CZARNA_WODA } from "./czarna-woda";
+import { KEPICE } from "./kepice";
 
 
 /**
@@ -1102,4 +1122,24 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BIALA_OPOLSKA,
   KORFANTOW,
   UJAZD,
+  USTKA,
+  CZLUCHOW,
+  PUCK,
+  WLADYSLAWOWO,
+  MIASTKO,
+  CZERSK,
+  NOWY_DWOR_GDANSKI,
+  SZTUM,
+  PRABUTY,
+  PELPLIN,
+  ZUKOWO,
+  SKARSZEWY,
+  GNIEW,
+  DZIERZGON,
+  NOWY_STAW,
+  SKORCZ,
+  BRUSY,
+  DEBRZNO,
+  CZARNA_WODA,
+  KEPICE,
 ];
