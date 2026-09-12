@@ -579,6 +579,11 @@ import { GOLDAP } from "./goldap";
 import { PASLEK } from "./paslek";
 import { WEGORZEWO } from "./wegorzewo";
 import { NOWE_MIASTO_LUBAWSKIE } from "./nowe-miasto-lubawskie";
+import { LUBAWA } from "./lubawa";
+import { DOBRE_MIASTO } from "./dobre-miasto";
+import { BISKUPIEC } from "./biskupiec";
+import { ORNETA } from "./orneta";
+import { LIDZBARK } from "./lidzbark";
 
 
 /**
@@ -1226,4 +1231,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PASLEK,
   WEGORZEWO,
   NOWE_MIASTO_LUBAWSKIE,
+  LUBAWA,
+  DOBRE_MIASTO,
+  BISKUPIEC,
+  ORNETA,
+  LIDZBARK,
 ];
