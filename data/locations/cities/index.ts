@@ -550,6 +550,16 @@ import { LECZYCA } from "./leczyca";
 import { GLOWNO } from "./glowno";
 import { KOLUSZKI } from "./koluszki";
 import { WIERUSZOW } from "./wieruszow";
+import { ZYCHLIN } from "./zychlin";
+import { PODDEBICE } from "./poddebice";
+import { ZELOW } from "./zelow";
+import { TUSZYN } from "./tuszyn";
+import { PAJECZNO } from "./pajeczno";
+import { SULEJOW } from "./sulejow";
+import { DZIALOSZYN } from "./dzialoszyn";
+import { KROSNIEWICE } from "./krosniewice";
+import { DRZEWICA } from "./drzewica";
+import { UNIEJOW } from "./uniejow";
 
 
 /**
@@ -1168,4 +1178,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GLOWNO,
   KOLUSZKI,
   WIERUSZOW,
+  ZYCHLIN,
+  PODDEBICE,
+  ZELOW,
+  TUSZYN,
+  PAJECZNO,
+  SULEJOW,
+  DZIALOSZYN,
+  KROSNIEWICE,
+  DRZEWICA,
+  UNIEJOW,
 ];
