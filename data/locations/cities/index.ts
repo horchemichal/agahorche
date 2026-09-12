@@ -495,6 +495,12 @@ import { SKALBMIERZ } from "./skalbmierz";
 import { PIERZCHNICA } from "./pierzchnica";
 import { NOWY_KORCZYN } from "./nowy-korczyn";
 import { DZIALOSZYCE } from "./dzialoszyce";
+import { KRAPKOWICE } from "./krapkowice";
+import { GLUCHOLAZY } from "./glucholazy";
+import { ZDZIESZOWICE } from "./zdzieszowice";
+import { GRODKOW } from "./grodkow";
+import { PACZKOW } from "./paczkow";
+import { PRASZKA } from "./praszka";
 
 
 /**
@@ -1058,4 +1064,10 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PIERZCHNICA,
   NOWY_KORCZYN,
   DZIALOSZYCE,
+  KRAPKOWICE,
+  GLUCHOLAZY,
+  ZDZIESZOWICE,
+  GRODKOW,
+  PACZKOW,
+  PRASZKA,
 ];
