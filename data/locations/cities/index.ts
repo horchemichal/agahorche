@@ -560,6 +560,15 @@ import { DZIALOSZYN } from "./dzialoszyn";
 import { KROSNIEWICE } from "./krosniewice";
 import { DRZEWICA } from "./drzewica";
 import { UNIEJOW } from "./uniejow";
+import { PRZEDBORZ } from "./przedborz";
+import { STRYKOW } from "./strykow";
+import { WARTA } from "./warta";
+import { ZLOCZEW } from "./zloczew";
+import { BIALA_RAWSKA } from "./biala-rawska";
+import { KAMIENSK } from "./kamiensk";
+import { WOLBORZ } from "./wolborz";
+import { BLASZKI } from "./blaszki";
+import { SZADEK } from "./szadek";
 
 
 /**
@@ -1188,4 +1197,13 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KROSNIEWICE,
   DRZEWICA,
   UNIEJOW,
+  PRZEDBORZ,
+  STRYKOW,
+  WARTA,
+  ZLOCZEW,
+  BIALA_RAWSKA,
+  KAMIENSK,
+  WOLBORZ,
+  BLASZKI,
+  SZADEK,
 ];
