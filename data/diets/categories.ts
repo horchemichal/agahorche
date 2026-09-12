@@ -122,21 +122,21 @@ const KETO_1500 = weekPlan({
   days2to7: [
     [
       meal("sniadanie", "cd-r901400"),
-      meal("drugie-sniadanie", "cd-r671211", undefined, 1.5),
+      meal("drugie-sniadanie", "cd-r595475", undefined, 2.0),
       meal("obiad", "cd-r928178"),
       meal("podwieczorek", "cd-r179030"),
       meal("kolacja", "cd-r117331"),
     ],
     [
       meal("sniadanie", "cd-r828221"),
-      meal("drugie-sniadanie", "cd-r94722"),
+      meal("drugie-sniadanie", "cd-r130668"),
       meal("obiad", "cd-r323093"),
       meal("podwieczorek", "cd-r373411", undefined, 1.5),
       meal("kolacja", "cd-r277666"),
     ],
     [
       meal("sniadanie", "cd-r508640"),
-      meal("drugie-sniadanie", "cd-r10791"),
+      meal("drugie-sniadanie", "cd-r595475"),
       meal("obiad", "cd-r629256"),
       meal("podwieczorek", "cd-r465526"),
       meal("kolacja", "cd-r458454"),
@@ -145,21 +145,21 @@ const KETO_1500 = weekPlan({
       meal("sniadanie", "cd-r253624", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r130668"),
       meal("obiad", "cd-r694482"),
-      meal("podwieczorek", "cd-r828222", undefined, 1.5),
+      meal("podwieczorek", "cd-r56968", undefined, 1.5),
       meal("kolacja", "cd-r302807"),
     ],
     [
       meal("sniadanie", "cd-r901400", undefined, 1.5),
-      meal("drugie-sniadanie", "cd-r329637"),
+      meal("drugie-sniadanie", "cd-r595475"),
       meal("obiad", "cd-r928151", undefined, 1.5),
       meal("podwieczorek", "cd-r724920"),
       meal("kolacja", "cd-r248563"),
     ],
     [
       meal("sniadanie", "cd-r508640"),
-      meal("drugie-sniadanie", "cd-r737547"),
+      meal("drugie-sniadanie", "cd-r130668"),
       meal("obiad", "cd-r239297"),
-      meal("podwieczorek", "cd-r828222"),
+      meal("podwieczorek", "cd-r179030", undefined, 0.5),
       meal("kolacja", "cd-r458454"),
     ],
   ],
@@ -172,7 +172,7 @@ const KETO_2000 = weekPlan({
   caloriesTarget: 2000,
   day1: [
     meal("sniadanie", "cd-r828221"),
-    meal("drugie-sniadanie", "cd-r10791"),
+    meal("drugie-sniadanie", "cd-r595475"),
     meal("obiad", "cd-r323093"),
     meal("podwieczorek", "cd-r179030", undefined, 1.5),
     meal("kolacja", "cd-r277666"),
@@ -187,28 +187,28 @@ const KETO_2000 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r828221"),
-      meal("drugie-sniadanie", "cd-r329637"),
+      meal("drugie-sniadanie", "cd-r595475"),
       meal("obiad", "cd-r323093", undefined, 2),
-      meal("podwieczorek", "cd-r828222"),
+      meal("podwieczorek", "cd-r465526", undefined, 1.5),
       meal("kolacja", "cd-r248563"),
     ],
     [
       meal("sniadanie", "cd-r253624"),
-      meal("drugie-sniadanie", "cd-r737547"),
+      meal("drugie-sniadanie", "cd-r130668"),
       meal("obiad", "cd-r928151", undefined, 2),
       meal("podwieczorek", "cd-r179030"),
       meal("kolacja", "cd-r302807"),
     ],
     [
       meal("sniadanie", "cd-r938346"),
-      meal("drugie-sniadanie", "cd-r94722"),
+      meal("drugie-sniadanie", "cd-r130668"),
       meal("obiad", "cd-r323093", undefined, 1.5),
       meal("podwieczorek", "cd-r179030"),
       meal("kolacja", "cd-r458454"),
     ],
     [
       meal("sniadanie", "cd-r901400"),
-      meal("drugie-sniadanie", "cd-r94722", undefined, 1.5),
+      meal("drugie-sniadanie", "cd-r595475", undefined, 2.0),
       meal("obiad", "cd-r323093", undefined, 1.5),
       meal("podwieczorek", "cd-r56968"),
       meal("kolacja", "cd-r550550"),
@@ -263,7 +263,7 @@ const WEGE_1500 = weekPlan({
       meal("sniadanie", "cd-r912433", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r507517"),
       meal("obiad", "cd-r82992"),
-      meal("podwieczorek", "cd-r342470"),
+      meal("podwieczorek", "cd-r605961"),
       meal("kolacja", "cd-r694307"),
     ],
     [
@@ -311,7 +311,7 @@ const WEGE_2000 = weekPlan({
   caloriesTarget: 2000,
   day1: [
     meal("sniadanie", "cd-r828234", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r938339"),
+    meal("drugie-sniadanie", "cd-r608090"),
     meal("obiad", "cd-r776993"),
     meal("podwieczorek", "cd-r605961"),
     meal("kolacja", "cd-r706924"),
@@ -368,7 +368,7 @@ const ODCHUDZAJACA_1500 = weekPlan({
   label: "7 dni / 1500 kcal",
   caloriesTarget: 1500,
   day1: [
-    meal("sniadanie", "cd-r329637"),
+    meal("sniadanie", "cd-r751441", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r253491"),
     meal("obiad", "cd-r490892"),
     meal("podwieczorek", "cd-r254325"),
@@ -377,7 +377,7 @@ const ODCHUDZAJACA_1500 = weekPlan({
   days2to7: [
     [
       meal("sniadanie", "cd-r55281"),
-      meal("drugie-sniadanie", "cd-r938339"),
+      meal("drugie-sniadanie", "cd-r253493"),
       meal("obiad", "cd-r900139"),
       meal("podwieczorek", "cd-r373411"),
       meal("kolacja", "cd-r629256"),
@@ -398,7 +398,7 @@ const ODCHUDZAJACA_1500 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r900831"),
-      meal("drugie-sniadanie", "cd-r737547"),
+      meal("drugie-sniadanie", "cd-r595475", undefined, 1.5),
       meal("obiad", "cd-r776993", undefined, 1.5),
       meal("podwieczorek", "cd-r99342"),
       meal("kolacja", "cd-r750522"),
@@ -437,14 +437,14 @@ const ODCHUDZAJACA_2000 = weekPlan({
       meal("sniadanie", "cd-r828234", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r253493"),
       meal("obiad", "cd-r902339"),
-      meal("podwieczorek", "cd-r671211"),
+      meal("podwieczorek", "cd-r507517"),
       meal("kolacja", "cd-r784070"),
     ],
     [
       meal("sniadanie", "cd-r265677", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r345486"),
       meal("obiad", "cd-r675139"),
-      meal("podwieczorek", "cd-r737547"),
+      meal("podwieczorek", "cd-r507517"),
       meal("kolacja", "cd-r791905"),
     ],
     [
@@ -484,7 +484,7 @@ const NISKI_IG_1500 = weekPlan({
   label: "7 dni / 1500 kcal",
   caloriesTarget: 1500,
   day1: [
-    meal("sniadanie", "cd-r671211"),
+    meal("sniadanie", "cd-r944168"),
     meal("drugie-sniadanie", "cd-r123345"),
     meal("obiad", "cd-r725769"),
     meal("podwieczorek", "cd-r289759"),
@@ -509,7 +509,7 @@ const NISKI_IG_1500 = weekPlan({
       meal("sniadanie", "cd-r753029", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r828101"),
       meal("obiad", "cd-r56971"),
-      meal("podwieczorek", "cd-r94722"),
+      meal("podwieczorek", "cd-r507517"),
       meal("kolacja", "cd-r806179"),
     ],
     [
@@ -553,7 +553,7 @@ const NISKI_IG_2000 = weekPlan({
       meal("sniadanie", "cd-r711761"),
       meal("drugie-sniadanie", "cd-r936264"),
       meal("obiad", "cd-r122664", undefined, 1.5),
-      meal("podwieczorek", "cd-r671211"),
+      meal("podwieczorek", "cd-r289759"),
       meal("kolacja", "cd-r323093"),
     ],
     [
@@ -600,7 +600,7 @@ const HASHIMOTO_1500 = weekPlan({
   label: "7 dni / 1500 kcal",
   caloriesTarget: 1500,
   day1: [
-    meal("sniadanie", "cd-r329637"),
+    meal("sniadanie", "cd-r912433", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r56968"),
     meal("obiad", "cd-r55281", undefined, 1.5),
     meal("podwieczorek", "cd-r595474"),
@@ -615,7 +615,7 @@ const HASHIMOTO_1500 = weekPlan({
       meal("kolacja", "cd-r824331"),
     ],
     [
-      meal("sniadanie", "cd-r737547"),
+      meal("sniadanie", "cd-r402648", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r307447"),
       meal("obiad", "cd-r103953", undefined, 1.5),
       meal("podwieczorek", "cd-r253491"),
@@ -632,7 +632,7 @@ const HASHIMOTO_1500 = weekPlan({
       meal("sniadanie", "cd-r656643"),
       meal("drugie-sniadanie", "cd-r769590"),
       meal("obiad", "cd-r903888"),
-      meal("podwieczorek", "cd-r59062"),
+      meal("podwieczorek", "cd-r939318", undefined, 0.5),
       meal("kolacja", "cd-r149023"),
     ],
     [
@@ -644,7 +644,7 @@ const HASHIMOTO_1500 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r924701", undefined, 1.5),
-      meal("drugie-sniadanie", "cd-r671211"),
+      meal("drugie-sniadanie", "cd-r108700", undefined, 0.5),
       meal("obiad", "cd-r538895"),
       meal("podwieczorek", "cd-r130662"),
       meal("kolacja", "cd-r515101"),
@@ -661,7 +661,7 @@ const HASHIMOTO_2000 = weekPlan({
     meal("sniadanie", "cd-r807338"),
     meal("drugie-sniadanie", "cd-r810086"),
     meal("obiad", "cd-r55281"),
-    meal("podwieczorek", "cd-r342470"),
+    meal("podwieczorek", "cd-r629253"),
     meal("kolacja", "cd-r824128"),
   ],
   days2to7: [
@@ -674,7 +674,7 @@ const HASHIMOTO_2000 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r924975"),
-      meal("drugie-sniadanie", "cd-r10791"),
+      meal("drugie-sniadanie", "cd-r10001"),
       meal("obiad", "cd-r675139"),
       meal("podwieczorek", "cd-r759596"),
       meal("kolacja", "cd-r708061", undefined, 1.5),
@@ -697,7 +697,7 @@ const HASHIMOTO_2000 = weekPlan({
       meal("sniadanie", "cd-r793259"),
       meal("drugie-sniadanie", "cd-r254325"),
       meal("obiad", "cd-r800554", undefined, 1.5),
-      meal("podwieczorek", "cd-r94722", undefined, 1.5),
+      meal("podwieczorek", "cd-r936264"),
       meal("kolacja", "cd-r569406"),
     ],
     [
@@ -731,7 +731,7 @@ const BEZGLUTENOWA_1500 = weekPlan({
       meal("kolacja", "cd-r551684"),
     ],
     [
-      meal("sniadanie", "cd-r938339"),
+      meal("sniadanie", "cd-r10001"),
       meal("drugie-sniadanie", "cd-r724920"),
       meal("obiad", "cd-r292210", undefined, 1.5),
       meal("podwieczorek", "cd-r307447"),
@@ -745,7 +745,7 @@ const BEZGLUTENOWA_1500 = weekPlan({
       meal("kolacja", "cd-r550550"),
     ],
     [
-      meal("sniadanie", "cd-r329637"),
+      meal("sniadanie", "cd-r756545", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r629253"),
       meal("obiad", "cd-r10267"),
       meal("podwieczorek", "cd-r608090"),
@@ -759,8 +759,8 @@ const BEZGLUTENOWA_1500 = weekPlan({
       meal("kolacja", "cd-r629256"),
     ],
     [
-      meal("sniadanie", "cd-r94722", undefined, 1.5),
-      meal("drugie-sniadanie", "cd-r671211"),
+      meal("sniadanie", "cd-r656643"),
+      meal("drugie-sniadanie", "cd-r616206"),
       meal("obiad", "cd-r777829"),
       meal("podwieczorek", "cd-r239293"),
       meal("kolacja", "cd-r122664"),
@@ -782,10 +782,10 @@ const BEZGLUTENOWA_2000 = weekPlan({
   ],
   days2to7: [
     [
-      meal("sniadanie", "cd-r938339"),
+      meal("sniadanie", "cd-r656643", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r616206"),
       meal("obiad", "cd-r903888"),
-      meal("podwieczorek", "cd-r329637"),
+      meal("podwieczorek", "cd-r608090"),
       meal("kolacja", "cd-r675139", undefined, 1.5),
     ],
     [
@@ -817,7 +817,7 @@ const BEZGLUTENOWA_2000 = weekPlan({
       meal("kolacja", "cd-r777829"),
     ],
     [
-      meal("sniadanie", "cd-r737547"),
+      meal("sniadanie", "cd-r900831", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r759596"),
       meal("obiad", "cd-r827888"),
       meal("podwieczorek", "cd-r253492"),
@@ -862,13 +862,13 @@ const ZAMIENNIKI_1500 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r818711"),
-      meal("drugie-sniadanie", "cd-r10791"),
+      meal("drugie-sniadanie", "cd-r253491"),
       meal("obiad", "cd-r827888"),
       meal("podwieczorek", "cd-r939318"),
       meal("kolacja", "cd-r936541"),
     ],
     [
-      meal("sniadanie", "cd-r59062"),
+      meal("sniadanie", "cd-r751441", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r629253"),
       meal("obiad", "cd-r694307"),
       meal("podwieczorek", "cd-r345486"),
@@ -876,7 +876,7 @@ const ZAMIENNIKI_1500 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r656643", undefined, 1.5),
-      meal("drugie-sniadanie", "cd-r671211"),
+      meal("drugie-sniadanie", "cd-r465526", undefined, 1.5),
       meal("obiad", "cd-r604465"),
       meal("podwieczorek", "cd-r756545"),
       meal("kolacja", "cd-r515099"),
@@ -913,7 +913,7 @@ const ZAMIENNIKI_2000 = weekPlan({
     ],
     [
       meal("sniadanie", "cd-r806175"),
-      meal("drugie-sniadanie", "cd-r342470"),
+      meal("drugie-sniadanie", "cd-r724920", undefined, 1.5),
       meal("obiad", "cd-r400321"),
       meal("podwieczorek", "cd-r756545"),
       meal("kolacja", "cd-r908249", undefined, 1.5),
@@ -959,12 +959,12 @@ const DLA_DZIECI_PLAN = weekPlan({
       meal("sniadanie", "cd-r254325"),
       meal("drugie-sniadanie", "cd-r828104"),
       meal("obiad", "cd-r940729", undefined, 1.5),
-      meal("podwieczorek", "cd-r737547"),
+      meal("podwieczorek", "cd-r257001"),
       meal("kolacja", "cd-r820697"),
     ],
     [
       meal("sniadanie", "cd-r99342"),
-      meal("drugie-sniadanie", "cd-r342470", undefined, 1.5),
+      meal("drugie-sniadanie", "cd-r616206", undefined, 1.5),
       meal("obiad", "cd-r708061"),
       meal("podwieczorek", "cd-r769590"),
       meal("kolacja", "cd-r149023"),
@@ -1028,7 +1028,7 @@ const KOBIETY_KARMIACE_PLAN = weekPlan({
       meal("kolacja", "cd-r221601"),
     ],
     [
-      meal("sniadanie", "cd-r671211"),
+      meal("sniadanie", "cd-r459176", undefined, 0.5),
       meal("drugie-sniadanie", "cd-r254325"),
       meal("obiad", "cd-r908067"),
       meal("podwieczorek", "cd-r828101"),
@@ -1052,7 +1052,7 @@ const KOBIETY_KARMIACE_PLAN = weekPlan({
       meal("sniadanie", "cd-r5416", undefined, 1.5),
       meal("drugie-sniadanie", "cd-r56968"),
       meal("obiad", "cd-r824128"),
-      meal("podwieczorek", "cd-r938339"),
+      meal("podwieczorek", "cd-r828104", undefined, 0.5),
       meal("kolacja", "cd-r694482"),
     ],
   ],
@@ -1163,10 +1163,10 @@ const NIEMOWLETA_ETAP4 = weekPlan({
     meal("kolacja", "cd-r811344"),
   ],
   days2to7: [
-    [meal("sniadanie", "cd-r811351"), meal("drugie-sniadanie", "cd-r811353"), meal("obiad", "cd-r811357"), meal("podwieczorek", "cd-r811354"), meal("kolacja", "cd-r811347")],
+    [meal("sniadanie", "cd-r811351"), meal("drugie-sniadanie", "cd-r325773", undefined, 1.5), meal("obiad", "cd-r811357"), meal("podwieczorek", "cd-r811354"), meal("kolacja", "cd-r811347")],
     [meal("sniadanie", "cd-r811349"), meal("drugie-sniadanie", "cd-r325776"), meal("obiad", "cd-r811358"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811348")],
     [meal("sniadanie", "cd-r173812"), meal("drugie-sniadanie", "cd-r811354"), meal("obiad", "cd-r173818"), meal("podwieczorek", "cd-r811351"), meal("kolacja", "cd-r811344")],
-    [meal("sniadanie", "cd-r325766"), meal("drugie-sniadanie", "cd-r811353"), meal("obiad", "cd-r730342"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811347")],
+    [meal("sniadanie", "cd-r325766"), meal("drugie-sniadanie", "cd-r325773", undefined, 1.5), meal("obiad", "cd-r730342"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811347")],
     [meal("sniadanie", "cd-r811349"), meal("drugie-sniadanie", "cd-r325773"), meal("obiad", "cd-r173816"), meal("podwieczorek", "cd-r811351"), meal("kolacja", "cd-r811348")],
     [meal("sniadanie", "cd-r323213"), meal("drugie-sniadanie", "cd-r811354"), meal("obiad", "cd-r811357"), meal("podwieczorek", "cd-r811355"), meal("kolacja", "cd-r811344")],
   ],

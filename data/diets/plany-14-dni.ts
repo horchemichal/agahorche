@@ -38,7 +38,7 @@ import { meal } from "./meal-factory";
 export const KETO_1500_DNI_8_14: Meal[][] = [
   [
     meal("sniadanie", "cd-r253624"),
-    meal("drugie-sniadanie", "cd-r10791"),
+    meal("drugie-sniadanie", "cd-r595475"),
     meal("obiad", "cd-r694482"),
     meal("podwieczorek", "cd-r179030"),
     meal("kolacja", "cd-r550550", undefined, 1.5),
@@ -59,14 +59,14 @@ export const KETO_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r253624"),
-    meal("drugie-sniadanie", "cd-r329637"),
+    meal("drugie-sniadanie", "cd-r595475"),
     meal("obiad", "cd-r323093", undefined, 1.5),
     meal("podwieczorek", "cd-r724920", undefined, 1.5),
     meal("kolacja", "cd-r117331", undefined, 1.5),
   ],
   [
     meal("sniadanie", "cd-r938346", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r94722"),
+    meal("drugie-sniadanie", "cd-r130668"),
     meal("obiad", "cd-r928151", undefined, 2),
     meal("podwieczorek", "cd-r465526", undefined, 1.5),
     meal("kolacja", "cd-r117331", undefined, 1.5),
@@ -80,7 +80,7 @@ export const KETO_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r901400"),
-    meal("drugie-sniadanie", "cd-r10791", undefined, 1.5),
+    meal("drugie-sniadanie", "cd-r130668"),
     meal("obiad", "cd-r629256"),
     meal("podwieczorek", "cd-r373411", undefined, 1.5),
     meal("kolacja", "cd-r550550"),
@@ -90,14 +90,14 @@ export const KETO_1500_DNI_8_14: Meal[][] = [
 export const KETO_2000_DNI_8_14: Meal[][] = [
   [
     meal("sniadanie", "cd-r253624", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r10791", undefined, 2),
+    meal("drugie-sniadanie", "cd-r595475", undefined, 2.0),
     meal("obiad", "cd-r323093", undefined, 1.5),
-    meal("podwieczorek", "cd-r828222", undefined, 1.5),
+    meal("podwieczorek", "cd-r56968", undefined, 1.5),
     meal("kolacja", "cd-r277666"),
   ],
   [
     meal("sniadanie", "cd-r938346", undefined, 2),
-    meal("drugie-sniadanie", "cd-r94722", undefined, 2),
+    meal("drugie-sniadanie", "cd-r130668", undefined, 2.0),
     meal("obiad", "cd-r629256", undefined, 2),
     meal("podwieczorek", "cd-r373411"),
     meal("kolacja", "cd-r117331", undefined, 2),
@@ -106,12 +106,12 @@ export const KETO_2000_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r828221"),
     meal("drugie-sniadanie", "cd-r936264", undefined, 2),
     meal("obiad", "cd-r928178"),
-    meal("podwieczorek", "cd-r828222", undefined, 1.5),
+    meal("podwieczorek", "cd-r56968", undefined, 1.5),
     meal("kolacja", "cd-r458454"),
   ],
   [
     meal("sniadanie", "cd-r901400", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r737547", undefined, 1.5),
+    meal("drugie-sniadanie", "cd-r936264"),
     meal("obiad", "cd-r694482"),
     meal("podwieczorek", "cd-r179030", undefined, 1.5),
     meal("kolacja", "cd-r248563", undefined, 1.5),
@@ -163,7 +163,7 @@ export const WEGETARIANSKA_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r828104"),
-    meal("drugie-sniadanie", "cd-r938339", undefined, 1.5),
+    meal("drugie-sniadanie", "cd-r253491"),
     meal("obiad", "cd-r95258"),
     meal("podwieczorek", "cd-r253492", undefined, 1.5),
     meal("kolacja", "cd-r824131"),
@@ -179,12 +179,12 @@ export const WEGETARIANSKA_1500_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r806179", undefined, 1.5),
     meal("drugie-sniadanie", "cd-r629253", undefined, 1.5),
     meal("obiad", "cd-r90518"),
-    meal("podwieczorek", "cd-r342470"),
+    meal("podwieczorek", "cd-r78202", undefined, 2.0),
     meal("kolacja", "cd-r725769"),
   ],
   [
     meal("sniadanie", "cd-r806179"),
-    meal("drugie-sniadanie", "cd-r938339", undefined, 2),
+    meal("drugie-sniadanie", "cd-r595474"),
     meal("obiad", "cd-r104411"),
     meal("podwieczorek", "cd-r605961"),
     meal("kolacja", "cd-r337277"),
@@ -196,14 +196,14 @@ export const WEGETARIANSKA_2000_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r10001", undefined, 1.5),
     meal("drugie-sniadanie", "cd-r629253", undefined, 1.5),
     meal("obiad", "cd-r928936", undefined, 2),
-    meal("podwieczorek", "cd-r342470", undefined, 2),
+    meal("podwieczorek", "cd-r289759", undefined, 2.0),
     meal("kolacja", "cd-r105756"),
   ],
   [
     meal("sniadanie", "cd-r901400"),
-    meal("drugie-sniadanie", "cd-r938339"),
+    meal("drugie-sniadanie", "cd-r608090"),
     meal("obiad", "cd-r95258"),
-    meal("podwieczorek", "cd-r342470"),
+    meal("podwieczorek", "cd-r465526"),
     meal("kolacja", "cd-r725769", undefined, 2),
   ],
   [
@@ -248,7 +248,7 @@ export const ODCHUDZAJACA_1500_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r751441"),
     meal("drugie-sniadanie", "cd-r629253"),
     meal("obiad", "cd-r902339"),
-    meal("podwieczorek", "cd-r737547", undefined, 1.5),
+    meal("podwieczorek", "cd-r936264"),
     meal("kolacja", "cd-r750522", undefined, 1.5),
   ],
   [
@@ -273,14 +273,14 @@ export const ODCHUDZAJACA_1500_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r750522", undefined, 1.5),
   ],
   [
-    meal("sniadanie", "cd-r329637"),
+    meal("sniadanie", "cd-r751441", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r253491", undefined, 2),
     meal("obiad", "cd-r806179", undefined, 1.5),
     meal("podwieczorek", "cd-r507517"),
     meal("kolacja", "cd-r822676", undefined, 2),
   ],
   [
-    meal("sniadanie", "cd-r329637", undefined, 1.5),
+    meal("sniadanie", "cd-r751441", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r253492"),
     meal("obiad", "cd-r550550", undefined, 2),
     meal("podwieczorek", "cd-r912433", undefined, 1.5),
@@ -288,7 +288,7 @@ export const ODCHUDZAJACA_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r900831", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r737547", undefined, 2),
+    meal("drugie-sniadanie", "cd-r759596", undefined, 1.5),
     meal("obiad", "cd-r122664"),
     meal("podwieczorek", "cd-r99342"),
     meal("kolacja", "cd-r822676"),
@@ -307,12 +307,12 @@ export const ODCHUDZAJACA_2000_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r751441", undefined, 1.5),
     meal("drugie-sniadanie", "cd-r56968", undefined, 2),
     meal("obiad", "cd-r806179"),
-    meal("podwieczorek", "cd-r737547"),
+    meal("podwieczorek", "cd-r254320", undefined, 1.5),
     meal("kolacja", "cd-r629256"),
   ],
   [
     meal("sniadanie", "cd-r806176"),
-    meal("drugie-sniadanie", "cd-r737547", undefined, 1.5),
+    meal("drugie-sniadanie", "cd-r759596"),
     meal("obiad", "cd-r490892"),
     meal("podwieczorek", "cd-r912433", undefined, 2),
     meal("kolacja", "cd-r150525", undefined, 2),
@@ -321,7 +321,7 @@ export const ODCHUDZAJACA_2000_DNI_8_14: Meal[][] = [
     meal("sniadanie", "cd-r900831"),
     meal("drugie-sniadanie", "cd-r629253", undefined, 2),
     meal("obiad", "cd-r253632", undefined, 1.5),
-    meal("podwieczorek", "cd-r671211"),
+    meal("podwieczorek", "cd-r373411", undefined, 2.0),
     meal("kolacja", "cd-r822676", undefined, 1.5),
   ],
   [
@@ -370,7 +370,7 @@ export const NISKI_IG_1500_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r323093"),
   ],
   [
-    meal("sniadanie", "cd-r671211", undefined, 1.5),
+    meal("sniadanie", "cd-r711761", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r605961", undefined, 1.5),
     meal("obiad", "cd-r149027", undefined, 2),
     meal("podwieczorek", "cd-r595474", undefined, 1.5),
@@ -453,7 +453,7 @@ export const NISKI_IG_2000_DNI_8_14: Meal[][] = [
 
 export const HASHIMOTO_1500_DNI_8_14: Meal[][] = [
   [
-    meal("sniadanie", "cd-r329637", undefined, 2),
+    meal("sniadanie", "cd-r924701"),
     meal("drugie-sniadanie", "cd-r810086", undefined, 1.5),
     meal("obiad", "cd-r103953"),
     meal("podwieczorek", "cd-r57004", undefined, 2),
@@ -488,7 +488,7 @@ export const HASHIMOTO_1500_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r149023", undefined, 1.5),
   ],
   [
-    meal("sniadanie", "cd-r329637", undefined, 2),
+    meal("sniadanie", "cd-r402648", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r253491", undefined, 1.5),
     meal("obiad", "cd-r55281"),
     meal("podwieczorek", "cd-r629253", undefined, 1.5),
@@ -506,23 +506,23 @@ export const HASHIMOTO_1500_DNI_8_14: Meal[][] = [
 export const HASHIMOTO_2000_DNI_8_14: Meal[][] = [
   [
     meal("sniadanie", "cd-r239293", undefined, 2),
-    meal("drugie-sniadanie", "cd-r671211", undefined, 1.5),
+    meal("drugie-sniadanie", "cd-r254325"),
     meal("obiad", "cd-r747139", undefined, 2),
-    meal("podwieczorek", "cd-r59062", undefined, 1.5),
+    meal("podwieczorek", "cd-r828104", undefined, 0.5),
     meal("kolacja", "cd-r939504"),
   ],
   [
     meal("sniadanie", "cd-r149027"),
     meal("drugie-sniadanie", "cd-r769590", undefined, 1.5),
     meal("obiad", "cd-r122664", undefined, 2),
-    meal("podwieczorek", "cd-r59062", undefined, 2),
+    meal("podwieczorek", "cd-r57004"),
     meal("kolacja", "cd-r708069"),
   ],
   [
-    meal("sniadanie", "cd-r329637", undefined, 1.5),
+    meal("sniadanie", "cd-r595475"),
     meal("drugie-sniadanie", "cd-r810086", undefined, 2),
     meal("obiad", "cd-r758846", undefined, 1.5),
-    meal("podwieczorek", "cd-r94722"),
+    meal("podwieczorek", "cd-r629253", undefined, 1.5),
     meal("kolacja", "cd-r708069"),
   ],
   [
@@ -533,10 +533,10 @@ export const HASHIMOTO_2000_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r928784", undefined, 1.5),
   ],
   [
-    meal("sniadanie", "cd-r329637", undefined, 2),
+    meal("sniadanie", "cd-r924701"),
     meal("drugie-sniadanie", "cd-r810086", undefined, 2),
     meal("obiad", "cd-r800554", undefined, 1.5),
-    meal("podwieczorek", "cd-r94722"),
+    meal("podwieczorek", "cd-r130662", undefined, 0.5),
     meal("kolacja", "cd-r569406"),
   ],
   [
@@ -547,7 +547,7 @@ export const HASHIMOTO_2000_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r515101"),
   ],
   [
-    meal("sniadanie", "cd-r737547", undefined, 2),
+    meal("sniadanie", "cd-r402648"),
     meal("drugie-sniadanie", "cd-r253491"),
     meal("obiad", "cd-r747139", undefined, 1.5),
     meal("podwieczorek", "cd-r595474"),
@@ -578,7 +578,7 @@ export const ZAMIENNIKI_1500_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r694308", undefined, 1.5),
   ],
   [
-    meal("sniadanie", "cd-r59062"),
+    meal("sniadanie", "cd-r751441", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r753029", undefined, 1.5),
     meal("obiad", "cd-r150525", undefined, 1.5),
     meal("podwieczorek", "cd-r939318", undefined, 1.5),
@@ -586,7 +586,7 @@ export const ZAMIENNIKI_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r656643", undefined, 1.5),
-    meal("drugie-sniadanie", "cd-r342470"),
+    meal("drugie-sniadanie", "cd-r108700", undefined, 0.5),
     meal("obiad", "cd-r150525"),
     meal("podwieczorek", "cd-r936264"),
     meal("kolacja", "cd-r537247", undefined, 1.5),
@@ -600,7 +600,7 @@ export const ZAMIENNIKI_1500_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r901400"),
-    meal("drugie-sniadanie", "cd-r10791", undefined, 2),
+    meal("drugie-sniadanie", "cd-r737014"),
     meal("obiad", "cd-r542667", undefined, 1.5),
     meal("podwieczorek", "cd-r56913"),
     meal("kolacja", "cd-r936541", undefined, 1.5),
@@ -610,7 +610,7 @@ export const ZAMIENNIKI_1500_DNI_8_14: Meal[][] = [
 export const ZAMIENNIKI_2000_DNI_8_14: Meal[][] = [
   [
     meal("sniadanie", "cd-r149027"),
-    meal("drugie-sniadanie", "cd-r671211", undefined, 2),
+    meal("drugie-sniadanie", "cd-r108700"),
     meal("obiad", "cd-r150525", undefined, 2),
     meal("podwieczorek", "cd-r595475", undefined, 2),
     meal("kolacja", "cd-r817907"),
@@ -624,7 +624,7 @@ export const ZAMIENNIKI_2000_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r761834", undefined, 2),
-    meal("drugie-sniadanie", "cd-r671211"),
+    meal("drugie-sniadanie", "cd-r828104"),
     meal("obiad", "cd-r935329", undefined, 1.5),
     meal("podwieczorek", "cd-r605961", undefined, 1.5),
     meal("kolacja", "cd-r908067", undefined, 2),
@@ -638,7 +638,7 @@ export const ZAMIENNIKI_2000_DNI_8_14: Meal[][] = [
   ],
   [
     meal("sniadanie", "cd-r751441"),
-    meal("drugie-sniadanie", "cd-r342470", undefined, 2),
+    meal("drugie-sniadanie", "cd-r108700"),
     meal("obiad", "cd-r806179"),
     meal("podwieczorek", "cd-r753029", undefined, 2),
     meal("kolacja", "cd-r800554"),
@@ -668,42 +668,42 @@ export const BEZGLUTENOWA_1500_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r551684"),
   ],
   [
-    meal("sniadanie", "cd-r938339"),
+    meal("sniadanie", "cd-r656643", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r253493"),
     meal("obiad", "cd-r302807", undefined, 2),
     meal("podwieczorek", "cd-r828104", undefined, 1.5),
     meal("kolacja", "cd-r104413"),
   ],
   [
-    meal("sniadanie", "cd-r737547"),
+    meal("sniadanie", "cd-r900831", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r307447"),
     meal("obiad", "cd-r724329"),
     meal("podwieczorek", "cd-r926582"),
     meal("kolacja", "cd-r755202", undefined, 2),
   ],
   [
-    meal("sniadanie", "cd-r94722", undefined, 1.5),
+    meal("sniadanie", "cd-r656643"),
     meal("drugie-sniadanie", "cd-r761824", undefined, 1.5),
     meal("obiad", "cd-r694308"),
     meal("podwieczorek", "cd-r608090", undefined, 1.5),
     meal("kolacja", "cd-r323093"),
   ],
   [
-    meal("sniadanie", "cd-r938339", undefined, 2),
+    meal("sniadanie", "cd-r10001"),
     meal("drugie-sniadanie", "cd-r756545", undefined, 2),
     meal("obiad", "cd-r10267", undefined, 1.5),
-    meal("podwieczorek", "cd-r329637"),
+    meal("podwieczorek", "cd-r810086", undefined, 0.5),
     meal("kolacja", "cd-r675139"),
   ],
   [
-    meal("sniadanie", "cd-r94722"),
+    meal("sniadanie", "cd-r508640", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r756545"),
     meal("obiad", "cd-r694308"),
     meal("podwieczorek", "cd-r926582", undefined, 2),
     meal("kolacja", "cd-r800554"),
   ],
   [
-    meal("sniadanie", "cd-r329637", undefined, 1.5),
+    meal("sniadanie", "cd-r10001"),
     meal("drugie-sniadanie", "cd-r724920"),
     meal("obiad", "cd-r292210", undefined, 1.5),
     meal("podwieczorek", "cd-r608090", undefined, 2),
@@ -727,7 +727,7 @@ export const BEZGLUTENOWA_2000_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r551684", undefined, 2),
   ],
   [
-    meal("sniadanie", "cd-r94722"),
+    meal("sniadanie", "cd-r900831", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r756545", undefined, 2),
     meal("obiad", "cd-r695230", undefined, 1.5),
     meal("podwieczorek", "cd-r810086", undefined, 1.5),
@@ -741,21 +741,21 @@ export const BEZGLUTENOWA_2000_DNI_8_14: Meal[][] = [
     meal("kolacja", "cd-r104413", undefined, 1.5),
   ],
   [
-    meal("sniadanie", "cd-r737547", undefined, 2),
+    meal("sniadanie", "cd-r149027"),
     meal("drugie-sniadanie", "cd-r724920", undefined, 2),
     meal("obiad", "cd-r694308", undefined, 2),
     meal("podwieczorek", "cd-r57004"),
     meal("kolacja", "cd-r104413"),
   ],
   [
-    meal("sniadanie", "cd-r938339"),
+    meal("sniadanie", "cd-r756545", undefined, 0.5),
     meal("drugie-sniadanie", "cd-r108700", undefined, 1.5),
     meal("obiad", "cd-r10267"),
     meal("podwieczorek", "cd-r810086"),
     meal("kolacja", "cd-r629256", undefined, 2),
   ],
   [
-    meal("sniadanie", "cd-r737547", undefined, 1.5),
+    meal("sniadanie", "cd-r656643"),
     meal("drugie-sniadanie", "cd-r253493"),
     meal("obiad", "cd-r708061", undefined, 1.5),
     meal("podwieczorek", "cd-r616206"),
