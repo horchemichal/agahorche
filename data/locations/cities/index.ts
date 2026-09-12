@@ -584,6 +584,11 @@ import { DOBRE_MIASTO } from "./dobre-miasto";
 import { BISKUPIEC } from "./biskupiec";
 import { ORNETA } from "./orneta";
 import { LIDZBARK } from "./lidzbark";
+import { BARCZEWO } from "./barczewo";
+import { ORZYSZ } from "./orzysz";
+import { SUSZ } from "./susz";
+import { RUCIANE_NIDA } from "./ruciane-nida";
+import { RESZEL } from "./reszel";
 
 
 /**
@@ -1236,4 +1241,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BISKUPIEC,
   ORNETA,
   LIDZBARK,
+  BARCZEWO,
+  ORZYSZ,
+  SUSZ,
+  RUCIANE_NIDA,
+  RESZEL,
 ];
