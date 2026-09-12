@@ -604,6 +604,16 @@ import { MILOMLYN } from "./milomlyn";
 import { ZALEWO } from "./zalewo";
 import { SEPOPOL } from "./sepopol";
 import { MLYNARY } from "./mlynary";
+import { SOKOLKA } from "./sokolka";
+import { LAPY } from "./lapy";
+import { SIEMIATYCZE } from "./siemiatycze";
+import { WASILKOW } from "./wasilkow";
+import { MONKI } from "./monki";
+import { KOLNO } from "./kolno";
+import { WYSOKIE_MAZOWIECKIE } from "./wysokie-mazowieckie";
+import { CZARNA_BIALOSTOCKA } from "./czarna-bialostocka";
+import { CHOROSZCZ } from "./choroszcz";
+import { DABROWA_BIALOSTOCKA } from "./dabrowa-bialostocka";
 
 
 /**
@@ -1276,4 +1286,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZALEWO,
   SEPOPOL,
   MLYNARY,
+  SOKOLKA,
+  LAPY,
+  SIEMIATYCZE,
+  WASILKOW,
+  MONKI,
+  KOLNO,
+  WYSOKIE_MAZOWIECKIE,
+  CZARNA_BIALOSTOCKA,
+  CHOROSZCZ,
+  DABROWA_BIALOSTOCKA,
 ];
