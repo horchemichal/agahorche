@@ -542,6 +542,14 @@ import { HEL } from "./hel";
 import { JASTARNIA } from "./jastarnia";
 import { SZTUTOWO } from "./sztutowo";
 import { KRYNICA_MORSKA } from "./krynica-morska";
+import { OZORKOW } from "./ozorkow";
+import { KONSTANTYNOW_LODZKI } from "./konstantynow-lodzki";
+import { RAWA_MAZOWIECKA } from "./rawa-mazowiecka";
+import { LASK } from "./lask";
+import { LECZYCA } from "./leczyca";
+import { GLOWNO } from "./glowno";
+import { KOLUSZKI } from "./koluszki";
+import { WIERUSZOW } from "./wieruszow";
 
 
 /**
@@ -1152,4 +1160,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JASTARNIA,
   SZTUTOWO,
   KRYNICA_MORSKA,
+  OZORKOW,
+  KONSTANTYNOW_LODZKI,
+  RAWA_MAZOWIECKA,
+  LASK,
+  LECZYCA,
+  GLOWNO,
+  KOLUSZKI,
+  WIERUSZOW,
 ];
