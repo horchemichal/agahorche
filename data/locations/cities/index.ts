@@ -537,6 +537,11 @@ import { BRUSY } from "./brusy";
 import { DEBRZNO } from "./debrzno";
 import { CZARNA_WODA } from "./czarna-woda";
 import { KEPICE } from "./kepice";
+import { LEBA } from "./leba";
+import { HEL } from "./hel";
+import { JASTARNIA } from "./jastarnia";
+import { SZTUTOWO } from "./sztutowo";
+import { KRYNICA_MORSKA } from "./krynica-morska";
 
 
 /**
@@ -1142,4 +1147,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   DEBRZNO,
   CZARNA_WODA,
   KEPICE,
+  LEBA,
+  HEL,
+  JASTARNIA,
+  SZTUTOWO,
+  KRYNICA_MORSKA,
 ];

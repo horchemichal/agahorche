@@ -131,7 +131,7 @@ export const WLADYSLAWOWO: CityContent = {
         "Kruszony lód. Rozbije kostki, tak. Ale znów: kostki muszą przyjść z zamrażarki.",
         "Studzenie. I tu jest rzecz odwrotna, o której nikt nie uprzedza, a która potrafi zaskoczyć. To naczynie długo trzyma ciepło. Jeżeli ugotujesz w nim coś gorącego i zostawisz, żeby ostygło, będzie stygło wolniej, niż się spodziewasz. Rozwiązanie jest proste i nudne: gorące danie przekłada się do innego naczynia, a nie studzi w urządzeniu — inaczej blokujesz sobie sprzęt na godzinę.",
         "Czego natomiast nie zrobię: nie doradzę Ci, jak szybko schłodzić jedzenie przed włożeniem do lodówki, jak długo może stygnąć ani co wolno zamrozić powtórnie. To jest bezpieczeństwo żywności, a nie obsługa sprzętu. W mieście, w którym chłodnie mają własne procedury i kontrole, tym bardziej nie będę udawać, że mam tu kompetencje.",
-        "I jeszcze dwa sprostowania, skoro już jesteśmy przy Władysławowie, bo internet powtarza je uparcie. Nie jest to największy port rybacki w Polsce — największy jest Hel. I Kuźnica nie należy do Władysławowa, tylko do gminy Jastarnia. Wolę to napisać, niż powtarzać cudzy błąd.",
+        "I jeszcze dwa sprostowania, skoro już jesteśmy przy Władysławowie, bo internet powtarza je uparcie. Po pierwsze: to nie jest największy port rybacki w Polsce. Pod względem wielkości wyładunków pierwszy jest Hel, pod względem ich wartości — Kołobrzeg; Władysławowo ma za to najwięcej kutrów na całym półwyspie i to jest jego prawdziwa pozycja. Po drugie: Kuźnica nie należy do Władysławowa, tylko do gminy Jastarnia. Wolę to napisać, niż powtarzać cudzy błąd.",
       ],
       links: [
         { href: "/przepisy", label: "Przepisy" },
