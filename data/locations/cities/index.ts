@@ -614,6 +614,11 @@ import { WYSOKIE_MAZOWIECKIE } from "./wysokie-mazowieckie";
 import { CZARNA_BIALOSTOCKA } from "./czarna-bialostocka";
 import { CHOROSZCZ } from "./choroszcz";
 import { DABROWA_BIALOSTOCKA } from "./dabrowa-bialostocka";
+import { SEJNY } from "./sejny";
+import { SUPRASL } from "./suprasl";
+import { CIECHANOWIEC } from "./ciechanowiec";
+import { BRANSK } from "./bransk";
+import { SZCZUCZYN } from "./szczuczyn";
 
 
 /**
@@ -1296,4 +1301,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CZARNA_BIALOSTOCKA,
   CHOROSZCZ,
   DABROWA_BIALOSTOCKA,
+  SEJNY,
+  SUPRASL,
+  CIECHANOWIEC,
+  BRANSK,
+  SZCZUCZYN,
 ];
