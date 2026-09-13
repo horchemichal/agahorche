@@ -625,6 +625,21 @@ import { CZYZEW } from "./czyzew";
 import { ZABLUDOW } from "./zabludow";
 import { LIPSK } from "./lipsk";
 import { SUCHOWOLA } from "./suchowola";
+import { TYKOCIN } from "./tykocin";
+import { GONIADZ } from "./goniadz";
+import { DROHICZYN } from "./drohiczyn";
+import { RAJGROD } from "./rajgrod";
+import { SURAZ } from "./suraz";
+import { KRYNKI } from "./krynki";
+import { ORLA } from "./orla";
+import { KLESZCZELE } from "./kleszczele";
+import { NAREWKA } from "./narewka";
+import { JEDWABNE } from "./jedwabne";
+import { STAWISKI } from "./stawiski";
+import { SZEPIETOWO } from "./szepietowo";
+import { NOWOGROD } from "./nowogrod";
+import { RACZKI } from "./raczki";
+import { SZTABIN } from "./sztabin";
 
 
 /**
@@ -1318,4 +1333,19 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZABLUDOW,
   LIPSK,
   SUCHOWOLA,
+  TYKOCIN,
+  GONIADZ,
+  DROHICZYN,
+  RAJGROD,
+  SURAZ,
+  KRYNKI,
+  ORLA,
+  KLESZCZELE,
+  NAREWKA,
+  JEDWABNE,
+  STAWISKI,
+  SZEPIETOWO,
+  NOWOGROD,
+  RACZKI,
+  SZTABIN,
 ];
