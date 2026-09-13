@@ -640,6 +640,14 @@ import { SZEPIETOWO } from "./szepietowo";
 import { NOWOGROD } from "./nowogrod";
 import { RACZKI } from "./raczki";
 import { SZTABIN } from "./sztabin";
+import { KOSTRZYN_NAD_ODRA } from "./kostrzyn-nad-odra";
+import { SLUBICE } from "./slubice";
+import { GUBIN } from "./gubin";
+import { LUBSKO } from "./lubsko";
+import { WSCHOWA } from "./wschowa";
+import { KROSNO_ODRZANSKIE } from "./krosno-odrzanskie";
+import { SZPROTAWA } from "./szprotawa";
+import { DREZDENKO } from "./drezdenko";
 
 
 /**
@@ -1348,4 +1356,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   NOWOGROD,
   RACZKI,
   SZTABIN,
+  KOSTRZYN_NAD_ODRA,
+  SLUBICE,
+  GUBIN,
+  LUBSKO,
+  WSCHOWA,
+  KROSNO_ODRZANSKIE,
+  SZPROTAWA,
+  DREZDENKO,
 ];
