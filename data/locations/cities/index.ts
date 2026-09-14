@@ -701,6 +701,11 @@ import { NASIELSK } from "./nasielsk";
 import { ZWOLEN } from "./zwolen";
 import { MAKOW_MAZOWIECKI } from "./makow-mazowiecki";
 import { LOSICE } from "./losice";
+import { BIALOBRZEGI } from "./bialobrzegi";
+import { MSZCZONOW } from "./mszczonow";
+import { PRZYSUCHA } from "./przysucha";
+import { LIPSKO } from "./lipsko";
+import { ILZA } from "./ilza";
 
 
 /**
@@ -1470,4 +1475,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZWOLEN,
   MAKOW_MAZOWIECKI,
   LOSICE,
+  BIALOBRZEGI,
+  MSZCZONOW,
+  PRZYSUCHA,
+  LIPSKO,
+  ILZA,
 ];
