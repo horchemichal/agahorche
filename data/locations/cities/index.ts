@@ -648,6 +648,14 @@ import { WSCHOWA } from "./wschowa";
 import { KROSNO_ODRZANSKIE } from "./krosno-odrzanskie";
 import { SZPROTAWA } from "./szprotawa";
 import { DREZDENKO } from "./drezdenko";
+import { SULECIN } from "./sulecin";
+import { KOZUCHOW } from "./kozuchow";
+import { SKWIERZYNA } from "./skwierzyna";
+import { STRZELCE_KRAJENSKIE } from "./strzelce-krajenskie";
+import { WITNICA } from "./witnica";
+import { RZEPIN } from "./rzepin";
+import { NOWOGROD_BOBRZANSKI } from "./nowogrod-bobrzanski";
+import { ZBASZYNEK } from "./zbaszynek";
 
 
 /**
@@ -1364,4 +1372,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KROSNO_ODRZANSKIE,
   SZPROTAWA,
   DREZDENKO,
+  SULECIN,
+  KOZUCHOW,
+  SKWIERZYNA,
+  STRZELCE_KRAJENSKIE,
+  WITNICA,
+  RZEPIN,
+  NOWOGROD_BOBRZANSKI,
+  ZBASZYNEK,
 ];
