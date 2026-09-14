@@ -686,6 +686,16 @@ import { LOMIANKI } from "./lomianki";
 import { ZIELONKA } from "./zielonka";
 import { PRZASNYSZ } from "./przasnysz";
 import { KOZIENICE } from "./kozienice";
+import { GARWOLIN } from "./garwolin";
+import { MILANOWEK } from "./milanowek";
+import { GROJEC } from "./grojec";
+import { BRWINOW } from "./brwinow";
+import { RADZYMIN } from "./radzymin";
+import { GORA_KALWARIA } from "./gora-kalwaria";
+import { WEGROW } from "./wegrow";
+import { SZYDLOWIEC } from "./szydlowiec";
+import { WARKA } from "./warka";
+import { KARCZEW } from "./karczew";
 
 
 /**
@@ -1440,4 +1450,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZIELONKA,
   PRZASNYSZ,
   KOZIENICE,
+  GARWOLIN,
+  MILANOWEK,
+  GROJEC,
+  BRWINOW,
+  RADZYMIN,
+  GORA_KALWARIA,
+  WEGROW,
+  SZYDLOWIEC,
+  WARKA,
+  KARCZEW,
 ];
