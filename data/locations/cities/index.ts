@@ -676,6 +676,16 @@ import { BLEDZEW } from "./bledzew";
 import { PSZCZEW } from "./pszczew";
 import { SZLICHTYNGOWA } from "./szlichtyngowa";
 import { BRODY } from "./brody";
+import { PULTUSK } from "./pultusk";
+import { SOKOLOW_PODLASKI } from "./sokolow-podlaski";
+import { SIERPC } from "./sierpc";
+import { GOSTYNIN } from "./gostynin";
+import { PIONKI } from "./pionki";
+import { KONSTANCIN_JEZIORNA } from "./konstancin-jeziorna";
+import { LOMIANKI } from "./lomianki";
+import { ZIELONKA } from "./zielonka";
+import { PRZASNYSZ } from "./przasnysz";
+import { KOZIENICE } from "./kozienice";
 
 
 /**
@@ -1420,4 +1430,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PSZCZEW,
   SZLICHTYNGOWA,
   BRODY,
+  PULTUSK,
+  SOKOLOW_PODLASKI,
+  SIERPC,
+  GOSTYNIN,
+  PIONKI,
+  KONSTANCIN_JEZIORNA,
+  LOMIANKI,
+  ZIELONKA,
+  PRZASNYSZ,
+  KOZIENICE,
 ];
