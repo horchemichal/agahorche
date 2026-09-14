@@ -706,6 +706,11 @@ import { MSZCZONOW } from "./mszczonow";
 import { PRZYSUCHA } from "./przysucha";
 import { LIPSKO } from "./lipsko";
 import { ILZA } from "./ilza";
+import { TARCZYN } from "./tarczyn";
+import { RACIAZ } from "./raciaz";
+import { ZELECHOW } from "./zelechow";
+import { PILAWA } from "./pilawa";
+import { PODKOWA_LESNA } from "./podkowa-lesna";
 
 
 /**
@@ -1480,4 +1485,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PRZYSUCHA,
   LIPSKO,
   ILZA,
+  TARCZYN,
+  RACIAZ,
+  ZELECHOW,
+  PILAWA,
+  PODKOWA_LESNA,
 ];
