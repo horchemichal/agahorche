@@ -664,6 +664,8 @@ import { KARGOWA } from "./kargowa";
 import { OSNO_LUBUSKIE } from "./osno-lubuskie";
 import { BABIMOST } from "./babimost";
 import { ILOWA } from "./ilowa";
+import { MALOMICE } from "./malomice";
+import { GOZDNICA } from "./gozdnica";
 
 
 /**
@@ -1396,4 +1398,6 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OSNO_LUBUSKIE,
   BABIMOST,
   ILOWA,
+  MALOMICE,
+  GOZDNICA,
 ];
