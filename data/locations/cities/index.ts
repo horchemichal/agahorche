@@ -656,6 +656,14 @@ import { WITNICA } from "./witnica";
 import { RZEPIN } from "./rzepin";
 import { NOWOGROD_BOBRZANSKI } from "./nowogrod-bobrzanski";
 import { ZBASZYNEK } from "./zbaszynek";
+import { SLAWA } from "./slawa";
+import { BYTOM_ODRZANSKI } from "./bytom-odrzanski";
+import { JASIEN } from "./jasien";
+import { CZERWIENSK } from "./czerwiensk";
+import { KARGOWA } from "./kargowa";
+import { OSNO_LUBUSKIE } from "./osno-lubuskie";
+import { BABIMOST } from "./babimost";
+import { ILOWA } from "./ilowa";
 
 
 /**
@@ -1380,4 +1388,12 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RZEPIN,
   NOWOGROD_BOBRZANSKI,
   ZBASZYNEK,
+  SLAWA,
+  BYTOM_ODRZANSKI,
+  JASIEN,
+  CZERWIENSK,
+  KARGOWA,
+  OSNO_LUBUSKIE,
+  BABIMOST,
+  ILOWA,
 ];

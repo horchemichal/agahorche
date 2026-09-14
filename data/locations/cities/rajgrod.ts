@@ -55,7 +55,7 @@ import {
  * i infrastruktura turystyczna. ⚠ BEZ NAZW FIRM.
  * RAJGRÓD NIE NALEŻY DO CITTASLOW (nie potwierdzono).
  * ⚠ NIE PRZYPISUJĘ Rajgrodowi produktu z Listy Produktów
- * Tradycyjnych — nie ma takiego. „Sielawa wędzona (morёnka)"
+ * Tradycyjnych — nie ma takiego. „Sielawa wędzona (morenka)"
  * to WOJEWÓDZTWO POMORSKIE, zero związku z Rajgrodem.
  *
  * KĄT: TŁUSTE KONTRA CHUDE — jak zawartość tłuszczu
