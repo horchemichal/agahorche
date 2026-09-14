@@ -696,6 +696,11 @@ import { WEGROW } from "./wegrow";
 import { SZYDLOWIEC } from "./szydlowiec";
 import { WARKA } from "./warka";
 import { KARCZEW } from "./karczew";
+import { ZUROMIN } from "./zuromin";
+import { NASIELSK } from "./nasielsk";
+import { ZWOLEN } from "./zwolen";
+import { MAKOW_MAZOWIECKI } from "./makow-mazowiecki";
+import { LOSICE } from "./losice";
 
 
 /**
@@ -1460,4 +1465,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SZYDLOWIEC,
   WARKA,
   KARCZEW,
+  ZUROMIN,
+  NASIELSK,
+  ZWOLEN,
+  MAKOW_MAZOWIECKI,
+  LOSICE,
 ];
