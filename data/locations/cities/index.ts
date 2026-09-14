@@ -666,6 +666,16 @@ import { BABIMOST } from "./babimost";
 import { ILOWA } from "./ilowa";
 import { MALOMICE } from "./malomice";
 import { GOZDNICA } from "./gozdnica";
+import { DOBIEGNIEW } from "./dobiegniew";
+import { CYBINKA } from "./cybinka";
+import { TORZYM } from "./torzym";
+import { LEKNICA } from "./leknica";
+import { TRZCIEL } from "./trzciel";
+import { LUBNIEWICE } from "./lubniewice";
+import { BLEDZEW } from "./bledzew";
+import { PSZCZEW } from "./pszczew";
+import { SZLICHTYNGOWA } from "./szlichtyngowa";
+import { BRODY } from "./brody";
 
 
 /**
@@ -1400,4 +1410,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ILOWA,
   MALOMICE,
   GOZDNICA,
+  DOBIEGNIEW,
+  CYBINKA,
+  TORZYM,
+  LEKNICA,
+  TRZCIEL,
+  LUBNIEWICE,
+  BLEDZEW,
+  PSZCZEW,
+  SZLICHTYNGOWA,
+  BRODY,
 ];
