@@ -94,7 +94,7 @@ export async function pgUpdate<T = Record<string, unknown>>(
   return (result.rows[0] as T) ?? null;
 }
 
-/** Upsert-by-conflict-column variant — used only by aga_club_challenge_days (day 1-30, fixed row set). */
+/** Upsert-by-conflict-column variant — upsert keyed on an arbitrary unique column. */
 export async function pgUpsert<T = Record<string, unknown>>(
   pool: Pool,
   table: string,
