@@ -19,7 +19,7 @@ import { CheckCircleIcon } from "@/components/marketing/icons";
  * Różnica jest realna, ale to nie jest „więcej diet".
  *
  * W zamian doszły cztery rzeczy, które klub naprawdę daje, a lista o nich
- * milczała: przepisy, lodówka, poradnik i wyzwanie 30 dni.
+ * milczała: przepisy, lodówka, poradnik i wyzwanie 30 kroków.
  */
 const ITEMS = [
   "pełne jadłospisy — wszystkie dni odblokowane",
@@ -30,7 +30,7 @@ const ITEMS = [
   "Co ugotować dzisiaj?",
   "Co mam w lodówce?",
   "poradnik kuchenny",
-  "30 dni z Thermomixem",
+  "30 kroków z Thermomixem",
 ];
 
 /**
