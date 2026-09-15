@@ -20,8 +20,6 @@ export const EVENT_CATALOG: Record<string, string> = {
   use_ai: "Any Aga AI interaction.",
   use_fridge: "'Moja lodówka' tool used.",
   use_meal_planner: "Weekly/day meal planner generated.",
-  start_30_days: "User starts the 30 dni z Agą challenge.",
-  complete_30_days: "User completes the challenge.",
   click_recipe: "User opens a recipe.",
   click_tm7: "User engages with TM7 content/CTA.",
   click_tm6: "User engages with TM6 content/CTA.",
