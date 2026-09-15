@@ -166,7 +166,7 @@ export const PULTUSK: CityContent = {
   h1: "Thermomix Pułtusk – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Pułtusk — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Pułtusku: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Pułtusku: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Pułtusk — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Pułtusku. Prezentacja i dojazd bezpłatne.",

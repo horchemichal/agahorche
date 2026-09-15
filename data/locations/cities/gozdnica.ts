@@ -183,7 +183,7 @@ export const GOZDNICA: CityContent = {
   h1: "Thermomix Gozdnica – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Gozdnica — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Gozdnicy: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Gozdnicy: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Gozdnica — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Gozdnicy. Prezentacja i dojazd bezpłatne.",

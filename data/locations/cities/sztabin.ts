@@ -159,7 +159,7 @@ export const SZTABIN: CityContent = {
   h1: "Thermomix Sztabin – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Sztabin — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Sztabinie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Sztabinie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Sztabin — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Sztabinie. Prezentacja i dojazd bezpłatne.",

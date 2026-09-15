@@ -251,7 +251,7 @@ export const OSWIECIM: CityContent = {
     {
       question: "Mieszkam sama. Czy Thermomix ma sens przy jednej osobie?",
       answer:
-        "Czasem tak, czasem nie i mówię to wprost. Czasu przy jednej porcji oszczędza niewiele. Zdejmuje natomiast wysiłek fizyczny — siekanie, tarcie, przelewanie gorących garnków — i bardzo ułatwia ugotowanie raz na kilka dni z porcjowaniem. Na prezentacji pokazuję to na konkretnym obiedzie, a nie na deklaracjach.",
+        "Czasem tak, czasem nie i mówię to wprost. Czasu przy jednej porcji oszczędza niewiele. Zdejmuje natomiast wysiłek fizyczny — siekanie, tarcie, przelewanie gorących garnków — i bardzo ułatwia ugotowanie raz na kilka dni z porcjowaniem. Na spotkaniu pokazuję to na zwykłym obiedzie — bo deklaracje nikogo nie przekonują.",
     },
     {
       question: "Czy mogę zaprosić koleżanki albo panie z koła gospodyń?",

@@ -175,7 +175,7 @@ export const SIERPC: CityContent = {
   h1: "Thermomix Sierpc – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Sierpc — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Sierpcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Sierpcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Sierpc — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Sierpcu. Prezentacja i dojazd bezpłatne.",

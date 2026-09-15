@@ -144,8 +144,8 @@ export const WOLBROM: CityContent = {
         "Dla tej strony ma to konkretne znaczenie, bo układa tydzień. W czwartek jedzie się na targ, w piątek albo w sobotę gotuje się z tego, co się przywiozło. Rytm zakupów jest tu inny niż w mieście, gdzie chodzi się do sklepu codziennie po trochu — kupuje się rzadziej, więcej, i trzeba to potem przerobić.",
         "Drugi wątek to praca. W Wolbromiu są trzy zakłady przemysłu gumowego — komponenty dla motoryzacji, taśmy przenośnikowe, węże — i to jest tu spory kawałek zatrudnienia. Reszta dojeżdża: do Olkusza dwadzieścia kilometrów, do Krakowa czterdzieści drogą wojewódzką przez Trzyciąż i Skałę.",
         "Kto woli nie prowadzić, jedzie pociągiem. Stacja Wolbrom jest po modernizacji, doszedł przystanek Wolbrom Zachodni, a w gminie zatrzymują się pociągi także w Jeżówce, Zarzeczu i Chrząstowicach. To zaskakująco dobre połączenie jak na gminę tej wielkości i naprawdę warto o nim wiedzieć.",
-        "Wieczór po dojeździe wygląda zwykle podobnie niezależnie od tego, czym się wracało: trzeba coś zjeść, a nie ma już siły stać przy garnku. I to jest cała rzecz, którą pokazuję na prezentacji — nie to, że urządzenie ugotuje coś wymyślnego, tylko że obiad może się gotować sam, kiedy Ty jeszcze jesteś w drodze.",
-        "Mówię też wprost, czego Thermomix nie zrobi: nie zastąpi wprawy. W gminie, której koła gospodyń wygrywają konkursy kulinarne, tej wprawy akurat nie brakuje. Zabiera dwie rzeczy — stanie obok garnka i te czynności, przez które gotowanie na zapas odkłada się na później.",
+        "Wieczór po dojeździe wygląda zwykle podobnie niezależnie od tego, czym się wracało: trzeba coś zjeść, a nie ma już siły stać przy garnku. Na spotkaniu pokazuję dokładnie to jedno: nie popisowe danie, tylko obiad, który sam dochodzi, kiedy Ciebie jeszcze nie ma w domu.",
+        "I od razu wprost, czego się po nim spodziewać nie należy: wprawy nie zastąpi. W gminie, której koła gospodyń wygrywają konkursy kulinarne, tej wprawy akurat nie brakuje. Zabiera dwie rzeczy — stanie obok garnka i te czynności, przez które gotowanie na zapas odkłada się na później.",
       ],
     },
     {

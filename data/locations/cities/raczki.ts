@@ -144,7 +144,7 @@ export const RACZKI: CityContent = {
   h1: "Thermomix Raczki – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Raczki — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Raczkach: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Raczkach: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Raczki — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Raczkach. Prezentacja i dojazd bezpłatne.",

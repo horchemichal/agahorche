@@ -156,7 +156,7 @@ export const GARWOLIN: CityContent = {
   h1: "Thermomix Garwolin – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Garwolin — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Garwolinie: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Garwolinie: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Garwolin — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Garwolinie. Prezentacja i dojazd bezpłatne.",

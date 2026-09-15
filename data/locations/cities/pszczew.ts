@@ -188,7 +188,7 @@ export const PSZCZEW: CityContent = {
   h1: "Thermomix Pszczew – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Pszczew — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Pszczewie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Pszczewie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Pszczew — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Pszczewie. Prezentacja i dojazd bezpłatne.",

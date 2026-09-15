@@ -166,7 +166,7 @@ export const TRZYCIAZ: CityContent = {
         "Praca rozkłada się na trzy strony. Rolnictwo, zakład produkujący kable i przewody z siedzibą w samym Trzyciążu, oraz dojazdy — najczęściej do Krakowa, rzadziej do Olkusza i Wolbromia. Kolei w gminie nie ma wcale, więc jeździ się samochodem albo autobusem.",
         "Dzień w takim układzie zaczyna się wcześnie i kończy późno. Kto dojeżdża do Krakowa, wyjeżdża przed siódmą i wraca po siedemnastej; kto pracuje w gospodarstwie, ma najwięcej roboty dokładnie wtedy, kiedy trzeba by gotować obiad. Jedno i drugie prowadzi do tego samego: posiłek trzeba przygotować w czasie, którego nie ma.",
         "I to jest cała rzecz, którą pokazuję na prezentacji. Nie to, że urządzenie ugotuje coś wymyślnego, tylko że zupa może się gotować sama, kiedy Ty jesteś w polu albo jeszcze w drodze, i sama się wyłączy. Że da się nastawić obiad rano i zastać go gotowego.",
-        "Mówię też wprost, czego Thermomix nie zrobi: nie zastąpi wprawy. W gminie, która od osiemnastu lat organizuje własne święto kulinarne, tej wprawy akurat nie brakuje. Zabiera stanie obok garnka i te czynności, przez które gotowanie na zapas odkłada się na później.",
+        "Mówię też wprost o granicy: wprawy w kuchni to urządzenie nie zastąpi. W gminie, która od osiemnastu lat organizuje własne święto kulinarne, tej wprawy akurat nie brakuje. Zdejmuje stanie przy garnku i te czynności, które najczęściej decydują, że większa partia zostaje odłożona.",
       ],
     },
     {

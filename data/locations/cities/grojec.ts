@@ -197,7 +197,7 @@ export const GROJEC: CityContent = {
   h1: "Thermomix Grójec – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Grójec — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Grójcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Grójcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Grójec — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Grójcu. Prezentacja i dojazd bezpłatne.",

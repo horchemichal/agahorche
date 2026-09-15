@@ -157,7 +157,7 @@ export const WYSOKIE_MAZOWIECKIE: CityContent = {
   h1: "Thermomix Wysokie Mazowieckie – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Wysokie Mazowieckie — przedstawiciel i cena",
   seoDescription:
-    "Thermomix w Wysokiem Mazowieckiem: bezpłatna prezentacja TM7 u Ciebie w domu. Aga, tel. 517 185 691.",
+    "Thermomix w Wysokiem Mazowieckiem: bezpłatna prezentacja TM7 u Ciebie w domu. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Wysokie Mazowieckie — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Wysokiem Mazowieckiem. Prezentacja i dojazd bezpłatne.",

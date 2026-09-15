@@ -166,7 +166,7 @@ export const ORLA: CityContent = {
   h1: "Thermomix Orla – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Orla (powiat bielski) — przedstawiciel i cena",
   seoDescription:
-    "Thermomix w Orli i całej gminie: bezpłatna prezentacja TM7 u Ciebie w domu. Aga, tel. 517 185 691.",
+    "Thermomix w Orli i całej gminie: bezpłatna prezentacja TM7 u Ciebie w domu. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Orla — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Orli. Prezentacja i dojazd bezpłatne.",

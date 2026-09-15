@@ -128,7 +128,7 @@ export const JORDANOW_GMINA: CityContent = {
         "Piszę o tym, bo to jest różnica między tą gminą a sąsiadującym z nią miastem, choć nazywają się tak samo i mają urzędy przy tym samym rynku. Miasto ma neogotycki ratusz i plac po targach bydła. Gmina ma pięć wsi rozłożonych po stokach, order za wrzesień i kamieniołom w Osielcu, który pracuje do dziś.",
         "Gmina jest przy tym młodsza od miasta: średnia wieku to niecałe trzydzieści dziewięć lat wobec prawie czterdziestu jeden w Jordanowie. To znaczy, że jeżdżę tu do domów z dziećmi częściej niż kilka kilometrów dalej, do miasta.",
         "Jest tu też coś, czego w mieście nie ma w tej skali: koła gospodyń działają we wszystkich pięciu sołectwach, a to w Łętowni obchodziło w dwa tysiące dwudziestym piątym roku stulecie istnienia. Sto lat kobiet, które organizują się wokół jedzenia i wspólnej roboty. Piszę o tym osobno, niżej.",
-        "Od razu uczciwie, czego urządzenie nie zrobi: nie zastąpi wprawy i nie ugotuje bez Ciebie. Zabiera siekanie, ucieranie, mieszanie i pilnowanie, żeby nie przywarło — czyli te czynności, przez które gotowanie dla większego stołu odkłada się na dzień, w którym będzie czas.",
+        "I od razu uczciwie o granicach: wprawy to urządzenie nie zastąpi, a bez Ciebie samo się nie ugotuje. Przejmuje siekanie, ucieranie, mieszanie i pilnowanie dna — a to właśnie one sprawiają, że gotowanie dla większego stołu ląduje w planach na „kiedy będzie więcej czasu”.",
       ],
     },
     {

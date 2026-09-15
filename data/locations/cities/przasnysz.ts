@@ -185,7 +185,7 @@ export const PRZASNYSZ: CityContent = {
   h1: "Thermomix Przasnysz – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Przasnysz — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Przasnyszu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Przasnyszu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Przasnysz — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Przasnyszu. Prezentacja i dojazd bezpłatne.",

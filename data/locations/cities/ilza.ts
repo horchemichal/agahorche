@@ -222,7 +222,7 @@ export const ILZA: CityContent = {
   h1: "Thermomix Iłża – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Iłża — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Iłży: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Iłży: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Iłża — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Iłży. Prezentacja i dojazd bezpłatne.",

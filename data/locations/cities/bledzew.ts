@@ -173,7 +173,7 @@ export const BLEDZEW: CityContent = {
   h1: "Thermomix Bledzew – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Bledzew — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Bledzewie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Aga, tel. 517 185 691.",
+    "Thermomix w Bledzewie: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bledzew — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Bledzewie. Prezentacja i dojazd bezpłatne.",

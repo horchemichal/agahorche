@@ -165,9 +165,9 @@ export const BUKOWNO: CityContent = {
       paragraphs: [
         "To jest najczęstsze pytanie, jakie słyszę w Bukownie, i jest całkowicie uczciwe. Odpowiadam na nie na początku, a nie na końcu rozmowy, bo od niego zależy, czy w ogóle warto rozmawiać dalej.",
         "Odpowiedź brzmi: ma, ale z innego powodu niż w domu z czwórką dzieci. Tam chodzi o ilość i o czas. Tutaj o to, żeby w ogóle chciało się ugotować — bo gotowanie dla jednej osoby przegrywa najczęściej nie z brakiem umiejętności, tylko z rachunkiem: pół godziny przy garnku i zlew pełen naczyń dla jednego talerza.",
-        "Kiedy nastawienie zupy zajmuje pięć minut, a naczynie jest jedno, ten rachunek wygląda inaczej. To brzmi banalnie, ale w praktyce jest różnicą między „coś sobie ugotuję” a „zjem kanapkę, bo mi się nie chce” — i to właśnie tę różnicę widać po kilku tygodniach.",
+        "Przy zupie nastawionej w pięć minut i jednym naczyniu do umycia ten rachunek wychodzi zupełnie inaczej. To brzmi banalnie, ale w praktyce jest różnicą między „coś sobie ugotuję” a „zjem kanapkę, bo mi się nie chce” — i to właśnie tę różnicę widać po kilku tygodniach.",
         "Druga rzecz to porcje. Da się ugotować mało i naprawdę mało, bez kombinowania i bez wyrzucania połowy. A jeśli akurat wygodniej ugotować więcej i odłożyć na trzy dni — to też jest normalny sposób używania tego urządzenia, a nie tryb awaryjny.",
-        "Trzecia rzecz, o której mówi się rzadziej: przepis prowadzi krok po kroku i pilnuje czasu za Ciebie. Dla części osób to jest główny powód zakupu — nie oszczędność czasu, tylko to, że nie trzeba niczego pamiętać ani niczego pilnować.",
+        "Jest jeszcze trzecia rzecz, wymieniana rzadziej: przepis prowadzi krok po kroku, a czasu pilnuje urządzenie. Dla części osób to jest główny powód zakupu — nie oszczędność czasu, tylko to, że nie trzeba niczego pamiętać ani niczego pilnować.",
         "Na prezentacji pokazuję to wprost: gotuję jedną małą porcję, żeby było widać, jak to wygląda naprawdę, a nie jak na zdjęciu z książki kucharskiej. Jeśli po tym uznasz, że u Ciebie nie ma to sensu — powiem to samo i nie będę przekonywać. Wolę nie sprzedać niż sprzedać coś, co potem stoi w szafce.",
       ],
       links: [

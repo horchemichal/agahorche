@@ -141,8 +141,8 @@ export const WADOWICE: CityContent = {
         "Piszę o tym, bo to zmienia to, kogo spotykam na prezentacjach. Wadowice nie są miasteczkiem, z którego wszyscy dojeżdżają gdzie indziej. Są miejscem, do którego się dojeżdża — i to widać po godzinach, o które ludzie proszą, i po tym, jak wygląda wieczór w takim domu.",
         "Druga rzecz to skala samej gminy. Chocznia, jedno z sołectw, ma ponad pięć i pół tysiąca mieszkańców — więcej niż niejedno polskie miasto i więcej niż sąsiednia Kalwaria Zebrzydowska. Klecza Dolna to kolejne dwa i pół tysiąca. To nie są przysiółki, do których się „zagląda”. To są miejscowości z własnym życiem, sklepami i szkołą.",
         "Trzecia rzecz, najświeższa i najbardziej praktyczna: od grudnia dwa tysiące dwudziestego piątego roku ze stacji w Wadowicach jeżdżą przyspieszone pociągi wprost do Krakowa Głównego. Poranny jest w Krakowie po sześćdziesięciu pięciu minutach, popołudniowy wraca po sześćdziesięciu czterech. To realnie zmieniło dojazd i wiele osób jeszcze o tym nie wie.",
-        "Wieczór po takim dniu wygląda zwykle podobnie, niezależnie od tego, czym się wracało: trzeba coś zjeść, a nie ma już siły stać przy garnku. I to jest cała rzecz, którą pokazuję na prezentacji — nie to, że urządzenie ugotuje coś wymyślnego, tylko że obiad może się gotować sam, kiedy Ty jeszcze jesteś w drodze.",
-        "Mówię też wprost, czego Thermomix nie zrobi: nie zastąpi wprawy. Zabiera dwie rzeczy — stanie obok garnka i te czynności, przez które gotowanie od zera odkłada się na „kiedy indziej”. Reszta zostaje po Twojej stronie i tak ma być.",
+        "Wieczór po takim dniu wygląda zwykle podobnie, niezależnie od tego, czym się wracało: trzeba coś zjeść, a nie ma już siły stać przy garnku. To jest cała rzecz, o którą chodzi na prezentacji: nie o efektowne danie, tylko o to, że obiad może pracować bez Ciebie, zanim wrócisz do domu.",
+        "Uczciwie o granicy: wprawy przy garnku to urządzenie nie zastąpi. Zabiera dwie rzeczy — stanie obok garnka i te czynności, przez które gotowanie od zera odkłada się na „kiedy indziej”. Reszta zostaje po Twojej stronie i tak ma być.",
       ],
     },
     {

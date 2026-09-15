@@ -168,8 +168,8 @@ export const OLKUSZ: CityContent = {
         "Piszę o tym nie dla ozdoby. W Olkuszu trafiam do kuchni, w których stoją garnki zrobione kilka ulic dalej, i do domów, gdzie ktoś w tej fabryce pracował albo pracuje. To zmienia rozmowę: nie muszę tłumaczyć, czym różni się porządne naczynie od byle jakiego, bo to jest wiedza, którą się tu ma z domu.",
         "Druga rzecz to układ dnia. Część osób pracuje na miejscu — w przemyśle, w handlu, w usługach — a część dojeżdża, i to w dwie strony naraz: do Krakowa i na Śląsk, po czterdzieści kilometrów w każdą. Olkusz jest dokładnie pośrodku, co brzmi wygodnie, dopóki nie policzy się godzin.",
         "Tu przydaje się rzecz, o której warto wiedzieć: z Olkusza jeździ pociąg do Krakowa. Od grudniowej korekty rozkładu jest siedem par w dni robocze i trzy w weekendy, a przejazd zajmuje około siedemdziesięciu, osiemdziesięciu minut. W okolicy, gdzie większość gmin kolei pasażerskiej nie ma wcale, to spora różnica — i dla wielu osób oznacza, że wraca się o stałej porze, ale późno.",
-        "Wieczór po takim dniu wygląda zwykle podobnie: trzeba coś zjeść, a nie ma już siły stać przy garnku. I to jest cała rzecz, którą pokazuję na prezentacji — nie to, że urządzenie ugotuje coś wymyślnego, tylko że obiad może się gotować sam, kiedy Ty jeszcze jesteś w drodze albo dopiero zdejmujesz kurtkę.",
-        "Mówię też wprost, czego Thermomix nie zrobi: nie zastąpi wprawy i nie nauczy nikogo gotować z niczego. Zabiera stanie obok garnka i te czynności, przez które gotowanie odkłada się na później — rozdrabnianie, ucieranie, mieszanie, pilnowanie, żeby nie przywarło.",
+        "Wieczór po takiej zmianie kończy się zawsze tak samo: coś trzeba zjeść, a na stanie przy garnku nie ma już ani siły, ani cierpliwości. I to jest cała rzecz, którą pokazuję na prezentacji — nie to, że urządzenie ugotuje coś wymyślnego, tylko że obiad może się gotować sam, kiedy Ty jeszcze jesteś w drodze albo dopiero zdejmujesz kurtkę.",
+        "Powiem też wprost, czego to urządzenie nie zrobi: wprawy nie zastąpi i z pustej lodówki obiadu nie wyczaruje. Zdejmuje z człowieka stanie przy palniku i te czynności, które najczęściej przeważają szalę na „może jutro” — rozdrabnianie, ucieranie, mieszanie i pilnowanie, żeby nic nie przywarło.",
       ],
     },
     {
@@ -212,7 +212,7 @@ export const OLKUSZ: CityContent = {
       id: "jedna-osoba",
       heading: "Mały dom, mała porcja — i pytanie o sens takiego zakupu",
       paragraphs: [
-        "To pytanie słyszę w Olkuszu częściej niż gdzie indziej i jest ono uczciwe. Odpowiedź brzmi: ma, ale z innego powodu niż w domu z czwórką dzieci. Tam chodzi o ilość. Tutaj o to, żeby w ogóle chciało się gotować.",
+        "To pytanie słyszę w Olkuszu częściej niż gdzie indziej i jest ono uczciwe. Ma — tyle że z zupełnie innego powodu niż w domu, w którym do stołu siada szóstka. Tam chodzi o ilość. Tutaj o to, żeby w ogóle chciało się gotować.",
         "Gotowanie dla jednej osoby najczęściej przegrywa nie z brakiem umiejętności, tylko z rachunkiem opłacalności — pół godziny przy garnku i góra naczyń dla jednego talerza. Kiedy nastawienie zupy zajmuje pięć minut, a naczynie jest jedno, ten rachunek się zmienia.",
         "Druga rzecz to porcje. Da się ugotować mało i naprawdę mało, bez kombinowania i bez wyrzucania. A jeśli akurat wygodniej ugotować więcej i odłożyć na trzy dni, to też jest normalny sposób używania tego urządzenia, a nie awaryjny.",
         "Na prezentacji pokazuję to wprost: gotuję jedną małą porcję, żeby było widać, jak to wygląda w praktyce, a nie na zdjęciu z książki kucharskiej. Jeśli po tym uznasz, że nie ma sensu — powiem to samo i nie będę przekonywać.",

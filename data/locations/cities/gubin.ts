@@ -179,7 +179,7 @@ export const GUBIN: CityContent = {
   h1: "Thermomix Gubin – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Gubin — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Gubinie: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i okolice. Aga, tel. 517 185 691.",
+    "Thermomix w Gubinie: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i okolice. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Gubin — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Gubinie. Prezentacja i dojazd bezpłatne.",

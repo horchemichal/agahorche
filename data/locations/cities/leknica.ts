@@ -190,7 +190,7 @@ export const LEKNICA: CityContent = {
   h1: "Thermomix Łęknica – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Łęknica — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Łęknicy: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Łęknicy: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Łęknica — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Łęknicy. Prezentacja i dojazd bezpłatne.",

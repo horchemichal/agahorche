@@ -204,7 +204,7 @@ export const PIONKI: CityContent = {
   h1: "Thermomix Pionki – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Pionki — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Pionkach: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Pionkach: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Pionki — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Pionkach. Prezentacja i dojazd bezpłatne.",

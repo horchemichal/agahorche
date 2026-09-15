@@ -200,7 +200,7 @@ export const SZYDLOWIEC: CityContent = {
   h1: "Thermomix Szydłowiec – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Szydłowiec — przedstawiciel, prezentacja i cena",
   seoDescription:
-    "Thermomix w Szydłowcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Szydłowcu: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Dojazd bezpłatny. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Szydłowiec — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Szydłowcu. Prezentacja i dojazd bezpłatne.",
