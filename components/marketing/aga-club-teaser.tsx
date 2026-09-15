@@ -11,7 +11,7 @@ export function AgaClubTeaser() {
           Aga Club
         </Heading>
         <Lead className="mx-auto mb-8 max-w-xl text-brand-100">
-          Pomysły na obiad, plan tygodnia, wyzwanie 30 dni z Agą i wsparcie AI w kuchni — wszystko
+          Pomysły na obiad, plan tygodnia, wyzwanie 30 kroków z Agą i wsparcie AI w kuchni — wszystko
           w jednym miejscu.
         </Lead>
         <ButtonLink href="/aga-club" variant="secondary" size="lg">
