@@ -18,8 +18,8 @@ import { CheckCircleIcon } from "@/components/marketing/icons";
  * diet co każdy odwiedzający, tylko z odblokowanymi wszystkimi dniami.
  * Różnica jest realna, ale to nie jest „więcej diet".
  *
- * W zamian doszły cztery rzeczy, które klub naprawdę daje, a lista o nich
- * milczała: przepisy, lodówka, poradnik i wyzwanie 30 kroków.
+ * W zamian doszły trzy rzeczy, które klub naprawdę daje, a lista o nich
+ * milczała: przepisy, lodówka i poradnik.
  */
 const ITEMS = [
   "pełne jadłospisy — wszystkie dni odblokowane",
@@ -30,7 +30,6 @@ const ITEMS = [
   "Co ugotować dzisiaj?",
   "Co mam w lodówce?",
   "poradnik kuchenny",
-  "30 kroków z Thermomixem",
 ];
 
 /**
