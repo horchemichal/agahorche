@@ -716,6 +716,10 @@ import { CELESTYNOW } from "./celestynow";
 import { HALINOW } from "./halinow";
 import { ZAKROCZYM } from "./zakroczym";
 import { MYSZYNIEC } from "./myszyniec";
+import { KALUSZYN } from "./kaluszyn";
+import { WYSZOGROD } from "./wyszogrod";
+import { MOGIELNICA } from "./mogielnica";
+import { MORDY } from "./mordy";
 
 
 /**
@@ -1500,4 +1504,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   HALINOW,
   ZAKROCZYM,
   MYSZYNIEC,
+  KALUSZYN,
+  WYSZOGROD,
+  MOGIELNICA,
+  MORDY,
 ];
