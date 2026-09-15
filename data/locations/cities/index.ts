@@ -750,6 +750,11 @@ import { KCYNIA } from "./kcynia";
 import { PIOTRKOW_KUJAWSKI } from "./piotrkow-kujawski";
 import { LABISZYN } from "./labiszyn";
 import { MROCZA } from "./mrocza";
+import { KOWALEWO_POMORSKIE } from "./kowalewo-pomorskie";
+import { JABLONOWO_POMORSKIE } from "./jablonowo-pomorskie";
+import { SKEPE } from "./skepe";
+import { KOWAL } from "./kowal";
+import { LASIN } from "./lasin";
 
 
 /**
@@ -1568,4 +1573,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PIOTRKOW_KUJAWSKI,
   LABISZYN,
   MROCZA,
+  KOWALEWO_POMORSKIE,
+  JABLONOWO_POMORSKIE,
+  SKEPE,
+  KOWAL,
+  LASIN,
 ];
