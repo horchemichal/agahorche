@@ -339,15 +339,6 @@ create table if not exists aga_club_members (
   created_at timestamptz not null default now()
 );
 
-create table if not exists aga_club_challenge_days (
-  day integer primary key check (day between 1 and 30),
-  task text not null default '',
-  tip text not null default '',
-  video_url text,
-  active boolean not null default false,
-  updated_at timestamptz not null default now()
-);
-
 -- ============================================================
 -- CLIENT ZONE — "Strefa Klienta" (ETAP 7, 19 sierpnia 2026)
 -- ============================================================
@@ -515,13 +506,15 @@ create table if not exists poradnik_wpisy (
 
 create index if not exists poradnik_dzial_idx on poradnik_wpisy (dzial, kolejnosc);
 
--- 1.09.2026 — wyzwanie „30 dni z Thermomixem" dostało treść startową.
--- `przepis_id` wiąże dzień z konkretnym przepisem z rejestru (wyzwanie mówi
--- CO ugotować, przepis na Cookidoo mówi JAK — nie przepisujemy ustawień
--- urządzenia). `wlasne` odróżnia treść Agi od wgranego planu do przepisania,
--- tak samo jak w tabeli poradnik_wpisy.
-alter table aga_club_challenge_days add column if not exists przepis_id text;
-alter table aga_club_challenge_days add column if not exists wlasne boolean not null default true;
+-- 15.09.2026 — moduł wyzwania „30 kroków z Thermomixem" usunięty z serwisu
+-- na prośbę Michała. Definicja tabeli `aga_club_challenge_days` zniknęła
+-- stąd, więc świeża instalacja jej nie założy.
+--
+-- ⚠ TABELA NA DZIAŁAJĄCYM SERWERZE ZOSTAJE WRAZ Z TREŚCIĄ. Ten plik jej
+-- nie usuwa i nie powinien — to trzydzieści wierszy, które ktoś napisał.
+-- Jeżeli ma zniknąć także z bazy, trzeba to zrobić ręcznie i świadomie:
+--     drop table aga_club_challenge_days;
+-- Operacja jest nieodwracalna, więc najpierw kopia (scripts/zrob-kopie.sh).
 
 -- 5.09.2026 — powiadomienia push do aplikacji Aga Club.
 --
