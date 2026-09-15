@@ -740,6 +740,11 @@ import { SEPOLNO_KRAJENSKIE } from "./sepolno-krajenskie";
 import { JANIKOWO } from "./janikowo";
 import { BARCIN } from "./barcin";
 import { GNIEWKOWO } from "./gniewkowo";
+import { NOWE } from "./nowe";
+import { WIECBORK } from "./wiecbork";
+import { STRZELNO } from "./strzelno";
+import { RADZIEJOW } from "./radziejow";
+import { PAKOSC } from "./pakosc";
 
 
 /**
@@ -1548,4 +1553,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JANIKOWO,
   BARCIN,
   GNIEWKOWO,
+  NOWE,
+  WIECBORK,
+  STRZELNO,
+  RADZIEJOW,
+  PAKOSC,
 ];
