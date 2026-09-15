@@ -43,7 +43,7 @@ export default async function AdminAgaClubPage() {
               Czat klubu
             </ButtonLink>
             <ButtonLink href="/admin/aga-club/wyzwanie" variant="outline">
-              Wyzwanie 30 dni ({activeDays}/30 opublikowanych)
+              Wyzwanie 30 kroków ({activeDays}/30 opublikowanych)
             </ButtonLink>
           </div>
         }
