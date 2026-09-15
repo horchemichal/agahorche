@@ -24,7 +24,7 @@ export default async function EditChallengeDayPage({ params }: Props) {
 
   return (
     <>
-      <PanelHeader title={`Dzień ${day} — 30 dni z Agą`} />
+      <PanelHeader title={`Krok ${day} — 30 kroków z Agą`} />
       <DayForm day={record} />
     </>
   );
