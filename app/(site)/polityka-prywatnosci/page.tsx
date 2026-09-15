@@ -273,7 +273,7 @@ export default function PolitykaPrywatnosciPage() {
             zapisanie. Znikają, gdy się wylogujesz.
           </p>
           <p>
-            Dodatkowo narzędzia klubu (lista Twoich diet, postęp w wyzwaniu 30 dni) zapamiętują
+            Dodatkowo narzędzia klubu (lista Twoich diet, postęp w wyzwaniu 30 kroków) zapamiętują
             wybory <strong>w Twojej własnej przeglądarce</strong>. Te dane nie trafiają na serwer —
             nikt poza Tobą ich nie widzi, a wyczyszczenie danych przeglądarki je kasuje.
           </p>
