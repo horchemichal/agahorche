@@ -730,6 +730,11 @@ import { ZNIN } from "./znin";
 import { TUCHOLA } from "./tuchola";
 import { WABRZEZNO } from "./wabrzezno";
 import { ALEKSANDROW_KUJAWSKI } from "./aleksandrow-kujawski";
+import { MOGILNO } from "./mogilno";
+import { GOLUB_DOBRZYN } from "./golub-dobrzyn";
+import { KORONOWO } from "./koronowo";
+import { CIECHOCINEK } from "./ciechocinek";
+import { SZUBIN } from "./szubin";
 
 
 /**
@@ -1528,4 +1533,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   TUCHOLA,
   WABRZEZNO,
   ALEKSANDROW_KUJAWSKI,
+  MOGILNO,
+  GOLUB_DOBRZYN,
+  KORONOWO,
+  CIECHOCINEK,
+  SZUBIN,
 ];
