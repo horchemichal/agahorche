@@ -755,6 +755,11 @@ import { JABLONOWO_POMORSKIE } from "./jablonowo-pomorskie";
 import { SKEPE } from "./skepe";
 import { KOWAL } from "./kowal";
 import { LASIN } from "./lasin";
+import { LUBRANIEC } from "./lubraniec";
+import { IZBICA_KUJAWSKA } from "./izbica-kujawska";
+import { UNISLAW } from "./unislaw";
+import { KAMIEN_KRAJENSKI } from "./kamien-krajenski";
+import { DOBRZYN_NAD_WISLA } from "./dobrzyn-nad-wisla";
 
 
 /**
@@ -1578,4 +1583,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SKEPE,
   KOWAL,
   LASIN,
+  LUBRANIEC,
+  IZBICA_KUJAWSKA,
+  UNISLAW,
+  KAMIEN_KRAJENSKI,
+  DOBRZYN_NAD_WISLA,
 ];
