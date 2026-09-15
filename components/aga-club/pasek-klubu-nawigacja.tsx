@@ -18,8 +18,8 @@ import { cn } from "@/lib/utils";
  * menu będzie na każdej podstronie aga club").
  *
  * PROBLEM, KTÓRY TO ROZWIĄZUJE. Klub jest rozsypany po serwisie: diety pod
- * /diety, przepisy pod /przepisy, poradnik pod /poradnik, wyzwanie pod
- * /aga-club/30-dni-z-aga. Klientka, która weszła z pulpitu w „Poradnik",
+ * /diety, przepisy pod /przepisy, a poradnik pod /poradnik.
+ * Klientka, która weszła z pulpitu w „Poradnik",
  * nie miała jak przejść stamtąd do „Lodówki" inaczej niż przez górne menu
  * serwisu — czyli przez to samo menu, które widzi osoba niezalogowana.
  * Klub nie miał własnej nawigacji, tylko listę odnośników na pulpicie.
@@ -39,7 +39,7 @@ import { cn } from "@/lib/utils";
  * Pierwsza wersja przewijała się w bok, żeby oszczędzić miejsce nad
  * treścią. Efekt był odwrotny do zamierzonego: na ekranie mieściły się
  * trzy pozycje, czwarta była ucięta w pół, a o istnieniu poradnika
- * i wyzwania trzeba było się domyślić i przesunąć palcem. Menu, którego
+ * trzeba było się domyślić i przesunąć palcem. Menu, którego
  * połowy nie widać, nie jest menu. Sześć wierszy zjada kawałek ekranu,
  * ale za to klub jest widoczny cały — i to jest ta zamiana, o którą
  * chodziło.

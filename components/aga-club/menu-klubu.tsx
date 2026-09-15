@@ -8,7 +8,7 @@ import { POZYCJE_KLUBU } from "@/data/aga-club/pozycje-klubu";
  *
  * PO CO (prośba Michała, 4.09.2026: „po zalogowaniu niech będzie
  * wyświetlone mini menu w panelu"). Do tej pory pulpit pokazywał wyłącznie
- * diety. Reszta klubu — przepisy, lodówka, poradnik, wyzwanie — była
+ * diety. Reszta klubu — przepisy, lodówka, poradnik — była
  * osiągalna tylko przez górne menu serwisu, więc po zalogowaniu klientka
  * lądowała na stronie, która nie mówiła jej, co jeszcze dostała.
  *
