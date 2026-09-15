@@ -35,7 +35,7 @@ export function DayForm({ day }: { day: AgaClubChallengeDay }) {
         <Input id="przepisId" name="przepisId" defaultValue={day.przepisId ?? ""} placeholder="np. cd-r10001" />
         <p className="mt-2 text-sm text-muted">
           Identyfikator z bazy przepisów. Pod zadaniem pojawi się wtedy nazwa dania i link
-          do Cookidoo. Zostaw puste, jeśli tego dnia nie ma nic do ugotowania.
+          do Cookidoo. Zostaw puste, jeśli w tym kroku nie ma nic do ugotowania.
         </p>
       </div>
 

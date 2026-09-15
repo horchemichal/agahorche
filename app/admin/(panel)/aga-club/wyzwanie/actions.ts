@@ -35,7 +35,7 @@ export async function saveChallengeDayAction(_prevState: FormActionState, formDa
       entityType: "aga-club-challenge-day",
       entityId: String(day),
       action: "update",
-      summary: `Zaktualizowano dzień ${day} wyzwania „30 dni z Thermomixem”`,
+      summary: `Zaktualizowano dzień ${day} wyzwania „30 kroków z Thermomixem”`,
     });
   } catch (error) {
     return { error: error instanceof Error ? error.message : "Nie udało się zapisać dnia." };
