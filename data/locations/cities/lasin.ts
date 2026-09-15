@@ -206,6 +206,15 @@ import {
  *   KTÓRE SIĘ MA. ⚠⚠ TO JEST NAJBLIŻSZY KĄT. TUTAJ nie ma
  *   ani słowa o układaniu — jest wyłącznie DECYZJA
  *   O POSIADANIU.
+ * — ⚠⚠ „GOFRY" (Jastarnia) TEŻ DOTYKA SPRZĘTU
+ *   JEDNOZADANIOWEGO — kolizję wykrył dopiero poprawiony
+ *   skrypt sprawdzający, bo stare narzędzie czytało
+ *   wyłącznie pierwszą linię kąta. Rozgraniczenie:
+ *   tamta strona opisuje JEDEN KONKRETNY SPRZĘT i uczciwie
+ *   przyznaje, że urządzenie go nie zastępuje; TUTAJ nie ma
+ *   ani jednego konkretnego sprzętu z nazwy — jest sam
+ *   SPOSÓB PODJĘCIA DECYZJI, dwa pytania kontrolne.
+ *   NIE WYMIENIAM ŻADNEGO URZĄDZENIA Z NAZWY.
  * — „MOC" (Bledzew) dotyczy SIŁY OGNIA.
  * — „WAGA URZĄDZENIA" (Tczew) dotyczy PODNOSZENIA.
  * — „PŁACENIE ZA POMINIĘCIE KROKU" (Łabiszyn) dotyczy
