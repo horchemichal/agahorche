@@ -17,6 +17,17 @@ import {
  * zanim Łódź stała się miastem przemysłowym. Dziś połączone z Łodzią linią
  * tramwajową i codziennym ruchem.
  *
+ *
+ * ⚠⚠ ROZGRANICZENIE OBOWIĄZKOWE — ŚWIĘTOCHŁOWICE.
+ * Obie strony wyrosły z tej samej obserwacji i przez to mówiły to samo.
+ * Kolizję wykryła analiza zbieżności kątów w całym katalogu. Podział:
+ * TUTAJ (Pabianice): CIĘŻAR — ile waży jedna wyprawa i które produkty dają
+ *   najwięcej obiadów na kilogram. Suche i skoncentrowane wygrywa
+ *   z ciężkim i rozwodnionym.
+ * TAM (Świętochłowice): CZĘSTOTLIWOŚĆ — sklep za rogiem skraca horyzont
+ *   planowania do jednego dnia.
+ * ⚠ NIE PISZĘ JUŻ „kupuje się częściej i lżej" — częstotliwość należy
+ *   do tamtej strony. Piszę wyłącznie o ciężarze.
  * KĄT: ile da się unieść. Codzienny dojazd tramwajem to zupełnie inna
  * sytuacja niż dojazd samochodem i nikt o tym nie pisze, bo wydaje się
  * zbyt banalne. A różnica jest twarda: SAMOCHODEM PRZYWOZI SIĘ TYLE,
@@ -81,7 +92,9 @@ export const PABIANICE: CityContent = {
       paragraphs: [
         "Pabianice są starsze od przemysłowej Łodzi — w centrum stoi renesansowy dwór, który pamięta czasy, gdy Łódź była wsią. Dziś oba miasta łączy tramwaj i codzienny ruch w obie strony, i właśnie z tego bierze się rzecz, o której chcę napisać.",
         "Kto dojeżdża tramwajem, ten zna to na pamięć: wracając z pracy, przywozi się tyle, ile da się unieść w dwóch rękach przez przystanek, przejście i klatkę schodową. Nie ma bagażnika. Nie ma „dorzucę jeszcze wodę i pięć kilo ziemniaków”. Ciężar jest realnym ograniczeniem, a nie drobiazgiem.",
-        "Kuchennie wynikają z tego dwie rzeczy. Pierwsza: kupuje się częściej i lżej, więc w lodówce rzadko jest wszystko naraz — obiad powstaje z tego, co akurat jest, a nie z listy. Druga: duże, ciężkie zakupy stają się osobną wyprawą raz na jakiś czas, samochodem albo z dowozem, i wtedy przywozi się głównie rzeczy suche i trwałe.",
+        "Warto przy tym zobaczyć, jak nierówno rozkłada się ten ciężar między produktami. Kilogram ziemniaków to kilogram i wystarcza na jeden obiad. Kilogram kaszy albo makaronu waży tyle samo, a wystarcza na cztery. Litr gotowego bulionu waży kilogram; łyżka przypraw, z której zrobisz własny wywar, waży tyle co nic. Woda w słoikach, sokach i gotowych sosach to najcięższa rzecz, jaką się nosi — i jedyna, którą w domu masz za darmo, z kranu.",
+        "Stąd praktyczna zasada dla domu bez bagażnika: licz produkty nie na kilogramy, tylko na obiady z kilograma. Przy takim rachunku suche i skoncentrowane wygrywa z ciężkim i rozwodnionym, a lista zakupów robi się krótsza bez żadnych wyrzeczeń.",
+        "Duże, ciężkie zakupy zostają wtedy osobną wyprawą raz na jakiś czas — samochodem albo z dowozem — i przywozi się nimi głównie to, czego inaczej się nie da: wodę, mąkę workiem, karmę, chemię.",
         "To ustawia zupełnie inaczej, co w urządzeniu jest dla Was warte pieniędzy. Najbardziej przyda się to, co robi porządne danie z produktów lekkich i tanich, które i tak macie w szafce: z kaszy, ryżu, makaronu, soczewicy, mrożonek i jednego warzywa. Zupa krem, sos, danie jednogarnkowe, ciasto z mąki i tego, co zostało.",
         "Za to cała opowieść o gotowaniu na zapas w wielkich garnkach jest w takim domu mniej użyteczna, bo najpierw trzeba by ten zapas przydźwigać. Nie będę więc jej Wam sprzedawać jako głównej zalety — zamiast tego na prezentacji ugotujemy coś z Waszej szafki.",
       ],

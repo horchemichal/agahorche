@@ -16,6 +16,17 @@ import {
  * w Polsce i jednocześnie najgęściej zaludnione. Wszystko jest tu blisko:
  * sklep, przystanek, szkoła, rodzina.
  *
+ *
+ * ⚠⚠ ROZGRANICZENIE OBOWIĄZKOWE — PABIANICE.
+ * Obie strony wyrosły z tej samej obserwacji („kupuje się tyle, ile da się
+ * unieść") i przez to mówiły to samo. Kolizję wykryła analiza zbieżności
+ * kątów w całym katalogu. Podział jest teraz taki:
+ * TAM (Pabianice): CIĘŻAR — ile waży jedna wyprawa i które produkty dają
+ *   najwięcej obiadów na kilogram.
+ * TUTAJ (Świętochłowice): CZĘSTOTLIWOŚĆ — sklep cztery minuty stąd skraca
+ *   horyzont planowania do jednego dnia, a to unieważnia jadłospis
+ *   na tydzień i pełną lodówkę.
+ * ⚠ NIE PISZĘ O CIĘŻARZE ZAKUPÓW. NIE PISZĘ „ile da się unieść w rękach".
  * KĄT: gęstość zabudowy ma bardzo praktyczną konsekwencję kuchenną, o której
  * nikt nie pisze. W mieście, gdzie do sklepu idzie się pieszo, zakupy robi
  * się MAŁYMI PARTIAMI i CZĘSTO — kupuje się to, co się uniesie w rękach,
@@ -78,7 +89,10 @@ export const SWIETOCHLOWICE: CityContent = {
       heading: "Miasto, w którym po zakupy idzie się pieszo",
       paragraphs: [
         "Świętochłowice są najmniejszym powierzchniowo miastem na prawach powiatu w Polsce i jednym z najgęściej zaludnionych. W praktyce znaczy to, że wszystko jest tu w zasięgu spaceru — sklep, przystanek, szkoła, rodzina.",
-        "Ma to konsekwencję kuchenną, o której nikt nie pisze, a która zmienia wszystko. Skoro do sklepu idzie się pieszo, kupuje się tyle, ile da się unieść w rękach — i chodzi się częściej. Nie ma tu zaplanowanego jadłospisu na tydzień i wielkiego bagażnika z sobotnich zakupów. Jest lodówka, w której zawsze coś jest, i pytanie „co z tego dziś zrobić”.",
+        "Ma to konsekwencję kuchenną, o której się nie mówi, bo wydaje się zbyt oczywista: kiedy do sklepu idzie się cztery minuty, HORYZONT PLANOWANIA SKRACA SIĘ DO JEDNEGO DNIA. Nie dlatego, że ktoś jest niezorganizowany — po prostu nie ma powodu decydować w sobotę, co będzie w środę.",
+        "To zmienia więcej, niż wygląda. Jadłospis na tydzień, rozpisany na kartce, jest tu narzędziem bez zastosowania: zanim dojdzie do czwartku, i tak trzy razy zmieni się to, na co ktoś miał ochotę. Zamiast planu działa pytanie zadawane po południu: co dziś było ładne i co jest w domu.",
+        "Druga zmiana dotyczy lodówki. W domu, w którym sklep jest za rogiem, lodówka ma prawo być w połowie pusta i to nie jest niedopatrzenie, tylko sensowny stan. Pełna lodówka ma sens tam, gdzie po zakupy jedzie się raz w tygodniu; tutaj kończy się głównie tym, że coś trzeba wyrzucić.",
+        "Trzecia jest najbardziej praktyczna: skoro decyzja o obiedzie zapada po południu, liczy się to, ile trwa droga od decyzji do talerza. Nie to, ile dań da się zrobić naraz, tylko jak szybko powstaje jedno, wymyślone pół godziny wcześniej.",
         "Thermomix pasuje do takiego rytmu lepiej, niż wygląda w reklamach. Nie wymaga listy zakupów na tydzień — z tego samego zestawu warzyw robi się zupę krem, pastę do kanapek albo sos do makaronu, w zależności od tego, czego dziś chcecie. A skoro gotuje i miksuje w jednym naczyniu, decyzja „zrobię coś z tego, co mam” nie kończy się stosem garnków.",
       ],
       links: [
