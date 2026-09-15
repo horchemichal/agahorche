@@ -725,6 +725,11 @@ import { NAKLO_NAD_NOTECIA } from "./naklo-nad-notecia";
 import { RYPIN } from "./rypin";
 import { SOLEC_KUJAWSKI } from "./solec-kujawski";
 import { CHELMZA } from "./chelmza";
+import { LIPNO } from "./lipno";
+import { ZNIN } from "./znin";
+import { TUCHOLA } from "./tuchola";
+import { WABRZEZNO } from "./wabrzezno";
+import { ALEKSANDROW_KUJAWSKI } from "./aleksandrow-kujawski";
 
 
 /**
@@ -1518,4 +1523,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RYPIN,
   SOLEC_KUJAWSKI,
   CHELMZA,
+  LIPNO,
+  ZNIN,
+  TUCHOLA,
+  WABRZEZNO,
+  ALEKSANDROW_KUJAWSKI,
 ];
