@@ -720,6 +720,11 @@ import { KALUSZYN } from "./kaluszyn";
 import { WYSZOGROD } from "./wyszogrod";
 import { MOGIELNICA } from "./mogielnica";
 import { MORDY } from "./mordy";
+import { CHELMNO } from "./chelmno";
+import { NAKLO_NAD_NOTECIA } from "./naklo-nad-notecia";
+import { RYPIN } from "./rypin";
+import { SOLEC_KUJAWSKI } from "./solec-kujawski";
+import { CHELMZA } from "./chelmza";
 
 
 /**
@@ -1508,4 +1513,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WYSZOGROD,
   MOGIELNICA,
   MORDY,
+  CHELMNO,
+  NAKLO_NAD_NOTECIA,
+  RYPIN,
+  SOLEC_KUJAWSKI,
+  CHELMZA,
 ];
