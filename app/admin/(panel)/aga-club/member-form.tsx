@@ -83,7 +83,7 @@ export function MemberForm() {
       <h2 className="mb-1 font-medium text-neutral-900">Załóż konto klientce</h2>
       <p className="mb-4 text-sm text-muted">
         Tworzy konto do logowania w Strefie Klienta. Osoba z takim kontem widzi pełne jadłospisy,
-        przepisy, poradnik i wyzwanie 30 kroków.
+        przepisy i poradnik kuchenny.
       </p>
 
       <form ref={formRef} action={formAction} className="flex flex-wrap items-end gap-4">

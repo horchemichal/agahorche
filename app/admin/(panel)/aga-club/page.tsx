@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { requireAdmin } from "@/lib/auth/require-admin";
 import { listaKont } from "@/lib/admin/konta-klientow";
-import { getAgaClubChallengeRepository } from "@/lib/database/repositories/aga-club-challenge-repository";
 import { PanelHeader, EmptyState } from "@/components/admin/panel-states";
 import { Card, Badge } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
@@ -26,11 +25,7 @@ export const metadata: Metadata = {
  */
 export default async function AdminAgaClubPage() {
   await requireAdmin();
-  const [konta, challengeDays] = await Promise.all([
-    listaKont(),
-    getAgaClubChallengeRepository().listDays(),
-  ]);
-  const activeDays = challengeDays.filter((d) => d.active).length;
+  const konta = await listaKont();
 
   return (
     <>
@@ -41,9 +36,6 @@ export default async function AdminAgaClubPage() {
           <div className="flex flex-wrap gap-2">
             <ButtonLink href="/admin/aga-club/czat" variant="outline">
               Czat klubu
-            </ButtonLink>
-            <ButtonLink href="/admin/aga-club/wyzwanie" variant="outline">
-              Wyzwanie 30 kroków ({activeDays}/30 opublikowanych)
             </ButtonLink>
           </div>
         }
