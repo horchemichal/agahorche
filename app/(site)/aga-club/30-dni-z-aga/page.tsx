@@ -11,7 +11,7 @@ import { getRecipe } from "@/data/diets/recipes";
 import { PRZEPISY_META } from "@/data/diets/przepisy-meta";
 
 export const metadata: Metadata = buildMetadata({
-  title: "30 dni z Thermomixem — plan dla nowej właścicielki",
+  title: "30 kroków z Thermomixem — plan dla nowej właścicielki",
   description:
     "Trzydzieści dni, trzydzieści zadań: od pierwszego koktajlu po własny repertuar dań. Dla osoby, która dostała Thermomix i nie chce, by stał nieużywany.",
   path: "/aga-club/30-dni-z-aga",
@@ -19,7 +19,7 @@ export const metadata: Metadata = buildMetadata({
 
 /**
  * OŚ STRONY
- * Wyzwanie „30 dni z Thermomixem" — moduł, który od sierpnia 2026 istniał
+ * Wyzwanie „30 kroków z Thermomixem" — moduł, który od sierpnia 2026 istniał
  * jako pusta tabela i strona „wkrótce”. Teraz ma treść (30 dni), postęp
  * i gating.
  *
@@ -69,13 +69,13 @@ export default async function TrzydziesciDniPage() {
         <Breadcrumbs
           items={[
             { name: "Aga Club", path: "/aga-club" },
-            { name: "30 dni z Thermomixem", path: "/aga-club/30-dni-z-aga" },
+            { name: "30 kroków z Thermomixem", path: "/aga-club/30-dni-z-aga" },
           ]}
         />
         <div className="mt-6 max-w-2xl">
           <Eyebrow>Aga Club</Eyebrow>
           <Heading as="h1" size="xl" className="mt-2">
-            30 dni z Thermomixem
+            30 kroków z Thermomixem
           </Heading>
           <Lead className="mt-4">
             Trzydzieści dni, trzydzieści zadań — po jednym dziennie. Od pierwszego koktajlu
