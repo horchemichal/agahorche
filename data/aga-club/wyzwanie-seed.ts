@@ -2,7 +2,7 @@ import type { AgaClubChallengeDayInput } from "@/types/aga-club";
 
 /**
  * OŚ PLIKU
- * Treść startowa wyzwania „30 dni z Thermomixem" — trzydzieści dni,
+ * Treść startowa wyzwania „30 kroków z Thermomixem" — trzydzieści dni,
  * z czego osiemnaście prowadzi do konkretnego przepisu z rejestru.
  *
  * UKŁAD MIESIĄCA. Cztery tygodnie o czterech różnych rzeczach:

@@ -89,7 +89,7 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     prefiksy: ["/poradnik"],
   },
   /*
-   * Czat (5.09.2026). Stoi PRZED „30 dniami”, a nie na końcu przed
+   * Czat (5.09.2026). Stoi PRZED „30 krokami”, a nie na końcu przed
    * aplikacją: to jedyna pozycja klubu, do której wraca się kilka razy
    * dziennie, więc powinna być w zasięgu kciuka, a nie za wyzwaniem,
    * które odhacza się raz na dobę.
@@ -105,8 +105,8 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
   {
     href: "/aga-club/30-dni-z-aga",
     ikona: CalendarIcon,
-    tytul: "30 dni z Thermomixem",
-    krotki: "30 dni",
+    tytul: "30 kroków z Thermomixem",
+    krotki: "30 kroków",
     opis: "Trzydzieści zadań, po jednym dziennie.",
     prefiksy: ["/aga-club/30-dni-z-aga"],
   },

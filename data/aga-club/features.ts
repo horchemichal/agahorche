@@ -73,7 +73,7 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
   },
   {
     key: "trzydziesciDniZAga",
-    title: "30 dni z Thermomixem",
+    title: "30 kroków z Thermomixem",
     // Opis poprawiony 1.09.2026: wcześniej obiecywał „odznaki za postępy”,
     // których moduł nie ma i mieć nie będzie. Jest pasek postępu i odhaczanie.
     description: "Trzydzieści dni, trzydzieści zadań — od pierwszego koktajlu po własny repertuar dań.",
