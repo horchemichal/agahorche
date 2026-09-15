@@ -36,7 +36,7 @@ export default function manifest(): MetadataRoute.Manifest {
     // Opis bez „wsparcia AI", które stało tu do 4.09.2026 — takiej funkcji
     // w serwisie nie ma i została usunięta ze wszystkich innych miejsc.
     description:
-      "Twoje jadłospisy, przepisy na Thermomix, poradnik kuchenny i wyzwanie 30 kroków — w jednym miejscu.",
+      "Twoje jadłospisy, przepisy na Thermomix i poradnik kuchenny — w jednym miejscu.",
     lang: "pl",
     dir: "ltr",
     start_url: "/strefa-klienta",
