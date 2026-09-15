@@ -155,7 +155,7 @@ import {
 export const LIDZBARK: CityContent = {
   slug: "lidzbark",
   h1: "Thermomix Lidzbark – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Lidzbark Welski (pow. działdowski) — przedstawiciel",
+  seoTitle: "Thermomix Lidzbark Welski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Lidzbarku w powiecie działdowskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Lidzbark — prezentacja u Ciebie w kuchni",

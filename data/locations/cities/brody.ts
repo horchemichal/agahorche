@@ -199,7 +199,7 @@ import {
 export const BRODY: CityContent = {
   slug: "brody",
   h1: "Thermomix Brody – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Brody (lubuskie) — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Brody (lubuskie) — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Brodach w powiecie żarskim: bezpłatna prezentacja TM7 u Ciebie w domu, cała gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Brody — prezentacja u Ciebie w kuchni",

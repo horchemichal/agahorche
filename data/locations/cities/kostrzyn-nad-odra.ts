@@ -162,7 +162,7 @@ import {
 export const KOSTRZYN_NAD_ODRA: CityContent = {
   slug: "kostrzyn-nad-odra",
   h1: "Thermomix Kostrzyn nad Odrą – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Kostrzyn nad Odrą — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Kostrzyn nad Odrą — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Kostrzynie nad Odrą: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kostrzyn nad Odrą — prezentacja u Ciebie w kuchni",

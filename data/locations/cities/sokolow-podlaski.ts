@@ -183,7 +183,7 @@ import {
 export const SOKOLOW_PODLASKI: CityContent = {
   slug: "sokolow-podlaski",
   h1: "Thermomix Sokołów Podlaski – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Sokołów Podlaski — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Sokołów Podlaski — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Sokołowie Podlaskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Sokołów Podlaski — prezentacja u Ciebie w kuchni",

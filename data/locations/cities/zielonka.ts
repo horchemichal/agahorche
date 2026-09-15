@@ -209,7 +209,7 @@ import {
 export const ZIELONKA: CityContent = {
   slug: "zielonka",
   h1: "Thermomix Zielonka – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Zielonka (powiat wołomiński) — przedstawiciel i cena",
+  seoTitle: "Thermomix Zielonka — przedstawiciel, prezentacja i cena",
   seoDescription:
     "Thermomix w Zielonce pod Warszawą: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Zielonka — prezentacja u Ciebie w kuchni",

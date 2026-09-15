@@ -132,7 +132,7 @@ import {
 export const GOROWO_ILAWECKIE: CityContent = {
   slug: "gorowo-ilaweckie",
   h1: "Thermomix Górowo Iławeckie – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Górowo Iławeckie (pow. bartoszycki) — przedstawiciel",
+  seoTitle: "Thermomix Górowo Iławeckie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Górowie Iławeckim: bezpłatna prezentacja TM7 u Ciebie w domu, miasto i okolice. Cena, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Górowo Iławeckie — prezentacja u Ciebie w kuchni",

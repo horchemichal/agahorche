@@ -172,7 +172,7 @@ import {
 export const KONSTANCIN_JEZIORNA: CityContent = {
   slug: "konstancin-jeziorna",
   h1: "Thermomix Konstancin-Jeziorna – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Konstancin-Jeziorna — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Konstancin-Jeziorna — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Konstancinie-Jeziornie: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Konstancin-Jeziorna — prezentacja u Ciebie w kuchni",

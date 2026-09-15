@@ -235,7 +235,7 @@ export const CIECHOCINEK: CityContent = {
   h1: "Thermomix Ciechocinek – prezentacja u Ciebie w kuchni",
   seoTitle: "Thermomix Ciechocinek — przedstawiciel i cena",
   seoDescription:
-    "Thermomix w Ciechocinku: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto. Aga, tel. 517 185 691.",
+    "Thermomix w Ciechocinku: bezpłatna prezentacja TM7 u Ciebie w domu i bezpłatny dojazd do całego miasta. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Ciechocinek — prezentacja u Ciebie w kuchni",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Ciechocinku. Prezentacja i dojazd bezpłatne.",

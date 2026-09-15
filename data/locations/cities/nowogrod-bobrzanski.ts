@@ -202,7 +202,7 @@ import {
 export const NOWOGROD_BOBRZANSKI: CityContent = {
   slug: "nowogrod-bobrzanski",
   h1: "Thermomix Nowogród Bobrzański – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Nowogród Bobrzański — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Nowogród Bobrzański — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Nowogrodzie Bobrzańskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Nowogród Bobrzański — prezentacja u Ciebie w kuchni",

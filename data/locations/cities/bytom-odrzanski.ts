@@ -202,7 +202,7 @@ import {
 export const BYTOM_ODRZANSKI: CityContent = {
   slug: "bytom-odrzanski",
   h1: "Thermomix Bytom Odrzański – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Bytom Odrzański — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Bytom Odrzański — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Bytomiu Odrzańskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Bytom Odrzański — prezentacja u Ciebie w kuchni",

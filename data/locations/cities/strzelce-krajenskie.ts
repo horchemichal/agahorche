@@ -208,7 +208,7 @@ import {
 export const STRZELCE_KRAJENSKIE: CityContent = {
   slug: "strzelce-krajenskie",
   h1: "Thermomix Strzelce Krajeńskie – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Strzelce Krajeńskie — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Strzelce Krajeńskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Strzelcach Krajeńskich: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Strzelce Krajeńskie — prezentacja u Ciebie w kuchni",

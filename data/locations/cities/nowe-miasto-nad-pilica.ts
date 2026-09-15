@@ -204,7 +204,7 @@ import {
 export const NOWE_MIASTO_NAD_PILICA: CityContent = {
   slug: "nowe-miasto-nad-pilica",
   h1: "Thermomix Nowe Miasto nad Pilicą – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Nowe Miasto nad Pilicą — przedstawiciel i prezentacja",
+  seoTitle: "Thermomix Nowe Miasto nad Pilicą — przedstawiciel",
   seoDescription:
     "Thermomix w Nowym Mieście nad Pilicą: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Nowe Miasto nad Pilicą — prezentacja u Ciebie w kuchni",

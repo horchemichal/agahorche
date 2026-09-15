@@ -159,7 +159,7 @@ import {
 export const KROSNO_ODRZANSKIE: CityContent = {
   slug: "krosno-odrzanskie",
   h1: "Thermomix Krosno Odrzańskie – prezentacja u Ciebie w kuchni",
-  seoTitle: "Thermomix Krosno Odrzańskie — przedstawiciel, prezentacja i cena",
+  seoTitle: "Thermomix Krosno Odrzańskie — przedstawiciel i cena",
   seoDescription:
     "Thermomix w Krośnie Odrzańskim: bezpłatna prezentacja TM7 u Ciebie w domu, całe miasto i gmina. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Krosno Odrzańskie — prezentacja u Ciebie w kuchni",

@@ -259,7 +259,7 @@ export const MOGILNO: CityContent = {
 
   districtsHeading: "Do których części Mogilna dojeżdżam?",
   districtsParagraphs: [
-    "Do całego miasta — od centrum i okolic jezior po osiedla przy wylotach dróg. Dojeżdżam też do wsi w gminie.",
+    "Do całego miasta — od placu Wolności i śródmieścia po osiedla nad jeziorami i zabudowę przy wylotach dróg. Dojeżdżam też do wsi w gminie.",
     "Przy umawianiu wystarczy podać ulicę i numer domu albo nazwę miejscowości. Dojazd jest wszędzie bezpłatny.",
   ],
   districts: [],
