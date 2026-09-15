@@ -2,7 +2,7 @@
  * Aga Club domain types — architecture only (spec §16-21).
  * None of these features are implemented with real logic yet; these types
  * exist so the routes/components built now have a stable contract that
- * later feature work (meal planner, fridge AI, 30-day challenge...) can
+ * later feature work (meal planner, fridge AI...) can
  * fill in without reshaping the app.
  */
 
@@ -16,38 +16,6 @@ export interface AgaClubMember {
 }
 
 export type AgaClubMemberInput = Omit<AgaClubMember, "id" | "createdAt">;
-
-/**
- * DB-backed shape of one "30 dni z Agą" day (spec §21), managed from
- * /admin/aga-club/wyzwanie. Deliberately a subset of `ThirtyDaysDay` below
- * — `dish`/`checklist` aren't in the `aga_club_challenge_days` table yet
- * because the meal-planner/recipe engine they'd link to doesn't exist
- * yet (spec §17-20 are architecture-only for now). Add those columns
- * when that engine ships instead of faking the data here.
- */
-export interface AgaClubChallengeDay {
-  day: number; // 1-30
-  task: string;
-  tip: string;
-  videoUrl: string | null;
-  /**
-   * Identyfikator przepisu z data/diets/recipes.ts, jeśli zadanie dnia
-   * polega na ugotowaniu konkretnej rzeczy (1.09.2026). Dzięki temu
-   * wyzwanie mówi CO zrobić, a przepis na Cookidoo mówi JAK — nie
-   * przepisujemy ustawień urządzenia, których nie mamy jak sprawdzić.
-   */
-  przepisId: string | null;
-  /**
-   * Czy to treść Agi (true), czy wgrany plan startowy do przepisania
-   * własnymi słowami (false). To samo rozróżnienie co w poradniku —
-   * patrz types/poradnik.ts.
-   */
-  wlasne: boolean;
-  active: boolean;
-  updatedAt: string;
-}
-
-export type AgaClubChallengeDayInput = Omit<AgaClubChallengeDay, "updatedAt">;
 
 export type DietaryPreference =
   | "brak-preferencji"
@@ -115,5 +83,4 @@ export interface ThirtyDaysDay {
 export interface AgaClubFeatureFlags {
   coDzisUgotowac: boolean;
   mojaLodowka: boolean;
-  trzydziesciDniZAga: boolean;
 }

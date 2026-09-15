@@ -16,8 +16,6 @@ export type AnalyticsEventName =
   | "use_ai"
   | "use_fridge"
   | "use_meal_planner"
-  | "start_30_days"
-  | "complete_30_days"
   | "click_recipe"
   | "click_tm7"
   | "click_tm6";
@@ -34,8 +32,6 @@ export interface AnalyticsEventPayloadMap {
   use_ai: { feature: string };
   use_fridge: { ingredientCount: number };
   use_meal_planner: { type: "week" | "day" };
-  start_30_days: { day: 1 };
-  complete_30_days: Record<string, never>;
   click_recipe: { recipeSlug: string };
   click_tm7: { path: string };
   click_tm6: { path: string };
