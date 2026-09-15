@@ -711,6 +711,11 @@ import { RACIAZ } from "./raciaz";
 import { ZELECHOW } from "./zelechow";
 import { PILAWA } from "./pilawa";
 import { PODKOWA_LESNA } from "./podkowa-lesna";
+import { NOWE_MIASTO_NAD_PILICA } from "./nowe-miasto-nad-pilica";
+import { CELESTYNOW } from "./celestynow";
+import { HALINOW } from "./halinow";
+import { ZAKROCZYM } from "./zakroczym";
+import { MYSZYNIEC } from "./myszyniec";
 
 
 /**
@@ -1490,4 +1495,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZELECHOW,
   PILAWA,
   PODKOWA_LESNA,
+  NOWE_MIASTO_NAD_PILICA,
+  CELESTYNOW,
+  HALINOW,
+  ZAKROCZYM,
+  MYSZYNIEC,
 ];
