@@ -1,0 +1,12 @@
+import { readFileSync, readdirSync } from "node:fs";
+const D="data/locations/";
+const have=new Set(readdirSync(D+"cities").filter(f=>f.endsWith(".ts")&&f!=="index.ts"&&f!=="wspolne.ts").map(f=>f.replace(/\.ts$/,"")));
+for(const m of readFileSync(D+"city-content.ts","utf8").matchAll(/^\s*slug:\s*"([a-z0-9-]+)"/gm)) have.add(m[1]);
+const plik = process.argv[2];
+const t=readFileSync(D+plik,"utf8");
+const re=/name:\s*"([^"]+)",\s*slug:\s*"([^"]+)",\s*population:\s*([0-9_]+)/g;
+const u=new Map(); let m;
+while((m=re.exec(t))) u.set(m[2],{n:m[1],s:m[2],p:Number(m[3].replace(/_/g,""))});
+const brak=[...u.values()].filter(r=>!have.has(r.s)).sort((a,b)=>b.p-a.p);
+console.log(`${plik}: ${u.size} lokalizacji, BEZ TRESCI: ${brak.length}`);
+for(const r of brak) console.log("   ", String(r.p).padStart(6), r.n, "/", r.s);
