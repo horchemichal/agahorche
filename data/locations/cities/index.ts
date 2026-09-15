@@ -745,6 +745,11 @@ import { WIECBORK } from "./wiecbork";
 import { STRZELNO } from "./strzelno";
 import { RADZIEJOW } from "./radziejow";
 import { PAKOSC } from "./pakosc";
+import { BRZESC_KUJAWSKI } from "./brzesc-kujawski";
+import { KCYNIA } from "./kcynia";
+import { PIOTRKOW_KUJAWSKI } from "./piotrkow-kujawski";
+import { LABISZYN } from "./labiszyn";
+import { MROCZA } from "./mrocza";
 
 
 /**
@@ -1558,4 +1563,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   STRZELNO,
   RADZIEJOW,
   PAKOSC,
+  BRZESC_KUJAWSKI,
+  KCYNIA,
+  PIOTRKOW_KUJAWSKI,
+  LABISZYN,
+  MROCZA,
 ];
