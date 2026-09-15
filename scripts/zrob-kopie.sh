@@ -17,7 +17,7 @@
 # udostępniać, a nie tworzyć w nim pliki.
 #
 # CO JEST W ŚRODKU I DLACZEGO KAŻDA CZĘŚĆ MUSI TAM BYĆ:
-#   baza.sql        — konta klientek, jadłospisy, poradnik, wyzwanie, leady.
+#   baza.sql        — konta klientek, jadłospisy, poradnik, leady.
 #                     Tego nie ma nigdzie indziej.
 #   media/          — wszystkie wgrane zdjęcia. Też nigdzie indziej.
 #   kod.tar.gz      — źródła strony. Są też na GitHubie, ale kopia ma
