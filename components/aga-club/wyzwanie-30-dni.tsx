@@ -14,7 +14,7 @@ import { przelaczDzien, wczytajPostep, wyzerujPostep, ZDARZENIE_POSTEPU } from "
 
 /**
  * OŚ PLIKU
- * „30 dni z Thermomixem" — lista dni z odhaczaniem i rozwijaną treścią.
+ * „30 kroków z Thermomixem" — lista dni z odhaczaniem i rozwijaną treścią.
  *
  * KOGO CO WIDZI. Od 4.09.2026 (decyzja Agi) całe wyzwanie jest za
  * logowaniem — tak samo jak „Co ugotować dzisiaj?" i „Co mam w lodówce?".
@@ -136,7 +136,7 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
                     )}
                   >
                     <span className="text-xs font-semibold uppercase tracking-wide text-brand-700">
-                      Dzień {d.day}
+                      Krok {d.day}
                     </span>
                     <span
                       className={cn(
@@ -150,7 +150,7 @@ export function Wyzwanie30Dni({ dni, zalogowany }: { dni: DzienZPrzepisem[]; zal
 
                   {zamkniety && (
                     <p className="mt-2 text-sm text-muted">
-                      Treść tego dnia otwiera się po zalogowaniu do Aga Club.
+                      Treść tego kroku otwiera się po zalogowaniu do Aga Club.
                     </p>
                   )}
 
