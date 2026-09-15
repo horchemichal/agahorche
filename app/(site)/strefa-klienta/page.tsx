@@ -70,7 +70,7 @@ export default async function ClientDashboardPage() {
         powitaniem, PRZED dietami, bo to jest odpowiedź na pytanie „co ja
         tu właściwie mam". Wcześniej pulpit zaczynał się od diet i klientka
         nie miała skąd wiedzieć, że dostaje też przepisy, lodówkę, poradnik
-        i wyzwanie — te siedziały wyłącznie w górnym menu serwisu.
+        — te siedziały wyłącznie w górnym menu serwisu.
       */}
       <Section className="!pt-8">
         <Heading as="h2" size="md" className="mb-4">
