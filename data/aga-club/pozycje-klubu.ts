@@ -3,7 +3,6 @@ import {
   ChefHatIcon,
   CartIcon,
   LeafIcon,
-  CalendarIcon,
   LightningIcon,
   CzatIcon,
   PobierzAplikacjeIcon,
@@ -89,10 +88,9 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     prefiksy: ["/poradnik"],
   },
   /*
-   * Czat (5.09.2026). Stoi PRZED „30 krokami”, a nie na końcu przed
+   * Czat (5.09.2026). Stoi wysoko w pasku, a nie na końcu przed
    * aplikacją: to jedyna pozycja klubu, do której wraca się kilka razy
-   * dziennie, więc powinna być w zasięgu kciuka, a nie za wyzwaniem,
-   * które odhacza się raz na dobę.
+   * dziennie, więc powinna być w zasięgu kciuka.
    */
   {
     href: "/aga-club/czat",
@@ -101,14 +99,6 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     krotki: "Czat",
     opis: "Codzienne „co dziś gotujecie” z innymi klubowiczkami.",
     prefiksy: ["/aga-club/czat"],
-  },
-  {
-    href: "/aga-club/30-dni-z-aga",
-    ikona: CalendarIcon,
-    tytul: "30 kroków z Thermomixem",
-    krotki: "30 kroków",
-    opis: "Trzydzieści zadań, po jednym dziennie.",
-    prefiksy: ["/aga-club/30-dni-z-aga"],
   },
   /*
    * „Pobierz aplikację" na samym końcu paska (prośba Michała, 4.09.2026:

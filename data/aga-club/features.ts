@@ -24,9 +24,6 @@ export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
   // jako „Wkrótce", choć wystarczyło wskazać właściwy adres.
   coDzisUgotowac: true,
   mojaLodowka: true,
-  // 1.09.2026: moduł ma treść (30 dni) i działa — patrz
-  // app/(site)/aga-club/30-dni-z-aga/page.tsx.
-  trzydziesciDniZAga: true,
 };
 
 export interface AgaClubFeatureCopy {
@@ -70,13 +67,5 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
     title: "Poradnik kuchenny",
     description: "Co można zamrozić, jak uratować za słoną zupę, co znaczy blanszowanie — 123 wpisy na kuchenne pytania.",
     href: "/poradnik",
-  },
-  {
-    key: "trzydziesciDniZAga",
-    title: "30 kroków z Thermomixem",
-    // Opis poprawiony 1.09.2026: wcześniej obiecywał „odznaki za postępy”,
-    // których moduł nie ma i mieć nie będzie. Jest pasek postępu i odhaczanie.
-    description: "Trzydzieści dni, trzydzieści zadań — od pierwszego koktajlu po własny repertuar dań.",
-    href: "/aga-club/30-dni-z-aga",
   },
 ];
