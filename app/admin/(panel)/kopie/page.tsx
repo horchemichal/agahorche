@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  * Kopie zapasowe do pobrania na własny komputer.
  *
  * CO JEST W ARCHIWUM: zrzut całej bazy (konta, jadłospisy, poradnik,
- * wyzwanie, zgłoszenia z formularza), wszystkie wgrane zdjęcia, kod strony
+ * zgłoszenia z formularza), wszystkie wgrane zdjęcia, kod strony
  * i plik `.env` z sekretami. Z tego jednego pliku da się postawić serwis od
  * zera na pustym serwerze.
  *
