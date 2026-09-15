@@ -15,17 +15,36 @@ import {
  * SULEJÓWEK — miasto w powiecie mińskim, dwadzieścia dwa kilometry
  * od centrum Warszawy, z dworkiem Milusin, który był prezentem.
  *
- * KĄT: kupno tego urządzenia KOMUŚ INNEMU. Mamie, córce, teściowej,
- * żonie. Sytuacja bardzo częsta, o której nikt w tej branży nie pisze
- * uczciwie — bo uczciwie znaczy tu głównie: uważaj.
+ * KĄT: CO SIĘ DZIEJE, GDY PREZENT JUŻ ZAMIESZKA — druga połowa sprawy
+ * kupowania tego urządzenia komuś innemu. Nie „czy kupować", tylko
+ * „co potem": nauka, która trwa tygodnie, cicha presja wdzięczności,
+ * miejsce na cudzym blacie i zasada, przy której nie ustępuję.
+ *
+ * ⚠⚠ ROZGRANICZENIE OBOWIĄZKOWE — PIASECZNO.
+ * Kupowanie w prezencie jest tematem DWÓCH stron i to jest podział
+ * celowy. Wykryto go dopiero przy analizie zbieżności kątów w całym
+ * katalogu; wcześniej obie strony mówiły to samo.
+ * TAM (Piaseczno): DECYZJA PRZED ZAKUPEM — prezent dobry kontra fatalny,
+ *   dwukrokowa metoda sprawdzenia bez niespodzianki.
+ * TUTAJ (Sulejówek): WSZYSTKO, CO ZACZYNA SIĘ PO WRĘCZENIU.
+ * ⚠⚠ USUNIĘTO STĄD: argument „część osób usłyszy, że gotowała źle"
+ *   oraz opis dwukrokowej metody — jedno i drugie należy do Piaseczna.
+ * ⚠ NIE POWTARZAM MATERIAŁU TAMTEJ STRONY.
  *
  * SEKCJA MA POWIEDZIEĆ WPROST:
- * — to jest sprzęt, który staje w CUDZEJ kuchni i cudza osoba będzie
- *   go używać codziennie. Prezent, który zajmuje pół blatu, nie jest
- *   neutralny,
- * — trzy rzeczy do przemyślenia przed zakupem: czy ta osoba w ogóle
- *   chce, czy ma gdzie to postawić, i czy nie odbierze tego jako
- *   sugestii, że gotuje źle,
+ * — że moment wręczenia jest najkrótszą częścią historii prezentu,
+ *   a Milusin jest tego dowodem: dom, który raz był darem, potem był
+ *   jeszcze czterema innymi rzeczami,
+ * — że tego prezentu trzeba się NAUCZYĆ i że nauka trwa tygodnie,
+ *   a czas na nią poświęca osoba obdarowana, nie płacąca,
+ * — że w pierwszych tygodniach obdarowana musi mieć DO KOGO ZADZWONIĆ
+ *   SAMA, bez pośrednictwa kupującego,
+ * — ⚠⚠ że po drogim prezencie pojawia się CICHA PRESJA, żeby wdzięczność
+ *   okazywać używaniem — i że wystarczy pytać zbyt często, żeby z gestu
+ *   zrobiło się rozliczenie. Po przekazaniu prezent przestaje być
+ *   kupującego; także prawo do pytania, co się z nim dzieje,
+ * — że miejsce na blacie to decyzja właściciela kuchni i wolno ją podjąć
+ *   po miesiącu, a nie w dniu wręczenia,
  * — jak to robię u siebie: prezentacja jest dla osoby, która będzie
  *   gotować, nawet jeśli płaci ktoś inny. Nie robię niespodzianek
  *   z dostawą pod drzwi,
@@ -120,15 +139,16 @@ export const SULEJOWEK: CityContent = {
     },
     {
       id: "prezent",
-      heading: "Dworek, który był prezentem — i sprzęt, który bywa prezentem",
+      heading: "Dworek, który był prezentem — i co się dzieje, gdy prezent zamieszka",
       paragraphs: [
         "Najbardziej znany dom w Sulejówku dostał się swojemu właścicielowi w prezencie. Milusin postawiono w tysiąc dziewięćset dwudziestym trzecim roku jako dar żołnierzy polskich dla Józefa Piłsudskiego; mieszkał tam trzy lata. Potem dworek przejęła ambasada radziecka, przez blisko pół wieku mieściło się w nim przedszkole, a od dwa tysiące dwudziestego działa tam muzeum. Dom, który raz był prezentem, potem był jeszcze czterema innymi rzeczami.",
-        "Biorę to za punkt wyjścia, bo w mojej pracy prezenty to bardzo częsta sytuacja — i taka, o której w tej branży nikt nie pisze uczciwie. Dzwoni ktoś i mówi: chcę kupić to mamie. Albo córce, teściowej, żonie. Zwykle w dobrej wierze i zwykle z pieniędzy, których nie żałuje.",
-        "A ja mówię wtedy rzeczy, których się nie spodziewa, bo tu jest kilka pułapek naraz.",
-        "Pierwsza: to nie jest prezent, który się kładzie na stole i zapomina. To jest sprzęt, który staje w cudzej kuchni, zajmuje kawałek blatu i wymaga, żeby ktoś się go nauczył. Osoba obdarowana będzie z nim żyła codziennie — a nie ta, która płaci.",
-        "Druga jest delikatniejsza i mówię o niej wprost, bo widzę ją regularnie. Nie każdy odbiera takie urządzenie jako miły gest. Część osób słyszy w nim sugestię, że dotąd gotowały źle albo za wolno. Nie twierdzę, że tak jest zawsze — twierdzę, że warto o tym pomyśleć wcześniej, bo tego się potem nie odkręca.",
-        "Trzecia jest zupełnie praktyczna: gdzie to stanie. W kuchni, w której blat jest zastawiony, nowe urządzenie oznacza, że coś innego musi zniknąć. To jest decyzja właściciela kuchni, nie moja i nie kupującego.",
-        "Dlatego u mnie wygląda to tak. Prezentacja jest dla osoby, która ma z tego korzystać, nawet jeśli płaci ktoś zupełnie inny — i to ona decyduje, czy chce. Nie robię niespodzianek z dostawą pod drzwi, bo niespodzianka za kilka tysięcy złotych stawia obdarowanego w niezręcznej sytuacji: musi się cieszyć, nawet jeśli się nie cieszy.",
+        "Biorę ten dom za punkt wyjścia, bo mówi coś, czego o prezentach zwykle się nie mówi: moment wręczenia jest najkrótszą częścią całej historii. Potem prezent zaczyna żyć — i dopiero to jest jego prawdziwa biografia.",
+        "Z tym urządzeniem jest tak samo. O tym, czy w ogóle warto kupować je komuś innemu i jak sprawdzić, czy ta osoba tego chce, pisałam osobno przy innym mieście. Tutaj chcę napisać o części, która zaczyna się później i której nikt nie opisuje: co się dzieje, kiedy prezent już stoi w cudzej kuchni.",
+        "Pierwsza rzecz: tego prezentu trzeba się nauczyć, a nauka trwa tygodnie, nie jeden wieczór. Pierwsze dni to zwykle dwa, trzy dania z prowadzeniem krok po kroku; swobodę przychodzi się zwykle po kilku tygodniach regularnego używania. To nie jest dużo, ale to jest czas, który ktoś musi chcieć poświęcić — i tym kimś nie jest osoba płacąca.",
+        "Stąd praktyczna konsekwencja, o której warto wiedzieć z góry: w pierwszych tygodniach obdarowana będzie miała pytania. Założenie konta z przepisami, pierwsze uruchomienie, danie, które nie wyszło. To wszystko jest normalne i po to zostawiam swój numer — ale musi mieć do kogo zadzwonić sama, bez pośrednictwa tego, kto kupił.",
+        "Druga jest delikatniejsza i mówię o niej wprost, bo widzę ją regularnie. Po drogim prezencie pojawia się cicha presja, żeby wdzięczność okazywać używaniem. Ktoś pyta co niedzielę, czy już coś w tym gotowała — i z miłego gestu robi się rozliczenie. Nie trzeba mieć złych intencji, żeby tak wyszło; wystarczy pytać zbyt często.",
+        "Dlatego mówię kupującym jedno zdanie, które zwykle ich zaskakuje: po przekazaniu prezent przestaje być Wasz. Także prawo do pytania, co się w nim dzieje.",
+        "Rzecz zupełnie praktyczna: gdzie to stanie. W kuchni, w której blat jest zastawiony, nowe urządzenie oznacza, że coś innego musi zniknąć — a to bywa sprzęt, z którym ktoś jest związany od lat. Decyzja należy do właściciela kuchni, nie do mnie i nie do kupującego, i naprawdę wolno ją podjąć po miesiącu, a nie w dniu wręczenia.",
         "I rzecz ostatnia, przy której nie ustąpię. Jeśli osoba, dla której to kupujecie, mówi, że nie chce, to jest koniec rozmowy. Nie będę jej przekonywać, nie będę wracać do tematu przez kogoś innego i nie będę sugerować, że się rozmyśli. Wolę nie sprzedać, niż sprzedać sprzęt, który przez rok stoi w pudle w garażu — bo takich historii też się nasłuchałam.",
       ],
       links: [{ href: "/prezentacja", label: "Umów prezentację" }],

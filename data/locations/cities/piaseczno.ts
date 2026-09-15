@@ -15,9 +15,20 @@ import {
  * PIASECZNO — miasto na południe od Warszawy, z zabytkową kolejką
  * wąskotorową, która dziś wozi już tylko dla przyjemności.
  *
- * KĄT: kupowanie w prezencie. To jest jedyne miejsce w serwisie na temat
- * całkowicie przemilczany, a bardzo częsty: THERMOMIX KUPOWANY KOMUŚ
- * INNEMU — mamie, żonie, córce, na ślub albo na okrągłą rocznicę.
+ * KĄT: DECYZJA O PREZENCIE — czy w ogóle kupować to urządzenie komuś
+ * innemu: mamie, żonie, córce, na ślub albo na okrągłą rocznicę.
+ * Temat bardzo częsty i całkowicie przemilczany w materiałach branżowych.
+ *
+ * ⚠⚠ ROZGRANICZENIE OBOWIĄZKOWE — SULEJÓWEK.
+ * Kupowanie w prezencie jest tematem DWÓCH stron i to jest podział
+ * celowy, a nie przeoczenie. Wykryto go dopiero przy analizie zbieżności
+ * kątów w całym katalogu.
+ * TUTAJ (Piaseczno): DECYZJA PRZED ZAKUPEM — kiedy to prezent dobry,
+ *   kiedy fatalny, i dwukrokowa metoda sprawdzenia bez niespodzianki.
+ * TAM (Sulejówek): CO SIĘ DZIEJE PO — nauka, która trwa tygodnie,
+ *   presja wdzięczności, miejsce na blacie, twarda zasada „nie znaczy nie".
+ * ⚠ ŻADNA ZE STRON NIE POWTARZA MATERIAŁU DRUGIEJ.
+ * ⚠ NIE PISZĘ JUŻ, ŻE TO „jedyne miejsce w serwisie" — nie jest.
  *
  * SEKCJA MA MIEĆ WYRAŹNĄ, NIEWYGODNĄ TEZĘ: to bywa piękny prezent
  * i bywa prezentem fatalnym, a różnica jest przewidywalna. Fatalny jest
@@ -79,6 +90,7 @@ export const PIASECZNO: CityContent = {
         "Stąd moja rada, która brzmi antyprezentowo, ale jest szczera: przy wydatku tego rzędu lepiej, żeby obdarowana brała udział w decyzji. Niespodzianką niech będzie to, że ktoś za to płaci, a nie to, co stanie na blacie.",
         "Praktycznie da się to zrobić w dwóch krokach. Umawiamy prezentację normalnie, we dwoje albo w większym gronie, i ona sama gotuje. Jeśli po spotkaniu powie, że chce — kupujecie, a Wy zostajecie z rolą tych, którzy sfinansowali. Jeśli powie, że nie — zaoszczędziliście sobie prezentu, który stałby w piwnicy, i nic Was to nie kosztowało.",
         "Na ślub działa to tak samo, z jedną różnicą: warto zapytać parę wcześniej, czy w ogóle gotują. Piękny sprzęt w domu, w którym je się na mieście, jest tylko pięknym sprzętem.",
+        "A o tym, co dzieje się już po wręczeniu — ile trwa nauka, kto ma do kogo dzwonić z pytaniami i skąd bierze się cicha presja, żeby wdzięczność okazywać gotowaniem — pisałam osobno przy innym mieście. To druga połowa tej samej sprawy i akurat ta bywa trudniejsza.",
       ],
     },
     {
@@ -100,7 +112,7 @@ export const PIASECZNO: CityContent = {
       id: "rodzina",
       heading: "Thermomix dla piaseczyńskiej rodziny",
       paragraphs: [
-        "Gdy dorośli dojeżdżają do pracy, dzień kończy się po powrocie, a obiad przygotowuje zwykle jedna osoba.",
+        "W domu, z którego codziennie wyjeżdża się do Warszawy, obiad zaczyna się dopiero po powrocie — i zwykle robi go ta sama osoba, która właśnie wróciła.",
         "Thermomix pomaga tym, że nie wymaga obecności. Danie gotuje się z ustawioną temperaturą i mieszaniem, więc może pracować, gdy zajmujesz się czymś innym, a wszystko dzieje się w jednym naczyniu.",
         "Przy małym dziecku dochodzi Varoma: porcja na parze powstaje równolegle z obiadem dla dorosłych, w tym samym urządzeniu.",
       ],
