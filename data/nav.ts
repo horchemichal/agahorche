@@ -110,7 +110,7 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "Co ugotować dzisiaj?", href: "/przepisy" },
       { label: "Co mam w lodówce?", href: "/przepisy/co-mam-w-lodowce" },
       { label: "Poradnik kuchenny", href: "/poradnik" },
-      { label: "30 dni z Thermomixem", href: "/aga-club/30-dni-z-aga" },
+      { label: "30 kroków z Thermomixem", href: "/aga-club/30-dni-z-aga" },
     ],
   },
   {
