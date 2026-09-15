@@ -12,7 +12,7 @@ import { getCurrentClient } from "@/lib/auth/client-auth";
 export const metadata: Metadata = buildMetadata({
   title: "Aga Club — społeczność wokół gotowania z Thermomixem",
   description:
-    "Aga Club dla klientów Agi Horche: diety, pomysły na obiad, gotowanie z tego, co jest w lodówce, poradnik kuchenny i wyzwanie 30 kroków z Thermomixem.",
+    "Aga Club dla klientów Agi Horche: diety, pomysły na obiad, gotowanie z tego, co jest w lodówce, poradnik kuchenny i czat klubu.",
   path: "/aga-club",
 });
 
