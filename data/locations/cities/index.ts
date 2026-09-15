@@ -735,6 +735,11 @@ import { GOLUB_DOBRZYN } from "./golub-dobrzyn";
 import { KORONOWO } from "./koronowo";
 import { CIECHOCINEK } from "./ciechocinek";
 import { SZUBIN } from "./szubin";
+import { KRUSZWICA } from "./kruszwica";
+import { SEPOLNO_KRAJENSKIE } from "./sepolno-krajenskie";
+import { JANIKOWO } from "./janikowo";
+import { BARCIN } from "./barcin";
+import { GNIEWKOWO } from "./gniewkowo";
 
 
 /**
@@ -1538,4 +1543,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KORONOWO,
   CIECHOCINEK,
   SZUBIN,
+  KRUSZWICA,
+  SEPOLNO_KRAJENSKIE,
+  JANIKOWO,
+  BARCIN,
+  GNIEWKOWO,
 ];
