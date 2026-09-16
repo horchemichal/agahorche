@@ -809,6 +809,9 @@ import { DRAWNO } from "./drawno";
 import { CEDYNIA } from "./cedynia";
 import { MORYN } from "./moryn";
 import { NOWE_WARPNO } from "./nowe-warpno";
+import { BIALY_BOR } from "./bialy-bor";
+import { TUCZNO } from "./tuczno";
+import { SUCHAN } from "./suchan";
 
 
 /**
@@ -1686,4 +1689,7 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CEDYNIA,
   MORYN,
   NOWE_WARPNO,
+  BIALY_BOR,
+  TUCZNO,
+  SUCHAN,
 ];
