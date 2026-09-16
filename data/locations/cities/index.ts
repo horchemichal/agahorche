@@ -780,6 +780,11 @@ import { LOBEZ } from "./lobez";
 import { KAMIEN_POMORSKI } from "./kamien-pomorski";
 import { POLCZYN_ZDROJ } from "./polczyn-zdroj";
 import { CHOJNA } from "./chojna";
+import { SIANOW } from "./sianow";
+import { CZAPLINEK } from "./czaplinek";
+import { KARLINO } from "./karlino";
+import { MIEDZYZDROJE } from "./miedzyzdroje";
+import { WOLIN } from "./wolin";
 
 
 /**
@@ -1628,4 +1633,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KAMIEN_POMORSKI,
   POLCZYN_ZDROJ,
   CHOJNA,
+  SIANOW,
+  CZAPLINEK,
+  KARLINO,
+  MIEDZYZDROJE,
+  WOLIN,
 ];
