@@ -370,7 +370,7 @@ export const SIECHNICE: CityContent = {
     {
       question: "Mam cztery metry blatu, a i tak nie mam gdzie pracować. Dlaczego?",
       answer:
-        "Bo cztery metry to suma, a do pracy liczy się najdłuższy odcinek bez przerwy. Blat pocięty zlewem, płytą i słupkiem zabudowy potrafi mieć przy tej sumie ciągły kawałek długi na sześćdziesiąt centymetrów — i to on rozstrzyga, czy zmieści się rozwałkowane ciasto albo czy staną obok siebie deska, miska i to, co czeka na dołożenie. O siechnickim gospodarstwie ogrodniczym mówi się nie „największa powierzchnia pod szkłem”, tylko „największa jednolita” — i to drugie słowo jest całą różnicą. Zmierz swój najdłuższy odcinek raz, taśmą; zajmie to minutę.",
+        "Bo cztery metry to suma, a do pracy liczy się najdłuższy odcinek bez przerwy. Blat pocięty zlewem, płytą i słupkiem zabudowy potrafi mieć przy tej sumie ciągły kawałek długi na sześćdziesiąt centymetrów — i to on rozstrzyga, czy zmieści się rozwałkowane ciasto albo czy staną obok siebie deska, miska i to, co czeka na dołożenie. O gospodarstwie ogrodniczym działającym w Siechnicach mówi się nie „największa powierzchnia pod szkłem”, tylko „największa jednolita” — i to drugie słowo jest całą różnicą. Zmierz swój najdłuższy odcinek raz, taśmą; zajmie to minutę.",
     },
     {
       question: "Czy Thermomix zabierze mi miejsce na blacie?",
