@@ -770,6 +770,11 @@ import { GRYFICE } from "./gryfice";
 import { CHOSZCZNO } from "./choszczno";
 import { SWIDWIN } from "./swidwin";
 import { BARLINEK } from "./barlinek";
+import { ZLOCIENIEC } from "./zlocieniec";
+import { DARLOWO } from "./darlowo";
+import { SLAWNO } from "./slawno";
+import { DRAWSKO_POMORSKIE } from "./drawsko-pomorskie";
+import { MYSLIBORZ } from "./mysliborz";
 
 
 /**
@@ -1608,4 +1613,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CHOSZCZNO,
   SWIDWIN,
   BARLINEK,
+  ZLOCIENIEC,
+  DARLOWO,
+  SLAWNO,
+  DRAWSKO_POMORSKIE,
+  MYSLIBORZ,
 ];
