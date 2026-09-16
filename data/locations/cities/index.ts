@@ -832,6 +832,11 @@ import { PIESZYCE } from "./pieszyce";
 import { OBORNIKI_SLASKIE } from "./oborniki-slaskie";
 import { SRODA_SLASKA } from "./sroda-slaska";
 import { ZIEBICE } from "./ziebice";
+import { LWOWEK_SLASKI } from "./lwowek-slaski";
+import { SIECHNICE } from "./siechnice";
+import { CHOCIANOW } from "./chocianow";
+import { KATY_WROCLAWSKIE } from "./katy-wroclawskie";
+import { SOBOTKA } from "./sobotka";
 
 
 /**
@@ -1732,4 +1737,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OBORNIKI_SLASKIE,
   SRODA_SLASKA,
   ZIEBICE,
+  LWOWEK_SLASKI,
+  SIECHNICE,
+  CHOCIANOW,
+  KATY_WROCLAWSKIE,
+  SOBOTKA,
 ];
