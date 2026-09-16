@@ -805,6 +805,10 @@ import { TYCHOWO } from "./tychowo";
 import { PELCZYCE } from "./pelczyce";
 import { DOBRZANY } from "./dobrzany";
 import { CZLOPA } from "./czlopa";
+import { DRAWNO } from "./drawno";
+import { CEDYNIA } from "./cedynia";
+import { MORYN } from "./moryn";
+import { NOWE_WARPNO } from "./nowe-warpno";
 
 
 /**
@@ -1678,4 +1682,8 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PELCZYCE,
   DOBRZANY,
   CZLOPA,
+  DRAWNO,
+  CEDYNIA,
+  MORYN,
+  NOWE_WARPNO,
 ];
