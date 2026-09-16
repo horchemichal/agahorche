@@ -83,77 +83,83 @@ import {
  * ⚠ OSIEDLI STATUTOWYCH MIASTA NIE USTALONO —
  *   districts PUSTE.
  *
- * KĄT: SKĄD WIADOMO, ŻE GOTOWE — sygnał kontra
- * sprawdzanie, i dlaczego minutnik odpowiada na inne
- * pytanie, niż nam się wydaje.
- * Kąt od wieży kościoła Mariackiego: około dziewięćdziesiąt
- * metrów, widoczne z morza mimo dziesięciu kilometrów
- * odległości, i od dzwonu „Maria" z 1515 r., który waży
- * trzy tysiące siedemset kilogramów. Dwa sygnały — jeden
- * dla oka, drugi dla ucha — obydwa działające na odległość.
+ * ⚠⚠⚠ HISTORIA WERSJI TEJ STRONY — WAŻNE:
+ *   PIERWSZA WERSJA MIAŁA KĄT „SKĄD WIADOMO, ŻE GOTOWE"
+ *   (minutnik mierzy czas, nie stan). ZOSTAŁ ODRZUCONY
+ *   PO KONTROLI KOLIZJI: MOŃKI mają kąt „CZAS W PRZEPISIE
+ *   — dlaczego minuty są najmniej wiarygodną liczbą
+ *   i po czym naprawdę poznaje się gotowość". To jest
+ *   ta sama teza i ta sama rada.
+ *   ⚠⚠ NIE WRACAĆ DO TEGO KĄTA W TYM MIEŚCIE.
+ *   Wieża jako punkt orientacyjny zostaje w bloku
+ *   faktograficznym; motyw sygnału i sprawdzania — NIE.
+ *
+ * KĄT: RAZ A DOBRZE — o rzeczach, które kosztują jeden
+ * wieczór, a potem oddają codziennie.
+ * Kąt od dzwonu „Maria" z 1515 r.: trzy tysiące siedemset
+ * kilogramów, które trzeba było raz odlać i raz wciągnąć
+ * na wieżę. Potem przez pięćset lat wystarczyło pociągnąć
+ * za sznur.
  *
  * SEKCJA MA POWIEDZIEĆ WPROST:
- * — że wieża ma około dziewięćdziesięciu metrów i służyła
- *   za punkt orientacyjny dla żeglugi, choć do morza jest
- *   stąd około dziesięciu kilometrów, a dzwon „Maria"
- *   z 1515 r. waży trzy tysiące siedemset kilogramów,
- * — ŻE SYGNAŁ DZIAŁA NA ODLEGŁOŚĆ, A SPRAWDZANIE
- *   WYMAGA OBECNOŚCI — to jest rdzeń i na tym opiera się
- *   cała różnica,
- * — ⚠⚠ ŻE W KUCHNI SĄ DWA RÓŻNE PYTANIA, KTÓRE STALE
- *   SIĘ MYLI:
- *   (1) ILE TO JUŻ TRWA — na to odpowiada minutnik
- *       i odpowiada dobrze,
- *   (2) CZY JUŻ GOTOWE — na to minutnik NIE ODPOWIADA,
- *       bo mierzy czas, a nie stan.
- *   Dlatego dzwonek nie znaczy „gotowe", tylko „idź
- *   sprawdzić",
- * — ⚠⚠ ŻE PRZY DANIU ZNANYM CZAS WYSTARCZA, BO ZNA SIĘ
- *   ZALEŻNOŚĆ; PRZY NOWYM NIE WYSTARCZA NIGDY,
- * — ⚠⚠ ŻE WARTO ZAPAMIĘTAĆ SYGNAŁ, A NIE LICZBĘ:
- *   przy większości dań jest jakiś moment, po którym
- *   widać albo słychać, że rzecz przeszła na drugą stronę.
- *   ⚠⚠⚠ NIE PODAJĘ ANI JEDNEGO KONKRETNEGO PRZYKŁADU
- *   TAKIEGO SYGNAŁU — to byłaby instrukcja kulinarna,
- *   a od tego nie jestem. Piszę WYŁĄCZNIE, że warto
- *   go u siebie zauważyć i zanotować,
- * — ⚠ UCZCIWIE O SPRZĘCIE: urządzenie pilnuje czasu
- *   i temperatury, czyli odpowiada na pierwsze pytanie
- *   bardzo dobrze. NA DRUGIE NIE ODPOWIADA — nie wie,
- *   czy danie jest takie, jak chcecie. Dlatego sygnał
- *   końca to dalej „idź sprawdzić", a nie „gotowe",
- *   i uczciwiej jest to powiedzieć przed zakupem.
+ * — że dzwon „Maria" z 1515 r. waży 3 700 kg i wisi
+ *   w wieży, która ma około dziewięćdziesięciu metrów,
+ * — ŻE CAŁY CIĘŻAR TEJ RZECZY PRZYPADŁ NA JEDEN DZIEŃ,
+ *   A POŻYTEK ROZŁOŻYŁ SIĘ NA PIĘĆSET LAT — to jest rdzeń,
+ * — ⚠⚠ ŻE W KUCHNI ISTNIEJE DOKŁADNIE TA SAMA KATEGORIA
+ *   ROBÓT: takich, które robi się RAZ, są niewdzięczne
+ *   i nudne, a potem oddają przy każdym gotowaniu,
+ * — ⚠⚠ ŻE PRZEGRYWAJĄ ONE ZAWSZE Z TYM, CO PILNE,
+ *   bo nic nie wymusza ich zrobienia. Nikt nie zauważy,
+ *   że ich nie ma — zauważa się dopiero, ile kosztuje
+ *   ich brak, i to dopiero po latach,
+ * — ⚠⚠ ŻE ROZPOZNAJE SIĘ JE PO JEDNYM PYTANIU: czy tę
+ *   samą irytację przeżywam za każdym razem. Jeśli tak,
+ *   to jest robota do zrobienia raz, a nie rzecz,
+ *   do której trzeba się przyzwyczaić,
+ *   ⚠⚠⚠ NIE PODAJĘ ANI JEDNEGO PRZYKŁADU TAKIEJ ROBOTY
+ *   — zależy od kuchni, a moja lista byłaby instrukcją,
+ *   o którą nikt nie prosił,
+ * — ⚠⚠ UCZCIWIE, DRUGA STRONA: NIE KAŻDA TAKA ROBOTA
+ *   SIĘ ZWRACA. Jeśli coś powtarza się raz na kwartał,
+ *   to jeden wieczór poświęcony na usprawnienie tego
+ *   jest po prostu stracony. Liczy się CZĘSTOTLIWOŚĆ,
+ *   nie uciążliwość,
+ * — ⚠ UCZCIWIE O SPRZĘCIE: TO URZĄDZENIE JEST TAKĄ
+ *   ROBOTĄ W WERSJI DROGIEJ — jeden duży koszt na starcie
+ *   i oddawanie przez lata. MÓWIĘ TEŻ WPROST, ŻE TA
+ *   ARYTMETYKA DZIAŁA TYLKO PRZY REGULARNYM GOTOWANIU
+ *   i że przy gotowaniu od święta nie działa wcale.
  *
  * TWARDE GRANICE:
- * — ⚠⚠⚠ ZERO INSTRUKCJI, KTÓREJ NIKT NIE CZYTA,
- *   I ZERO NIEZNANYCH FUNKCJI URZĄDZENIA — kąt zajęty
- *   (Świecie). ⚠⚠ TO JEST NAJBLIŻSZE SĄSIEDZTWO.
- *   TWARDA GRANICA.
- * — ⚠⚠ ZERO PRZERWY W ŚRODKU GOTOWANIA — kąt zajęty
- *   (Pasłęk). Tam chodzi o WYJŚCIE Z DOMU; TUTAJ
- *   o ROZPOZNANIE KOŃCA.
- * — ⚠⚠ ZERO RYTMU DNIA I GODZIN POWROTU Z PRACY —
- *   kąty zajęte (Głogów Małopolski i inne).
- * — ⚠⚠ ZERO DANIA, KTÓRE NIE WYSZŁO — kąt zajęty
- *   (Barlinek, ta sama fala).
- * — ⚠ ZERO WŁASNEJ MIARY — kąt zajęty (Gryfice, ta sama
- *   fala). Piszę o CZASIE I STANIE, nigdy o ilościach.
- * — ⚠ ZERO ROSOŁU I WYWARU — kąt zajęty (Gniew).
- * — ⚠⚠⚠ ŻADNYCH USTAWIEŃ, CZASÓW ANI TEMPERATUR —
- *   przy kącie o minutniku to najkrótsza droga do wpadki.
- *   NIE PADA ANI JEDNA LICZBA MINUT ANI STOPNI.
- *   TWARDA GRANICA BEZWZGLĘDNA.
+ * — ⚠⚠⚠ ZERO MINUT, MINUTNIKA I ROZPOZNAWANIA
+ *   GOTOWOŚCI — kąt zajęty (Mońki). To był powód
+ *   przepisania tej strony. TWARDA GRANICA BEZWZGLĘDNA.
+ * — ⚠⚠⚠ ZERO INSTRUKCJI, KTÓREJ NIKT NIE CZYTA — kąt
+ *   zajęty (Świecie).
+ * — ⚠⚠ ZERO NAJMNIEJSZEJ DZIAŁAJĄCEJ WERSJI I ZACZYNANIA
+ *   OD KAWAŁKA — kąt zajęty (Międzyzdroje, ta sama fala).
+ *   Tam chodzi o ZMNIEJSZENIE ZAKRESU, ŻEBY ZACZĄĆ;
+ *   TUTAJ o JEDNORAZOWY NAKŁAD, KTÓRY ZWRACA SIĘ POTEM.
+ *   Rozgraniczam wprost.
+ * — ⚠⚠ ZERO SUMOWANIA SIĘ DROBNYCH ZYSKÓW — kąt zajęty
+ *   (Bobolice, ta sama fala). Tam chodzi o WIELE MAŁYCH
+ *   POWTARZALNYCH OSZCZĘDNOŚCI; TUTAJ o JEDEN NAKŁAD
+ *   NA POCZĄTKU.
+ * — ⚠⚠ ZERO STAŁYCH WARUNKÓW ZAMIAST PILNOWANIA — kąt
+ *   zajęty (Kalisz Pomorski, ta sama fala).
+ * — ⚠⚠ ZERO UKŁADU KUCHNI I TEGO, GDZIE CO STOI — kąty
+ *   zajęte (Myślibórz, Płoty).
+ * — ⚠ ZERO PROPORCJI ZAPASU — kąt zajęty (Górzno).
+ * — ⚠ ZERO OKRESU PRÓBNEGO — kąt zajęty (Sławno).
+ * — ŻADNYCH USTAWIEŃ, CZASÓW ANI TEMPERATUR URZĄDZENIA.
  * — ŻADNYCH PROPORCJI I PRZEPISÓW.
- * — ŻADNYCH KONKRETNYCH SYGNAŁÓW ROZPOZNAWANIA DANIA.
+ * — ⚠⚠⚠ ŻADNEGO PRZYKŁADU ROBOTY „RAZ A DOBRZE".
+ *   Podaję WYŁĄCZNIE pytanie rozpoznawcze.
+ *   TWARDA GRANICA BEZWZGLĘDNA.
  * — ŻADNYCH NAZW FIRM I MAREK.
  * — ŻADNYCH TWIERDZEŃ ZDROWOTNYCH.
- * — ⚠⚠⚠ ŻADNYCH PORAD O BEZPIECZEŃSTWIE ŻYWNOŚCI.
- *   Przy pytaniu „czy już gotowe" to ryzyko numer jeden
- *   na tej stronie. NIE PISZĘ ANI SŁOWA o tym, czy coś
- *   jest dogotowane, dopieczone ani czy nadaje się
- *   do zjedzenia. Piszę wyłącznie o RÓŻNICY MIĘDZY
- *   MIERZENIEM CZASU A SPRAWDZANIEM STANU.
- *   TWARDA GRANICA BEZWZGLĘDNA.
+ * — ŻADNYCH PORAD O BEZPIECZEŃSTWIE ŻYWNOŚCI.
  *
  * ⚠ ETYKA — CZEGO NIE WOLNO UŻYĆ:
  * — ⚠⚠ ZERO ROKU 1945 I ZNISZCZEŃ WOJENNYCH.
@@ -174,6 +180,7 @@ import {
  *   Produktów Tradycyjnych.
  * — NIE PODAJĘ nazw osiedli.
  * — NIE PODAJĘ ŻADNEGO CZASU ANI TEMPERATURY.
+ * — NIE PODAJĘ PRZYKŁADÓW ROBOT „RAZ A DOBRZE".
  *
  * FAKTY UŻYTE W TEKŚCIE (publiczne, sprawdzone):
  * — Trzebiatów leży nad Regą, około dziesięciu kilometrów
@@ -221,7 +228,7 @@ export const TRZEBIATOW: CityContent = {
   heroPhoto: {
     src: "/zdjecia/prezentacja-thermomix-1.webp",
     alt: "Aga Horche podczas prezentacji Thermomixa TM7 w domu klientki",
-    caption: "Dzwonek minutnika nie znaczy „gotowe”. Znaczy „idź sprawdzić”.",
+    caption: "Trzy tysiące siedemset kilogramów wciągnięto raz. Potem wystarczał sznur.",
   },
 
   sections: [
@@ -241,21 +248,20 @@ export const TRZEBIATOW: CityContent = {
       },
     },
     {
-      id: "skad-wiadomo",
-      heading: "Wieża, dzwon i pytanie, skąd wiadomo, że gotowe",
+      id: "raz-a-dobrze",
+      heading: "Trzy tysiące siedemset kilogramów, raz",
       paragraphs: [
-        "Wieża kościoła Mariackiego w Trzebiatowie ma około dziewięćdziesięciu metrów i przez wieki służyła za punkt orientacyjny dla żeglugi — mimo że od miasta do morza jest około dziesięciu kilometrów. A w kościele wisi dzwon „Maria” z 1515 roku, ważący trzy tysiące siedemset kilogramów.",
-        "Dwa sygnały, jeden dla oka, drugi dla ucha, i obydwa mają tę samą cechę: działają na odległość. Nie trzeba być na miejscu, żeby je odebrać.",
-        "I właśnie na tej cesze opiera się różnica, którą w kuchni myli się codziennie.",
-        "Sygnał działa na odległość. Sprawdzanie wymaga obecności. To są dwie zupełnie różne rzeczy — a w gotowaniu stale bierzemy jedną za drugą.",
-        "Bo w kuchni są dwa pytania i tylko wygląda na to, że są jednym. Pierwsze brzmi: ile to już trwa. Drugie: czy już gotowe.",
-        "Minutnik odpowiada na pierwsze i odpowiada na nie znakomicie — po to powstał. Na drugie nie odpowiada wcale, bo mierzy czas, a nie stan. Nie wie, co jest w garnku. Wie tylko, ile go już tam było.",
-        "Dlatego dzwonek nie znaczy „gotowe”. Znaczy „idź sprawdzić”. To jest cała różnica i warto ją mieć z tyłu głowy przy każdym daniu, którego jeszcze nie robiłaś.",
-        "Przy daniu znanym czas naprawdę wystarcza — nie dlatego, że czas jest miarą gotowości, tylko dlatego, że w tej jednej kuchni, przy tym jednym sprzęcie i tej jednej ilości ta zależność została już wielokrotnie sprawdzona. Ktoś ją zna, choćby nie umiał jej nazwać.",
-        "Przy nowym nie wystarcza nigdy i nie ma sensu udawać, że wystarczy.",
-        "Z tego wynika jedyna rada, jaką mam w tej sprawie: warto zapamiętywać sygnał, a nie liczbę. Przy większości dań jest jakiś moment, po którym widać albo słychać, że rzecz przeszła na drugą stronę. Nie napiszę Wam, jaki to moment przy którym daniu — nie jestem od dawania instrukcji kulinarnych i każda kuchnia ma tu trochę swoje. Napiszę tylko, że ten moment warto u siebie zauważyć raz i zanotować przy przepisie, bo potem służy latami, a liczba minut zestarzeje się przy pierwszej zmianie sprzętu.",
-        "Uczciwie o urządzeniu, bo dzieli się dokładnie według tych dwóch pytań. Na pierwsze odpowiada lepiej niż człowiek: pilnuje czasu i temperatury, nie zapomina, nie odchodzi, nie myli się o pięć minut.",
-        "Na drugie nie odpowiada i nie będę twierdzić, że odpowiada. Nie wie, czy danie jest takie, jak Wy je lubicie — bo tego nie da się zmierzyć. Sygnał końca dalej znaczy „idź sprawdzić”, tylko że przez ten czas nie trzeba było przy garnku stać.",
+        "W wieży kościoła Mariackiego w Trzebiatowie wisi dzwon „Maria” z 1515 roku. Waży trzy tysiące siedemset kilogramów. Sama wieża ma około dziewięćdziesięciu metrów.",
+        "Cały ciężar tej rzeczy przypadł na jeden dzień. Trzeba ją było raz odlać, raz przywieźć i raz wciągnąć na górę — i był to bez wątpienia najgorszy dzień w całej tej historii.",
+        "A potem przez pięćset lat wystarczyło pociągnąć za sznur.",
+        "W kuchni istnieje dokładnie ta sama kategoria robót i prawie nikt o niej nie mówi, bo nie ma w niej nic efektownego.",
+        "To rzeczy, które robi się raz. Są niewdzięczne, nudne i nie widać po nich żadnego natychmiastowego efektu. Za to potem oddają przy każdym gotowaniu, po cichu, nie przypominając o sobie ani razu.",
+        "I dlatego przegrywają zawsze — z tym, co pilne. Nic ich nie wymusza. Nikt nie zauważy, że nie zostały zrobione; zauważa się tylko, ile kosztuje ich brak, i to dopiero po kilku latach, kiedy nikt już nie kojarzy przyczyny.",
+        "Rozpoznaje się je po jednym pytaniu i nie trzeba do tego żadnej listy: czy tę samą irytację przeżywam za każdym razem. Jeśli tak — to nie jest rzecz, do której trzeba się przyzwyczaić. To jest robota do zrobienia raz.",
+        "Nie podam przykładów i robię to świadomie. W każdej kuchni to co innego, a moja lista byłaby instrukcją, o którą nikt nie prosił. Pytanie działa lepiej niż lista, bo zna odpowiedź tylko ten, kto w tej kuchni stoi.",
+        "Uczciwie o drugiej stronie, bo to ważne zastrzeżenie: nie każda taka robota się zwraca. Jeśli coś powtarza się raz na kwartał, to wieczór poświęcony na usprawnienie tego jest po prostu wieczorem straconym — choćby było najbardziej irytujące. Liczy się częstotliwość, nie uciążliwość, a myli się je nagminnie.",
+        "Na koniec o urządzeniu, bez owijania: ono jest dokładnie taką robotą, tylko w wersji drogiej. Jeden duży koszt na starcie i oddawanie przez lata.",
+        "I ta arytmetyka działa wyłącznie przy regularnym gotowaniu. Przy gotowaniu od święta nie działa wcale — bo dzwon, za który ktoś zapłacił, ma sens tylko wtedy, gdy się go używa. Dlatego zanim zaczniemy rozmawiać o cenie, pytam, ile razy w tygodniu naprawdę gotujecie.",
       ],
       links: [
         { href: "/thermomix/funkcje", label: "Funkcje TM7" },
@@ -267,7 +273,7 @@ export const TRZEBIATOW: CityContent = {
       heading: "Jak umówić prezentację w Trzebiatowie?",
       paragraphs: [
         "Zadzwoń albo napisz SMS. Możesz też zostawić kontakt w formularzu i wskazać porę oddzwonienia.",
-        "Powiedz przy umawianiu, przy którym daniu nigdy nie jesteście pewni, czy już wystarczy — przy takim najlepiej stanąć obok i zobaczyć to razem.",
+        "Powiedz przy umawianiu, co u Was w kuchni irytuje za każdym razem — nie raz na jakiś czas, tylko za każdym. To zwykle najlepszy punkt wyjścia.",
       ],
       links: [
         { href: "/prezentacja", label: "Umów prezentację przez formularz" },
@@ -322,14 +328,14 @@ export const TRZEBIATOW: CityContent = {
     },
     ...faqWspolne("w Trzebiatowie"),
     {
-      question: "Czy minutnik wystarczy, żeby wiedzieć, że danie jest gotowe?",
+      question: "Które roboty w kuchni warto zrobić raz, a które odpuścić?",
       answer:
-        "Odpowiada na inne pytanie, niż nam się wydaje. Minutnik mierzy, ile coś trwa, a nie w jakim jest stanie — nie wie, co jest w garnku. Dlatego dzwonek nie znaczy „gotowe”, tylko „idź sprawdzić”. Przy daniu znanym czas wystarcza, bo tę zależność ktoś w domu już wielokrotnie sprawdził; przy nowym nie wystarcza nigdy.",
+        "Rozpoznaje się je po jednym pytaniu: czy tę samą irytację przeżywasz za każdym razem. Jeśli tak, to nie jest rzecz, do której trzeba się przyzwyczaić — to robota do zrobienia raz. Ale uczciwie: jeśli coś powtarza się raz na kwartał, wieczór poświęcony na usprawnienie tego jest wieczorem straconym, choćby było najbardziej irytujące. Liczy się częstotliwość, nie uciążliwość.",
     },
     {
-      question: "Czy Thermomix sam pozna, że danie jest gotowe?",
+      question: "Czy Thermomix zwraca się każdemu?",
       answer:
-        "Nie — i to jest uczciwa odpowiedź. Pilnuje czasu i temperatury lepiej niż człowiek: nie zapomina i nie odchodzi od garnka. Ale nie wie, czy danie jest takie, jak Wy je lubicie, bo tego nie da się zmierzyć. Sygnał końca dalej znaczy „idź sprawdzić” — z tą różnicą, że przez cały ten czas nie trzeba było stać przy garnku.",
+        "Nie i nie będę tego obiecywać. To jeden duży koszt na starcie, który oddaje przez lata — ale ta arytmetyka działa wyłącznie przy regularnym gotowaniu. Przy gotowaniu od święta nie działa wcale. Dlatego zanim zaczniemy rozmawiać o cenie, pytam, ile razy w tygodniu naprawdę gotujecie — nie ile byście chcieli.",
     },
   ],
 

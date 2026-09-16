@@ -785,6 +785,11 @@ import { CZAPLINEK } from "./czaplinek";
 import { KARLINO } from "./karlino";
 import { MIEDZYZDROJE } from "./miedzyzdroje";
 import { WOLIN } from "./wolin";
+import { BORNE_SULINOWO } from "./borne-sulinowo";
+import { KALISZ_POMORSKI } from "./kalisz-pomorski";
+import { BOBOLICE } from "./bobolice";
+import { RESKO } from "./resko";
+import { PLOTY } from "./ploty";
 
 
 /**
@@ -1638,4 +1643,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KARLINO,
   MIEDZYZDROJE,
   WOLIN,
+  BORNE_SULINOWO,
+  KALISZ_POMORSKI,
+  BOBOLICE,
+  RESKO,
+  PLOTY,
 ];
