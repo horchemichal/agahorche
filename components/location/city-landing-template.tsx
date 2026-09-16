@@ -21,6 +21,7 @@ import { LeadForm } from "@/components/lead/lead-form";
 import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { CheckCircleIcon } from "@/components/marketing/icons";
 import { webPageSchema, personSchema } from "@/lib/seo/schema";
+import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
 import { absoluteUrl, SITE } from "@/lib/utils";
 import { TESTIMONIALS } from "@/data/testimonials";
 import { getDistrictsForCity } from "@/data/locations/districts";
@@ -302,7 +303,7 @@ export async function CityLandingTemplate({
           <div>
             <Eyebrow>Thermomix {location.name}</Eyebrow>
             <Heading as="h1" size="xl" className="mt-3 max-w-2xl">
-              {content.h1}
+              {naglowekPrzedstawiciela(content.h1)}
             </Heading>
             <Lead className="mt-5 max-w-xl">{content.lead}</Lead>
             <div className="mt-7 flex flex-wrap gap-3">

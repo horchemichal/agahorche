@@ -11,6 +11,7 @@ import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { webPageSchema } from "@/lib/seo/schema";
 import { getDistrictsForCity } from "@/data/locations/districts";
 import { SITE } from "@/lib/utils";
+import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
 
 /**
  * Strona dzielnicy. Świadomie KRÓTSZA i uboższa od strony miasta.
@@ -78,7 +79,7 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
             Thermomix {content.miasto.nazwa} — {content.nazwa}
           </Eyebrow>
           <Heading as="h1" size="xl" className="mt-3">
-            {content.h1}
+            {naglowekPrzedstawiciela(content.h1)}
           </Heading>
           <Lead className="mt-5">{content.lead}</Lead>
 
