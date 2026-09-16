@@ -760,6 +760,11 @@ import { IZBICA_KUJAWSKA } from "./izbica-kujawska";
 import { UNISLAW } from "./unislaw";
 import { KAMIEN_KRAJENSKI } from "./kamien-krajenski";
 import { DOBRZYN_NAD_WISLA } from "./dobrzyn-nad-wisla";
+import { CHODECZ } from "./chodecz";
+import { NIESZAWA } from "./nieszawa";
+import { RADZYN_CHELMINSKI } from "./radzyn-chelminski";
+import { LUBIEN_KUJAWSKI } from "./lubien-kujawski";
+import { GORZNO } from "./gorzno";
 
 
 /**
@@ -1588,4 +1593,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   UNISLAW,
   KAMIEN_KRAJENSKI,
   DOBRZYN_NAD_WISLA,
+  CHODECZ,
+  NIESZAWA,
+  RADZYN_CHELMINSKI,
+  LUBIEN_KUJAWSKI,
+  GORZNO,
 ];
