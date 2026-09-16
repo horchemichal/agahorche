@@ -800,6 +800,11 @@ import { POLANOW } from "./polanow";
 import { RECZ } from "./recz";
 import { MIROSLAWIEC } from "./miroslawiec";
 import { WEGORZYNO } from "./wegorzyno";
+import { GOLCZEWO } from "./golczewo";
+import { TYCHOWO } from "./tychowo";
+import { PELCZYCE } from "./pelczyce";
+import { DOBRZANY } from "./dobrzany";
+import { CZLOPA } from "./czlopa";
 
 
 /**
@@ -1668,4 +1673,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RECZ,
   MIROSLAWIEC,
   WEGORZYNO,
+  GOLCZEWO,
+  TYCHOWO,
+  PELCZYCE,
+  DOBRZANY,
+  CZLOPA,
 ];
