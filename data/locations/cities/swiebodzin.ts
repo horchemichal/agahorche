@@ -117,7 +117,7 @@ export const SWIEBODZIN: CityContent = {
         "Zamiast tego staram się pisać rzeczy, które zestarzeją się wolniej albo wcale: co urządzenie robi, czego nie robi, ile kosztuje, co obejmuje gwarancja i do kogo dzwonicie, jak coś pójdzie nie tak. To są zdania, które można sprawdzić dziś i za dwa lata.",
         "Przy okazji jedna rzecz, którą w tym mieście wypada powiedzieć dokładnie: te trzy liczby — trzydzieści trzy, trzydzieści sześć i pięćdziesiąt dwa i pół — są w mediach nagminnie mieszane. Trzydzieści trzy to sama figura, trzydzieści sześć z koroną, pięćdziesiąt dwa i pół razem z kopcem. Jeśli już ktoś przywołuje rekord, to niech przynajmniej przywoła właściwą liczbę.",
       ],
-      links: [{ href: "/cena", label: "Cena i warunki" }],
+      links: [{ href: "/finansowanie", label: "Cena i warunki" }],
     },
     {
       id: "jak-umowic",

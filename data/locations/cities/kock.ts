@@ -144,7 +144,7 @@ export const KOCK: CityContent = {
         "Jeśli Wasza kuchnia działa w tej odwróconej kolejności, powiedzcie mi to przy umawianiu. Ugotujemy wtedy z tego, co akurat macie, a nie z tego, co ja przywiozłam — i to będzie uczciwsza próba niż każde przygotowane danie pokazowe.",
       ],
       links: [
-        { href: "/co-mam-w-lodowce", label: "Co mam w lodówce" },
+        { href: "/przepisy/co-mam-w-lodowce", label: "Co mam w lodówce" },
         { href: "/przepisy", label: "Przepisy" },
       ],
     },
