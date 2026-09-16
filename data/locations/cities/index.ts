@@ -822,6 +822,11 @@ import { BOGUSZOW_GORCE } from "./boguszow-gorce";
 import { JELCZ_LASKOWICE } from "./jelcz-laskowice";
 import { BRZEG_DOLNY } from "./brzeg-dolny";
 import { WOLOW } from "./wolow";
+import { GORA } from "./gora";
+import { STRZELIN } from "./strzelin";
+import { MILICZ } from "./milicz";
+import { KOWARY } from "./kowary";
+import { SYCOW } from "./sycow";
 
 
 /**
@@ -1712,4 +1717,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JELCZ_LASKOWICE,
   BRZEG_DOLNY,
   WOLOW,
+  GORA,
+  STRZELIN,
+  MILICZ,
+  KOWARY,
+  SYCOW,
 ];
