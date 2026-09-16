@@ -817,6 +817,11 @@ import { STRZEGOM } from "./strzegom";
 import { ZLOTORYJA } from "./zlotoryja";
 import { CHOJNOW } from "./chojnow";
 import { TRZEBNICA } from "./trzebnica";
+import { BOGATYNIA } from "./bogatynia";
+import { BOGUSZOW_GORCE } from "./boguszow-gorce";
+import { JELCZ_LASKOWICE } from "./jelcz-laskowice";
+import { BRZEG_DOLNY } from "./brzeg-dolny";
+import { WOLOW } from "./wolow";
 
 
 /**
@@ -1702,4 +1707,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZLOTORYJA,
   CHOJNOW,
   TRZEBNICA,
+  BOGATYNIA,
+  BOGUSZOW_GORCE,
+  JELCZ_LASKOWICE,
+  BRZEG_DOLNY,
+  WOLOW,
 ];
