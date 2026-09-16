@@ -812,6 +812,11 @@ import { NOWE_WARPNO } from "./nowe-warpno";
 import { BIALY_BOR } from "./bialy-bor";
 import { TUCZNO } from "./tuczno";
 import { SUCHAN } from "./suchan";
+import { KAMIENNA_GORA } from "./kamienna-gora";
+import { STRZEGOM } from "./strzegom";
+import { ZLOTORYJA } from "./zlotoryja";
+import { CHOJNOW } from "./chojnow";
+import { TRZEBNICA } from "./trzebnica";
 
 
 /**
@@ -1692,4 +1697,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BIALY_BOR,
   TUCZNO,
   SUCHAN,
+  KAMIENNA_GORA,
+  STRZEGOM,
+  ZLOTORYJA,
+  CHOJNOW,
+  TRZEBNICA,
 ];
