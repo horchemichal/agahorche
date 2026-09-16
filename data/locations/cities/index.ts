@@ -827,6 +827,11 @@ import { STRZELIN } from "./strzelin";
 import { MILICZ } from "./milicz";
 import { KOWARY } from "./kowary";
 import { SYCOW } from "./sycow";
+import { KUDOWA_ZDROJ } from "./kudowa-zdroj";
+import { PIESZYCE } from "./pieszyce";
+import { OBORNIKI_SLASKIE } from "./oborniki-slaskie";
+import { SRODA_SLASKA } from "./sroda-slaska";
+import { ZIEBICE } from "./ziebice";
 
 
 /**
@@ -1722,4 +1727,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   MILICZ,
   KOWARY,
   SYCOW,
+  KUDOWA_ZDROJ,
+  PIESZYCE,
+  OBORNIKI_SLASKIE,
+  SRODA_SLASKA,
+  ZIEBICE,
 ];
