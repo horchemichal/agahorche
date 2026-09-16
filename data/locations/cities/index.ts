@@ -795,6 +795,11 @@ import { DZIWNOW } from "./dziwnow";
 import { MIESZKOWICE } from "./mieszkowice";
 import { MASZEWO } from "./maszewo";
 import { CHOCIWEL } from "./chociwel";
+import { MIELNO } from "./mielno";
+import { POLANOW } from "./polanow";
+import { RECZ } from "./recz";
+import { MIROSLAWIEC } from "./miroslawiec";
+import { WEGORZYNO } from "./wegorzyno";
 
 
 /**
@@ -1658,4 +1663,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   MIESZKOWICE,
   MASZEWO,
   CHOCIWEL,
+  MIELNO,
+  POLANOW,
+  RECZ,
+  MIROSLAWIEC,
+  WEGORZYNO,
 ];
