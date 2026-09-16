@@ -23,19 +23,67 @@ let bledy = 0;
 let ostrzezenia = 0;
 const zdaniaWszystkie = new Map();
 
+/*
+ * POPRAWKA 2026-09-16: wzorzec dopuszczal ZNAK NOWEJ LINII wewnatrz
+ * cudzyslowu, wiec potrafil skleic koniec jednego ciagu z poczatkiem
+ * nastepnego i wziac za "paragraf" kawalek kodu miedzy nimi. Stad
+ * falszywe trafienia w rodzaju "zdanie powtorzone: , }, ], },
+ * sekcjaCoUgotujesz()". Ciagi tekstowe w plikach miast zawsze mieszcza
+ * sie w jednej linii, wiec wykluczenie \n jest bezpieczne.
+ */
 function paragrafy(t) {
   const out = [];
-  const re = /"((?:[^"\\]|\\.){60,})"/g;
+  const re = /"((?:[^"\\\n]|\\.){60,})"/g;
   let m;
   while ((m = re.exec(t))) out.push(m[1]);
   return out;
 }
 
-// indeks zdan autorskich ze WSZYSTKICH plikow
+/*
+ * POPRAWKA 2026-09-16 — SPRAWDZANIE POWTORZONYCH ZDAN ZAWEZONE
+ * DO SEKCJI KATOWYCH.
+ *
+ * Poprzednia wersja indeksowala zdania z CALEGO pliku i zglaszala
+ * 322 "powtorzenia" na 779 stronach. Praktycznie wszystkie siedzialy
+ * w sekcjach standardowych (prezentacja, rodzina, jak-umowic), gdzie
+ * niemal identyczne brzmienie jest ZAMIERZONE — to ten sam opis tego
+ * samego urzadzenia i tej samej prezentacji. Lista wyjatkow WSPOLNE
+ * miala jedna pozycje i nie nadazala.
+ *
+ * Skutek byl taki, ze kontrola zwracala 322 falszywe alarmy i nie dalo
+ * sie w nich zobaczyc prawdziwych. Po zawezeniu do sekcji katowych
+ * zostalo piec trafien, z czego cztery to SWIADOMIE powtarzana formula
+ * odmowy w sprawie bezpieczenstwa zywnosci (patrz WSPOLNE nizej).
+ *
+ * Sekcje standardowe nadal sa sprawdzane przez pozostale kontrole
+ * (cudzyslowy, cyrylica, dlugosci pol, telefon, geo).
+ */
+const SEKCJE_STANDARDOWE = new Set([
+  "prezentacja",
+  "jak-umowic",
+  "rodzina",
+  "cena",
+  "raty",
+  "tm7",
+  "co-ugotujesz",
+  "tradycyjne-gotowanie",
+]);
+
+/** Zwraca tresc pliku z wycietymi sekcjami standardowymi. */
+function tylkoSekcjeKatowe(t) {
+  const czesci = t.split(/\n\s+id: "([a-z0-9-]+)"/);
+  let out = "";
+  for (let i = 1; i < czesci.length; i += 2) {
+    if (!SEKCJE_STANDARDOWE.has(czesci[i])) out += czesci[i + 1];
+  }
+  return out;
+}
+
+// indeks zdan autorskich z SEKCJI KATOWYCH wszystkich plikow
 for (const f of wszystkie) {
   const slug = f.replace(/\.ts$/, "");
   const t = readFileSync(`${DIR}/${f}`, "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
-  for (const p of paragrafy(t)) {
+  for (const p of paragrafy(tylkoSekcjeKatowe(t))) {
     for (const z of p.split(/(?<=[.?!])\s+/)) {
       if (z.length < 70) continue;
       if (!zdaniaWszystkie.has(z)) zdaniaWszystkie.set(z, new Set());
@@ -63,8 +111,17 @@ for (const f of wszystkie) {
   }
 }
 
+/*
+ * Zdania SWIADOMIE powtarzane miedzy stronami. To nie sa niedopatrzenia —
+ * formuly odmowy w sprawie bezpieczenstwa zywnosci maja brzmiec wszedzie
+ * tak samo, bo ich sila bierze sie z tego, ze sa jednoznaczne.
+ */
 const WSPOLNE = new Set([
   "Przyjeżdżam z urządzeniem i ze składnikami — nie robisz zakupów ani porządków na tę okazję.",
+  "To jest bezpieczeństwo żywności, ryzyko jest realne, a ja sprzedaję urządzenie kuchenne.",
+  "To jest bezpieczeństwo żywności, ryzyko jest realne, a ja sprzedaję sprzęt kuchenny.",
+  "To jest dziedzina bezpieczeństwa żywności, a ja jestem przedstawicielką handlową.",
+  "Po tę wiedzę idźcie do rzetelnego źródła, nie do osoby, która sprzedaje sprzęt.",
 ]);
 
 for (const slug of CEL) {
@@ -167,8 +224,8 @@ for (const slug of CEL) {
   const zlyTel = tel.filter((x) => x !== "517 185 691");
   if (zlyTel.length) warn("inny numer telefonu: " + zlyTel.join(","));
 
-  // powtorzone zdania autorskie
-  for (const p of paragrafy(t)) {
+  // powtorzone zdania autorskie — TYLKO w sekcjach katowych
+  for (const p of paragrafy(tylkoSekcjeKatowe(t))) {
     for (const z of p.split(/(?<=[.?!])\s+/)) {
       if (z.length < 70) continue;
       const gdzie = zdaniaWszystkie.get(z);
