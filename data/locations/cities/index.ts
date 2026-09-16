@@ -765,6 +765,11 @@ import { NIESZAWA } from "./nieszawa";
 import { RADZYN_CHELMINSKI } from "./radzyn-chelminski";
 import { LUBIEN_KUJAWSKI } from "./lubien-kujawski";
 import { GORZNO } from "./gorzno";
+import { NOWOGARD } from "./nowogard";
+import { GRYFICE } from "./gryfice";
+import { CHOSZCZNO } from "./choszczno";
+import { SWIDWIN } from "./swidwin";
+import { BARLINEK } from "./barlinek";
 
 
 /**
@@ -1598,4 +1603,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   RADZYN_CHELMINSKI,
   LUBIEN_KUJAWSKI,
   GORZNO,
+  NOWOGARD,
+  GRYFICE,
+  CHOSZCZNO,
+  SWIDWIN,
+  BARLINEK,
 ];
