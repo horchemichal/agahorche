@@ -790,6 +790,11 @@ import { KALISZ_POMORSKI } from "./kalisz-pomorski";
 import { BOBOLICE } from "./bobolice";
 import { RESKO } from "./resko";
 import { PLOTY } from "./ploty";
+import { LIPIANY } from "./lipiany";
+import { DZIWNOW } from "./dziwnow";
+import { MIESZKOWICE } from "./mieszkowice";
+import { MASZEWO } from "./maszewo";
+import { CHOCIWEL } from "./chociwel";
 
 
 /**
@@ -1648,4 +1653,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   BOBOLICE,
   RESKO,
   PLOTY,
+  LIPIANY,
+  DZIWNOW,
+  MIESZKOWICE,
+  MASZEWO,
+  CHOCIWEL,
 ];
