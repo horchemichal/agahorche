@@ -775,6 +775,11 @@ import { DARLOWO } from "./darlowo";
 import { SLAWNO } from "./slawno";
 import { DRAWSKO_POMORSKIE } from "./drawsko-pomorskie";
 import { MYSLIBORZ } from "./mysliborz";
+import { TRZEBIATOW } from "./trzebiatow";
+import { LOBEZ } from "./lobez";
+import { KAMIEN_POMORSKI } from "./kamien-pomorski";
+import { POLCZYN_ZDROJ } from "./polczyn-zdroj";
+import { CHOJNA } from "./chojna";
 
 
 /**
@@ -1618,4 +1623,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SLAWNO,
   DRAWSKO_POMORSKIE,
   MYSLIBORZ,
+  TRZEBIATOW,
+  LOBEZ,
+  KAMIEN_POMORSKI,
+  POLCZYN_ZDROJ,
+  CHOJNA,
 ];
