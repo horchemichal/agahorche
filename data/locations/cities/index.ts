@@ -884,6 +884,11 @@ import { NOWY_TOMYSL } from "./nowy-tomysl";
 import { KEPNO } from "./kepno";
 import { OSTRZESZOW } from "./ostrzeszow";
 import { GRODZISK_WIELKOPOLSKI } from "./grodzisk-wielkopolski";
+import { MOSINA } from "./mosina";
+import { SLUPCA } from "./slupca";
+import { WOLSZTYN } from "./wolsztyn";
+import { WRONKI } from "./wronki";
+import { CZARNKOW } from "./czarnkow";
 
 
 /**
@@ -1836,4 +1841,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KEPNO,
   OSTRZESZOW,
   GRODZISK_WIELKOPOLSKI,
+  MOSINA,
+  SLUPCA,
+  WOLSZTYN,
+  WRONKI,
+  CZARNKOW,
 ];
