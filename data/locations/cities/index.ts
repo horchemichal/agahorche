@@ -874,6 +874,11 @@ import { MIEDZYLESIE } from "./miedzylesie";
 import { SWIERZAWA } from "./swierzawa";
 import { MIEDZYBORZ } from "./miedzyborz";
 import { PRUSICE } from "./prusice";
+import { SZAMOTULY } from "./szamotuly";
+import { OBORNIKI } from "./oborniki";
+import { CHODZIEZ } from "./chodziez";
+import { ZLOTOW } from "./zlotow";
+import { TRZCIANKA } from "./trzcianka";
 
 
 /**
@@ -1816,4 +1821,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SWIERZAWA,
   MIEDZYBORZ,
   PRUSICE,
+  SZAMOTULY,
+  OBORNIKI,
+  CHODZIEZ,
+  ZLOTOW,
+  TRZCIANKA,
 ];
