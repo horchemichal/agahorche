@@ -847,6 +847,11 @@ import { GRYFOW_SLASKI } from "./gryfow-slaski";
 import { ZMIGROD } from "./zmigrod";
 import { SZKLARSKA_POREBA } from "./szklarska-poreba";
 import { POLANICA_ZDROJ } from "./polanica-zdroj";
+import { PILAWA_GORNA } from "./pilawa-gorna";
+import { GLUSZYCA } from "./gluszyca";
+import { PIECHOWICE } from "./piechowice";
+import { LUBAWKA } from "./lubawka";
+import { PIENSK } from "./piensk";
 
 
 /**
@@ -1762,4 +1767,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   ZMIGROD,
   SZKLARSKA_POREBA,
   POLANICA_ZDROJ,
+  PILAWA_GORNA,
+  GLUSZYCA,
+  PIECHOWICE,
+  LUBAWKA,
+  PIENSK,
 ];
