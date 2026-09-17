@@ -837,6 +837,11 @@ import { SIECHNICE } from "./siechnice";
 import { CHOCIANOW } from "./chocianow";
 import { KATY_WROCLAWSKIE } from "./katy-wroclawskie";
 import { SOBOTKA } from "./sobotka";
+import { ZAROW } from "./zarow";
+import { JAWORZYNA_SLASKA } from "./jaworzyna-slaska";
+import { SZCZYTNA } from "./szczytna";
+import { DUSZNIKI_ZDROJ } from "./duszniki-zdroj";
+import { LESNA } from "./lesna";
 
 
 /**
@@ -1742,4 +1747,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CHOCIANOW,
   KATY_WROCLAWSKIE,
   SOBOTKA,
+  ZAROW,
+  JAWORZYNA_SLASKA,
+  SZCZYTNA,
+  DUSZNIKI_ZDROJ,
+  LESNA,
 ];
