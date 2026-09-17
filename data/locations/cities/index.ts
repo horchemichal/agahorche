@@ -862,6 +862,11 @@ import { OLSZYNA } from "./olszyna";
 import { NOWOGRODZIEC } from "./nowogrodziec";
 import { ZAWIDOW } from "./zawidow";
 import { SWIERADOW_ZDROJ } from "./swieradow-zdroj";
+import { MIEROSZOW } from "./mieroszow";
+import { MIRSK } from "./mirsk";
+import { WOJCIESZOW } from "./wojcieszow";
+import { PROCHOWICE } from "./prochowice";
+import { NIEMCZA } from "./niemcza";
 
 
 /**
@@ -1792,4 +1797,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   NOWOGRODZIEC,
   ZAWIDOW,
   SWIERADOW_ZDROJ,
+  MIEROSZOW,
+  MIRSK,
+  WOJCIESZOW,
+  PROCHOWICE,
+  NIEMCZA,
 ];
