@@ -842,6 +842,11 @@ import { JAWORZYNA_SLASKA } from "./jaworzyna-slaska";
 import { SZCZYTNA } from "./szczytna";
 import { DUSZNIKI_ZDROJ } from "./duszniki-zdroj";
 import { LESNA } from "./lesna";
+import { TWARDOGORA } from "./twardogora";
+import { GRYFOW_SLASKI } from "./gryfow-slaski";
+import { ZMIGROD } from "./zmigrod";
+import { SZKLARSKA_POREBA } from "./szklarska-poreba";
+import { POLANICA_ZDROJ } from "./polanica-zdroj";
 
 
 /**
@@ -1752,4 +1757,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SZCZYTNA,
   DUSZNIKI_ZDROJ,
   LESNA,
+  TWARDOGORA,
+  GRYFOW_SLASKI,
+  ZMIGROD,
+  SZKLARSKA_POREBA,
+  POLANICA_ZDROJ,
 ];
