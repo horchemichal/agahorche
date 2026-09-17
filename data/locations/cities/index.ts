@@ -909,6 +909,16 @@ import { SIERAKOW } from "./sierakow";
 import { KRZYZ_WIELKOPOLSKI } from "./krzyz-wielkopolski";
 import { WIELEN } from "./wielen";
 import { SMIGIEL } from "./smigiel";
+import { CZEMPIN } from "./czempin";
+import { ODOLANOW } from "./odolanow";
+import { WYRZYSK } from "./wyrzysk";
+import { ZDUNY } from "./zduny";
+import { NOWE_SKALMIERZYCE } from "./nowe-skalmierzyce";
+import { GOLINA } from "./golina";
+import { KLECZEW } from "./kleczew";
+import { KROBIA } from "./krobia";
+import { SKOKI } from "./skoki";
+import { SZAMOCIN } from "./szamocin";
 
 
 /**
@@ -1886,4 +1896,14 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KRZYZ_WIELKOPOLSKI,
   WIELEN,
   SMIGIEL,
+  CZEMPIN,
+  ODOLANOW,
+  WYRZYSK,
+  ZDUNY,
+  NOWE_SKALMIERZYCE,
+  GOLINA,
+  KLECZEW,
+  KROBIA,
+  SKOKI,
+  SZAMOCIN,
 ];
