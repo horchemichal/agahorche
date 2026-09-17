@@ -879,6 +879,11 @@ import { OBORNIKI } from "./oborniki";
 import { CHODZIEZ } from "./chodziez";
 import { ZLOTOW } from "./zlotow";
 import { TRZCIANKA } from "./trzcianka";
+import { PLESZEW } from "./pleszew";
+import { NOWY_TOMYSL } from "./nowy-tomysl";
+import { KEPNO } from "./kepno";
+import { OSTRZESZOW } from "./ostrzeszow";
+import { GRODZISK_WIELKOPOLSKI } from "./grodzisk-wielkopolski";
 
 
 /**
@@ -1826,4 +1831,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   CHODZIEZ,
   ZLOTOW,
   TRZCIANKA,
+  PLESZEW,
+  NOWY_TOMYSL,
+  KEPNO,
+  OSTRZESZOW,
+  GRODZISK_WIELKOPOLSKI,
 ];
