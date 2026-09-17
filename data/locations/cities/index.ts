@@ -894,6 +894,11 @@ import { MIEDZYCHOD } from "./miedzychod";
 import { MUROWANA_GOSLINA } from "./murowana-goslina";
 import { PUSZCZYKOWO } from "./puszczykowo";
 import { KOSTRZYN } from "./kostrzyn";
+import { OPALENICA } from "./opalenica";
+import { POBIEDZISKA } from "./pobiedziska";
+import { JASTROWIE } from "./jastrowie";
+import { WITKOWO } from "./witkowo";
+import { PNIEWY } from "./pniewy";
 
 
 /**
@@ -1856,4 +1861,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   MUROWANA_GOSLINA,
   PUSZCZYKOWO,
   KOSTRZYN,
+  OPALENICA,
+  POBIEDZISKA,
+  JASTROWIE,
+  WITKOWO,
+  PNIEWY,
 ];
