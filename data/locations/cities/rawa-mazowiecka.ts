@@ -207,7 +207,7 @@ export const RAWA_MAZOWIECKA: CityContent = {
 
   districtsHeading: "Do których części Rawy Mazowieckiej dojeżdżam?",
   districtsParagraphs: [
-    "Do całego miasta — do centrum, pod zamek, nad Tatar i do zabudowy przy Rawce — a także do wsi gminy wiejskiej Rawa Mazowiecka. Dojazd jest wszędzie bezpłatny.",
+    "Do całego miasta — do centrum, pod ruiny zamku, nad Tatar i do zabudowy przy Rawce — a także do wsi gminy wiejskiej Rawa Mazowiecka. Dojazd jest wszędzie bezpłatny.",
     "Przy umawianiu wystarczy podać ulicę albo miejscowość.",
   ],
   districts: [],
