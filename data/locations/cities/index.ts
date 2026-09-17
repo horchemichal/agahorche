@@ -904,6 +904,11 @@ import { ZBASZYN } from "./zbaszyn";
 import { KOZMIN_WIELKOPOLSKI } from "./kozmin-wielkopolski";
 import { KLODAWA } from "./klodawa";
 import { BUK } from "./buk";
+import { STESZEW } from "./steszew";
+import { SIERAKOW } from "./sierakow";
+import { KRZYZ_WIELKOPOLSKI } from "./krzyz-wielkopolski";
+import { WIELEN } from "./wielen";
+import { SMIGIEL } from "./smigiel";
 
 
 /**
@@ -1876,4 +1881,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KOZMIN_WIELKOPOLSKI,
   KLODAWA,
   BUK,
+  STESZEW,
+  SIERAKOW,
+  KRZYZ_WIELKOPOLSKI,
+  WIELEN,
+  SMIGIEL,
 ];
