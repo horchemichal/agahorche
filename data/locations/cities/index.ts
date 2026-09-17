@@ -919,6 +919,11 @@ import { KLECZEW } from "./kleczew";
 import { KROBIA } from "./krobia";
 import { SKOKI } from "./skoki";
 import { SZAMOCIN } from "./szamocin";
+import { OKONEK } from "./okonek";
+import { UJSCIE } from "./ujscie";
+import { KRAJENKA } from "./krajenka";
+import { RAKONIEWICE } from "./rakoniewice";
+import { MILOSLAW } from "./miloslaw";
 
 
 /**
@@ -1906,4 +1911,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KROBIA,
   SKOKI,
   SZAMOCIN,
+  OKONEK,
+  UJSCIE,
+  KRAJENKA,
+  RAKONIEWICE,
+  MILOSLAW,
 ];
