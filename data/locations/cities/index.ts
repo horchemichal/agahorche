@@ -889,6 +889,11 @@ import { SLUPCA } from "./slupca";
 import { WOLSZTYN } from "./wolsztyn";
 import { WRONKI } from "./wronki";
 import { CZARNKOW } from "./czarnkow";
+import { ROGOZNO } from "./rogozno";
+import { MIEDZYCHOD } from "./miedzychod";
+import { MUROWANA_GOSLINA } from "./murowana-goslina";
+import { PUSZCZYKOWO } from "./puszczykowo";
+import { KOSTRZYN } from "./kostrzyn";
 
 
 /**
@@ -1846,4 +1851,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WOLSZTYN,
   WRONKI,
   CZARNKOW,
+  ROGOZNO,
+  MIEDZYCHOD,
+  MUROWANA_GOSLINA,
+  PUSZCZYKOWO,
+  KOSTRZYN,
 ];
