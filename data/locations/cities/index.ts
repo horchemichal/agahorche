@@ -857,6 +857,11 @@ import { STRONIE_SLASKIE } from "./stronie-slaskie";
 import { SZCZAWNO_ZDROJ } from "./szczawno-zdroj";
 import { SCINAWA } from "./scinawa";
 import { BIERUTOW } from "./bierutow";
+import { JEDLINA_ZDROJ } from "./jedlina-zdroj";
+import { OLSZYNA } from "./olszyna";
+import { NOWOGRODZIEC } from "./nowogrodziec";
+import { ZAWIDOW } from "./zawidow";
+import { SWIERADOW_ZDROJ } from "./swieradow-zdroj";
 
 
 /**
@@ -1782,4 +1787,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   SZCZAWNO_ZDROJ,
   SCINAWA,
   BIERUTOW,
+  JEDLINA_ZDROJ,
+  OLSZYNA,
+  NOWOGRODZIEC,
+  ZAWIDOW,
+  SWIERADOW_ZDROJ,
 ];
