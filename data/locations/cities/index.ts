@@ -899,6 +899,11 @@ import { POBIEDZISKA } from "./pobiedziska";
 import { JASTROWIE } from "./jastrowie";
 import { WITKOWO } from "./witkowo";
 import { PNIEWY } from "./pniewy";
+import { TRZEMESZNO } from "./trzemeszno";
+import { ZBASZYN } from "./zbaszyn";
+import { KOZMIN_WIELKOPOLSKI } from "./kozmin-wielkopolski";
+import { KLODAWA } from "./klodawa";
+import { BUK } from "./buk";
 
 
 /**
@@ -1866,4 +1871,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   JASTROWIE,
   WITKOWO,
   PNIEWY,
+  TRZEMESZNO,
+  ZBASZYN,
+  KOZMIN_WIELKOPOLSKI,
+  KLODAWA,
+  BUK,
 ];
