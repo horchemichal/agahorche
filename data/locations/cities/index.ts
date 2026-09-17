@@ -867,6 +867,13 @@ import { MIRSK } from "./mirsk";
 import { WOJCIESZOW } from "./wojcieszow";
 import { PROCHOWICE } from "./prochowice";
 import { NIEMCZA } from "./niemcza";
+import { WEGLINIEC } from "./wegliniec";
+import { WASOSZ } from "./wasosz";
+import { RADKOW } from "./radkow";
+import { MIEDZYLESIE } from "./miedzylesie";
+import { SWIERZAWA } from "./swierzawa";
+import { MIEDZYBORZ } from "./miedzyborz";
+import { PRUSICE } from "./prusice";
 
 
 /**
@@ -1802,4 +1809,11 @@ export const MIASTA_DOPISANE: CityContent[] = [
   WOJCIESZOW,
   PROCHOWICE,
   NIEMCZA,
+  WEGLINIEC,
+  WASOSZ,
+  RADKOW,
+  MIEDZYLESIE,
+  SWIERZAWA,
+  MIEDZYBORZ,
+  PRUSICE,
 ];
