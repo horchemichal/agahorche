@@ -852,6 +852,11 @@ import { GLUSZYCA } from "./gluszyca";
 import { PIECHOWICE } from "./piechowice";
 import { LUBAWKA } from "./lubawka";
 import { PIENSK } from "./piensk";
+import { LADEK_ZDROJ } from "./ladek-zdroj";
+import { STRONIE_SLASKIE } from "./stronie-slaskie";
+import { SZCZAWNO_ZDROJ } from "./szczawno-zdroj";
+import { SCINAWA } from "./scinawa";
+import { BIERUTOW } from "./bierutow";
 
 
 /**
@@ -1772,4 +1777,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   PIECHOWICE,
   LUBAWKA,
   PIENSK,
+  LADEK_ZDROJ,
+  STRONIE_SLASKIE,
+  SZCZAWNO_ZDROJ,
+  SCINAWA,
+  BIERUTOW,
 ];
