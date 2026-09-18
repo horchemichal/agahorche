@@ -291,7 +291,7 @@ export const MOGIELNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mogielnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mogielnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla mogielnickiej rodziny",

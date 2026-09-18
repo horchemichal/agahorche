@@ -299,7 +299,7 @@ export const KUDOWA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kudowie-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kudowie-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kudowy-Zdroju",

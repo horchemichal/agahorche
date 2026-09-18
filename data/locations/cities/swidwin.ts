@@ -258,7 +258,7 @@ export const SWIDWIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świdwinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świdwinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla świdwińskiej rodziny",

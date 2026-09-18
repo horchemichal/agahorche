@@ -279,7 +279,7 @@ export const OLSZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Olszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Olszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Olszyny",

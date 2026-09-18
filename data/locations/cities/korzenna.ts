@@ -158,7 +158,7 @@ export const KORZENNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Korzenna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Korzenna"),
     {
       id: "rodzina",
       heading: "Szesnaście wsi i trzy różne kierunki do pracy",

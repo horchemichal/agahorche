@@ -341,7 +341,7 @@ export const LWOWEK_SLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lwówku Śląskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lwówku Śląskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Lwówka Śląskiego",

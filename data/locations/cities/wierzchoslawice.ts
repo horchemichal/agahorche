@@ -183,7 +183,7 @@ export const WIERZCHOSLAWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wierzchosławice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wierzchosławice"),
     {
       id: "rodzina",
       heading: "Karp i to, co z niego zostaje",

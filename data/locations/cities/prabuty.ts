@@ -147,7 +147,7 @@ export const PRABUTY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Prabutach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Prabutach"),
     {
       id: "rodzina",
       heading: "Thermomix dla prabuckiej rodziny",

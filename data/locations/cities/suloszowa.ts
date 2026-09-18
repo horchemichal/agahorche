@@ -162,7 +162,7 @@ export const SULOSZOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Sułoszowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Sułoszowa"),
     {
       id: "rodzina",
       heading: "Czerwiec, kiedy wszystko dzieje się naraz",

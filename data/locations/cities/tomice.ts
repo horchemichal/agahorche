@@ -161,7 +161,7 @@ export const TOMICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Tomice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Tomice"),
     {
       id: "rodzina",
       heading: "Nowy dom, nowa kuchnia, stare przepisy",

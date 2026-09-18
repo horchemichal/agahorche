@@ -266,7 +266,7 @@ export const JEDWABNE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jedwabnem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jedwabnem"),
     {
       id: "rodzina",
       heading: "Thermomix dla jedwabieńskiej rodziny",

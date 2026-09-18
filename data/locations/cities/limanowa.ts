@@ -90,7 +90,7 @@ export const LIMANOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Limanowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Limanowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Limanowej",

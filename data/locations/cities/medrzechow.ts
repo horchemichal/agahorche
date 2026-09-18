@@ -135,7 +135,7 @@ export const MEDRZECHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Mędrzechów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Mędrzechów"),
     {
       id: "rodzina",
       heading: "Wieś, która słynęła z bydła",

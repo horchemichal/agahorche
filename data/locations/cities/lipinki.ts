@@ -151,7 +151,7 @@ export const LIPINKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lipinki"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lipinki"),
     {
       id: "rodzina",
       heading: "Gmina, w której pracuje się na miejscu",

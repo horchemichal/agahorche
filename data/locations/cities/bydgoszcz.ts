@@ -109,7 +109,7 @@ export const BYDGOSZCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bydgoszczy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bydgoszczy"),
     {
       id: "rodzina",
       heading: "Thermomix dla bydgoskiej rodziny",

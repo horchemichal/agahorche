@@ -160,7 +160,7 @@ export const KAMIONKA_WIELKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kamionka Wielka"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kamionka Wielka"),
     {
       id: "rodzina",
       heading: "Gmina, w której dzieci jest więcej niż emerytów",

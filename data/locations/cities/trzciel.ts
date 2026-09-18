@@ -241,7 +241,7 @@ export const TRZCIEL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzcielu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzcielu"),
     {
       id: "rodzina",
       heading: "Thermomix dla trzcielskiej rodziny",

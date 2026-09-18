@@ -275,7 +275,7 @@ export const KARGOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kargowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kargowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla kargowskiej rodziny",

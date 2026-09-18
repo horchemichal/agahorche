@@ -267,7 +267,7 @@ export const SZYDLOWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szydłowcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szydłowcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla szydłowieckiej rodziny",

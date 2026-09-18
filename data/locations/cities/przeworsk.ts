@@ -99,7 +99,7 @@ export const PRZEWORSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Przeworsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Przeworsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla przeworskiej rodziny",

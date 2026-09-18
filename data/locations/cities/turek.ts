@@ -96,7 +96,7 @@ export const TUREK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Turku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Turku"),
     {
       id: "rodzina",
       heading: "Thermomix dla tureckiej rodziny",

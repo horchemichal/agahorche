@@ -155,7 +155,7 @@ export const MUSZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Muszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Muszynie"),
     {
       id: "rodzina",
       heading: "Gmina, w której mieszka się przy jednej dolinie",

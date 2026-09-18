@@ -293,7 +293,7 @@ export const JANIKOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Janikowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Janikowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla janikowskiej rodziny",

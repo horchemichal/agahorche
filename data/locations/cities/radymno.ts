@@ -161,7 +161,7 @@ export const RADYMNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radymnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radymnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla radymniańskiej rodziny",

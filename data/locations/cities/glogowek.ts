@@ -170,7 +170,7 @@ export const GLOGOWEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głogówku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głogówku"),
     {
       id: "rodzina",
       heading: "Thermomix dla głogóweckiej rodziny",

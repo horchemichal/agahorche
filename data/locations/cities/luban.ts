@@ -132,7 +132,7 @@ export const LUBAN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubaniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubaniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubańskiej rodziny",

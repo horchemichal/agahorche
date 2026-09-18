@@ -165,7 +165,7 @@ export const LIPNICA_WIELKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lipnica Wielka"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lipnica Wielka"),
     {
       id: "rodzina",
       heading: "Najmłodsza gmina, do której jeżdżę",

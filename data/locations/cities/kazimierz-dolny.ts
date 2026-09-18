@@ -102,7 +102,7 @@ export const KAZIMIERZ_DOLNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kazimierzu Dolnym"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kazimierzu Dolnym"),
     {
       id: "rodzina",
       heading: "Thermomix dla kazimierskiej rodziny",

@@ -111,7 +111,7 @@ export const REDA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Redzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Redzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla redzkiej rodziny",

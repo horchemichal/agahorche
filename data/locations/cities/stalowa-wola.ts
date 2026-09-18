@@ -96,7 +96,7 @@ export const STALOWA_WOLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stalowej Woli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stalowej Woli"),
     {
       id: "rodzina",
       heading: "Thermomix dla stalowowolskiej rodziny",

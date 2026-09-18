@@ -157,7 +157,7 @@ export const SLOPNICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Słopnice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Słopnice"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym są małe dzieci",

@@ -294,7 +294,7 @@ export const PIOTRKOW_KUJAWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piotrkowie Kujawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piotrkowie Kujawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla piotrkowskiej rodziny",

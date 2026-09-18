@@ -263,7 +263,7 @@ export const CZAPLINEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czaplinku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czaplinku"),
     {
       id: "rodzina",
       heading: "Thermomix dla czaplineckiej rodziny",

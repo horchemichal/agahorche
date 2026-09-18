@@ -297,7 +297,7 @@ export const DRAWNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Drawnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Drawnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Drawna",

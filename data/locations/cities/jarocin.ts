@@ -102,7 +102,7 @@ export const JAROCIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jarocinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jarocinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla jarocińskiej rodziny",

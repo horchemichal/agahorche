@@ -273,7 +273,7 @@ export const DARLOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Darłowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Darłowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla darłowskiej rodziny",

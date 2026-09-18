@@ -109,7 +109,7 @@ export const ZIELONA_GORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zielonej Górze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zielonej Górze"),
     {
       id: "rodzina",
       heading: "Thermomix dla zielonogórskiej rodziny",

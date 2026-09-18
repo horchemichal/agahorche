@@ -242,7 +242,7 @@ export const MSZCZONOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mszczonowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mszczonowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla mszczonowskiej rodziny",

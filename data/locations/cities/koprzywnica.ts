@@ -156,7 +156,7 @@ export const KOPRZYWNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Koprzywnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Koprzywnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla koprzywnickiej rodziny",

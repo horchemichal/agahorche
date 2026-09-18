@@ -300,7 +300,7 @@ export const NOWE_WARPNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Warpnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Warpnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowego Warpna",

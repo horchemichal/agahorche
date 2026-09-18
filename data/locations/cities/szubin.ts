@@ -292,7 +292,7 @@ export const SZUBIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szubinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szubinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla szubińskiej rodziny",

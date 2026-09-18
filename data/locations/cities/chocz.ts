@@ -261,7 +261,7 @@ export const CHOCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Choczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Choczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chocza",

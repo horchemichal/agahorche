@@ -298,7 +298,7 @@ export const NOWOGRODZIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowogrodźcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowogrodźcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowogrodźca",

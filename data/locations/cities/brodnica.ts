@@ -108,7 +108,7 @@ export const BRODNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brodnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brodnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla brodnickiej rodziny",

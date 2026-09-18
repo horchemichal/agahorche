@@ -182,7 +182,7 @@ export const BIECZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bieczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bieczu"),
     {
       id: "rodzina",
       heading: "Gmina, w której prawie co czwarty mieszkaniec ma ponad sześćdziesiąt lat",

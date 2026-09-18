@@ -226,7 +226,7 @@ export const STAWISKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stawiskach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stawiskach"),
     {
       id: "rodzina",
       heading: "Thermomix dla stawiskiej rodziny",

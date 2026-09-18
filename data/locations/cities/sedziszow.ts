@@ -160,7 +160,7 @@ export const SEDZISZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sędziszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sędziszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sędziszowskiej rodziny",

@@ -246,7 +246,7 @@ export const LUBSKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubskiej rodziny",

@@ -113,7 +113,7 @@ export const GOLENIOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Goleniowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Goleniowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla goleniowskiej rodziny",

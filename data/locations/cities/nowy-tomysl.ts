@@ -267,7 +267,7 @@ export const NOWY_TOMYSL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Tomyślu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Tomyślu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowego Tomyśla",

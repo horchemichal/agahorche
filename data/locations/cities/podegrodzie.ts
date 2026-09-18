@@ -147,7 +147,7 @@ export const PODEGRODZIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Podegrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Podegrodzie"),
     {
       id: "rodzina",
       heading: "Sześć kół gospodyń i zespół, który jeździ od 1937 roku",

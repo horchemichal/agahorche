@@ -109,7 +109,7 @@ export const GRODZISK_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grodzisku Mazowieckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grodzisku Mazowieckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla grodziskiej rodziny",

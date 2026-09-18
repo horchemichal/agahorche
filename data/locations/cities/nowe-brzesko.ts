@@ -170,7 +170,7 @@ export const NOWE_BRZESKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Nowe Brzesko"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Nowe Brzesko"),
     {
       id: "rodzina",
       heading: "Czarnoziem, drobne pola i kuchnia z własnego ogrodu",

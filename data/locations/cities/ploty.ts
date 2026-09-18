@@ -289,7 +289,7 @@ export const PLOTY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Płotach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Płotach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Płotów",

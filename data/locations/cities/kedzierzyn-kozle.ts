@@ -104,7 +104,7 @@ export const KEDZIERZYN_KOZLE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kędzierzynie-Koźlu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kędzierzynie-Koźlu"),
     {
       id: "rodzina",
       heading: "Thermomix dla kędzierzyńskiej rodziny",

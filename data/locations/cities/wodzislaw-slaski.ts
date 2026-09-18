@@ -109,7 +109,7 @@ export const WODZISLAW_SLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wodzisławiu Śląskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wodzisławiu Śląskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla wodzisławskiej rodziny",

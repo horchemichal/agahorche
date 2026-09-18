@@ -98,7 +98,7 @@ export const LANCUT: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łańcucie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łańcucie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łańcuckiej rodziny",

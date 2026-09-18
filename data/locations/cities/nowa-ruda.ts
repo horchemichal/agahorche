@@ -131,7 +131,7 @@ export const NOWA_RUDA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowej Rudzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowej Rudzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla noworudzkiej rodziny",

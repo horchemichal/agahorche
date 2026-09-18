@@ -283,7 +283,7 @@ export const POLCZYN_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Połczynie-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Połczynie-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla połczyńskiej rodziny",

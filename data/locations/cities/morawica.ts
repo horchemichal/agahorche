@@ -155,7 +155,7 @@ export const MORAWICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Morawicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Morawicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla morawickiej rodziny",

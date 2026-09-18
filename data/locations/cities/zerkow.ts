@@ -281,7 +281,7 @@ export const ZERKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żerkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żerkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Żerkowa",

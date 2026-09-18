@@ -291,7 +291,7 @@ export const SEPOLNO_KRAJENSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sępólnie Krajeńskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sępólnie Krajeńskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla sępoleńskiej rodziny",

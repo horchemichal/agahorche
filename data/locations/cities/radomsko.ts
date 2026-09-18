@@ -102,7 +102,7 @@ export const RADOMSKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radomsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radomsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla radomszczańskiej rodziny",

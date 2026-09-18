@@ -180,7 +180,7 @@ export const RADLOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Radłów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Radłów"),
     {
       id: "rodzina",
       heading: "Lato nad wodą i jedzenie, które nie zdąży się zepsuć",

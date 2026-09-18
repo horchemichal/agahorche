@@ -166,7 +166,7 @@ export const KORFANTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Korfantowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Korfantowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla korfantowskiej rodziny",

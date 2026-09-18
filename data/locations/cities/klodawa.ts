@@ -297,7 +297,7 @@ export const KLODAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kłodawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kłodawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kłodawy",

@@ -159,7 +159,7 @@ export const HRUBIESZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Hrubieszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Hrubieszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla hrubieszowskiej rodziny",

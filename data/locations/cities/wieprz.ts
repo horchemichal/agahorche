@@ -161,7 +161,7 @@ export const WIEPRZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wieprz"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wieprz"),
     {
       id: "rodzina",
       heading: "Duży dom, duży stół, kilka pokoleń",

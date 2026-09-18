@@ -107,7 +107,7 @@ export const ZAWIERCIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zawierciu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zawierciu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zawierciańskiej rodziny",

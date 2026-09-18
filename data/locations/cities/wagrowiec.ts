@@ -97,7 +97,7 @@ export const WAGROWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wągrowcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wągrowcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wągrowieckiej rodziny",

@@ -107,7 +107,7 @@ export const SIERADZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sieradzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sieradzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla sieradzkiej rodziny",

@@ -254,7 +254,7 @@ export const SOKOLOW_PODLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sokołowie Podlaskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sokołowie Podlaskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla sokołowskiej rodziny",

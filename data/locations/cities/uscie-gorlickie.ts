@@ -177,7 +177,7 @@ export const USCIE_GORLICKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Uście Gorlickie"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Uście Gorlickie"),
     {
       id: "rodzina",
       heading: "Dwadzieścia cztery osoby na kilometr kwadratowy",

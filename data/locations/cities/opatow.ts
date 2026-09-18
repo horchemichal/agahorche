@@ -101,7 +101,7 @@ export const OPATOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Opatowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Opatowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla opatowskiej rodziny",

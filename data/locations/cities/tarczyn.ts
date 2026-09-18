@@ -235,7 +235,7 @@ export const TARCZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tarczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tarczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla tarczyńskiej rodziny",

@@ -251,7 +251,7 @@ export const KRZYWIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krzywiniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krzywiniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Krzywinia",

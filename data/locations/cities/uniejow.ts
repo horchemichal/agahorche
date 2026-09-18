@@ -171,7 +171,7 @@ export const UNIEJOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Uniejowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Uniejowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla uniejowskiej rodziny",

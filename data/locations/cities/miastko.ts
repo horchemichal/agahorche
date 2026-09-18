@@ -148,7 +148,7 @@ export const MIASTKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miastku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miastku"),
     {
       id: "rodzina",
       heading: "Thermomix dla miasteckiej rodziny",

@@ -299,7 +299,7 @@ export const BUK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Buku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Buku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Buku",

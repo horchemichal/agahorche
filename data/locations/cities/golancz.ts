@@ -271,7 +271,7 @@ export const GOLANCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gołańczy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gołańczy"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Gołańczy",

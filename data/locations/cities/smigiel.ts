@@ -320,7 +320,7 @@ export const SMIGIEL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Śmiglu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Śmiglu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Śmigla",

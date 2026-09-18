@@ -175,7 +175,7 @@ export const DUKLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dukli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dukli"),
     {
       id: "rodzina",
       heading: "Thermomix dla dukielskiej rodziny",

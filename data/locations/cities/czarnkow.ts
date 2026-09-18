@@ -285,7 +285,7 @@ export const CZARNKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czarnkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czarnkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Czarnkowa",

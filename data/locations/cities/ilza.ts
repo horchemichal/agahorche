@@ -290,7 +290,7 @@ export const ILZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Iłży"),
-    sekcjaRaty(),
+    sekcjaRaty("w Iłży"),
     {
       id: "rodzina",
       heading: "Thermomix dla iłżeckiej rodziny",

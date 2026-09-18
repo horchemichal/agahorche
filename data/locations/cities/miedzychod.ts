@@ -269,7 +269,7 @@ export const MIEDZYCHOD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Międzychodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Międzychodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Międzychodu",

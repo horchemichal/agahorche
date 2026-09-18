@@ -285,7 +285,7 @@ export const LIPSKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lipsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lipsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla lipskiej rodziny",

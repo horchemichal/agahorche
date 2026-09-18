@@ -249,7 +249,7 @@ export const ZABLUDOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zabłudowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zabłudowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla zabłudowskiej rodziny",

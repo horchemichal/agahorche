@@ -304,7 +304,7 @@ export const SOLEC_KUJAWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Solcu Kujawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Solcu Kujawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla soleckiej rodziny",

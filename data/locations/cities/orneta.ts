@@ -208,7 +208,7 @@ export const ORNETA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ornecie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ornecie"),
     {
       id: "rodzina",
       heading: "Thermomix dla orneckiej rodziny",

@@ -273,7 +273,7 @@ export const RASZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Raszkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Raszkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Raszkowa",

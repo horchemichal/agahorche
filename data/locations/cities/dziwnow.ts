@@ -263,7 +263,7 @@ export const DZIWNOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dziwnowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dziwnowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dziwnowskiej rodziny",

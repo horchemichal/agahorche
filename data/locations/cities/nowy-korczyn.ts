@@ -165,7 +165,7 @@ export const NOWY_KORCZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Korczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Korczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla korczyńskiej rodziny",

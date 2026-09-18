@@ -163,7 +163,7 @@ export const NOWA_SARZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowej Sarzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowej Sarzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sarzyńskiej rodziny",

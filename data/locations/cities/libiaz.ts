@@ -124,7 +124,7 @@ export const LIBIAZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Libiążu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Libiążu"),
     {
       id: "rodzina",
       heading: "Thermomix w rodzinie pracującej zmianowo",

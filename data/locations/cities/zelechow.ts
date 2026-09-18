@@ -286,7 +286,7 @@ export const ZELECHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żelechowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żelechowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żelechowskiej rodziny",

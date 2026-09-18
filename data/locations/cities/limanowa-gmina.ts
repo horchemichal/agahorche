@@ -197,7 +197,7 @@ export const LIMANOWA_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Limanowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Limanowa"),
     {
       id: "rodzina",
       heading: "Chleb, który ma numer w rejestrze",

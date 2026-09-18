@@ -278,7 +278,7 @@ export const PYZDRY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pyzdrach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pyzdrach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pyzdr",

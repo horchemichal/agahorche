@@ -328,7 +328,7 @@ export const TYCHOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tychowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tychowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Tychowa",

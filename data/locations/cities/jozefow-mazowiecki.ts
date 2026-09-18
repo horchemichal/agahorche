@@ -140,7 +140,7 @@ export const JOZEFOW_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Józefowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Józefowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla józefowskiej rodziny",

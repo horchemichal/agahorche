@@ -276,7 +276,7 @@ export const CZEMPIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czempiniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czempiniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Czempinia",

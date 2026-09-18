@@ -205,7 +205,7 @@ export const RYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla ryńskiej rodziny",

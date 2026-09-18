@@ -106,7 +106,7 @@ export const BILGORAJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Biłgoraju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Biłgoraju"),
     {
       id: "rodzina",
       heading: "Thermomix dla biłgorajskiej rodziny",

@@ -109,7 +109,7 @@ export const ZAGAN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żaganiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żaganiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla żagańskiej rodziny",

@@ -162,7 +162,7 @@ export const BELZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bełżycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bełżycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla bełżyckiej rodziny",

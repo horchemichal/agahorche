@@ -167,7 +167,7 @@ export const GORLICE_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gorlice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gorlice"),
     {
       id: "rodzina",
       heading: "Pierścień, do którego się wprowadzają",

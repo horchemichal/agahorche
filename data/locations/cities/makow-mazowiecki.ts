@@ -206,7 +206,7 @@ export const MAKOW_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Makowie Mazowieckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Makowie Mazowieckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla makowskiej rodziny",

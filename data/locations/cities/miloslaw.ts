@@ -294,7 +294,7 @@ export const MILOSLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miłosławiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miłosławiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Miłosławia",

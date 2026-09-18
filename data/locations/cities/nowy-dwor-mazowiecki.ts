@@ -109,7 +109,7 @@ export const NOWY_DWOR_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Dworze Mazowieckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Dworze Mazowieckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowodworskiej rodziny",

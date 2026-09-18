@@ -195,7 +195,7 @@ export const PASLEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pasłęku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pasłęku"),
     {
       id: "rodzina",
       heading: "Thermomix dla pasłęckiej rodziny",

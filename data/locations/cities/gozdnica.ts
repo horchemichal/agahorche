@@ -253,7 +253,7 @@ export const GOZDNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gozdnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gozdnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla gozdnickiej rodziny",

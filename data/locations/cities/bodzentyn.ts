@@ -164,7 +164,7 @@ export const BODZENTYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bodzentynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bodzentynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bodzentyńskiej rodziny",

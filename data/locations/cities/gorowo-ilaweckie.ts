@@ -199,7 +199,7 @@ export const GOROWO_ILAWECKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Górowie Iławeckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Górowie Iławeckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla górowskiej rodziny",

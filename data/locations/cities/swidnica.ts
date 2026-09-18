@@ -97,7 +97,7 @@ export const SWIDNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świdnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świdnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla świdnickiej rodziny",

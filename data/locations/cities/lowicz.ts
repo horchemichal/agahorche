@@ -102,7 +102,7 @@ export const LOWICZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łowiczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łowiczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla łowickiej rodziny",

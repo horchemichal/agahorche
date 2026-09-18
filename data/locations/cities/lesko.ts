@@ -105,7 +105,7 @@ export const LESKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lesku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lesku"),
     {
       id: "rodzina",
       heading: "Thermomix dla leskiej rodziny",

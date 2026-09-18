@@ -201,7 +201,7 @@ export const SZEPIETOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szepietowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szepietowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla szepietowskiej rodziny",

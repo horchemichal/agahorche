@@ -316,7 +316,7 @@ export const SZAMOCIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szamocinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szamocinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Szamocina",

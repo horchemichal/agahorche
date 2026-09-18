@@ -101,7 +101,7 @@ export const DOBRODZIEN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobrodzieniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobrodzieniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla dobrodzieńskiej rodziny",

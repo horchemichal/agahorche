@@ -202,7 +202,7 @@ export const TOKARNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Tokarnia"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Tokarnia"),
     {
       id: "rodzina",
       heading: "Młoda gmina, w której zabudowa idzie w górę po zboczach",

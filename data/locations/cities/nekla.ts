@@ -278,7 +278,7 @@ export const NEKLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nekli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nekli"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nekli",

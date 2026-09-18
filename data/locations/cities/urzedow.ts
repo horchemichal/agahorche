@@ -156,7 +156,7 @@ export const URZEDOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Urzędowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Urzędowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla urzędowskiej rodziny",

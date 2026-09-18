@@ -148,7 +148,7 @@ export const CHELMIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Chełmiec"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Chełmiec"),
     {
       id: "rodzina",
       heading: "Gmina, która przez dwadzieścia lat urosła o prawie jedną trzecią",

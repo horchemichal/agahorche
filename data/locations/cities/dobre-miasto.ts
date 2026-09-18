@@ -197,7 +197,7 @@ export const DOBRE_MIASTO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobrym Mieście"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobrym Mieście"),
     {
       id: "rodzina",
       heading: "Thermomix dla dobromiejskiej rodziny",

@@ -213,7 +213,7 @@ export const LIPNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lipnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lipnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla lipnowskiej rodziny",

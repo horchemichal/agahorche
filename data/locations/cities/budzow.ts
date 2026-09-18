@@ -159,7 +159,7 @@ export const BUDZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Budzów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Budzów"),
     {
       id: "rodzina",
       heading: "Sto pięć metrów, prawie pięć izb, kilka pokoleń",

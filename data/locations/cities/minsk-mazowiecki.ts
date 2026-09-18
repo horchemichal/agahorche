@@ -109,7 +109,7 @@ export const MINSK_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mińsku Mazowieckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mińsku Mazowieckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla mińskiej rodziny",

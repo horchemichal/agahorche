@@ -106,7 +106,7 @@ export const KNUROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Knurowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Knurowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla knurowskiej rodziny",

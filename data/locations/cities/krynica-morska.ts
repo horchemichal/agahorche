@@ -196,7 +196,7 @@ export const KRYNICA_MORSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krynicy Morskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krynicy Morskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla krynickiej rodziny",

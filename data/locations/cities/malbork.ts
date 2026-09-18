@@ -98,7 +98,7 @@ export const MALBORK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Malborku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Malborku"),
     {
       id: "rodzina",
       heading: "Thermomix dla malborskiej rodziny",

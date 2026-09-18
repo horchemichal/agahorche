@@ -251,7 +251,7 @@ export const PAKOSC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pakości"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pakości"),
     {
       id: "rodzina",
       heading: "Thermomix dla pakoskiej rodziny",

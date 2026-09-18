@@ -198,7 +198,7 @@ export const PALECZNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Pałecznica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Pałecznica"),
     {
       id: "rodzina",
       heading: "Warzywa korzeniowe, tytoń i kuchnia z własnego pola",

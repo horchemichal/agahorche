@@ -174,7 +174,7 @@ export const SPYTKOWICE_NOWOTARSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Spytkowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Spytkowicach"),
     {
       id: "rodzina",
       heading: "Najmniejsza gmina powiatu, w której buduje prawie połowa",

@@ -381,7 +381,7 @@ export const SOBOTKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sobótce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sobótce"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sobótki",

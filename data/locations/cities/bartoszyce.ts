@@ -112,7 +112,7 @@ export const BARTOSZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bartoszycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bartoszycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla bartoszyckiej rodziny",

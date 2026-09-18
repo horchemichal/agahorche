@@ -161,7 +161,7 @@ export const PIWNICZNA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piwnicznej-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piwnicznej-Zdroju"),
     {
       id: "rodzina",
       heading: "Dolina, w której wszystko jest wzdłuż jednej drogi",

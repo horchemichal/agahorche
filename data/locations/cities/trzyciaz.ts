@@ -184,7 +184,7 @@ export const TRZYCIAZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Trzyciąż"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Trzyciąż"),
     {
       id: "rodzina",
       heading: "Dom, w którym gotuje się codziennie dla kilku osób",

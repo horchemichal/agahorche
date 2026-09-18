@@ -304,7 +304,7 @@ export const NIEMCZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Niemczy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Niemczy"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Niemczy",

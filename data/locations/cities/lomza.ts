@@ -111,7 +111,7 @@ export const LOMZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łomży"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łomży"),
     {
       id: "rodzina",
       heading: "Thermomix dla łomżyńskiej rodziny",

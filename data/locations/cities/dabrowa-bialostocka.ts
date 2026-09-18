@@ -247,7 +247,7 @@ export const DABROWA_BIALOSTOCKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dąbrowie Białostockiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dąbrowie Białostockiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla dąbrowskiej rodziny",

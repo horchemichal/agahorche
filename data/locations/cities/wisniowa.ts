@@ -195,7 +195,7 @@ export const WISNIOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wiśniowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wiśniowa"),
     {
       id: "rodzina",
       heading: "Młoda gmina, w której z pracy wraca się przez przełęcz",

@@ -261,7 +261,7 @@ export const LOBEZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łobzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łobzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łobeskiej rodziny",

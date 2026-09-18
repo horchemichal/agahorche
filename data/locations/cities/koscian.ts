@@ -112,7 +112,7 @@ export const KOSCIAN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kościanie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kościanie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kościańskiej rodziny",

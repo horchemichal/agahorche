@@ -177,7 +177,7 @@ export const LISZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Liszki"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Liszki"),
     {
       id: "rodzina",
       heading: "Wiedzieć, co się je",

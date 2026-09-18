@@ -265,7 +265,7 @@ export const KARCZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Karczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Karczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla karczewskiej rodziny",

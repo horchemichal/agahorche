@@ -255,7 +255,7 @@ export const NAREWKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Narewce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Narewce"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Narewka",

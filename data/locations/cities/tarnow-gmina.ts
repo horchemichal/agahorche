@@ -198,7 +198,7 @@ export const TARNOW_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Tarnów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Tarnów"),
     {
       id: "rodzina",
       heading: "Majonez, którego skład się zna",

@@ -101,7 +101,7 @@ export const WRZESNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Wrześni"),
-    sekcjaRaty(),
+    sekcjaRaty("we Wrześni"),
     {
       id: "rodzina",
       heading: "Thermomix dla wrzesińskiej rodziny",

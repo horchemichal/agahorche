@@ -168,7 +168,7 @@ export const KOZLOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kozłów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kozłów"),
     {
       id: "rodzina",
       heading: "Dom, który radzi sobie sam",

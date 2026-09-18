@@ -361,7 +361,7 @@ export const CHOCIANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chocianowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chocianowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chocianowa",

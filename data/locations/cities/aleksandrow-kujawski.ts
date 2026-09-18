@@ -232,7 +232,7 @@ export const ALEKSANDROW_KUJAWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Aleksandrowie Kujawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Aleksandrowie Kujawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla aleksandrowskiej rodziny",

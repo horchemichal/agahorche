@@ -315,7 +315,7 @@ export const PIENSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pieńsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pieńsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pieńska",

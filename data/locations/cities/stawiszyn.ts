@@ -280,7 +280,7 @@ export const STAWISZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stawiszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stawiszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Stawiszyna",

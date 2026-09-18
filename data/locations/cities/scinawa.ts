@@ -350,7 +350,7 @@ export const SCINAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ścinawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ścinawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Ścinawy",

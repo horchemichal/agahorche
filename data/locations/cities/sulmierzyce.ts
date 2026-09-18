@@ -263,7 +263,7 @@ export const SULMIERZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sulmierzycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sulmierzycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sulmierzyc",

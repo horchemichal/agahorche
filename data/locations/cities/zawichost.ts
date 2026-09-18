@@ -155,7 +155,7 @@ export const ZAWICHOST: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zawichoście"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zawichoście"),
     {
       id: "rodzina",
       heading: "Thermomix dla zawichojskiej rodziny",

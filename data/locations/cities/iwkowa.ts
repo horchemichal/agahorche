@@ -194,7 +194,7 @@ export const IWKOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Iwkowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Iwkowa"),
     {
       id: "rodzina",
       heading: "Dom z sadem, czyli rok podzielony na dwie części",

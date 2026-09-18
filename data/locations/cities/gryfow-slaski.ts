@@ -260,7 +260,7 @@ export const GRYFOW_SLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gryfowie Śląskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gryfowie Śląskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Gryfowa Śląskiego",

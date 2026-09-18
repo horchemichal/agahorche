@@ -185,7 +185,7 @@ export const KOCMYRZOW_LUBORZYCA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kocmyrzów-Luborzyca"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kocmyrzów-Luborzyca"),
     {
       id: "rodzina",
       heading: "To samo, co na polu: powtarzalność",

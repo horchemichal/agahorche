@@ -189,7 +189,7 @@ export const KAMIENICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kamienica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kamienica"),
     {
       id: "rodzina",
       heading:

@@ -108,7 +108,7 @@ export const JASTRZEBIE_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jastrzębiu-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jastrzębiu-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla jastrzębskiej rodziny",

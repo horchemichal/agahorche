@@ -230,7 +230,7 @@ export const TUCHOLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tucholi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tucholi"),
     {
       id: "rodzina",
       heading: "Thermomix dla tucholskiej rodziny",

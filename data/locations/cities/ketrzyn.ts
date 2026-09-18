@@ -106,7 +106,7 @@ export const KETRZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kętrzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kętrzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kętrzyńskiej rodziny",

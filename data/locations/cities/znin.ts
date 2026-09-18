@@ -224,7 +224,7 @@ export const ZNIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żninie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żninie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żnińskiej rodziny",

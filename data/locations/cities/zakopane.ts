@@ -169,7 +169,7 @@ export const ZAKOPANE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zakopanem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zakopanem"),
     {
       id: "rodzina",
       heading: "Kiedy gotujesz zawodowo, a potem wracasz do siebie",

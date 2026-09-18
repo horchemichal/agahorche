@@ -240,7 +240,7 @@ export const KONSTANCIN_JEZIORNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Konstancinie-Jeziornie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Konstancinie-Jeziornie"),
     {
       id: "rodzina",
       heading: "Thermomix dla konstancińskiej rodziny",

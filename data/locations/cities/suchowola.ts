@@ -240,7 +240,7 @@ export const SUCHOWOLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suchowoli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suchowoli"),
     {
       id: "rodzina",
       heading: "Thermomix dla suchowolskiej rodziny",

@@ -276,7 +276,7 @@ export const ZAWIDOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zawidowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zawidowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Zawidowa",

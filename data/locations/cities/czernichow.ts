@@ -181,7 +181,7 @@ export const CZERNICHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Czernichów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Czernichów"),
     {
       id: "rodzina",
       heading: "Policzyć, zanim się kupi",

@@ -331,7 +331,7 @@ export const STRZELIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strzelinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strzelinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Strzelina",

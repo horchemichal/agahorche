@@ -193,7 +193,7 @@ export const WIELKA_WIES: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wielka Wieś"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wielka Wieś"),
     {
       id: "rodzina",
       heading: "Chleb, który kiedyś zbierał całą wieś",

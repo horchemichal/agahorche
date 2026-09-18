@@ -144,7 +144,7 @@ export const GRAJEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grajewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grajewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla grajewskiej rodziny",

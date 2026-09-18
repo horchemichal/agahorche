@@ -166,7 +166,7 @@ export const KSIAZ_WIELKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Książ Wielki"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Książ Wielki"),
     {
       id: "rodzina",
       heading: "Dwustu dwudziestu dwóch, którzy wyjeżdżają",

@@ -295,7 +295,7 @@ export const SWIERADOW_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świeradowie-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świeradowie-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Świeradowa-Zdroju",

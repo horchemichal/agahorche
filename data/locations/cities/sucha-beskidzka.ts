@@ -157,7 +157,7 @@ export const SUCHA_BESKIDZKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suchej Beskidzkiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suchej Beskidzkiej"),
     {
       id: "rodzina",
       heading: "Obiad, który musi być dobry o trzech różnych porach",

@@ -156,7 +156,7 @@ export const KRASNOBROD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krasnobrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krasnobrodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla krasnobrodzkiej rodziny",

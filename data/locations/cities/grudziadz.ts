@@ -99,7 +99,7 @@ export const GRUDZIADZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grudziądzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grudziądzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla grudziądzkiej rodziny",

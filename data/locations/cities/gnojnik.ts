@@ -190,7 +190,7 @@ export const GNOJNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gnojnik"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gnojnik"),
     {
       id: "rodzina",
       heading: "Dom z kawałkiem pola i z pracą gdzie indziej",

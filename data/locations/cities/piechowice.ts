@@ -289,7 +289,7 @@ export const PIECHOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piechowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piechowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Piechowic",

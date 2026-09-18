@@ -355,7 +355,7 @@ export const BOGATYNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bogatyni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bogatyni"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bogatyni",

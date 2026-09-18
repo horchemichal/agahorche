@@ -157,7 +157,7 @@ export const SZTUM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sztumie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sztumie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sztumskiej rodziny",

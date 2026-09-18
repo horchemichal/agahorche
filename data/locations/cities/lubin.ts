@@ -98,7 +98,7 @@ export const LUBIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubińskiej rodziny",

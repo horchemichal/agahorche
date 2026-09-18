@@ -352,7 +352,7 @@ export const CZLOPA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Człopie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Człopie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Człopy",

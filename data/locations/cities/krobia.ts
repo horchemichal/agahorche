@@ -308,7 +308,7 @@ export const KROBIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krobi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krobi"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Krobi",

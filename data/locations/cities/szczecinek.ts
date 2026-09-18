@@ -96,7 +96,7 @@ export const SZCZECINEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczecinku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczecinku"),
     {
       id: "rodzina",
       heading: "Thermomix dla szczecineckiej rodziny",

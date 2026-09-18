@@ -271,7 +271,7 @@ export const TULISZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tuliszkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tuliszkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Tuliszkowa",

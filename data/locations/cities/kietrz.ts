@@ -163,7 +163,7 @@ export const KIETRZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kietrzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kietrzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla kietrzańskiej rodziny",

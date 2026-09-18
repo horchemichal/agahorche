@@ -89,7 +89,7 @@ export const BRZESKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzesku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzesku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Brzeska",

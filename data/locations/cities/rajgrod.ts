@@ -219,7 +219,7 @@ export const RAJGROD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rajgrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rajgrodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rajgrodzkiej rodziny",

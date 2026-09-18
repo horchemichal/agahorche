@@ -106,7 +106,7 @@ export const OPOLE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Opolu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Opolu"),
     {
       id: "rodzina",
       heading: "Thermomix dla opolskiej rodziny",

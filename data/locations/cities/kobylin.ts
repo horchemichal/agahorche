@@ -291,7 +291,7 @@ export const KOBYLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kobylinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kobylinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kobylina",

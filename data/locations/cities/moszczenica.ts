@@ -147,7 +147,7 @@ export const MOSZCZENICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Moszczenica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Moszczenica"),
     {
       id: "rodzina",
       heading: "Cztery tysiące dziewięćset osób i jeden wspólny kalendarz",

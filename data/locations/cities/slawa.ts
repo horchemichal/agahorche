@@ -269,7 +269,7 @@ export const SLAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sławie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sławie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sławskiej rodziny",

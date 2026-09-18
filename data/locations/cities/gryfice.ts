@@ -262,7 +262,7 @@ export const GRYFICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gryficach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gryficach"),
     {
       id: "rodzina",
       heading: "Thermomix dla gryfickiej rodziny",

@@ -105,7 +105,7 @@ export const MARKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Markach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Markach"),
     {
       id: "rodzina",
       heading: "Thermomix dla mareckiej rodziny",

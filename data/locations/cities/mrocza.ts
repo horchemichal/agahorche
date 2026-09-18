@@ -314,7 +314,7 @@ export const MROCZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mroczy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mroczy"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny w Mroczy",

@@ -330,7 +330,7 @@ export const MILICZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miliczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miliczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Milicza",

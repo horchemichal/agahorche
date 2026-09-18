@@ -174,7 +174,7 @@ export const RACIECHOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Raciechowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Raciechowice"),
     {
       id: "rodzina",
       heading: "Dom z sadem i rok podzielony na zbiór i resztę",

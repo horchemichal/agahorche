@@ -95,7 +95,7 @@ export const RUDNIK_NAD_SANEM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rudniku nad Sanem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rudniku nad Sanem"),
     {
       id: "rodzina",
       heading: "Thermomix dla rudnickiej rodziny",

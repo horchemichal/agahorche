@@ -136,7 +136,7 @@ export const TRZEBINIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzebini"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzebini"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym ktoś zawsze jest na zmianie",

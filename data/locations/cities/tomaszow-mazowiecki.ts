@@ -98,7 +98,7 @@ export const TOMASZOW_MAZOWIECKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tomaszowie Mazowieckim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tomaszowie Mazowieckim"),
     {
       id: "rodzina",
       heading: "Thermomix dla tomaszowskiej rodziny",

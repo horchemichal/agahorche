@@ -181,7 +181,7 @@ export const BLASZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Błaszkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Błaszkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla błaszkowskiej rodziny",

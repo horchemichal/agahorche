@@ -107,7 +107,7 @@ export const PIASECZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piasecznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piasecznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla piaseczyńskiej rodziny",

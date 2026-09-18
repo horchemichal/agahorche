@@ -108,7 +108,7 @@ export const OLESNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Oleśnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Oleśnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla oleśnickiej rodziny",

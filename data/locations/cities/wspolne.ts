@@ -224,7 +224,14 @@ export function sekcjaTm7(): CitySection {
 export function sekcjaCena(miejscownik: string): CitySection {
   return {
     id: "cena",
-    heading: "Ile kosztuje Thermomix TM7?",
+    // Nazwa miejscowości w nagłówku, bo TREŚĆ TEJ SEKCJI JEST O MIEJSCU:
+    // jej sedno to zdanie „${miejscownik} zapłacisz tyle samo”. Nagłówek
+    // opisuje więc to, co pod nim faktycznie stoi, i przy okazji trafia
+    // w realne zapytanie („ile kosztuje thermomix w Krakowie”). Nie
+    // dopisujemy miasta do nagłówków sekcji, które są o URZĄDZENIU
+    // (sekcjaTm7, sekcjaCoUgotujesz, sekcjaTradycyjneGotowanie) — tam
+    // byłoby to upychanie frazy bez pokrycia w treści.
+    heading: `Ile kosztuje Thermomix TM7 ${miejscownik}?`,
     paragraphs: [
       `Cenę ustala Vorwerk i jest identyczna w całej Polsce — ${miejscownik} zapłacisz tyle samo, co w Krakowie czy w Warszawie. Nie ma „cen lokalnych” ani dopłat za dojazd. Aktualna kwota jest w sekcji z ofertą powyżej; pobiera się wprost z mojego panelu, więc zawsze jest bieżąca.`,
       "Zmieniają się natomiast promocje i zestawy — co miesiąc wyglądają inaczej. Dlatego nie wpisuję w treść kwoty, która za trzy tygodnie byłaby nieprawdziwa.",
@@ -233,14 +240,29 @@ export function sekcjaCena(miejscownik: string): CitySection {
   };
 }
 
-/** Raty. Kalkulator stoi POD tą sekcją — stąd „poniżej”. */
-export function sekcjaRaty(): CitySection {
+/**
+ * Raty. Kalkulator stoi POD tą sekcją — stąd „poniżej”.
+ *
+ * `miejscownik` jest opcjonalny wyłącznie po to, żeby dopisanie go nie
+ * wywróciło żadnego starego wywołania. Podawaj go zawsze — bez niego
+ * nagłówek wraca do wersji bez miejscowości.
+ *
+ * ŚWIADOMIE NIE MA „0%” W NAGŁÓWKU. Raty 0% są okresowe, nie stałe
+ * (mówi to wprost pierwszy akapit). Nagłówek obiecujący 0% byłby
+ * nieprawdziwy przez większość roku — a to jest dokładnie ten rodzaj
+ * drobnego kłamstwa pod frazę, którego ta strona nie uprawia.
+ */
+export function sekcjaRaty(miejscownik?: string): CitySection {
   return {
     id: "raty",
-    heading: "Thermomix na raty — jak to policzyć",
+    heading: miejscownik
+      ? `Thermomix na raty ${miejscownik} — jak to policzyć`
+      : "Thermomix na raty — jak to policzyć",
     paragraphs: [
       "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
-      "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
+      miejscownik
+        ? `Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji ${miejscownik} wracamy do tych samych liczb, tylko z dokładnymi danymi.`
+        : "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
     ],
     links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
   };

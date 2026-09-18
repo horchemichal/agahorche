@@ -263,7 +263,7 @@ export const RADZIEJOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radziejowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radziejowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla radziejowskiej rodziny",

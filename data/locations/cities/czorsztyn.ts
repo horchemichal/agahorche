@@ -177,7 +177,7 @@ export const CZORSZTYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Czorsztyn"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Czorsztyn"),
     {
       id: "rodzina",
       heading: "Dom, który ktoś kiedyś zaprojektował za Ciebie",

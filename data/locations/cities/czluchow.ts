@@ -155,7 +155,7 @@ export const CZLUCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Człuchowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Człuchowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla człuchowskiej rodziny",

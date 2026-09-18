@@ -210,7 +210,7 @@ export const SUSZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla suskiej rodziny",

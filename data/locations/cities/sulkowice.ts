@@ -144,7 +144,7 @@ export const SULKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Sułkowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Sułkowice"),
     {
       id: "rodzina",
       heading: "Dużo dzieci i dużo dojeżdżania — obie te rzeczy naraz",

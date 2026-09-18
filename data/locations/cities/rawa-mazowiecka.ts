@@ -182,7 +182,7 @@ export const RAWA_MAZOWIECKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rawie Mazowieckiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rawie Mazowieckiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rawskiej rodziny",

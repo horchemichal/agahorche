@@ -289,7 +289,7 @@ export const TRZEMESZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzemesznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzemesznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Trzemeszna",

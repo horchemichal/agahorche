@@ -159,7 +159,7 @@ export const TARNOGROD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tarnogrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tarnogrodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla tarnogrodzkiej rodziny",

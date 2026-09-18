@@ -186,7 +186,7 @@ export const RYGLICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Ryglice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Ryglice"),
     {
       id: "rodzina",
       heading: "Ser z miętą i placki na sodzie",

@@ -100,7 +100,7 @@ export const MLAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mławie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mławie"),
     {
       id: "rodzina",
       heading: "Thermomix dla mławskiej rodziny",

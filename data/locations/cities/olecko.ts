@@ -184,7 +184,7 @@ export const OLECKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Olecku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Olecku"),
     {
       id: "rodzina",
       heading: "Thermomix dla oleckiej rodziny",

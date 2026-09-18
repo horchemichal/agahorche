@@ -101,7 +101,7 @@ export const WEJHEROWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wejherowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wejherowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wejherowskiej rodziny",

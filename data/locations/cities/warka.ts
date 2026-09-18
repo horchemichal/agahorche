@@ -264,7 +264,7 @@ export const WARKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Warce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Warce"),
     {
       id: "rodzina",
       heading: "Thermomix dla wareckiej rodziny",

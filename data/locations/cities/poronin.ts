@@ -171,7 +171,7 @@ export const PORONIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Poronin"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Poronin"),
     {
       id: "rodzina",
       heading: "Dziesięć tysięcy miejsc noclegowych na dwanaście tysięcy ludzi",

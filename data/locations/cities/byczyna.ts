@@ -158,7 +158,7 @@ export const BYCZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Byczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Byczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla byczyńskiej rodziny",

@@ -261,7 +261,7 @@ export const RESKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Resku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Resku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Reska",

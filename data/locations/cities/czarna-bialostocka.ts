@@ -225,7 +225,7 @@ export const CZARNA_BIALOSTOCKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czarnej Białostockiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czarnej Białostockiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Czarnej Białostockiej",

@@ -264,7 +264,7 @@ export const RZEPIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rzepinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rzepinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rzepińskiej rodziny",

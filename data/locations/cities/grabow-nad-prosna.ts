@@ -247,7 +247,7 @@ export const GRABOW_NAD_PROSNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grabowie nad Prosną"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grabowie nad Prosną"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Grabowa nad Prosną",

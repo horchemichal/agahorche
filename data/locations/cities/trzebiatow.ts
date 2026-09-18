@@ -282,7 +282,7 @@ export const TRZEBIATOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzebiatowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzebiatowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla trzebiatowskiej rodziny",

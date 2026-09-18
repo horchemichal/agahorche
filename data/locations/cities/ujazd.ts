@@ -170,7 +170,7 @@ export const UJAZD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ujeździe"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ujeździe"),
     {
       id: "rodzina",
       heading: "Thermomix dla ujazdowskiej rodziny",

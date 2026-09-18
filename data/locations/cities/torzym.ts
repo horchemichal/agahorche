@@ -234,7 +234,7 @@ export const TORZYM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Torzymiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Torzymiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla torzymskiej rodziny",

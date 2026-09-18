@@ -219,7 +219,7 @@ export const SOKOLKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sokółce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sokółce"),
     {
       id: "rodzina",
       heading: "Thermomix dla sokólskiej rodziny",

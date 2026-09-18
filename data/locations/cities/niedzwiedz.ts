@@ -165,7 +165,7 @@ export const NIEDZWIEDZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Niedźwiedź"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Niedźwiedź"),
     {
       id: "rodzina",
       heading: "Dużo dzieci, długa zima i kuchnia, która pracuje cały rok",

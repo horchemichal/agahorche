@@ -99,7 +99,7 @@ export const GLUBCZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głubczycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głubczycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla głubczyckiej rodziny",

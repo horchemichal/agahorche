@@ -266,7 +266,7 @@ export const MIELNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mielnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mielnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mielna",

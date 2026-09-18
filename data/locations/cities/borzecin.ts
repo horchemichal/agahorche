@@ -201,7 +201,7 @@ export const BORZECIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Borzęcin"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Borzęcin"),
     {
       id: "rodzina",
       heading: "Gmina, w której miejsc pracy jest mniej niż ludzi chętnych",

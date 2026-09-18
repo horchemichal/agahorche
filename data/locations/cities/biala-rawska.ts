@@ -166,7 +166,7 @@ export const BIALA_RAWSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białej Rawskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białej Rawskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla bialskiej rodziny",

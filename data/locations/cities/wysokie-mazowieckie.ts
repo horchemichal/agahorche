@@ -224,7 +224,7 @@ export const WYSOKIE_MAZOWIECKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wysokiem Mazowieckiem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wysokiem Mazowieckiem"),
     {
       id: "rodzina",
       heading: "Thermomix dla wysokomazowieckiej rodziny",

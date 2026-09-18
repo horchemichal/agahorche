@@ -277,7 +277,7 @@ export const RACIAZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Raciążu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Raciążu"),
     {
       id: "rodzina",
       heading: "Thermomix dla raciąskiej rodziny",

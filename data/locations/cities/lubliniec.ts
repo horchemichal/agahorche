@@ -103,7 +103,7 @@ export const LUBLINIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lublińcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lublińcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla lublinieckiej rodziny",

@@ -291,7 +291,7 @@ export const KRZYZ_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krzyżu Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krzyżu Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Krzyża Wielkopolskiego",

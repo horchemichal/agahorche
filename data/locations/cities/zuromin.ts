@@ -253,7 +253,7 @@ export const ZUROMIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żurominie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żurominie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żuromińskiej rodziny",

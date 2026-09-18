@@ -96,7 +96,7 @@ export const WISLICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wiślicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wiślicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla wiślickiej rodziny",

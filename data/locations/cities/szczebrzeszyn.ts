@@ -102,7 +102,7 @@ export const SZCZEBRZESZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczebrzeszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczebrzeszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla szczebrzeszyńskiej rodziny",

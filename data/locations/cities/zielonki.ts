@@ -114,7 +114,7 @@ export const ZIELONKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Zielonki"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Zielonki"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny spod Krakowa",

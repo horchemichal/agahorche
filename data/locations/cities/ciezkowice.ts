@@ -163,7 +163,7 @@ export const CIEZKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ciężkowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ciężkowicach"),
     {
       id: "rodzina",
       heading: "Wieczory, które trwają dłużej",

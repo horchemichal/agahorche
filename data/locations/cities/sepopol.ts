@@ -179,7 +179,7 @@ export const SEPOPOL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sępopolu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sępopolu"),
     {
       id: "rodzina",
       heading: "Thermomix dla sępopolskiej rodziny",

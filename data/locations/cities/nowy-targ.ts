@@ -148,7 +148,7 @@ export const NOWY_TARG: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Targu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Targu"),
     {
       id: "rodzina",
       heading: "Miasto drobnych przedsiębiorców",

@@ -223,7 +223,7 @@ export const DOBIEGNIEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobiegniewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobiegniewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dobiegniewskiej rodziny",

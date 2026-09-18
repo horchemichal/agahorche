@@ -95,7 +95,7 @@ export const MIKOLAJKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mikołajkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mikołajkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla mikołajskiej rodziny",

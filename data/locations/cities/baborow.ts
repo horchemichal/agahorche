@@ -163,7 +163,7 @@ export const BABOROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Baborowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Baborowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla baborowskiej rodziny",

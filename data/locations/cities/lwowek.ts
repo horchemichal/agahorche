@@ -296,7 +296,7 @@ export const LWOWEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lwówku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lwówku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Lwówka",

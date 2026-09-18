@@ -236,7 +236,7 @@ export const GONIADZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Goniądzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Goniądzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla goniądzkiej rodziny",

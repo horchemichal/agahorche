@@ -117,7 +117,7 @@ export const KOLO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kole"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kole"),
     {
       id: "rodzina",
       heading: "Thermomix dla kolskiej rodziny",

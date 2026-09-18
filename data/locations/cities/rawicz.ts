@@ -148,7 +148,7 @@ export const RAWICZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rawiczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rawiczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rawickiej rodziny",

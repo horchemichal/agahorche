@@ -373,7 +373,7 @@ export const WOLOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wołowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wołowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wołowa",

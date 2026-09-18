@@ -163,7 +163,7 @@ export const LASKOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Laskowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Laskowa"),
     {
       id: "rodzina",
       heading: "Thermomix w rodzinie z dziećmi i ze skrzynkami owoców",

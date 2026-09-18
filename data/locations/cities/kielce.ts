@@ -113,7 +113,7 @@ export const KIELCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kielcach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kielcach"),
     {
       id: "rodzina",
       heading: "Thermomix dla kieleckiej rodziny",

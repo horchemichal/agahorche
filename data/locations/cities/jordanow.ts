@@ -141,7 +141,7 @@ export const JORDANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jordanowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jordanowie"),
     {
       id: "rodzina",
       heading: "Gotowanie dla dwóch osób to osobna sprawa",

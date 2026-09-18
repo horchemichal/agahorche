@@ -163,7 +163,7 @@ export const PIERZCHNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pierzchnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pierzchnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla pierzchnickiej rodziny",

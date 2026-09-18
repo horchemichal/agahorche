@@ -210,7 +210,7 @@ export const RACZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Raczkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Raczkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla raczkowskiej rodziny",

@@ -344,7 +344,7 @@ export const KOWAL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kowalu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kowalu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny w Kowalu",

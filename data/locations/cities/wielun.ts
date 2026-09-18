@@ -130,7 +130,7 @@ export const WIELUN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wieluniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wieluniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wieluńskiej rodziny",

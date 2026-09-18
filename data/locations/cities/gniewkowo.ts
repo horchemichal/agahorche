@@ -303,7 +303,7 @@ export const GNIEWKOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gniewkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gniewkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gniewkowskiej rodziny",

@@ -161,7 +161,7 @@ export const BOLESLAW_DABROWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Bolesław"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Bolesław"),
     {
       id: "rodzina",
       heading: "Dwa i pół tysiąca osób w dziewięciu wsiach",

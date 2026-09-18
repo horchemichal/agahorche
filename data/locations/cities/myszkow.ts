@@ -99,7 +99,7 @@ export const MYSZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Myszkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Myszkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla myszkowskiej rodziny",

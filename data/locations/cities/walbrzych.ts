@@ -105,7 +105,7 @@ export const WALBRZYCH: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wałbrzychu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wałbrzychu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wałbrzyskiej rodziny",

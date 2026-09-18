@@ -91,7 +91,7 @@ export const DOBCZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobczycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobczycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Dobczyc",

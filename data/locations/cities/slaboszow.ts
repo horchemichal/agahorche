@@ -164,7 +164,7 @@ export const SLABOSZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Słaboszów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Słaboszów"),
     {
       id: "rodzina",
       heading: "Dom, do którego przyjeżdża się na niedzielę",

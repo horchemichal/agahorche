@@ -176,7 +176,7 @@ export const DEBRZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Debrznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Debrznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla debrznieńskiej rodziny",

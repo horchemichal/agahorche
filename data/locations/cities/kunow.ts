@@ -155,7 +155,7 @@ export const KUNOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kunowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kunowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kunowskiej rodziny",

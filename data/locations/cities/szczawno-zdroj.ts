@@ -349,7 +349,7 @@ export const SZCZAWNO_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczawnie-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczawnie-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Szczawna-Zdroju",

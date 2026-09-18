@@ -162,7 +162,7 @@ export const DOBRA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Dobra"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Dobra"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym gotuje się z zapasu",

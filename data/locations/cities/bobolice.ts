@@ -272,7 +272,7 @@ export const BOBOLICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bobolicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bobolicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bobolic",

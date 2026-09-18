@@ -98,7 +98,7 @@ export const GLOGOW_MALOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głogowie Małopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głogowie Małopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla głogowskiej rodziny",

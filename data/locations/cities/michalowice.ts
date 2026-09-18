@@ -112,7 +112,7 @@ export const MICHALOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Michałowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Michałowice"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Michałowice",

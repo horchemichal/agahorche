@@ -273,7 +273,7 @@ export const NOWOGROD_BOBRZANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowogrodzie Bobrzańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowogrodzie Bobrzańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowogrodzkiej rodziny",

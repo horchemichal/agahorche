@@ -163,7 +163,7 @@ export const CHARSZNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Charsznica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Charsznica"),
     {
       id: "rodzina",
       heading: "Rok podzielony na sezon i resztę",

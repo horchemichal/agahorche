@@ -170,7 +170,7 @@ export const LUKOWICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łukowica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łukowica"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym owoce są i pracą, i jedzeniem",

@@ -159,7 +159,7 @@ export const JANOW_LUBELSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Janowie Lubelskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Janowie Lubelskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla janowskiej rodziny",

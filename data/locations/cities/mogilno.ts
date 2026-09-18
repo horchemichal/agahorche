@@ -234,7 +234,7 @@ export const MOGILNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mogilnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mogilnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla mogileńskiej rodziny",

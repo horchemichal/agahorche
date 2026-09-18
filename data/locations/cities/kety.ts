@@ -183,7 +183,7 @@ export const KETY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kętach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kętach"),
     {
       id: "rodzina",
       heading: "Kuchnia dwóch prędkości",

@@ -162,7 +162,7 @@ export const KRAPKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krapkowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krapkowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla krapkowickiej rodziny",

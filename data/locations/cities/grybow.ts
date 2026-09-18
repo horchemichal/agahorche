@@ -165,7 +165,7 @@ export const GRYBOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grybowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grybowie"),
     {
       id: "rodzina",
       heading: "Wszystko w zasięgu spaceru",

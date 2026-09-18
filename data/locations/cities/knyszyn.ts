@@ -259,7 +259,7 @@ export const KNYSZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Knyszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Knyszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla knyszyńskiej rodziny",

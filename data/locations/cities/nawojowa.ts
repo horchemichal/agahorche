@@ -150,7 +150,7 @@ export const NAWOJOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Nawojowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Nawojowa"),
     {
       id: "rodzina",
       heading: "Najgęściej zaludniona wieś pod Nowym Sączem",

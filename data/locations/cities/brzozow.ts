@@ -99,7 +99,7 @@ export const BRZOZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzozowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzozowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla brzozowskiej rodziny",

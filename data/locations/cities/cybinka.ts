@@ -230,7 +230,7 @@ export const CYBINKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Cybince"),
-    sekcjaRaty(),
+    sekcjaRaty("w Cybince"),
     {
       id: "rodzina",
       heading: "Thermomix dla cybinkowskiej rodziny",

@@ -106,7 +106,7 @@ export const ELK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ełku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ełku"),
     {
       id: "rodzina",
       heading: "Thermomix dla ełckiej rodziny",

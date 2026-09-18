@@ -101,7 +101,7 @@ export const KARTUZY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kartuzach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kartuzach"),
     {
       id: "rodzina",
       heading: "Thermomix dla kartuskiej rodziny",

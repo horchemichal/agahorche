@@ -228,7 +228,7 @@ export const KLESZCZELE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kleszczelach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kleszczelach"),
     {
       id: "rodzina",
       heading: "Thermomix dla kleszczelowskiej rodziny",

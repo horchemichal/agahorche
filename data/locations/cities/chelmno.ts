@@ -320,7 +320,7 @@ export const CHELMNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chełmnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chełmnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla chełmińskiej rodziny",

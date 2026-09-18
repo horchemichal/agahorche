@@ -103,7 +103,7 @@ export const WACHOCK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wąchocku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wąchocku"),
     {
       id: "rodzina",
       heading: "Thermomix dla wąchockiej rodziny",

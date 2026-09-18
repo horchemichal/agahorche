@@ -201,7 +201,7 @@ export const ZATOR: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zatorze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zatorze"),
     {
       id: "rodzina",
       heading: "Trzy przepisy z rejestru, po kolei",

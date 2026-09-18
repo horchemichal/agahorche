@@ -290,7 +290,7 @@ export const ODOLANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Odolanowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Odolanowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Odolanowa",

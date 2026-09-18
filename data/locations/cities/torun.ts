@@ -102,7 +102,7 @@ export const TORUN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Toruniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Toruniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla toruńskiej rodziny",

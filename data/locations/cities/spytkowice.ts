@@ -179,7 +179,7 @@ export const SPYTKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Spytkowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Spytkowice"),
     {
       id: "rodzina",
       heading: "Kuchnia w domu nad stawami",

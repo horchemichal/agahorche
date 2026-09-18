@@ -172,7 +172,7 @@ export const KOSZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Koszyce"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Koszyce"),
     {
       id: "rodzina",
       heading: "Gospodarstwo, dojazdy i kuchnia, w której robi się wszystko od podstaw",

@@ -324,7 +324,7 @@ export const MORDY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mordach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mordach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mordów",

@@ -272,7 +272,7 @@ export const OBRZYCKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Obrzycku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Obrzycku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Obrzycka",

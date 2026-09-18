@@ -137,7 +137,7 @@ export const DRWINIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Drwinia"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Drwinia"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym gotuje się dla wielu",

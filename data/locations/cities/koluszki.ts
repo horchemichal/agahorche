@@ -182,7 +182,7 @@ export const KOLUSZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Koluszkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Koluszkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla koluszkowskiej rodziny",

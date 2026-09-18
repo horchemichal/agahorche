@@ -168,7 +168,7 @@ export const GNIEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gniewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gniewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gniewskiej rodziny",

@@ -311,7 +311,7 @@ export const BARCIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Barcinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Barcinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla barcińskiej rodziny",

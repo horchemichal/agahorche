@@ -150,7 +150,7 @@ export const KRYNICA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krynicy-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krynicy-Zdroju"),
     {
       id: "rodzina",
       heading: "Sto pięćdziesiąt firm na tysiąc mieszkańców",

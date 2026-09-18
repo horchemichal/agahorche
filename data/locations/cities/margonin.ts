@@ -296,7 +296,7 @@ export const MARGONIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Margoninie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Margoninie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Margonina",

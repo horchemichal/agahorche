@@ -221,7 +221,7 @@ export const BIALOBRZEGI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białobrzegach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białobrzegach"),
     {
       id: "rodzina",
       heading: "Thermomix dla białobrzeskiej rodziny",

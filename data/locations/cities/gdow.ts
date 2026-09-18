@@ -92,7 +92,7 @@ export const GDOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gdowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gdowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Gdów",

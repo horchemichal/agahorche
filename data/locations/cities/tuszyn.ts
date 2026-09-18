@@ -180,7 +180,7 @@ export const TUSZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tuszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tuszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla tuszyńskiej rodziny",

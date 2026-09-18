@@ -96,7 +96,7 @@ export const SIEMIANOWICE_SLASKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Siemianowicach Śląskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Siemianowicach Śląskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla siemianowickiej rodziny",

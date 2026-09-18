@@ -227,7 +227,7 @@ export const SZTABIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sztabinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sztabinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sztabińskiej rodziny",

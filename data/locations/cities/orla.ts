@@ -232,7 +232,7 @@ export const ORLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Orli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Orli"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Orla",

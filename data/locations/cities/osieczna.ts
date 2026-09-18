@@ -258,7 +258,7 @@ export const OSIECZNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Osiecznej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Osiecznej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Osiecznej",

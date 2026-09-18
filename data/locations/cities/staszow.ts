@@ -171,7 +171,7 @@ export const STASZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Staszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Staszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla staszowskiej rodziny",

@@ -162,7 +162,7 @@ export const LAGOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łagowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łagowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łagowskiej rodziny",

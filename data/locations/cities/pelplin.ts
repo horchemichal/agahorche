@@ -156,7 +156,7 @@ export const PELPLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pelplinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pelplinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pelplińskiej rodziny",

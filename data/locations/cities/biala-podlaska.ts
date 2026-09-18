@@ -101,7 +101,7 @@ export const BIALA_PODLASKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białej Podlaskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białej Podlaskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla bialskiej rodziny",

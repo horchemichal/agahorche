@@ -106,7 +106,7 @@ export const NYSA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nysie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nysie"),
     {
       id: "rodzina",
       heading: "Thermomix dla nyskiej rodziny",

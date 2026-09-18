@@ -323,7 +323,7 @@ export const MIROSLAWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mirosławcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mirosławcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mirosławca",

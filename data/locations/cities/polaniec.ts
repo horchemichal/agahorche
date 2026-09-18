@@ -100,7 +100,7 @@ export const POLANIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Połańcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Połańcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla połanieckiej rodziny",

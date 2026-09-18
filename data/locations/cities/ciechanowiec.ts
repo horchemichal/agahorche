@@ -309,7 +309,7 @@ export const CIECHANOWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ciechanowcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ciechanowcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla ciechanowieckiej rodziny",

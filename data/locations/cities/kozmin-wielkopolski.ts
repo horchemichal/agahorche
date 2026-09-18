@@ -295,7 +295,7 @@ export const KOZMIN_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Koźminie Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Koźminie Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Koźmina Wielkopolskiego",

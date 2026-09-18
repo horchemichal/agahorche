@@ -146,7 +146,7 @@ export const SZCZAWNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczawnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczawnicy"),
     {
       id: "rodzina",
       heading: "Kiedy dom jest jednocześnie miejscem pracy",

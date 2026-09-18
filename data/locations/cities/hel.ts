@@ -189,7 +189,7 @@ export const HEL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Helu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Helu"),
     {
       id: "rodzina",
       heading: "Thermomix dla helskiej rodziny",

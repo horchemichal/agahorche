@@ -96,7 +96,7 @@ export const CHORZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chorzowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chorzowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla chorzowskiej rodziny",

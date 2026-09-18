@@ -181,7 +181,7 @@ export const GRYBOW_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Grybów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Grybów"),
     {
       id: "rodzina",
       heading: "Miasto powiatowe rozsypane na szesnaście wsi",

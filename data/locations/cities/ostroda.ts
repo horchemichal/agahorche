@@ -107,7 +107,7 @@ export const OSTRODA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostródzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostródzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostródzkiej rodziny",

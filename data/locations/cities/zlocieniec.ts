@@ -255,7 +255,7 @@ export const ZLOCIENIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Złocieńcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Złocieńcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla złocienieckiej rodziny",

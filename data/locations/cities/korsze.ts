@@ -190,7 +190,7 @@ export const KORSZE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Korszach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Korszach"),
     {
       id: "rodzina",
       heading: "Thermomix dla korszeńskiej rodziny",

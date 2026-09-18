@@ -165,7 +165,7 @@ export const LOSOSINA_DOLNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łososina Dolna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łososina Dolna"),
     {
       id: "rodzina",
       heading: "Osiemnaście wsi między drogą, jeziorem i sadami",

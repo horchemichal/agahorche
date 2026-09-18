@@ -101,7 +101,7 @@ export const OSTROWIEC_SWIETOKRZYSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrowcu Świętokrzyskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrowcu Świętokrzyskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostrowieckiej rodziny",

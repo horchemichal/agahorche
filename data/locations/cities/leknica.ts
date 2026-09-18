@@ -257,7 +257,7 @@ export const LEKNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łęknicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łęknicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla łęknickiej rodziny",

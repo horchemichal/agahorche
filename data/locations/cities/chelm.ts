@@ -104,7 +104,7 @@ export const CHELM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chełmie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chełmie"),
     {
       id: "rodzina",
       heading: "Thermomix dla chełmskiej rodziny",

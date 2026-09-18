@@ -160,7 +160,7 @@ export const WADOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wadowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wadowice"),
     {
       id: "rodzina",
       heading: "Dom, w którym wieczór zaczyna się o różnych porach",

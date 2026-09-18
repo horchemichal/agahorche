@@ -109,7 +109,7 @@ export const LEBORK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lęborku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lęborku"),
     {
       id: "rodzina",
       heading: "Thermomix dla lęborskiej rodziny",

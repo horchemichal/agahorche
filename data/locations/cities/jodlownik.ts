@@ -145,7 +145,7 @@ export const JODLOWNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Jodłownik"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Jodłownik"),
     {
       id: "rodzina",
       heading: "Thermomix w domu z małymi dziećmi i z sadem za oknem",

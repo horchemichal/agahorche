@@ -167,7 +167,7 @@ export const SZAFLARY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Szaflary"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Szaflary"),
     {
       id: "rodzina",
       heading: "Gmina, w której ćwierć ludzi wciąż pracuje na roli",

@@ -101,7 +101,7 @@ export const KUTNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kutnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kutnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kutnowskiej rodziny",

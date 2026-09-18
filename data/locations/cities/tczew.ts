@@ -112,7 +112,7 @@ export const TCZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla tczewskiej rodziny",

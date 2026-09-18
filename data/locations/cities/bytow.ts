@@ -100,7 +100,7 @@ export const BYTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bytowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bytowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bytowskiej rodziny",

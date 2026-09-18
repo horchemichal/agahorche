@@ -95,7 +95,7 @@ export const KALISZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kaliszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kaliszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla kaliskiej rodziny",

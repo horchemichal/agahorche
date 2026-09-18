@@ -160,7 +160,7 @@ export const TOMASZOW_LUBELSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tomaszowie Lubelskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tomaszowie Lubelskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla tomaszowskiej rodziny",

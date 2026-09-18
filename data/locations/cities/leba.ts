@@ -182,7 +182,7 @@ export const LEBA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łebie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łebie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łebskiej rodziny",

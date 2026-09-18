@@ -226,7 +226,7 @@ export const GARWOLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Garwolinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Garwolinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla garwolińskiej rodziny",

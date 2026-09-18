@@ -297,7 +297,7 @@ export const RECZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Reczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Reczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Recza",

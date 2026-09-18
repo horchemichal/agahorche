@@ -164,7 +164,7 @@ export const RYKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rykach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rykach"),
     {
       id: "rodzina",
       heading: "Thermomix dla ryckiej rodziny",

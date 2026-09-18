@@ -105,7 +105,7 @@ export const ZARY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żarach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żarach"),
     {
       id: "rodzina",
       heading: "Thermomix dla żarskiej rodziny",

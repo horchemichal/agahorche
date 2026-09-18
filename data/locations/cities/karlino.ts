@@ -277,7 +277,7 @@ export const KARLINO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Karlinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Karlinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla karlińskiej rodziny",

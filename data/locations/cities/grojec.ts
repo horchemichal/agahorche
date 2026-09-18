@@ -266,7 +266,7 @@ export const GROJEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grójcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grójcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla grójeckiej rodziny",

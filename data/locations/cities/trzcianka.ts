@@ -251,7 +251,7 @@ export const TRZCIANKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzciance"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzciance"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Trzcianki",

@@ -150,7 +150,7 @@ export const GREBOSZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gręboszów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gręboszów"),
     {
       id: "rodzina",
       heading: "Gotowanie dla dwojga",

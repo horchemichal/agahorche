@@ -254,7 +254,7 @@ export const SEJNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sejnach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sejnach"),
     {
       id: "rodzina",
       heading: "Thermomix dla sejneńskiej rodziny",

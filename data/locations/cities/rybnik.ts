@@ -91,7 +91,7 @@ export const RYBNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rybniku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rybniku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rybnickiej rodziny",

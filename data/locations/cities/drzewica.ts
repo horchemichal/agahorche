@@ -162,7 +162,7 @@ export const DRZEWICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Drzewicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Drzewicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla drzewickiej rodziny",

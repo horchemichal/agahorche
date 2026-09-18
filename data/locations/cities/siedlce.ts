@@ -98,7 +98,7 @@ export const SIEDLCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Siedlcach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Siedlcach"),
     {
       id: "rodzina",
       heading: "Thermomix dla siedleckiej rodziny",

@@ -351,7 +351,7 @@ export const KOWARY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kowarach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kowarach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kowar",

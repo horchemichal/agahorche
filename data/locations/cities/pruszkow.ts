@@ -97,7 +97,7 @@ export const PRUSZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pruszkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pruszkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pruszkowskiej rodziny",

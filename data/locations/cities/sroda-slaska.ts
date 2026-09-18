@@ -367,7 +367,7 @@ export const SRODA_SLASKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Środzie Śląskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Środzie Śląskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Środy Śląskiej",

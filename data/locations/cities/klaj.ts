@@ -158,7 +158,7 @@ export const KLAJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kłaj"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kłaj"),
     {
       id: "rodzina",
       heading: "Las, tory i dojazdy — dzień w domu pod puszczą",

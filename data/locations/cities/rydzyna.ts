@@ -266,7 +266,7 @@ export const RYDZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rydzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rydzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Rydzyny",

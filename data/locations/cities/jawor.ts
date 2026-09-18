@@ -117,7 +117,7 @@ export const JAWOR: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jaworze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jaworze"),
     {
       id: "rodzina",
       heading: "Thermomix dla jaworskiej rodziny",

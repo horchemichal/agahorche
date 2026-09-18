@@ -179,7 +179,7 @@ export const IGOLOMIA_WAWRZENCZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Igołomia-Wawrzeńczyce"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Igołomia-Wawrzeńczyce"),
     {
       id: "rodzina",
       heading: "Kiedy warzywa są za darmo, ale czasu nie ma",

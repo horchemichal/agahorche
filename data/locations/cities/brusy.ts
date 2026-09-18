@@ -169,7 +169,7 @@ export const BRUSY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brusach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brusach"),
     {
       id: "rodzina",
       heading: "Thermomix dla bruskiej rodziny",

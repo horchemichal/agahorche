@@ -269,7 +269,7 @@ export const KOSTRZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kostrzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kostrzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kostrzyna",

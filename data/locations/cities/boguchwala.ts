@@ -97,7 +97,7 @@ export const BOGUCHWALA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Boguchwale"),
-    sekcjaRaty(),
+    sekcjaRaty("w Boguchwale"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Boguchwała",

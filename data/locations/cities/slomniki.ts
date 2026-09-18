@@ -161,7 +161,7 @@ export const SLOMNIKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Słomniki"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Słomniki"),
     {
       id: "rodzina",
       heading: "Trzydzieści minut pociągiem i co z tego wynika",

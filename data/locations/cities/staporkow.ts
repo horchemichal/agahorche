@@ -158,7 +158,7 @@ export const STAPORKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stąporkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stąporkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla stąporkowskiej rodziny",

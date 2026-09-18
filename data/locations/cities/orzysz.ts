@@ -188,7 +188,7 @@ export const ORZYSZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Orzyszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Orzyszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla orzyskiej rodziny",

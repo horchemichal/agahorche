@@ -121,7 +121,7 @@ export const KRZESZOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krzeszowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krzeszowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Krzeszowice",

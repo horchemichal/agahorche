@@ -150,7 +150,7 @@ export const ZAMBROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zambrowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zambrowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla zambrowskiej rodziny",

@@ -210,7 +210,7 @@ export const SZCZUROWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Szczurowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Szczurowa"),
     {
       id: "rodzina",
       heading: "Trzy czwarte gminy to pole, a do sklepu jest kawałek",

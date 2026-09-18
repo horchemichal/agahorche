@@ -174,7 +174,7 @@ export const KONSTANTYNOW_LODZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Konstantynowie Łódzkim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Konstantynowie Łódzkim"),
     {
       id: "rodzina",
       heading: "Thermomix dla konstantynowskiej rodziny",

@@ -240,7 +240,7 @@ export const SZAMOTULY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szamotułach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szamotułach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Szamotuł",

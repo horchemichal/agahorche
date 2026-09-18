@@ -254,7 +254,7 @@ export const ZLOTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Złotowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Złotowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Złotowa",

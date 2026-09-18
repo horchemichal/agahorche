@@ -165,7 +165,7 @@ export const CIESZANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Cieszanowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Cieszanowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla cieszanowskiej rodziny",

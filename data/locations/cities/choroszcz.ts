@@ -247,7 +247,7 @@ export const CHOROSZCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Choroszczy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Choroszczy"),
     {
       id: "rodzina",
       heading: "Thermomix dla choroskiej rodziny",

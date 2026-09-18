@@ -325,7 +325,7 @@ export const PELCZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pełczycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pełczycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pełczyc",

@@ -183,7 +183,7 @@ export const PRASZKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Praszce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Praszce"),
     {
       id: "rodzina",
       heading: "Thermomix dla praszkowskiej rodziny",

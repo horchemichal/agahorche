@@ -162,7 +162,7 @@ export const PROSZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Prószkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Prószkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla prószkowskiej rodziny",

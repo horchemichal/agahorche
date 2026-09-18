@@ -146,7 +146,7 @@ export const JORDANOW_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Jordanów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Jordanów"),
     {
       id: "rodzina",
       heading: "Dom rozciągnięty po stoku, obiad dla całego stołu",

@@ -213,7 +213,7 @@ export const RESZEL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Reszlu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Reszlu"),
     {
       id: "rodzina",
       heading: "Thermomix dla reszelskiej rodziny",

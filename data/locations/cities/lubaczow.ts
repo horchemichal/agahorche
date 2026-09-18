@@ -107,7 +107,7 @@ export const LUBACZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubaczowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubaczowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubaczowskiej rodziny",

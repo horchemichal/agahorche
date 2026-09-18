@@ -170,7 +170,7 @@ export const MUCHARZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Mucharz"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Mucharz"),
     {
       id: "jedna-osoba",
       heading: "Duży dom, mało osób przy stole",

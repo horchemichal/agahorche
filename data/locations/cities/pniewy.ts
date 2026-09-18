@@ -274,7 +274,7 @@ export const PNIEWY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pniewach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pniewach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pniew",

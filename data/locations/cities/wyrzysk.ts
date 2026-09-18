@@ -300,7 +300,7 @@ export const WYRZYSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wyrzysku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wyrzysku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wyrzyska",

@@ -280,7 +280,7 @@ export const MIEJSKA_GORKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miejskiej Górce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miejskiej Górce"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Miejskiej Górki",

@@ -209,7 +209,7 @@ export const SZTUTOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sztutowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sztutowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sztutowskiej rodziny",

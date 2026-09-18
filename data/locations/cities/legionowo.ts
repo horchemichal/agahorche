@@ -98,7 +98,7 @@ export const LEGIONOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Legionowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Legionowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla legionowskiej rodziny",

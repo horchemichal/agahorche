@@ -97,7 +97,7 @@ export const CHECINY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chęcinach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chęcinach"),
     {
       id: "rodzina",
       heading: "Thermomix dla chęcińskiej rodziny",

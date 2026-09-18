@@ -186,7 +186,7 @@ export const WIETRZYCHOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wietrzychowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wietrzychowice"),
     {
       id: "rodzina",
       heading: "Fasola, która potrzebuje swojego czasu",

@@ -192,7 +192,7 @@ export const BUKOWNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bukownie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bukownie"),
     {
       id: "rodzina",
       heading: "Dorosłe dzieci przyjeżdżają na obiad — i kuchnia znów pracuje na pełnych obrotach",

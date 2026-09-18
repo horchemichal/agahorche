@@ -96,7 +96,7 @@ export const KORNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kórniku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kórniku"),
     {
       id: "rodzina",
       heading: "Thermomix dla kórnickiej rodziny",

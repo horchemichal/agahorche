@@ -184,7 +184,7 @@ export const PODDEBICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Poddębicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Poddębicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla poddębickiej rodziny",

@@ -98,7 +98,7 @@ export const GLOGOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głogowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głogowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla głogowskiej rodziny",

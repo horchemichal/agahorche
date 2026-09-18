@@ -232,7 +232,7 @@ export const KOSTRZYN_NAD_ODRA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kostrzynie nad Odrą"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kostrzynie nad Odrą"),
     {
       id: "rodzina",
       heading: "Thermomix dla kostrzyńskiej rodziny",

@@ -326,7 +326,7 @@ export const DOBRZANY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobrzanach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobrzanach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Dobrzan",

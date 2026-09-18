@@ -368,7 +368,7 @@ export const STRONIE_SLASKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stroniu Śląskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stroniu Śląskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Stronia Śląskiego",

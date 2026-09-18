@@ -169,7 +169,7 @@ export const OSWIECIM_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Oświęcim"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Oświęcim"),
     {
       id: "rodzina",
       heading: "Gotować na wieś, a nie na gminę",

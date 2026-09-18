@@ -267,7 +267,7 @@ export const SZLICHTYNGOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szlichtyngowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szlichtyngowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla szlichtyngowskiej rodziny",

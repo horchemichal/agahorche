@@ -372,7 +372,7 @@ export const JELCZ_LASKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jelczu-Laskowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jelczu-Laskowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Jelcza-Laskowic",

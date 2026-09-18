@@ -194,7 +194,7 @@ export const DEBNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Dębno"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Dębno"),
     {
       id: "rodzina",
       heading: "Dom, w którym obiad musi się ugotować sam",

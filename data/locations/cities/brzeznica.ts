@@ -163,7 +163,7 @@ export const BRZEZNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Brzeźnica"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Brzeźnica"),
     {
       id: "rodzina",
       heading: "Dom, w którym dzień zaczyna się na peronie",

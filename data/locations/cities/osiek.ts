@@ -180,7 +180,7 @@ export const OSIEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Osiek"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Osiek"),
     {
       id: "rodzina",
       heading: "Osiemset krów za oknem",

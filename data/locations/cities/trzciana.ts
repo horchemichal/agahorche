@@ -145,7 +145,7 @@ export const TRZCIANA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Trzciana"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Trzciana"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny, która gotuje z własnego",

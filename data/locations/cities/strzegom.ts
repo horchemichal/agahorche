@@ -355,7 +355,7 @@ export const STRZEGOM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strzegomiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strzegomiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Strzegomia",

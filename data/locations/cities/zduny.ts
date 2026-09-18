@@ -348,7 +348,7 @@ export const ZDUNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zdunach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zdunach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Zdun",

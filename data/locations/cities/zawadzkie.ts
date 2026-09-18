@@ -149,7 +149,7 @@ export const ZAWADZKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zawadzkiem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zawadzkiem"),
     {
       id: "rodzina",
       heading: "Thermomix dla zawadzkiej rodziny",

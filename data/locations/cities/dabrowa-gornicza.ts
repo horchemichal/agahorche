@@ -107,7 +107,7 @@ export const DABROWA_GORNICZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dąbrowie Górniczej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dąbrowie Górniczej"),
     {
       id: "rodzina",
       heading: "Thermomix dla dąbrowskiej rodziny",

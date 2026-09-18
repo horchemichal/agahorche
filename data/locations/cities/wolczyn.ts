@@ -157,7 +157,7 @@ export const WOLCZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wołczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wołczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wołczyńskiej rodziny",

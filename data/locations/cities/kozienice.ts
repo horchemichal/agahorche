@@ -287,7 +287,7 @@ export const KOZIENICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kozienicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kozienicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla kozienickiej rodziny",

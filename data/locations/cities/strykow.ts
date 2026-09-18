@@ -161,7 +161,7 @@ export const STRYKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strykowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strykowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla strykowskiej rodziny",

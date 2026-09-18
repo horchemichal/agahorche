@@ -153,7 +153,7 @@ export const ZAWOJA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Zawoja"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Zawoja"),
     {
       id: "rodzina",
       heading: "Dom, w którym jednocześnie mieszka się i przyjmuje gości",

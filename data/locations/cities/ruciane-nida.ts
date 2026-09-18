@@ -194,7 +194,7 @@ export const RUCIANE_NIDA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rucianem-Nidzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rucianem-Nidzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Rucianego-Nidy",

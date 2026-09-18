@@ -253,7 +253,7 @@ export const PRZASNYSZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Przasnyszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Przasnyszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla przasnyskiej rodziny",

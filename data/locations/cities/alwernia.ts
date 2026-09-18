@@ -171,7 +171,7 @@ export const ALWERNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Alwernia"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Alwernia"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym gotuje się z zapasu",

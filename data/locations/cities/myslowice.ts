@@ -98,7 +98,7 @@ export const MYSLOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mysłowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mysłowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla mysłowickiej rodziny",

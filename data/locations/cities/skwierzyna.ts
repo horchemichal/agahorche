@@ -246,7 +246,7 @@ export const SKWIERZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skwierzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skwierzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla skwierzyńskiej rodziny",

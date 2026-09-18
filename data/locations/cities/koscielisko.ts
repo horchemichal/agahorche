@@ -171,7 +171,7 @@ export const KOSCIELISKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kościelisko"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kościelisko"),
     {
       id: "rodzina",
       heading: "Tysiąc pięćset firm na dziewięć tysięcy mieszkańców",

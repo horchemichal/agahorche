@@ -100,7 +100,7 @@ export const DEBICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dębicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dębicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla dębickiej rodziny",

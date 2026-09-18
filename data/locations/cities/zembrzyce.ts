@@ -168,7 +168,7 @@ export const ZEMBRZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Zembrzyce"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Zembrzyce"),
     {
       id: "rodzina",
       heading: "Gmina, która pracuje gdzie indziej",

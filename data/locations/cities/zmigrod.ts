@@ -283,7 +283,7 @@ export const ZMIGROD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żmigrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żmigrodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Żmigrodu",

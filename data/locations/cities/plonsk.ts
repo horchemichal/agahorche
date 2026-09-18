@@ -111,7 +111,7 @@ export const PLONSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Płońsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Płońsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla płońskiej rodziny",

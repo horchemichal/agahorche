@@ -186,7 +186,7 @@ export const RADZIEMICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Radziemice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Radziemice"),
     {
       id: "rodzina",
       heading: "Sześć hektarów, warzywa i rok podzielony sezonem",

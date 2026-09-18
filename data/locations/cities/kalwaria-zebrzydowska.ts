@@ -164,7 +164,7 @@ export const KALWARIA_ZEBRZYDOWSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Kalwaria Zebrzydowska"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Kalwaria Zebrzydowska"),
     {
       id: "rodzina",
       heading: "Dom, w którym praca jest za ścianą",

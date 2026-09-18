@@ -108,7 +108,7 @@ export const NOWA_SOL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowej Soli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowej Soli"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowosolskiej rodziny",

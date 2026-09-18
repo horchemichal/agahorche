@@ -96,7 +96,7 @@ export const SUWALKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suwałkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suwałkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla suwalskiej rodziny",

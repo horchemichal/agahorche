@@ -192,7 +192,7 @@ export const BRANIEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Braniewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Braniewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla braniewskiej rodziny",

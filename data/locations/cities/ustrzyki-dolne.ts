@@ -106,7 +106,7 @@ export const USTRZYKI_DOLNE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ustrzykach Dolnych"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ustrzykach Dolnych"),
     {
       id: "rodzina",
       heading: "Thermomix dla bieszczadzkiej rodziny",

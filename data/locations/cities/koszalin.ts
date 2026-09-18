@@ -95,7 +95,7 @@ export const KOSZALIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Koszalinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Koszalinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla koszalińskiej rodziny",

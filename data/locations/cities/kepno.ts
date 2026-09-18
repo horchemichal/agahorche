@@ -255,7 +255,7 @@ export const KEPNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kępnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kępnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kępna",

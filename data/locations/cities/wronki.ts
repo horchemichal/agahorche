@@ -258,7 +258,7 @@ export const WRONKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Wronkach"),
-    sekcjaRaty(),
+    sekcjaRaty("we Wronkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wronek",

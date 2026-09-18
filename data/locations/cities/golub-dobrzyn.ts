@@ -297,7 +297,7 @@ export const GOLUB_DOBRZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Golubiu-Dobrzyniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Golubiu-Dobrzyniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla golubsko-dobrzyńskiej rodziny",

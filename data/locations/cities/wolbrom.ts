@@ -163,7 +163,7 @@ export const WOLBROM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Wolbrom"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Wolbrom"),
     {
       id: "rodzina",
       heading: "Kuchnia, która pracuje partiami",

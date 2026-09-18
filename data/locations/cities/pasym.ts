@@ -191,7 +191,7 @@ export const PASYM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pasymiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pasymiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla pasymskiej rodziny",

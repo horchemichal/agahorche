@@ -233,7 +233,7 @@ export const OBORNIKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Obornikach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Obornikach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Obornik",

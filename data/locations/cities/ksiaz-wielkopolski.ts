@@ -271,7 +271,7 @@ export const KSIAZ_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Książu Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Książu Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Książa Wielkopolskiego",

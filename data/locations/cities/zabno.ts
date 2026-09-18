@@ -167,7 +167,7 @@ export const ZABNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żabnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żabnie"),
     {
       id: "rodzina",
       heading: "Kiedy nie wiadomo, ile osób siądzie do stołu",

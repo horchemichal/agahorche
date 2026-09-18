@@ -110,7 +110,7 @@ export const WOLOMIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wołominie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wołominie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wołomińskiej rodziny",

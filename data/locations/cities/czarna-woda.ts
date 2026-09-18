@@ -182,7 +182,7 @@ export const CZARNA_WODA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czarnej Wodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czarnej Wodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Czarnej Wody",

@@ -96,7 +96,7 @@ export const BOLESLAWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bolesławcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bolesławcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla bolesławieckiej rodziny",

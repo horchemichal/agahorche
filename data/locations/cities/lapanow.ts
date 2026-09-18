@@ -135,7 +135,7 @@ export const LAPANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łapanów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łapanów"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny w gminie, która się rozbudowuje",

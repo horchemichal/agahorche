@@ -221,7 +221,7 @@ export const LIDZBARK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lidzbarku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lidzbarku"),
     {
       id: "rodzina",
       heading: "Thermomix dla lidzbarskiej rodziny",

@@ -282,7 +282,7 @@ export const CZERNIEJEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czerniejewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czerniejewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Czerniejewa",

@@ -156,7 +156,7 @@ export const TULOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tułowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tułowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla tułowickiej rodziny",

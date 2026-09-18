@@ -98,7 +98,7 @@ export const PILA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pile"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pile"),
     {
       id: "rodzina",
       heading: "Thermomix dla pilskiej rodziny",

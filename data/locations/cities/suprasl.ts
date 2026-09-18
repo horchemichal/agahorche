@@ -247,7 +247,7 @@ export const SUPRASL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Supraślu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Supraślu"),
     {
       id: "rodzina",
       heading: "Thermomix dla supraskiej rodziny",

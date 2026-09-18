@@ -94,7 +94,7 @@ export const ZDUNSKA_WOLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zduńskiej Woli"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zduńskiej Woli"),
     {
       id: "rodzina",
       heading: "Thermomix dla zduńskowolskiej rodziny",

@@ -157,7 +157,7 @@ export const KOLONOWSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kolonowskiem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kolonowskiem"),
     {
       id: "rodzina",
       heading: "Thermomix dla kolonowskiej rodziny",

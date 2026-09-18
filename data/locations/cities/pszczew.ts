@@ -255,7 +255,7 @@ export const PSZCZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pszczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pszczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pszczewskiej rodziny",

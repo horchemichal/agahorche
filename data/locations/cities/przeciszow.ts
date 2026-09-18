@@ -181,7 +181,7 @@ export const PRZECISZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Przeciszów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Przeciszów"),
     {
       id: "rodzina",
       heading: "Kiedy dzieci wyjechały, a garnek został ten sam",

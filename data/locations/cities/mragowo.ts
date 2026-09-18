@@ -141,7 +141,7 @@ export const MRAGOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mrągowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mrągowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla mrągowskiej rodziny",

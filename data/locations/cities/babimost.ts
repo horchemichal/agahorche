@@ -282,7 +282,7 @@ export const BABIMOST: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Babimoście"),
-    sekcjaRaty(),
+    sekcjaRaty("w Babimoście"),
     {
       id: "rodzina",
       heading: "Thermomix dla babimojskiej rodziny",

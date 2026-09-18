@@ -109,7 +109,7 @@ export const DZIERZONIOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dzierżoniowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dzierżoniowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dzierżoniowskiej rodziny",

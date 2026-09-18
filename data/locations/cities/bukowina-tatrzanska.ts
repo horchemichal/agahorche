@@ -166,7 +166,7 @@ export const BUKOWINA_TATRZANSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Bukowina Tatrzańska"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Bukowina Tatrzańska"),
     {
       id: "rodzina",
       heading: "Gmina, która rośnie",

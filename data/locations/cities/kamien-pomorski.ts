@@ -290,7 +290,7 @@ export const KAMIEN_POMORSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kamieniu Pomorskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kamieniu Pomorskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla kamieńskiej rodziny",

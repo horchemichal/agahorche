@@ -207,7 +207,7 @@ export const GOLDAP: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gołdapi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gołdapi"),
     {
       id: "rodzina",
       heading: "Thermomix dla gołdapskiej rodziny",

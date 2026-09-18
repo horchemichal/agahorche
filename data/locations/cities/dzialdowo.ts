@@ -146,7 +146,7 @@ export const DZIALDOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Działdowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Działdowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla działdowskiej rodziny",

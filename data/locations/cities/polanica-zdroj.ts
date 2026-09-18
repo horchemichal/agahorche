@@ -297,7 +297,7 @@ export const POLANICA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Polanicy-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Polanicy-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Polanicy-Zdroju",

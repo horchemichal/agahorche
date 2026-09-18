@@ -229,7 +229,7 @@ export const KROSNO_ODRZANSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krośnie Odrzańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krośnie Odrzańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla krośnieńskiej rodziny",

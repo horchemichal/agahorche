@@ -109,7 +109,7 @@ export const WALCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wałczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wałczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wałeckiej rodziny",

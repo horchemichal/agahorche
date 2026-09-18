@@ -317,7 +317,7 @@ export const MYSZYNIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Myszyńcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Myszyńcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla myszynieckiej rodziny",

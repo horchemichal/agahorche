@@ -187,7 +187,7 @@ export const OLKUSZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Olkuszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Olkuszu"),
     {
       id: "rodzina",
       heading: "Kiedy dwie osoby wracają o różnych porach",

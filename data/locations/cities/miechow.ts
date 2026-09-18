@@ -160,7 +160,7 @@ export const MIECHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miechowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miechowie"),
     {
       id: "rodzina",
       heading: "Czterdzieści minut pociągiem i co z tego wynika",

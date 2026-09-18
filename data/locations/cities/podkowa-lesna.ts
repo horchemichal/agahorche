@@ -275,7 +275,7 @@ export const PODKOWA_LESNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Podkowie Leśnej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Podkowie Leśnej"),
     {
       id: "rodzina",
       heading: "Thermomix dla podkowiańskiej rodziny",

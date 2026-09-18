@@ -285,7 +285,7 @@ export const CZERWIENSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czerwieńsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czerwieńsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla czerwieńskiej rodziny",

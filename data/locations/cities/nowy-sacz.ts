@@ -92,7 +92,7 @@ export const NOWY_SACZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Sączu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Sączu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowego Sącza",

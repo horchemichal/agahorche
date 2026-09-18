@@ -261,7 +261,7 @@ export const SOMPOLNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sompolnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sompolnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sompolna",

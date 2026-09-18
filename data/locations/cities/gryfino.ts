@@ -140,7 +140,7 @@ export const GRYFINO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gryfinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gryfinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gryfińskiej rodziny",

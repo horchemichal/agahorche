@@ -108,7 +108,7 @@ export const CHRZANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chrzanowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chrzanowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chrzanowa",

@@ -173,7 +173,7 @@ export const BRZESZCZE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzeszczach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzeszczach"),
     {
       id: "rodzina",
       heading: "Jedno urządzenie zamiast pięciu",

@@ -273,7 +273,7 @@ export const BYTOM_ODRZANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bytomiu Odrzańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bytomiu Odrzańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla bytomskiej rodziny",

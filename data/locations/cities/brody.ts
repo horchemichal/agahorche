@@ -268,7 +268,7 @@ export const BRODY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brodach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brodach"),
     {
       id: "rodzina",
       heading: "Thermomix dla brodzkiej rodziny",

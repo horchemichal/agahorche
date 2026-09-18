@@ -163,7 +163,7 @@ export const KROSNIEWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krośniewicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krośniewicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla krośniewickiej rodziny",

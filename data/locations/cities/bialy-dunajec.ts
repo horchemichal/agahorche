@@ -159,7 +159,7 @@ export const BIALY_DUNAJEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Biały Dunajec"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Biały Dunajec"),
     {
       id: "rodzina",
       heading: "Sto metrów mieszkania i dodatni przyrost naturalny",

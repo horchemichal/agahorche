@@ -174,7 +174,7 @@ export const FRAMPOL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Frampolu"),
-    sekcjaRaty(),
+    sekcjaRaty("we Frampolu"),
     {
       id: "rodzina",
       heading: "Thermomix dla frampolskiej rodziny",

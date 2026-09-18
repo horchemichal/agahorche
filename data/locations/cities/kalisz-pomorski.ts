@@ -279,7 +279,7 @@ export const KALISZ_POMORSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kaliszu Pomorskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kaliszu Pomorskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kalisza Pomorskiego",

@@ -302,7 +302,7 @@ export const ZAKROCZYM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zakroczymiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zakroczymiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zakroczymskiej rodziny",

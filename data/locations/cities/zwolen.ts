@@ -263,7 +263,7 @@ export const ZWOLEN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zwoleniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zwoleniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zwoleńskiej rodziny",

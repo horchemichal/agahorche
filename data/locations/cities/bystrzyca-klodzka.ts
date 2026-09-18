@@ -103,7 +103,7 @@ export const BYSTRZYCA_KLODZKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bystrzycy Kłodzkiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bystrzycy Kłodzkiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla bystrzyckiej rodziny",

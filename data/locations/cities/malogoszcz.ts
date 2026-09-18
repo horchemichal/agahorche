@@ -155,7 +155,7 @@ export const MALOGOSZCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Małogoszczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Małogoszczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla małogoskiej rodziny",

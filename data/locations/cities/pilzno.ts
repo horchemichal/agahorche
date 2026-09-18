@@ -157,7 +157,7 @@ export const PILZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pilźnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pilźnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pilźnieńskiej rodziny",

@@ -100,7 +100,7 @@ export const NAMYSLOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Namysłowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Namysłowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla namysłowskiej rodziny",

@@ -300,7 +300,7 @@ export const RAKONIEWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rakoniewicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rakoniewicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Rakoniewic",

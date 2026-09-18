@@ -407,7 +407,7 @@ export const ZIEBICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ziębicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ziębicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Ziębic",

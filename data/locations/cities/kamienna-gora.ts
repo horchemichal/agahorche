@@ -315,7 +315,7 @@ export const KAMIENNA_GORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kamiennej Górze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kamiennej Górze"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kamiennej Góry",

@@ -176,7 +176,7 @@ export const PACZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Paczkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Paczkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla paczkowskiej rodziny",

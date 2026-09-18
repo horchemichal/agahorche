@@ -263,7 +263,7 @@ export const SZPROTAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szprotawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szprotawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla szprotawskiej rodziny",

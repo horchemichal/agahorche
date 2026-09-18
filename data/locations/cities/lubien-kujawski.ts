@@ -357,7 +357,7 @@ export const LUBIEN_KUJAWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubieniu Kujawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubieniu Kujawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubieńskiej rodziny",

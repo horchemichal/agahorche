@@ -90,7 +90,7 @@ export const PROSZOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Proszowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Proszowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Proszowic",

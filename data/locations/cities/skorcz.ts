@@ -179,7 +179,7 @@ export const SKORCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skórczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skórczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla skórczowskiej rodziny",

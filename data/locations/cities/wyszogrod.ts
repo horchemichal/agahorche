@@ -302,7 +302,7 @@ export const WYSZOGROD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wyszogrodzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wyszogrodzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wyszogrodzkiej rodziny",

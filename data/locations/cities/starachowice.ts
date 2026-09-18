@@ -105,7 +105,7 @@ export const STARACHOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Starachowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Starachowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla starachowickiej rodziny",

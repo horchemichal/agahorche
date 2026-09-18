@@ -103,7 +103,7 @@ export const ELBLAG: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Elblągu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Elblągu"),
     {
       id: "rodzina",
       heading: "Thermomix dla elbląskiej rodziny",

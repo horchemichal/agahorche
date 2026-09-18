@@ -160,7 +160,7 @@ export const NOWY_DWOR_GDANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Dworze Gdańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Dworze Gdańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowodworskiej rodziny",

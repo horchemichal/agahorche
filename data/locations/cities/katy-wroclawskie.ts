@@ -365,7 +365,7 @@ export const KATY_WROCLAWSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kątach Wrocławskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kątach Wrocławskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kątów Wrocławskich",

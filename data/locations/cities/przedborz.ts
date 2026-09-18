@@ -168,7 +168,7 @@ export const PRZEDBORZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Przedborzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Przedborzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla przedborskiej rodziny",

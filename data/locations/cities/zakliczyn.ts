@@ -91,7 +91,7 @@ export const ZAKLICZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zakliczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zakliczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Zakliczyn",

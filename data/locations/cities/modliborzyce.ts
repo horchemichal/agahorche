@@ -168,7 +168,7 @@ export const MODLIBORZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Modliborzycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Modliborzycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla modliborzyckiej rodziny",

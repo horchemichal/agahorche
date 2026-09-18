@@ -228,7 +228,7 @@ export const MIEDZYLESIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Międzylesiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Międzylesiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Międzylesia",

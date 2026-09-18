@@ -169,7 +169,7 @@ export const OZAROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ożarowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ożarowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla ożarowskiej rodziny",

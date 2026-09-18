@@ -194,7 +194,7 @@ export const TOLKMICKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tolkmicku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tolkmicku"),
     {
       id: "rodzina",
       heading: "Thermomix dla tolkmickiej rodziny",

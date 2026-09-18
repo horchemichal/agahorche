@@ -189,7 +189,7 @@ export const LISIA_GORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lisia Góra"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lisia Góra"),
     {
       id: "rodzina",
       heading: "Jedzenie, które jedzie razem z Wami",

@@ -112,7 +112,7 @@ export const RUMIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rumi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rumi"),
     {
       id: "rodzina",
       heading: "Thermomix dla rumskiej rodziny",

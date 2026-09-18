@@ -229,7 +229,7 @@ export const SWIERZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świerzawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świerzawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Świerzawy",

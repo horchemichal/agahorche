@@ -265,7 +265,7 @@ export const OKONEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Okonku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Okonku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Okonka",

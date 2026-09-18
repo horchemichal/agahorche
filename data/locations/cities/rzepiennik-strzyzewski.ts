@@ -193,7 +193,7 @@ export const RZEPIENNIK_STRZYZEWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Rzepiennik Strzyżewski"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Rzepiennik Strzyżewski"),
     {
       id: "rodzina",
       heading: "Ziemniak w osiemdziesięciu pięciu procentach gospodarstw",

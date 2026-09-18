@@ -97,7 +97,7 @@ export const INOWROCLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Inowrocławiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Inowrocławiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla inowrocławskiej rodziny",

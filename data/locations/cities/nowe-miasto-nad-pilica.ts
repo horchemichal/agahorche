@@ -275,7 +275,7 @@ export const NOWE_MIASTO_NAD_PILICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Mieście nad Pilicą"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Mieście nad Pilicą"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowego Miasta nad Pilicą",

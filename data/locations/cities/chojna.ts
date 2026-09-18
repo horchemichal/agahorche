@@ -273,7 +273,7 @@ export const CHOJNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chojnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chojnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chojny",

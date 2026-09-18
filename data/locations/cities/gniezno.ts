@@ -97,7 +97,7 @@ export const GNIEZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gnieźnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gnieźnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gnieźnieńskiej rodziny",

@@ -116,7 +116,7 @@ export const KATOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Katowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Katowicach"),
     {
       id: "slaski-obiad",
       heading: "Śląski niedzielny obiad a Thermomix",

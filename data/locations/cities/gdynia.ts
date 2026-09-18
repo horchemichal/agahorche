@@ -106,7 +106,7 @@ export const GDYNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gdyni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gdyni"),
     {
       id: "rodzina",
       heading: "Thermomix dla gdyńskiej rodziny",

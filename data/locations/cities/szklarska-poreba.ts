@@ -314,7 +314,7 @@ export const SZKLARSKA_POREBA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szklarskiej Porębie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szklarskiej Porębie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Szklarskiej Poręby",

@@ -167,7 +167,7 @@ export const OLESZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Oleszycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Oleszycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla oleszyckiej rodziny",

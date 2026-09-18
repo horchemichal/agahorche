@@ -107,7 +107,7 @@ export const BUSKO_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Busku-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Busku-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla buskiej rodziny",

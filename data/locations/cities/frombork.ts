@@ -182,7 +182,7 @@ export const FROMBORK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Fromborku"),
-    sekcjaRaty(),
+    sekcjaRaty("we Fromborku"),
     {
       id: "rodzina",
       heading: "Thermomix dla fromborskiej rodziny",

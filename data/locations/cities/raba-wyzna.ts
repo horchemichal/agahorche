@@ -126,7 +126,7 @@ export const RABA_WYZNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Raba Wyżna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Raba Wyżna"),
     {
       id: "rodzina",
       heading: "Gdy w jednym domu mieszkają trzy pokolenia",

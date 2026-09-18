@@ -255,7 +255,7 @@ export const DABIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dąbiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dąbiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Dąbia",

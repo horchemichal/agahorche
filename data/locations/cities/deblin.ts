@@ -161,7 +161,7 @@ export const DEBLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dęblinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dęblinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dęblińskiej rodziny",

@@ -108,7 +108,7 @@ export const PRUSZCZ_GDANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pruszczu Gdańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pruszczu Gdańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla pruszczańskiej rodziny",

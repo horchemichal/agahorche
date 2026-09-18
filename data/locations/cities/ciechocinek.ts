@@ -302,7 +302,7 @@ export const CIECHOCINEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ciechocinku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ciechocinku"),
     {
       id: "rodzina",
       heading: "Thermomix dla ciechocińskiej rodziny",

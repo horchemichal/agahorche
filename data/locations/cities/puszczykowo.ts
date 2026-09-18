@@ -270,7 +270,7 @@ export const PUSZCZYKOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Puszczykowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Puszczykowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Puszczykowa",

@@ -322,7 +322,7 @@ export const SIECHNICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Siechnicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Siechnicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Siechnic",

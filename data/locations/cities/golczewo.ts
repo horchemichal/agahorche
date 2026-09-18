@@ -305,7 +305,7 @@ export const GOLCZEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Golczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Golczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Golczewa",

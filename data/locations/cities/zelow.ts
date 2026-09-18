@@ -204,7 +204,7 @@ export const ZELOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zelowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zelowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla zelowskiej rodziny",

@@ -196,7 +196,7 @@ export const PIENIEZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pieniężnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pieniężnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pieniężnieńskiej rodziny",

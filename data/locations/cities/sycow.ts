@@ -322,7 +322,7 @@ export const SYCOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sycowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sycowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sycowa",

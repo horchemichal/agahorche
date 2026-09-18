@@ -168,7 +168,7 @@ export const RACLAWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Racławice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Racławice"),
     {
       id: "rodzina",
       heading: "Gmina, w której prawie połowa pracujących pracuje w polu",

@@ -337,7 +337,7 @@ export const LASIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łasinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łasinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łasińskiej rodziny",

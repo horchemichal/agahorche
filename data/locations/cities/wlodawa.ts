@@ -102,7 +102,7 @@ export const WLODAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Włodawie"),
-    sekcjaRaty(),
+    sekcjaRaty("we Włodawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla włodawskiej rodziny",

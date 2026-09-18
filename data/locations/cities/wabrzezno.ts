@@ -218,7 +218,7 @@ export const WABRZEZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wąbrzeźnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wąbrzeźnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wąbrzeskiej rodziny",

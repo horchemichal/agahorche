@@ -169,7 +169,7 @@ export const BABICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Babice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Babice"),
     {
       id: "rodzina",
       heading: "Dom, z którego się wyjeżdża, i weekend, w którym się gotuje",

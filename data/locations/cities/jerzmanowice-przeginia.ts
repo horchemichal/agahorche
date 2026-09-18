@@ -187,7 +187,7 @@ export const JERZMANOWICE_PRZEGINIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Jerzmanowice-Przeginia"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Jerzmanowice-Przeginia"),
     {
       id: "rodzina",
       heading: "Dłuższa zima w kuchni",

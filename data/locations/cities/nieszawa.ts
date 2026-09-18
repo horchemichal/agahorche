@@ -352,7 +352,7 @@ export const NIESZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nieszawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nieszawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla nieszawskiej rodziny",

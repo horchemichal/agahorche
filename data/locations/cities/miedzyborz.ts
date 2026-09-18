@@ -234,7 +234,7 @@ export const MIEDZYBORZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Międzyborzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Międzyborzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Międzyborza",

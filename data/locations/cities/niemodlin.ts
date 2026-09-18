@@ -155,7 +155,7 @@ export const NIEMODLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Niemodlinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Niemodlinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla niemodlińskiej rodziny",

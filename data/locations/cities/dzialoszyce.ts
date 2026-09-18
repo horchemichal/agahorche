@@ -173,7 +173,7 @@ export const DZIALOSZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Działoszycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Działoszycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla działoszyckiej rodziny",

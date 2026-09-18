@@ -189,7 +189,7 @@ export const MSZANA_DOLNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mszanie Dolnej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mszanie Dolnej"),
     {
       id: "rodzina",
       heading: "Thermomix a kuchnia zagórzańska — co się da, a czego nie",

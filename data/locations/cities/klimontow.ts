@@ -152,7 +152,7 @@ export const KLIMONTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Klimontowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Klimontowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla klimontowskiej rodziny",

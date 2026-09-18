@@ -291,7 +291,7 @@ export const LABISZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łabiszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łabiszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łabiszyńskiej rodziny",

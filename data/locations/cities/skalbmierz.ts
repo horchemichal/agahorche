@@ -164,7 +164,7 @@ export const SKALBMIERZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skalbmierzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skalbmierzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla skalbmierskiej rodziny",

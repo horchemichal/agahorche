@@ -174,7 +174,7 @@ export const ZYCHLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żychlinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żychlinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żychlińskiej rodziny",

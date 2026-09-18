@@ -98,7 +98,7 @@ export const GORZOW_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gorzowie Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gorzowie Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla gorzowskiej rodziny",

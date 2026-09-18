@@ -241,7 +241,7 @@ export const PRUSICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Prusicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Prusicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Prusic",

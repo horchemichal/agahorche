@@ -227,7 +227,7 @@ export const BRANSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brańsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brańsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla brańskiej rodziny",

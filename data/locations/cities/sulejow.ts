@@ -183,7 +183,7 @@ export const SULEJOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sulejowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sulejowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sulejowskiej rodziny",

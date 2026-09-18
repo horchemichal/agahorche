@@ -319,7 +319,7 @@ export const CEDYNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Cedyni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Cedyni"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Cedyni",

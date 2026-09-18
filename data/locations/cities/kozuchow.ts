@@ -249,7 +249,7 @@ export const KOZUCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kożuchowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kożuchowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kożuchowskiej rodziny",

@@ -107,7 +107,7 @@ export const KOBYLKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kobyłce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kobyłce"),
     {
       id: "rodzina",
       heading: "Thermomix dla kobyłkowskiej rodziny",

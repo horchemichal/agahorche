@@ -262,7 +262,7 @@ export const PONIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Poniecu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Poniecu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Ponieca",

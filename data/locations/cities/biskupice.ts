@@ -178,7 +178,7 @@ export const BISKUPICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Biskupice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Biskupice"),
     {
       id: "rodzina",
       heading: "Nowy dom, stara wieś i obiad po dziewiętnastej",

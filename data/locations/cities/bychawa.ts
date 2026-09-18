@@ -167,7 +167,7 @@ export const BYCHAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bychawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bychawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bychawskiej rodziny",

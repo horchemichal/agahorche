@@ -208,7 +208,7 @@ export const MONKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mońkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mońkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla monieckiej rodziny",

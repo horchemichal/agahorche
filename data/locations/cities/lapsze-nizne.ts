@@ -168,7 +168,7 @@ export const LAPSZE_NIZNE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łapsze Niżne"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łapsze Niżne"),
     {
       id: "rodzina",
       heading: "Wieś, w której mówi się dwoma językami",

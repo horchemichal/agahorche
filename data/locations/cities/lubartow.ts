@@ -131,7 +131,7 @@ export const LUBARTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubartowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubartowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubartowskiej rodziny",

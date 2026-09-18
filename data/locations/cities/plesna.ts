@@ -200,7 +200,7 @@ export const PLESNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Pleśna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Pleśna"),
     {
       id: "rodzina",
       heading: "Trzy pokolenia przy jednym stole",

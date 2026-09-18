@@ -258,7 +258,7 @@ export const BOJANOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bojanowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bojanowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bojanowa",

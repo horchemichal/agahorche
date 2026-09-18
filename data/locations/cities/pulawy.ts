@@ -102,7 +102,7 @@ export const PULAWY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Puławach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Puławach"),
     {
       id: "rodzina",
       heading: "Thermomix dla puławskiej rodziny",

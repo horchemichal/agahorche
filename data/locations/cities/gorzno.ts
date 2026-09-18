@@ -398,7 +398,7 @@ export const GORZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Górznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Górznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla górznieńskiej rodziny",

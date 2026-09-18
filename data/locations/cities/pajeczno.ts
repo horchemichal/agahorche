@@ -179,7 +179,7 @@ export const PAJECZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pajęcznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pajęcznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pajęczańskiej rodziny",

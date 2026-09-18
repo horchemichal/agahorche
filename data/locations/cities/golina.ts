@@ -257,7 +257,7 @@ export const GOLINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Golinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Golinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Goliny",

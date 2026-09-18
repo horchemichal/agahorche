@@ -107,7 +107,7 @@ export const SOCHACZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sochaczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sochaczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sochaczewskiej rodziny",

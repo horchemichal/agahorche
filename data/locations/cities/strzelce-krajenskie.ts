@@ -278,7 +278,7 @@ export const STRZELCE_KRAJENSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strzelcach Krajeńskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strzelcach Krajeńskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla strzeleckiej rodziny",

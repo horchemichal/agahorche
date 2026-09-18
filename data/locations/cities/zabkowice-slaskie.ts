@@ -99,7 +99,7 @@ export const ZABKOWICE_SLASKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ząbkowicach Śląskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ząbkowicach Śląskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla ząbkowickiej rodziny",

@@ -103,7 +103,7 @@ export const ZORY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żorach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żorach"),
     {
       id: "rodzina",
       heading: "Thermomix dla żorskiej rodziny",

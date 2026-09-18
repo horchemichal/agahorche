@@ -183,7 +183,7 @@ export const LANCKORONA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lanckorona"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lanckorona"),
     {
       id: "rodzina",
       heading: "Dom, w którym coś się robi rękami",

@@ -294,7 +294,7 @@ export const WOJCIESZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wojcieszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wojcieszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wojcieszowa",

@@ -109,7 +109,7 @@ export const WARSZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Warszawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Warszawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla warszawskiej rodziny",

@@ -106,7 +106,7 @@ export const TARNOWSKIE_GORY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tarnowskich Górach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tarnowskich Górach"),
     {
       id: "rodzina",
       heading: "Thermomix dla tarnogórskiej rodziny",

@@ -167,7 +167,7 @@ export const STRYSZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Stryszawa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Stryszawa"),
     {
       id: "rodzina",
       heading: "Kuchnia, w której robota się dzieli",

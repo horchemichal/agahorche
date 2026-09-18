@@ -164,7 +164,7 @@ export const BOCHNIA_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Bochnia"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Bochnia"),
     {
       id: "rodzina",
       heading: "Dwa krajobrazy, dwa ogrody, dwie różne jesienie",

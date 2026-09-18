@@ -163,7 +163,7 @@ export const ROPA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Ropa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Ropa"),
     {
       id: "rodzina",
       heading: "Trzy wsie na jednej drodze krajowej",

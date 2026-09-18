@@ -173,7 +173,7 @@ export const STRYSZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Stryszów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Stryszów"),
     {
       id: "rodzina",
       heading: "Sześć wsi, jedna gmina, żadnego wspólnego środka",

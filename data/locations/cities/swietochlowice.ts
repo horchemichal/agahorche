@@ -114,7 +114,7 @@ export const SWIETOCHLOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świętochłowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świętochłowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla świętochłowickiej rodziny",

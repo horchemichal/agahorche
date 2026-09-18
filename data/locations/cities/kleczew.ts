@@ -277,7 +277,7 @@ export const KLECZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kleczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kleczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kleczewa",

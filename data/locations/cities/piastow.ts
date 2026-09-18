@@ -113,7 +113,7 @@ export const PIASTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piastowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piastowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla piastowskiej rodziny",

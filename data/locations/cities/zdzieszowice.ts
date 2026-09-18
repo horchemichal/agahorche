@@ -162,7 +162,7 @@ export const ZDZIESZOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zdzieszowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zdzieszowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla zdzieszowickiej rodziny",

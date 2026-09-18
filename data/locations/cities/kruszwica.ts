@@ -277,7 +277,7 @@ export const KRUSZWICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kruszwicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kruszwicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla kruszwickiej rodziny",

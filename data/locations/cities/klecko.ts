@@ -269,7 +269,7 @@ export const KLECKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kłecku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kłecku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Kłecka",

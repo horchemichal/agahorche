@@ -250,7 +250,7 @@ export const MOSINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mosinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mosinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mosiny",

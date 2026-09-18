@@ -143,7 +143,7 @@ export const RADGOSZCZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Radgoszcz"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Radgoszcz"),
     {
       id: "rodzina",
       heading: "Nowe domy i pełne stoły",

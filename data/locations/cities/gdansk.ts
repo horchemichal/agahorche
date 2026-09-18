@@ -110,7 +110,7 @@ export const GDANSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gdańsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gdańsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla gdańskiej rodziny",

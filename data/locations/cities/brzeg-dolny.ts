@@ -353,7 +353,7 @@ export const BRZEG_DOLNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzegu Dolnym"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzegu Dolnym"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Brzegu Dolnego",

@@ -94,7 +94,7 @@ export const SOSNOWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sosnowcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sosnowcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sosnowca",

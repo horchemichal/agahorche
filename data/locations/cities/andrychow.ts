@@ -172,7 +172,7 @@ export const ANDRYCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Andrychów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Andrychów"),
     {
       id: "rodzina",
       heading: "Zmiany, dojazdy i obiad, który musi poczekać",

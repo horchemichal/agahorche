@@ -114,7 +114,7 @@ export const PABIANICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pabianicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pabianicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla pabianickiej rodziny",

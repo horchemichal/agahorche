@@ -277,7 +277,7 @@ export const WOLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wolinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wolinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wolina",

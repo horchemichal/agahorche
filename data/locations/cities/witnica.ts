@@ -256,7 +256,7 @@ export const WITNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Witnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Witnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla witnickiej rodziny",

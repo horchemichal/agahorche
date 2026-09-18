@@ -241,7 +241,7 @@ export const SIERPC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sierpcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sierpcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla sierpeckiej rodziny",

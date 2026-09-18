@@ -189,7 +189,7 @@ export const MORAG: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Morągu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Morągu"),
     {
       id: "rodzina",
       heading: "Thermomix dla morąskiej rodziny",

@@ -178,7 +178,7 @@ export const BOBOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bobowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bobowej"),
     {
       id: "rodzina",
       heading: "Najmłodsza gmina w powiecie",

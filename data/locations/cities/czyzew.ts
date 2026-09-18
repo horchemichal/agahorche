@@ -218,7 +218,7 @@ export const CZYZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czyżewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czyżewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla czyżewskiej rodziny",

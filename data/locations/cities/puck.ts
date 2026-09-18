@@ -153,7 +153,7 @@ export const PUCK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pucku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pucku"),
     {
       id: "rodzina",
       heading: "Thermomix dla puckiej rodziny",

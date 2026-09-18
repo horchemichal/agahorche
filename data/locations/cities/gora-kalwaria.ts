@@ -245,7 +245,7 @@ export const GORA_KALWARIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Górze Kalwarii"),
-    sekcjaRaty(),
+    sekcjaRaty("w Górze Kalwarii"),
     {
       id: "rodzina",
       heading: "Thermomix dla kalwaryjskiej rodziny",

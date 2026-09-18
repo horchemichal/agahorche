@@ -106,7 +106,7 @@ export const BIALYSTOK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białymstoku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białymstoku"),
     {
       id: "rodzina",
       heading: "Thermomix dla białostockiej rodziny",

@@ -98,7 +98,7 @@ export const NOWA_SLUPIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowej Słupi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowej Słupi"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Nowa Słupia",

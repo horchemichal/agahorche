@@ -95,7 +95,7 @@ export const KLODZKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kłodzku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kłodzku"),
     {
       id: "rodzina",
       heading: "Thermomix dla kłodzkiej rodziny",

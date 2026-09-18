@@ -297,7 +297,7 @@ export const KCYNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kcyni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kcyni"),
     {
       id: "rodzina",
       heading: "Thermomix dla kcyńskiej rodziny",

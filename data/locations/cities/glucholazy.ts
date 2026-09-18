@@ -173,7 +173,7 @@ export const GLUCHOLAZY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głuchołazach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głuchołazach"),
     {
       id: "rodzina",
       heading: "Thermomix dla głuchołaskiej rodziny",

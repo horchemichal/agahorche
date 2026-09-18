@@ -101,7 +101,7 @@ export const RZESZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rzeszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rzeszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rzeszowskiej rodziny",

@@ -181,7 +181,7 @@ export const IWANOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Iwanowice"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Iwanowice"),
     {
       id: "rodzina",
       heading: "Sad, który rodzi wszystko naraz",

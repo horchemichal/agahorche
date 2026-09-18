@@ -177,7 +177,7 @@ export const PISZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla piskiej rodziny",

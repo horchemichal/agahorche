@@ -195,7 +195,7 @@ export const LIDZBARK_WARMINSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lidzbarku Warmińskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lidzbarku Warmińskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla lidzbarskiej rodziny",

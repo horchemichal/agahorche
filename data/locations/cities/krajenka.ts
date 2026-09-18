@@ -291,7 +291,7 @@ export const KRAJENKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krajence"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krajence"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Krajenki",

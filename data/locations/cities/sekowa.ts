@@ -175,7 +175,7 @@ export const SEKOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Sękowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Sękowa"),
     {
       id: "rodzina",
       heading: "Dwadzieścia pięć osób na kilometr i puste doliny",

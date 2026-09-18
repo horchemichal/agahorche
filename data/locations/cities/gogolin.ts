@@ -110,7 +110,7 @@ export const GOGOLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gogolinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gogolinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gogolińskiej rodziny",

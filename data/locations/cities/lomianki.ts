@@ -264,7 +264,7 @@ export const LOMIANKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łomiankach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łomiankach"),
     {
       id: "rodzina",
       heading: "Thermomix dla łomiankowskiej rodziny",

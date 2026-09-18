@@ -109,7 +109,7 @@ export const POLICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Policach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Policach"),
     {
       id: "rodzina",
       heading: "Thermomix dla polickiej rodziny",

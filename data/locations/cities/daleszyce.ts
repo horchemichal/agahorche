@@ -158,7 +158,7 @@ export const DALESZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Daleszycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Daleszycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla daleszyckiej rodziny",

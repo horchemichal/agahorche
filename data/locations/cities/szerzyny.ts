@@ -208,7 +208,7 @@ export const SZERZYNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Szerzyny"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Szerzyny"),
     {
       id: "rodzina",
       heading: "Czterdzieści kilometrów do miasta, czyli spiżarnia",

@@ -109,7 +109,7 @@ export const LODZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łodzi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łodzi"),
     {
       id: "rodzina",
       heading: "Thermomix dla łódzkiej rodziny",

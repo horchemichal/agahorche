@@ -251,7 +251,7 @@ export const SULECIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sulęcinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sulęcinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sulęcińskiej rodziny",

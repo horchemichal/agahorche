@@ -99,7 +99,7 @@ export const KONSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Końskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Końskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla koneckiej rodziny",

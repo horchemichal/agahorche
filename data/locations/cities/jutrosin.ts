@@ -261,7 +261,7 @@ export const JUTROSIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jutrosinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jutrosinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Jutrosina",

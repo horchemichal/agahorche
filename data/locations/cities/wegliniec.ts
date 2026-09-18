@@ -245,7 +245,7 @@ export const WEGLINIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Węglińcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Węglińcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Węglińca",

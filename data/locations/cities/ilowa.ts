@@ -283,7 +283,7 @@ export const ILOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Iłowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Iłowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla iłowskiej rodziny",

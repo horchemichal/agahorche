@@ -278,7 +278,7 @@ export const JEDLINA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jedlinie-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jedlinie-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Jedliny-Zdroju",

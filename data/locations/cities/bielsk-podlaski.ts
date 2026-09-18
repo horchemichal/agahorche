@@ -98,7 +98,7 @@ export const BIELSK_PODLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bielsku Podlaskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bielsku Podlaskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla bielskiej rodziny",

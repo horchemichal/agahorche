@@ -268,7 +268,7 @@ export const MILANOWEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Milanówku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Milanówku"),
     {
       id: "rodzina",
       heading: "Thermomix dla milanowskiej rodziny",

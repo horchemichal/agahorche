@@ -246,7 +246,7 @@ export const GUBIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gubinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gubinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla gubińskiej rodziny",

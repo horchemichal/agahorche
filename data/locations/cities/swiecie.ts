@@ -101,7 +101,7 @@ export const SWIECIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świeciu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świeciu"),
     {
       id: "rodzina",
       heading: "Thermomix dla świeckiej rodziny",

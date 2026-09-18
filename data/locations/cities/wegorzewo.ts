@@ -184,7 +184,7 @@ export const WEGORZEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Węgorzewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Węgorzewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla węgorzewskiej rodziny",

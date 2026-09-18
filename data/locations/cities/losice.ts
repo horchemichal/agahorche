@@ -211,7 +211,7 @@ export const LOSICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łosicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łosicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla łosickiej rodziny",

@@ -97,7 +97,7 @@ export const BRZEZINY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzezinach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzezinach"),
     {
       id: "rodzina",
       heading: "Thermomix dla brzezińskiej rodziny",

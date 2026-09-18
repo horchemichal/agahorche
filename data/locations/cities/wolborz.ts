@@ -173,7 +173,7 @@ export const WOLBORZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wolborzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wolborzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wolborskiej rodziny",

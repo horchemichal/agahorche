@@ -139,7 +139,7 @@ export const BOCHNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bochni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bochni"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bochni",

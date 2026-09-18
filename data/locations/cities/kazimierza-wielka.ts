@@ -108,7 +108,7 @@ export const KAZIMIERZA_WIELKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kazimierzy Wielkiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kazimierzy Wielkiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Kazimierza Wielka",

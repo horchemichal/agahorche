@@ -109,7 +109,7 @@ export const CZELADZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czeladzi"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czeladzi"),
     {
       id: "rodzina",
       heading: "Thermomix dla czeladzkiej rodziny",

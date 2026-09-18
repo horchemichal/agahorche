@@ -99,7 +99,7 @@ export const JELENIA_GORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jeleniej Górze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jeleniej Górze"),
     {
       id: "rodzina",
       heading: "Thermomix dla jeleniogórskiej rodziny",

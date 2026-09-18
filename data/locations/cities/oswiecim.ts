@@ -147,7 +147,7 @@ export const OSWIECIM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Oświęcimiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Oświęcimiu"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym każdy je o innej porze",

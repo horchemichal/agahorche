@@ -118,7 +118,7 @@ export const SWIATNIKI_GORNE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świątnikach Górnych"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świątnikach Górnych"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Świątniki Górne",

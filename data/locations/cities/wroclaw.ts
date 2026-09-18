@@ -105,7 +105,7 @@ export const WROCLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Wrocławiu"),
-    sekcjaRaty(),
+    sekcjaRaty("we Wrocławiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla wrocławskiej rodziny",

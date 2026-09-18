@@ -304,7 +304,7 @@ export const MIRSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mirsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mirsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mirska",

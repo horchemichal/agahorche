@@ -241,7 +241,7 @@ export const BLEDZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bledzewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bledzewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bledzewskiej rodziny",

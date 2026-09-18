@@ -95,7 +95,7 @@ export const GIZYCKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Giżycku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Giżycku"),
     {
       id: "rodzina",
       heading: "Thermomix dla giżyckiej rodziny",

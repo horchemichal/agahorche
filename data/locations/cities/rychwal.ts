@@ -281,7 +281,7 @@ export const RYCHWAL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rychwale"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rychwale"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Rychwału",

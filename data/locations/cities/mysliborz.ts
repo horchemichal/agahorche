@@ -280,7 +280,7 @@ export const MYSLIBORZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Myśliborzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Myśliborzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla myśliborskiej rodziny",

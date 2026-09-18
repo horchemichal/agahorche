@@ -247,7 +247,7 @@ export const SURAZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Surażu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Surażu"),
     {
       id: "rodzina",
       heading: "Thermomix dla surażskiej rodziny",

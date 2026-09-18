@@ -399,7 +399,7 @@ export const TUCZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tucznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tucznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Tuczna",

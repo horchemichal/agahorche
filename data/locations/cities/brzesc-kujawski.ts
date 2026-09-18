@@ -286,7 +286,7 @@ export const BRZESC_KUJAWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brześciu Kujawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brześciu Kujawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla brzeskiej rodziny",

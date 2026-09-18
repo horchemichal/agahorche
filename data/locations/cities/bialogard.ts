@@ -110,7 +110,7 @@ export const BIALOGARD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białogardzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białogardzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla białogardzkiej rodziny",

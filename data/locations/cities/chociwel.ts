@@ -280,7 +280,7 @@ export const CHOCIWEL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chociwlu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chociwlu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chociwla",

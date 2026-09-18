@@ -108,7 +108,7 @@ export const BRZEG: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brzegu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brzegu"),
     {
       id: "rodzina",
       heading: "Thermomix dla brzeskiej rodziny",

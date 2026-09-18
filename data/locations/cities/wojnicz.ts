@@ -91,7 +91,7 @@ export const WOJNICZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wojniczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wojniczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Wojnicz",

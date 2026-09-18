@@ -342,7 +342,7 @@ export const LADEK_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lądku-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lądku-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Lądka-Zdroju",

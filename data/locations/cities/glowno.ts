@@ -201,7 +201,7 @@ export const GLOWNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Głownie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Głownie"),
     {
       id: "rodzina",
       heading: "Thermomix dla głowieńskiej rodziny",

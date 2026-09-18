@@ -100,7 +100,7 @@ export const TERESPOL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Terespolu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Terespolu"),
     {
       id: "rodzina",
       heading: "Thermomix dla terespolskiej rodziny",

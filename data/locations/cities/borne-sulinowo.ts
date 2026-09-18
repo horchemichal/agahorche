@@ -257,7 +257,7 @@ export const BORNE_SULINOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bornem Sulinowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bornem Sulinowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bornego Sulinowa",

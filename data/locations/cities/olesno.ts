@@ -144,7 +144,7 @@ export const OLESNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Olesno"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Olesno"),
     {
       id: "rodzina",
       heading: "Gmina, z której się nie wyjeżdża",

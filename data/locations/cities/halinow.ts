@@ -286,7 +286,7 @@ export const HALINOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Halinowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Halinowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla halinowskiej rodziny",

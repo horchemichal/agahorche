@@ -101,7 +101,7 @@ export const CHMIELNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chmielniku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chmielniku"),
     {
       id: "rodzina",
       heading: "Thermomix dla chmielnickiej rodziny",

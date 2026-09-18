@@ -93,7 +93,7 @@ export const GLIWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gliwicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gliwicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla gliwickiej rodziny",

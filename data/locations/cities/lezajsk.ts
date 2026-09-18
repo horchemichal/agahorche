@@ -97,7 +97,7 @@ export const LEZAJSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Leżajsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Leżajsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla leżajskiej rodziny",

@@ -157,7 +157,7 @@ export const JABLONKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Jabłonka"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Jabłonka"),
     {
       id: "rodzina",
       heading: "Dom, w którym ktoś pracuje daleko",

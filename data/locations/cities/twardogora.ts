@@ -342,7 +342,7 @@ export const TWARDOGORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Twardogórze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Twardogórze"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Twardogóry",

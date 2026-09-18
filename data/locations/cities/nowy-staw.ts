@@ -182,7 +182,7 @@ export const NOWY_STAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Stawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Stawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowostawskiej rodziny",

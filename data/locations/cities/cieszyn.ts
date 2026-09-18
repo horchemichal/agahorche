@@ -107,7 +107,7 @@ export const CIESZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Cieszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Cieszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla cieszyńskiej rodziny",

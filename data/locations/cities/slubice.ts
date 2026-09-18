@@ -225,7 +225,7 @@ export const SLUBICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Słubicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Słubicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla słubickiej rodziny",

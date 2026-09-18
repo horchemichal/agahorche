@@ -160,7 +160,7 @@ export const WLOSZCZOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Włoszczowie"),
-    sekcjaRaty(),
+    sekcjaRaty("we Włoszczowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla włoszczowskiej rodziny",

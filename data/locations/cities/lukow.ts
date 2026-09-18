@@ -110,7 +110,7 @@ export const LUKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łukowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łukowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla łukowskiej rodziny",

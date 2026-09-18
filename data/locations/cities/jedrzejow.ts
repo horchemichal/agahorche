@@ -98,7 +98,7 @@ export const JEDRZEJOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jędrzejowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jędrzejowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla jędrzejowskiej rodziny",

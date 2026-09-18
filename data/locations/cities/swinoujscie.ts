@@ -99,7 +99,7 @@ export const SWINOUJSCIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świnoujściu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świnoujściu"),
     {
       id: "rodzina",
       heading: "Thermomix dla świnoujskiej rodziny",

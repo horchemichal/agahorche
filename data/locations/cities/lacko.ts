@@ -153,7 +153,7 @@ export const LACKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łącko"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łącko"),
     {
       id: "rodzina",
       heading: "Rok, który dzieli się na zbiory i resztę",

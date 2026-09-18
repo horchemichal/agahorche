@@ -177,7 +177,7 @@ export const SOKOLOW_MALOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sokołowie Małopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sokołowie Małopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla sokołowskiej rodziny",

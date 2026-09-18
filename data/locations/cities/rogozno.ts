@@ -245,7 +245,7 @@ export const ROGOZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rogoźnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rogoźnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Rogoźna",

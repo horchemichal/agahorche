@@ -198,7 +198,7 @@ export const SKRZYSZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Skrzyszów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Skrzyszów"),
     {
       id: "rodzina",
       heading: "Gaz płynie tędy, a urządzenie i tak działa na prąd",

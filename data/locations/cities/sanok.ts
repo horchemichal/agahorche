@@ -106,7 +106,7 @@ export const SANOK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sanoku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sanoku"),
     {
       id: "rodzina",
       heading: "Thermomix dla sanockiej rodziny",

@@ -163,7 +163,7 @@ export const ANNOPOL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Annopolu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Annopolu"),
     {
       id: "rodzina",
       heading: "Thermomix dla annopolskiej rodziny",

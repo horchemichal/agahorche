@@ -112,7 +112,7 @@ export const SKARZYSKO_KAMIENNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skarżysku-Kamiennej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skarżysku-Kamiennej"),
     {
       id: "rodzina",
       heading: "Thermomix dla skarżyskiej rodziny",

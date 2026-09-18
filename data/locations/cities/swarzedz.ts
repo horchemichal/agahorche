@@ -109,7 +109,7 @@ export const SWARZEDZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Swarzędzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Swarzędzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla swarzędzkiej rodziny",

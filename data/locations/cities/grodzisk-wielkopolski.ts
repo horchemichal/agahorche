@@ -266,7 +266,7 @@ export const GRODZISK_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grodzisku Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grodzisku Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Grodziska Wielkopolskiego",

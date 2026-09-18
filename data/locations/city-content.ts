@@ -235,7 +235,7 @@ const KRAKOW: CityContent = {
     },
     {
       id: "cena",
-      heading: "Ile kosztuje Thermomix TM7?",
+      heading: "Ile kosztuje Thermomix TM7 w Krakowie?",
       paragraphs: [
         "Cena Thermomixa jest jedna w całej Polsce — ustala ją Vorwerk, nie przedstawiciel. W Krakowie zapłacisz dokładnie tyle samo, co w Warszawie czy w Bochni, i nie ma żadnych „cen lokalnych” ani dopłat za dojazd.",
         "Aktualną kwotę widzisz w sekcji z ofertą powyżej — pobiera się wprost z mojego panelu, więc nie zdarzy się, że przeczytasz tu cenę sprzed trzech miesięcy. To, co się zmienia i o co naprawdę warto pytać, to promocje: pakiety z akcesoriami, warunki wymiany starego urządzenia i okresowe raty 0%.",
@@ -248,7 +248,7 @@ const KRAKOW: CityContent = {
     },
     {
       id: "raty",
-      heading: "Czy Thermomix można kupić na raty?",
+      heading: "Czy Thermomix w Krakowie można kupić na raty?",
       paragraphs: [
         "Tak. Dostępne jest finansowanie ratalne, okresowo z RRSO 0% — wtedy oddajesz dokładnie tyle, ile kosztuje urządzenie, bez dodatkowych kosztów. Wysokość raty zależy od okresu spłaty i wkładu własnego; policzysz ją sama w kalkulatorze poniżej.",
         "Wynik kalkulatora jest orientacyjny. Ostateczne warunki zależą od aktualnej oferty finansowania i decyzji instytucji finansującej — potwierdzam je zawsze przed złożeniem zamówienia, żeby nie było niespodzianek.",
@@ -637,7 +637,7 @@ const WIELICZKA: CityContent = {
     },
     {
       id: "cena",
-      heading: "Ile kosztuje Thermomix TM7?",
+      heading: "Ile kosztuje Thermomix TM7 w Wieliczce?",
       paragraphs: [
         "Cenę ustala Vorwerk i jest identyczna w całej Polsce — w Wieliczce zapłacisz tyle samo, co w Krakowie czy w Warszawie. Aktualna kwota jest w sekcji z ofertą powyżej; pobiera się wprost z mojego panelu, więc nie zdarzy się, że przeczytasz tu cenę sprzed pół roku.",
         "Zmieniają się natomiast promocje i zestawy — co miesiąc wyglądają inaczej. Dlatego zamiast wpisywać w treść kwotę, która za trzy tygodnie będzie nieprawdziwa, proszę o telefon albo o spojrzenie na karty ofert wyżej.",
@@ -646,10 +646,10 @@ const WIELICZKA: CityContent = {
     },
     {
       id: "raty",
-      heading: "Thermomix na raty — jak to policzyć",
+      heading: "Thermomix na raty w Wieliczce — jak to policzyć",
       paragraphs: [
         "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
-        "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji zwykle wracamy do tych samych liczb, tylko z dokładnymi danymi.",
+        "Warto policzyć to przed spotkaniem, na spokojnie i bez nikogo nad głową. Na prezentacji w Wieliczce zwykle wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
       links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
@@ -902,7 +902,7 @@ const NIEPOLOMICE: CityContent = {
     },
     {
       id: "cena",
-      heading: "Ile kosztuje Thermomix TM7?",
+      heading: "Ile kosztuje Thermomix TM7 w Niepołomicach?",
       paragraphs: [
         "Cenę ustala Vorwerk i jest identyczna w całym kraju — w Niepołomicach zapłacisz tyle samo, co w Krakowie. Aktualną kwotę masz w sekcji z ofertą powyżej; pobiera się wprost z mojego panelu, więc nie przeczytasz tu ceny sprzed pół roku.",
         "Zmieniają się natomiast promocje i zestawy — co miesiąc wyglądają inaczej. Dlatego nie wpisuję w treść kwoty, która za trzy tygodnie byłaby nieprawdziwa.",
@@ -911,10 +911,10 @@ const NIEPOLOMICE: CityContent = {
     },
     {
       id: "raty",
-      heading: "Thermomix na raty — jak to policzyć",
+      heading: "Thermomix na raty w Niepołomicach — jak to policzyć",
       paragraphs: [
         "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
-        "Policz to przed spotkaniem, bez nikogo nad głową. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
+        "Policz to przed spotkaniem, bez nikogo nad głową. Na prezentacji w Niepołomicach wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
       links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
@@ -1140,7 +1140,7 @@ const SKAWINA: CityContent = {
     },
     {
       id: "cena",
-      heading: "Ile kosztuje Thermomix TM7?",
+      heading: "Ile kosztuje Thermomix TM7 w Skawinie?",
       paragraphs: [
         "Cenę ustala Vorwerk i jest identyczna w całej Polsce — w Skawinie zapłacisz tyle samo, co w Krakowie. Aktualna kwota jest w sekcji z ofertą powyżej; pobiera się wprost z mojego panelu, więc zawsze jest bieżąca.",
         "Zmieniają się natomiast promocje i zestawy — co miesiąc wyglądają inaczej. Dlatego nie wpisuję w treść kwoty, która za trzy tygodnie byłaby nieprawdziwa.",
@@ -1149,10 +1149,10 @@ const SKAWINA: CityContent = {
     },
     {
       id: "raty",
-      heading: "Thermomix na raty — jak to policzyć",
+      heading: "Thermomix na raty w Skawinie — jak to policzyć",
       paragraphs: [
         "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
-        "Warto policzyć to przed spotkaniem, na spokojnie. Na prezentacji wracamy do tych samych liczb, tylko z dokładnymi danymi.",
+        "Warto policzyć to przed spotkaniem, na spokojnie. Na prezentacji w Skawinie wracamy do tych samych liczb, tylko z dokładnymi danymi.",
       ],
       links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },

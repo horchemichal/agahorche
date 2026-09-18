@@ -96,7 +96,7 @@ export const CMIELOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ćmielowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ćmielowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla ćmielowskiej rodziny",

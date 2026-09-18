@@ -238,7 +238,7 @@ export const WASOSZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wąsoszu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wąsoszu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wąsosza",

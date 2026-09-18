@@ -347,7 +347,7 @@ export const OBORNIKI_SLASKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Obornikach Śląskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Obornikach Śląskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Obornik Śląskich",

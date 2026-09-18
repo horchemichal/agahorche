@@ -164,7 +164,7 @@ export const GOLCZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gołcza"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gołcza"),
     {
       id: "rodzina",
       heading: "Gmina bez środka, dom z ogrodem",

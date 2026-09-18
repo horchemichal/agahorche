@@ -229,7 +229,7 @@ export const MICHALOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Michałowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Michałowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla michałowskiej rodziny",

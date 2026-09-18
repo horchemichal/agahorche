@@ -304,7 +304,7 @@ export const PILAWA_GORNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piławie Górnej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piławie Górnej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Piławy Górnej",

@@ -148,7 +148,7 @@ export const ZEGOCINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Żegocina"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Żegocina"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny w domu na stoku",

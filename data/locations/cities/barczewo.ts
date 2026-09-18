@@ -194,7 +194,7 @@ export const BARCZEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Barczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Barczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla barczewskiej rodziny",

@@ -101,7 +101,7 @@ export const KOLOBRZEG: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kołobrzegu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kołobrzegu"),
     {
       id: "rodzina",
       heading: "Thermomix dla kołobrzeskiej rodziny",

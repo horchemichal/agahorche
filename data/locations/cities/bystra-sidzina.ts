@@ -170,7 +170,7 @@ export const BYSTRA_SIDZINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Bystra-Sidzina"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Bystra-Sidzina"),
     {
       id: "rodzina",
       heading: "Gmina, w której co drugą firmę stanowi warsztat",

@@ -281,7 +281,7 @@ export const MIESZKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mieszkowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mieszkowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mieszkowic",

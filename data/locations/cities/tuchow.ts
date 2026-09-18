@@ -159,7 +159,7 @@ export const TUCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tuchowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tuchowie"),
     {
       id: "rodzina",
       heading: "Gotować dla ludzi, którzy przyjechali",

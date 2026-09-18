@@ -143,7 +143,7 @@ export const RYTRO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rytrze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rytrze"),
     {
       id: "rodzina",
       heading: "Gmina, w której najbliższy duży sklep jest w innej gminie",

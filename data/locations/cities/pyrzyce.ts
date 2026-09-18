@@ -100,7 +100,7 @@ export const PYRZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pyrzycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pyrzycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla pyrzyckiej rodziny",

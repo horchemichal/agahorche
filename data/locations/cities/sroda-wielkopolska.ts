@@ -121,7 +121,7 @@ export const SRODA_WIELKOPOLSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Środzie Wielkopolskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Środzie Wielkopolskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla średzkiej rodziny",

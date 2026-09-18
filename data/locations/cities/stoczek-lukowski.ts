@@ -165,7 +165,7 @@ export const STOCZEK_LUKOWSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stoczku Łukowskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stoczku Łukowskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla stoczkowskiej rodziny",

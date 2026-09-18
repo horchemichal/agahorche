@@ -165,7 +165,7 @@ export const SZCZUCIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczucinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczucinie"),
     {
       id: "rodzina",
       heading: "Gmina po przemyśle i po azbeście",

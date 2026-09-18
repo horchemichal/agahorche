@@ -115,7 +115,7 @@ export const OSTROW_MAZOWIECKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrowi Mazowieckiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrowi Mazowieckiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostrowskiej rodziny",

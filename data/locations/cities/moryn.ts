@@ -307,7 +307,7 @@ export const MORYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Moryniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Moryniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Morynia",

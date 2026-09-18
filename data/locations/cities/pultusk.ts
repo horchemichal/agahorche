@@ -233,7 +233,7 @@ export const PULTUSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pułtusku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pułtusku"),
     {
       id: "rodzina",
       heading: "Thermomix dla pułtuskiej rodziny",

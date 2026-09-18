@@ -128,7 +128,7 @@ export const ALEKSANDROW_LODZKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Aleksandrowie Łódzkim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Aleksandrowie Łódzkim"),
     {
       id: "rodzina",
       heading: "Thermomix dla aleksandrowskiej rodziny",

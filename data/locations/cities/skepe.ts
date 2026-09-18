@@ -346,7 +346,7 @@ export const SKEPE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skępem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skępem"),
     {
       id: "rodzina",
       heading: "Thermomix dla skępskiej rodziny",

@@ -104,7 +104,7 @@ export const CZECHOWICE_DZIEDZICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czechowicach-Dziedzicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czechowicach-Dziedzicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla czechowickiej rodziny",

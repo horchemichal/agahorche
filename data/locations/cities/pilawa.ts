@@ -270,7 +270,7 @@ export const PILAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pilawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pilawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pilawskiej rodziny",

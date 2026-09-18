@@ -262,7 +262,7 @@ export const WITKOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Witkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Witkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Witkowa",

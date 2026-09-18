@@ -158,7 +158,7 @@ export const SUCHEDNIOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suchedniowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suchedniowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla suchedniowskiej rodziny",

@@ -163,7 +163,7 @@ export const PARCZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Parczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Parczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla parczewskiej rodziny",

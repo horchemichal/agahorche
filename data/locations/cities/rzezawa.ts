@@ -127,7 +127,7 @@ export const RZEZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Rzezawa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Rzezawa"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny, która wraca o różnych porach",

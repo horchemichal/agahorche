@@ -161,7 +161,7 @@ export const SKALA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Skała"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Skała"),
     {
       id: "rodzina",
       heading: "Kuchnia, która zaczyna się na targu",

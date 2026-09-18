@@ -195,7 +195,7 @@ export const SZADEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szadku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szadku"),
     {
       id: "rodzina",
       heading: "Thermomix dla szadkowskiej rodziny",

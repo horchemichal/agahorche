@@ -109,7 +109,7 @@ export const SREM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Śremie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Śremie"),
     {
       id: "rodzina",
       heading: "Thermomix dla śremskiej rodziny",

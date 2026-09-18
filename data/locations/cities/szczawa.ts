@@ -157,7 +157,7 @@ export const SZCZAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczawie"),
     {
       id: "rodzina",
       heading: "Woda, która ma tu własną historię — i czego z nią nie robić",

@@ -101,7 +101,7 @@ export const PINCZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pińczowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pińczowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pińczowskiej rodziny",

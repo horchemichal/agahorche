@@ -159,7 +159,7 @@ export const CZERSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czersku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czersku"),
     {
       id: "rodzina",
       heading: "Thermomix dla czerskiej rodziny",

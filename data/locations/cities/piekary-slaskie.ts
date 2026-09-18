@@ -108,7 +108,7 @@ export const PIEKARY_SLASKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piekarach Śląskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piekarach Śląskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla piekarskiej rodziny",

@@ -190,7 +190,7 @@ export const LECZYCA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łęczycy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łęczycy"),
     {
       id: "rodzina",
       heading: "Thermomix dla łęczyckiej rodziny",

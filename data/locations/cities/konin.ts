@@ -98,7 +98,7 @@ export const KONIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Koninie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Koninie"),
     {
       id: "rodzina",
       heading: "Thermomix dla konińskiej rodziny",

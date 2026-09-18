@@ -169,7 +169,7 @@ export const ZALEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zalewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zalewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla zalewskiej rodziny",

@@ -99,7 +99,7 @@ export const ZGIERZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zgierzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zgierzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zgierskiej rodziny",

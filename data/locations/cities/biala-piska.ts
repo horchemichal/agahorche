@@ -193,7 +193,7 @@ export const BIALA_PISKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białej Piskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białej Piskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Białej Piskiej",

@@ -252,7 +252,7 @@ export const STESZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stęszewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stęszewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Stęszewa",

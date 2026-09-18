@@ -156,7 +156,7 @@ export const OTMUCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Otmuchowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Otmuchowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla otmuchowskiej rodziny",

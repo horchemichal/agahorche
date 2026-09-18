@@ -269,7 +269,7 @@ export const OSNO_LUBUSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ośnie Lubuskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ośnie Lubuskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla ośnieńskiej rodziny",

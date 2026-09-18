@@ -178,7 +178,7 @@ export const OZORKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ozorkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ozorkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla ozorkowskiej rodziny",

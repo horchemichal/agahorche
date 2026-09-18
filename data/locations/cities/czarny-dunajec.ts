@@ -169,7 +169,7 @@ export const CZARNY_DUNAJEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Czarny Dunajec"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Czarny Dunajec"),
     {
       id: "rodzina",
       heading: "Gmina, w której buduje się najwięcej",

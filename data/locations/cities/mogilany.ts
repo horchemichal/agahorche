@@ -116,7 +116,7 @@ export const MOGILANY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Mogilany"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Mogilany"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Mogilany",

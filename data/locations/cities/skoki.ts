@@ -295,7 +295,7 @@ export const SKOKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skokach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skokach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Skoków",

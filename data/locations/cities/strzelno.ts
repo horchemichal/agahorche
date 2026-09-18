@@ -257,7 +257,7 @@ export const STRZELNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strzelnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strzelnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla strzeleńskiej rodziny",

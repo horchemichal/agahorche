@@ -262,7 +262,7 @@ export const PRZYSUCHA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Przysusze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Przysusze"),
     {
       id: "rodzina",
       heading: "Thermomix dla przysuskiej rodziny",

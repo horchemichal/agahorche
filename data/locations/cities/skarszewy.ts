@@ -160,7 +160,7 @@ export const SKARSZEWY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skarszewach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skarszewach"),
     {
       id: "rodzina",
       heading: "Thermomix dla skarszewskiej rodziny",

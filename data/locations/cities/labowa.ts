@@ -167,7 +167,7 @@ export const LABOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łabowa"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łabowa"),
     {
       id: "rodzina",
       heading: "Pięćdziesiąt osób na kilometr kwadratowy",

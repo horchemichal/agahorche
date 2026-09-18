@@ -159,7 +159,7 @@ export const ZWIERZYNIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zwierzyńcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zwierzyńcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zwierzynieckiej rodziny",

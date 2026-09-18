@@ -100,7 +100,7 @@ export const SLUPSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Słupsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Słupsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla słupskiej rodziny",

@@ -96,7 +96,7 @@ export const OSTROLEKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrołęce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrołęce"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostrołęckiej rodziny",

@@ -105,7 +105,7 @@ export const STRZELCE_OPOLSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Strzelcach Opolskich"),
-    sekcjaRaty(),
+    sekcjaRaty("w Strzelcach Opolskich"),
     {
       id: "rodzina",
       heading: "Thermomix dla strzeleckiej rodziny",

@@ -267,7 +267,7 @@ export const WEGROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Węgrowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Węgrowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla węgrowskiej rodziny",

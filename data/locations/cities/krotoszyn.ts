@@ -111,7 +111,7 @@ export const KROTOSZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krotoszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krotoszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla krotoszyńskiej rodziny",

@@ -253,7 +253,7 @@ export const WSCHOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("we Wschowie"),
-    sekcjaRaty(),
+    sekcjaRaty("we Wschowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wschowskiej rodziny",

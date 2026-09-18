@@ -150,7 +150,7 @@ export const NOWY_TARG_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Nowy Targ"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Nowy Targ"),
     {
       id: "rodzina",
       heading: "Dwadzieścia jeden wsi, jedno miasto obok",

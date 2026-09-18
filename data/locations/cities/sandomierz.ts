@@ -111,7 +111,7 @@ export const SANDOMIERZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sandomierzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sandomierzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla sandomierskiej rodziny",

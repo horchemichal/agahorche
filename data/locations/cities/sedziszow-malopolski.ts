@@ -166,7 +166,7 @@ export const SEDZISZOW_MALOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sędziszowie Małopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sędziszowie Małopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla sędziszowskiej rodziny",

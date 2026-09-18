@@ -96,7 +96,7 @@ export const SOPOT: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sopocie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sopocie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sopockiej rodziny",

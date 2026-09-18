@@ -244,7 +244,7 @@ export const PLESZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pleszewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pleszewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pleszewa",

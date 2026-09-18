@@ -95,7 +95,7 @@ export const BIELSKO_BIALA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bielsku-Białej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bielsku-Białej"),
     {
       id: "rodzina",
       heading: "Thermomix dla bielskiej rodziny",

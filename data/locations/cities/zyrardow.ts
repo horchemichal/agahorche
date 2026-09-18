@@ -110,7 +110,7 @@ export const ZYRARDOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żyrardowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żyrardowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żyrardowskiej rodziny",

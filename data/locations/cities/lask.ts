@@ -201,7 +201,7 @@ export const LASK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łasku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łasku"),
     {
       id: "rodzina",
       heading: "Thermomix dla łaskiej rodziny",

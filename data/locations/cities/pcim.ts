@@ -139,7 +139,7 @@ export const PCIM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Pcim"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Pcim"),
     {
       id: "rodzina",
       heading: "Dom, z którego wyjeżdża się do pracy w dolinę",

@@ -236,7 +236,7 @@ export const DROHICZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Drohiczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Drohiczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla drohiczyńskiej rodziny",

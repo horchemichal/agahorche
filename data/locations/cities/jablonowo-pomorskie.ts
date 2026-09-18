@@ -309,7 +309,7 @@ export const JABLONOWO_POMORSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jabłonowie Pomorskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jabłonowie Pomorskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla jabłonowskiej rodziny",

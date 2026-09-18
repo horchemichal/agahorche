@@ -148,7 +148,7 @@ export const KROSCIENKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krościenku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krościenku"),
     {
       id: "rodzina",
       heading: "Sezon trwa cztery miesiące, rok ma dwanaście",

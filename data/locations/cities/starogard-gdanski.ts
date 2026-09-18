@@ -109,7 +109,7 @@ export const STAROGARD_GDANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Starogardzie Gdańskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Starogardzie Gdańskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla starogardzkiej rodziny",

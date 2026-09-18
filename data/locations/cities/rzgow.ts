@@ -97,7 +97,7 @@ export const RZGOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rzgowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rzgowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rzgowskiej rodziny",

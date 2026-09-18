@@ -109,7 +109,7 @@ export const RADOM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radomiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radomiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla radomskiej rodziny",

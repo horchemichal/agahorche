@@ -271,7 +271,7 @@ export const DRAWSKO_POMORSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Drawsku Pomorskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Drawsku Pomorskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla drawskiej rodziny",

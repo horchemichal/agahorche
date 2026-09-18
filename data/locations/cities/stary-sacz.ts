@@ -143,7 +143,7 @@ export const STARY_SACZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Starym Sączu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Starym Sączu"),
     {
       id: "rodzina",
       heading: "Gmina, w której prawie każdy prowadzi coś swojego",

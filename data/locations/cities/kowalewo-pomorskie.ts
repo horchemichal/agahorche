@@ -312,7 +312,7 @@ export const KOWALEWO_POMORSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kowalewie Pomorskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kowalewie Pomorskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla kowalewskiej rodziny",

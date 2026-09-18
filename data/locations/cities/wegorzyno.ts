@@ -319,7 +319,7 @@ export const WEGORZYNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Węgorzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Węgorzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Węgorzyna",

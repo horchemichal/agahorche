@@ -266,7 +266,7 @@ export const CHOSZCZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Choszcznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Choszcznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla choszczeńskiej rodziny",

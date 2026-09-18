@@ -152,7 +152,7 @@ export const MIEDZYRZEC_PODLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Międzyrzecu Podlaskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Międzyrzecu Podlaskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla międzyrzeckiej rodziny",

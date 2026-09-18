@@ -146,7 +146,7 @@ export const RABKA_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rabce-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rabce-Zdroju"),
     {
       id: "rodzina",
       heading: "Kuchnia w mieście, które żyje z gości",

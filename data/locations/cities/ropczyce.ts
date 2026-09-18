@@ -98,7 +98,7 @@ export const ROPCZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ropczycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ropczycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla ropczyckiej rodziny",

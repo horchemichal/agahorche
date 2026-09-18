@@ -247,7 +247,7 @@ export const WIECBORK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Więcborku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Więcborku"),
     {
       id: "rodzina",
       heading: "Thermomix dla więcborskiej rodziny",

@@ -380,7 +380,7 @@ export const BIERUTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bierutowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bierutowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Bierutowa",

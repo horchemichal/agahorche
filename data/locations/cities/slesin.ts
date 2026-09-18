@@ -273,7 +273,7 @@ export const SLESIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ślesinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ślesinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Ślesina",

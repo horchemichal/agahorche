@@ -214,7 +214,7 @@ export const LAPY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Łapach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Łapach"),
     {
       id: "rodzina",
       heading: "Thermomix dla łapskiej rodziny",

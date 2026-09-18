@@ -104,7 +104,7 @@ export const AUGUSTOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Augustowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Augustowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla augustowskiej rodziny",

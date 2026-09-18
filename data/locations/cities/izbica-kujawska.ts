@@ -355,7 +355,7 @@ export const IZBICA_KUJAWSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Izbicy Kujawskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Izbicy Kujawskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla izbickiej rodziny",

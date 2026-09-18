@@ -355,7 +355,7 @@ export const JAWORZYNA_SLASKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jaworzynie Śląskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jaworzynie Śląskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Jaworzyny Śląskiej",

@@ -356,7 +356,7 @@ export const RADZYN_CHELMINSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radzyniu Chełmińskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radzyniu Chełmińskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla radzyńskiej rodziny",

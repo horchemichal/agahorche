@@ -105,7 +105,7 @@ export const ZYWIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żywcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żywcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla żywieckiej rodziny",

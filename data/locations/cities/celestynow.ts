@@ -288,7 +288,7 @@ export const CELESTYNOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Celestynowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Celestynowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla celestynowskiej rodziny",

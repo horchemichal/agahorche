@@ -261,7 +261,7 @@ export const MASZEWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Maszewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Maszewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Maszewa",

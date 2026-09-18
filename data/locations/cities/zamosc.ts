@@ -103,7 +103,7 @@ export const ZAMOSC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zamościu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zamościu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zamojskiej rodziny",

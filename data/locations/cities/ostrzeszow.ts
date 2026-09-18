@@ -241,7 +241,7 @@ export const OSTRZESZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrzeszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrzeszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Ostrzeszowa",

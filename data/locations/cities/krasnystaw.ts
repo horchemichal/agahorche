@@ -103,7 +103,7 @@ export const KRASNYSTAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krasnymstawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krasnymstawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla krasnostawskiej rodziny",

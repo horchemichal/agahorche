@@ -156,7 +156,7 @@ export const CHELMEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chełmku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chełmku"),
     {
       id: "rodzina",
       heading: "Thermomix w niedużej kuchni i w rodzinie na kilka grafików",

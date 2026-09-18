@@ -260,7 +260,7 @@ export const MUROWANA_GOSLINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Murowanej Goślinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Murowanej Goślinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Murowanej Gośliny",

@@ -102,7 +102,7 @@ export const LUBLIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lublinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lublinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubelskiej rodziny",

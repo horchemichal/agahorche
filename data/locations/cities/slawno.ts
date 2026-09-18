@@ -272,7 +272,7 @@ export const SLAWNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sławnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sławnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sławieńskiej rodziny",

@@ -140,7 +140,7 @@ export const SIEPRAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Siepraw"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Siepraw"),
     {
       id: "rodzina",
       heading: "Nowy dom, dwa etaty w Krakowie i obiad po dziewiętnastej",

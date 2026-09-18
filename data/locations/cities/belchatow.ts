@@ -101,7 +101,7 @@ export const BELCHATOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bełchatowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bełchatowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bełchatowskiej rodziny",

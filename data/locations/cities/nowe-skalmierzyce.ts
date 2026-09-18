@@ -375,7 +375,7 @@ export const NOWE_SKALMIERZYCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowych Skalmierzycach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowych Skalmierzycach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowych Skalmierzyc",

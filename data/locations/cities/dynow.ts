@@ -160,7 +160,7 @@ export const DYNOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dynowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dynowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dynowskiej rodziny",

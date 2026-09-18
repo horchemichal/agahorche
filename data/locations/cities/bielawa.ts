@@ -108,7 +108,7 @@ export const BIELAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bielawie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bielawie"),
     {
       id: "rodzina",
       heading: "Thermomix dla bielawskiej rodziny",

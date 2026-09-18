@@ -162,7 +162,7 @@ export const DABROWA_TARNOWSKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dąbrowie Tarnowskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dąbrowie Tarnowskiej"),
     {
       id: "rodzina",
       heading: "Miasto powiatowe, do którego zjeżdża się z sześciu gmin",

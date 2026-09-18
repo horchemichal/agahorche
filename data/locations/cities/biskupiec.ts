@@ -190,7 +190,7 @@ export const BISKUPIEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Biskupcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Biskupcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla biskupieckiej rodziny",

@@ -104,7 +104,7 @@ export const KROSNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Krośnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Krośnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla krośnieńskiej rodziny",

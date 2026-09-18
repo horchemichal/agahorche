@@ -303,7 +303,7 @@ export const WIELEN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wieleniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wieleniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wielenia",

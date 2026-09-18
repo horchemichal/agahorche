@@ -188,7 +188,7 @@ export const GORLICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gorlicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gorlicach"),
     {
       id: "rodzina",
       heading: "Miasto, które się kurczy, i gmina, która rośnie",

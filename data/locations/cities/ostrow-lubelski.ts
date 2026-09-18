@@ -153,7 +153,7 @@ export const OSTROW_LUBELSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrowie Lubelskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrowie Lubelskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostrowskiej rodziny",

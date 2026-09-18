@@ -98,7 +98,7 @@ export const LESZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lesznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lesznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla leszczyńskiej rodziny",

@@ -156,7 +156,7 @@ export const LEWIN_BRZESKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lewinie Brzeskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lewinie Brzeskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla lewińskiej rodziny",

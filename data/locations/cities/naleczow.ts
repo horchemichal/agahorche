@@ -163,7 +163,7 @@ export const NALECZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nałęczowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nałęczowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla nałęczowskiej rodziny",

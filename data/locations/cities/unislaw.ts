@@ -381,7 +381,7 @@ export const UNISLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Unisławiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Unisławiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla unisławskiej rodziny",

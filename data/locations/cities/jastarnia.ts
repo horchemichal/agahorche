@@ -191,7 +191,7 @@ export const JASTARNIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jastarni"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jastarni"),
     {
       id: "rodzina",
       heading: "Thermomix dla jastarnickiej rodziny",

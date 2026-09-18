@@ -108,7 +108,7 @@ export const RUDA_SLASKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rudzie Śląskiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rudzie Śląskiej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rudzkiej rodziny",

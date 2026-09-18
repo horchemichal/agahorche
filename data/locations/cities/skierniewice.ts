@@ -100,7 +100,7 @@ export const SKIERNIEWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Skierniewicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Skierniewicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla skierniewickiej rodziny",

@@ -165,7 +165,7 @@ export const ZAGORZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zagórzu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zagórzu"),
     {
       id: "rodzina",
       heading: "Thermomix dla zagórskiej rodziny",

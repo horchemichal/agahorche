@@ -246,7 +246,7 @@ export const MIKSTAT: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mikstacie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mikstacie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mikstatu",

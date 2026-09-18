@@ -157,7 +157,7 @@ export const MAKOW_PODHALANSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Maków Podhalański"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Maków Podhalański"),
     {
       id: "rodzina",
       heading: "Godzina w pociągu w jedną stronę",

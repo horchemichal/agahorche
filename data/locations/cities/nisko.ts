@@ -97,7 +97,7 @@ export const NISKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nisku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nisku"),
     {
       id: "rodzina",
       heading: "Thermomix dla niżańskiej rodziny",

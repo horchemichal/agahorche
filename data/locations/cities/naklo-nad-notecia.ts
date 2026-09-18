@@ -333,7 +333,7 @@ export const NAKLO_NAD_NOTECIA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nakle nad Notecią"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nakle nad Notecią"),
     {
       id: "rodzina",
       heading: "Thermomix dla nakielskiej rodziny",

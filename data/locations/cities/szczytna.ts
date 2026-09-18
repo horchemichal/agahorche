@@ -376,7 +376,7 @@ export const SZCZYTNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczytnej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczytnej"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny ze Szczytnej",

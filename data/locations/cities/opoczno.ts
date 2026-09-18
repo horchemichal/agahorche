@@ -94,7 +94,7 @@ export const OPOCZNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Opocznie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Opocznie"),
     {
       id: "rodzina",
       heading: "Thermomix dla opoczyńskiej rodziny",

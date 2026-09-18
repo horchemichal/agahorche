@@ -187,7 +187,7 @@ export const BOLESLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Bolesław"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Bolesław"),
     {
       id: "rodzina",
       heading: "Kiedy dzieci są dorosłe, a gotuje się nadal dla wszystkich",

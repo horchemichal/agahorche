@@ -110,7 +110,7 @@ export const OLAWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Oławie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Oławie"),
     {
       id: "rodzina",
       heading: "Thermomix dla oławskiej rodziny",

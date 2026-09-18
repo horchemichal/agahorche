@@ -98,7 +98,7 @@ export const OSTROW_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ostrowie Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ostrowie Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla ostrowskiej rodziny",

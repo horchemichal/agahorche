@@ -98,7 +98,7 @@ export const KOLBUSZOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kolbuszowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kolbuszowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla kolbuszowskiej rodziny",

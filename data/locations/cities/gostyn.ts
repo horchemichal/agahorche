@@ -101,7 +101,7 @@ export const GOSTYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Gostyniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Gostyniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla gostyńskiej rodziny",

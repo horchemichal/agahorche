@@ -161,7 +161,7 @@ export const ZUKOWO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Żukowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Żukowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla żukowskiej rodziny",

@@ -110,7 +110,7 @@ export const KWIDZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kwidzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kwidzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kwidzyńskiej rodziny",

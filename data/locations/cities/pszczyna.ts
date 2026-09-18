@@ -108,7 +108,7 @@ export const PSZCZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pszczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pszczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla pszczyńskiej rodziny",

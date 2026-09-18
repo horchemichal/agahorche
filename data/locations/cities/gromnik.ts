@@ -189,7 +189,7 @@ export const GROMNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gromnik"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gromnik"),
     {
       id: "rodzina",
       heading: "Śniadanie przed siódmą i coś do plecaka",

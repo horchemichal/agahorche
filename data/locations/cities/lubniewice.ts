@@ -237,7 +237,7 @@ export const LUBNIEWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lubniewicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lubniewicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla lubniewickiej rodziny",

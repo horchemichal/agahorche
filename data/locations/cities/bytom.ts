@@ -98,7 +98,7 @@ export const BYTOM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bytomiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bytomiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla bytomskiej rodziny",

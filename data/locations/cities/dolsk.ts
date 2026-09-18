@@ -248,7 +248,7 @@ export const DOLSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dolsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dolsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Dolska",

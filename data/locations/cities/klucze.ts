@@ -162,7 +162,7 @@ export const KLUCZE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Klucze"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Klucze"),
     {
       id: "rodzina",
       heading: "Gotowanie dla domu, w którym jada się na zmiany",

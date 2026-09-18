@@ -323,7 +323,7 @@ export const GORA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Górze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Górze"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Góry na Dolnym Śląsku",

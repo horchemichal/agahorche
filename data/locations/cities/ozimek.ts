@@ -105,7 +105,7 @@ export const OZIMEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ozimku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ozimku"),
     {
       id: "rodzina",
       heading: "Thermomix dla ozimskiej rodziny",

@@ -163,7 +163,7 @@ export const PONIATOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Poniatowej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Poniatowej"),
     {
       id: "rodzina",
       heading: "Thermomix dla poniatowskiej rodziny",

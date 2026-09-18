@@ -161,7 +161,7 @@ export const RADZYN_PODLASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radzyniu Podlaskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radzyniu Podlaskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla radzyńskiej rodziny",

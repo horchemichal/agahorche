@@ -102,7 +102,7 @@ export const OLSZTYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Olsztynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Olsztynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla olsztyńskiej rodziny",

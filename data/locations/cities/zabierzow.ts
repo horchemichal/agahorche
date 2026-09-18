@@ -119,7 +119,7 @@ export const ZABIERZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Zabierzów"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Zabierzów"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Zabierzów",

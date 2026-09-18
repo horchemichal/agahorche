@@ -158,7 +158,7 @@ export const OPOLE_LUBELSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Opolu Lubelskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Opolu Lubelskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla opolskiej rodziny",

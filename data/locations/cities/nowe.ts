@@ -249,7 +249,7 @@ export const NOWE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowem"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowem"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Nowego",

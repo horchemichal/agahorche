@@ -170,7 +170,7 @@ export const POLANKA_WIELKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Polance Wielkiej"),
-    sekcjaRaty(),
+    sekcjaRaty("w Polance Wielkiej"),
     {
       id: "rodzina",
       heading: "Jedna parafia, jeden kalendarz",

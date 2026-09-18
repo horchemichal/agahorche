@@ -98,7 +98,7 @@ export const MIELEC: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mielcu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mielcu"),
     {
       id: "rodzina",
       heading: "Thermomix dla mieleckiej rodziny",

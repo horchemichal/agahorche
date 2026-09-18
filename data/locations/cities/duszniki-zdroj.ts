@@ -350,7 +350,7 @@ export const DUSZNIKI_ZDROJ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dusznikach-Zdroju"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dusznikach-Zdroju"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Dusznik-Zdroju",

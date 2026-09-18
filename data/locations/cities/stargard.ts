@@ -107,7 +107,7 @@ export const STARGARD: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stargardzie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stargardzie"),
     {
       id: "rodzina",
       heading: "Thermomix dla stargardzkiej rodziny",

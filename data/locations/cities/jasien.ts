@@ -284,7 +284,7 @@ export const JASIEN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jasieniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jasieniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla jasieńskiej rodziny",

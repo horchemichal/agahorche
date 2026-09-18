@@ -263,7 +263,7 @@ export const ZAGOROW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Zagórowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Zagórowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Zagórowa",

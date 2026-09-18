@@ -257,7 +257,7 @@ export const CHODZIEZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chodzieży"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chodzieży"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chodzieży",

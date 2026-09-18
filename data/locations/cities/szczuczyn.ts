@@ -257,7 +257,7 @@ export const SZCZUCZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Szczuczynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Szczuczynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla szczuczyńskiej rodziny",

@@ -209,7 +209,7 @@ export const LUBIEN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lubień"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lubień"),
     {
       id: "rodzina",
       heading: "Gmina, w której prawie co druga firma to budowlanka",

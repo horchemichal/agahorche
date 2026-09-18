@@ -100,7 +100,7 @@ export const NOWA_DEBA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowej Dębie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowej Dębie"),
     {
       id: "rodzina",
       heading: "Thermomix dla dębskiej rodziny",

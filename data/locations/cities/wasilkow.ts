@@ -209,7 +209,7 @@ export const WASILKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wasilkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wasilkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wasilkowskiej rodziny",

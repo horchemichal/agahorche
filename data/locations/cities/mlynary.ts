@@ -183,7 +183,7 @@ export const MLYNARY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Młynarach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Młynarach"),
     {
       id: "rodzina",
       heading: "Thermomix dla młynarskiej rodziny",

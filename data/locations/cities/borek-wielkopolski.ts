@@ -273,7 +273,7 @@ export const BOREK_WIELKOPOLSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Borku Wielkopolskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Borku Wielkopolskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Borku Wielkopolskiego",

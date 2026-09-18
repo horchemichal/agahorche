@@ -158,7 +158,7 @@ export const REJOWIEC_FABRYCZNY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Rejowcu Fabrycznym"),
-    sekcjaRaty(),
+    sekcjaRaty("w Rejowcu Fabrycznym"),
     {
       id: "rodzina",
       heading: "Thermomix dla rejowieckiej rodziny",

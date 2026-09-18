@@ -343,7 +343,7 @@ export const BIALY_BOR: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Białym Borze"),
-    sekcjaRaty(),
+    sekcjaRaty("w Białym Borze"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Białego Boru",

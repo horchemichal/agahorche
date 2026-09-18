@@ -111,7 +111,7 @@ export const JASLO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jaśle"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jaśle"),
     {
       id: "rodzina",
       heading: "Thermomix dla jasielskiej rodziny",

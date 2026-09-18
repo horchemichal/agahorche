@@ -191,7 +191,7 @@ export const CZCHOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Czchowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Czchowie"),
     {
       id: "rodzina",
       heading: "Kiedy obiad musi poczekać, aż wrócisz z Brzeska albo z Krakowa",

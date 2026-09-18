@@ -162,7 +162,7 @@ export const LUZNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Łużna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Łużna"),
     {
       id: "rodzina",
       heading: "Gmina, do której się wraca",

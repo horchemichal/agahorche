@@ -228,7 +228,7 @@ export const RADKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Radkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Radkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Radkowa",

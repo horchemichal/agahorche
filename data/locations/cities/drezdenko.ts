@@ -264,7 +264,7 @@ export const DREZDENKO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Drezdenku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Drezdenku"),
     {
       id: "rodzina",
       heading: "Thermomix dla drezdeneckiej rodziny",

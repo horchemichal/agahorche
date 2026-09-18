@@ -112,7 +112,7 @@ export const SWIEBODZICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Świebodzicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Świebodzicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla świebodzickiej rodziny",

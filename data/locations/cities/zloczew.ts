@@ -170,7 +170,7 @@ export const ZLOCZEW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Złoczewie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Złoczewie"),
     {
       id: "rodzina",
       heading: "Thermomix dla złoczewskiej rodziny",

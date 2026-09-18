@@ -361,7 +361,7 @@ export const DOBRZYN_NAD_WISLA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Dobrzyniu nad Wisłą"),
-    sekcjaRaty(),
+    sekcjaRaty("w Dobrzyniu nad Wisłą"),
     {
       id: "rodzina",
       heading: "Thermomix dla dobrzyńskiej rodziny",

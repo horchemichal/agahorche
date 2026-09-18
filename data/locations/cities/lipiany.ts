@@ -270,7 +270,7 @@ export const LIPIANY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Lipianach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Lipianach"),
     {
       id: "rodzina",
       heading: "Thermomix dla lipiańskiej rodziny",

@@ -282,7 +282,7 @@ export const JASTROWIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jastrowiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jastrowiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Jastrowia",

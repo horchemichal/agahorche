@@ -202,7 +202,7 @@ export const JEZIORANY: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jezioranach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jezioranach"),
     {
       id: "rodzina",
       heading: "Thermomix dla jezierańskiej rodziny",

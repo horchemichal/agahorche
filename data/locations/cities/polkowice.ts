@@ -114,7 +114,7 @@ export const POLKOWICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Polkowicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Polkowicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla polkowickiej rodziny",

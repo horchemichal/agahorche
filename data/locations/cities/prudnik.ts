@@ -96,7 +96,7 @@ export const PRUDNIK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Prudniku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Prudniku"),
     {
       id: "rodzina",
       heading: "Thermomix dla prudnickiej rodziny",

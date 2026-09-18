@@ -111,7 +111,7 @@ export const KOSCIERZYNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kościerzynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kościerzynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kościerskiej rodziny",

@@ -246,7 +246,7 @@ export const OPALENICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Opalenicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Opalenicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Opalenicy",

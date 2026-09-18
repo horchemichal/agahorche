@@ -97,7 +97,7 @@ export const JAROSLAW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Jarosławiu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Jarosławiu"),
     {
       id: "rodzina",
       heading: "Thermomix dla jarosławskiej rodziny",

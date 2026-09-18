@@ -267,7 +267,7 @@ export const KALUSZYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kałuszynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kałuszynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kałuszyńskiej rodziny",

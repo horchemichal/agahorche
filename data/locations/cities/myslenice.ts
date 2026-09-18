@@ -89,7 +89,7 @@ export const MYSLENICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Myślenicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Myślenicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Myślenic",

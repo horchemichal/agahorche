@@ -101,7 +101,7 @@ export const KLUCZBORK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kluczborku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kluczborku"),
     {
       id: "rodzina",
       heading: "Thermomix dla kluczborskiej rodziny",

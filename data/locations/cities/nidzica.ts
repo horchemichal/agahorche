@@ -185,7 +185,7 @@ export const NIDZICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nidzicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nidzicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla nidzickiej rodziny",

@@ -103,7 +103,7 @@ export const KARPACZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Karpaczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Karpaczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla karpackiej rodziny",

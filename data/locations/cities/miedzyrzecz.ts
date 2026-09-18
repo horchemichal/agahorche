@@ -100,7 +100,7 @@ export const MIEDZYRZECZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Międzyrzeczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Międzyrzeczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla międzyrzeckiej rodziny",

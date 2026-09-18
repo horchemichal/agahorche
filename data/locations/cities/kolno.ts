@@ -209,7 +209,7 @@ export const KOLNO: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kolnie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kolnie"),
     {
       id: "rodzina",
       heading: "Thermomix dla kolneńskiej rodziny",

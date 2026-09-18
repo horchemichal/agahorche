@@ -224,7 +224,7 @@ export const SIEMIATYCZE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Siemiatyczach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Siemiatyczach"),
     {
       id: "rodzina",
       heading: "Thermomix dla siemiatyckiej rodziny",

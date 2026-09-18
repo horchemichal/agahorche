@@ -101,7 +101,7 @@ export const POZNAN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Poznaniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Poznaniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla poznańskiej rodziny",

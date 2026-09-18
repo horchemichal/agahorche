@@ -265,7 +265,7 @@ export const MALOMICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Małomicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Małomicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla małomickiej rodziny",

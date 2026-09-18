@@ -355,7 +355,7 @@ export const TRZEBNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Trzebnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Trzebnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Trzebnicy",

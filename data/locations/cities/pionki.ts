@@ -274,7 +274,7 @@ export const PIONKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pionkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pionkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla pionkowskiej rodziny",

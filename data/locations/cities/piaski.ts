@@ -169,7 +169,7 @@ export const PIASKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piaskach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piaskach"),
     {
       id: "rodzina",
       heading: "Thermomix dla piaseckiej rodziny",

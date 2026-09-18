@@ -108,7 +108,7 @@ export const OTWOCK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Otwocku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Otwocku"),
     {
       id: "rodzina",
       heading: "Thermomix dla otwockiej rodziny",

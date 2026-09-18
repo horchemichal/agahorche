@@ -252,7 +252,7 @@ export const POBIEDZISKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Pobiedziskach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Pobiedziskach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Pobiedzisk",

@@ -205,7 +205,7 @@ export const KONIUSZA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Koniusza"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Koniusza"),
     {
       id: "rodzina",
       heading: "Kiszenie zostało w domach",

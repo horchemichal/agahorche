@@ -260,7 +260,7 @@ export const WOLSZTYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wolsztynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wolsztynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Wolsztyna",

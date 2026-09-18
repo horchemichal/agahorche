@@ -98,7 +98,7 @@ export const OLSZTYNEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Olsztynku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Olsztynku"),
     {
       id: "rodzina",
       heading: "Thermomix dla olsztyneckiej rodziny",

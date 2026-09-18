@@ -334,7 +334,7 @@ export const CHOJNOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Chojnowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Chojnowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Chojnowa",

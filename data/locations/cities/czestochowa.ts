@@ -93,7 +93,7 @@ export const CZESTOCHOWA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Częstochowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Częstochowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla częstochowskiej rodziny",

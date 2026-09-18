@@ -264,7 +264,7 @@ export const NASIELSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nasielsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nasielsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla nasielskiej rodziny",

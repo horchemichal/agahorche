@@ -267,7 +267,7 @@ export const MIEROSZOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Mieroszowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Mieroszowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Mieroszowa",

@@ -209,7 +209,7 @@ export const NOWE_MIASTO_LUBAWSKIE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Mieście Lubawskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Mieście Lubawskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla nowomiejskiej rodziny",

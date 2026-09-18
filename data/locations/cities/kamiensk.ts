@@ -171,7 +171,7 @@ export const KAMIENSK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kamieńsku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kamieńsku"),
     {
       id: "rodzina",
       heading: "Thermomix dla kamieńskiej rodziny",

@@ -110,7 +110,7 @@ export const ZABKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Ząbkach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Ząbkach"),
     {
       id: "rodzina",
       heading: "Thermomix dla ząbkowskiej rodziny",

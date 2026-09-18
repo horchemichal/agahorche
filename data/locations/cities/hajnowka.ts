@@ -151,7 +151,7 @@ export const HAJNOWKA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Hajnówce"),
-    sekcjaRaty(),
+    sekcjaRaty("w Hajnówce"),
     {
       id: "rodzina",
       heading: "Thermomix dla hajnowskiej rodziny",

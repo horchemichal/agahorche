@@ -159,7 +159,7 @@ export const MSZANA_DOLNA_GMINA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Mszana Dolna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Mszana Dolna"),
     {
       id: "rodzina",
       heading: "Jedzenie po całym dniu na dworze",

@@ -100,7 +100,7 @@ export const PIOTRKOW_TRYBUNALSKI: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Piotrkowie Trybunalskim"),
-    sekcjaRaty(),
+    sekcjaRaty("w Piotrkowie Trybunalskim"),
     {
       id: "rodzina",
       heading: "Thermomix dla piotrkowskiej rodziny",

@@ -104,7 +104,7 @@ export const BEDZIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Będzinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Będzinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla będzińskiej rodziny",

@@ -268,7 +268,7 @@ export const SIANOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sianowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sianowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla sianowskiej rodziny",

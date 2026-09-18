@@ -171,7 +171,7 @@ export const STOPNICA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Stopnicy"),
-    sekcjaRaty(),
+    sekcjaRaty("w Stopnicy"),
     {
       id: "rodzina",
       heading: "Thermomix dla stopnickiej rodziny",

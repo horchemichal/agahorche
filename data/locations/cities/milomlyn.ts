@@ -178,7 +178,7 @@ export const MILOMLYN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Miłomłynie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Miłomłynie"),
     {
       id: "rodzina",
       heading: "Thermomix dla miłomłyńskiej rodziny",

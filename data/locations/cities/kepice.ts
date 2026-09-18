@@ -181,7 +181,7 @@ export const KEPICE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kępicach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kępicach"),
     {
       id: "rodzina",
       heading: "Thermomix dla kępickiej rodziny",

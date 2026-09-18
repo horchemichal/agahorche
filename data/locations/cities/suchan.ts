@@ -387,7 +387,7 @@ export const SUCHAN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Suchaniu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Suchaniu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Suchania",

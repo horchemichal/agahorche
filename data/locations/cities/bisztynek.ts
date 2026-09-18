@@ -196,7 +196,7 @@ export const BISZTYNEK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Bisztynku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Bisztynku"),
     {
       id: "rodzina",
       heading: "Thermomix dla bisztyneckiej rodziny",

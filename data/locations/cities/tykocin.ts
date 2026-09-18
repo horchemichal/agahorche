@@ -247,7 +247,7 @@ export const TYKOCIN: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Tykocinie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Tykocinie"),
     {
       id: "rodzina",
       heading: "Thermomix dla tykocińskiej rodziny",

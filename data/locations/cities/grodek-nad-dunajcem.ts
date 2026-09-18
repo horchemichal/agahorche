@@ -161,7 +161,7 @@ export const GRODEK_NAD_DUNAJCEM: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Gródek nad Dunajcem"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Gródek nad Dunajcem"),
     {
       id: "rodzina",
       heading: "Cztery miesiące sezonu i osiem miesięcy reszty",

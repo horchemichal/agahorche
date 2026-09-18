@@ -282,7 +282,7 @@ export const BRWINOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Brwinowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Brwinowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla brwinowskiej rodziny",

@@ -147,7 +147,7 @@ export const LIPNICA_MUROWANA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Lipnica Murowana"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Lipnica Murowana"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny, która gotuje według przepisu babci",

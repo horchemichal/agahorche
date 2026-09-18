@@ -351,7 +351,7 @@ export const BOGUSZOW_GORCE: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Boguszowie-Gorcach"),
-    sekcjaRaty(),
+    sekcjaRaty("w Boguszowie-Gorcach"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Boguszowa-Gorc",

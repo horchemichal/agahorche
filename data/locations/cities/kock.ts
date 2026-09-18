@@ -162,7 +162,7 @@ export const KOCK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Kocku"),
-    sekcjaRaty(),
+    sekcjaRaty("w Kocku"),
     {
       id: "rodzina",
       heading: "Thermomix dla kockiej rodziny",

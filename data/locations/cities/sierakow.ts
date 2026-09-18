@@ -283,7 +283,7 @@ export const SIERAKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Sierakowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Sierakowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Sierakowa",

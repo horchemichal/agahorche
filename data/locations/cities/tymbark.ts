@@ -148,7 +148,7 @@ export const TYMBARK: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Tymbark"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Tymbark"),
     {
       id: "rodzina",
       heading: "Thermomix w domu, w którym obiad jest o stałej porze",

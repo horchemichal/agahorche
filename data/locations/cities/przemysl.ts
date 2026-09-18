@@ -110,7 +110,7 @@ export const PRZEMYSL: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Przemyślu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Przemyślu"),
     {
       id: "rodzina",
       heading: "Thermomix dla przemyskiej rodziny",

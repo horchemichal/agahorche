@@ -166,7 +166,7 @@ export const GRODKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Grodkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Grodkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla grodkowskiej rodziny",

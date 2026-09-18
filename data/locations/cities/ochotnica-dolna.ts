@@ -169,7 +169,7 @@ export const OCHOTNICA_DOLNA: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w gminie Ochotnica Dolna"),
-    sekcjaRaty(),
+    sekcjaRaty("w gminie Ochotnica Dolna"),
     {
       id: "rodzina",
       heading: "Połowa firm to budowlanka, a trzystu ludzi wyjeżdża do pracy",

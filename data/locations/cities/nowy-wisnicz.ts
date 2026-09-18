@@ -89,7 +89,7 @@ export const NOWY_WISNICZ: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Nowym Wiśniczu"),
-    sekcjaRaty(),
+    sekcjaRaty("w Nowym Wiśniczu"),
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z gminy Nowy Wiśnicz",

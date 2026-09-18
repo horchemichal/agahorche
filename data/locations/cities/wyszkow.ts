@@ -111,7 +111,7 @@ export const WYSZKOW: CityContent = {
     },
     sekcjaTm7(),
     sekcjaCena("w Wyszkowie"),
-    sekcjaRaty(),
+    sekcjaRaty("w Wyszkowie"),
     {
       id: "rodzina",
       heading: "Thermomix dla wyszkowskiej rodziny",
