@@ -924,6 +924,11 @@ import { UJSCIE } from "./ujscie";
 import { KRAJENKA } from "./krajenka";
 import { RAKONIEWICE } from "./rakoniewice";
 import { MILOSLAW } from "./miloslaw";
+import { SOMPOLNO } from "./sompolno";
+import { TULISZKOW } from "./tuliszkow";
+import { GOLANCZ } from "./golancz";
+import { SLESIN } from "./slesin";
+import { NEKLA } from "./nekla";
 
 
 /**
@@ -1916,4 +1921,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KRAJENKA,
   RAKONIEWICE,
   MILOSLAW,
+  SOMPOLNO,
+  TULISZKOW,
+  GOLANCZ,
+  SLESIN,
+  NEKLA,
 ];
