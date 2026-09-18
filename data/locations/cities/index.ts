@@ -934,6 +934,21 @@ import { PYZDRY } from "./pyzdry";
 import { KOBYLIN } from "./kobylin";
 import { MARGONIN } from "./margonin";
 import { LWOWEK } from "./lwowek";
+import { BOJANOWO } from "./bojanowo";
+import { ZAGOROW } from "./zagorow";
+import { SULMIERZYCE } from "./sulmierzyce";
+import { RYDZYNA } from "./rydzyna";
+import { PONIEC } from "./poniec";
+import { KSIAZ_WIELKOPOLSKI } from "./ksiaz-wielkopolski";
+import { KLECKO } from "./klecko";
+import { BOREK_WIELKOPOLSKI } from "./borek-wielkopolski";
+import { CZERNIEJEWO } from "./czerniejewo";
+import { DOBRZYCA } from "./dobrzyca";
+import { RYCHWAL } from "./rychwal";
+import { OBRZYCKO } from "./obrzycko";
+import { OSIECZNA } from "./osieczna";
+import { RASZKOW } from "./raszkow";
+import { ZERKOW } from "./zerkow";
 
 
 /**
@@ -1936,4 +1951,19 @@ export const MIASTA_DOPISANE: CityContent[] = [
   KOBYLIN,
   MARGONIN,
   LWOWEK,
+  BOJANOWO,
+  ZAGOROW,
+  SULMIERZYCE,
+  RYDZYNA,
+  PONIEC,
+  KSIAZ_WIELKOPOLSKI,
+  KLECKO,
+  BOREK_WIELKOPOLSKI,
+  CZERNIEJEWO,
+  DOBRZYCA,
+  RYCHWAL,
+  OBRZYCKO,
+  OSIECZNA,
+  RASZKOW,
+  ZERKOW,
 ];
