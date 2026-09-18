@@ -929,6 +929,11 @@ import { TULISZKOW } from "./tuliszkow";
 import { GOLANCZ } from "./golancz";
 import { SLESIN } from "./slesin";
 import { NEKLA } from "./nekla";
+import { MIEJSKA_GORKA } from "./miejska-gorka";
+import { PYZDRY } from "./pyzdry";
+import { KOBYLIN } from "./kobylin";
+import { MARGONIN } from "./margonin";
+import { LWOWEK } from "./lwowek";
 
 
 /**
@@ -1926,4 +1931,9 @@ export const MIASTA_DOPISANE: CityContent[] = [
   GOLANCZ,
   SLESIN,
   NEKLA,
+  MIEJSKA_GORKA,
+  PYZDRY,
+  KOBYLIN,
+  MARGONIN,
+  LWOWEK,
 ];
