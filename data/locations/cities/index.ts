@@ -949,6 +949,15 @@ import { OBRZYCKO } from "./obrzycko";
 import { OSIECZNA } from "./osieczna";
 import { RASZKOW } from "./raszkow";
 import { ZERKOW } from "./zerkow";
+import { GRABOW_NAD_PROSNA } from "./grabow-nad-prosna";
+import { DABIE } from "./dabie";
+import { JUTROSIN } from "./jutrosin";
+import { MIKSTAT } from "./mikstat";
+import { PRZEDECZ } from "./przedecz";
+import { KRZYWIN } from "./krzywin";
+import { CHOCZ } from "./chocz";
+import { DOLSK } from "./dolsk";
+import { STAWISZYN } from "./stawiszyn";
 
 
 /**
@@ -1966,4 +1975,13 @@ export const MIASTA_DOPISANE: CityContent[] = [
   OSIECZNA,
   RASZKOW,
   ZERKOW,
+  GRABOW_NAD_PROSNA,
+  DABIE,
+  JUTROSIN,
+  MIKSTAT,
+  PRZEDECZ,
+  KRZYWIN,
+  CHOCZ,
+  DOLSK,
+  STAWISZYN,
 ];
