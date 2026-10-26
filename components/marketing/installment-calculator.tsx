@@ -78,13 +78,13 @@ export function InstallmentCalculator({
   }, [financedAmount, activeMonths, financing]);
 
   return (
-    <div className="rounded-2xl border border-border bg-neutral-0 p-6 shadow-[var(--shadow-card)] md:p-8">
+    <div className="@container rounded-2xl border border-border bg-neutral-0 p-6 shadow-[var(--shadow-card)] md:p-8">
       <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-brand-700">Kalkulator rat</p>
       <h3 className="mb-6 font-display text-xl text-neutral-900 md:text-2xl">
         Ile zapłacisz za Thermomix® TM7?
       </h3>
 
-      <div className="grid gap-8 lg:grid-cols-[1.3fr_1fr]">
+      <div className="grid gap-8 @3xl:grid-cols-[1.3fr_1fr]">
         <div>
           <div className="mb-6">
             <label htmlFor={priceInputId} className="mb-2 block text-sm font-medium text-neutral-700">

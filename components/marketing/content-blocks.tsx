@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
@@ -91,7 +92,7 @@ export function Photo({
     <figure className={cn("overflow-hidden", className)}>
       {/* eslint-disable-next-line @next/next/no-img-element -- zdjęcie z własnego serwera (/zdjecia/...) */}
       <img
-        src={src}
+        {...obrazResponsywny(src, "(max-width: 768px) 100vw, 768px")}
         alt={alt}
         width={w}
         height={h}

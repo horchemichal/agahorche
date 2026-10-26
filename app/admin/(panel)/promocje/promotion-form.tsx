@@ -5,6 +5,8 @@ import { savePromotionAction } from "./actions";
 import { Input, Label, Textarea, Checkbox, FieldError } from "@/components/ui/form-fields";
 import { Button, ButtonLink } from "@/components/ui/button";
 import type { Promotion } from "@/types/promotion";
+import type { MediaAsset } from "@/types/media";
+import { ImagePicker } from "@/components/admin/image-picker";
 import type { FormActionState } from "@/lib/admin/actions-helpers";
 
 const initialState: FormActionState = { error: null };
@@ -14,7 +16,7 @@ function toDateInputValue(iso: string | undefined): string {
   return iso.slice(0, 10);
 }
 
-export function PromotionForm({ promotion }: { promotion?: Promotion }) {
+export function PromotionForm({ promotion, mediaAssets = [] }: { promotion?: Promotion; mediaAssets?: MediaAsset[] }) {
   const [state, formAction, pending] = useActionState(savePromotionAction, initialState);
 
   return (
@@ -60,6 +62,16 @@ export function PromotionForm({ promotion }: { promotion?: Promotion }) {
           <Label htmlFor="priority">Priorytet</Label>
           <Input id="priority" name="priority" inputMode="numeric" defaultValue={promotion?.priority ?? 0} />
         </div>
+      </div>
+      <div className="space-y-4 rounded-xl border border-neutral-200 p-4">
+        <ImagePicker
+          id="imageMediaId"
+          name="imageMediaId"
+          label="Zdjęcie promocji"
+          defaultValue={promotion?.imageMediaId ?? null}
+          mediaAssets={mediaAssets}
+          fallbackNote="Bez zdjęcia karta promocji na stronie głównej pokazuje sam tekst."
+        />
       </div>
 
       <Checkbox

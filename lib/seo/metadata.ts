@@ -93,7 +93,7 @@ export function buildMetadata(input: SeoInput): Metadata {
   };
 }
 
-const FALLBACK_TITLE = `${SITE.name} — Przedstawicielka Thermomix`;
+const FALLBACK_TITLE = `${SITE.name} — Przedstawiciel Thermomix`;
 const FALLBACK_DESCRIPTION =
   "Bezpłatne prezentacje Thermomix z Agą Horche. Umów spotkanie u siebie w domu i poznaj TM7.";
 
@@ -146,7 +146,8 @@ export async function buildRootMetadata(): Promise<Metadata> {
       index: robots.startsWith("index"),
       follow: robots.endsWith("follow"),
     },
-    icons: iconUrl ? { icon: iconUrl } : undefined,
+    icons: { ...(iconUrl ? { icon: iconUrl } : {}), apple: "/ikony/apple-touch-icon.png" },
+    appleWebApp: { capable: true, title: "Aga Club", statusBarStyle: "default" },
     openGraph: ogImageUrl
       ? {
           images: [{ url: ogImageUrl }],

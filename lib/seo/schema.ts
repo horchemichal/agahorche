@@ -15,6 +15,13 @@ import type { BreadcrumbItem, FaqItem } from "@/types/seo";
 
 export type JsonLd = Record<string, unknown>;
 
+// Profile Agi w sieci — ta sama lista dla Person, Organization i ProfessionalService (spójna encja dla Google i modeli AI).
+const SAME_AS = [
+  "https://www.instagram.com/agahorche_thermomix/",
+  "https://www.tiktok.com/@agahorche_thermomix",
+  "https://www.facebook.com/agulabuu",
+];
+
 export function organizationSchema(): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -22,6 +29,8 @@ export function organizationSchema(): JsonLd {
     "@id": absoluteUrl("/#organization"),
     name: SITE.name,
     url: SITE.url,
+    description: "Aga Horche — oficjalny przedstawiciel Thermomix® (Vorwerk Polska) z Bochni. Bezpłatne prezentacje Thermomix TM7 w domu klienta w Małopolsce i w całej Polsce.",
+    sameAs: SAME_AS,
     // TODO: dodać logo, gdy będzie finalny plik graficzny.
   };
 }
@@ -32,7 +41,10 @@ export function personSchema(): JsonLd {
     "@type": "Person",
     "@id": absoluteUrl("/o-mnie/#person"),
     name: "Agnieszka Horche",
-    jobTitle: "Oficjalna Przedstawicielka Thermomix",
+    alternateName: "Aga Horche",
+    sameAs: SAME_AS,
+    knowsAbout: ["Thermomix", "Thermomix TM7", "Cookidoo", "roboty kuchenne z funkcją gotowania"],
+    jobTitle: "Oficjalny Przedstawiciel Thermomix",
     url: absoluteUrl("/o-mnie"),
     worksFor: { "@id": absoluteUrl("/#organization") },
   };
@@ -55,6 +67,8 @@ export function webPageSchema(opts: {
   name: string;
   description: string;
   breadcrumbId?: string;
+  datePublished?: string;
+  dateModified?: string;
 }): JsonLd {
   return {
     "@context": "https://schema.org",
@@ -66,6 +80,8 @@ export function webPageSchema(opts: {
     isPartOf: { "@id": absoluteUrl("/#website") },
     ...(opts.breadcrumbId ? { breadcrumb: { "@id": opts.breadcrumbId } } : {}),
     inLanguage: "pl-PL",
+    ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
+    ...(opts.dateModified ? { dateModified: opts.dateModified } : {}),
   };
 }
 
@@ -141,12 +157,23 @@ export function articleSchema(opts: {
   };
 }
 
-/**
- * LocalBusiness is intentionally NOT wired up anywhere yet. Spec §11 requires
- * real address/contact data to justify it, and §42 forbids inventing that
- * data. Enable this only once Aga confirms a real, publishable business
- * address and phone number.
- */
-export function localBusinessSchemaTodo(): null {
-  return null;
+export const LOCAL_BUSINESS_ID = absoluteUrl("/#firma");
+
+export function localBusinessSchema(): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "@id": LOCAL_BUSINESS_ID,
+    name: "Aga Horche Przedstawiciel Thermomix",
+    url: absoluteUrl("/"),
+    telephone: "+48517185691",
+    address: { "@type": "PostalAddress", addressLocality: "Bochnia", addressRegion: "malopolskie", postalCode: "32-700", addressCountry: "PL" },
+    openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], opens: "07:00", closes: "22:00" }],
+    areaServed: ["Bochnia","Brzesko","Gdow","Wieliczka","Niepolomice","Krakow","Tarnow","Limanowa","Chrzanow"].map((n) => ({ "@type": "City", name: n })),
+    sameAs: SAME_AS,
+    description: "Oficjalny przedstawiciel Thermomix® (Vorwerk Polska) z Bochni — bezpłatne prezentacje Thermomix TM7 w domu, sprzedaż, raty i pomoc po zakupie.",
+    brand: { "@type": "Brand", name: "Thermomix" },
+    founder: { "@id": absoluteUrl("/o-mnie/#person") },
+    knowsAbout: ["Thermomix TM7", "Cookidoo", "prezentacja Thermomix"],
+  };
 }

@@ -26,6 +26,7 @@ export interface AdminNavItem {
 /** Sidebar structure per spec §16 (Aga Admin panel sections). */
 export const ADMIN_NAV: AdminNavItem[] = [
   { label: "Dashboard", href: "/admin", icon: DashboardIcon, exact: true },
+  { label: "Do akceptacji", href: "/admin/do-akceptacji", icon: PromotionIcon },
   { label: "Strona główna", href: "/admin/strona-glowna", icon: HomeIcon },
   { label: "Oferta", href: "/admin/oferta", icon: OfferIcon },
   { label: "Promocje", href: "/admin/promocje", icon: PromotionIcon },

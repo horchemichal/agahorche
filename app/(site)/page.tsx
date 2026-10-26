@@ -17,9 +17,9 @@ import { getGlobalFaq } from "@/lib/faq";
 import { TESTIMONIALS } from "@/data/testimonials";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Aga Horche — Oficjalna Przedstawicielka Thermomix®",
+  title: "Przedstawiciel Thermomix Bochnia i Małopolska — Aga Horche",
   description:
-    "Bezpłatne prezentacje Thermomix® TM7 z Agą Horche — u Ciebie w domu, w całej Polsce. Umów spotkanie i sprawdź, jak Thermomix może ułatwić gotowanie.",
+    "Przedstawiciel Thermomix® z Bochni — bezpłatne prezentacje TM7 u Ciebie w domu, w Małopolsce i w całej Polsce. Zadzwoń: 517 185 691.",
   path: "/",
   ogType: "website",
 });
@@ -47,9 +47,9 @@ export default async function HomePage() {
       <Hero />
       <TrustBar />
       <OfferCardsSection />
-      <SocialFollowSection />
-      <InstallmentCalculatorSection />
       <PresentationBand />
+      <InstallmentCalculatorSection />
+      <SocialFollowSection />
       <TestimonialsCarousel items={TESTIMONIALS} />
       <ServiceAreaSection />
       {/*

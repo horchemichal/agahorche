@@ -6,6 +6,7 @@ import { PanelHeader, EmptyState } from "@/components/admin/panel-states";
 import { Card, Badge } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { formatPln } from "@/lib/format";
+import { getMediaRepository } from "@/lib/database/repositories/media-repository";
 import { OfferDeleteButton } from "./offer-delete-button";
 
 export const metadata: Metadata = {
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default async function AdminOfertaPage() {
   await requireAdmin();
   const offers = await getOffersRepository().list();
+  const obrazki = new Map((await getMediaRepository().list()).map((m) => [m.id, m]));
 
   return (
     <>
@@ -35,7 +37,18 @@ export default async function AdminOfertaPage() {
         <div className="space-y-3">
           {offers.map((offer) => (
             <Card key={offer.id} className="flex flex-wrap items-center justify-between gap-4">
-              <div className="min-w-0">
+              {(() => {
+                const img = offer.imageMediaId ? obrazki.get(offer.imageMediaId) : undefined;
+                return img ? (
+                  // eslint-disable-next-line @next/next/no-img-element -- miniatura z biblioteki mediów
+                  <img src={img.url} alt={img.altText} loading="lazy" className="h-16 w-24 shrink-0 rounded-lg border border-border object-cover" />
+                ) : (
+                  <div className="flex h-16 w-24 shrink-0 items-center justify-center rounded-lg border border-dashed border-border text-[11px] text-muted">
+                    brak zdjęcia
+                  </div>
+                );
+              })()}
+              <div className="min-w-0 flex-1">
                 <div className="mb-1 flex flex-wrap items-center gap-2">
                   <Link href={`/admin/oferta/${offer.id}`} className="font-medium text-neutral-900 hover:underline">
                     {offer.productName}

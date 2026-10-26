@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prebuild": "node scripts/warianty-obrazow.mjs && node scripts/poradniki.mjs && node scripts/build-info.mjs",
+    "predev": "node scripts/warianty-obrazow.mjs && node scripts/poradniki.mjs"
   },
   "dependencies": {
     "@pdf-lib/fontkit": "^1.1.1",

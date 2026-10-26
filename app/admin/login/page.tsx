@@ -5,6 +5,11 @@ import { LoginForm } from "./login-form";
 
 export const metadata: Metadata = {
   title: "Logowanie — Aga Admin",
+  // Ten sam manifest co panel - zeby instalacja z ekranu logowania
+  // tez dala aplikacje "Aga Panel", a nie kliencka "Aga Club".
+  manifest: "/panel.webmanifest",
+  appleWebApp: { capable: true, title: "Aga Panel", statusBarStyle: "black-translucent" },
+  icons: { apple: "/ikony/panel-apple-touch-icon.png" },
   robots: { index: false, follow: false },
 };
 

@@ -8,3 +8,13 @@ storage/
 .env.*
 .env~
 !.env.example
+
+# warianty zdjec generowane przed buildem (scripts/warianty-obrazow.mjs)
+public/zdjecia/*-480.webp
+public/zdjecia/*-768.webp
+public/zdjecia/*-1200.webp
+public/oferty/*-480.webp
+public/oferty/*-768.webp
+public/oferty/*-1200.webp
+data/warianty-obrazow.json
+data/poradniki.generated.json

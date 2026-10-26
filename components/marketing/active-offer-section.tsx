@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { getMediaRepository } from "@/lib/database/repositories/media-repository";
 import { formatPln } from "@/lib/format";
@@ -55,7 +56,7 @@ export async function ActiveOfferSection() {
         {image ? (
           // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
           <img
-            src={image.url}
+            {...obrazResponsywny(image.url, "(max-width: 1024px) 100vw, 50vw")}
             alt={image.altText}
             className="aspect-[4/3] w-full rounded-lg object-cover"
           />

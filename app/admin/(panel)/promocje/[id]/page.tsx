@@ -4,6 +4,7 @@ import { requireAdmin } from "@/lib/auth/require-admin";
 import { getPromotionsRepository } from "@/lib/database/repositories/promotions-repository";
 import { PanelHeader } from "@/components/admin/panel-states";
 import { PromotionForm } from "../promotion-form";
+import { getMediaRepository } from "@/lib/database/repositories/media-repository";
 
 export const metadata: Metadata = {
   title: "Edytuj promocję — Aga Admin",
@@ -19,11 +20,12 @@ export default async function EditPromotionPage({ params }: Props) {
   const { id } = await params;
   const promotion = await getPromotionsRepository().get(id);
   if (!promotion) notFound();
+  const mediaAssets = (await getMediaRepository().list()).filter((asset) => asset.mimeType.startsWith("image/"));
 
   return (
     <>
       <PanelHeader title={`Edytuj: ${promotion.title}`} />
-      <PromotionForm promotion={promotion} />
+      <PromotionForm promotion={promotion} mediaAssets={mediaAssets} />
     </>
   );
 }

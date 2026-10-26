@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { Footer } from "@/components/layout/footer";
 import { StickyMobileCta } from "@/components/layout/sticky-cta";
 import { JsonLdScript } from "@/components/seo/json-ld";
-import { organizationSchema, websiteSchema } from "@/lib/seo/schema";
+import { organizationSchema, websiteSchema, localBusinessSchema } from "@/lib/seo/schema";
 import type { ReactNode } from "react";
 
 /**
@@ -68,7 +68,7 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
       <main className={cn("flex-1 pb-20 lg:pb-0", zalogowana && "klub-kompakt")}>{children}</main>
       <Footer />
       <StickyMobileCta />
-      <JsonLdScript data={[organizationSchema(), websiteSchema()]} />
+      <JsonLdScript data={[organizationSchema(), websiteSchema(), localBusinessSchema()]} />
     </>
   );
 }

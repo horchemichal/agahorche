@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import Link from "next/link";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { getMediaRepository } from "@/lib/database/repositories/media-repository";
@@ -73,7 +74,7 @@ export async function OfferCardsSection() {
               {image ? (
                 // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
                 <img
-                  src={image.url}
+                  {...obrazResponsywny(image.url, "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw")}
                   alt={image.altText || offer.productName}
                   className="aspect-square w-full object-cover"
                 />
@@ -94,9 +95,14 @@ export async function OfferCardsSection() {
                 <div className="mt-auto pt-3 sm:pt-4">
                   {price ? (
                     <p className="mb-2 font-display text-lg text-neutral-900 sm:mb-3 sm:text-xl">{price}</p>
-                  ) : (
-                    <p className="mb-2 text-xs text-muted sm:mb-3 sm:text-sm">Cena ustalana indywidualnie</p>
-                  )}
+                  ) : offer.installmentCents ? (
+                      <p className="mb-2 font-display text-lg text-neutral-900 sm:mb-3 sm:text-xl">
+                        {formatPln(offer.installmentCents)}
+                        <span className="font-sans text-sm text-muted"> / mies.{offer.installmentMonths ? " · " + offer.installmentMonths + " rat" : ""}</span>
+                      </p>
+                    ) : (
+                      <p className="mb-2 text-xs text-muted sm:mb-3 sm:text-sm">Cena ustalana indywidualnie</p>
+                    )}
                   <ButtonLink
                     href="/prezentacja"
                     size="md"

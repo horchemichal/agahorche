@@ -46,6 +46,9 @@ export const PRIMARY_NAV: NavItem[] = [
       { label: "TM7 vs TM6 — porównanie", href: "/thermomix/tm7-vs-tm6" },
       { label: "Funkcje Thermomixa", href: "/thermomix/funkcje" },
       { label: "Wady i zalety", href: "/thermomix/wady-i-zalety" },
+      { label: "Opinie o TM7", href: "/thermomix/tm7/opinie" },
+      { label: "Co potrafi Thermomix", href: "/thermomix/co-potrafi" },
+      { label: "Wymiana na TM7", href: "/thermomix/wymiana" },
       { label: "Akcesoria do TM7", href: "/akcesoria" },
       { label: "Thermomix dla rodziny", href: "/thermomix/dla-rodziny" },
       { label: "Thermomix dla mamy", href: "/thermomix/dla-mamy" },
@@ -134,15 +137,24 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
       { label: "TM7 vs TM6", href: "/thermomix/tm7-vs-tm6" },
       { label: "Funkcje", href: "/thermomix/funkcje" },
       { label: "Wady i zalety", href: "/thermomix/wady-i-zalety" },
+      { label: "Modele Thermomix", href: "/thermomix/modele" },
+      { label: "Lidlomix czy Thermomix", href: "/thermomix/lidlomix-czy-thermomix" },
     ],
   },
   {
     title: "Zakup",
     items: [
       { label: "Cena i promocje", href: "/oferta" },
+      { label: "Ile kosztuje TM7", href: "/thermomix/tm7/cena" },
       { label: "Jak kupić Thermomixa", href: "/jak-kupic-thermomix" },
       { label: "Raty 0%", href: "/finansowanie" },
       { label: "Akcesoria", href: "/akcesoria" },
+      { label: "Cookidoo — abonament", href: "/cookidoo" },
+      { label: "Używany Thermomix", href: "/thermomix/uzywany" },
+      { label: "Thermomix TM7 opinie", href: "/thermomix/tm7/opinie" },
+      { label: "Thermomix czy tańszy robot", href: "/thermomix/porownanie" },
+      { label: "Jak myć Thermomix", href: "/thermomix/mycie-i-obsluga" },
+      { label: "Wymiana Thermomixa na TM7", href: "/thermomix/wymiana" },
     ],
   },
   {
@@ -175,4 +187,26 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
       { label: "Kontakt", href: "/kontakt" },
     ],
   },
+];
+
+/** Huby wojewodzkie w stopce (21.10.2026): kazda strona serwisu linkuje do 16
+ * hubow, a huby do wszystkich miast — sciezka dla ~500 stron, ktore Google
+ * zna, ale jeszcze nie zindeksowal. */
+export const FOOTER_WOJEWODZTWA: NavItem[] = [
+  { label: "Dolnośląskie", href: "/thermomix/dolnoslaskie" },
+  { label: "Kujawsko-pomorskie", href: "/thermomix/kujawsko-pomorskie" },
+  { label: "Lubelskie", href: "/thermomix/lubelskie" },
+  { label: "Lubuskie", href: "/thermomix/lubuskie" },
+  { label: "Łódzkie", href: "/thermomix/lodzkie" },
+  { label: "Małopolskie", href: "/thermomix/malopolskie" },
+  { label: "Mazowieckie", href: "/thermomix/mazowieckie" },
+  { label: "Opolskie", href: "/thermomix/opolskie" },
+  { label: "Podkarpackie", href: "/thermomix/podkarpackie" },
+  { label: "Podlaskie", href: "/thermomix/podlaskie" },
+  { label: "Pomorskie", href: "/thermomix/pomorskie" },
+  { label: "Śląskie", href: "/thermomix/slaskie" },
+  { label: "Świętokrzyskie", href: "/thermomix/swietokrzyskie" },
+  { label: "Warmińsko-mazurskie", href: "/thermomix/warminsko-mazurskie" },
+  { label: "Wielkopolskie", href: "/thermomix/wielkopolskie" },
+  { label: "Zachodniopomorskie", href: "/thermomix/zachodniopomorskie" },
 ];

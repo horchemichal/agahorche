@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -68,7 +69,7 @@ export default async function OfertaPage() {
                   <div className="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-brand-50 to-neutral-100 text-brand-600">
                     {image ? (
                       // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
-                      <img src={image.url} alt={image.altText} className="h-full w-full object-cover" />
+                      <img {...obrazResponsywny(image.url, "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw")} alt={image.altText} className="h-full w-full object-cover" />
                     ) : (
                       <ChefHatIcon width={40} height={40} strokeWidth={1.3} />
                     )}

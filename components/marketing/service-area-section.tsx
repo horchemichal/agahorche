@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import Link from "next/link";
 import { getAllCities } from "@/lib/locations";
 import { getHomepageContentRepository } from "@/lib/database/repositories/homepage-content-repository";
@@ -60,7 +61,7 @@ export async function ServiceAreaSection() {
         <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-brand-800 text-neutral-0">
           {serviceAreaImage ? (
             // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
-            <img src={serviceAreaImage.url} alt={serviceAreaImage.altText} className="h-full w-full object-cover" />
+            <img {...obrazResponsywny(serviceAreaImage.url, "(max-width: 1024px) 100vw, 50vw")} alt={serviceAreaImage.altText} className="h-full w-full object-cover" />
           ) : (
             <div className="flex flex-col items-center gap-3 text-center">
               <PinIcon width={40} height={40} />

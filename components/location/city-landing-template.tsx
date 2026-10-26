@@ -3,8 +3,12 @@ import type { LocationResolution } from "@/types/location";
 import type { CityContent, CitySection } from "@/data/locations/city-content";
 import { CITIES_WITH_CONTENT } from "@/data/locations/city-content";
 import { miejscownik } from "@/data/locations/odmiana";
+import { wMiejscowniku, zdanieOCenie, biezacyMiesiac } from "@/lib/seo/lokalne";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { FaqSection } from "@/components/seo/faq-section";
+import { PanelWiedzy } from "@/components/location/panel-wiedzy";
+import { SerwisNajblizszy } from "@/components/location/serwis-najblizszy";
+import { WymianaStatus } from "@/components/wymiana/wymiana-status";
 import { JsonLdScript } from "@/components/seo/json-ld";
 import { Section } from "@/components/ui/section";
 import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
@@ -22,6 +26,7 @@ import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { CheckCircleIcon } from "@/components/marketing/icons";
 import { webPageSchema, personSchema } from "@/lib/seo/schema";
 import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
+import { BUILD_AT } from "@/lib/build-info.generated";
 import { absoluteUrl, SITE } from "@/lib/utils";
 import { TESTIMONIALS } from "@/data/testimonials";
 import { getDistrictsForCity } from "@/data/locations/districts";
@@ -306,6 +311,28 @@ export async function CityLandingTemplate({
               {naglowekPrzedstawiciela(content.h1)}
             </Heading>
             <Lead className="mt-5 max-w-xl">{content.lead}</Lead>
+            {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
+                czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
+            <p className="mt-4 max-w-xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
+              <strong>W skrócie:</strong> Aga Horche to oficjalny przedstawiciel Thermomix® (Vorwerk Polska) z Bochni.{" "}
+              Prezentacja Thermomix TM7{" "}
+              {wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} jest bezpłatna
+              i odbywa się u Ciebie w kuchni, bez dopłaty za dojazd. {zdanieOCenie(offer) ?? ""}{" "}
+              <Link href="/thermomix/tm7/cena" className="font-medium text-brand-700 underline underline-offset-4">
+                Co zawiera cena
+              </Link>
+              ?{" "}
+              Termin ustalisz telefonicznie, także po pracy i w weekend:{" "}
+              <a href={SITE.phoneHref} className="font-medium text-brand-700 underline underline-offset-4">
+                {SITE.phone}
+              </a>
+              .
+            </p>
+            <p className="mt-2 text-xs text-neutral-500">
+              Aktualizacja strony:{" "}
+              <time dateTime={BUILD_AT}>{new Date(BUILD_AT).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" })}</time>
+              {" "}· ceny i promocje: {biezacyMiesiac()}
+            </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <ButtonLink href="#umow" size="lg">
                 Umów bezpłatną prezentację
@@ -712,6 +739,14 @@ export async function CityLandingTemplate({
         </div>
       </Section>
 
+      <PanelWiedzy miasto={location.name} wMiescie={location.nameLocative ?? miejscownik(location.slug)} />
+      <SerwisNajblizszy
+        slug={location.slug}
+        nazwa={location.name}
+        wMiescie={wMiejscowniku(location.nameLocative ?? miejscownik(location.slug), location.name ?? "")}
+        geo={content.geo}
+      />
+      <WymianaStatus wariant="miasto" gdzie={wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} />
       <FaqSection
         items={content.faq}
         title={`Thermomix ${location.name} — najczęściej zadawane pytania`}
@@ -747,6 +782,7 @@ export async function CityLandingTemplate({
             path: location.urlPath,
             name: content.seoTitle,
             description: content.seoDescription,
+              dateModified: BUILD_AT,
           }),
           // BreadcrumbList NIE jest tu emitowany — robi to już
           // <Breadcrumbs> na górze strony (components/seo/breadcrumbs.tsx),

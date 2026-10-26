@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FOOTER_NAV } from "@/data/nav";
+import { FOOTER_NAV, FOOTER_WOJEWODZTWA } from "@/data/nav";
 import { Container } from "@/components/ui/container";
 import { SITE } from "@/lib/utils";
 import { PhoneIcon, MessengerIcon } from "@/components/marketing/icons";
@@ -18,8 +18,17 @@ export function Footer() {
           <div className="md:col-span-3 lg:col-span-1">
             <p className="font-display text-lg font-semibold">Aga Horche</p>
             <p className="mt-1 text-xs uppercase tracking-wide text-neutral-400">
-              Oficjalna Przedstawicielka Thermomix®
-            </p>
+              Oficjalny Przedstawiciel Thermomix®
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-neutral-300">
+            Bochnia, województwo małopolskie
+            <br />
+            <a href="tel:+48517185691" className="underline-offset-2 hover:underline">
+              tel. 517 185 691
+            </a>
+            <br />
+            pn.–nd. 7:00–22:00
+          </p>
             <p className="mt-4 text-sm leading-relaxed text-neutral-400">
               Pomagam odkryć Thermomix® od pierwszego spotkania aż po codzienne gotowanie.
             </p>
@@ -50,6 +59,25 @@ export function Footer() {
           ))}
         </div>
 
+        <div className="mt-10 border-t border-neutral-700 pt-6">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-0">
+            Prezentacje Thermomix w całej Polsce
+          </p>
+          <ul className="flex flex-wrap gap-x-4 gap-y-2">
+            {FOOTER_WOJEWODZTWA.map((w) => (
+              <li key={w.href}>
+                <Link href={w.href} className="text-sm text-neutral-400 hover:text-brand-300">
+                  {w.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/wojewodztwa" className="text-sm font-medium text-neutral-300 hover:text-brand-300">
+                Wszystkie województwa
+              </Link>
+            </li>
+          </ul>
+        </div>
         <div className="mt-10 flex flex-col gap-2 border-t border-neutral-700 pt-6 text-sm text-neutral-400 md:flex-row md:items-center md:justify-between">
           <div>
             <p>© {year} Aga Horche. Wszelkie prawa zastrzeżone.</p>

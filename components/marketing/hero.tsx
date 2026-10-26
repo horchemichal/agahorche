@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import { Fragment } from "react";
 import { ButtonLink } from "@/components/ui/button";
 import { MessengerIcon, ChefHatIcon } from "@/components/marketing/icons";
@@ -117,7 +118,7 @@ export async function Hero() {
               {heroImage ? (
                 // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
                 <img
-                  src={heroImage.url}
+                  {...obrazResponsywny(heroImage.url, "(max-width: 1024px) 100vw, 50vw")}
                   alt={heroImage.altText}
                   className="h-full w-full object-contain object-center lg:h-auto lg:w-full"
                 />

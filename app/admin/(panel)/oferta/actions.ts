@@ -6,6 +6,8 @@ import { requireAdmin } from "@/lib/auth/require-admin";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { offerFormSchema } from "@/lib/validation/offer";
 import { recordAuditEvent } from "@/lib/admin/actions-helpers";
+import { getMediaRepository } from "@/lib/database/repositories/media-repository";
+import { storeUploadedFile, MediaUploadError } from "@/lib/admin/media-upload";
 import type { OfferInput } from "@/types/offer";
 import type { FormActionState } from "@/lib/admin/actions-helpers";
 
@@ -43,6 +45,28 @@ export async function saveOfferAction(_prevState: FormActionState, formData: For
     return { error: parsed.error.issues[0]?.message ?? "Formularz zawiera błędy." };
   }
 
+  // Zdjęcie wgrane prosto w formularzu (np. z telefonu) ma pierwszeństwo przed wybranym z biblioteki.
+  let wgraneZdjecie: string | null = null;
+  const plik = formData.get("imageFile");
+  if (plik instanceof File && plik.size > 0) {
+    try {
+      const stored = await storeUploadedFile(plik);
+      const asset = await getMediaRepository().create({
+        fileName: stored.fileName,
+        url: stored.url,
+        altText: parsed.data.productName,
+        storageProvider: stored.storageProvider,
+        sizeBytes: stored.sizeBytes,
+        mimeType: stored.mimeType,
+        uploadedBy: admin.email,
+      });
+      wgraneZdjecie = asset.id;
+    } catch (error) {
+      if (error instanceof MediaUploadError) return { error: error.message };
+      return { error: error instanceof Error ? error.message : "Nie udało się przesłać zdjęcia." };
+    }
+  }
+
   const input: OfferInput = {
     productName: parsed.data.productName,
     model: parsed.data.model,
@@ -50,7 +74,7 @@ export async function saveOfferAction(_prevState: FormActionState, formData: For
     installmentCents: parsed.data.installmentPrice,
     installmentMonths: parsed.data.installmentMonths,
     description: parsed.data.description,
-    imageMediaId: parsed.data.imageMediaId,
+    imageMediaId: wgraneZdjecie ?? parsed.data.imageMediaId,
     ctaLabel: parsed.data.ctaLabel,
     ctaHref: parsed.data.ctaHref,
     bonuses: parsed.data.bonuses,

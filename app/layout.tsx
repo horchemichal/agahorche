@@ -27,10 +27,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           a aplikacja otwierałaby się z paskiem adresu Safari, czyli jako
           strona — dokładnie to, czego Michał nie chciał.
         */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Aga Club" />
-        <link rel="apple-touch-icon" href="/ikony/apple-touch-icon.png" />
         {/* Kolor paska systemowego wokół aplikacji — ten sam zielony co przyciski. */}
         <meta name="theme-color" content="#00973d" />
       </head>

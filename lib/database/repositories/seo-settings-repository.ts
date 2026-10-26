@@ -5,7 +5,7 @@ import { getGlobalSingleton } from "@/lib/database/global-singleton";
 
 const DEFAULT_SETTINGS: SeoSettings = {
   id: "global",
-  siteTitle: `${SITE.name} — Przedstawicielka Thermomix`,
+  siteTitle: `${SITE.name} — Przedstawiciel Thermomix`,
   siteDescription:
     "Bezpłatne prezentacje Thermomix z Agą Horche. Umów spotkanie u siebie w domu i poznaj TM7.",
   ogImageMediaId: null,

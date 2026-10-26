@@ -44,7 +44,7 @@ const FAQ = [
   {
     question: "Gdzie dojeżdżasz?",
     answer:
-      "Na miejscu jestem najczęściej w Małopolsce — Bochnia, Brzesko, Kraków, Wieliczka, Niepołomice, Nowy Wiśnicz, Tarnów i okolice. Dalsze miejscowości też są możliwe, po ustaleniu terminu.",
+      "Prezentacje prowadzę w całej Polsce. Najczęściej jestem w Małopolsce — Bochnia, Brzesko, Kraków, Wieliczka, Niepołomice, Nowy Wiśnicz, Tarnów i okolice — a do dalszych miejscowości dojeżdżam po ustaleniu terminu.",
   },
   {
     question: "Co dostaję po zakupie?",
@@ -73,7 +73,7 @@ export default function OMniePage() {
               Aga Horche
             </Heading>
             <Lead className="mt-5 max-w-xl">
-              Prowadzę prezentacje Thermomixa w Małopolsce — u ludzi w kuchniach, przy prawdziwym
+              Prowadzę prezentacje Thermomixa w całej Polsce, najczęściej w Małopolsce — u ludzi w kuchniach, przy prawdziwym
               obiedzie, a nie przy prezentacji ze slajdów.
             </Lead>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -88,7 +88,7 @@ export default function OMniePage() {
             src="/media/aga-przedstawiciel-thermomix-e08f7154.webp"
             alt="Aga Horche, oficjalna przedstawicielka Thermomix w Małopolsce, z urządzeniem TM7"
             imgClassName="aspect-square"
-            caption="Aga Horche — prezentacje Thermomixa w Małopolsce."
+            caption="Aga Horche — prezentacje Thermomixa w całej Polsce, najczęściej w Małopolsce."
           />
         </div>
       </Section>
@@ -174,6 +174,29 @@ export default function OMniePage() {
         </div>
         <Prose className="mt-8">
           <p>
+            Na prezentacje wyjeżdżam z Bochni. Terminy, dojazd i odpowiedzi na pytania
+            z miasta i okolicy zebrałam na stronie{" "}
+            <Link href="/thermomix/bochnia" className="font-medium text-brand-700 underline underline-offset-4">
+              przedstawiciel Thermomix Bochnia
+            </Link>
+            . Najczęściej jeżdżę też do{" "}
+            {[
+              ["brzesko", "Brzeska"],
+              ["krakow", "Krakowa"],
+              ["wieliczka", "Wieliczki"],
+              ["niepolomice", "Niepołomic"],
+              ["tarnow", "Tarnowa"],
+              ["nowy-wisnicz", "Nowego Wiśnicza"],
+            ].map(([slug, nazwa], i, lista) => (
+              <span key={slug}>
+                <Link href={`/thermomix/${slug}`} className="font-medium text-brand-700 underline underline-offset-4">
+                  {nazwa}
+                </Link>
+                {i < lista.length - 2 ? ", " : i === lista.length - 2 ? " i " : "."}
+              </span>
+            ))}
+          </p>
+          <p className="mt-4">
             Jeśli zastanawiasz się, czy w ogóle warto — przeczytaj{" "}
             <Link
               href="/thermomix/wady-i-zalety"
@@ -190,7 +213,7 @@ export default function OMniePage() {
 
       <LocalBand
         title="Gdzie mnie spotkasz"
-        text="Prezentacje prowadzę najczęściej w Małopolsce, a przy dalszych miejscowościach umawiamy się indywidualnie."
+        text="Prezentacje prowadzę w całej Polsce — najczęściej w Małopolsce, a przy dalszych miejscowościach umawiamy się indywidualnie."
       />
       <CtaBand
         title="Napisz albo zadzwoń"

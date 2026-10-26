@@ -73,7 +73,7 @@ export function OfferForm({ offer, mediaAssets }: { offer?: Offer; mediaAssets: 
         label="Zdjęcie produktu"
         defaultValue={offer?.imageMediaId ?? null}
         mediaAssets={mediaAssets}
-        fallbackNote="Bez wybranego zdjęcia karta oferty pokazuje ikonę zastępczą — prześlij zdjęcie w sekcji „Media”, żeby móc je tu wybrać."
+        fallbackNote="Bez wybranego zdjęcia karta oferty pokazuje ikonę zastępczą — wgraj zdjęcie przyciskiem powyżej."
       />
       {mediaAssets.length === 0 && (
         <p className="text-xs text-muted">

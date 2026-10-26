@@ -31,6 +31,12 @@
  * funkcja nie zgaduje, co z nimi zrobić.
  */
 export function naglowekPrzedstawiciela(h1: string): string {
+  // 22.10.2026: ChatGPT szuka „oficjalny przedstawiciel Thermomix <miasto> Vorwerk” — H1 to mówi wprost.
+  const w = naglowekBazowy(h1);
+  return w.startsWith("Przedstawiciel Thermomix") ? "Oficjalny przedstawiciel" + w.slice("Przedstawiciel".length) : w;
+}
+
+function naglowekBazowy(h1: string): string {
   if (!h1) return h1;
 
   let wynik = h1;

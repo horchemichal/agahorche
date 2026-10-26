@@ -1,6 +1,6 @@
 import "server-only";
 import { randomUUID } from "node:crypto";
-import { mkdir, writeFile, unlink } from "node:fs/promises";
+import { mkdir, readFile, writeFile, unlink } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -100,6 +100,49 @@ async function optimizeImage(
  * kontroli w przeglądarce, a każdy obraz rastrowy przepuszcza przez
  * optimizeImage() zanim trafi na dysk.
  */
+/**
+ * Lzejsze warianty wgranego zdjecia (480/768/1200 px) zapisywane obok
+ * oryginalu, plus wpis w MEDIA_STORAGE_DIR/_warianty.json. Dzieki temu
+ * lib/obrazy.ts buduje srcSet i telefon pobiera maly plik zamiast 2000 px.
+ * Best-effort: blad tutaj nigdy nie blokuje samego uploadu.
+ */
+const SZEROKOSCI_WARIANTOW = [480, 768, 1200];
+const JAKOSC_WARIANTU = 74;
+const PLIK_WARIANTOW = "_warianty.json";
+
+async function zapiszWarianty(fileName: string, bytes: Uint8Array): Promise<void> {
+  try {
+    const meta = await sharp(bytes).metadata();
+    if (!meta.width || !meta.height) return;
+    const baza = fileName.replace(/\.webp$/, "");
+    const v: number[] = [];
+    for (const w of SZEROKOSCI_WARIANTOW) {
+      if (w >= meta.width || `${baza}-${w}`.length > 80) continue;
+      const out = await sharp(bytes).resize({ width: w }).webp({ quality: JAKOSC_WARIANTU }).toBuffer();
+      await writeFile(path.join(MEDIA_STORAGE_DIR, `${baza}-${w}.webp`), out);
+      v.push(w);
+    }
+    const plik = path.join(MEDIA_STORAGE_DIR, PLIK_WARIANTOW);
+    let mapa: Record<string, unknown> = {};
+    try {
+      mapa = JSON.parse(await readFile(plik, "utf8"));
+    } catch {
+      mapa = {};
+    }
+    mapa[fileName] = { w: meta.width, h: meta.height, v };
+    await writeFile(plik, JSON.stringify(mapa));
+  } catch {
+    // Brak wariantow = zdjecie po prostu zostaje w jednej wersji, jak dotad.
+  }
+}
+
+async function usunWarianty(fileName: string): Promise<void> {
+  const baza = fileName.replace(/\.webp$/, "");
+  for (const w of SZEROKOSCI_WARIANTOW) {
+    await unlink(path.join(MEDIA_STORAGE_DIR, `${baza}-${w}.webp`)).catch(() => {});
+  }
+}
+
 export async function storeUploadedFile(file: File, opcje?: OpcjeObrazu): Promise<StoredFile> {
   if (!ALLOWED_MIME_TYPES.has(file.type)) {
     throw new MediaUploadError("Dozwolone są tylko obrazy: JPG, PNG, WebP, AVIF, SVG.");
@@ -130,6 +173,7 @@ export async function storeUploadedFile(file: File, opcje?: OpcjeObrazu): Promis
 
   await mkdir(MEDIA_STORAGE_DIR, { recursive: true });
   await writeFile(path.join(MEDIA_STORAGE_DIR, fileName), bytes);
+  if (mimeType === "image/webp") await zapiszWarianty(fileName, bytes);
   return { fileName, url: `/media/${fileName}`, storageProvider: "local", sizeBytes: bytes.byteLength, mimeType };
 }
 
@@ -156,6 +200,7 @@ export async function deleteStoredFile(asset: { fileName: string; url: string; s
 
   try {
     await unlink(filePath);
+    if (asset.url.startsWith("/media/")) await usunWarianty(asset.fileName);
   } catch {
     // Already gone, or storage dir not writable in this environment — fine.
   }

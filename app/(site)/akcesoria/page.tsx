@@ -15,6 +15,21 @@ import {
   LocalBand,
 } from "@/components/marketing/content-blocks";
 
+
+/** Podstrony akcesoriów (22.10.2026) — ceny ze sklepu Vorwerk Polska, październik 2026. */
+const AKCESORIA_PORADNIKI: [string, string, string][] = [
+  ["Nakładka krojąca 2.0", "/akcesoria/nakladka-krojaca", "680 zł"],
+  ["Spiralizer", "/akcesoria/spiralizer", "w nakładce 2.0"],
+  ["Nóż miksujący i osłona noża", "/akcesoria/noz-miksujacy", "330 zł / 180 zł"],
+  ["Motylek", "/akcesoria/motylek", "49 zł"],
+  ["Varoma", "/akcesoria/varoma", "części od 90 zł"],
+  ["Koszyczek", "/akcesoria/koszyczek", "120 zł"],
+  ["Thermomix Nester", "/akcesoria/nester", "129 zł"],
+  ["Thermomix Sensor", "/akcesoria/sensor", "695 zł"],
+  ["Thermomix Friend", "/akcesoria/thermomix-friend", "tylko TM6"],
+  ["Cookidoo — abonament", "/cookidoo", "259 zł/rok"],
+];
+
 export const metadata: Metadata = buildMetadata({
   title: "Akcesoria do Thermomix TM7 — co warto dokupić",
   description:
@@ -217,6 +232,29 @@ export default function AkcesoriaPage() {
             faktycznie będzie pracować.
           </p>
         </Prose>
+      </Section>
+
+      <Section>
+        <Heading as="h2" size="md" className="mb-3">
+          Każde akcesorium osobno — cena, kompatybilność, zastosowanie
+        </Heading>
+        <p className="mb-6 max-w-2xl text-neutral-700">
+          Do każdego akcesorium przygotowałam osobny poradnik: ile kosztuje w sklepie Vorwerk, do których
+          modeli pasuje (TM5, TM6, TM7) i do czego naprawdę się przydaje.
+        </p>
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {AKCESORIA_PORADNIKI.map(([nazwa, href, cena]) => (
+            <li key={href}>
+              <Link
+                href={href}
+                className="flex items-center justify-between gap-3 rounded-xl border border-border bg-neutral-0 p-4 hover:border-brand-500"
+              >
+                <span className="font-medium text-neutral-900">{nazwa}</span>
+                <span className="text-sm text-muted">{cena}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <Section tone="surface">

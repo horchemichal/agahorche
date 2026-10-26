@@ -6,12 +6,16 @@ import { requireAdmin } from "@/lib/auth/require-admin";
 import { getPromotionsRepository } from "@/lib/database/repositories/promotions-repository";
 import { promotionFormSchema } from "@/lib/validation/promotion";
 import { recordAuditEvent } from "@/lib/admin/actions-helpers";
+import { getMediaRepository } from "@/lib/database/repositories/media-repository";
+import { storeUploadedFile, MediaUploadError } from "@/lib/admin/media-upload";
 import type { PromotionInput } from "@/types/promotion";
 import type { FormActionState } from "@/lib/admin/actions-helpers";
 
 function revalidatePublicPromotionSurfaces() {
   revalidatePath("/");
   revalidatePath("/admin/promocje");
+  revalidatePath("/admin/do-akceptacji");
+  revalidatePath("/admin/media");
 }
 
 export async function savePromotionAction(_prevState: FormActionState, formData: FormData): Promise<FormActionState> {
@@ -38,11 +42,33 @@ export async function savePromotionAction(_prevState: FormActionState, formData:
     return { error: "Data zakończenia nie może być wcześniejsza niż data rozpoczęcia." };
   }
 
+  // Zdjęcie: wybrane z biblioteki albo wgrane w tym formularzu (wgrane ma pierwszeństwo).
+  let imageMediaId: string | null = String(formData.get("imageMediaId") ?? "").trim() || null;
+  const plik = formData.get("imageFile");
+  if (plik instanceof File && plik.size > 0) {
+    try {
+      const stored = await storeUploadedFile(plik);
+      const asset = await getMediaRepository().create({
+        fileName: stored.fileName,
+        url: stored.url,
+        altText: parsed.data.title,
+        storageProvider: stored.storageProvider,
+        sizeBytes: stored.sizeBytes,
+        mimeType: stored.mimeType,
+        uploadedBy: admin.email,
+      });
+      imageMediaId = asset.id;
+    } catch (error) {
+      if (error instanceof MediaUploadError) return { error: error.message };
+      return { error: error instanceof Error ? error.message : "Nie udało się przesłać zdjęcia." };
+    }
+  }
+
   const input: PromotionInput = {
     title: parsed.data.title,
     shortDescription: parsed.data.shortDescription,
     fullDescription: parsed.data.fullDescription,
-    imageMediaId: null,
+    imageMediaId,
     ctaLabel: parsed.data.ctaLabel,
     ctaHref: parsed.data.ctaHref,
     startsAt: parsed.data.startsAt,

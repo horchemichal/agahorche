@@ -160,6 +160,13 @@ export default async function Tm7Page() {
                 przedstawiciela.
               </p>
               <p>
+                Wszystkie koszty — cenę, zawartość zestawu, raty, Cookidoo i promocje — rozpisałam na stronie{" "}
+                <Link href="/thermomix/tm7/cena" className="font-medium text-brand-700 underline underline-offset-4">
+                  ile kosztuje Thermomix TM7
+                </Link>
+                .
+              </p>
+              <p>
                 Rozłożenie na raty 0% policzysz{" "}
                 <Link href="#kalkulator-rat" className="font-medium text-brand-700 underline underline-offset-4">
                   w kalkulatorze poniżej

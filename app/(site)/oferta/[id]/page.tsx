@@ -1,3 +1,4 @@
+import { obrazResponsywny } from "@/lib/obrazy";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
@@ -90,7 +91,7 @@ export default async function OfferDetailPage({ params }: Props) {
           <div className="aspect-square overflow-hidden rounded-lg border border-border bg-neutral-0">
             {image ? (
               // eslint-disable-next-line @next/next/no-img-element -- media library asset, URL z własnego serwera (/media/...)
-              <img src={image.url} alt={image.altText || offer.productName} className="h-full w-full object-cover" />
+              <img {...obrazResponsywny(image.url, "(max-width: 1024px) 100vw, 50vw")} alt={image.altText || offer.productName} className="h-full w-full object-cover" />
             ) : (
               <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-brand-50 to-neutral-100 text-brand-600">
                 <ChefHatIcon width={48} height={48} strokeWidth={1.3} />

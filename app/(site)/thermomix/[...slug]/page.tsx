@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 import { getIndexableLocations, resolveLocation } from "@/lib/locations";
 import { buildLocationIntro, skrocDoOpisu } from "@/lib/locations/content";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { TEST_TYTULOW, metaTestowe } from "@/lib/seo/lokalne";
+import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
+import { miejscownik } from "@/data/locations/odmiana";
 import { LocationPageTemplate } from "@/components/location/location-page-template";
 import { CityLandingTemplate } from "@/components/location/city-landing-template";
 import { getCityContent } from "@/data/locations/city-content";
@@ -79,9 +82,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // o którą naprawdę toczy się gra („przedstawiciel thermomix kraków”).
   const cityContent = getCityContent(location.slug);
   if (cityContent) {
+    // Test tytulow (lib/seo/lokalne.ts) — tylko dla 10 stron z grupy testowej.
+    const testowe = TEST_TYTULOW.has(location.slug)
+      ? metaTestowe(
+          location.name,
+          location.nameLocative ?? miejscownik(location.slug),
+          await getOffersRepository().getActiveOffer(),
+        )
+      : null;
     return buildMetadata({
-      title: cityContent.seoTitle,
-      description: cityContent.seoDescription,
+      title: testowe?.title ?? cityContent.seoTitle,
+      description: testowe?.description ?? cityContent.seoDescription,
       ogTitle: cityContent.ogTitle,
       ogDescription: cityContent.ogDescription,
       ogImage: cityContent.heroPhoto.src,
