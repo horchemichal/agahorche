@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/button";
-import { ChefHatIcon } from "@/components/marketing/icons";
+import { ChefHatIcon, PhoneIcon } from "@/components/marketing/icons";
 import { InstallmentCalculator } from "@/components/marketing/installment-calculator";
 import { formatPln } from "@/lib/format";
 import { getMediaRepository } from "@/lib/database/repositories/media-repository";
@@ -126,9 +126,10 @@ export async function OfertyIRaty({ bezWymiany = false }: { bezWymiany?: boolean
                       </p>
                     </div>
                     <div className="flex flex-row items-center gap-3 sm:w-44 sm:flex-col sm:items-stretch sm:gap-1.5">
-                      <ButtonLink href="/prezentacja" className="h-10 justify-center whitespace-nowrap px-3.5 text-sm sm:px-4">
-                        Zapytaj o ofertę
-                      </ButtonLink>
+                      <a href="tel:+48517185691" className="inline-flex h-10 items-center justify-center gap-1.5 whitespace-nowrap rounded-full bg-brand-600 px-3.5 text-sm font-medium text-neutral-0 shadow-[var(--shadow-cta)] transition-colors hover:bg-brand-700 sm:px-4">
+                        <PhoneIcon width={16} height={16} />
+                        Zadzwoń do Agi
+                      </a>
                       <Link
                         href={"/oferta/" + o.id}
                         className="text-center text-xs text-muted underline underline-offset-4 hover:text-brand-700"
