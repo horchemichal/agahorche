@@ -42,7 +42,7 @@ const PLAN_INCLUDES = [
   { icon: CartIcon, title: "Gotowy plan wszystkich posiłków", description: "Śniadanie, II śniadanie, obiad, podwieczorek i kolacja — każdego dnia." },
   { icon: TargetIcon, title: "Dopasowanie do urządzenia", description: "Plany uwzględniają, jaki model Thermomix masz w domu." },
   { icon: ChefHatIcon, title: "Zdrowo i smacznie", description: "Zbilansowane, różnorodne posiłki, łatwe do przygotowania." },
-  { icon: CalendarIcon, title: "Oszczędność czasu", description: "Gotowy plan i lista zakupów pozwalają zaoszczędzić czas i uniknąć stresu." },
+  { icon: CalendarIcon, title: "Oszczędność czasu", description: "Gotowy plan na cały tydzień pozwala zaoszczędzić czas i uniknąć stresu." },
 ];
 
 /**

@@ -6,8 +6,7 @@ import { checkRateLimit, getClientKey } from "@/lib/rate-limit";
  * `GET /api/diety/jadlospis-pdf?dieta=<slug>` — bezpłatny jadłospis na
  * jeden dzień dla wybranej diety (sierpień 2026). GET z query stringiem, bo
  * to wyłącznie odczyt publicznych danych renderowany po stronie serwera —
- * dzięki temu zwykły `<a download>` wystarczy, bez JS-owego POST-a
- * (identycznie jak /api/diety/shopping-list-pdf).
+ * dzięki temu zwykły `<a download>` wystarczy, bez JS-owego POST-a.
  *
  * Slug jest jedynym wejściem i zawsze rozwiązywany po stronie serwera na
  * kategorię z data/diets/categories.ts, więc odpowiedź nie może zawierać

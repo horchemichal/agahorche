@@ -66,7 +66,7 @@ export async function DietCategoryPage({ category }: { category: DietCategory })
         */}
         {client ? (
           <p className="mt-3 max-w-xl text-sm text-muted">
-            Pełny plan — siedem dni, oba warianty kaloryczne i lista zakupów — czeka w{" "}
+            Pełny plan — siedem dni i oba warianty kaloryczne — czeka w{" "}
             <Link href="/strefa-klienta" className="font-medium text-brand-700 underline underline-offset-2">
               Twojej Strefie Klienta
             </Link>

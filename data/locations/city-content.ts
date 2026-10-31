@@ -301,7 +301,7 @@ const KRAKOW: CityContent = {
       ],
       links: [
         { href: "/thermomix/dla-poczatkujacych", label: "Dla początkujących w kuchni" },
-        { href: "/diety", label: "Jadłospisy i listy zakupów — bezpłatny PDF" },
+        { href: "/diety", label: "Jadłospisy diet — bezpłatny PDF" },
       ],
     },
     {

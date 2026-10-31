@@ -25,7 +25,6 @@ const ITEMS = [
   "pełne jadłospisy — wszystkie dni odblokowane",
   "7 i 14 dni",
   "warianty 1500 i 2000 kcal",
-  "lista zakupów",
   "przepisy z Cookidoo",
   "Co ugotować dzisiaj?",
   "Co mam w lodówce?",
@@ -61,7 +60,7 @@ export function ClientZoneTeaser() {
           <Lead className="mx-auto mb-8">
             Na stronie pokazujemy przykładowe plany — pierwszy dzień odsłonięty, reszta zamknięta.
             Klienci Agi mają wszystkie dni każdej diety, warianty 7 i 14 dni, kaloryczności
-            1500 i 2000 kcal, listy zakupów oraz pozostałe narzędzia klubu.
+            1500 i 2000 kcal oraz pozostałe narzędzia klubu.
             Konto zakłada Aga — dostają je osoby, które kupiły u niej Thermomixa.
           </Lead>
         </div>

@@ -9,7 +9,7 @@ export const DIETY_FAQ: FaqItem[] = [
   {
     question: "Czym różni się przykładowy plan od pełnej diety w Strefie Klienta?",
     answer:
-      "Na stronie publicznej pokazujemy 1–2 przykładowe plany z pierwszym dniem w pełni widocznym. Pełna baza — wszystkie dni odblokowane, warianty 7 i 14 dni, kaloryczności 1500 i 2000 kcal oraz lista zakupów na cały tydzień — dostępna jest po zostaniu klientką/klientem Agi.",
+      "Na stronie publicznej pokazujemy 1–2 przykładowe plany z pierwszym dniem w pełni widocznym. Pełna baza — wszystkie dni odblokowane, warianty 7 i 14 dni oraz kaloryczności 1500 i 2000 kcal — dostępna jest po zostaniu klientką/klientem Agi.",
   },
   {
     /*

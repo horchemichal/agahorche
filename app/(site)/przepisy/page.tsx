@@ -65,7 +65,7 @@ export default async function PrzepisyPage() {
           </Heading>
           <p className="max-w-2xl text-neutral-700">
             W Aga Club czekają gotowe jadłospisy na 7 i 14 dni — keto, wegetariańska,
-            bezglutenowa, dla dzieci i sześć innych — razem z listą zakupów i możliwością
+            bezglutenowa, dla dzieci i sześć innych — z możliwością
             zamiany dania na inne.
           </p>
           <div className="flex flex-wrap gap-2.5">

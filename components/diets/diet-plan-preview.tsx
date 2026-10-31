@@ -7,7 +7,6 @@ import { DayNavigation } from "./day-navigation";
 import { MealCard } from "./meal-card";
 import { ClientOnlyBadge } from "./client-only-badge";
 import { ExampleDataNotice } from "./example-data-notice";
-import { ShoppingList } from "./shopping-list";
 import { ButtonLink, Button } from "@/components/ui/button";
 import { CalendarIcon } from "@/components/marketing/icons";
 
@@ -83,8 +82,8 @@ function Kafelki({ t }: { t: typeof PUSTE }) {
  * `mealTypes` (1.09.2026) — pory posiłków, które mają być pokazane.
  * Używa tego wyłącznie kategoria „dla dzieci": wybór „3 / 4 / 5 posiłków"
  * w konfiguratorze ma realnie zmieniać plan, a nie tylko podpis
- * w podsumowaniu. Filtrujemy na wejściu, więc sumy dnia, widok tygodnia
- * i lista zakupów liczą się już z przyciętego planu — same z siebie,
+ * w podsumowaniu. Filtrujemy na wejściu, więc sumy dnia i widok tygodnia
+ * liczą się już z przyciętego planu — same z siebie,
  * bez żadnego dodatkowego warunku niżej.
  */
 export function DietPlanPreview({
@@ -293,7 +292,6 @@ export function DietPlanPreview({
         </div>
       )}
 
-      {!isLocked && hasContent && <ShoppingList planId={plan.id} />}
     </div>
   );
 }

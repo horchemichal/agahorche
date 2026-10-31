@@ -26,7 +26,7 @@ import { SITE } from "@/lib/utils";
  * wymyślamy), więc ta funkcja zwraca dla niej `null`, a konfigurator
  * pokazuje uczciwy komunikat zamiast przycisku pobierania.
  *
- * Silnik PDF i czcionki jak w lib/diets/shopping-list-pdf.ts — pdf-lib +
+ * Silnik PDF: pdf-lib +
  * DejaVu Sans z public/fonts/pdf (wbudowane fonty pdf-lib nie kodują
  * polskich znaków).
  */
@@ -182,7 +182,7 @@ export async function renderJadlospisPdf(slug: string): Promise<{ bytes: Uint8Ar
   text("Chcesz więcej niż jeden dzień?", { size: 13, bold: true, gap: 8 });
   text(
     "To bezpłatny jadłospis — jeden z każdej diety dostępnej na agahorche.pl. Pełne 7-dniowe " +
-      "jadłospisy ze wszystkich diet, warianty 14-dniowe i listy zakupów przekazuję wyłącznie " +
+      "jadłospisy ze wszystkich diet, warianty 14-dniowe przekazuję wyłącznie " +
       "moim klientkom i klientom: osobom, które kupiły Thermomix u mnie, oficjalnej " +
       "przedstawicielki Thermomix.",
     { size: 10.5, gap: 6 },

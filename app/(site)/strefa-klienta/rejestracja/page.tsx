@@ -20,7 +20,7 @@ export default async function ClientRegisterPage() {
       <div className="relative w-full max-w-md rounded-lg border border-border bg-neutral-0 p-8 shadow-[var(--shadow-card)]">
         <h1 className="mb-1 font-display text-xl text-neutral-900">Załóż konto w Strefie Klienta</h1>
         <p className="mb-6 text-sm text-muted">
-          Pełne plany diet na 7 dni, listy zakupów i eksport do PDF — bez umawiania prezentacji.
+          Pełne plany diet na 7 dni i eksport do PDF — bez umawiania prezentacji.
         </p>
         <ClientRegisterForm />
         <p className="mt-6 text-center text-sm text-muted">

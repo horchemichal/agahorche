@@ -25,7 +25,7 @@ export default async function ClientLoginPage({
     <div className="flex min-h-[70vh] items-center justify-center bg-neutral-50 px-4 py-16">
       <div className="w-full max-w-sm rounded-lg border border-border bg-neutral-0 p-8 shadow-[var(--shadow-card)]">
         <h1 className="mb-1 font-display text-xl text-neutral-900">Strefa Klienta</h1>
-        <p className="mb-6 text-sm text-muted">Zaloguj się, aby zobaczyć pełne plany diet i listy zakupów.</p>
+        <p className="mb-6 text-sm text-muted">Zaloguj się, aby zobaczyć pełne plany diet.</p>
         <ClientLoginForm next={next} />
         {/*
           Sierpień 2026: bez linku do rejestracji. Konta zakłada Aga swoim

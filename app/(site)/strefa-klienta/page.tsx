@@ -54,7 +54,7 @@ export default async function ClientDashboardPage() {
             </Heading>
             <Lead className="mt-3 max-w-xl">
               Tu znajdziesz pełne, 7-dniowe jadłospisy wszystkich diet — w wariantach 1500
-              i 2000 kcal, z linkiem do każdego przepisu na Cookidoo i listą zakupów.
+              i 2000 kcal, z linkiem do każdego przepisu na Cookidoo.
             </Lead>
           </div>
           <form action="/strefa-klienta/wyloguj" method="post">

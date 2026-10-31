@@ -58,7 +58,7 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     ikona: LeafIcon,
     tytul: "Diety",
     krotki: "Diety",
-    opis: "Pełne jadłospisy 7 i 14 dni z listą zakupów.",
+    opis: "Pełne jadłospisy na 7 i 14 dni.",
     prefiksy: ["/diety"],
   },
   {
