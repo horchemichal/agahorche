@@ -83,7 +83,7 @@ export const RZESZOW: CityContent = {
         "Thermomix odpowiada dokładnie na to. Zupa krem z warzyw, które zaraz zwiotczeją, przecier z nadmiaru pomidorów, mus jabłkowy do słoików, farsz z mięsa — wszystko w jednym naczyniu, z ustawioną temperaturą i mieszaniem, więc nie trzeba przy tym stać po pracy. Nie zmienia tego, ile dostajesz od rodziców. Zmienia to, ile z tego faktycznie zjecie.",
       ],
       links: [
-        { href: "/przepisy/co-mam-w-lodowce", label: "Sprawdź, co ugotujesz z tego, co masz" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
         { href: "/przepisy", label: "Przepisy" },
       ],
     },

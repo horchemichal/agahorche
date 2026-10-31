@@ -111,13 +111,9 @@ export default async function PoradnikPage() {
           </Heading>
           <p className="max-w-2xl text-neutral-700">
             Wyszukiwarka „Co ugotować dzisiaj?” pyta o czas, liczbę osób i rodzaj dania.
-            A jeśli chcesz ugotować z tego, co już masz — sprawdź „Co mam w lodówce?”.
           </p>
           <div className="flex flex-wrap gap-2.5">
             <ButtonLink href="/przepisy">Co ugotować dzisiaj? →</ButtonLink>
-            <ButtonLink href="/przepisy/co-mam-w-lodowce" variant="outline" className="bg-neutral-0">
-              Co mam w lodówce?
-            </ButtonLink>
           </div>
         </div>
       </Section>

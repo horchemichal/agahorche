@@ -87,7 +87,7 @@ export const ELBLAG: CityContent = {
         "A to zmienia nie tylko sposób, ale i to, CO się gotuje. Dobrze wychodzą rzeczy, które po odgrzaniu są takie same albo lepsze: gulasze, sosy, dania jednogarnkowe, zupy, farsze, mielone. Źle wychodzi wszystko smażone, panierowane i sałatki — czyli akurat to, co wielu rodzicom kojarzy się z porządnym obiadem.",
         "Rola urządzenia jest w tym prosta i nie będę jej wyolbrzymiać: takie dania robi się w nim bez stania przy garnku, a więc da się je zrobić w niedzielę albo w środę wieczorem, kiedy akurat jest chwila, i to niezależnie od tego, o której kto wraca. Do tego nastolatek jest w stanie sam sobie coś w nim zrobić — przepis prowadzi krok po kroku, a to bywa pierwszy raz, kiedy w ogóle coś ugotuje.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

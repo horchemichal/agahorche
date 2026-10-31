@@ -83,7 +83,7 @@ export const GLUBCZYCE: CityContent = {
         "Praktyczny wniosek jest odwrotny, niż mogłoby się wydawać. Skoro kupuje się rzadziej i dalej, to najbardziej liczy się umiejętność zrobienia porządnego obiadu z tego, co akurat jest w domu — z paczki makaronu, z mrożonek, z jednego warzywa i śmietanki. I to jest dokładnie ta część, którą pokażę na spotkaniu: zupa krem z jednego składnika, sos, który gotuje się sam, danie z tego, co zostało.",
         "Reszta — planowanie, wielkie gotowanie na zapas — może się przydać, ale nie będę udawać, że to główny powód. Powodem jest środa, kiedy do sklepu się nie jechało.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

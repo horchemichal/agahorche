@@ -96,7 +96,7 @@ export const SWIETOCHLOWICE: CityContent = {
         "Thermomix pasuje do takiego rytmu lepiej, niż wygląda w reklamach. Nie wymaga listy zakupów na tydzień — z tego samego zestawu warzyw robi się zupę krem, pastę do kanapek albo sos do makaronu, w zależności od tego, czego dziś chcecie. A skoro gotuje i miksuje w jednym naczyniu, decyzja „zrobię coś z tego, co mam” nie kończy się stosem garnków.",
       ],
       links: [
-        { href: "/przepisy/co-mam-w-lodowce", label: "Sprawdź, co ugotujesz z tego, co masz w lodówce" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
         { href: "/przepisy", label: "Przepisy" },
       ],
     },

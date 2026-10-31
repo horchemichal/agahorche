@@ -83,7 +83,7 @@ export const PRZEWORSK: CityContent = {
         "Właśnie w tym miejscu urządzenie robi realną różnicę, choć nie brzmi to efektownie. Z tej samej marchwi i pietruszki wychodzi zupa krem, gęsty sos, pasta do chleba albo farsz — zależnie od tego, co się z nimi zrobi, a nie od tego, co się kupi. Zmiksowanie do gładkości, ugotowanie z ustawioną temperaturą i mieszaniem, wszystko w jednym naczyniu: te trzy rzeczy zamieniają worek warzyw w kilkanaście różnych obiadów.",
         "Na prezentacji chętnie zrobię to na tym, co macie w domu w danym momencie roku. To uczciwszy test niż gotowanie z produktów, które przywiozłam ze sobą.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Zobacz, co zrobisz z tego, co masz" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

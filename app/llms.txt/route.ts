@@ -55,6 +55,10 @@ Stan na ${biezacyMiesiac()}. ${oferta}
 - [Jak myć i obsługiwać Thermomix](${U}/thermomix/mycie-i-obsluga)
 - [Akcesoria do Thermomix TM7](${U}/akcesoria)
 - [Jak kupić Thermomix](${U}/jak-kupic-thermomix) i [finansowanie / raty](${U}/finansowanie)
+- [Odstąpienie od umowy po prezentacji](${U}/thermomix/odstapienie-od-umowy): 14 dni od dostawy, 30 dni tylko przy wizycie nieumówionej, raty i kredyt powiązany
+- [Czego Thermomix nie zrobi](${U}/thermomix/czego-nie-zrobi): uczciwa lista ograniczeń przed zakupem
+- [Jak ułożyć jadłospis na tydzień](${U}/thermomix/jadlospis-na-tydzien): metoda planowania 4–5 obiadów, lista zakupów
+- [Gotowanie na zapas](${U}/thermomix/gotowanie-na-zapas): co gotować hurtem, w jakiej kolejności, Varoma
 
 ## Serwis Thermomix
 

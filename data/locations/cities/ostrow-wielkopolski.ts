@@ -82,7 +82,7 @@ export const OSTROW_WIELKOPOLSKI: CityContent = {
         "Praktyczny wniosek jest więc taki: w niedzielę robicie sos, wywar, kaszę i pastę. W środę dorzucacie do tego świeże mięso albo warzywa, i macie obiad w kwadrans, który smakuje jak zrobiony w środę, a nie w niedzielę. To jest cała tajemnica.",
         "Rola urządzenia jest tu prosta i nie zamierzam jej wyolbrzymiać: sos, wywar, pasta i ciasto powstają w nim jedno po drugim, w tym samym naczyniu, płukanym między nimi. Godzina w niedzielę wieczorem zamiast czterech garnków.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

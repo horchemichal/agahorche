@@ -66,7 +66,6 @@ export default function manifest(): MetadataRoute.Manifest {
     shortcuts: [
       { name: "Moje diety", short_name: "Diety", url: "/diety" },
       { name: "Co ugotować dzisiaj?", short_name: "Co ugotować?", url: "/przepisy" },
-      { name: "Co mam w lodówce?", short_name: "Lodówka", url: "/przepisy/co-mam-w-lodowce" },
     ],
   };
 }

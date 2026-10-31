@@ -249,7 +249,7 @@ export const MIELNO: CityContent = {
       ],
       links: [
         { href: "/thermomix/wady-i-zalety", label: "Wady i zalety — bez ściemy" },
-        { href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
       ],
     },
     {

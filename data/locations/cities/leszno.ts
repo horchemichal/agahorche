@@ -82,7 +82,7 @@ export const LESZNO: CityContent = {
         "Nie przerabiam smażonych rzeczy — panierka po odgrzaniu jest już tylko rozmokłym ciastem i żadne urządzenie tego nie odwróci. Nie miksuję sałatek z majonezem ani niczego, co stało w cieple na stole przez pół dnia; tu nie chodzi o smak i nie będę udawać eksperta od bezpieczeństwa żywności — po prostu odradzam. Nie ratuję też rzeczy, które przestały ładnie pachnieć, i uważam, że każda próba „uratowania” takiego jedzenia przyprawami kończy się gorzej niż wyrzucenie.",
         "I rzecz najuczciwsza: to urządzenie nie sprawi, że przestaniecie marnować jedzenie. To robi planowanie zakupów, a nie sprzęt. Ono tylko obniża próg — bo drugie danie z resztek przestaje wymagać wyciągania blendera i mycia trzech rzeczy, a przez to faktycznie się je robi.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

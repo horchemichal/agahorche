@@ -85,7 +85,7 @@ export const WEJHEROWO: CityContent = {
         "Jest natomiast wada, o której się nie mówi, i wolę ją nazwać: warzywa i owoce przychodzą takie, jakie ktoś wybrał za Was. Pomidor na sos i pomidor na kanapkę to nie jest ta sama rzecz, a przy dowozie nie macie na to wpływu. Stąd u wielu osób układ mieszany — ciężkie i suche z dowozem, świeże z targu albo z małego sklepu po drodze.",
         "Powiedzcie mi przy umawianiu, co macie w szafce po ostatniej dostawie. Ugotujemy z tego, zamiast z produktów, które przywiozłabym pod przepis.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

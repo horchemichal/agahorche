@@ -81,7 +81,7 @@ export const LEZAJSK: CityContent = {
         "To jest inne zadanie niż wielkie gotowanie na zapowiedzianą uroczystość. Tu liczy się to, co da się zrobić szybko z tego, co jest w domu: zupa krem w kilkanaście minut, pasta na kanapki, ciasto, które wyrabia się samo, gdy Wy nakrywacie do stołu. Wszystko w jednym naczyniu, bez wyciągania trzech sprzętów.",
         "Na prezentacji chętnie pokażę dokładnie to — nie danie na trzy godziny, tylko coś, co ratuje sytuację, gdy goście są już w drodze.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Zobacz, co zrobisz z tego, co masz" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

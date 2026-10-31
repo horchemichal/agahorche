@@ -84,7 +84,7 @@ export const CZELADZ: CityContent = {
         "To jest jedyna wersja argumentu „urządzenie się zwróci”, którą uważam za uczciwą. Nie z powietrza i nie z reklamowych wyliczeń, tylko z tego, co dziś ląduje w koszu. Zupa krem z warzyw, które zaraz się skończą, przecier z pomidorów, pasta z resztek pieczonego mięsa — to wszystko robi się w jednym naczyniu, bez pilnowania, w czasie, który da się znaleźć wieczorem.",
       ],
       links: [
-        { href: "/przepisy/co-mam-w-lodowce", label: "Zobacz, co ugotujesz z tego, co masz w lodówce" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
       ],
     },
     {

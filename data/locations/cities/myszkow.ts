@@ -82,7 +82,7 @@ export const MYSZKOW: CityContent = {
       ],
       links: [
         { href: "/przepisy", label: "Zobacz, co można ugotować" },
-        { href: "/przepisy/co-mam-w-lodowce", label: "Sprawdź, co zrobisz z tego, co masz" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
       ],
     },
     {

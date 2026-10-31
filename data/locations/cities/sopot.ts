@@ -80,7 +80,7 @@ export const SOPOT: CityContent = {
         "I to właśnie z tą trzecią kolumną konkuruje urządzenie w kuchni, a nie z restauracją. Nikt nie przestanie chodzić na obiad na Monciak dlatego, że kupił Thermomixa, i dobrze. Ale wieczór, w którym alternatywą było odgrzanie czegoś z folii, wygląda inaczej, gdy zupa albo makaron z sosem powstają bez stania przy garnku.",
         "Stąd moje pytanie, które zadam Wam na spotkaniu zamiast pokazywania wyliczeń: ile razy w tygodniu jecie coś, czego tak naprawdę nie chcieliście jeść? Jeśli odpowiedź brzmi „zero, bo jemy na mieście i to nam odpowiada” — nie kupujcie, nie mam Wam nic do zaoferowania. Jeśli brzmi „trzy albo cztery”, to jest o czym rozmawiać, i to bez żadnego kalkulatora.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

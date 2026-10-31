@@ -1,7 +1,6 @@
 import type { ComponentType, SVGProps } from "react";
 import {
   ChefHatIcon,
-  CartIcon,
   LeafIcon,
   LightningIcon,
   CzatIcon,
@@ -40,8 +39,8 @@ export interface PozycjaKlubu {
   /**
    * Adresy, na których pozycja liczy się jako bieżąca. Podstrony też —
    * /diety/keto ma podświetlić „Diety". Wyjątkiem jest /przepisy, które
-   * dopasowuje się dokładnie, bo /przepisy/co-mam-w-lodowce jest osobną
-   * pozycją i podświetlenie obu naraz byłoby mylące.
+   * dopasowuje się dokładnie (dawniej obok stała osobna pozycja
+   * /przepisy/co-mam-w-lodowce — usunięta 31.10.2026).
    */
   prefiksy: string[];
   dokladnie?: boolean;
@@ -70,14 +69,6 @@ export const POZYCJE_KLUBU: PozycjaKlubu[] = [
     opis: "Powiedz, ile masz czasu — pokażę pasujące dania.",
     prefiksy: ["/przepisy"],
     dokladnie: true,
-  },
-  {
-    href: "/przepisy/co-mam-w-lodowce",
-    ikona: CartIcon,
-    tytul: "Co mam w lodówce?",
-    krotki: "Lodówka",
-    opis: "Zaznacz produkty, zobacz, co da się z nich zrobić.",
-    prefiksy: ["/przepisy/co-mam-w-lodowce"],
   },
   {
     href: "/poradnik",
@@ -138,7 +129,7 @@ export function czyTrasaKlubu(sciezka: string): boolean {
 
 /**
  * Która pozycja jest bieżąca. Wygrywa NAJDŁUŻSZE dopasowanie, więc
- * /przepisy/co-mam-w-lodowce podświetla „Lodówkę", a nie „Co ugotować?".
+ * /diety/keto podświetla „Diety", a nie żadną krótszą pozycję.
  */
 export function aktywnaPozycja(sciezka: string): PozycjaKlubu | undefined {
   let najlepsza: PozycjaKlubu | undefined;

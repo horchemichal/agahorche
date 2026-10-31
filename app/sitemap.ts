@@ -55,7 +55,6 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   // Wyszukiwarka „Co ugotować dzisiaj?" — celuje we frazy typu „szybki obiad
   // thermomix", „co ugotować w 20 minut", więc trafia wysoko, nie na koniec.
   { path: "/przepisy", priority: 0.7, changeFrequency: "weekly" },
-  { path: "/przepisy/co-mam-w-lodowce", priority: 0.7, changeFrequency: "weekly" },
   { path: "/poradnik", priority: 0.65, changeFrequency: "weekly" },
   { path: "/thermomix/tm7/cena", priority: 0.8, changeFrequency: "monthly" },
   { path: "/cookidoo", priority: 0.8, changeFrequency: "monthly" },
@@ -67,6 +66,10 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/thermomix/uzywany", priority: 0.75, changeFrequency: "monthly" },
   { path: "/thermomix/wymiana", priority: 0.75, changeFrequency: "weekly" },
   { path: "/thermomix/lidlomix-czy-thermomix", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/thermomix/odstapienie-od-umowy", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/thermomix/jadlospis-na-tydzien", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/thermomix/czego-nie-zrobi", priority: 0.75, changeFrequency: "monthly" },
+  { path: "/thermomix/gotowanie-na-zapas", priority: 0.75, changeFrequency: "monthly" },
   { path: "/akcesoria/nakladka-krojaca", priority: 0.6, changeFrequency: "monthly" },
   { path: "/akcesoria/spiralizer", priority: 0.6, changeFrequency: "monthly" },
   { path: "/akcesoria/noz-miksujacy", priority: 0.6, changeFrequency: "monthly" },

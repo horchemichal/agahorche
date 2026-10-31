@@ -147,7 +147,7 @@ export const ZAGORZ: CityContent = {
         "Czego nie doradzę: niczego o tym, co „warto trzymać w lodówce na wszelki wypadek” pod kątem trwałości. Przechowywanie żywności to dziedzina bezpieczeństwa, nie moja.",
       ],
       links: [
-        { href: "/przepisy/co-mam-w-lodowce", label: "Co mam w lodówce" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
         { href: "/przepisy", label: "Przepisy" },
       ],
     },

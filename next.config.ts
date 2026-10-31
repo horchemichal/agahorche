@@ -19,6 +19,14 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "*": ["./node_modules/bcryptjs/**"],
   },
+  // 31.10.2026: moduł „Co mam w lodówce?” usunięty (opierał się na listach
+  // składników pobranych z Cookidoo). Adres był w indeksie Google, więc
+  // przenosimy go na stałe na wyszukiwarkę przepisów zamiast zostawiać 404.
+  async redirects() {
+    return [
+      { source: "/przepisy/co-mam-w-lodowce", destination: "/przepisy", permanent: true },
+    ];
+  },
   experimental: {
     // Default 1MB is too small for admin media uploads (spec §11).
     serverActions: {

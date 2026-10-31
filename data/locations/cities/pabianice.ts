@@ -98,7 +98,7 @@ export const PABIANICE: CityContent = {
         "To ustawia zupełnie inaczej, co w urządzeniu jest dla Was warte pieniędzy. Najbardziej przyda się to, co robi porządne danie z produktów lekkich i tanich, które i tak macie w szafce: z kaszy, ryżu, makaronu, soczewicy, mrożonek i jednego warzywa. Zupa krem, sos, danie jednogarnkowe, ciasto z mąki i tego, co zostało.",
         "Za to cała opowieść o gotowaniu na zapas w wielkich garnkach jest w takim domu mniej użyteczna, bo najpierw trzeba by ten zapas przydźwigać. Nie będę więc jej Wam sprzedawać jako głównej zalety — zamiast tego na prezentacji ugotujemy coś z Waszej szafki.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

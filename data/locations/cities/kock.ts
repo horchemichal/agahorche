@@ -144,7 +144,7 @@ export const KOCK: CityContent = {
         "Jeśli Wasza kuchnia działa w tej odwróconej kolejności, powiedzcie mi to przy umawianiu. Ugotujemy wtedy z tego, co akurat macie, a nie z tego, co ja przywiozłam — i to będzie uczciwsza próba niż każde przygotowane danie pokazowe.",
       ],
       links: [
-        { href: "/przepisy/co-mam-w-lodowce", label: "Co mam w lodówce" },
+        { href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" },
         { href: "/przepisy", label: "Przepisy" },
       ],
     },

@@ -23,7 +23,9 @@ export const AGA_CLUB_FEATURE_FLAGS: AgaClubFeatureFlags = {
   // adresami (/przepisy i /przepisy/co-mam-w-lodowce). Klub pokazywał je
   // jako „Wkrótce", choć wystarczyło wskazać właściwy adres.
   coDzisUgotowac: true,
-  mojaLodowka: true,
+  // 31.10.2026: moduł usunięty — opierał się na listach składników pobranych
+  // z Cookidoo. Flaga zostaje na false, kafel znika z /aga-club.
+  mojaLodowka: false,
 };
 
 export interface AgaClubFeatureCopy {
@@ -60,7 +62,7 @@ export const AGA_CLUB_FEATURES: AgaClubFeatureCopy[] = [
     // zaznaczone produkty do listy składników 252 przepisów. Obiecywanie
     // AI tam, gdzie jej nie ma, to obietnica, której strona nie dotrzyma.
     description: "Zaznacz produkty, które masz pod ręką — pokażę dania, które da się z nich zrobić, i czego brakuje.",
-    href: "/przepisy/co-mam-w-lodowce",
+    href: "/przepisy",
   },
   {
     key: null,

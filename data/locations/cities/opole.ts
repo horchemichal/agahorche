@@ -90,7 +90,7 @@ export const OPOLE: CityContent = {
         "Zostaje natomiast to, co przy takim trybie liczy się naprawdę: żeby z tego, co właśnie przyniesiono, dało się zrobić obiad w dwadzieścia minut i bez stania nad garnkiem. Zupa krem z jednego warzywa i śmietanki. Sos do makaronu, który gotuje się sam, gdy woda dochodzi. Danie jednogarnkowe z tego, co zostało w lodówce z wczoraj.",
         "Jeśli więc na prezentacji zapytacie, po co Wam planowanie tygodnia, odpowiem szczerze: prawdopodobnie po nic. Pokażę Wam za to tę drugą część i to ona zdecyduje, czy zakup ma sens.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "jak-umowic",

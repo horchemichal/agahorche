@@ -88,7 +88,7 @@ export const KIELCE: CityContent = {
         "I to jest właśnie moment, w którym rozstrzyga się, czy ktoś kupi sobie obiad po drodze, czy zje w domu. Nie chodzi o zdrowie ani o oszczędność — chodzi o to, ile trzeba mieć siły, żeby o osiemnastej stanąć przy kuchence.",
         "Urządzenie nie robi tu cudu i nie będę tak mówić. Robi jedną rzecz: obniża próg. Zupa krem z tego, co jest w lodówce, powstaje w kilkanaście minut i bez pilnowania. Danie jednogarnkowe gotuje się, gdy Ty rozpakowujesz plecaki i wstawiasz pranie. A jeśli coś zostało z wczoraj, odgrzewanie na parze sprawia, że to nadal jest jedzenie, a nie odgrzewany kompromis.",
       ],
-      links: [{ href: "/przepisy/co-mam-w-lodowce", label: "Co ugotować z tego, co masz w lodówce" }],
+      links: [{ href: "/thermomix/jadlospis-na-tydzien", label: "Jak ułożyć jadłospis na tydzień" }],
     },
     {
       id: "wzgorza-i-dzielnice",
