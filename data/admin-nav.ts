@@ -10,6 +10,7 @@ import {
   MediaIcon,
   SeoIcon,
   LeadsIcon,
+  CrmIcon,
   ClubIcon,
   AnalyticsIcon,
   SettingsIcon,
@@ -27,6 +28,8 @@ export interface AdminNavItem {
 export const ADMIN_NAV: AdminNavItem[] = [
   { label: "Dashboard", href: "/admin", icon: DashboardIcon, exact: true },
   { label: "Do akceptacji", href: "/admin/do-akceptacji", icon: PromotionIcon },
+  // CRM (4.11.2026) — wysoko w menu, bo dodawany z telefonu zaraz po prezentacji.
+  { label: "CRM", href: "/admin/crm", icon: CrmIcon },
   { label: "Strona główna", href: "/admin/strona-glowna", icon: HomeIcon },
   { label: "Oferta", href: "/admin/oferta", icon: OfferIcon },
   { label: "Promocje", href: "/admin/promocje", icon: PromotionIcon },

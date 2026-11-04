@@ -116,6 +116,16 @@ export function LeadsIcon(props: IconProps) {
   );
 }
 
+/** Osoba — zakładka CRM (4.11.2026). */
+export function CrmIcon(props: IconProps) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="8" r="3.5" />
+      <path d="M5 19.5c.8-3.4 3.6-5.5 7-5.5s6.2 2.1 7 5.5" />
+    </svg>
+  );
+}
+
 export function ClubIcon(props: IconProps) {
   return (
     <svg {...base} {...props}>

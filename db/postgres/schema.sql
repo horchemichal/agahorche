@@ -542,3 +542,22 @@ create table if not exists club_push_subscriptions (
 );
 
 create index if not exists club_push_user_idx on club_push_subscriptions (user_id);
+
+-- 4.11.2026 — prosty CRM w panelu (/admin/crm). Tylko pola, o które prosił
+-- Michał: imię i nazwisko, miejscowość, kto polecił (osoba z imieniem
+-- i nazwiskiem albo strona www) i status kupił / nie kupił.
+-- Repozytorium (lib/database/repositories/crm-repository.ts) zakłada tę
+-- tabelę samo przy pierwszym użyciu — ta definicja jest dla świeżej instalacji.
+
+create table if not exists crm_klienci (
+  id uuid primary key default gen_random_uuid(),
+  imie_nazwisko text not null,
+  miejscowosc text not null,
+  polecenie text not null check (polecenie in ('osoba', 'strona-www')),
+  polecil text,
+  kupil boolean not null default false,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists crm_klienci_created_idx on crm_klienci (created_at desc);
