@@ -71,6 +71,14 @@ export default async function CrmPage({ searchParams }: Props) {
                   {k.imieNazwisko}
                 </Link>
                 <p className="text-sm text-muted">
+                  {k.telefon && (
+                    <>
+                      <a href={`tel:${k.telefon.replace(/[^\d+]/g, "")}`} className="font-medium text-brand-700 underline underline-offset-2">
+                        {k.telefon}
+                      </a>{" "}
+                      ·{" "}
+                    </>
+                  )}
                   {k.miejscowosc} · {k.polecenie === "osoba" ? `polecił(a): ${k.polecil}` : "strona www"} ·{" "}
                   {new Date(k.createdAt).toLocaleDateString("pl-PL")}
                 </p>

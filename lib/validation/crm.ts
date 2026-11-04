@@ -8,6 +8,12 @@ export const crmKlientFormSchema = z
     polecenie: z.enum(["osoba", "strona-www"], { message: "Zaznacz, kto polecił" }),
     polecil: z.string().trim().max(120),
     kupil: z.enum(["tak", "nie"], { message: "Zaznacz: kupił czy nie kupił" }),
+    telefon: z
+      .string()
+      .trim()
+      .max(30)
+      .refine((v) => /^[+\d][\d\s()-]*$/.test(v) && v.replace(/\D/g, "").length >= 9, "Podaj numer telefonu (min. 9 cyfr)"),
+    notatka: z.string().trim().max(2000, "Notatka może mieć najwyżej 2000 znaków"),
   })
   .superRefine((d, ctx) => {
     if (d.polecenie === "osoba" && d.polecil.length < 2) {
@@ -20,4 +26,6 @@ export const crmKlientFormSchema = z
     polecenie: d.polecenie,
     polecil: d.polecenie === "osoba" ? d.polecil : null,
     kupil: d.kupil === "tak",
+    telefon: d.telefon.replace(/\s+/g, " "),
+    notatka: d.notatka === "" ? null : d.notatka,
   }));

@@ -21,6 +21,8 @@ function rowToKlient(row: Record<string, unknown>): CrmKlient {
     polecenie: row.polecenie as CrmPolecenie,
     polecil: (row.polecil as string | null) ?? null,
     kupil: Boolean(row.kupil),
+    telefon: (row.telefon as string | null) ?? null,
+    notatka: (row.notatka as string | null) ?? null,
     createdAt: row.created_at as string,
     updatedAt: row.updated_at as string,
   };
@@ -33,6 +35,8 @@ function klientToRow(input: CrmKlientInput) {
     polecenie: input.polecenie,
     polecil: input.polecil,
     kupil: input.kupil,
+    telefon: input.telefon,
+    notatka: input.notatka,
   };
 }
 
@@ -50,10 +54,14 @@ create table if not exists crm_klienci (
   polecenie text not null check (polecenie in ('osoba', 'strona-www')),
   polecil text,
   kupil boolean not null default false,
+  telefon text,
+  notatka text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
 create index if not exists crm_klienci_created_idx on crm_klienci (created_at desc);
+alter table crm_klienci add column if not exists telefon text;
+alter table crm_klienci add column if not exists notatka text;
 `;
 
 class PostgresCrmRepository implements CrmRepository {

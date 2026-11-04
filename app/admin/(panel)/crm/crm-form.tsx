@@ -2,7 +2,7 @@
 
 import { useActionState, useState } from "react";
 import { saveCrmKlientAction } from "./actions";
-import { Input, Label, FieldError } from "@/components/ui/form-fields";
+import { Input, Label, Textarea, FieldError } from "@/components/ui/form-fields";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { CrmKlient, CrmPolecenie } from "@/types/crm";
@@ -41,6 +41,17 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
   const [state, formAction, pending] = useActionState(saveCrmKlientAction, initialState);
   const [polecenie, setPolecenie] = useState<CrmPolecenie | "">(klient?.polecenie ?? "");
   const [kupil, setKupil] = useState<"tak" | "nie" | "">(klient ? (klient.kupil ? "tak" : "nie") : "");
+  const [telefon, setTelefon] = useState(klient?.telefon ?? "");
+  /*
+   * Wszystkie pola sterowane stanem: React po każdej akcji formularza czyści
+   * pola niesterowane, więc przy błędzie (np. zły numer) znikałoby wpisane
+   * imię i miejscowość. Tak zostają.
+   */
+  const [imieNazwisko, setImieNazwisko] = useState(klient?.imieNazwisko ?? "");
+  const [miejscowosc, setMiejscowosc] = useState(klient?.miejscowosc ?? "");
+  const [polecil, setPolecil] = useState(klient?.polecil ?? "");
+  const [notatka, setNotatka] = useState(klient?.notatka ?? "");
+  const telHref = telefon.replace(/[^\d+]/g, "");
 
   return (
     <form action={formAction} className="max-w-xl space-y-6">
@@ -48,16 +59,42 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
 
       <div>
         <Label htmlFor="imieNazwisko">1. Imię i nazwisko</Label>
-        <Input id="imieNazwisko" name="imieNazwisko" defaultValue={klient?.imieNazwisko} autoComplete="off" required />
+        <Input id="imieNazwisko" name="imieNazwisko" value={imieNazwisko} onChange={(e) => setImieNazwisko(e.target.value)} autoComplete="off" required />
       </div>
 
       <div>
         <Label htmlFor="miejscowosc">2. Miejscowość</Label>
-        <Input id="miejscowosc" name="miejscowosc" defaultValue={klient?.miejscowosc} autoComplete="off" required />
+        <Input id="miejscowosc" name="miejscowosc" value={miejscowosc} onChange={(e) => setMiejscowosc(e.target.value)} autoComplete="off" required />
+      </div>
+
+      <div>
+        <Label htmlFor="telefon">3. Numer telefonu</Label>
+        <Input
+          id="telefon"
+          name="telefon"
+          type="tel"
+          inputMode="tel"
+          autoComplete="off"
+          value={telefon}
+          onChange={(e) => setTelefon(e.target.value)}
+          required
+        />
+        {telHref.replace(/\D/g, "").length >= 9 ? (
+          <a
+            href={`tel:${telHref}`}
+            className="mt-2 flex w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-5 py-3 text-base font-medium text-neutral-0 hover:bg-brand-700"
+          >
+            <span aria-hidden="true">📞</span> Zadzwoń
+          </a>
+        ) : (
+          <span className="mt-2 flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-neutral-100 px-5 py-3 text-base font-medium text-neutral-400">
+            <span aria-hidden="true">📞</span> Zadzwoń
+          </span>
+        )}
       </div>
 
       <fieldset>
-        <legend className="mb-1.5 block text-sm font-medium text-neutral-700">3. Kto polecił</legend>
+        <legend className="mb-1.5 block text-sm font-medium text-neutral-700">4. Kto polecił</legend>
         <div className="flex flex-col gap-2 sm:flex-row">
           <Wybor name="polecenie" value="osoba" checked={polecenie === "osoba"} onChange={() => setPolecenie("osoba")}>
             Osoba
@@ -69,13 +106,13 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
         {polecenie === "osoba" && (
           <div className="mt-3">
             <Label htmlFor="polecil">Imię i nazwisko osoby polecającej</Label>
-            <Input id="polecil" name="polecil" defaultValue={klient?.polecil ?? ""} autoComplete="off" required />
+            <Input id="polecil" name="polecil" value={polecil} onChange={(e) => setPolecil(e.target.value)} autoComplete="off" required />
           </div>
         )}
       </fieldset>
 
       <fieldset>
-        <legend className="mb-1.5 block text-sm font-medium text-neutral-700">4. Status</legend>
+        <legend className="mb-1.5 block text-sm font-medium text-neutral-700">5. Status</legend>
         <div className="flex flex-col gap-2 sm:flex-row">
           <Wybor name="kupil" value="tak" checked={kupil === "tak"} onChange={() => setKupil("tak")}>
             Kupił
@@ -85,6 +122,11 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
           </Wybor>
         </div>
       </fieldset>
+
+      <div>
+        <Label htmlFor="notatka">6. Notatka (nieobowiązkowa)</Label>
+        <Textarea id="notatka" name="notatka" value={notatka} onChange={(e) => setNotatka(e.target.value)} rows={4} />
+      </div>
 
       <FieldError>{state.error ?? undefined}</FieldError>
 

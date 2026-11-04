@@ -10,7 +10,7 @@ import type { FormActionState } from "@/lib/admin/actions-helpers";
 
 /*
  * W dzienniku zdarzeń zapisujemy samo imię i nazwisko klienta — tak samo jak
- * przy leadach. Bez miejscowości i bez osoby polecającej.
+ * przy leadach. Bez telefonu, miejscowości, notatki i osoby polecającej.
  */
 
 export async function saveCrmKlientAction(_prev: FormActionState, formData: FormData): Promise<FormActionState> {
@@ -23,6 +23,8 @@ export async function saveCrmKlientAction(_prev: FormActionState, formData: Form
     polecenie: formData.get("polecenie") ?? undefined,
     polecil: formData.get("polecil") ?? "",
     kupil: formData.get("kupil") ?? undefined,
+    telefon: formData.get("telefon") ?? "",
+    notatka: formData.get("notatka") ?? "",
   });
   if (!parsed.success) {
     return { error: parsed.error.issues[0]?.message ?? "Formularz zawiera błędy." };

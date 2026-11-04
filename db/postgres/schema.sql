@@ -556,8 +556,14 @@ create table if not exists crm_klienci (
   polecenie text not null check (polecenie in ('osoba', 'strona-www')),
   polecil text,
   kupil boolean not null default false,
+  telefon text,
+  notatka text,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
 
 create index if not exists crm_klienci_created_idx on crm_klienci (created_at desc);
+
+-- 4.11.2026 — telefon (z przyciskiem „Zadzwoń”) i nieobowiązkowa notatka.
+alter table crm_klienci add column if not exists telefon text;
+alter table crm_klienci add column if not exists notatka text;
