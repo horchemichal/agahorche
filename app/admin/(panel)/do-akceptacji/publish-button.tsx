@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { publishPromotionAction } from "./actions";
+import { publishPromotionAction, publishBlogDraftAction } from "./actions";
 
-export function PublishButton({ id, title }: { id: string; title: string }) {
+export function PublishButton({ id, title, rodzaj = "oferta" }: { id: string; title: string; rodzaj?: "oferta" | "wpis" }) {
   const [pending, start] = useTransition();
   const [potwierdza, setPotwierdza] = useState(false);
 
@@ -22,13 +22,13 @@ export function PublishButton({ id, title }: { id: string; title: string }) {
   return (
     <div className="rounded-xl border border-brand-200 bg-brand-50 p-4">
       <p className="text-sm text-neutral-800">
-        Ta oferta pojawi się na stronie od razu. Na pewno?
+        {rodzaj === "wpis" ? "Ten wpis pojawi się na blogu od razu. Na pewno?" : "Ta oferta pojawi się na stronie od razu. Na pewno?"}
       </p>
       <div className="mt-3 flex flex-col gap-2 sm:flex-row">
         <button
           type="button"
           disabled={pending}
-          onClick={() => start(() => publishPromotionAction(id))}
+          onClick={() => start(() => (rodzaj === "wpis" ? publishBlogDraftAction(id) : publishPromotionAction(id)))}
           className="flex-1 rounded-xl bg-brand-600 px-5 py-4 text-base font-semibold text-neutral-0 hover:bg-brand-700 disabled:opacity-60"
         >
           {pending ? "Publikuję…" : `Tak, publikuj`}

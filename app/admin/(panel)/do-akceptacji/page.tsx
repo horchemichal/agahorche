@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireAdmin } from "@/lib/auth/require-admin";
 import { getPromotionsRepository } from "@/lib/database/repositories/promotions-repository";
+import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { PanelHeader, EmptyState } from "@/components/admin/panel-states";
 import { Card } from "@/components/ui/card";
 import { PublishButton } from "./publish-button";
@@ -31,19 +32,51 @@ export default async function DoAkceptacjiPage() {
   await requireAdmin();
   const wszystkie = await getPromotionsRepository().list();
   const czekajace = wszystkie.filter((p) => p.isDraft);
+  // 6.11.2026: wpisy na blog przygotowane przez zaplanowane zadania czekają tu obok ofert.
+  const wpisy = (await getBlogRepository().list())
+    .filter((w) => w.status === "draft")
+    .sort((a, b) => (b.updatedAt ?? "").localeCompare(a.updatedAt ?? ""));
 
   return (
     <>
       <PanelHeader
         title="Do akceptacji"
-        description="Oferty przygotowane automatycznie na podstawie strony Vorwerka. Nic nie trafia na stronę, dopóki nie klikniesz „Opublikuj”."
+        description="Oferty i wpisy na blog przygotowane automatycznie. Nic nie trafia na stronę, dopóki nie klikniesz „Opublikuj”."
       />
 
+      {wpisy.length > 0 && (
+        <div className="mb-8 grid gap-5">
+          {wpisy.map((w) => (
+            <Card key={w.id}>
+              <span className="rounded-full bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600">
+                Wpis na blog · czeka na Ciebie
+              </span>
+              <h2 className="mt-3 font-display text-xl font-semibold text-neutral-900">{w.title}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-neutral-700">{w.excerpt}</p>
+              <p className="mt-2 text-xs text-muted">
+                {w.content.split(/\s+/).filter(Boolean).length} słów · adres: /blog/{w.slug}
+              </p>
+              <div className="mt-5 grid gap-3">
+                <Link
+                  href={`/admin/blog/${w.id}`}
+                  className="block w-full rounded-xl border border-border px-5 py-4 text-center text-base font-medium text-neutral-800 hover:bg-surface"
+                >
+                  Przeczytaj i popraw
+                </Link>
+                <PublishButton id={w.id} title={w.title} rodzaj="wpis" />
+              </div>
+            </Card>
+          ))}
+        </div>
+      )}
+
       {czekajace.length === 0 ? (
-        <EmptyState
-          title="Nic nie czeka"
-          description="Kiedy u Vorwerka pojawi się nowa oferta, znajdziesz ją tutaj do zatwierdzenia."
-        />
+        wpisy.length > 0 ? null : (
+          <EmptyState
+            title="Nic nie czeka"
+            description="Kiedy pojawi się nowa oferta Vorwerka albo nowy wpis na blog, znajdziesz je tutaj do zatwierdzenia."
+          />
+        )
       ) : (
         <div className="grid gap-5">
           {czekajace.map((p) => (
@@ -97,7 +130,8 @@ export default async function DoAkceptacjiPage() {
       )}
 
       <p className="mt-8 text-xs leading-relaxed text-muted">
-        Po kliknięciu „Opublikuj” wpis trafia do „Oferty Thermomix”. Wycofasz go tam, odznaczając „Aktywna”.
+        Oferta po kliknięciu „Opublikuj” trafia do „Oferty Thermomix” — wycofasz ją tam, odznaczając „Aktywna”.
+        Wpis trafia na blog — wycofasz go w zakładce „Blog”, zmieniając status na wersję roboczą.
         </p>
     </>
   );

@@ -689,13 +689,20 @@ export async function CityLandingTemplate({
       </Section>
 
       {/*
-        Opinie: prawdziwe recenzje Google Agi (data/testimonials.ts), BEZ
-        przypisywania ich do miasta. Google nie podaje miasta autora, więc
+        Opinie: prawdziwe recenzje Google Agi (data/testimonials.ts). Miasto
+        przy opinii (authorCityLabel) tylko za zgodą klientki. Google nie podaje miasta autora, więc
         nagłówek mówi po prostu „Opinie klientów” — dopisanie „z Krakowa”
         byłoby zmyśleniem, a to jedyna rzecz, której na stronie lokalnej
         robić nie wolno.
       */}
-      <TestimonialsSection items={TESTIMONIALS} />
+      <TestimonialsSection
+        items={[
+          // 6.11.2026: opinie z miejscowością tego miasta (wpisaną za zgodą
+          // klientki) idą na początek; reszta bez zmian.
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
+        ]}
+      />
 
       {/* LINKOWANIE WEWNĘTRZNE */}
       <Section tone="surface">

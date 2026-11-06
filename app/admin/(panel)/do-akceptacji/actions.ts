@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { requireAdmin } from "@/lib/auth/require-admin";
 import { getPromotionsRepository } from "@/lib/database/repositories/promotions-repository";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
+import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { recordAuditEvent } from "@/lib/admin/actions-helpers";
 
 /**
@@ -63,5 +64,53 @@ export async function publishPromotionAction(id: string): Promise<void> {
   revalidatePath("/oferta");
   revalidatePath("/admin/oferta");
   revalidatePath("/admin/promocje");
+  revalidatePath("/admin/do-akceptacji");
+}
+
+/**
+ * Publikacja wpisu na blog z ekranu „Do akceptacji" (6.11.2026).
+ *
+ * Zaplanowane zadania (promocje 1. i 15. dnia miesiąca, poradnik co tydzień)
+ * zapisują wpis jako wersję roboczą w /admin/blog. Na stronę trafia dopiero po
+ * kliknięciu tutaj: status „opublikowany", data publikacji = teraz,
+ * indeksowanie włączone, więc wpis od razu wchodzi do sitemapy.
+ */
+export async function publishBlogDraftAction(id: string): Promise<void> {
+  const admin = await requireAdmin();
+  const repo = getBlogRepository();
+  const post = await repo.get(id);
+  if (!post || post.status !== "draft") return;
+  await repo.update(
+    id,
+    {
+      slug: post.slug,
+      title: post.title,
+      excerpt: post.excerpt,
+      content: post.content,
+      category: post.category,
+      cluster: post.cluster,
+      relatedLocationSlug: post.relatedLocationSlug,
+      coverImage: post.coverImage,
+      author: post.author,
+      status: "published",
+      indexable: true,
+      seoTitle: post.seoTitle,
+      seoDescription: post.seoDescription,
+      scheduledFor: null,
+      publishedAt: new Date().toISOString(),
+    },
+    admin.email,
+  );
+  await recordAuditEvent({
+    actorEmail: admin.email,
+    entityType: "blog",
+    entityId: id,
+    action: "publish",
+    summary: "Opublikowano wpis „" + post.title + "” z ekranu Do akceptacji",
+  });
+  revalidatePath("/blog");
+  revalidatePath("/blog/" + post.slug);
+  revalidatePath("/sitemap.xml");
+  revalidatePath("/admin/blog");
   revalidatePath("/admin/do-akceptacji");
 }

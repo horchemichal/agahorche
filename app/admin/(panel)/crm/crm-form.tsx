@@ -4,7 +4,7 @@ import { useActionState, useState } from "react";
 import { saveCrmKlientAction } from "./actions";
 import { Input, Label, Textarea, FieldError } from "@/components/ui/form-fields";
 import { Button, ButtonLink } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { cn, SITE } from "@/lib/utils";
 import type { CrmKlient, CrmPolecenie } from "@/types/crm";
 import type { FormActionState } from "@/lib/admin/actions-helpers";
 
@@ -52,6 +52,18 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
   const [polecil, setPolecil] = useState(klient?.polecil ?? "");
   const [notatka, setNotatka] = useState(klient?.notatka ?? "");
   const telHref = telefon.replace(/[^\d+]/g, "");
+  /*
+   * Prośba o opinię (6.11.2026). Po prezentacji zakończonej zakupem Aga
+   * jednym kliknięciem otwiera SMS z gotowym tekstem i linkiem do opinii
+   * w Google. Prośba o dopisanie miejscowości — bo opinia z nazwą miasta
+   * to jedyny uczciwy sposób na „opinie z miejscowościami" na stronach miast.
+   */
+  const trescSms =
+    "Dzień dobry, tu Aga Horche. Dziękuję za zaufanie i zakup Thermomixa! " +
+    "Jeśli masz chwilę, napisz proszę kilka słów o prezentacji w Google — i dopisz, z jakiej jesteś miejscowości. " +
+    "To bardzo mi pomaga: " +
+    (SITE.googleReviewUrl ?? "");
+  const smsHref = `sms:${telHref}?&body=${encodeURIComponent(trescSms)}`;
 
   return (
     <form action={formAction} className="max-w-xl space-y-6">
@@ -121,6 +133,14 @@ export function CrmForm({ klient }: { klient?: CrmKlient }) {
             Nie kupił
           </Wybor>
         </div>
+        {kupil === "tak" && SITE.googleReviewUrl && telHref.replace(/\D/g, "").length >= 9 && (
+          <a
+            href={smsHref}
+            className="mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-brand-500 bg-neutral-0 px-5 py-3 text-base font-medium text-brand-700 hover:bg-brand-50"
+          >
+            <span aria-hidden="true">⭐</span> Poproś o opinię w Google (SMS)
+          </a>
+        )}
       </fieldset>
 
       <div>

@@ -41,6 +41,11 @@ export const SITE = {
    */
   email: "gunia663@interia.pl" as string | null,
   emailHref: "mailto:gunia663@interia.pl",
+  /*
+   * Link do wystawienia opinii w Google — odczytany 6.11.2026 z Profilu Firmy
+   * („Poproś o opinie"), nie wpisany z pamięci. Używa go przycisk SMS w CRM.
+   */
+  googleReviewUrl: "https://g.page/r/CUAbfw5baI37EBM/review" as string | null,
   // null = not confirmed yet (spec §42: never invent a link). Components
   // should only render an icon when the value is set — see components
   // that map over Object.entries(SITE.social).
