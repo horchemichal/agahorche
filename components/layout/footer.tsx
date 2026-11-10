@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/container";
 import { SITE } from "@/lib/utils";
 import { PhoneIcon, MessengerIcon } from "@/components/marketing/icons";
 import { SocialIcons } from "./social-icons";
+import { FooterAdres } from "./footer-adres";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -21,8 +22,7 @@ export function Footer() {
               Oficjalny Przedstawiciel Thermomix®
           </p>
           <p className="mt-3 text-sm leading-relaxed text-neutral-300">
-            Bochnia, województwo małopolskie
-            <br />
+            <FooterAdres />
             <a href="tel:+48517185691" className="underline-offset-2 hover:underline">
               tel. 517 185 691
             </a>

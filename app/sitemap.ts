@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { SITE, normalizujDate } from "@/lib/utils";
 import { getIndexableLocations } from "@/lib/locations";
 import { DISTRICT_CONTENT } from "@/data/locations/districts";
+import { getCityContent } from "@/data/locations/city-content";
+import PORADNIKI from "@/data/poradniki.generated.json";
 import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { getPagesRepository } from "@/lib/database/repositories/pages-repository";
 import { getSeoSettingsRepository } from "@/lib/database/repositories/seo-settings-repository";
@@ -38,9 +40,39 @@ export const dynamic = "force-dynamic";
  * KOSZT: trzeba tę datę podbić, kiedy zmienia się treść stron statycznych
  * albo dzielnic. Lepsze to niż sygnał, który kłamie przy każdym crawlu.
  */
-const TRESC_ZAKTUALIZOWANA = new Date("2026-08-31T00:00:00Z");
+const TRESC_ZAKTUALIZOWANA = new Date("2026-11-06T00:00:00Z");
 
-const STATIC_ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+/*
+ * 6.11.2026: prawdziwe daty zmian per strona, żeby cykliczne odświeżanie
+ * treści było dla Google widoczne — i tylko tam, gdzie treść naprawdę się
+ * zmieniła:
+ *  - poradniki (content/poradniki/*.md) — pole `updated` z nagłówka,
+ *  - strony miast — `zaktualizowano` z data/locations/city-content.ts
+ *    (późniejsza z tej daty i `updatedAt` z bazy),
+ *  - trasy statyczne — opcjonalne `zaktualizowano` przy wpisie niżej.
+ */
+const PORADNIK_ZMIANA = new Map(
+  (PORADNIKI as { path: string; updated?: string }[])
+    .filter((p) => p.updated)
+    .map((p) => [p.path, new Date(`${p.updated}T00:00:00Z`)] as const),
+);
+
+/** Ostatnia zmiana szablonu stron miejscowości (tytuł, H1, FAQ, zdjęcie, opinie) — dotyczy każdej z nich. */
+const SZABLON_LOKALNY_ZMIENIONY = "2026-11-10";
+
+function pozniejsza(a: Date, b?: string): Date {
+  if (!b) return a;
+  const d = new Date(`${b}T00:00:00Z`);
+  return Number.isNaN(d.getTime()) || d <= a ? a : d;
+}
+
+const STATIC_ROUTES: {
+  path: string;
+  priority: number;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  /** „RRRR-MM-DD” — ustawiać tylko przy realnej zmianie treści tej strony. */
+  zaktualizowano?: string;
+}[] = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/thermomix", priority: 0.9, changeFrequency: "weekly" },
   { path: "/thermomix/tm7", priority: 0.8, changeFrequency: "monthly" },
@@ -142,14 +174,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
     url: `${SITE.url}${route.path}`,
-    lastModified: TRESC_ZAKTUALIZOWANA,
+    lastModified: route.zaktualizowano
+      ? pozniejsza(new Date(0), route.zaktualizowano)
+      : PORADNIK_ZMIANA.get(route.path) ?? TRESC_ZAKTUALIZOWANA,
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
 
   const locationEntries: MetadataRoute.Sitemap = indexableLocations.map((location) => ({
     url: `${SITE.url}${location.urlPath}`,
-    lastModified: toSitemapDate(location.updatedAt, now),
+    lastModified: pozniejsza(
+      pozniejsza(toSitemapDate(location.updatedAt, now), getCityContent(location.slug)?.zaktualizowano),
+      SZABLON_LOKALNY_ZMIENIONY,
+    ),
     changeFrequency: "monthly",
     priority: location.tier === "A" ? 0.7 : location.tier === "B" ? 0.55 : 0.4,
   }));
@@ -163,7 +200,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
    */
   const districtEntries: MetadataRoute.Sitemap = DISTRICT_CONTENT.map((district) => ({
     url: `${SITE.url}${district.urlPath}`,
-    lastModified: TRESC_ZAKTUALIZOWANA,
+    lastModified: pozniejsza(TRESC_ZAKTUALIZOWANA, SZABLON_LOKALNY_ZMIENIONY),
     changeFrequency: "monthly",
     priority: 0.5,
   }));

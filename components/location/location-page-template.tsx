@@ -43,9 +43,11 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
   const wariant = buildWariantTresci(resolution);
   const faq = [...buildLocationFaq(resolution), ...(wariant?.faq ?? [])];
 
-  const relevantTestimonials = TESTIMONIALS.filter(
-    (t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase(),
-  );
+  // 10.11.2026: opinie zawsze widoczne (najpierw z tej miejscowości, potem pozostałe prawdziwe).
+  const relevantTestimonials = [
+    ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
+    ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
+  ];
 
   return (
     <>
@@ -54,6 +56,7 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       </Section>
 
       <LocationHero location={location} intro={intro} />
+      <TestimonialsSection items={relevantTestimonials} />
 
       <Section tone="surface">
         <Heading as="h2" size="md" className="mb-4">
@@ -88,7 +91,6 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       <WhyLiveDemoSection />
       <AudienceSection />
       <Tm7Teaser />
-      <TestimonialsSection items={relevantTestimonials} />
       <AgaClubTeaser />
       <FaqSection items={faq} />
       {location.unitType === "wojewodztwo" && (

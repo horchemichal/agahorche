@@ -71,3 +71,33 @@ export function metaTestowe(
     `Zadzwoń: 517 185 691.`;
   return { title, description };
 }
+
+/**
+ * 6.11.2026 (Michał: „zmień wszystkie strony lokalne, żebym był pierwszy”).
+ *
+ * Na frazę „przedstawiciel thermomix <miasto>” Google i Przegląd od AI
+ * wymieniają przedstawicieli Z NAZWISKA — wygrywająca konkurentka ma tytuł
+ * „Przedstawiciel Thermomix Niepołomice - Justyna Polak”. Dlatego tytuł,
+ * H1 i pierwsze pytanie FAQ każdej strony lokalnej mówią wprost, kto
+ * przyjeżdża: Aga Horche. Zastępuje test tytułów z 21.10 (zakończony
+ * decyzją Michała 6.11).
+ */
+export function tytulLokalny(nazwa: string): string {
+  const pelny = `Przedstawiciel Thermomix ${nazwa} — Aga Horche`;
+  if (pelny.length <= 60) return pelny;
+  const krotszy = `Thermomix ${nazwa} — Aga Horche`;
+  return krotszy.length <= 60 ? krotszy : `Przedstawiciel Thermomix ${nazwa}`;
+}
+
+export function pytanieKtoPrzedstawicielem(
+  nazwa: string,
+  wMiejscu: string,
+): { question: string; answer: string } {
+  return {
+    question: `Kto jest przedstawicielem Thermomix ${wMiejscu}?`,
+    answer:
+      `Prezentacje Thermomix ${wMiejscu} i okolicy prowadzi kilka osób współpracujących z Vorwerk. ` +
+      `Ja — Aga Horche, oficjalny przedstawiciel Thermomix — przyjeżdżam do klientów ${wMiejscu} bez dopłaty za dojazd. ` +
+      `Prezentację umówisz telefonicznie: 517 185 691.`,
+  };
+}

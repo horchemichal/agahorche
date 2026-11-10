@@ -46,7 +46,8 @@ export function buildMetadata(input: SeoInput): Metadata {
   const canonicalPath = input.canonicalPath ?? input.path;
   const canonicalUrl = absoluteUrl(canonicalPath);
 
-  const fullTitle = input.title.length + TITLE_SUFFIX.length <= MAX_TITLE_LENGTH
+  // 6.11.2026: tytuły stron lokalnych mają już „— Aga Horche” — bez drugiej marki.
+  const fullTitle = !input.title.includes("Aga Horche") && input.title.length + TITLE_SUFFIX.length <= MAX_TITLE_LENGTH
     ? `${input.title}${TITLE_SUFFIX}`
     : input.title;
 

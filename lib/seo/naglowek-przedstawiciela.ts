@@ -33,7 +33,11 @@
 export function naglowekPrzedstawiciela(h1: string): string {
   // 22.10.2026: ChatGPT szuka „oficjalny przedstawiciel Thermomix <miasto> Vorwerk” — H1 to mówi wprost.
   const w = naglowekBazowy(h1);
-  return w.startsWith("Przedstawiciel Thermomix") ? "Oficjalny przedstawiciel" + w.slice("Przedstawiciel".length) : w;
+  if (!w.startsWith("Przedstawiciel Thermomix")) return w;
+  // 6.11.2026: „Oficjalny przedstawiciel Thermomix <miejsce> – Aga Horche”
+  // (część po myślniku zastępuje nazwisko — patrz tytulLokalny w lib/seo/lokalne.ts).
+  const miejsce = w.split(/\s[–—-]\s/u)[0];
+  return "Oficjalny przedstawiciel" + miejsce.slice("Przedstawiciel".length) + " – Aga Horche";
 }
 
 function naglowekBazowy(h1: string): string {

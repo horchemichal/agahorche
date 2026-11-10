@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { getIndexableLocations, resolveLocation } from "@/lib/locations";
 import { buildLocationIntro, skrocDoOpisu } from "@/lib/locations/content";
 import { buildMetadata } from "@/lib/seo/metadata";
-import { TEST_TYTULOW, metaTestowe } from "@/lib/seo/lokalne";
+import { TEST_TYTULOW, metaTestowe, tytulLokalny } from "@/lib/seo/lokalne";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { miejscownik } from "@/data/locations/odmiana";
 import { LocationPageTemplate } from "@/components/location/location-page-template";
@@ -91,11 +91,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         )
       : null;
     return buildMetadata({
-      title: testowe?.title ?? cityContent.seoTitle,
+      title: tytulLokalny(location.name),
       description: testowe?.description ?? cityContent.seoDescription,
       ogTitle: cityContent.ogTitle,
       ogDescription: cityContent.ogDescription,
-      ogImage: cityContent.heroPhoto.src,
+      ogImage: "/media/aga-przedstawiciel-thermomix-hero-f49127f7.webp",
       path: location.urlPath,
       robots,
       keywords: [

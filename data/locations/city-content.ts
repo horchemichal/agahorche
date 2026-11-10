@@ -72,6 +72,14 @@ export interface CitySection {
 
 export interface CityContent {
   slug: string;
+  /**
+   * Data ostatniej PRAWDZIWEJ zmiany treści tej strony („RRRR-MM-DD”).
+   * Ustawiają ją zaplanowane zadania (codzienny krok, cotygodniowe
+   * odświeżenie) tylko wtedy, gdy faktycznie zmieniły treść — nigdy
+   * „dla świeżości”. Trafia do <lastmod> w sitemapie, do dateModified
+   * w danych strukturalnych i do „Aktualizacja strony” w hero.
+   */
+  zaktualizowano?: string;
   h1: string;
   seoTitle: string;
   seoDescription: string;

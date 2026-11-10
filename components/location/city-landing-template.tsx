@@ -3,7 +3,7 @@ import type { LocationResolution } from "@/types/location";
 import type { CityContent, CitySection } from "@/data/locations/city-content";
 import { CITIES_WITH_CONTENT } from "@/data/locations/city-content";
 import { miejscownik } from "@/data/locations/odmiana";
-import { wMiejscowniku, zdanieOCenie, biezacyMiesiac } from "@/lib/seo/lokalne";
+import { wMiejscowniku, zdanieOCenie, biezacyMiesiac, pytanieKtoPrzedstawicielem } from "@/lib/seo/lokalne";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { FaqSection } from "@/components/seo/faq-section";
 import { PanelWiedzy } from "@/components/location/panel-wiedzy";
@@ -117,7 +117,23 @@ export async function CityLandingTemplate({
   // realnym linkowaniem w dół, a nie samą wyliczanką nazw.
   const districtPages = getDistrictsForCity(content.slug);
 
-  const section = (id: string) => content.sections.find((s) => s.id === id);
+  /*
+   * 10.11.2026 — prośby Agi z 8.11 (strony lokalne):
+   *  - pierwsze zdjęcie to Aga, nie potrawa — Google pokazuje miniaturę osoby
+   *    przy wyniku (tak jak u konkurentki na „przedstawiciel thermomix <miasto>”);
+   *  - zdjęcie miasta z heroPhoto przechodzi do sekcji, która dotąd miała zdjęcie
+   *    Agi (bez dublowania tego samego zdjęcia na stronie).
+   */
+  const ZDJECIE_AGI = "/media/aga-przedstawiciel-thermomix-hero-f49127f7.webp";
+  const zdjecieHero = {
+    src: ZDJECIE_AGI,
+    alt: `Aga Horche — przedstawiciel Thermomix ${location.name}, z Thermomixem TM7`,
+    caption: `Aga Horche — to ja przyjeżdżam z urządzeniem ${wMiejscowniku(location.nameLocative ?? miejscownik(location.slug), location.name ?? "")} i odbieram telefon po zakupie.`,
+  };
+  const sekcje = content.sections.map((s) =>
+    s.photo?.src === ZDJECIE_AGI && content.heroPhoto.src !== ZDJECIE_AGI ? { ...s, photo: content.heroPhoto } : s,
+  );
+  const section = (id: string) => sekcje.find((s) => s.id === id);
 
   /**
    * SEKCJE WŁASNE MIASTA — poprawka z 6 września 2026.
@@ -151,7 +167,7 @@ export async function CityLandingTemplate({
     "co-ugotujesz",
     "tradycyjne-gotowanie",
   ]);
-  const sekcjeWlasne = content.sections.filter((s) => !SLOTY_STALE.has(s.id));
+  const sekcjeWlasne = sekcje.filter((s) => !SLOTY_STALE.has(s.id));
 
   /**
    * Sama TREŚĆ sekcji, bez ramki <Section>. Wydzielona, żeby dało się wstawić
@@ -314,7 +330,7 @@ export async function CityLandingTemplate({
             {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
                 czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
             <p className="mt-4 max-w-xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
-              <strong>W skrócie:</strong> Aga Horche to oficjalny przedstawiciel Thermomix® (Vorwerk Polska) z Bochni.{" "}
+              <strong>W skrócie:</strong> Aga Horche to oficjalny przedstawiciel Thermomix® (Vorwerk Polska).{" "}
               Prezentacja Thermomix TM7{" "}
               {wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} jest bezpłatna
               i odbywa się u Ciebie w kuchni, bez dopłaty za dojazd. {zdanieOCenie(offer) ?? ""}{" "}
@@ -330,7 +346,9 @@ export async function CityLandingTemplate({
             </p>
             <p className="mt-2 text-xs text-neutral-500">
               Aktualizacja strony:{" "}
-              <time dateTime={BUILD_AT}>{new Date(BUILD_AT).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" })}</time>
+              <time dateTime={content.zaktualizowano ?? BUILD_AT}>
+                {new Date(content.zaktualizowano ?? BUILD_AT).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" })}
+              </time>
               {" "}· ceny i promocje: {biezacyMiesiac()}
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -359,9 +377,9 @@ export async function CityLandingTemplate({
           </div>
           <Photo
             priority
-            src={content.heroPhoto.src}
-            alt={content.heroPhoto.alt}
-            caption={content.heroPhoto.caption}
+            src={zdjecieHero.src}
+            alt={zdjecieHero.alt}
+            caption={zdjecieHero.caption}
           />
         </div>
 
@@ -381,6 +399,22 @@ export async function CityLandingTemplate({
           ))}
         </dl>
       </Section>
+
+      {/*
+        Opinie (10.11.2026: 2. sekcja, zaraz pod hero — prośba Agi): prawdziwe recenzje Google Agi (data/testimonials.ts). Miasto
+        przy opinii (authorCityLabel) tylko za zgodą klientki. Google nie podaje miasta autora, więc
+        nagłówek mówi po prostu „Opinie klientów” — dopisanie „z Krakowa”
+        byłoby zmyśleniem, a to jedyna rzecz, której na stronie lokalnej
+        robić nie wolno.
+      */}
+      <TestimonialsSection
+        items={[
+          // 6.11.2026: opinie z miejscowością tego miasta (wpisaną za zgodą
+          // klientki) idą na początek; reszta bez zmian.
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
+        ]}
+      />
 
       <ProseSection data={section("prezentacja")} tone="surface" />
 
@@ -688,22 +722,6 @@ export async function CityLandingTemplate({
         </div>
       </Section>
 
-      {/*
-        Opinie: prawdziwe recenzje Google Agi (data/testimonials.ts). Miasto
-        przy opinii (authorCityLabel) tylko za zgodą klientki. Google nie podaje miasta autora, więc
-        nagłówek mówi po prostu „Opinie klientów” — dopisanie „z Krakowa”
-        byłoby zmyśleniem, a to jedyna rzecz, której na stronie lokalnej
-        robić nie wolno.
-      */}
-      <TestimonialsSection
-        items={[
-          // 6.11.2026: opinie z miejscowością tego miasta (wpisaną za zgodą
-          // klientki) idą na początek; reszta bez zmian.
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
-        ]}
-      />
-
       {/* LINKOWANIE WEWNĘTRZNE */}
       <Section tone="surface">
         <Heading as="h2" size="md">
@@ -755,7 +773,13 @@ export async function CityLandingTemplate({
       />
       <WymianaStatus wariant="miasto" gdzie={wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} />
       <FaqSection
-        items={content.faq}
+        items={[
+          pytanieKtoPrzedstawicielem(
+            location.name,
+            wMiejscowniku(location.nameLocative ?? miejscownik(location.slug), location.name ?? ""),
+          ),
+          ...content.faq.filter((f) => !/^Kto jest przedstawicielem/i.test(f.question)),
+        ]}
         title={`Thermomix ${location.name} — najczęściej zadawane pytania`}
       />
 
@@ -789,7 +813,7 @@ export async function CityLandingTemplate({
             path: location.urlPath,
             name: content.seoTitle,
             description: content.seoDescription,
-              dateModified: BUILD_AT,
+              dateModified: content.zaktualizowano ?? BUILD_AT,
           }),
           // BreadcrumbList NIE jest tu emitowany — robi to już
           // <Breadcrumbs> na górze strony (components/seo/breadcrumbs.tsx),

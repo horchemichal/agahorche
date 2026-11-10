@@ -12,6 +12,7 @@ import { webPageSchema } from "@/lib/seo/schema";
 import { getDistrictsForCity } from "@/data/locations/districts";
 import { SITE } from "@/lib/utils";
 import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
+import { pytanieKtoPrzedstawicielem } from "@/lib/seo/lokalne";
 
 /**
  * Strona dzielnicy. Świadomie KRÓTSZA i uboższa od strony miasta.
@@ -210,7 +211,13 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
         </Section>
       )}
 
-      <FaqSection items={content.faq} title={`Thermomix ${content.nazwa} — pytania mieszkańców`} />
+      <FaqSection
+        items={[
+          pytanieKtoPrzedstawicielem(content.nazwa, `${content.przyimek ?? "w"} ${content.miejscownik}`),
+          ...content.faq.filter((f) => !/^Kto jest przedstawicielem/i.test(f.question)),
+        ]}
+        title={`Thermomix ${content.nazwa} — pytania mieszkańców`}
+      />
 
       <Section id="umow" className="scroll-mt-28">
         <div className="max-w-2xl">
