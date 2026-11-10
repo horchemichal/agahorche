@@ -11,9 +11,9 @@ import { PhoneIcon, MessengerIcon, MailIcon } from "@/components/marketing/icons
 import { SITE } from "@/lib/utils";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Kontakt — umów prezentację Thermomixa w Małopolsce",
+  title: "Kontakt — umów prezentację Thermomixa w całej Polsce",
   description:
-    "Telefon, SMS, Messenger albo formularz — odezwij się, jak Ci wygodnie. Bochnia i cała Małopolska, codziennie 7:00–22:00. Umówimy bezpłatną prezentację Thermomixa u Ciebie w kuchni.",
+    "Telefon, SMS, Messenger albo formularz — odezwij się, jak Ci wygodnie. Bochnia, Małopolska i cała Polska, codziennie 7:00–22:00. Umówimy bezpłatną prezentację Thermomixa u Ciebie w kuchni.",
   path: "/kontakt",
 });
 
