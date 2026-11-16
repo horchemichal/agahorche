@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/form-fields";
 import { cn } from "@/lib/utils";
 import { StatusSelect, LEAD_STATUS_LABEL } from "./status-select";
 import { LeadDeleteButton } from "./lead-delete-button";
+import { PowiadomieniaOZgloszeniach } from "@/components/admin/powiadomienia-o-zgloszeniach";
 import type { LeadStatus, LeadSource } from "@/types/lead";
 
 export const metadata: Metadata = {
@@ -62,6 +63,8 @@ export default async function AdminLeadyPage({ searchParams }: Props) {
         title="Leady"
         description={`${all.length} zgłoszeń — najważniejszy KPI całego projektu (spec §44). Zmiana statusu zapisuje się natychmiast.`}
       />
+
+      <PowiadomieniaOZgloszeniach />
 
       <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap gap-2">

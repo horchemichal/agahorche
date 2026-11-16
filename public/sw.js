@@ -141,12 +141,20 @@ self.addEventListener("push", (zdarzenie) => {
     // ogólne powiadomienie niż nie pokazać nic.
   }
 
+  /*
+   * 16.11.2026: ten sam worker obsługuje też aplikację „Aga Panel"
+   * (powiadomienia o nowych zgłoszeniach). Serwer może więc podać własną
+   * ikonę i własny `tag` — zgłoszenia mają tag osobny dla każdego
+   * zgłoszenia, żeby dwa zgłoszenia były dwoma powiadomieniami. Gdy ich
+   * nie poda (czat klubu), wszystko zostaje jak było.
+   */
   const tytul = dane.tytul || "Aga Club";
+  const ikona = dane.ikona || "/ikony/aga-club-192.png";
   const opcje = {
     body: dane.tresc || "Nowa wiadomość na czacie klubu",
-    icon: "/ikony/aga-club-192.png",
-    badge: "/ikony/aga-club-192.png",
-    tag: "czat-klubu",
+    icon: ikona,
+    badge: ikona,
+    tag: dane.tag || "czat-klubu",
     data: { adres: dane.adres || "/aga-club/czat" },
   };
 
@@ -163,10 +171,23 @@ self.addEventListener("notificationclick", (zdarzenie) => {
    * klientka kliknęłaby trzy powiadomienia i miała trzy kopie
    * aplikacji, z których każda odpytuje serwer.
    */
+  /*
+   * Panel i klub to dwie osobne aplikacje na tym samym adresie. Powiadomienie
+   * o zgłoszeniu ma otworzyć się w oknie panelu, a wiadomość z czatu —
+   * w oknie klubu; przekierowanie okna klubu na /admin (albo odwrotnie)
+   * wyrzucałoby je poza własną aplikację.
+   */
+  const doPanelu = adres.startsWith("/admin");
+
   zdarzenie.waitUntil(
     self.clients.matchAll({ type: "window", includeUncontrolled: true }).then((okna) => {
       for (const okno of okna) {
-        if (new URL(okno.url).origin === self.location.origin && "navigate" in okno) {
+        const url = new URL(okno.url);
+        if (
+          url.origin === self.location.origin &&
+          url.pathname.startsWith("/admin") === doPanelu &&
+          "navigate" in okno
+        ) {
           return okno.navigate(adres).then((o) => o && o.focus());
         }
       }

@@ -543,6 +543,22 @@ create table if not exists club_push_subscriptions (
 
 create index if not exists club_push_user_idx on club_push_subscriptions (user_id);
 
+-- 16.11.2026 — powiadomienia push w aplikacji „Aga Panel" o nowych
+-- zgłoszeniach z formularza. Osobno od zgód klientek: odbiorcą jest
+-- wyłącznie osoba zalogowana do panelu, a w treści jest imię i telefon
+-- zgłaszającego. lib/admin/powiadomienia-zgloszenia.ts zakłada tę tabelę
+-- samo przy pierwszym użyciu — ta definicja jest dla świeżej instalacji.
+
+create table if not exists admin_push_subscriptions (
+  id uuid primary key default gen_random_uuid(),
+  admin_email text not null,
+  endpoint text not null unique,
+  p256dh text not null,
+  auth text not null,
+  created_at timestamptz not null default now(),
+  odswiezona_at timestamptz not null default now()
+);
+
 -- 4.11.2026 — prosty CRM w panelu (/admin/crm). Tylko pola, o które prosił
 -- Michał: imię i nazwisko, miejscowość, kto polecił (osoba z imieniem
 -- i nazwiskiem albo strona www) i status kupił / nie kupił.

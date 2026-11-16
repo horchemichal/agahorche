@@ -6,6 +6,7 @@ import { checkRateLimit, getClientKey } from "@/lib/rate-limit";
 import { trackServerEvent } from "@/lib/analytics/server";
 import { forwardLeadToN8n } from "@/lib/n8n/client";
 import { sendLeadNotificationEmail } from "@/lib/email/client";
+import { powiadomONowymZgloszeniu } from "@/lib/admin/powiadomienia-zgloszenia";
 import type { LeadRecord } from "@/types/lead";
 
 /**
@@ -79,6 +80,11 @@ export async function POST(request: NextRequest) {
   sendLeadNotificationEmail(record, LEAD_NOTIFICATION_EMAIL).catch((error) => {
     console.error("[api/leads] lead notification email failed", error);
   });
+
+  // Powiadomienie push w aplikacji „Aga Panel" (16.11.2026). Niezależne od
+  // maila — działa także wtedy, gdy skrzynka odrzuca logowanie SMTP.
+  // Funkcja sama łapie swoje błędy i nigdy nie rzuca.
+  void powiadomONowymZgloszeniu(record);
 
   return NextResponse.json({ success: true, leadId: record.id });
 }

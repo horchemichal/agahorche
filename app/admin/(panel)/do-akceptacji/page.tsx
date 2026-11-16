@@ -6,6 +6,7 @@ import { getBlogRepository } from "@/lib/database/repositories/blog-repository";
 import { PanelHeader, EmptyState } from "@/components/admin/panel-states";
 import { Card } from "@/components/ui/card";
 import { PublishButton } from "./publish-button";
+import { PowiadomieniaOZgloszeniach } from "@/components/admin/powiadomienia-o-zgloszeniach";
 
 export const metadata: Metadata = {
   title: "Do akceptacji — Aga Admin",
@@ -43,6 +44,9 @@ export default async function DoAkceptacjiPage() {
         title="Do akceptacji"
         description="Oferty i wpisy na blog przygotowane automatycznie. Nic nie trafia na stronę, dopóki nie klikniesz „Opublikuj”."
       />
+
+      {/* Ekran startowy aplikacji Aga Panel — tu Aga zobaczy propozycję włączenia powiadomień o zgłoszeniach. */}
+      <PowiadomieniaOZgloszeniach tylkoGdyWylaczone />
 
       {wpisy.length > 0 && (
         <div className="mb-8 grid gap-5">

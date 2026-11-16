@@ -68,7 +68,7 @@ let skonfigurowane = false;
  * na środowisku bez skonfigurowanych VAPID czat ma działać normalnie,
  * tyle że po cichu.
  */
-function przygotujWysylke(): boolean {
+export function przygotujWysylke(): boolean {
   const publiczny = kluczPubliczny();
   const prywatny = process.env.VAPID_PRIVATE_KEY?.trim();
   if (!publiczny || !prywatny) return false;

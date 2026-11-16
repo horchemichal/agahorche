@@ -22,6 +22,14 @@
 
 export type StanPowiadomien = "sprawdzam" | "brak" | "tylko-apka" | "zablokowane" | "wylaczone" | "wlaczone";
 
+/**
+ * Adres API, pod którym serwer trzyma zgody. Domyślnie czat klubu; panel
+ * Agi (powiadomienia o nowych zgłoszeniach, 16.11.2026) podaje własny —
+ * `/api/admin/push`. Mechanika w przeglądarce jest ta sama, różni się
+ * tylko tabela po stronie serwera i to, kto ma prawo do niej pisać.
+ */
+const API_KLUBU = "/api/klub/push";
+
 /** Klucz VAPID przychodzi jako base64url — Web Push API chce bajtów. */
 function naBajty(base64url: string): ArrayBuffer {
   const uzupelnienie = "=".repeat((4 - (base64url.length % 4)) % 4);
@@ -52,7 +60,7 @@ function czyIOS(): boolean {
 }
 
 /** Co pokazać w przełączniku przy wejściu na czat. */
-export async function sprawdzStan(): Promise<StanPowiadomien> {
+export async function sprawdzStan(adresApi: string = API_KLUBU): Promise<StanPowiadomien> {
   if (typeof window === "undefined") return "sprawdzam";
 
   const umie = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
@@ -75,7 +83,7 @@ export async function sprawdzStan(): Promise<StanPowiadomien> {
      * przeglądarka nadal ma swoją, a wysyłać nie ma dokąd; wtedy
      * przełącznik ma pokazać „wyłączone", żeby dało się kliknąć od nowa.
      */
-    const odp = await fetch(`/api/klub/push?endpoint=${encodeURIComponent(subskrypcja.endpoint)}`, {
+    const odp = await fetch(`${adresApi}?endpoint=${encodeURIComponent(subskrypcja.endpoint)}`, {
       cache: "no-store",
     });
     if (!odp.ok) return "wylaczone";
@@ -90,9 +98,9 @@ export async function sprawdzStan(): Promise<StanPowiadomien> {
  * Włącza powiadomienia. Zwraca stan końcowy — w tym „zablokowane", gdy
  * klientka kliknęła w okienku przeglądarki „Blokuj".
  */
-export async function wlacz(): Promise<StanPowiadomien> {
+export async function wlacz(adresApi: string = API_KLUBU): Promise<StanPowiadomien> {
   try {
-    const odp = await fetch("/api/klub/push", { cache: "no-store" });
+    const odp = await fetch(adresApi, { cache: "no-store" });
     const dane = (await odp.json()) as { klucz?: string | null };
     if (!dane.klucz) return "brak";
 
@@ -112,7 +120,7 @@ export async function wlacz(): Promise<StanPowiadomien> {
     const klucze = kluczeZSubskrypcji(subskrypcja);
     if (!klucze) return "wylaczone";
 
-    const zapis = await fetch("/api/klub/push", {
+    const zapis = await fetch(adresApi, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ endpoint: subskrypcja.endpoint, ...klucze }),
@@ -123,18 +131,29 @@ export async function wlacz(): Promise<StanPowiadomien> {
   }
 }
 
-/** Wyłącza powiadomienia na tym urządzeniu — i w przeglądarce, i na serwerze. */
-export async function wylacz(): Promise<StanPowiadomien> {
+/**
+ * Wyłącza powiadomienia na tym urządzeniu — i w przeglądarce, i na serwerze.
+ *
+ * `odepnijPrzegladarke: false` kasuje wyłącznie wpis na serwerze. Potrzebne
+ * w panelu Agi: na Androidzie Aga Club i Aga Panel działają w tej samej
+ * przeglądarce, więc mają JEDNĄ wspólną subskrypcję. Odpięcie jej
+ * w przeglądarce przy wyłączaniu powiadomień o zgłoszeniach wyłączyłoby
+ * po cichu także czat klubu.
+ */
+export async function wylacz(
+  adresApi: string = API_KLUBU,
+  opcje: { odepnijPrzegladarke?: boolean } = {},
+): Promise<StanPowiadomien> {
   try {
     const rejestracja = await navigator.serviceWorker.ready;
     const subskrypcja = await rejestracja.pushManager.getSubscription();
     if (subskrypcja) {
-      await fetch("/api/klub/push", {
+      await fetch(adresApi, {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ endpoint: subskrypcja.endpoint }),
       });
-      await subskrypcja.unsubscribe();
+      if (opcje.odepnijPrzegladarke !== false) await subskrypcja.unsubscribe();
     }
   } catch {
     // Nawet gdy odpięcie w przeglądarce się nie uda, wpis po stronie
