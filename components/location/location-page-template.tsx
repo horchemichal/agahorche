@@ -43,11 +43,6 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
   const wariant = buildWariantTresci(resolution);
   const faq = [...buildLocationFaq(resolution), ...(wariant?.faq ?? [])];
 
-  // 10.11.2026: opinie zawsze widoczne (najpierw z tej miejscowości, potem pozostałe prawdziwe).
-  const relevantTestimonials = [
-    ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
-    ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
-  ];
 
   return (
     <>
@@ -56,7 +51,14 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       </Section>
 
       <LocationHero location={location} intro={intro} />
-      <TestimonialsSection items={relevantTestimonials} />
+      {/* 16.11.2026: 3 opinie (inna trójka dla każdej miejscowości) + link do /opinie — patrz testimonials-section.tsx */}
+      <TestimonialsSection
+        items={TESTIMONIALS}
+        max={3}
+        seed={location.slug}
+        miasto={location.name}
+        wszystkieHref="/opinie"
+      />
 
       <Section tone="surface">
         <Heading as="h2" size="md" className="mb-4">

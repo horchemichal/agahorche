@@ -408,12 +408,11 @@ export async function CityLandingTemplate({
         robić nie wolno.
       */}
       <TestimonialsSection
-        items={[
-          // 6.11.2026: opinie z miejscowością tego miasta (wpisaną za zgodą
-          // klientki) idą na początek; reszta bez zmian.
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
-        ]}
+        items={TESTIMONIALS}
+        max={3}
+        seed={location.slug}
+        miasto={location.name}
+        wszystkieHref="/opinie"
       />
 
       <ProseSection data={section("prezentacja")} tone="surface" />
