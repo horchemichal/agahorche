@@ -827,16 +827,17 @@ const WIELICZKA: CityContent = {
 
 const NIEPOLOMICE: CityContent = {
   slug: "niepolomice",
+  zaktualizowano: "2026-11-17",
   h1: "Thermomix Niepołomice – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Niepołomice — prezentacja i cena",
   seoDescription:
-    "Thermomix w Niepołomicach: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Przedstawiciel Thermomix w Niepołomicach: bezpłatna prezentacja TM7 u Ciebie, dojazd bez dopłat, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Niepołomice — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Niepołomicach lub okolicy. Terminy również poza godzinami 9–17. Bez dopłat i bez zobowiązania.",
 
   lead:
-    "Do Niepołomic i całej gminy dojeżdżam bez dopłaty za dojazd. Przywożę Thermomix TM7, gotujemy razem u Ciebie w kuchni i liczymy na spokojnie, ile to naprawdę kosztuje — także wtedy, gdy pracujesz zmianowo i „normalne” godziny spotkań u Ciebie nie działają.",
+    "Do Niepołomic i całej gminy dojeżdżam bez dopłaty za dojazd, a prezentacja jest bezpłatna. Aktualną cenę Thermomixa TM7 i bieżącą promocję widzisz w ofercie niżej — pobierają się prosto z mojego panelu. Termin ustalisz pod numerem 517 185 691, także po pracy, w weekend albo między zmianami.",
 
   highlights: [
     { label: "Prezentacja", value: "bezpłatna, u Ciebie w domu" },
@@ -871,7 +872,7 @@ const NIEPOLOMICE: CityContent = {
     },
     {
       id: "na-zywo",
-      heading: "Kiedy dom nie żyje w rytmie 9–17",
+      heading: "Thermomix w Niepołomicach przy pracy zmianowej",
       paragraphs: [
         "W Niepołomicach i okolicznych sołectwach sporo osób pracuje w zakładach w strefie gospodarczej, a to często oznacza zmiany. Kiedy jedna osoba w domu wraca po czternastej, a druga po dwudziestej drugiej, wspólny obiad przestaje być oczywisty — i zwykle kończy się tym, że każdy odgrzewa sobie coś osobno.",
         "To akurat sytuacja, w której Thermomix ma sens bardziej niż w domu z regularnymi godzinami. Większa porcja kosztuje tyle samo obsługi co mniejsza, bo to nie Ty stoisz nad garnkiem. Ugotowane raz danie jednogarnkowe albo zupa spokojnie obsługują dwa różne powroty do domu tego samego dnia.",
