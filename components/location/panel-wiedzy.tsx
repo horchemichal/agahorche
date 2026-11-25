@@ -20,9 +20,19 @@ import { Heading } from "@/components/ui/heading";
 export function PanelWiedzy({
   miasto,
   wMiescie,
+  ile,
+  seed,
 }: {
   miasto: string | null;
   wMiescie: string | null;
+  /**
+   * 24.11.2026: na stronach miast pokazujemy `ile` pytań (np. 2 z 5), inne
+   * dla różnych miast (wg `seed` = slug). Pełne odpowiedzi są na stronach
+   * produktowych — tu chodziło o to, żeby ~270 jednakowych słów nie stało
+   * na każdej z ~1000 stron miast. Bez `ile` — wszystkie, jak dotąd.
+   */
+  ile?: number;
+  seed?: string;
 }) {
   const nazwa = miasto ?? "Twojej okolicy";
   const forma = wMiescie ?? nazwa;
@@ -50,6 +60,12 @@ export function PanelWiedzy({
     },
   ];
 
+  let h = 0;
+  for (const ch of seed ?? "") h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+  const start = h % pytania.length;
+  const pokazane = ile
+    ? [...pytania.slice(start), ...pytania.slice(0, start)].slice(0, ile)
+    : pytania;
   return (
     <Section>
       <Heading as="h2" size="md" className="mb-3">
@@ -60,7 +76,7 @@ export function PanelWiedzy({
         Dane pochodzą z oficjalnych materiałów Vorwerka.
       </p>
       <dl className="grid gap-6 md:grid-cols-2">
-        {pytania.map((p) => (
+        {pokazane.map((p) => (
           <div key={p.q} className="rounded-xl border border-border bg-neutral-0 p-5">
             <dt className="font-display text-base font-semibold text-brand-700">{p.q}</dt>
             <dd className="mt-2 text-sm leading-relaxed text-neutral-700">{p.a}</dd>

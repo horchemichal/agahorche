@@ -51,13 +51,12 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       </Section>
 
       <LocationHero location={location} intro={intro} />
-      {/* 16.11.2026: 3 opinie (inna trójka dla każdej miejscowości) + link do /opinie — patrz testimonials-section.tsx */}
+      {/* 24.11.2026: znów wszystkie opinie (decyzja Michała — klienci dobrze reagują na dużo opinii). */}
       <TestimonialsSection
-        items={TESTIMONIALS}
-        max={3}
-        seed={location.slug}
-        miasto={location.name}
-        wszystkieHref="/opinie"
+        items={[
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
+        ]}
       />
 
       <Section tone="surface">

@@ -1,4 +1,5 @@
 import type { Testimonial } from "@/types/testimonial";
+import { KopiaGrupy } from "@/components/marketing/kopia-grupy";
 
 const MARQUEE_CSS = `
 .tmx-marquee { overflow: hidden; }
@@ -110,11 +111,7 @@ export function TestimonialsMarquee({ items }: { items: Testimonial[] }) {
                   <QuoteCard key={`a-${t.id}-${i}`} t={t} />
                 ))}
               </div>
-              <div className="tmx-marquee__group" aria-hidden="true">
-                {group.map((t, i) => (
-                  <QuoteCard key={`b-${t.id}-${i}`} t={t} />
-                ))}
-              </div>
+              <KopiaGrupy className="tmx-marquee__group" />
             </div>
           </div>
         );

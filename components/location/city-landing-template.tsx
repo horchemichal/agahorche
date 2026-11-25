@@ -30,6 +30,7 @@ import { BUILD_AT } from "@/lib/build-info.generated";
 import { absoluteUrl, SITE } from "@/lib/utils";
 import { TESTIMONIALS } from "@/data/testimonials";
 import { getDistrictsForCity } from "@/data/locations/districts";
+import { skrocSekcjeWspolne, wybierzPytaniaWspolne } from "@/data/locations/cities/skroty";
 
 /**
  * Zamienia nazwę miejscowości na slug używany w adresach: „Nowy Wiśnicz”
@@ -133,7 +134,8 @@ export async function CityLandingTemplate({
   const sekcje = content.sections.map((s) =>
     s.photo?.src === ZDJECIE_AGI && content.heroPhoto.src !== ZDJECIE_AGI ? { ...s, photo: content.heroPhoto } : s,
   );
-  const section = (id: string) => sekcje.find((s) => s.id === id);
+  const sekcjeSkrocone = skrocSekcjeWspolne(sekcje);
+  const section = (id: string) => sekcjeSkrocone.find((s) => s.id === id);
 
   /**
    * SEKCJE WŁASNE MIASTA — poprawka z 6 września 2026.
@@ -408,11 +410,10 @@ export async function CityLandingTemplate({
         robić nie wolno.
       */}
       <TestimonialsSection
-        items={TESTIMONIALS}
-        max={3}
-        seed={location.slug}
-        miasto={location.name}
-        wszystkieHref="/opinie"
+        items={[
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
+          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
+        ]}
       />
 
       <ProseSection data={section("prezentacja")} tone="surface" />
@@ -471,6 +472,8 @@ export async function CityLandingTemplate({
         right={section("jedna-osoba")}
       />
 
+      {/* 24.11.2026: gdy obie sekcje to wspólny tekst z wspolne.ts, są już
+          w skrócie w sekcji „tm7” (patrz skroty.ts) i section() zwraca undefined. */}
       <ProseSectionPair
         left={section("co-ugotujesz")}
         right={section("tradycyjne-gotowanie")}
@@ -763,7 +766,7 @@ export async function CityLandingTemplate({
         </div>
       </Section>
 
-      <PanelWiedzy miasto={location.name} wMiescie={location.nameLocative ?? miejscownik(location.slug)} />
+      <PanelWiedzy miasto={location.name} wMiescie={location.nameLocative ?? miejscownik(location.slug)} ile={2} seed={location.slug} />
       <SerwisNajblizszy
         slug={location.slug}
         nazwa={location.name}
@@ -777,7 +780,10 @@ export async function CityLandingTemplate({
             location.name,
             wMiejscowniku(location.nameLocative ?? miejscownik(location.slug), location.name ?? ""),
           ),
-          ...content.faq.filter((f) => !/^Kto jest przedstawicielem/i.test(f.question)),
+          ...wybierzPytaniaWspolne(
+            content.faq.filter((f) => !/^Kto jest przedstawicielem/i.test(f.question)),
+            location.slug,
+          ),
         ]}
         title={`Thermomix ${location.name} — najczęściej zadawane pytania`}
       />
