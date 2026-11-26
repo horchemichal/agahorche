@@ -31,16 +31,17 @@ import {
  */
 export const BRZESKO: CityContent = {
   slug: "brzesko",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Brzesko – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Brzesko — prezentacja i cena",
   seoDescription:
-    "Thermomix w Brzesku: bezpłatna prezentacja TM7 u Ciebie w domu, bez dopłaty za dojazd. Aktualna cena, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
+    "Przedstawiciel Thermomix w Brzesku: bezpłatna prezentacja TM7 u Ciebie w domu, dojazd bez dopłat, raty 0%, pomoc po zakupie. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Brzesko — przyjeżdżam do Ciebie, prezentacja bezpłatna",
   ogDescription:
     "Gotujemy razem w Twojej kuchni w Brzesku lub okolicy. Bez dopłat za dojazd, bez zobowiązania. Ratę liczymy na miejscu.",
 
   lead:
-    "Do Brzeska i całej gminy dojeżdżam bez dopłaty za dojazd. Przywożę Thermomix TM7, gotujemy razem u Ciebie w kuchni i spokojnie liczymy, ile to naprawdę kosztuje. Prezentacja jest bezpłatna i do niczego nie zobowiązuje.",
+    "Do Brzeska i całej gminy dojeżdżam bez dopłaty za dojazd, a prezentacja jest bezpłatna i do niczego nie zobowiązuje. Aktualną cenę Thermomixa TM7 i bieżącą promocję widzisz w ofercie niżej — pobierają się prosto z mojego panelu. Termin ustalisz pod numerem 517 185 691, także wieczorem w tygodniu albo w sobotę.",
 
   highlights: highlightyStandardowe("Brzesko i cała gmina, bez dopłat"),
 
@@ -68,7 +69,7 @@ export const BRZESKO: CityContent = {
     },
     {
       id: "na-zywo",
-      heading: "Miasto, z którego jeździ się w dwie strony",
+      heading: "Thermomix w Brzesku – mieście, z którego jeździ się w dwie strony",
       paragraphs: [
         "Brzesko jest w rzadkiej sytuacji: ma własnych dużych pracodawców — Browar Okocim działa tu od 1845 roku, a Can-Pack zatrudnia ludzi z całej okolicy — a jednocześnie leży przy węźle autostrady A4, w zasięgu codziennych dojazdów i do Krakowa, i do Tarnowa. W jednym domu potrafią więc mieszkać dwie osoby wyjeżdżające rano w przeciwne strony.",
         "Do tego dochodzi dziewięć sołectw gminy, gdzie rolnictwo jest realnym zajęciem, a nie wspomnieniem. To znaczy, że w gminie Brzesko obok siebie funkcjonują dwa zupełnie różne rytmy kuchni: miejski, w którym problemem jest brak czasu wieczorem, i wiejski, w którym problemem jest nadmiar warzyw i owoców w sezonie.",
