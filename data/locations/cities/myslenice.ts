@@ -1,14 +1,5 @@
 import type { CityContent } from "../city-content";
-import {
-  blokOMnie,
-  faqWspolne,
-  highlightyStandardowe,
-  sekcjaCena,
-  sekcjaCoUgotujesz,
-  sekcjaRaty,
-  sekcjaTm7,
-  sekcjaTradycyjneGotowanie,
-} from "./wspolne";
+import { faqWspolne, highlightyStandardowe, sekcjaTm7 } from "./wspolne";
 
 /**
  * MYŚLENICE — najbliżej Krakowa z całego tego zestawu (ok. 35 km zakopianką)
@@ -31,6 +22,7 @@ import {
  */
 export const MYSLENICE: CityContent = {
   slug: "myslenice",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Myślenice – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Myślenice — prezentacja i cena",
   seoDescription:
@@ -55,9 +47,8 @@ export const MYSLENICE: CityContent = {
       id: "prezentacja",
       heading: "Thermomix w Myślenicach – jak wygląda prezentacja?",
       paragraphs: [
-        "Przyjeżdżam z pełnym wyposażeniem: urządzenie, produkty, w razie potrzeby naczynia. Nie musisz nic kupować ani szykować — potrzebny jest tylko wolny fragment blatu i gniazdko.",
-        "Potem gotujemy razem, u Ciebie i po Twojemu. Powstaje danie obiadowe, coś słodkiego i zwykle jeszcze coś z Twojej lodówki, bo dopiero na własnych produktach widać, czy urządzenie pasuje do tego, co naprawdę jecie. Wystarczy, że wcześniej powiesz mi, ile osób jada w domu i czego unikacie.",
-        "Liczby omawiamy na końcu i bez owijania: cena, promocja obowiązująca w danym miesiącu, rata przy różnych okresach spłaty. Nikt nie musi niczego decydować na miejscu — prezentacja jest bezpłatna i tak zostaje.",
+        "Myślenice dzieli od Bochni w linii prostej około 40 km, więc przywożę komplet: Thermomix TM7, produkty i w razie potrzeby naczynia. Po Twojej stronie jest tylko kawałek blatu i gniazdko — w bloku na Osiedlu 1000-lecia tak samo jak w domu w Jaworniku czy Bęczarce.",
+        "Gotujemy obiad, coś słodkiego i coś z Twojej lodówki, w porcji, jaką robisz na co dzień. Cenę i ratę omawiamy na końcu, bez decyzji na miejscu — prezentacja jest bezpłatna.",
       ],
       links: [{ href: "/prezentacja/jak-wyglada", label: "Zobacz, jak wygląda prezentacja krok po kroku" }],
       photo: {
@@ -79,7 +70,7 @@ export const MYSLENICE: CityContent = {
       id: "jak-umowic",
       heading: "Jak umówić prezentację w Myślenicach?",
       paragraphs: [
-        "Telefon albo SMS załatwia sprawę w minutę. Jeśli wolisz pisać niż dzwonić, na dole strony jest formularz — wpisz tam porę, o której mogę się odezwać.",
+        "Zadzwoń albo wyślij SMS na 517 185 691 — termin ustalimy od razu. Wolisz pisać? Formularz jest na dole strony.",
         "Powiedz od razu, w którym rejonie gminy mieszkasz i ile osób będzie na spotkaniu. Gmina jest rozległa i idzie w góry — Trzemeśnia czy Poręba to inny dojazd niż centrum — więc konkret pozwala mi ułożyć realny plan dnia zamiast obiecywać godzinę, której nie dotrzymam.",
       ],
       links: [
@@ -87,9 +78,36 @@ export const MYSLENICE: CityContent = {
         { href: "/kontakt", label: "Kontakt" },
       ],
     },
-    sekcjaTm7(),
-    sekcjaCena("w Myślenicach"),
-    sekcjaRaty("w Myślenicach"),
+    {
+      ...sekcjaTm7(),
+      heading: "Thermomix TM7 — co pokażę na spotkaniu",
+      paragraphs: [
+        "TM7 ma duży ekran dotykowy, izolowane naczynie, większą Varomę i gotowanie bez pokrywki. Pokażę go na daniu, które gotujesz na co dzień — także w dużej porcji, jeśli przy stole siada sześć czy osiem osób. Patelni przy smażeniu nie zastąpi; przejmuje siekanie, mieszanie i pilnowanie temperatury.",
+      ],
+      links: [
+        { href: "/thermomix/tm7", label: "Wszystko o Thermomix TM7" },
+        { href: "/thermomix/tm7-vs-tm6", label: "Porównanie TM7 i TM6" },
+        { href: "/thermomix/funkcje", label: "Pełna lista funkcji" },
+        { href: "/diety", label: "Gotowe jadłospisy i diety — pobierz bezpłatny PDF" },
+        { href: "/thermomix/wady-i-zalety", label: "Wady i zalety Thermomixa — bez lukru" },
+      ],
+    },
+    {
+      id: "cena",
+      heading: "Ile kosztuje Thermomix TM7 w Myślenicach?",
+      paragraphs: [
+        "Tyle samo co w Krakowie, oddalonym o około 35 km zakopianką: cenę ustala Vorwerk dla całej Polski, a dojazd do miasta i siedemnastu sołectw nic nie kosztuje. Aktualna kwota i promocja miesiąca są w sekcji z ofertą powyżej.",
+      ],
+      links: [{ href: "/oferta", label: "Aktualna cena i promocje" }],
+    },
+    {
+      id: "raty",
+      heading: "Thermomix na raty w Myślenicach — jak to policzyć",
+      paragraphs: [
+        "Finansowanie ratalne jest dostępne, okresowo z RRSO 0%. Kalkulator poniżej liczy od aktualnej ceny — sprawdź kilka okresów spłaty, zanim przyjadę. Wynik jest orientacyjny: o warunkach decyduje oferta z danego miesiąca i instytucja finansująca, więc w Myślenicach przeliczymy go na dokładnych danych.",
+      ],
+      links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
+    },
     {
       id: "rodzina",
       heading: "Thermomix dla rodziny z Myślenic",
@@ -108,8 +126,6 @@ export const MYSLENICE: CityContent = {
         caption: "Posiłek dla dziecka może powstawać równolegle z obiadem dla całego domu.",
       },
     },
-    sekcjaCoUgotujesz(),
-    sekcjaTradycyjneGotowanie(),
   ],
 
   districtsHeading: "Gdzie w gminie Myślenice dojeżdżam?",
@@ -160,7 +176,21 @@ export const MYSLENICE: CityContent = {
     "Kraków",
   ],
 
-  about: blokOMnie("do Myślenic", "w Myślenicach, Dobczycach i Skawinie"),
+  about: {
+    heading: "Kto poprowadzi Twoją prezentację",
+    paragraphs: [
+      "Prezentację prowadzę osobiście, bez call center: Aga Horche, oficjalna przedstawicielka Thermomix® w Małopolsce. Kupujesz z gwarancją producenta i z bieżącą promocją, a ten sam numer działa po zakupie — przy pierwszym uruchomieniu, koncie Cookidoo i zgłoszeniu serwisowym.",
+    ],
+    bullets: [
+      "dojazd do Myślenic, Dobczyc i Skawiny bez dopłat",
+      "7-dniowe jadłospisy z listami zakupów dla klientek i klientów",
+    ],
+    photo: {
+      src: "/media/aga-przedstawiciel-thermomix-e08f7154.webp",
+      alt: "Aga Horche z Thermomixem TM7 — napis „Przedstawiciel Thermomix”",
+      caption: "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce.",
+    },
+  },
 
   faq: [
     {

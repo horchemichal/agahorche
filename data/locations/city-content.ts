@@ -1066,6 +1066,7 @@ const NIEPOLOMICE: CityContent = {
 
 const SKAWINA: CityContent = {
   slug: "skawina",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Skawina – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Skawina — prezentacja i cena",
   seoDescription:
@@ -1095,9 +1096,8 @@ const SKAWINA: CityContent = {
       id: "prezentacja",
       heading: "Thermomix w Skawinie – jak wygląda prezentacja?",
       paragraphs: [
-        "Przyjeżdżam do Ciebie ze wszystkim, co potrzebne: z urządzeniem, z produktami i z naczyniami, gdyby były potrzebne. Ty nie kupujesz nic i nie przygotowujesz nic — wystarczy wolny kawałek blatu i gniazdko.",
-        "Potem po prostu gotujemy. Coś na obiad, coś słodkiego i zwykle coś, co akurat masz w lodówce, bo to najlepiej pokazuje, czy urządzenie pasuje do Waszego jedzenia. Powiedz mi wcześniej, ile osób jest w domu i czego nie jecie — dobiorę dania tak, żeby spotkanie miało sens akurat u Was.",
-        "Na koniec siadamy do liczb: aktualna cena, dostępna promocja i rata. „Dziękuję, przemyślę” jest pełnoprawną odpowiedzią i nic za spotkanie nie płacisz.",
+        "Skawinę dzieli od Bochni w linii prostej około 45 km, więc przywożę wszystko: Thermomix TM7, produkty i w razie potrzeby naczynia. Wystarczy kawałek blatu i gniazdko — na Osiedlu Ogrody tak samo jak w Radziszowie czy Krzęcinie.",
+        "Gotujemy obiad, coś słodkiego i coś z tego, co akurat jest w domu, latem często z warzyw z ogrodu. Liczby zostawiamy na koniec, a „przemyślę” jest pełnoprawną odpowiedzią — za spotkanie nic nie płacisz.",
       ],
       links: [
         { href: "/prezentacja/jak-wyglada", label: "Zobacz, jak wygląda prezentacja krok po kroku" },
@@ -1121,8 +1121,8 @@ const SKAWINA: CityContent = {
       id: "jak-umowic",
       heading: "Jak umówić prezentację w Skawinie?",
       paragraphs: [
-        "Najprościej telefonem — zadzwoń albo napisz SMS, ustalimy termin w minutę. Jeśli wolisz nie dzwonić, wypełnij formularz na dole tej strony, a ja oddzwonię o wskazanej porze.",
-        "Powiedz od razu, w którym rejonie gminy mieszkasz i ile osób będzie na spotkaniu. Pierwsze pozwala mi ułożyć trasę, drugie — dobrać, co ugotujemy.",
+        "Zadzwoń lub napisz SMS na 517 185 691 albo zostaw numer w formularzu na dole strony — oddzwonię o wskazanej porze.",
+        "Podaj miejscowość i liczbę osób. Do Starego Miasta jadę inną trasą niż do Woli Radziszowskiej czy Ochodzy, a od liczby osób zależy, ile ugotujemy.",
       ],
       links: [
         { href: "/prezentacja", label: "Umów prezentację przez formularz" },
@@ -1131,14 +1131,16 @@ const SKAWINA: CityContent = {
     },
     {
       id: "tm7",
-      heading: "Thermomix TM7 – co zobaczysz na spotkaniu",
+      heading: "Thermomix TM7 — co pokażę na spotkaniu",
       paragraphs: [
-        "TM7 to najnowszy model: duży ekran dotykowy, izolowane naczynie, cichsza praca i większa Varoma do gotowania na parze. Doszło otwarte gotowanie, czyli praca bez pokrywki — przydaje się przy odparowywaniu sosów i przy przetworach.",
-        "Pokazuję funkcje, z których faktycznie będziesz korzystać. Jeśli zastanawiasz się nad TM6, mogę pokazać oba modele obok siebie i uczciwie powiedzieć, kiedy starszy wystarczy.",
+        "TM7 ma duży ekran dotykowy, izolowane naczynie, większą Varomę i gotowanie bez pokrywki — to ostatnie przydaje się przy odparowywaniu przecierów i dżemów, gdy w gminie trwa sezon na warzywa i owoce. Smażenia na patelni nie zastąpi; przejmuje siekanie, mieszanie i pilnowanie temperatury.",
       ],
       links: [
         { href: "/thermomix/tm7", label: "Wszystko o Thermomix TM7" },
         { href: "/thermomix/tm7-vs-tm6", label: "Porównanie TM7 i TM6" },
+        { href: "/thermomix/funkcje", label: "Pełna lista funkcji" },
+        { href: "/diety", label: "Gotowe jadłospisy i diety — pobierz bezpłatny PDF" },
+        { href: "/thermomix/wady-i-zalety", label: "Wady i zalety Thermomixa — bez lukru" },
       ],
       photo: {
         src: "/zdjecia/thermomix-tm7-varoma.webp",
@@ -1151,8 +1153,7 @@ const SKAWINA: CityContent = {
       id: "cena",
       heading: "Ile kosztuje Thermomix TM7 w Skawinie?",
       paragraphs: [
-        "Cenę ustala Vorwerk i jest identyczna w całej Polsce — w Skawinie zapłacisz tyle samo, co w Krakowie. Aktualna kwota jest w sekcji z ofertą powyżej; pobiera się wprost z mojego panelu, więc zawsze jest bieżąca.",
-        "Zmieniają się natomiast promocje i zestawy — co miesiąc wyglądają inaczej. Dlatego nie wpisuję w treść kwoty, która za trzy tygodnie byłaby nieprawdziwa.",
+        "W Skawinie płacisz tyle samo co w Krakowie, do którego wiele osób stąd dojeżdża do pracy: cenę ustala Vorwerk dla całej Polski, a dojazd do miasta i sołectw gminy nic nie kosztuje. Aktualną kwotę i promocję miesiąca pokazuje sekcja z ofertą powyżej.",
       ],
       links: [{ href: "/oferta", label: "Aktualna cena i promocje" }],
     },
@@ -1160,8 +1161,7 @@ const SKAWINA: CityContent = {
       id: "raty",
       heading: "Thermomix na raty w Skawinie — jak to policzyć",
       paragraphs: [
-        "Dostępne jest finansowanie ratalne, okresowo z RRSO 0%. Kalkulator poniżej startuje z aktualnej ceny — zmień okres spłaty albo wkład własny i zobacz, jak zmienia się miesięczna kwota. Wynik jest orientacyjny; ostateczne warunki zależą od bieżącej oferty i decyzji instytucji finansującej.",
-        "Warto policzyć to przed spotkaniem, na spokojnie. Na prezentacji w Skawinie wracamy do tych samych liczb, tylko z dokładnymi danymi.",
+        "Ratę możesz policzyć wieczorem, po powrocie z pracy, w kalkulatorze poniżej — startuje od aktualnej ceny. Finansowanie jest dostępne, okresowo z RRSO 0%; kwota z kalkulatora jest orientacyjna, bo warunki zależą od promocji w danym miesiącu i od decyzji instytucji finansującej.",
       ],
       links: [{ href: "/finansowanie", label: "Więcej o ratach 0%" }],
     },
@@ -1181,27 +1181,6 @@ const SKAWINA: CityContent = {
         alt: "Aga Horche z synem i Thermomixem TM7 — napis „gotuj z dzieckiem i dla dziecka”",
         caption: "Warzywa z ogrodu i obiad, którego nie trzeba pilnować.",
       },
-    },
-    {
-      id: "co-ugotujesz",
-      heading: "Co możesz ugotować?",
-      paragraphs: [
-        "Zupy, sosy, dania jednogarnkowe, ciasta, pasty kanapkowe, mleka roślinne, kaszę i ryż, jedzenie dla niemowlaka, przetwory. Cookidoo prowadzi przez przepisy krok po kroku — dlatego Thermomix bywa dobrym pomysłem także dla kogoś, kto gotować raczej nie lubi.",
-        "Moim klientkom i klientom przygotowuję pełne 7-dniowe jadłospisy z listami zakupów. Jeden dzień z każdej diety możesz pobrać bezpłatnie już teraz.",
-      ],
-      links: [
-        { href: "/diety", label: "Gotowe jadłospisy i diety — pobierz bezpłatny PDF" },
-        { href: "/thermomix/funkcje", label: "Pełna lista funkcji" },
-      ],
-    },
-    {
-      id: "tradycyjne-gotowanie",
-      heading: "Czy to zastąpi normalne gotowanie?",
-      paragraphs: [
-        "Nie i nie udaję, że tak. Naleśniki czy porządnie przysmażone mięso nadal robi się szybciej na patelni. Thermomix zabiera te czynności, które zjadają czas po cichu: siekanie, tarcie, ucieranie, mieszanie, żeby się nie przypaliło.",
-        "Większość osób nie wyrzuca garnków. Przestaje tylko odkładać gotowanie na dzień, w którym „będzie czas”.",
-      ],
-      links: [{ href: "/thermomix/wady-i-zalety", label: "Wady i zalety Thermomixa — bez lukru" }],
     },
   ],
 
@@ -1254,15 +1233,11 @@ const SKAWINA: CityContent = {
   about: {
     heading: "Kto poprowadzi Twoją prezentację",
     paragraphs: [
-      "Nazywam się Aga Horche i jestem oficjalną przedstawicielką Thermomix® w Małopolsce. Kupujesz u mnie legalnie: z gwarancją producenta, z aktualną promocją i z możliwością zgłoszenia urządzenia do serwisu.",
-      "Pracuję pojedynczo, nie przez call center. Ta sama osoba, która przyjedzie do Ciebie do Skawiny, odbierze telefon pół roku później, gdy nie będzie wychodzić ciasto.",
+      "Nazywam się Aga Horche i jestem oficjalną przedstawicielką Thermomix® w Małopolsce — u mnie kupujesz legalnie, z gwarancją producenta i aktualną promocją. Do Skawiny i sołectw gminy przyjeżdżam sama, a po zakupie odbieram ten sam telefon: przy pierwszym uruchomieniu, koncie Cookidoo i zgłoszeniu serwisowym.",
     ],
     bullets: [
-      "oficjalna przedstawicielka Vorwerk — gwarancja producenta i legalny zakup",
-      "prezentacje w domach klientów w Skawinie, Krakowie i całej Małopolsce",
-      "pomoc przy pierwszym uruchomieniu i założeniu konta Cookidoo",
-      "stały kontakt telefoniczny po zakupie, także przy zgłoszeniu serwisowym",
-      "pełne 7-dniowe jadłospisy z listami zakupów dla moich klientek i klientów",
+      "dojazd do Skawiny i sołectw gminy bez dopłat",
+      "7-dniowe jadłospisy z listami zakupów dla klientek i klientów",
     ],
     photo: {
       src: "/media/aga-przedstawiciel-thermomix-e08f7154.webp",
