@@ -6,7 +6,7 @@
   "h1": "Ile kosztuje Thermomix TM7? Cena i wszystkie koszty — {{miesiac}}",
   "lead": "Thermomix TM7 kosztuje 6 669 zł — tyle samo u przedstawiciela, co w sklepie internetowym Vorwerk. Rozpisuję, co dokładnie dostajesz w tej cenie, ile wychodzi na raty, ile kosztuje Cookidoo po okresie próbnym i kiedy realnie da się kupić korzystniej.",
   "skrot": [
-    "Cena regularna Thermomix TM7: 6 669 zł (sklep Vorwerk Polska, październik 2026).",
+    "Cena regularna Thermomix TM7: 6 669 zł (sklep Vorwerk Polska, stan na 26 listopada 2026).",
     "Z Usługą Nieodpłatnej Naprawy na 3 lata: 7 464 zł.",
     "W zestawie: urządzenie, naczynie z nożem, koszyczek, motylek, kopystka, komplet Varoma i 3 miesiące Cookidoo dla nowych subskrybentów.",
     "Cookidoo po okresie próbnym: 259 zł za rok — nie jest obowiązkowe, TM7 gotuje także bez niego.",
@@ -14,7 +14,7 @@
     "{{oferta}}"
   ],
   "published": "2026-10-22",
-  "updated": "2026-10-22",
+  "updated": "2026-11-26",
   "image": "/oferty/thermomix-tm7-6669.webp",
   "imageAlt": "Thermomix TM7 — cena 6 669 zł",
   "breadcrumbs": [
@@ -42,7 +42,7 @@
   "faq": [
     [
       "Ile kosztuje Thermomix TM7 w Polsce?",
-      "Zestaw podstawowy Thermomix TM7 kosztuje 6 669 zł, a wersja z Usługą Nieodpłatnej Naprawy na 3 lata 7 464 zł (ceny ze sklepu Vorwerk Polska, październik 2026). Cena od premiery w lutym 2025 roku się nie zmieniła."
+      "Zestaw podstawowy Thermomix TM7 kosztuje 6 669 zł, a wersja z Usługą Nieodpłatnej Naprawy na 3 lata 7 464 zł (ceny ze sklepu Vorwerk Polska, listopad 2026). Cena od premiery w lutym 2025 roku się nie zmieniła."
     ],
     [
       "Czy u przedstawiciela Thermomix jest drożej niż w sklepie internetowym?",
@@ -122,7 +122,7 @@
 | Cookidoo po okresie próbnym (nieobowiązkowe) | 259 zł za rok |
 | Dostawa ze sklepu Vorwerk | 0 zł |
 
-Ceny sprawdziłam w sklepie Vorwerk Polska w październiku 2026. Cena urządzenia jest jedna: u przedstawiciela płacisz za TM7 dokładnie tyle samo, co przy zamówieniu przez internet. Różnica jest w tym, co możesz dostać dodatkowo — o tym niżej.
+Ceny sprawdziłam ponownie w sklepie Vorwerk Polska 26 listopada 2026 — bez zmian względem października. Cena urządzenia jest jedna: u przedstawiciela płacisz za TM7 dokładnie tyle samo, co przy zamówieniu przez internet. Różnica jest w tym, co możesz dostać dodatkowo — o tym niżej.
 
 {{oferta}}
 
@@ -161,19 +161,22 @@ Cena urządzenia od premiery stoi w miejscu. Zmienia się to, co dostajesz w pak
 - luty–marzec: drugie naczynie miksujące za 499 zł i 36 rat 0%,
 - sierpień: drugie naczynie za 299 zł, a od 24 do 31 sierpnia rabat za oddanie starego Thermomixa,
 - wrzesień: akcesoria za 249 zł,
-- październik (1–31.10): zestaw do pieczenia chleba z naczyniem żeliwnym za 169 zł.
+- październik (1–31.10): zestaw do pieczenia chleba z naczyniem żeliwnym za 169 zł,
+- listopad: TM7 z nakładką krojącą 2.0 ze spiralizerem w 40 ratach 0% (2–30.11), TM7 z drugim naczyniem miksującym za 499 zł i 40 ratami 0% (19–30.11) oraz rabat za oddanie starego Thermomixa (18–30.11). W sklepie internetowym Vorwerk do 30 listopada można kupić TM7 w 20 ratach 0%.
 
 Aktualną promocję zawsze potwierdzam przed spotkaniem — sprawdź [aktualną ofertę](/oferta).
 
 ## Wymiana starego Thermomixa na TM7
 
-Vorwerk co jakiś czas prowadzi akcję wymiany: oddajesz stary model, a cena nowego TM7 spada. W ostatniej edycji (24–31 sierpnia 2026) rabat wynosił:
+Vorwerk co jakiś czas prowadzi akcję wymiany: oddajesz stary model, a cena nowego TM7 spada. Obecna edycja trwa od 18 do 30 listopada 2026 roku (lub do wyczerpania puli urządzeń) i obowiązuje wyłącznie u przedstawicieli. Rabat wynosi:
 
-| Oddajesz | Rabat na TM7 |
+| Oddajesz | Rabat na TM7 (18–30.11.2026) |
 |---|---|
-| Thermomix TM31 | 645 zł |
-| Thermomix TM5 | 1 075 zł |
-| Thermomix TM6 | 1 935 zł |
+| Thermomix TM21 lub TM31 | 600 zł |
+| Thermomix TM5 | 900 zł |
+| Thermomix TM6 | 1 500 zł |
+
+Dla porównania: w poprzedniej edycji (24–31 sierpnia 2026) rabat wynosił 645 zł za TM31, 1 075 zł za TM5 i 1 935 zł za TM6 — wysokość rabatu zmienia się więc z edycji na edycję.
 
 To akcja okresowa, nie stały cennik. Jeśli masz starszego Thermomixa, zapytaj mnie, czy wymiana właśnie trwa. Różnice między modelami opisałam na stronie [modele Thermomix i wymiana na TM7](/thermomix/modele).
 

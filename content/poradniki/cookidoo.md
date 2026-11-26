@@ -13,7 +13,7 @@
     "Abonament odnawia się sam co 12 miesięcy — automatyczne odnawianie wyłączysz w ustawieniach konta."
   ],
   "published": "2026-10-22",
-  "updated": "2026-10-22",
+  "updated": "2026-11-26",
   "breadcrumbs": [
     [
       "Thermomix",
@@ -226,6 +226,17 @@ Od 16 marca 2026 darmowe 3 miesiące z nowym TM7 przysługują tylko osobom, kt�
 ## Jeden abonament dla całej rodziny
 
 Abonament jest przypisany do konta, nie do urządzenia. Domownicy mogą korzystać z jednego konta, natomiast regulamin zabrania jednej osobie zakładania kilku kont. Do jednego konta można podłączyć kilka urządzeń — Vorwerk podaje osobne limity dla różnych modeli.
+
+## Asystent Cookidoo w aplikacji mobilnej
+
+Vorwerk dodał do aplikacji mobilnej Cookidoo Asystenta Cookidoo — pomocnika opartego na AI, który ułatwia poruszanie się po bazie przepisów. Według zapowiedzi Vorwerk pomaga między innymi:
+
+- szybciej wyszukiwać i zapisywać inspiracje,
+- porównywać przepisy pod kątem ocen, czasu przygotowania i wartości odżywczych,
+- szukać dań po składnikach, które masz w domu,
+- planować menu na specjalne okazje.
+
+Ważne: Asystent nie wymyśla własnych przepisów. Vorwerk podkreśla, że przepisy nadal tworzą i testują ludzie — zespoły kulinarne Vorwerk, także we Wrocławiu — a AI pomaga tylko odnaleźć się w gotowej bazie. Jeśli chcesz zobaczyć, jak Cookidoo działa na TM7 w praktyce, [umów bezpłatną prezentację](/prezentacja).
 
 ## Czy warto? Moje zdanie
 

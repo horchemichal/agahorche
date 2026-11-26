@@ -78,6 +78,7 @@ import {
  */
 export const BOCHNIA: CityContent = {
   slug: "bochnia",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Bochnia – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Bochnia — prezentacja i cena",
   seoDescription:
@@ -293,6 +294,11 @@ export const BOCHNIA: CityContent = {
       question: "Czy muszę coś kupić przed prezentacją?",
       answer:
         "Nie. Przywożę urządzenie, składniki i w razie potrzeby naczynia. Po Twojej stronie zostaje wolne gniazdko i kawałek blatu albo stołu.",
+    },
+    {
+      question: "Na OLX są używane Thermomixy z Bochni. Czy to dobry pomysł?",
+      answer:
+        "Może się udać, ale warto wiedzieć, na co się godzisz. Zakup z ogłoszenia to prywatna transakcja — Vorwerk za nią nie odpowiada, a do skorzystania z gwarancji potrzebny jest dowód zakupu. Ogłoszenia typu „nowy Thermomix za ułamek ceny” to częsty schemat oszustwa. Najtańszy oryginalny Thermomix z pewnego źródła to odnowiony TM6 ze sklepu Vorwerk. Na co uważać przy używanym urządzeniu, opisałam w poradniku o używanym Thermomixie. A jeśli chcesz porównać, nowego TM7 możesz zobaczyć w działaniu u siebie w kuchni na bezpłatnej prezentacji — bez obowiązku zakupu.",
     },
   ],
 

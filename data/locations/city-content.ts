@@ -140,6 +140,7 @@ export interface CityContent {
 
 const KRAKOW: CityContent = {
   slug: "krakow",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Kraków – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kraków — prezentacja i cena",
   seoDescription:
@@ -520,6 +521,11 @@ const KRAKOW: CityContent = {
       answer:
         "Uczciwie: zmienia się co innego niż w rodzinie. Przy jednej porcji najwięcej pracy jest nie w samym gotowaniu, tylko w krojeniu, tarciu i zmywaniu — i to znika. W praktyce oznacza to, że częściej wychodzi ugotować coś dla siebie zamiast zamówić. Ale jeśli po prezentacji uznasz, że przy Twoim trybie dnia to się nie zwróci, powiem Ci to wprost.",
     },
+    {
+      question: "Gdzie w Krakowie jest serwis Thermomix i jak zgłosić naprawę?",
+      answer:
+        "W Krakowie działa jeden z dziewięciu autoryzowanych punktów serwisowych Vorwerk w Polsce. Naprawę zgłasza się formularzem serwisowym na stronie Vorwerk — potrzebny jest numer seryjny urządzenia i krótki opis usterki. W formularzu wybiera się, czy kurier odbierze Thermomixa spod domu, czy urządzenie trafi do punktu osobiście, więc nie trzeba przejeżdżać przez całe miasto w godzinach pracy serwisu. Adres, telefon i godziny punktu zebrałam na blogu we wpisie „Serwis Thermomix Kraków”. Jeśli Thermomix jest ode mnie, zadzwoń: 517 185 691 — podpowiem, jak załatwić zgłoszenie najszybciej.",
+    },
   ],
 
   geo: { lat: 50.0614, lng: 19.9366 },
@@ -562,6 +568,7 @@ const KRAKOW: CityContent = {
 
 const WIELICZKA: CityContent = {
   slug: "wieliczka",
+  zaktualizowano: "2026-11-26",
   h1: "Thermomix Wieliczka – prezentacja u Ciebie w domu",
   seoTitle: "Przedstawiciel Thermomix Wieliczka — prezentacja i cena",
   seoDescription:
@@ -819,6 +826,11 @@ const WIELICZKA: CityContent = {
       question: "Czy pomagasz po zakupie?",
       answer:
         "Tak. Pomagam przy pierwszym uruchomieniu, przy koncie Cookidoo i przy zgłoszeniu serwisowym, gdyby kiedykolwiek było potrzebne. Numer telefonu zostaje ten sam.",
+    },
+    {
+      question: "Gdzie jest najbliższy serwis Thermomix, gdy mieszkam w Wieliczce?",
+      answer:
+        "Najbliższy autoryzowany punkt serwisowy Vorwerk jest w Krakowie, ale z Wieliczki nie trzeba tam jechać. Naprawę zgłasza się formularzem serwisowym na stronie Vorwerk — potrzebny jest numer seryjny urządzenia i krótki opis usterki — i w tym samym formularzu można wybrać odbiór Thermomixa kurierem spod domu. Adres i godziny krakowskiego punktu opisałam na blogu we wpisie „Serwis Thermomix Kraków”. Jeśli Thermomix jest ode mnie, zadzwoń: 517 185 691 — pomogę przy zgłoszeniu.",
     },
   ],
 
