@@ -58,7 +58,7 @@ export default async function WnioskiRaty() {
             {POLA.filter((p) => p.typ !== "info" && w.dane[p.klucz]).map((p) => (
               <div key={p.klucz} className="grid gap-1 py-2 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] sm:gap-4">
                 <dt className="text-neutral-500">{p.etykieta}</dt>
-                <dd className="whitespace-pre-wrap break-words font-medium text-neutral-900">{w.dane[p.klucz]}</dd>
+                <dd className="whitespace-pre-wrap break-words font-medium text-neutral-900">{p.typ === "date" ? w.dane[p.klucz].split("-").reverse().join(".") : w.dane[p.klucz]}</dd>
               </div>
             ))}
           </dl>

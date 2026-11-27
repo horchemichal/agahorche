@@ -12,10 +12,24 @@ export const OKRES_PRZECHOWYWANIA_GODZ = 24;
 
 export const MALZENSTWO = "Zamężna / żonaty";
 
+export const ZRODLA_DOCHODU = [
+  "Umowa o pracę – czas nieokreślony",
+  "Umowa o pracę – czas określony",
+  "Emerytura",
+  "Renta",
+  "Działalność – ryczałt",
+  "Działalność – karta podatkowa",
+  "Działalność – zasady ogólne (skala)",
+  "Działalność – podatek liniowy",
+  "Umowa zlecenie",
+  "Umowa o dzieło",
+  "Inne",
+];
+
 export interface Pole {
   klucz: string;
   etykieta: string;
-  typ: "text" | "textarea" | "select" | "tel" | "email" | "info";
+  typ: "text" | "textarea" | "select" | "tel" | "email" | "date" | "info";
   opcje?: string[];
   podpowiedz?: string;
   /** Pole pokazuje się (i jest wymagane) tylko przy tej odpowiedzi w innym polu. */
@@ -45,12 +59,8 @@ export const POLA: Pole[] = [
     typ: "info",
     podpowiedz: "Numer dowodu poda Pani telefonicznie. Prosimy nie wpisywać go w formularzu.",
   },
-  {
-    klucz: "dowodDaty",
-    etykieta: "6. Data wydania i data ważności dowodu osobistego",
-    typ: "text",
-    podpowiedz: "np. wydany 12.03.2019, ważny do 12.03.2029",
-  },
+  { klucz: "dowodDataWydania", etykieta: "6. Data wydania dowodu osobistego", typ: "date" },
+  { klucz: "dowodDataWaznosci", etykieta: "6a. Data ważności dowodu osobistego", typ: "date" },
   {
     klucz: "wyksztalcenie",
     etykieta: "7. Wykształcenie",
@@ -78,12 +88,12 @@ export const POLA: Pole[] = [
   },
   { klucz: "telefon", etykieta: "10. Numer telefonu", typ: "tel" },
   { klucz: "email", etykieta: "11. Adres e-mail", typ: "email" },
+  { klucz: "zrodloDochodu", etykieta: "12. Źródło dochodu", typ: "select", opcje: ZRODLA_DOCHODU },
   {
-    klucz: "zrodloDochodu",
-    etykieta: "12. Źródło dochodu",
-    typ: "textarea",
-    podpowiedz:
-      "np. umowa o pracę, emerytura, działalność gospodarcza – na jakich zasadach (ryczałt, karta, zasady ogólne)",
+    klucz: "zrodloDochoduInne",
+    etykieta: "12a. Jakie inne źródło dochodu?",
+    typ: "text",
+    warunek: { klucz: "zrodloDochodu", wartosc: "Inne" },
   },
   {
     klucz: "dataZatrudnienia",
@@ -91,7 +101,7 @@ export const POLA: Pole[] = [
     typ: "text",
     podpowiedz: "od kiedy; przy umowie na czas określony także do kiedy",
   },
-  { klucz: "dochodNetto", etykieta: "14. Kwota dochodu netto (miesięcznie)", typ: "text" },
+  { klucz: "dochodNetto", etykieta: "14. Kwota dochodu netto na rękę (miesięcznie)", typ: "text" },
   {
     klucz: "zakladPracy",
     etykieta: "15. Zakład pracy",
@@ -117,9 +127,15 @@ export const POLA: Pole[] = [
   {
     klucz: "zrodloDochoduMalzonka",
     etykieta: "22. Źródło dochodu współmałżonka",
-    typ: "text",
-    podpowiedz: "umowa o pracę, umowa zlecenie, umowa o dzieło…",
+    typ: "select",
+    opcje: ZRODLA_DOCHODU,
     warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+  },
+  {
+    klucz: "zrodloDochoduMalzonkaInne",
+    etykieta: "22a. Jakie inne źródło dochodu współmałżonka?",
+    typ: "text",
+    warunek: { klucz: "zrodloDochoduMalzonka", wartosc: "Inne" },
   },
   {
     klucz: "iloscRatMalzonka",
@@ -173,6 +189,10 @@ export function walidujRaty(
     }
     if (pole.typ === "tel" && !/^[+\d][\d\s-]{8,16}$/.test(v)) {
       bledy[pole.klucz] = "Sprawdź numer telefonu.";
+      continue;
+    }
+    if (pole.typ === "date" && !/^\d{4}-\d{2}-\d{2}$/.test(v)) {
+      bledy[pole.klucz] = "Wybierz datę z kalendarza.";
       continue;
     }
     if (pole.typ === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
