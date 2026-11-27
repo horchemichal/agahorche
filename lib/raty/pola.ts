@@ -35,6 +35,8 @@ export interface Pole {
   /** Pole pokazuje się (i jest wymagane) tylko przy tej odpowiedzi w innym polu. */
   warunek?: { klucz: string; wartosc: string };
   opcjonalne?: boolean;
+  /** Pole widać zawsze („jeśli dotyczy”), ale wymagane jest tylko przy tej odpowiedzi. */
+  wymaganeGdy?: { klucz: string; wartosc: string };
 }
 
 export const POLA: Pole[] = [
@@ -116,20 +118,20 @@ export const POLA: Pole[] = [
     klucz: "dochodMalzonka",
     etykieta: "20. Dochód współmałżonka (na czas nieokreślony, od min. 6 miesięcy – na oko)",
     typ: "text",
-    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+    wymaganeGdy: { klucz: "stanCywilny", wartosc: MALZENSTWO },
   },
   {
     klucz: "zobowiazaniaMalzonka",
     etykieta: "21. Zobowiązania kredytowe współmałżonka",
     typ: "textarea",
-    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+    wymaganeGdy: { klucz: "stanCywilny", wartosc: MALZENSTWO },
   },
   {
     klucz: "zrodloDochoduMalzonka",
     etykieta: "22. Źródło dochodu współmałżonka",
     typ: "select",
     opcje: ZRODLA_DOCHODU,
-    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+    wymaganeGdy: { klucz: "stanCywilny", wartosc: MALZENSTWO },
   },
   {
     klucz: "zrodloDochoduMalzonkaInne",
@@ -141,7 +143,7 @@ export const POLA: Pole[] = [
     klucz: "iloscRatMalzonka",
     etykieta: "23. Ilość rat współmałżonka",
     typ: "text",
-    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+    wymaganeGdy: { klucz: "stanCywilny", wartosc: MALZENSTWO },
   },
 ];
 
@@ -172,7 +174,9 @@ export function walidujRaty(
     if (pole.typ === "info" || !poleWidoczne(pole, odczyt)) continue;
     const v = odczyt[pole.klucz];
     if (!v) {
-      if (!pole.opcjonalne) bledy[pole.klucz] = "To pole jest wymagane.";
+      const wymagane =
+        !pole.opcjonalne && (!pole.wymaganeGdy || odczyt[pole.wymaganeGdy.klucz] === pole.wymaganeGdy.wartosc);
+      if (wymagane) bledy[pole.klucz] = "To pole jest wymagane.";
       continue;
     }
     if (v.length > MAKS_DLUGOSC) {

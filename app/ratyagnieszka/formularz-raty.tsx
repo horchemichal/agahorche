@@ -120,6 +120,7 @@ function PoleFormularza({
       <label htmlFor={id} className="block text-sm font-medium text-neutral-800">
         {pole.etykieta}
         {pole.opcjonalne && <span className="font-normal text-neutral-500"> (opcjonalnie)</span>}
+        {pole.wymaganeGdy && <span className="font-normal text-neutral-500"> (jeśli dotyczy)</span>}
       </label>
       {pole.podpowiedz && <p className="mt-0.5 text-xs text-neutral-500">{pole.podpowiedz}</p>}
       <div className="mt-1.5">
