@@ -32,7 +32,7 @@ export function BramkaHasla() {
   return (
     <form onSubmit={wyslij} className="max-w-sm space-y-3">
       <label htmlFor="haslo-raty" className="block text-sm font-medium text-neutral-800">
-        Podaj hasło, które otrzymała Pani od doradczyni
+        Wpisz hasło otrzymane od doradczyni
       </label>
       <input
         id="haslo-raty"

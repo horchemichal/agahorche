@@ -45,7 +45,7 @@ export function FormularzRaty() {
       <div className="rounded-lg border border-emerald-300 bg-white px-5 py-6">
         <h2 className="text-lg font-semibold text-neutral-900">Dziękujemy, dane zostały wysłane.</h2>
         <p className="mt-2 text-neutral-700">
-          Doradczyni zadzwoni do Pani, żeby dokończyć wniosek (wtedy poda Pani numer dowodu). Dane zostaną usunięte
+          Zadzwonimy, żeby dokończyć wniosek – proszę mieć pod ręką dowód osobisty, zapytamy o jego numer. Dane zostaną usunięte
           z bazy po {OKRES_PRZECHOWYWANIA_GODZ} godzinach.
         </p>
       </div>
