@@ -1,0 +1,186 @@
+/**
+ * OŚ PLIKU
+ * Pola formularza „Raty 0%” (strona /ratyagnieszka, poza menu, na hasło).
+ * Jedna lista dla formularza, walidacji na serwerze i podglądu w panelu,
+ * żeby etykiety i kolejność nigdy się nie rozjechały.
+ *
+ * Punkt 5 (numer dowodu) celowo NIE jest polem: klientka podaje go
+ * telefonicznie, więc nie trafia do bazy ani do sieci.
+ */
+
+export const OKRES_PRZECHOWYWANIA_GODZ = 24;
+
+export const MALZENSTWO = "Zamężna / żonaty";
+
+export interface Pole {
+  klucz: string;
+  etykieta: string;
+  typ: "text" | "textarea" | "select" | "tel" | "email" | "info";
+  opcje?: string[];
+  podpowiedz?: string;
+  /** Pole pokazuje się (i jest wymagane) tylko przy tej odpowiedzi w innym polu. */
+  warunek?: { klucz: string; wartosc: string };
+  opcjonalne?: boolean;
+}
+
+export const POLA: Pole[] = [
+  { klucz: "pesel", etykieta: "1. Numer PESEL", typ: "text", podpowiedz: "11 cyfr" },
+  { klucz: "imieNazwisko", etykieta: "2. Imię (drugie imię) i nazwisko", typ: "text" },
+  { klucz: "adresZamieszkania", etykieta: "3. Adres zamieszkania", typ: "textarea" },
+  {
+    klucz: "adresDostawyTakiSam",
+    etykieta: "4. Czy adres dostawy jest taki sam jak adres zamieszkania?",
+    typ: "select",
+    opcje: ["Tak, taki sam", "Nie, inny"],
+  },
+  {
+    klucz: "adresDostawy",
+    etykieta: "4a. Adres dostawy",
+    typ: "textarea",
+    warunek: { klucz: "adresDostawyTakiSam", wartosc: "Nie, inny" },
+  },
+  {
+    klucz: "info-dowod",
+    etykieta: "5. Numer dowodu osobistego",
+    typ: "info",
+    podpowiedz: "Numer dowodu poda Pani telefonicznie. Prosimy nie wpisywać go w formularzu.",
+  },
+  {
+    klucz: "dowodDaty",
+    etykieta: "6. Data wydania i data ważności dowodu osobistego",
+    typ: "text",
+    podpowiedz: "np. wydany 12.03.2019, ważny do 12.03.2029",
+  },
+  {
+    klucz: "wyksztalcenie",
+    etykieta: "7. Wykształcenie",
+    typ: "select",
+    opcje: ["Podstawowe", "Zasadnicze zawodowe", "Średnie", "Policealne", "Wyższe"],
+  },
+  {
+    klucz: "wyksztalcenieStopien",
+    etykieta: "7a. Jakie średnie? (np. liceum, technikum)",
+    typ: "text",
+    warunek: { klucz: "wyksztalcenie", wartosc: "Średnie" },
+    opcjonalne: true,
+  },
+  {
+    klucz: "stanCywilny",
+    etykieta: "8. Stan cywilny",
+    typ: "select",
+    opcje: ["Panna / kawaler", MALZENSTWO, "Rozwiedziona / rozwiedziony", "Wdowa / wdowiec", "W separacji"],
+  },
+  {
+    klucz: "statusMieszkania",
+    etykieta: "9. Status miejsca zamieszkania",
+    typ: "select",
+    opcje: ["Dom", "Mieszkanie spółdzielcze", "Mieszkanie własnościowe", "Najem", "U rodziny"],
+  },
+  { klucz: "telefon", etykieta: "10. Numer telefonu", typ: "tel" },
+  { klucz: "email", etykieta: "11. Adres e-mail", typ: "email" },
+  {
+    klucz: "zrodloDochodu",
+    etykieta: "12. Źródło dochodu",
+    typ: "textarea",
+    podpowiedz:
+      "np. umowa o pracę, emerytura, działalność gospodarcza – na jakich zasadach (ryczałt, karta, zasady ogólne)",
+  },
+  {
+    klucz: "dataZatrudnienia",
+    etykieta: "13. Data zatrudnienia",
+    typ: "text",
+    podpowiedz: "od kiedy; przy umowie na czas określony także do kiedy",
+  },
+  { klucz: "dochodNetto", etykieta: "14. Kwota dochodu netto (miesięcznie)", typ: "text" },
+  {
+    klucz: "zakladPracy",
+    etykieta: "15. Zakład pracy",
+    typ: "textarea",
+    podpowiedz: "nazwa, adres, telefon – wystarczy NIP",
+  },
+  { klucz: "osobyNaUtrzymaniu", etykieta: "16. Osoby na utrzymaniu", typ: "text" },
+  { klucz: "oplatyMiesieczne", etykieta: "17. Opłaty miesięczne (na oko)", typ: "text" },
+  { klucz: "iloscRat", etykieta: "18. Ilość miesięcznych rat / kredytów / pożyczek", typ: "text" },
+  { klucz: "ilosc800", etykieta: "19. Ilość świadczeń 800+", typ: "text" },
+  {
+    klucz: "dochodMalzonka",
+    etykieta: "20. Dochód współmałżonka (na czas nieokreślony, od min. 6 miesięcy – na oko)",
+    typ: "text",
+    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+  },
+  {
+    klucz: "zobowiazaniaMalzonka",
+    etykieta: "21. Zobowiązania kredytowe współmałżonka",
+    typ: "textarea",
+    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+  },
+  {
+    klucz: "zrodloDochoduMalzonka",
+    etykieta: "22. Źródło dochodu współmałżonka",
+    typ: "text",
+    podpowiedz: "umowa o pracę, umowa zlecenie, umowa o dzieło…",
+    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+  },
+  {
+    klucz: "iloscRatMalzonka",
+    etykieta: "23. Ilość rat współmałżonka",
+    typ: "text",
+    warunek: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+  },
+];
+
+export type DaneRaty = Record<string, string>;
+
+export function poleWidoczne(pole: Pole, dane: DaneRaty): boolean {
+  if (!pole.warunek) return true;
+  return dane[pole.warunek.klucz] === pole.warunek.wartosc;
+}
+
+const MAKS_DLUGOSC = 600;
+
+/** Sprawdza dane z formularza. Zwraca tylko widoczne pola, przycięte. */
+export function walidujRaty(
+  wejscie: unknown,
+): { ok: true; dane: DaneRaty } | { ok: false; bledy: Record<string, string> } {
+  const surowe = (wejscie && typeof wejscie === "object" ? wejscie : {}) as Record<string, unknown>;
+  const odczyt: DaneRaty = {};
+  for (const pole of POLA) {
+    const v = surowe[pole.klucz];
+    odczyt[pole.klucz] = typeof v === "string" ? v.trim() : "";
+  }
+
+  const dane: DaneRaty = {};
+  const bledy: Record<string, string> = {};
+
+  for (const pole of POLA) {
+    if (pole.typ === "info" || !poleWidoczne(pole, odczyt)) continue;
+    const v = odczyt[pole.klucz];
+    if (!v) {
+      if (!pole.opcjonalne) bledy[pole.klucz] = "To pole jest wymagane.";
+      continue;
+    }
+    if (v.length > MAKS_DLUGOSC) {
+      bledy[pole.klucz] = "Za długi tekst.";
+      continue;
+    }
+    if (pole.opcje && !pole.opcje.includes(v)) {
+      bledy[pole.klucz] = "Wybierz jedną z opcji.";
+      continue;
+    }
+    if (pole.klucz === "pesel" && !/^\d{11}$/.test(v)) {
+      bledy[pole.klucz] = "PESEL to 11 cyfr.";
+      continue;
+    }
+    if (pole.typ === "tel" && !/^[+\d][\d\s-]{8,16}$/.test(v)) {
+      bledy[pole.klucz] = "Sprawdź numer telefonu.";
+      continue;
+    }
+    if (pole.typ === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
+      bledy[pole.klucz] = "Sprawdź adres e-mail.";
+      continue;
+    }
+    dane[pole.klucz] = v;
+  }
+
+  return Object.keys(bledy).length ? { ok: false, bledy } : { ok: true, dane };
+}
