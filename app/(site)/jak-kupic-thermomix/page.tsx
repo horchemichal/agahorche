@@ -31,7 +31,7 @@ const FAQ = [
   {
     question: "Czy Thermomixa można kupić w sklepie ze sprzętem AGD?",
     answer:
-      "Nie. Vorwerk sprzedaje wyłącznie przez własną sieć przedstawicieli — to jedyna droga do nowego urządzenia z gwarancją producenta i z aktualnymi promocjami.",
+      "Nie. Nowego Thermomixa kupisz u przedstawiciela albo w sklepie internetowym Vorwerk — w obu miejscach cena jest taka sama. Promocje z zestawami i ratami 0% są dostępne przy zakupie u przedstawiciela.",
   },
   {
     question: "Czy muszę zorganizować prezentację, żeby kupić?",

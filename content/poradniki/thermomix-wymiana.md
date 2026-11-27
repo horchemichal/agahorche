@@ -88,6 +88,14 @@
     [
       "Umów prezentację",
       "/prezentacja"
+    ],
+    [
+      "Czarny Thermomix",
+      "/thermomix/czarny"
+    ],
+    [
+      "Thermomix na prezent",
+      "/thermomix/na-prezent"
     ]
   ]
 }

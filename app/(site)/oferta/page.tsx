@@ -15,11 +15,20 @@ import type { Offer } from "@/types/offer";
 import type { MediaAsset } from "@/types/media";
 import { ofertaObowiazuje } from "@/lib/offers/window";
 
-export const metadata: Metadata = buildMetadata({
-  title: "Oferta",
-  description: "Aktualna oferta Thermomix TM7 — ceny, zestawy i możliwości finansowania.",
-  path: "/oferta",
-});
+export async function generateMetadata(): Promise<Metadata> {
+  // Tytuł z bieżącym miesiącem: ludzie szukają „promocja thermomix <miesiąc>”.
+  const miesiac = new Intl.DateTimeFormat("pl-PL", {
+    month: "long",
+    year: "numeric",
+    timeZone: "Europe/Warsaw",
+  }).format(new Date());
+  return buildMetadata({
+    title: `Promocje Thermomix TM7 — ${miesiac}: raty 0% i zestawy`,
+    description: `Aktualne promocje Thermomix TM7 (${miesiac}): zestawy, raty 0%, cena i warunki. Oferta przedstawiciela Thermomix — prezentacje w całej Polsce.`,
+    path: "/oferta",
+    keywords: ["promocja thermomix", "thermomix promocja", "thermomix promocje", "thermomix tm7 promocja", "thermomix raty 0%"],
+  });
+}
 
 /**
  * Full offer list (spec §5/§21 — single source of truth). Everything here

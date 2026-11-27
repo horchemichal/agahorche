@@ -87,6 +87,14 @@
     [
       "Serwis Thermomix Kraków",
       "/blog/serwis-thermomix-krakow"
+    ],
+    [
+      "Czarny Thermomix",
+      "/thermomix/czarny"
+    ],
+    [
+      "Czy Thermomix się opłaca",
+      "/thermomix/czy-sie-oplaca"
     ]
   ]
 }

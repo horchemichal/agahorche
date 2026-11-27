@@ -96,6 +96,14 @@
     [
       "Opinie moich klientów",
       "/opinie"
+    ],
+    [
+      "Czy Thermomix się opłaca",
+      "/thermomix/czy-sie-oplaca"
+    ],
+    [
+      "Czarny Thermomix",
+      "/thermomix/czarny"
     ]
   ]
 }

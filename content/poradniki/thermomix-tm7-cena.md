@@ -109,6 +109,18 @@
     [
       "Thermomix TM7",
       "/thermomix/tm7"
+    ],
+    [
+      "Czy Thermomix się opłaca",
+      "/thermomix/czy-sie-oplaca"
+    ],
+    [
+      "Thermomix na prezent",
+      "/thermomix/na-prezent"
+    ],
+    [
+      "Thermomix na firmę",
+      "/thermomix/na-firme"
     ]
   ]
 }
