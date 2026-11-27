@@ -13,7 +13,7 @@ import Link from "next/link";
 export const metadata: Metadata = buildMetadata({
   title: "Umów bezpłatną prezentację Thermomix",
   description:
-    "Umów bezpłatną, niezobowiązującą prezentację Thermomix TM7 z Agą — u Ciebie w domu, w całej Polsce.",
+    "Umów bezpłatną, niezobowiązującą prezentację Thermomix TM7 z Agą — przedstawicielem Thermomix od 2021 r., ponad 500 prezentacji. U Ciebie w domu, w całej Polsce.",
   path: "/prezentacja",
 });
 
@@ -31,7 +31,7 @@ export default function PrezentacjaPage() {
               Umów bezpłatną prezentację Thermomix
             </Heading>
             <Lead className="mt-5 max-w-xl">
-              Aga przyjeżdża do Ciebie i pokazuje Thermomixa na żywo — w całej Polsce, bez presji,
+              Aga przyjeżdża do Ciebie i pokazuje Thermomixa na żywo — ponad 500 prezentacji od 2021 roku, w całej Polsce, bez presji,
               bez zobowiązań.
             </Lead>
             <div className="mt-6">

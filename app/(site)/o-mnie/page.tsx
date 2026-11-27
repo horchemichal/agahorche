@@ -12,9 +12,9 @@ import { ButtonLink } from "@/components/ui/button";
 import { Photo, CheckList, Prose, CtaBand, LocalBand } from "@/components/marketing/content-blocks";
 
 export const metadata: Metadata = buildMetadata({
-  title: "O mnie — Aga Horche, przedstawicielka Thermomix",
+  title: "O mnie — przedstawiciel Thermomix od 2021 r., ponad 500 prezentacji",
   description:
-    "Aga Horche — oficjalna przedstawicielka Thermomix® w Małopolsce. Jak pracuję, czego możesz się spodziewać przed zakupem i po nim, gdzie prowadzę prezentacje.",
+    "Aga Horche — oficjalny przedstawiciel Thermomix® od 2021 roku, ponad 500 prezentacji w domach klientów. Jak pracuję, czego możesz się spodziewać przed zakupem i po nim, gdzie prowadzę prezentacje.",
   path: "/o-mnie",
   keywords: ["aga horche", "przedstawiciel thermomix małopolska", "przedstawiciel thermomix bochnia"],
   ogImage: "/media/aga-przedstawiciel-thermomix-e08f7154.webp",
@@ -73,7 +73,7 @@ export default function OMniePage() {
               Aga Horche
             </Heading>
             <Lead className="mt-5 max-w-xl">
-              Prowadzę prezentacje Thermomixa w całej Polsce, najczęściej w Małopolsce — u ludzi w kuchniach, przy prawdziwym
+              Jestem przedstawicielem Thermomix od 2021 roku i mam za sobą ponad 500 prezentacji. Prowadzę je w całej Polsce, najczęściej w Małopolsce — u ludzi w kuchniach, przy prawdziwym
               obiedzie, a nie przy prezentacji ze slajdów.
             </Lead>
             <div className="mt-7 flex flex-wrap gap-3">

@@ -19,7 +19,7 @@ import { TESTIMONIALS } from "@/data/testimonials";
 export const metadata: Metadata = buildMetadata({
   title: "Przedstawiciel Thermomix Bochnia i Małopolska — Aga Horche",
   description:
-    "Przedstawiciel Thermomix® z Bochni — bezpłatne prezentacje TM7 u Ciebie w domu, w Małopolsce i w całej Polsce. Zadzwoń: 517 185 691.",
+    "Przedstawiciel Thermomix® z Bochni od 2021 r., ponad 500 prezentacji. Bezpłatne prezentacje TM7 u Ciebie w domu — Małopolska i cała Polska. Tel. 517 185 691.",
   path: "/",
   ogType: "website",
 });
