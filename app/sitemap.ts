@@ -98,6 +98,8 @@ const STATIC_ROUTES: {
   { path: "/thermomix/uzywany", priority: 0.75, changeFrequency: "monthly" },
   { path: "/thermomix/wymiana", priority: 0.75, changeFrequency: "weekly" },
   { path: "/thermomix/na-prezent", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/thermomix/gwarancja", priority: 0.7, changeFrequency: "monthly" },
+  { path: "/thermomix/ile-sie-czeka", priority: 0.7, changeFrequency: "monthly" },
   { path: "/thermomix/czy-sie-oplaca", priority: 0.7, changeFrequency: "monthly" },
   { path: "/thermomix/na-firme", priority: 0.6, changeFrequency: "monthly" },
   { path: "/thermomix/czarny", priority: 0.6, changeFrequency: "monthly" },

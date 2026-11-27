@@ -20,13 +20,16 @@ import { getOffersRepository } from "@/lib/database/repositories/offers-reposito
 import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 import { formatPln } from "@/lib/format";
 
-export const metadata: Metadata = buildMetadata({
-  title: "Thermomix na raty 0% — kalkulator rat",
+export async function generateMetadata(): Promise<Metadata> {
+  const miesiac = new Intl.DateTimeFormat("pl-PL", { month: "long", year: "numeric", timeZone: "Europe/Warsaw" }).format(new Date());
+  return buildMetadata({
+  title: `Thermomix na raty 0% — kalkulator rat (${miesiac})`,
   description:
     "Policz ratę Thermomixa TM7 w kalkulatorze: raty 0% do 36 miesięcy, bez wymaganego wkładu własnego. Formalności załatwiamy podczas prezentacji w Małopolsce.",
   path: "/finansowanie",
   keywords: ["thermomix raty 0", "thermomix na raty", "kalkulator rat thermomix", "thermomix tm7 raty"],
-});
+  });
+}
 
 /**
  * FAQ jest funkcją, a nie stałą, bo pierwsza odpowiedź MUSI reagować na

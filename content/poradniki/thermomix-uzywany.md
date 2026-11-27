@@ -95,6 +95,10 @@
     [
       "Czy Thermomix się opłaca",
       "/thermomix/czy-sie-oplaca"
+    ],
+    [
+      "Gwarancja Thermomix",
+      "/thermomix/gwarancja"
     ]
   ]
 }

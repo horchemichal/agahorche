@@ -80,6 +80,10 @@
     [
       "Odstąpienie od umowy",
       "/thermomix/odstapienie-od-umowy"
+    ],
+    [
+      "Ile czeka się na Thermomixa",
+      "/thermomix/ile-sie-czeka"
     ]
   ]
 }

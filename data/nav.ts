@@ -150,6 +150,8 @@ export const FOOTER_NAV: { title: string; items: NavItem[] }[] = [
       { label: "Jak kupić Thermomixa", href: "/jak-kupic-thermomix" },
       { label: "Odstąpienie od umowy", href: "/thermomix/odstapienie-od-umowy" },
       { label: "Thermomix na prezent", href: "/thermomix/na-prezent" },
+      { label: "Gwarancja Thermomix", href: "/thermomix/gwarancja" },
+      { label: "Ile czeka się na Thermomixa", href: "/thermomix/ile-sie-czeka" },
       { label: "Czy Thermomix się opłaca", href: "/thermomix/czy-sie-oplaca" },
       { label: "Thermomix na firmę", href: "/thermomix/na-firme" },
       { label: "Czarny Thermomix", href: "/thermomix/czarny" },

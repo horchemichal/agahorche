@@ -11,7 +11,7 @@ import { GLOBAL_FAQ } from "@/data/faq/global";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Umów bezpłatną prezentację Thermomix",
+  title: "Prezentacja Thermomix TM7 — bezpłatna, u Ciebie w domu",
   description:
     "Umów bezpłatną, niezobowiązującą prezentację Thermomix TM7 z Agą — przedstawicielem Thermomix od 2021 r., ponad 500 prezentacji. U Ciebie w domu, w całej Polsce.",
   path: "/prezentacja",

@@ -90,6 +90,10 @@
     [
       "Serwis Thermomix",
       "/blog/serwis-thermomix-krakow"
+    ],
+    [
+      "Gwarancja Thermomix",
+      "/thermomix/gwarancja"
     ]
   ]
 }

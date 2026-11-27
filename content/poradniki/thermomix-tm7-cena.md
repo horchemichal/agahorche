@@ -121,6 +121,14 @@
     [
       "Thermomix na firmę",
       "/thermomix/na-firme"
+    ],
+    [
+      "Gwarancja Thermomix",
+      "/thermomix/gwarancja"
+    ],
+    [
+      "Ile czeka się na Thermomixa",
+      "/thermomix/ile-sie-czeka"
     ]
   ]
 }
