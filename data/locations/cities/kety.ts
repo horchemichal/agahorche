@@ -113,15 +113,16 @@ import {
 
 export const KETY: CityContent = {
   slug: "kety",
+  zaktualizowano: "2026-11-27",
   h1: "Thermomix Kęty – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Kęty — prezentacja i cena",
   seoDescription:
-    "Thermomix w Kętach i całej gminie: bezpłatna prezentacja TM7 u Ciebie w kuchni, cena i raty 0%. Dojazd do wszystkich sołectw bez dopłat. Tel. 517 185 691.",
+    "Przedstawiciel Thermomix w Kętach: bezpłatna prezentacja TM7 u Ciebie w kuchni, dojazd do wszystkich sołectw bez dopłat, raty 0%. Aga, tel. 517 185 691.",
   ogTitle: "Thermomix Kęty — zobacz TM7 na żywo u siebie w kuchni",
   ogDescription:
     "Bezpłatna prezentacja Thermomixa TM7 w Kętach i okolicy. Gotujemy razem u Ciebie, ratę liczymy na miejscu, dojazd bez dopłat.",
 
-  lead: "Do Kęt, Bulowic, Nowej Wsi, Witkowic i pozostałych sołectw gminy przyjeżdżam z Thermomixem TM7 i gotujemy razem u Ciebie w kuchni — na Twoim blacie, z produktami, które przywożę. Prezentacja jest bezpłatna, trwa około dwóch godzin i do niczego nie zobowiązuje.",
+  lead: "Do Kęt, Bulowic, Nowej Wsi, Witkowic i pozostałych sołectw gminy dojeżdżam bez dopłaty za dojazd, a prezentacja Thermomixa TM7 jest bezpłatna i do niczego nie zobowiązuje — gotujemy razem u Ciebie w kuchni przez około dwie godziny, z produktami, które przywożę. Aktualną cenę TM7 i bieżącą promocję widzisz w ofercie niżej — pobierają się prosto z mojego panelu. Termin prezentacji ustalisz pod numerem 517 185 691.",
 
   highlights: highlightyStandardowe("miasto i wszystkie sześć sołectw, bez dopłat"),
 
@@ -156,7 +157,7 @@ export const KETY: CityContent = {
     },
     {
       id: "na-zywo",
-      heading: "Jedna gmina, dwie gospodarki",
+      heading: "Thermomix w gminie Kęty – jedna gmina, dwie gospodarki",
       paragraphs: [
         "Kęty mają trzydzieści trzy tysiące mieszkańców, z czego mniej więcej połowa mieszka w mieście, a połowa w sześciu wsiach. I te dwie połowy żyją z zupełnie różnych rzeczy.",
         "Statystyka gminy mówi to wprost: przemysł i budownictwo dają tu trzydzieści siedem procent zatrudnienia, ale rolnictwo nadal szesnaście i osiem dziesiątych. To najwyższy udział rolnictwa w całym powiecie oświęcimskim. W jednym budżecie gminnym mieszczą się huta aluminium i sześcioro dożynek.",
