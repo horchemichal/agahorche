@@ -106,10 +106,17 @@ export const POLA: Pole[] = [
     warunek: { klucz: "zrodloDochodu", wartosc: "Inne" },
   },
   {
-    klucz: "dataZatrudnienia",
-    etykieta: "13. Data zatrudnienia",
-    typ: "text",
-    podpowiedz: "od kiedy; przy umowie na czas określony także do kiedy",
+    klucz: "dataZatrudnieniaOd",
+    etykieta: "13. Data zatrudnienia – od kiedy",
+    typ: "date",
+    podpowiedz: "przy emeryturze lub rencie można zostawić puste",
+    opcjonalne: true,
+  },
+  {
+    klucz: "dataZatrudnieniaDo",
+    etykieta: "13a. Umowa na czas określony – do kiedy",
+    typ: "date",
+    warunek: { klucz: "zrodloDochodu", wartosc: "Umowa o pracę – czas określony" },
   },
   { klucz: "dochodNetto", etykieta: "14. Kwota dochodu netto na rękę (miesięcznie)", typ: "text" },
   {
