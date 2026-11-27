@@ -26,6 +26,8 @@ export interface AdminNavItem {
 
 /** Sidebar structure per spec §16 (Aga Admin panel sections). */
 export const ADMIN_NAV: AdminNavItem[] = [
+  { label: "Leady", href: "/admin/leady", icon: LeadsIcon },
+  { label: "Wnioski ratalne", href: "/admin/raty", icon: LeadsIcon },
   { label: "Dashboard", href: "/admin", icon: DashboardIcon, exact: true },
   { label: "Do akceptacji", href: "/admin/do-akceptacji", icon: PromotionIcon },
   // CRM (4.11.2026) — wysoko w menu, bo dodawany z telefonu zaraz po prezentacji.
@@ -41,7 +43,6 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { label: "Poradnik", href: "/admin/poradnik", icon: BlogIcon },
   { label: "Media", href: "/admin/media", icon: MediaIcon },
   { label: "SEO", href: "/admin/seo", icon: SeoIcon },
-  { label: "Leady", href: "/admin/leady", icon: LeadsIcon },
   { label: "Aga Club", href: "/admin/aga-club", icon: ClubIcon },
   /*
    * 4.09.2026 — zakładka „AI" wypadła z panelu (prośba Michała: „usuń Aga AI

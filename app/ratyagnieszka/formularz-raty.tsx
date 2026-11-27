@@ -43,6 +43,9 @@ export function FormularzRaty() {
 
   if (wyslano) {
     return (
+      // Po wysłaniu zakrywa całą stronę (logo, zdjęcie, nagłówek) — widać tylko podziękowanie.
+      <div className="fixed inset-0 z-50 overflow-y-auto bg-white">
+      <div className="mx-auto w-full max-w-2xl px-4 py-8 sm:py-12">
       <div className="rounded-2xl border border-emerald-300 bg-white px-5 py-6 text-center">
         <p className="text-xl font-semibold text-emerald-800 sm:text-2xl">
           Jesteś o krok od posiadania tego cudownego urządzenia 😄
@@ -55,11 +58,13 @@ export function FormularzRaty() {
           sizes="(max-width: 640px) 90vw, 560px"
           className="mx-auto mt-5 h-auto w-full max-w-md rounded-2xl"
         />
-        <h2 className="mt-6 text-lg font-semibold text-neutral-900">Dziękujemy, dane zostały wysłane.</h2>
+        <h2 className="mt-6 text-lg font-semibold text-neutral-900">Dziękuję, dane zostały wysłane.</h2>
         <p className="mt-2 text-neutral-700">
-          Zadzwonimy, żeby dokończyć wniosek – proszę mieć pod ręką dowód osobisty, zapytamy o jego numer. Dane zostaną usunięte
+          Zadzwonię, żeby dokończyć wniosek – proszę mieć pod ręką dowód osobisty, zapytam o jego numer. Dane zostaną usunięte
           z bazy po {OKRES_PRZECHOWYWANIA_GODZ} godzinach.
         </p>
+      </div>
+      </div>
       </div>
     );
   }

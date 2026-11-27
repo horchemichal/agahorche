@@ -33,7 +33,7 @@ export default async function WnioskiRaty() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Wnioski – raty 0%</h1>
+        <h1 className="text-2xl font-semibold">Wnioski ratalne</h1>
         <p className="mt-1 text-sm text-neutral-600">
           Formularz: /ratyagnieszka (poza menu, na hasło). Wnioski znikają automatycznie po {OKRES_PRZECHOWYWANIA_GODZ}{" "}
           h — przepisz dane do wniosku wcześniej.

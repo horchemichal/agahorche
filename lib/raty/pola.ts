@@ -67,7 +67,7 @@ export const POLA: Pole[] = [
     klucz: "info-dowod",
     etykieta: "5. Numer dowodu osobistego",
     typ: "info",
-    podpowiedz: "Numer dowodu poda Pani/Pan telefonicznie – proszę przygotować dowód, zapytamy o niego w trakcie rozmowy.",
+    podpowiedz: "Numer dowodu poda Pani/Pan telefonicznie – proszę przygotować dowód, zapytam o niego w trakcie rozmowy.",
   },
   { klucz: "dowodDataWydania", etykieta: "6. Data wydania dowodu osobistego", typ: "date" },
   { klucz: "dowodDataWaznosci", etykieta: "6a. Data ważności dowodu osobistego", typ: "date" },
