@@ -148,10 +148,10 @@ export const POLA: Pole[] = [
     warunek: { klucz: "zrodloDochoduMalzonka", wartosc: "Inne" },
   },
   {
-    klucz: "iloscRatMalzonka",
-    etykieta: "23. Ilość rat współmałżonka",
+    klucz: "iloscRatKredytu",
+    etykieta: "23. Ilość rat",
     typ: "text",
-    wymaganeGdy: { klucz: "stanCywilny", wartosc: MALZENSTWO },
+    podpowiedz: "na ile rat ma być rozłożony kredyt na Thermomix",
   },
 ];
 
