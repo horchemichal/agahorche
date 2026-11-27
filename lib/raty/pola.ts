@@ -35,12 +35,20 @@ export interface Pole {
   /** Pole pokazuje się (i jest wymagane) tylko przy tej odpowiedzi w innym polu. */
   warunek?: { klucz: string; wartosc: string };
   opcjonalne?: boolean;
+  /** Ważna uwaga pokazywana na czerwono pod etykietą. */
+  ostrzezenie?: string;
   /** Pole widać zawsze („jeśli dotyczy”), ale wymagane jest tylko przy tej odpowiedzi. */
   wymaganeGdy?: { klucz: string; wartosc: string };
 }
 
 export const POLA: Pole[] = [
-  { klucz: "pesel", etykieta: "1. Numer PESEL", typ: "text", podpowiedz: "11 cyfr" },
+  {
+    klucz: "pesel",
+    etykieta: "1. Numer PESEL",
+    typ: "text",
+    podpowiedz: "11 cyfr",
+    ostrzezenie: "W dniu składania wniosku kredytowego PESEL nie może być zastrzeżony.",
+  },
   { klucz: "imieNazwisko", etykieta: "2. Imię (drugie imię) i nazwisko", typ: "text" },
   { klucz: "adresZamieszkania", etykieta: "3. Adres zamieszkania", typ: "textarea" },
   {

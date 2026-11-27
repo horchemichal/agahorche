@@ -122,6 +122,7 @@ function PoleFormularza({
         {pole.opcjonalne && <span className="font-normal text-neutral-500"> (opcjonalnie)</span>}
         {pole.wymaganeGdy && <span className="font-normal text-neutral-500"> (jeśli dotyczy)</span>}
       </label>
+      {pole.ostrzezenie && <p className="mt-0.5 text-sm font-medium text-red-700">{pole.ostrzezenie}</p>}
       {pole.podpowiedz && <p className="mt-0.5 text-xs text-neutral-500">{pole.podpowiedz}</p>}
       <div className="mt-1.5">
         {pole.typ === "select" ? (
