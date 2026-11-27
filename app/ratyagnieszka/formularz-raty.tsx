@@ -94,7 +94,7 @@ function PoleFormularza({
   if (pole.typ === "info") {
     return (
       <div className="rounded-lg border border-amber-300 bg-amber-50 px-4 py-3">
-        <p className="text-sm font-medium text-amber-900">🔥 {pole.etykieta}</p>
+        <p className="text-sm font-medium text-amber-900">{pole.etykieta}</p>
         <p className="mt-1 text-sm text-amber-900">{pole.podpowiedz}</p>
       </div>
     );
