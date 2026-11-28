@@ -102,14 +102,14 @@ export function OfferCarousel({ children }: { children: React.ReactNode }) {
       <div
         ref={tor}
         onScroll={naPrzewiniecie}
-        className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth px-4 pb-2 sm:mx-0 sm:gap-5 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-4 pb-2 sm:mx-0 sm:gap-5 sm:px-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {karty.map((karta, i) => (
           <div
             key={i}
             data-karta
             aria-label={"Oferta " + (i + 1) + " z " + karty.length}
-            className="w-[82%] flex-none snap-start sm:w-[calc((100%_-_1.25rem)/2)] lg:w-[calc((100%_-_2.5rem)/3)]"
+            className="w-[62%] flex-none snap-start sm:w-[calc((100%_-_1.25rem)/2)] lg:w-[calc((100%_-_2.5rem)/3)]"
           >
             {karta}
           </div>
@@ -128,7 +128,7 @@ export function OfferCarousel({ children }: { children: React.ReactNode }) {
               <path d="M9 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
-          <div className="mt-5 flex justify-center gap-2">
+          <div className="mt-3 flex justify-center gap-2 sm:mt-5">
             {karty.map((_, i) => (
               <button
                 key={i}

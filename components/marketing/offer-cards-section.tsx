@@ -42,7 +42,7 @@ export async function OfferCardsSection() {
       <Card key={offer.id} className="flex h-full flex-col !p-0 overflow-hidden">
         {image ? (
           <img
-            {...obrazResponsywny(image.url, "(max-width: 640px) 85vw, (max-width: 1024px) 50vw, 33vw")}
+            {...obrazResponsywny(image.url, "(max-width: 640px) 62vw, (max-width: 1024px) 50vw, 33vw")}
             alt={image.altText || offer.productName}
             loading={index < 3 ? "eager" : "lazy"}
             className="aspect-square w-full object-cover"
@@ -52,10 +52,10 @@ export async function OfferCardsSection() {
             <ChefHatIcon width={40} height={40} strokeWidth={1.3} />
           </div>
         )}
-        <div className="flex flex-1 flex-col p-4 sm:p-5">
-          <h3 className="text-sm font-semibold leading-snug text-neutral-900 sm:text-base">{offer.productName}</h3>
+        <div className="flex flex-1 flex-col p-3 sm:p-5">
+          <h3 className="text-[0.8125rem] font-semibold leading-snug text-neutral-900 sm:text-base">{offer.productName}</h3>
           {offer.bonuses.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1.5">
+            <div className="mt-2 flex flex-wrap gap-1 sm:gap-1.5 max-sm:[&>*]:px-2 max-sm:[&>*]:py-0.5 max-sm:[&>*]:text-[0.6875rem]">
               {offer.bonuses.map((bonus) => (
                 <Badge key={bonus}>{bonus}</Badge>
               ))}
@@ -63,7 +63,7 @@ export async function OfferCardsSection() {
           )}
           <div className="mt-auto pt-3 sm:pt-4">
             {price ? (
-              <p className="mb-2 font-display text-lg text-neutral-900 sm:mb-3 sm:text-xl">{price}</p>
+              <p className="mb-2 font-display text-base text-neutral-900 sm:mb-3 sm:text-xl">{price}</p>
             ) : offer.installmentCents ? (
               <p className="mb-2 font-display text-lg text-neutral-900 sm:mb-3 sm:text-xl">
                 {formatPln(offer.installmentCents)}
@@ -77,7 +77,7 @@ export async function OfferCardsSection() {
             )}
             <a
               href={SITE.phoneHref}
-              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-5 text-sm font-medium text-neutral-0 shadow-[var(--shadow-cta)] transition-colors hover:bg-brand-700 sm:text-[0.95rem]"
+              className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-3 text-[0.8125rem] sm:h-11 sm:px-5 font-medium text-neutral-0 shadow-[var(--shadow-cta)] transition-colors hover:bg-brand-700 sm:text-[0.95rem]"
             >
               <PhoneIcon width={18} height={18} />
               Zadzwoń do Agi
@@ -98,8 +98,8 @@ export async function OfferCardsSection() {
   });
 
   return (
-    <Section tone="surface" className="pt-14 pb-6 md:pt-20 md:pb-8">
-      <div className="mb-8 flex items-end justify-between gap-4">
+    <Section tone="surface" className="pt-8 pb-5 md:pt-20 md:pb-8">
+      <div className="mb-4 flex items-end justify-between gap-4 sm:mb-8">
         <Heading as="h2" size="md" className="text-brand-700">
           Aktualna oferta
         </Heading>
