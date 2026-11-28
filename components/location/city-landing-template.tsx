@@ -329,30 +329,6 @@ export async function CityLandingTemplate({
               {naglowekPrzedstawiciela(content.h1)}
             </Heading>
             <Lead className="mt-5 max-w-xl">{content.lead}</Lead>
-            {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
-                czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
-            <p className="mt-4 max-w-xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
-              <strong>W skrócie:</strong> Aga Horche to oficjalny przedstawiciel Thermomix® (Vorwerk Polska).{" "}
-              Prezentacja Thermomix TM7{" "}
-              {wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} jest bezpłatna
-              i odbywa się u Ciebie w kuchni, bez dopłaty za dojazd. {zdanieOCenie(offer) ?? ""}{" "}
-              <Link href="/thermomix/tm7/cena" className="font-medium text-brand-700 underline underline-offset-4">
-                Co zawiera cena
-              </Link>
-              ?{" "}
-              Termin ustalisz telefonicznie, także po pracy i w weekend:{" "}
-              <a href={SITE.phoneHref} className="font-medium text-brand-700 underline underline-offset-4">
-                {SITE.phone}
-              </a>
-              .
-            </p>
-            <p className="mt-2 text-xs text-neutral-500">
-              Aktualizacja strony:{" "}
-              <time dateTime={content.zaktualizowano ?? BUILD_AT}>
-                {new Date(content.zaktualizowano ?? BUILD_AT).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" })}
-              </time>
-              {" "}· ceny i promocje: {biezacyMiesiac()}
-            </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <ButtonLink href="#umow" size="lg">
                 Umów bezpłatną prezentację
@@ -379,27 +355,12 @@ export async function CityLandingTemplate({
           </div>
           <Photo
             priority
+            className="order-first mx-auto w-full max-w-sm lg:order-none lg:max-w-none"
             src={zdjecieHero.src}
             alt={zdjecieHero.alt}
             caption={zdjecieHero.caption}
           />
         </div>
-
-        <dl className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {content.highlights.map((item) => (
-            <div
-              key={item.label}
-              className="rounded-xl border border-border bg-neutral-0 p-4"
-            >
-              <dt className="text-xs font-semibold uppercase tracking-wide text-brand-700">
-                {item.label}
-              </dt>
-              <dd className="mt-1.5 text-sm leading-relaxed text-neutral-800">
-                {item.value}
-              </dd>
-            </div>
-          ))}
-        </dl>
       </Section>
 
       {/*
@@ -415,6 +376,57 @@ export async function CityLandingTemplate({
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
         ]}
       />
+
+      {/* 28.11.2026 (prośba Agi): kolejność na stronach lokalnych to
+          zdjęcie → krótki opis → opinie → oferta → reszta tekstu. */}
+      {/* ŻYWA OFERTA — jedno źródło prawdy: /admin/oferta */}
+      <div id="oferta" className="scroll-mt-28">
+        <OfferCardsSection />
+      </div>
+
+      <Section className="!py-8">
+        <div className="max-w-3xl">
+            {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
+                czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
+            <p className="max-w-3xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
+              <strong>W skrócie:</strong> Aga Horche to oficjalny przedstawiciel Thermomix® (Vorwerk Polska).{" "}
+              Prezentacja Thermomix TM7{" "}
+              {wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} jest bezpłatna
+              i odbywa się u Ciebie w kuchni, bez dopłaty za dojazd. {zdanieOCenie(offer) ?? ""}{" "}
+              <Link href="/thermomix/tm7/cena" className="font-medium text-brand-700 underline underline-offset-4">
+                Co zawiera cena
+              </Link>
+              ?{" "}
+              Termin ustalisz telefonicznie, także po pracy i w weekend:{" "}
+              <a href={SITE.phoneHref} className="font-medium text-brand-700 underline underline-offset-4">
+                {SITE.phone}
+              </a>
+              .
+            </p>
+            <p className="mt-2 text-xs text-neutral-500">
+              Aktualizacja strony:{" "}
+              <time dateTime={content.zaktualizowano ?? BUILD_AT}>
+                {new Date(content.zaktualizowano ?? BUILD_AT).toLocaleDateString("pl-PL", { timeZone: "Europe/Warsaw" })}
+              </time>
+              {" "}· ceny i promocje: {biezacyMiesiac()}
+            </p>
+        </div>
+        <dl className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {content.highlights.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-xl border border-border bg-neutral-0 p-4"
+            >
+              <dt className="text-xs font-semibold uppercase tracking-wide text-brand-700">
+                {item.label}
+              </dt>
+              <dd className="mt-1.5 text-sm leading-relaxed text-neutral-800">
+                {item.value}
+              </dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
 
       <ProseSection data={section("prezentacja")} tone="surface" />
 
@@ -433,10 +445,6 @@ export async function CityLandingTemplate({
       />
       <ProseSection data={section("tm7")} />
 
-      {/* ŻYWA OFERTA — jedno źródło prawdy: /admin/oferta */}
-      <div id="oferta" className="scroll-mt-28">
-        <OfferCardsSection />
-      </div>
       <ProseSectionPair left={section("cena")} right={section("raty")} />
 
       {/* KALKULATOR — ta sama cena co w ofercie wyżej */}

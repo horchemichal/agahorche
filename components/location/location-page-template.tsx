@@ -6,6 +6,7 @@ import { PresentationStepsSection, WhyLiveDemoSection } from "@/components/marke
 import { AudienceSection } from "@/components/marketing/audience-section";
 import { Tm7Teaser } from "@/components/marketing/tm7-teaser";
 import { AgaClubTeaser } from "@/components/marketing/aga-club-teaser";
+import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
 import { FaqSection } from "@/components/seo/faq-section";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { ButtonLink } from "@/components/ui/button";
@@ -58,6 +59,11 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
         ]}
       />
+
+      {/* 28.11.2026 (prośba Agi): oferta zaraz po opiniach, przed resztą tekstu. */}
+      <div id="oferta" className="scroll-mt-28">
+        <OfferCardsSection />
+      </div>
 
       <Section tone="surface">
         <Heading as="h2" size="md" className="mb-4">
