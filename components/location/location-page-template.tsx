@@ -9,6 +9,7 @@ import { AgaClubTeaser } from "@/components/marketing/aga-club-teaser";
 import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
 import { InstallmentCalculatorSection } from "@/components/marketing/installment-calculator-section";
 import { LeadForm } from "@/components/lead/lead-form";
+import { DietyZajawka } from "@/components/diets/diety-zajawka";
 import { FaqSection } from "@/components/seo/faq-section";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { ButtonLink } from "@/components/ui/button";
@@ -70,6 +71,7 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
 
       {/* 28.11.2026 (prośba Agi): po ofercie kalkulator rat i formularz, dopiero potem teksty. */}
       <InstallmentCalculatorSection />
+      <DietyZajawka />
       <Section id="umow" className="scroll-mt-28">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <div>

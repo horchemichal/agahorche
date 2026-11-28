@@ -22,6 +22,7 @@ import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/finan
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
 import { TestimonialsSection } from "./testimonials-section";
 import { LeadForm } from "@/components/lead/lead-form";
+import { DietyZajawka } from "@/components/diets/diety-zajawka";
 import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { CheckCircleIcon } from "@/components/marketing/icons";
 import { webPageSchema, personSchema } from "@/lib/seo/schema";
@@ -387,6 +388,8 @@ export async function CityLandingTemplate({
           />
         </Section>
       )}
+
+      <DietyZajawka />
 
       {/* FORMULARZ */}
       <Section id="umow" className="scroll-mt-28">
