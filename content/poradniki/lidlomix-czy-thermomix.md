@@ -13,7 +13,7 @@
     "Cookidoo nie działa na Lidlomixie — to dwa osobne ekosystemy."
   ],
   "published": "2026-10-22",
-  "updated": "2026-10-22",
+  "updated": "2026-11-28",
   "image": "/zdjecia/thermomix-tm7-vs-tm6.webp",
   "imageAlt": "Thermomix TM7",
   "breadcrumbs": [
@@ -52,6 +52,10 @@
     [
       "Czy warto kupić Monsieur Cuisine Smart?",
       "Warto, jeśli budżet jest głównym kryterium i gotujesz w prostszy sposób. Jeśli zależy Ci na wysokiej temperaturze (rumienienie), dużej Varomie, akcesoriach takich jak nakładka krojąca czy Sensor oraz autoryzowanym serwisie, lepszym wyborem będzie Thermomix."
+    ],
+    [
+      "Czy można wymienić Lidlomixa na Thermomix TM7?",
+      "Nie. Do akcji wymiany przyjmowane są tylko starsze Thermomixy (w akcji do 30 listopada 2026: TM6, TM5, TM31 i TM21). Lidlomixa można sprzedać samodzielnie i kupić TM7 w regularnej cenie albo w aktualnej promocji."
     ],
     [
       "Czy Lidlomix można kupić na raty?",
@@ -132,6 +136,12 @@ W teście Stiftung Warentest z grudnia 2023 roku najlepiej wypadł Bosch Cookit 
 ## Monsieur Cuisine Compact — tańsza wersja Lidla
 
 Lidl sprzedaje też mniejszy Monsieur Cuisine Compact: 1 099 zł (w promocjach do 699 zł z Lidl Plus), misa 2 l (1,5 l roboczo), 37–130°C, ekran LCD zamiast dużego ekranu dotykowego, ponad 400 przepisów. To urządzenie dla jednej–dwóch osób i prostych dań.
+
+## Czy Lidlomixa można wymienić na Thermomixa?
+
+Nie w ramach akcji wymiany. Do wymiany przyjmowane są tylko starsze Thermomixy — w akcji trwającej do 30 listopada 2026 były to TM6, TM5, TM31 i TM21, a we wcześniejszych edycjach TM31, TM5 i TM6. Roboty innych marek, w tym Monsieur Cuisine, nie wchodzą w grę.
+
+Jeśli masz Lidlomixa i myślisz o przesiadce, zostaje sprzedaż go na własną rękę i zakup TM7 w regularnej cenie albo w aktualnej promocji — zestawy i raty 0% są w [ofercie](/oferta). Jak działa wymiana starszych Thermomixów, opisałam w poradniku [wymiana Thermomixa na TM7](/thermomix/wymiana).
 
 ## Kiedy co wybrać — moje zdanie
 

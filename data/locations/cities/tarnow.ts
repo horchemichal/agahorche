@@ -31,6 +31,7 @@ import {
  */
 export const TARNOW: CityContent = {
   slug: "tarnow",
+  zaktualizowano: "2026-11-28",
   h1: "Thermomix Tarnów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Tarnów — prezentacja i cena",
   seoDescription:
@@ -209,6 +210,11 @@ export const TARNOW: CityContent = {
       question: "Czy Thermomix poradzi sobie z fasolą „Piękny Jaś” i podobnymi potrawami?",
       answer:
         "Tak. Długie, spokojne gotowanie z ustawioną temperaturą i mieszaniem, które nie pozwala przywrzeć, to jedna z rzeczy, w których urządzenie sprawdza się najlepiej. Namoczoną fasolę gotuje bez pilnowania.",
+    },
+    {
+      question: "Czy na prezentacji gotujemy razem, czy tylko oglądam pokaz?",
+      answer:
+        "Gotujemy razem. Przyjeżdżam do Twojej kuchni w Tarnowie, a przy urządzeniu stoisz Ty — wybierasz przepis na ekranie, dodajesz składniki i sprawdzasz, jak TM7 prowadzi krok po kroku. Ja podpowiadam i odpowiadam na pytania. Po takim spotkaniu wiesz, czy Thermomix pasuje do Twojego gotowania, a prezentacja do niczego nie zobowiązuje.",
     },
   ],
 

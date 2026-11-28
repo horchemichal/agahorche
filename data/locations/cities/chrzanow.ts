@@ -49,6 +49,7 @@ import {
  */
 export const CHRZANOW: CityContent = {
   slug: "chrzanow",
+  zaktualizowano: "2026-11-28",
   h1: "Thermomix Chrzanów – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Chrzanów — prezentacja i cena",
   seoDescription:
@@ -237,6 +238,11 @@ export const CHRZANOW: CityContent = {
       question: "Czy mogę zaprosić na prezentację sąsiadki albo rodzinę?",
       answer:
         "Jak najbardziej i w mniejszych miastach często tak to wygląda. Powiedz tylko przy umawianiu, ile osób będzie, żebym wzięła więcej składników i dobrała przepisy pod większą grupę.",
+    },
+    {
+      question: "Czy przedstawiciel Thermomix musi być z Chrzanowa?",
+      answer:
+        "Nie. Przedstawiciela wybierasz sam, niezależnie od tego, gdzie mieszkasz. Do Chrzanowa i całej gminy dojeżdżam na prezentację bez dopłat, a po zakupie pomagam przy pierwszym gotowaniu, Cookidoo i bieżących pytaniach — na miejscu albo przez telefon.",
     },
   ],
 

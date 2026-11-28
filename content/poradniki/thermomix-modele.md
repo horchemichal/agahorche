@@ -9,10 +9,10 @@
     "Kolejne modele: VM2000 (1971), TM21 (1996), TM31 (2004), TM5 (2014), TM6 (2019), TM7 (2025).",
     "Nowego TM6 nie ma w sprzedaży od kwietnia 2025 — w sklepie Vorwerk są tylko odnowione egzemplarze od 3 329 zł.",
     "Serwis Vorwerk przyjmuje TM31, TM5, TM6 i TM7; części do TM31 są sprzedawane do wyczerpania zapasów.",
-    "Wymiana na TM7 bywa w promocji: ostatnio rabat 645 zł za TM31, 1 075 zł za TM5 i 1 935 zł za TM6."
+    "Wymiana na TM7 bywa w promocji: w akcji do 30 listopada 2026 rabat wynosił 1 500 zł za TM6, 900 zł za TM5 i 600 zł za TM21 lub TM31 (zestaw z akcesoriami, 20 rat 0%)."
   ],
   "published": "2026-10-22",
-  "updated": "2026-10-22",
+  "updated": "2026-11-28",
   "image": "/zdjecia/thermomix-tm7-vs-tm6.webp",
   "imageAlt": "Thermomix TM7 i Thermomix TM6 obok siebie",
   "breadcrumbs": [
@@ -46,7 +46,7 @@
     ],
     [
       "Czy można wymienić Thermomixa TM5 na TM7?",
-      "Tak, w ramach okresowych akcji wymiany Vorwerk. W ostatniej edycji (24–31 sierpnia 2026) rabat za oddanie TM5 wynosił 1 075 zł. Akcja obowiązuje tylko u przedstawiciela — zapytaj mnie, czy właśnie trwa."
+      "Tak, w ramach okresowych akcji wymiany. W akcji trwającej do 30 listopada 2026 rabat za oddanie TM5 wynosił 900 zł przy zestawie TM7 z nakładką krojącą, osłoną noża i drugim naczyniem (6 999 zł po rabacie, 20 rat 0%). We wcześniejszych edycjach, przy zakupie samego TM7, było to 1 075 zł. Wymiana idzie tylko przez przedstawiciela — zapytaj mnie, czy właśnie trwa."
     ],
     [
       "Ile jest wart Thermomix TM5?",
@@ -163,7 +163,7 @@ Szczegóły i ceny: [akcesoria do Thermomixa](/akcesoria).
 
 ## Wymiana starego Thermomixa na TM7
 
-Vorwerk okresowo organizuje akcję wymiany: przy zakupie TM7 u przedstawiciela oddajesz stary model i dostajesz rabat. W ostatnich edycjach (23 października–30 listopada 2025 oraz 24–31 sierpnia 2026) rabaty były takie:
+Vorwerk okresowo organizuje akcję wymiany: przy zakupie TM7 u przedstawiciela oddajesz stary model i dostajesz rabat. We wcześniejszych edycjach (23 października–30 listopada 2025 oraz 24–31 sierpnia 2026) rabaty przy zakupie samego TM7 były takie:
 
 | Oddajesz | Rabat na TM7 |
 |---|---|
@@ -172,6 +172,18 @@ Vorwerk okresowo organizuje akcję wymiany: przy zakupie TM7 u przedstawiciela o
 | Thermomix TM6 | 1 935 zł |
 
 To akcja okresowa, a nie stały cennik. Napisz albo zadzwoń (517 185 691), sprawdzę, czy wymiana właśnie obowiązuje i jakie są warunki.
+
+### Akcja wymiany w listopadzie 2026
+
+Do 30 listopada 2026 wymiana obejmowała cały zestaw: TM7, nakładkę krojącą ze spiralizerem, osłonę noża i drugie naczynie miksujące za 7 899 zł, obniżone o rabat za oddawany model. Tym razem przyjmowany był także TM21.
+
+| Oddajesz | Rabat | Zestaw po rabacie | 20 rat 0% |
+|---|---|---|---|
+| Thermomix TM6 | 1 500 zł | 6 399 zł | 319,95 zł |
+| Thermomix TM5 | 900 zł | 6 999 zł | 349,95 zł |
+| Thermomix TM21 lub TM31 | 600 zł | 7 299 zł | 364,95 zł |
+
+Kwoty dotyczą zestawu z akcesoriami, więc nie porównuj ich wprost z rabatami z wcześniejszych edycji, liczonymi od samego TM7. Aktualne warunki znajdziesz w [ofercie](/oferta) i w poradniku [wymiana Thermomixa na TM7](/thermomix/wymiana).
 
 ## TM5 czy TM6 czy TM7 — co ma sens dziś
 

@@ -92,6 +92,7 @@ import {
 
 export const WADOWICE: CityContent = {
   slug: "wadowice",
+  zaktualizowano: "2026-11-28",
   h1: "Thermomix Wadowice – prezentacja, zakup i doradztwo",
   seoTitle: "Przedstawiciel Thermomix Wadowice — prezentacja i cena",
   seoDescription:
@@ -251,6 +252,11 @@ export const WADOWICE: CityContent = {
       question: "Gotuję flaki i placki, a nie rzeczy z internetu. To ma sens?",
       answer:
         "Ma i akurat przy takim gotowaniu widać to najlepiej. Urządzenie nie zrobi flaków za Ciebie i nie będę udawać, że robi — ale całe przygotowanie i długie, równe gotowanie bez zaglądania do garnka przestaje wymagać Twojej obecności w kuchni. Na prezentacji chętnie pokażę to na tym, co u Was faktycznie się jada, a nie na przepisie z folderu.",
+    },
+    {
+      question: "Jak sprawdzić, jaka promocja na Thermomixa obowiązuje w tym miesiącu?",
+      answer:
+        "Aktualne zestawy, raty 0% i akcję wymiany starszego Thermomixa zbieram na stronie z ofertą i aktualizuję na bieżąco. Każda promocja ma swój termin, więc najpewniej jest zadzwonić (517 185 691) — powiem, co obowiązuje w dniu prezentacji w Wadowicach, i policzę ratę dla wybranego zestawu.",
     },
   ],
 
