@@ -8,7 +8,7 @@ const ZDJECIE_AGI = "/media/aga-przedstawiciel-thermomix-hero-f49127f7.webp";
 
 /* 28.11.2026 (prośba Agi): strona lokalna zaczyna się od zdjęcia Agi —
    na telefonie zdjęcie jest nad nagłówkiem, na komputerze obok. */
-export function LocationHero({ location, intro }: { location: Location; intro: string }) {
+export function LocationHero({ location }: { location: Location; intro: string }) {
   return (
     <Section className="!pt-3 !pb-0 md:!pt-8 md:!pb-6">
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -17,7 +17,10 @@ export function LocationHero({ location, intro }: { location: Location; intro: s
           <Heading as="h1" size="xl" className="mx-auto max-w-3xl lg:mx-0">
             Thermomix {location.name} – bezpłatna prezentacja z Agą
           </Heading>
-          <Lead className="mx-auto mt-5 max-w-2xl lg:mx-0">{intro}</Lead>
+          <Lead className="mx-auto mt-5 max-w-2xl lg:mx-0">
+            Od 2021 roku pomagam wybrać i kupić Thermomix TM7. Ponad 500 sprzedaży i opieka po zakupie.
+            Zamów już dziś.
+          </Lead>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <ButtonLink href="/prezentacja" size="lg">
               Umów bezpłatną prezentację

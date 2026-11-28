@@ -328,7 +328,13 @@ export async function CityLandingTemplate({
             <Heading as="h1" size="xl" className="mx-auto mt-3 max-w-2xl lg:mx-0">
               {naglowekPrzedstawiciela(content.h1)}
             </Heading>
-            <Lead className="mx-auto mt-5 max-w-xl lg:mx-0">{content.lead}</Lead>
+            {/* 28.11.2026 (prośba Agi): krótko o doświadczeniu zamiast opisu
+                gotowania. Tekst własny miasta (content.lead) jest niżej, pod
+                formularzem. */}
+            <Lead className="mx-auto mt-5 max-w-xl lg:mx-0">
+              Od 2021 roku pomagam wybrać i kupić Thermomix {wMiejscu(location)}. Ponad 500 sprzedaży
+              i opieka po zakupie. Zamów już dziś.
+            </Lead>
             <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
               <ButtonLink href="#umow" size="lg">
                 Umów bezpłatną prezentację
@@ -420,6 +426,7 @@ export async function CityLandingTemplate({
 
       <Section className="!py-8">
         <div className="max-w-3xl">
+          <p className="mb-5 text-lg leading-relaxed text-neutral-700">{content.lead}</p>
             {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
                 czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
             <p className="max-w-3xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
