@@ -22,7 +22,10 @@ export function TestimonialsSection({
   seed,
   miasto,
   wszystkieHref,
+  kompakt,
 }: {
+  /** Mniejsze karty, tekst opinii przycięty do 5 linii (strony lokalne). Na /opinie pełne. */
+  kompakt?: boolean;
   items: Testimonial[];
   max?: number;
   seed?: string;
@@ -36,10 +39,10 @@ export function TestimonialsSection({
 
   return (
     <Section>
-      <Heading as="h2" size="md" className="mb-8">
+      <Heading as="h2" size="md" className={kompakt ? "mb-5" : "mb-8"}>
         Opinie klientów
       </Heading>
-      <TestimonialsMarquee items={pokazane} />
+      <TestimonialsMarquee items={pokazane} kompakt={kompakt} />
       {wszystkieHref && max && items.length > pokazane.length ? (
         <p className="mt-6 text-sm">
           <Link href={wszystkieHref} className="font-medium text-brand-700 underline underline-offset-4">

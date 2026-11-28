@@ -18,7 +18,7 @@ export function LocationHero({ location }: { location: Location; intro: string }
             Thermomix {location.name} – bezpłatna prezentacja z Agą
           </Heading>
           <Lead className="mx-auto mt-5 max-w-2xl lg:mx-0">
-            Od 2021 roku pomagam wybrać i kupić Thermomix TM7. Ponad 500 sprzedaży i opieka po zakupie.
+            Od 2021 roku pomagam wybrać i kupić Thermomix TM7. Ponad 500 prezentacji i opieka po zakupie.
             Zamów już dziś.
           </Lead>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">

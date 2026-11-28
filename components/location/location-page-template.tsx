@@ -56,6 +56,7 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       <LocationHero location={location} intro={intro} />
       {/* 24.11.2026: znów wszystkie opinie (decyzja Michała — klienci dobrze reagują na dużo opinii). */}
       <TestimonialsSection
+        kompakt
         items={[
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),

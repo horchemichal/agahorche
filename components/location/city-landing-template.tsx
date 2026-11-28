@@ -332,25 +332,12 @@ export async function CityLandingTemplate({
                 gotowania. Tekst własny miasta (content.lead) jest niżej, pod
                 formularzem. */}
             <Lead className="mx-auto mt-5 max-w-xl lg:mx-0">
-              Od 2021 roku pomagam wybrać i kupić Thermomix {wMiejscu(location)}. Ponad 500 sprzedaży
+              Od 2021 roku pomagam wybrać i kupić Thermomix {wMiejscu(location)}. Ponad 500 prezentacji
               i opieka po zakupie. Zamów już dziś.
             </Lead>
             <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
               <ButtonLink href="#umow" size="lg">
                 Umów bezpłatną prezentację
-              </ButtonLink>
-              {/*
-                Dwa skróty do sekcji, o które ludzie pytają najczęściej, zanim
-                w ogóle zaczną czytać: „ile to kosztuje” i „ile wyjdzie rata”.
-                Prowadzą w dół TEJ SAMEJ strony (kotwice), nie wyrzucają
-                z niej — wyjście na /oferta na tym etapie zwykle kończy się
-                tym, że człowiek nie wraca.
-              */}
-              <ButtonLink href="#oferta" size="lg" variant="outline">
-                Aktualna oferta
-              </ButtonLink>
-              <ButtonLink href="#kalkulator-rat" size="lg" variant="outline">
-                Kalkulator rat
               </ButtonLink>
               <TrackedPhoneLink
                 placement="city-hero"
@@ -376,6 +363,7 @@ export async function CityLandingTemplate({
         robić nie wolno.
       */}
       <TestimonialsSection
+        kompakt
         items={[
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
           ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),

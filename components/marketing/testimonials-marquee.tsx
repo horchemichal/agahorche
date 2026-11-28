@@ -2,8 +2,19 @@ import type { Testimonial } from "@/types/testimonial";
 import { KopiaGrupy } from "@/components/marketing/kopia-grupy";
 
 const MARQUEE_CSS = `
-.tmx-marquee { overflow: hidden; }
-.tmx-marquee__track { display: flex; gap: 1.25rem; width: max-content; animation: tmx-scroll 60s linear infinite; }
+/* 28.11.2026: animacja rusza dopiero, gdy druga kopia rzędu jest gotowa
+   (data-gotowe ustawia KopiaGrupy). Bez tego — np. gdy skrypt strony jeszcze
+   się nie wczytał — rząd przesuwał się na pustą kopię i w miejscu opinii
+   była biała dziura. Do tego czasu rząd stoi i da się go przewinąć palcem. */
+.tmx-marquee { overflow-x: auto; scrollbar-width: none; }
+.tmx-marquee::-webkit-scrollbar { display: none; }
+.tmx-marquee:has(.tmx-marquee__track[data-gotowe]) { overflow: hidden; }
+.tmx-marquee__track { display: flex; gap: 1.25rem; width: max-content; align-items: flex-start; }
+.tmx-marquee__track[data-gotowe] { animation: tmx-scroll 60s linear infinite; }
+.tmx-kompakt .tmx-marquee__track, .tmx-kompakt .tmx-marquee__group { gap: 0.75rem; }
+.tmx-kompakt figure { width: 230px; padding: 0.9rem; }
+.tmx-kompakt blockquote { margin-top: 0.5rem; font-size: 0.8125rem; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+.tmx-kompakt figcaption { margin-top: 0.6rem; }
 .tmx-marquee__group { display: flex; gap: 1.25rem; }
 .tmx-marquee[data-dir="rev"] .tmx-marquee__track { animation-direction: reverse; }
 .tmx-marquee:hover .tmx-marquee__track,
@@ -12,9 +23,15 @@ const MARQUEE_CSS = `
   from { transform: translateX(0); }
   to { transform: translateX(calc(-50% - 0.625rem)); }
 }
+.tmx-kompakt .tmx-marquee__track[data-gotowe] { animation-name: tmx-scroll-k; }
+@keyframes tmx-scroll-k {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-50% - 0.375rem)); }
+}
 @media (prefers-reduced-motion: reduce) {
   .tmx-marquee { overflow-x: auto; }
-  .tmx-marquee__track { animation: none; }
+  .tmx-marquee__track[data-gotowe] { animation: none; }
+  .tmx-marquee:has(.tmx-marquee__track[data-gotowe]) { overflow-x: auto; }
 }
 `;
 
@@ -78,7 +95,7 @@ function fillRow(row: Testimonial[]): Testimonial[] {
   return out;
 }
 
-export function TestimonialsMarquee({ items }: { items: Testimonial[] }) {
+export function TestimonialsMarquee({ items, kompakt }: { items: Testimonial[]; kompakt?: boolean }) {
   if (items.length === 0) return null;
 
   if (items.length < 4) {
@@ -95,7 +112,7 @@ export function TestimonialsMarquee({ items }: { items: Testimonial[] }) {
   const rows = [items.slice(0, mid), items.slice(mid)].filter((row) => row.length > 0);
 
   return (
-    <div className="space-y-5">
+    <div className={kompakt ? "tmx-kompakt space-y-3" : "space-y-5"}>
       <style>{MARQUEE_CSS}</style>
       {rows.map((row, rowIndex) => {
         const group = fillRow(row);

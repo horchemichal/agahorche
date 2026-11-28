@@ -15,7 +15,11 @@ export function KopiaGrupy({ className }: { className: string }) {
   useEffect(() => {
     const el = ref.current;
     const wzor = el?.previousElementSibling;
-    if (el && wzor) el.innerHTML = wzor.innerHTML;
+    if (el && wzor) {
+      el.innerHTML = wzor.innerHTML;
+      // Dopiero teraz wolno ruszyć animacją — patrz MARQUEE_CSS.
+      el.parentElement?.setAttribute("data-gotowe", "1");
+    }
   }, []);
   return <div ref={ref} className={className} aria-hidden="true" />;
 }
