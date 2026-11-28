@@ -78,11 +78,6 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
         miejsce="district"
       />
 
-      {/* Własny wstęp dzielnicy — dawniej w nagłówku, teraz pod formularzem. */}
-      <Section className="!py-8">
-        <p className="max-w-3xl text-lg leading-relaxed text-neutral-700">{content.lead}</p>
-      </Section>
-
       {content.sections.map((section, index) => (
         <Section
           key={section.id}
@@ -182,6 +177,11 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
           </div>
         </Section>
       )}
+
+      {/* Własny wstęp dzielnicy — nisko na stronie, przed FAQ (28.11.2026). */}
+      <Section className="!py-8">
+        <p className="max-w-3xl text-lg leading-relaxed text-neutral-700">{content.lead}</p>
+      </Section>
 
       <FaqSection
         items={[

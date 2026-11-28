@@ -314,7 +314,6 @@ export async function CityLandingTemplate({
 
       <Section className="!py-8">
         <div className="max-w-3xl">
-          <p className="mb-5 text-lg leading-relaxed text-neutral-700">{content.lead}</p>
             {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
                 czytelnika i dla podsumowan AI Google. Cena z panelu oferty. */}
             <p className="max-w-3xl rounded-lg border-l-4 border-brand-500 bg-brand-50/60 px-4 py-3 text-[0.95rem] leading-relaxed text-neutral-800">
@@ -692,6 +691,11 @@ export async function CityLandingTemplate({
         geo={content.geo}
       />
       <WymianaStatus wariant="miasto" gdzie={wMiejscowniku(location.nameLocative ?? miejscownik(location.slug))} />
+      {/* 28.11.2026 (prośba Agi): własny wstęp miasta nisko na stronie, przed FAQ. */}
+      <Section className="!py-8">
+        <p className="max-w-3xl text-lg leading-relaxed text-neutral-700">{content.lead}</p>
+      </Section>
+
       <FaqSection
         items={[
           pytanieKtoPrzedstawicielem(
