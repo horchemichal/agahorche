@@ -7,6 +7,8 @@ import { AudienceSection } from "@/components/marketing/audience-section";
 import { Tm7Teaser } from "@/components/marketing/tm7-teaser";
 import { AgaClubTeaser } from "@/components/marketing/aga-club-teaser";
 import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
+import { InstallmentCalculatorSection } from "@/components/marketing/installment-calculator-section";
+import { LeadForm } from "@/components/lead/lead-form";
 import { FaqSection } from "@/components/seo/faq-section";
 import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { ButtonLink } from "@/components/ui/button";
@@ -64,6 +66,22 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
       <div id="oferta" className="scroll-mt-28">
         <OfferCardsSection />
       </div>
+
+      {/* 28.11.2026 (prośba Agi): po ofercie kalkulator rat i formularz, dopiero potem teksty. */}
+      <InstallmentCalculatorSection />
+      <Section id="umow" className="scroll-mt-28">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+          <div>
+            <Heading as="h2" size="md">
+              Zostaw kontakt — oddzwonię i ustalimy termin
+            </Heading>
+            <p className="mt-4 max-w-xl text-muted leading-relaxed">
+              Prezentacja jest bezpłatna i do niczego nie zobowiązuje. Możesz też po prostu zadzwonić — zwykle to szybsze.
+            </p>
+          </div>
+          <LeadForm source="city-page" cityLabel={location.unitType === "wojewodztwo" ? undefined : location.name} />
+        </div>
+      </Section>
 
       <Section tone="surface">
         <Heading as="h2" size="md" className="mb-4">

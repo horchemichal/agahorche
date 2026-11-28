@@ -384,6 +384,49 @@ export async function CityLandingTemplate({
         <OfferCardsSection />
       </div>
 
+      {/* KALKULATOR — ta sama cena co w ofercie wyżej */}
+      {calculatorPriceZl && (
+        <Section id="kalkulator-rat" tone="surface" className="scroll-mt-28">
+          <Heading as="h2" size="md">
+            Kalkulator rat — ile wyjdzie miesięcznie
+          </Heading>
+          <Lead className="mt-3 mb-7 max-w-2xl">
+            Policz sama, zanim zadzwonisz. Kalkulator startuje z aktualnej ceny
+            z oferty powyżej — zmień okres spłaty albo wkład własny i zobacz,
+            jak zmienia się rata.
+          </Lead>
+          <InstallmentCalculator
+            initialPriceZl={calculatorPriceZl}
+            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
+            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
+          />
+        </Section>
+      )}
+
+      {/* FORMULARZ */}
+      <Section id="umow" className="scroll-mt-28">
+        <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+          <div>
+            <Heading as="h2" size="md">
+              Zostaw kontakt — oddzwonię i ustalimy termin
+            </Heading>
+            <Lead className="mt-4">
+              Prezentacja {wMiejscu(location)} jest bezpłatna i do niczego nie
+              zobowiązuje. Możesz też po prostu zadzwonić — zwykle to szybsze.
+            </Lead>
+            <p className="mt-6 text-sm text-muted">
+              Wolisz porozmawiać od razu? Aga:{" "}
+              <TrackedPhoneLink
+                placement="city-form"
+                label={SITE.phone}
+                className="inline-flex items-center gap-1.5 font-medium text-brand-700 underline underline-offset-4"
+              />
+            </p>
+          </div>
+          <LeadForm source="city-page" cityLabel={location.name} />
+        </div>
+      </Section>
+
       <Section className="!py-8">
         <div className="max-w-3xl">
             {/* „W skrocie" (21.10.2026): konkret w pierwszym ekranie — dla
@@ -446,25 +489,6 @@ export async function CityLandingTemplate({
       <ProseSection data={section("tm7")} />
 
       <ProseSectionPair left={section("cena")} right={section("raty")} />
-
-      {/* KALKULATOR — ta sama cena co w ofercie wyżej */}
-      {calculatorPriceZl && (
-        <Section id="kalkulator-rat" tone="surface" className="scroll-mt-28">
-          <Heading as="h2" size="md">
-            Kalkulator rat — ile wyjdzie miesięcznie
-          </Heading>
-          <Lead className="mt-3 mb-7 max-w-2xl">
-            Policz sama, zanim zadzwonisz. Kalkulator startuje z aktualnej ceny
-            z oferty powyżej — zmień okres spłaty albo wkład własny i zobacz,
-            jak zmienia się rata.
-          </Lead>
-          <InstallmentCalculator
-            initialPriceZl={calculatorPriceZl}
-            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
-            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
-          />
-        </Section>
-      )}
 
       <ProseSection data={section("rodzina")} tone="surface" />
 
@@ -796,27 +820,23 @@ export async function CityLandingTemplate({
         title={`Thermomix ${location.name} — najczęściej zadawane pytania`}
       />
 
-      {/* FORMULARZ */}
-      <Section id="umow" tone="surface" className="scroll-mt-28">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-          <div>
-            <Heading as="h2" size="md">
-              Umów bezpłatną prezentację Thermomixa {wMiejscu(location)}
-            </Heading>
-            <Lead className="mt-4">
-              Zostaw kontakt, a oddzwonię i ustalimy termin. Możesz też po
-              prostu zadzwonić — zwykle to szybsze.
-            </Lead>
-            <p className="mt-6 text-sm text-muted">
-              Wolisz porozmawiać od razu? Aga:{" "}
-              <TrackedPhoneLink
-                placement="city-form"
-                label={SITE.phone}
-                className="inline-flex items-center gap-1.5 font-medium text-brand-700 underline underline-offset-4"
-              />
-            </p>
+      {/* 28.11.2026: formularz jest teraz na górze (pod ofertą i kalkulatorem),
+          więc na końcu strony zostaje krótki powrót do niego. */}
+      <Section tone="surface">
+        <div className="flex flex-col items-center gap-4 text-center">
+          <Heading as="h2" size="md" align="center">
+            Umów bezpłatną prezentację Thermomixa {wMiejscu(location)}
+          </Heading>
+          <div className="flex flex-wrap justify-center gap-3">
+            <ButtonLink href="#umow" size="lg">
+              Przejdź do formularza
+            </ButtonLink>
+            <TrackedPhoneLink
+              placement="city-form"
+              label={`Aga: ${SITE.phone}`}
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 px-5 text-[0.95rem] font-medium text-neutral-900 transition-colors hover:border-brand-500 hover:text-brand-700"
+            />
           </div>
-          <LeadForm source="city-page" cityLabel={location.name} />
         </div>
       </Section>
 
