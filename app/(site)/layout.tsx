@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/header";
+import { PasekInformacyjny } from "@/components/layout/pasek-informacyjny";
 import { ClientSessionBar } from "@/components/layout/client-session-bar";
 import { KlubKontoLink } from "@/components/layout/klub-konto-link";
 import { PasekKlubu } from "@/components/aga-club/pasek-klubu";
@@ -33,6 +34,7 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
 
   return (
     <>
+      <PasekInformacyjny />
       <Header
         sesja={<ClientSessionBar />}
         kontoKlubu={<KlubKontoLink wariant="desktop" />}

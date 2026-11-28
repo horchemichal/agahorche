@@ -323,13 +323,13 @@ export async function CityLandingTemplate({
       {/* HERO */}
       <Section className="!pt-3 !pb-0 md:!pt-6 md:!pb-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div>
+          <div className="text-center lg:text-left">
             <Eyebrow>Thermomix {location.name}</Eyebrow>
-            <Heading as="h1" size="xl" className="mt-3 max-w-2xl">
+            <Heading as="h1" size="xl" className="mx-auto mt-3 max-w-2xl lg:mx-0">
               {naglowekPrzedstawiciela(content.h1)}
             </Heading>
-            <Lead className="mt-5 max-w-xl">{content.lead}</Lead>
-            <div className="mt-7 flex flex-wrap gap-3">
+            <Lead className="mx-auto mt-5 max-w-xl lg:mx-0">{content.lead}</Lead>
+            <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
               <ButtonLink href="#umow" size="lg">
                 Umów bezpłatną prezentację
               </ButtonLink>
@@ -358,7 +358,6 @@ export async function CityLandingTemplate({
             className="order-first mx-auto w-full max-w-sm lg:order-none lg:max-w-none"
             src={zdjecieHero.src}
             alt={zdjecieHero.alt}
-            caption={zdjecieHero.caption}
           />
         </div>
       </Section>

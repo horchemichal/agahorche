@@ -12,13 +12,13 @@ export function LocationHero({ location, intro }: { location: Location; intro: s
   return (
     <Section className="!pt-3 !pb-0 md:!pt-8 md:!pb-6">
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-        <div>
+        <div className="text-center lg:text-left">
           <Eyebrow>Bezpłatna prezentacja Thermomix</Eyebrow>
-          <Heading as="h1" size="xl" className="max-w-3xl">
+          <Heading as="h1" size="xl" className="mx-auto max-w-3xl lg:mx-0">
             Thermomix {location.name} – bezpłatna prezentacja z Agą
           </Heading>
-          <Lead className="mt-5 max-w-2xl">{intro}</Lead>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <Lead className="mx-auto mt-5 max-w-2xl lg:mx-0">{intro}</Lead>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <ButtonLink href="/prezentacja" size="lg">
               Umów bezpłatną prezentację
             </ButtonLink>
