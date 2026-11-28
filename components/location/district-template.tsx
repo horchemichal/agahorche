@@ -1,16 +1,13 @@
 import Link from "next/link";
 import type { DistrictContent } from "@/data/locations/districts/typy";
-import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { FaqSection } from "@/components/seo/faq-section";
 import { JsonLdScript } from "@/components/seo/json-ld";
 import { Section } from "@/components/ui/section";
-import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
+import { LokalnaGora } from "./lokalna-gora";
 import { ButtonLink } from "@/components/ui/button";
-import { LeadForm } from "@/components/lead/lead-form";
-import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { webPageSchema } from "@/lib/seo/schema";
 import { getDistrictsForCity } from "@/data/locations/districts";
-import { SITE } from "@/lib/utils";
 import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
 import { pytanieKtoPrzedstawicielem } from "@/lib/seo/lokalne";
 
@@ -64,48 +61,26 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
         })}
       />
 
-      <Section className="!pb-0">
-        <Breadcrumbs
-          items={[
-            { name: "Thermomix", path: "/thermomix" },
-            { name: content.miasto.nazwa, path: content.miasto.urlPath },
-            { name: content.nazwa, path: content.urlPath },
-          ]}
-        />
-      </Section>
+      {/* Góra strony do formularza włącznie — wspólna dla wszystkich stron lokalnych (28.11.2026). */}
+      <LokalnaGora
+        okruszki={[
+          { name: "Thermomix", path: "/thermomix" },
+          { name: content.miasto.nazwa, path: content.miasto.urlPath },
+          { name: content.nazwa, path: content.urlPath },
+        ]}
+        eyebrow={`Thermomix ${content.miasto.nazwa} — ${content.nazwa}`}
+        h1={naglowekPrzedstawiciela(content.h1)}
+        gdzie={`${content.przyimek ?? "w"} ${content.miejscownik}`}
+        nazwa={`${content.miasto.nazwa} ${content.nazwa}`}
+        miastoOpinii={content.miasto.nazwa}
+        zrodlo="district-page"
+        etykietaFormularza={`${content.miasto.nazwa} — ${content.nazwa}`}
+        miejsce="district"
+      />
 
-      <Section className="!pt-6">
-        <div className="max-w-3xl">
-          <Eyebrow>
-            Thermomix {content.miasto.nazwa} — {content.nazwa}
-          </Eyebrow>
-          <Heading as="h1" size="xl" className="mt-3">
-            {naglowekPrzedstawiciela(content.h1)}
-          </Heading>
-          <Lead className="mt-5">{content.lead}</Lead>
-
-          <div className="mt-7 flex flex-wrap gap-3">
-            <ButtonLink href="#umow" size="lg">
-              Umów bezpłatną prezentację
-            </ButtonLink>
-            {/* Link w górę jest tu najważniejszym elementem strony: cena,
-                aktualna promocja i kalkulator rat są na stronie miasta.
-                Strona dzielnicy ma tam zaprowadzić, a nie udawać, że sama
-                obsłuży całą decyzję zakupową. */}
-            <ButtonLink href={content.miasto.urlPath} size="lg" variant="outline">
-              Cena, raty i oferta — {content.miasto.nazwa}
-            </ButtonLink>
-          </div>
-
-          <p className="mt-5 text-sm text-muted">
-            Wolisz od razu zadzwonić?{" "}
-            <TrackedPhoneLink
-              placement="district-hero"
-              className="font-medium text-brand-700 underline underline-offset-4"
-              label={SITE.phone}
-            />
-          </p>
-        </div>
+      {/* Własny wstęp dzielnicy — dawniej w nagłówku, teraz pod formularzem. */}
+      <Section className="!py-8">
+        <p className="max-w-3xl text-lg leading-relaxed text-neutral-700">{content.lead}</p>
       </Section>
 
       {content.sections.map((section, index) => (
@@ -160,25 +135,22 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
         </div>
       </Section>
 
-      {/* Zamknięcie pętli: człowiek, który doczytał do końca, ma jedno
-          oczywiste miejsce, w które idzie po konkrety — strona miasta. */}
       <Section tone="surface">
         <div className="max-w-3xl">
           <Heading as="h2" size="md">
-            Cena, raty i aktualna promocja
+            Cena Thermomixa {content.przyimek ?? "w"} {content.miejscownik}
           </Heading>
           <p className="mt-5 text-base leading-relaxed text-neutral-700">
             Cenę Thermomixa ustala Vorwerk i jest identyczna w całej Polsce — {content.przyimek ?? "w"}{" "}
-            {content.miejscownik} zapłacisz tyle
-            samo, co w każdym innym miejscu. Aktualną kwotę, obowiązującą promocję i kalkulator rat trzymam w jednym
-            miejscu, na stronie {content.miasto.nazwa}, żeby nigdzie nie było wersji nieaktualnej.
+            {content.miejscownik} zapłacisz tyle samo, co w każdym innym miejscu. Aktualna oferta i kalkulator rat
+            są wyżej na tej stronie.
           </p>
           <div className="mt-6">
             <Link
               href={content.miasto.urlPath}
               className="font-medium text-brand-700 underline underline-offset-4"
             >
-              Sprawdź cenę i policz ratę — Thermomix {content.miasto.nazwa} →
+              Thermomix {content.miasto.nazwa} — cała strona miasta →
             </Link>
           </div>
         </div>
@@ -219,18 +191,14 @@ export function DistrictTemplate({ content }: { content: DistrictContent }) {
         title={`Thermomix ${content.nazwa} — pytania mieszkańców`}
       />
 
-      <Section id="umow" className="scroll-mt-28">
-        <div className="max-w-2xl">
-          <Heading as="h2" size="md">
+      <Section>
+        <div className="flex flex-col items-center gap-4 text-center">
+          <Heading as="h2" size="md" align="center">
             Umów bezpłatną prezentację — {content.nazwa}
           </Heading>
-          <p className="mt-4 text-base leading-relaxed text-neutral-700">
-            Zostaw kontakt, a oddzwonię o wskazanej porze. Prezentacja jest bezpłatna, trwa około dwóch godzin
-            i do niczego nie zobowiązuje.
-          </p>
-          <div className="mt-7">
-            <LeadForm source="district-page" cityLabel={`${content.miasto.nazwa} — ${content.nazwa}`} />
-          </div>
+          <ButtonLink href="#umow" size="lg">
+            Przejdź do formularza
+          </ButtonLink>
         </div>
       </Section>
     </>

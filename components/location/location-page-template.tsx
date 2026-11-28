@@ -1,17 +1,12 @@
 import type { LocationResolution } from "@/types/location";
-import { LocationHero } from "./location-hero";
 import { NearbyLocations } from "./nearby-locations";
-import { TestimonialsSection } from "./testimonials-section";
+import { LokalnaGora } from "./lokalna-gora";
+import { miejscownik } from "@/data/locations/odmiana";
 import { PresentationStepsSection, WhyLiveDemoSection } from "@/components/marketing/presentation-steps";
 import { AudienceSection } from "@/components/marketing/audience-section";
 import { Tm7Teaser } from "@/components/marketing/tm7-teaser";
 import { AgaClubTeaser } from "@/components/marketing/aga-club-teaser";
-import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
-import { InstallmentCalculatorSection } from "@/components/marketing/installment-calculator-section";
-import { LeadForm } from "@/components/lead/lead-form";
-import { DietyZajawka } from "@/components/diets/diety-zajawka";
 import { FaqSection } from "@/components/seo/faq-section";
-import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { ButtonLink } from "@/components/ui/button";
 import { Section } from "@/components/ui/section";
 import { Heading } from "@/components/ui/heading";
@@ -20,7 +15,6 @@ import { buildLocationIntro, buildLocationFaq } from "@/lib/locations/content";
 import { buildWariantTresci } from "@/lib/locations/warianty";
 import { MiastaWojewodztwa } from "./miasta-wojewodztwa";
 import { serviceSchema, webPageSchema } from "@/lib/seo/schema";
-import { TESTIMONIALS } from "@/data/testimonials";
 
 /**
  * The full location page template (spec §8). One component renders every
@@ -46,42 +40,24 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
   */
   const wariant = buildWariantTresci(resolution);
   const faq = [...buildLocationFaq(resolution), ...(wariant?.faq ?? [])];
+  const formaMiejscownika = location.unitType === "wojewodztwo" ? null : (location.nameLocative ?? miejscownik(location.slug));
+  const gdzie = formaMiejscownika ? `w ${formaMiejscownika}` : "TM7";
 
 
   return (
     <>
-      <Section className="!pt-4 !pb-0">
-        <Breadcrumbs items={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))} />
-      </Section>
-
-      <LocationHero location={location} intro={intro} />
-      {/* 24.11.2026: znów wszystkie opinie (decyzja Michała — klienci dobrze reagują na dużo opinii). */}
-      <TestimonialsSection
-        kompakt
-        items={[
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
-        ]}
+      {/* Góra strony do formularza włącznie — wspólna dla wszystkich stron lokalnych. */}
+      <LokalnaGora
+        okruszki={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))}
+        eyebrow={location.unitType === "wojewodztwo" ? "Bezpłatna prezentacja Thermomix" : `Thermomix ${location.name}`}
+        h1={`Thermomix ${location.name} – bezpłatna prezentacja z Agą`}
+        gdzie={gdzie}
+        nazwa={location.name}
+        miastoOpinii={location.name}
+        zrodlo={location.unitType === "wojewodztwo" ? "voivodeship-page" : "city-page"}
+        etykietaFormularza={location.unitType === "wojewodztwo" ? undefined : location.name}
+        miejsce="location"
       />
-
-      {/* 28.11.2026 (prośba Agi): oferta zaraz po opiniach, przed resztą tekstu. */}
-      <div id="oferta" className="scroll-mt-28">
-        <OfferCardsSection />
-      </div>
-
-      {/* 28.11.2026 (prośba Agi): po ofercie kalkulator rat i formularz, dopiero potem teksty. */}
-      <InstallmentCalculatorSection />
-      <DietyZajawka />
-      <Section id="umow" className="scroll-mt-28">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-          <div>
-            <Heading as="h2" size="md">
-              Masz pytania? Napisz do mnie!
-            </Heading>
-          </div>
-          <LeadForm source="city-page" cityLabel={location.unitType === "wojewodztwo" ? undefined : location.name} />
-        </div>
-      </Section>
 
       <Section tone="surface">
         <Heading as="h2" size="md" className="mb-4">
@@ -129,7 +105,7 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
           <Heading as="h2" size="md" align="center">
             Umów bezpłatną prezentację Thermomix w {location.nameLocative ?? location.name}
           </Heading>
-          <ButtonLink href="/prezentacja" size="lg">
+          <ButtonLink href="#umow" size="lg">
             Umów bezpłatną prezentację
           </ButtonLink>
         </div>

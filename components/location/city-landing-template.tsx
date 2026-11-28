@@ -4,32 +4,25 @@ import type { CityContent, CitySection } from "@/data/locations/city-content";
 import { CITIES_WITH_CONTENT } from "@/data/locations/city-content";
 import { miejscownik } from "@/data/locations/odmiana";
 import { wMiejscowniku, zdanieOCenie, biezacyMiesiac, pytanieKtoPrzedstawicielem } from "@/lib/seo/lokalne";
-import { Breadcrumbs } from "@/components/seo/breadcrumbs";
 import { FaqSection } from "@/components/seo/faq-section";
 import { PanelWiedzy } from "@/components/location/panel-wiedzy";
 import { SerwisNajblizszy } from "@/components/location/serwis-najblizszy";
 import { WymianaStatus } from "@/components/wymiana/wymiana-status";
 import { JsonLdScript } from "@/components/seo/json-ld";
 import { Section } from "@/components/ui/section";
-import { Heading, Lead, Eyebrow } from "@/components/ui/heading";
+import { Heading } from "@/components/ui/heading";
 import { Card } from "@/components/ui/card";
 import { ButtonLink } from "@/components/ui/button";
 import { Photo } from "@/components/marketing/content-blocks";
-import { OfferCardsSection } from "@/components/marketing/offer-cards-section";
 import { cn } from "@/lib/utils";
-import { InstallmentCalculator } from "@/components/marketing/installment-calculator";
-import { pobierzUstawieniaFinansowania } from "@/lib/database/repositories/financing-settings-repository";
 import { getOffersRepository } from "@/lib/database/repositories/offers-repository";
-import { TestimonialsSection } from "./testimonials-section";
-import { LeadForm } from "@/components/lead/lead-form";
-import { DietyZajawka } from "@/components/diets/diety-zajawka";
+import { LokalnaGora } from "./lokalna-gora";
 import { TrackedPhoneLink } from "@/components/marketing/tracked-phone-link";
 import { CheckCircleIcon } from "@/components/marketing/icons";
 import { webPageSchema, personSchema } from "@/lib/seo/schema";
 import { naglowekPrzedstawiciela } from "@/lib/seo/naglowek-przedstawiciela";
 import { BUILD_AT } from "@/lib/build-info.generated";
 import { absoluteUrl, SITE } from "@/lib/utils";
-import { TESTIMONIALS } from "@/data/testimonials";
 import { getDistrictsForCity } from "@/data/locations/districts";
 import { skrocSekcjeWspolne, wybierzPytaniaWspolne } from "@/data/locations/cities/skroty";
 
@@ -110,10 +103,6 @@ export async function CityLandingTemplate({
   // ten komponent ma własną <Section>, więc nagłówek i kalkulator wypadały
   // w dwóch osobnych sekcjach i rozjeżdżały się o dwa pełne paddingi.
   const offer = await getOffersRepository().getActiveOffer();
-  const calculatorPriceZl = offer?.priceCents
-    ? Math.round(offer.priceCents / 100)
-    : null;
-  const finansowanie = await pobierzUstawieniaFinansowania();
 
   // Dzielnice z własną podstroną — po to, żeby lista dzielnic niżej była
   // realnym linkowaniem w dół, a nie samą wyliczanką nazw.
@@ -127,11 +116,6 @@ export async function CityLandingTemplate({
    *    Agi (bez dublowania tego samego zdjęcia na stronie).
    */
   const ZDJECIE_AGI = "/media/aga-przedstawiciel-thermomix-hero-f49127f7.webp";
-  const zdjecieHero = {
-    src: ZDJECIE_AGI,
-    alt: `Aga Horche — przedstawiciel Thermomix ${location.name}, z Thermomixem TM7`,
-    caption: `Aga Horche — to ja przyjeżdżam z urządzeniem ${wMiejscowniku(location.nameLocative ?? miejscownik(location.slug), location.name ?? "")} i odbieram telefon po zakupie.`,
-  };
   const sekcje = content.sections.map((s) =>
     s.photo?.src === ZDJECIE_AGI && content.heroPhoto.src !== ZDJECIE_AGI ? { ...s, photo: content.heroPhoto } : s,
   );
@@ -315,101 +299,18 @@ export async function CityLandingTemplate({
 
   return (
     <>
-      <Section className="!pt-4 !pb-0">
-        <Breadcrumbs
-          items={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))}
-        />
-      </Section>
-
-      {/* HERO */}
-      <Section className="!pt-3 !pb-0 md:!pt-6 md:!pb-6">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <div className="text-center lg:text-left">
-            <Eyebrow>Thermomix {location.name}</Eyebrow>
-            <Heading as="h1" size="xl" className="mx-auto mt-3 max-w-2xl lg:mx-0">
-              {naglowekPrzedstawiciela(content.h1)}
-            </Heading>
-            {/* 28.11.2026 (prośba Agi): krótko o doświadczeniu zamiast opisu
-                gotowania. Tekst własny miasta (content.lead) jest niżej, pod
-                formularzem. */}
-            <Lead className="mx-auto mt-5 max-w-xl lg:mx-0">
-              Od 2021 roku pomagam wybrać i kupić Thermomix {wMiejscu(location)}. Ponad 500 prezentacji
-              i opieka po zakupie. Zamów już dziś.
-            </Lead>
-            <div className="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
-              <ButtonLink href="#umow" size="lg">
-                Umów bezpłatną prezentację
-              </ButtonLink>
-              <TrackedPhoneLink
-                placement="city-hero"
-                label={`Aga: ${SITE.phone}`}
-                className="hidden md:inline-flex h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 px-5 text-[0.95rem] font-medium text-neutral-900 transition-colors hover:border-brand-500 hover:text-brand-700"
-              />
-            </div>
-          </div>
-          <Photo
-            priority
-            className="order-first mx-auto w-full max-w-sm lg:order-none lg:max-w-none"
-            src={zdjecieHero.src}
-            alt={zdjecieHero.alt}
-          />
-        </div>
-      </Section>
-
-      {/*
-        Opinie (10.11.2026: 2. sekcja, zaraz pod hero — prośba Agi): prawdziwe recenzje Google Agi (data/testimonials.ts). Miasto
-        przy opinii (authorCityLabel) tylko za zgodą klientki. Google nie podaje miasta autora, więc
-        nagłówek mówi po prostu „Opinie klientów” — dopisanie „z Krakowa”
-        byłoby zmyśleniem, a to jedyna rzecz, której na stronie lokalnej
-        robić nie wolno.
-      */}
-      <TestimonialsSection
-        kompakt
-        items={[
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() === location.name.toLowerCase()),
-          ...TESTIMONIALS.filter((t) => t.authorCityLabel?.toLowerCase() !== location.name.toLowerCase()),
-        ]}
+      {/* Góra strony do formularza włącznie — wspólna dla wszystkich stron lokalnych. */}
+      <LokalnaGora
+        okruszki={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))}
+        eyebrow={`Thermomix ${location.name}`}
+        h1={naglowekPrzedstawiciela(content.h1)}
+        gdzie={wMiejscu(location)}
+        nazwa={location.name}
+        miastoOpinii={location.name}
+        zrodlo="city-page"
+        etykietaFormularza={location.name}
+        miejsce="city"
       />
-
-      {/* 28.11.2026 (prośba Agi): kolejność na stronach lokalnych to
-          zdjęcie → krótki opis → opinie → oferta → reszta tekstu. */}
-      {/* ŻYWA OFERTA — jedno źródło prawdy: /admin/oferta */}
-      <div id="oferta" className="scroll-mt-28">
-        <OfferCardsSection />
-      </div>
-
-      {/* KALKULATOR — ta sama cena co w ofercie wyżej */}
-      {calculatorPriceZl && (
-        <Section id="kalkulator-rat" tone="surface" className="scroll-mt-28">
-          <InstallmentCalculator
-            initialPriceZl={calculatorPriceZl}
-            ratyZeroDostepne={finansowanie.ratyZeroDostepne}
-            ratyZeroKomunikat={finansowanie.ratyZeroKomunikat}
-          />
-        </Section>
-      )}
-
-      <DietyZajawka />
-
-      {/* FORMULARZ */}
-      <Section id="umow" className="scroll-mt-28">
-        <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
-          <div>
-            <Heading as="h2" size="md">
-              Masz pytania? Napisz do mnie!
-            </Heading>
-            <p className="mt-6 hidden text-sm text-muted lg:block">
-              Wolisz porozmawiać od razu? Aga:{" "}
-              <TrackedPhoneLink
-                placement="city-form"
-                label={SITE.phone}
-                className="inline-flex items-center gap-1.5 font-medium text-brand-700 underline underline-offset-4"
-              />
-            </p>
-          </div>
-          <LeadForm source="city-page" cityLabel={location.name} />
-        </div>
-      </Section>
 
       <Section className="!py-8">
         <div className="max-w-3xl">
