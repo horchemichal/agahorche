@@ -25,6 +25,21 @@ function withinWindow(offer: Offer, now: Date): boolean {
   return ofertaObowiazuje(offer.startsAt, offer.endsAt, now);
 }
 
+/**
+ * 28.11.2026: gdy w panelu żadna oferta nie jest oznaczona jako główna
+ * (albo główna wyszła z okna dat), kalkulator rat i zdanie o cenie znikały
+ * z całej strony. Zapasowo bierzemy najtańszą aktywną ofertę z ceną, która
+ * jest w swoim oknie dat — w praktyce samo urządzenie w cenie katalogowej.
+ * Cena nadal pochodzi wyłącznie z /admin/oferta.
+ */
+function najtanszaAktywna(offers: Offer[]): Offer | null {
+  const now = new Date();
+  const kandydaci = offers
+    .filter((o) => o.isActive && o.priceCents && withinWindow(o, now))
+    .sort((a, b) => (a.priceCents ?? 0) - (b.priceCents ?? 0));
+  return kandydaci[0] ?? null;
+}
+
 function rowToOffer(row: Record<string, unknown>): Offer {
   return {
     id: row.id as string,
@@ -86,9 +101,9 @@ class PostgresOffersRepository implements OffersRepository {
     const result = await this.pool.query(
       "select * from offers where is_primary = true and is_active = true limit 1",
     );
-    if (!result.rows[0]) return null;
-    const offer = rowToOffer(result.rows[0]);
-    return withinWindow(offer, new Date()) ? offer : null;
+    const offer = result.rows[0] ? rowToOffer(result.rows[0]) : null;
+    if (offer && withinWindow(offer, new Date())) return offer;
+    return najtanszaAktywna(await this.list());
   }
 
   async create(input: OfferInput, actorEmail: string | null): Promise<Offer> {
@@ -135,8 +150,8 @@ class InMemoryOffersRepository implements OffersRepository {
   async getActiveOffer(): Promise<Offer | null> {
     const now = new Date();
     const primary = this.store.list().find((o) => o.isPrimary && o.isActive);
-    if (!primary) return null;
-    return withinWindow(primary, now) ? primary : null;
+    if (primary && withinWindow(primary, now)) return primary;
+    return najtanszaAktywna(this.store.list());
   }
 
   async create(input: OfferInput, actorEmail: string | null): Promise<Offer> {
