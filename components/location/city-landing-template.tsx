@@ -393,13 +393,9 @@ export async function CityLandingTemplate({
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <div>
             <Heading as="h2" size="md">
-              Zostaw kontakt — oddzwonię i ustalimy termin
+              Masz pytania? Napisz do mnie!
             </Heading>
-            <Lead className="mt-4">
-              Prezentacja {wMiejscu(location)} jest bezpłatna i do niczego nie
-              zobowiązuje. Możesz też po prostu zadzwonić — zwykle to szybsze.
-            </Lead>
-            <p className="mt-6 text-sm text-muted">
+            <p className="mt-6 hidden text-sm text-muted lg:block">
               Wolisz porozmawiać od razu? Aga:{" "}
               <TrackedPhoneLink
                 placement="city-form"

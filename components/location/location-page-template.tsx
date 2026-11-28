@@ -74,11 +74,8 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           <div>
             <Heading as="h2" size="md">
-              Zostaw kontakt — oddzwonię i ustalimy termin
+              Masz pytania? Napisz do mnie!
             </Heading>
-            <p className="mt-4 max-w-xl text-muted leading-relaxed">
-              Prezentacja jest bezpłatna i do niczego nie zobowiązuje. Możesz też po prostu zadzwonić — zwykle to szybsze.
-            </p>
           </div>
           <LeadForm source="city-page" cityLabel={location.unitType === "wojewodztwo" ? undefined : location.name} />
         </div>
