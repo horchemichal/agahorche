@@ -49,7 +49,7 @@ export function LocationPageTemplate({ resolution }: { resolution: LocationResol
 
   return (
     <>
-      <Section className="!py-0">
+      <Section className="!pt-4 !pb-0">
         <Breadcrumbs items={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))} />
       </Section>
 

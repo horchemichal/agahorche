@@ -10,7 +10,7 @@ const ZDJECIE_AGI = "/media/aga-przedstawiciel-thermomix-hero-f49127f7.webp";
    na telefonie zdjęcie jest nad nagłówkiem, na komputerze obok. */
 export function LocationHero({ location, intro }: { location: Location; intro: string }) {
   return (
-    <Section className="pt-6 md:pt-12">
+    <Section className="!pt-3 !pb-0 md:!pt-8 md:!pb-6">
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div>
           <Eyebrow>Bezpłatna prezentacja Thermomix</Eyebrow>

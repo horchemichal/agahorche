@@ -314,14 +314,14 @@ export async function CityLandingTemplate({
 
   return (
     <>
-      <Section className="!pb-0">
+      <Section className="!pt-4 !pb-0">
         <Breadcrumbs
           items={breadcrumbs.map((b) => ({ name: b.label, path: b.href }))}
         />
       </Section>
 
       {/* HERO */}
-      <Section className="pt-6">
+      <Section className="!pt-3 !pb-0 md:!pt-6 md:!pb-6">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <Eyebrow>Thermomix {location.name}</Eyebrow>
