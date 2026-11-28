@@ -25,7 +25,7 @@ export function Section({
     <As
       id={id}
       className={cn(
-        "py-14 md:py-20",
+        "py-8 md:py-20",
         tone === "surface" && "bg-surface",
         className,
       )}
