@@ -349,7 +349,7 @@ export async function CityLandingTemplate({
               <TrackedPhoneLink
                 placement="city-hero"
                 label={`Aga: ${SITE.phone}`}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 px-5 text-[0.95rem] font-medium text-neutral-900 transition-colors hover:border-brand-500 hover:text-brand-700"
+                className="hidden md:inline-flex h-11 items-center justify-center gap-2 rounded-full border border-neutral-300 px-5 text-[0.95rem] font-medium text-neutral-900 transition-colors hover:border-brand-500 hover:text-brand-700"
               />
             </div>
           </div>
@@ -387,14 +387,6 @@ export async function CityLandingTemplate({
       {/* KALKULATOR — ta sama cena co w ofercie wyżej */}
       {calculatorPriceZl && (
         <Section id="kalkulator-rat" tone="surface" className="scroll-mt-28">
-          <Heading as="h2" size="md">
-            Kalkulator rat — ile wyjdzie miesięcznie
-          </Heading>
-          <Lead className="mt-3 mb-7 max-w-2xl">
-            Policz sama, zanim zadzwonisz. Kalkulator startuje z aktualnej ceny
-            z oferty powyżej — zmień okres spłaty albo wkład własny i zobacz,
-            jak zmienia się rata.
-          </Lead>
           <InstallmentCalculator
             initialPriceZl={calculatorPriceZl}
             ratyZeroDostepne={finansowanie.ratyZeroDostepne}
