@@ -53,9 +53,9 @@ export async function OfferCardsSection() {
           </div>
         )}
         <div className="flex flex-1 flex-col p-3 sm:p-5">
-          <h3 className="text-[0.8125rem] font-semibold leading-snug text-neutral-900 sm:text-base">{offer.productName}</h3>
+          <h3 className="text-[0.8125rem] font-semibold leading-snug text-neutral-900 max-sm:line-clamp-2 sm:text-base">{offer.productName}</h3>
           {offer.bonuses.length > 0 && (
-            <div className="mt-2 flex flex-wrap gap-1 sm:gap-1.5 max-sm:[&>*]:px-2 max-sm:[&>*]:py-0.5 max-sm:[&>*]:text-[0.6875rem]">
+            <div className="mt-2 flex flex-wrap gap-1 sm:gap-1.5 max-sm:[&>*]:px-2 max-sm:[&>*]:py-0.5 max-sm:[&>*]:text-[0.6875rem] max-sm:[&>*]:block max-sm:[&>*]:max-w-full max-sm:[&>*]:truncate max-sm:[&>*:nth-child(n+4)]:hidden">
               {offer.bonuses.map((bonus) => (
                 <Badge key={bonus}>{bonus}</Badge>
               ))}
